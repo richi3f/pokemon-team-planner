@@ -250,7 +250,10 @@ function populateTeamSlot( event_or_slug ) {
 
 
     const li = document.querySelector( ".pokedex li[data-slug='" + slug + "']" );
-    if ( li ) li.classList.add( "picked" ); // Sometimes it's not, if Pokémon added manually to team
+    if ( li ) {
+        li.classList.add( "picked" );
+        toggleEmptyDex();
+    }
 
     // TODO: update team type analysis
     updateTeamHash();
@@ -281,12 +284,17 @@ function populateTeamSlot( event_or_slug ) {
         span.setAttribute( "class", "type" );
         span.innerHTML = "";
     });
-    // TODO: update team type analysis
 
     // Move to last place
     slot.parentNode.append( slot );
 
-    document.querySelector( ".pokedex li[data-slug='" + slug + "']" ).classList.remove( "picked" );
+    const li = document.querySelector( ".pokedex li[data-slug='" + slug + "']" );
+    if ( li ) {
+        li.classList.remove( "picked" );
+        toggleEmptyDex();
+    }
+
+    // TODO: update team type analysis
     updateTeamHash();
 }
 
@@ -380,7 +388,7 @@ function populateDexes( container, game ) {
         pokedex.id = dexSlug;
         pokedex.classList.add( "list", "list-pokemon", "pokedex" );
 
-        populateDex( pokedex, dexData[dexSlug] );
+        populateDex( pokedex, dexData[ dexSlug ] );
     });
 }
 
@@ -780,9 +788,15 @@ function filterDex() {
         }
         li.classList.add( "filtered" );
     });
-    // Hide .pokedex if empty
+    toggleEmptyDex();
+}
+
+/**
+ * Hides/shows any Pokédex that is empty (i.e., all Pokémon picked or filtered).
+ */
+function toggleEmptyDex() {
     document.querySelectorAll( ".pokedex" ).forEach( ol => {
-        if ( ol.children.length == ol.querySelectorAll( ".filtered" ).length ) {
+        if ( ol.children.length == ol.querySelectorAll( ":where(.filtered, .picked)" ).length ) {
             ol.parentNode.classList.add( "hidden" );
         } else {
             ol.parentNode.classList.remove( "hidden" );
