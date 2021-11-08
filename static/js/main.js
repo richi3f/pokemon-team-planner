@@ -136,51 +136,65 @@ const POKEMON_INFO = ["name", "form", "type", "type"];
  */
 function populateTeam( container ) {
     const div = document.createElement( "div" );
-    const section = document.createElement( "section" );
-    const h2 = document.createElement( "h2" );
-    const ul = document.createElement( "ul" );
+    div.classList.add( "wrap" );
 
-    var li = document.createElement( "li" );
-    var wrap = document.createElement( "div" );
-    var fig = document.createElement( "figure" );
-    var img = document.createElement( "img" );
-    var info = document.createElement( "div" );
+    const section = document.createElement( "section" );
+    section.id = "team";
+
+    const h2 = document.createElement( "h2" );
+    h2.innerHTML = "Your Team";
+
+    const ul = document.createElement( "ul" );
+    ul.id = "slots"
+    ul.classList.add( "list", "list-pokemon" );
 
     container.append( div );
     div.append( section );
     section.append( h2, ul );
-    ul.append( li );
-    li.append( wrap, info );
 
-    div.classList.add( "wrap" );
-    section.id = "team";
-    h2.innerHTML = "Your Team";
-    ul.id = "slots"
-    ul.classList.add( "list", "list-pokemon" );
-
+    var li = document.createElement( "li" );
     li.classList.add( "empty" );
     li.dataset.slug = "";
     li.dataset.type = "";
     li.addEventListener( "click", clearTeamSlot );
+
+    var wrap = document.createElement( "div" );
     wrap.classList.add( "wrap" );
-    wrap.append( fig );
-    fig.append( img );
+    var fig = document.createElement( "figure" );
+    var img = document.createElement( "img" );
     img.setAttribute( "src", UNKNOWN_IMG );
+    var info = document.createElement( "div" );
     info.classList.add( "info" );
 
+    ul.append( li );
+    li.append( wrap, info );
+    wrap.append( fig );
+    fig.append( img );
+
     for ( let i = 0 ; i < 4 ; i++ ) {
-        let span = document.createElement( "span" );
+        const span = document.createElement( "span" );
         span.classList.add( POKEMON_INFO[ i ] );
         if ( POKEMON_INFO[ i ] == "name" ) span.innerHTML = "???";
         info.append( span );
     }
 
     for ( let i = 0 ; i < 5 ; i++ ) {
-        let clone = li.cloneNode( true )
+        const clone = li.cloneNode( true )
         clone.addEventListener( "click", clearTeamSlot );
         ul.append( clone );
     }
 
+    var buttonContainer = document.createElement( "div" );
+    buttonContainer.classList.add( "button" );
+
+    var button = document.createElement( "button" );
+    button.id = "randomize";
+    button.innerHTML = "Randomize Team";
+    button.classList.add( "button" );
+    button.addEventListener( "click", randomizeTeam );
+
+    section.append( buttonContainer );
+    buttonContainer.append( button );
 }
 
 /**

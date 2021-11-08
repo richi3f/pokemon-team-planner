@@ -91,7 +91,15 @@ article section {
     vertical-align: top;
 }
 
-.button {
+div.button {
+    text-align: center;
+}
+
+div.button button.button {
+    margin: 1.5em 0 1em;
+}
+
+button.button {
     background-color: #4d6ad8;
     color: #f0f0f0;
     font-weight: 700;
@@ -100,13 +108,11 @@ article section {
     padding: .2em .5em;
     border-radius: .25em;
     cursor: pointer;
-    position: absolute;
-    width: 1.875em;
     box-sizing: border-box
 }
 
-.button:hover,
-.button:focus {
+button.button:hover,
+button.button:focus {
     color: #f0f0f0;
     text-decoration: none
 }
