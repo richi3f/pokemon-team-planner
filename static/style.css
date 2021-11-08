@@ -65,7 +65,7 @@ button {
 
 article {
     background-color: #f0f0f0;
-    max-width: 80em;
+    max-width: 81.875em;
     padding: 0 1.25em;
     margin: 1em auto
 }
@@ -316,7 +316,6 @@ article section {
 /* Filters */
 
 #filters {
-    width: 57em;
     margin: 1em auto 0
 }
 
