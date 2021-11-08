@@ -1,0 +1,810 @@
+
+/* General */
+
+body {
+    background-color: #f0f0f0;
+    font: 16px/1.5 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow-y: scroll
+}
+
+body,
+a,
+a:hover,
+a:focus,
+caption {
+    color: #333
+}
+
+:where(h1, h2, h3) {
+    font-weight: 700;
+    text-align: center;
+}
+
+h1 {
+    color: #ff69b4;
+    font-size: 2em;
+    margin: 0 0 1em
+}
+
+h2 {
+    background: #f0f0f0;
+    background: linear-gradient(0deg, rgba(246, 246, 246, 1) 50%, rgba(240, 240, 240, 1) 50%);
+    color: #4d6ad8;
+    font-size: 1.5em;
+    text-align: left;
+    display: inline-block;
+    margin: 0 0 0.5em;
+    position: absolute;
+    top: -0.75em
+}
+
+h3 {
+    font-size: 1em;
+    line-height: 2;
+    margin: 2em 0 0
+}
+
+h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    text-align: center;
+    font-size: 0.875em;
+}
+
+button {
+    cursor: pointer;
+    font: inherit;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+article {
+    background-color: #f0f0f0;
+    max-width: 80em;
+    padding: 0 1.25em;
+    margin: 1em auto
+}
+
+article section {
+    background: #f6f6f6;
+    border-radius: 1em;
+    border: 0.0625em solid #dedede;
+    padding: 1.25em 1em 1em;
+    margin: 0 0 1.25em;
+    position: relative;
+}
+
+.list {
+    list-style: none;
+    max-width: 80em;
+    padding: 0 1.25em;
+    margin: 1em auto;
+}
+
+.list-pokemon li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.button {
+    background-color: #4d6ad8;
+    color: #f0f0f0;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    padding: .2em .5em;
+    border-radius: .25em;
+    cursor: pointer;
+    position: absolute;
+    width: 1.875em;
+    box-sizing: border-box
+}
+
+.button:hover,
+.button:focus {
+    color: #f0f0f0;
+    text-decoration: none
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/* Game */
+
+#team-planner h1 .game.name {
+    text-indent: -999em;
+    margin: 0;
+}
+
+.game {
+    display: inline-block;
+}
+
+.game a {
+    display: inline-block;
+    background: #fff;
+    text-align: center;
+    width: 14em;
+    padding: 1em;
+    box-sizing: content-box;
+    border: 1px solid #d9d9d9;
+    border-radius: 0.5em;
+    margin: 1em;
+}
+
+.game a:hover {
+    background: #d9d9d9;
+}
+
+.game.disabled a img {
+    filter: grayscale(1);
+}
+
+.game.name,
+.game a img {
+    width: 14rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    margin: 0.75em 0;
+}
+
+.game.name.xy,
+.game.xy a img {
+    height: 3rem;
+    line-height: 3rem;
+    margin: 1em 0;
+}
+
+.game.name.oras,
+.game.oras a img {
+    width: 13rem;
+    height: 4rem;
+    line-height: 4rem;
+    margin: 0.5em 0;
+}
+
+.game.name:where(.swsh, .arceus),
+.game:where(.swsh, .arceus) a img {
+    width: 10rem;
+    height: 5rem;
+    line-height: 5rem;
+    margin: 0;
+}
+
+.game.name.bdsp,
+.game.bdsp a img {
+    width: 11rem;
+}
+
+.game.name.arceus,
+.game.arceus a img {
+    width: 7.5rem;
+}
+
+
+/* Team */
+
+#head {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#head>.wrap {
+    background-color: #f0f0f0;
+    padding: 1.5em 0 0;
+}
+
+#head p {
+    max-width: 75%;
+    margin: 0 auto 1.25em;
+}
+
+#team .list-pokemon img {
+    width: 10em;
+    margin: 1em;
+}
+
+#team .list-pokemon [data-slug$="-gmax"] img {
+    width: 12em;
+    margin: 0;
+}
+
+#team .list-pokemon {
+    text-align: center;
+}
+
+#team .list-pokemon li {
+    width: 12rem;
+    padding: 0;
+}
+
+#team .list-pokemon li:not([data-slug=""]) {
+    cursor: no-drop;
+}
+
+#team .list-pokemon li:not([data-slug=""]):hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.list li :where(.wrap, figure) {
+    background-image: url(./img/types_bg.png);
+    background-repeat: no-repeat;
+}
+
+.list li[data-type=""] :where(.wrap, figure) {
+    background-image: url(./img/type_unknown.png);
+}
+
+.list li figure {
+    margin: 0;
+}
+
+.list li .info {
+    width: 11em;
+    text-align: center;
+    height: 4em;
+    border-radius: 0.625em;
+    margin: 0.5em auto 0;
+    padding: 0.25em 0;
+}
+
+.list li .info :where(.name, .form, .type) {
+    display: inline-block;
+    line-height: 1.5rem;
+    font-size: 0.875em;
+}
+
+.list li.empty .info .name {
+    line-height: 3rem;
+}
+
+.list li .info :where(.name, .type) {
+    font-weight: 700;
+}
+
+.list li .info .name {
+    width: 100%;
+}
+
+.list li .info .form {
+    display: none;
+    font-size: 0.75em;
+}
+
+.list li .info .type {
+    width: 5em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    min-height: 1em;
+    text-indent: -999em;
+}
+
+.list li .info .type.undefined,
+.pokedex li.filtered,
+.pokedex li.picked {
+    display: none;
+}
+
+
+/* Dex */
+
+.list.pokedex li {
+    margin: 0.5em;
+}
+
+.list-pokemon button img {
+    width: 4rem;
+    height: 4rem;
+    padding: 0.125rem 0;
+}
+
+.list-pokemon button:hover img {
+    animation: jump 0.33s linear infinite;
+}
+
+
+/* Filters */
+
+#filters {
+    width: 57em;
+    margin: 1em auto 0
+}
+
+.filter {
+    display: inline-block;
+    margin: 0 0 1em;
+    position: relative;
+}
+
+.filter label {
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 1em 0;
+    width: 6.5em;
+    text-align: center
+}
+
+.filter>label {
+    font-weight: 700;
+    line-height: 2em;
+}
+
+.filter button,
+#search-bar {
+    width: 10.5rem;
+    border: none;
+    padding: 0.375rem 0.1875rem;
+    font-size: .875em;
+    line-height: 1.125rem;
+    background: #fff;
+    color: inherit;
+    cursor: pointer;
+    border: 1px solid #d9d9d9
+}
+
+.filter:not(.disabled) button::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    content: '';
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.game.disabled a,
+.filter button:hover,
+:where(.filter.active, .filter.disabled) button,
+.dropdown-menu li.disabled {
+    cursor: auto;
+    background: #e6e6e6
+}
+
+.filter.disabled button {
+    cursor: auto;
+}
+
+.filter:not(.active) .dropdown-menu {
+    display: none
+}
+
+.dropdown-menu {
+    background: #fff;
+    font-size: 0.875em;
+    text-align: left;
+    min-width: 10.5rem;
+    box-sizing: content-box;
+    border: 1px solid #d9d9d9;
+    position: absolute;
+    top: 100%;
+    left: 8.5rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 99;
+}
+
+.filter[data-type$=type] .dropdown-menu,
+.filter[data-type$=type] .dropdown-menu li label[for$=all] {
+    width: 21rem
+}
+
+.dropdown-menu li {
+    position: relative;
+    display: inline-block;
+    min-width: 10.5rem;
+}
+
+.dropdown-menu li:hover {
+    background: #f5f5f5;
+}
+
+.dropdown-menu li.active {
+    background: #428bca;
+    color: #f0f0f0;
+}
+
+.dropdown-menu li label {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding: 0.25rem 1rem 0.375rem 2rem;
+    cursor: pointer;
+    margin: 0;
+    text-align: left;
+}
+
+.dropdown-menu li input {
+    position: absolute;
+    left: .5em;
+    top: .375em;
+    font-size: inherit;
+}
+
+#search-bar {
+    cursor: text;
+}
+
+
+/* Footer */
+
+footer {
+    font-size: 0.75em;
+    text-align: right
+}
+
+#donation {
+    line-height: 1.25rem;
+    text-align: center
+}
+
+#bugs {
+    text-align: center
+}
+
+#donation a {
+    background: url(https://img.shields.io/badge/donation%20via-PayPal-blue.svg);
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: -999em;
+    direction: ltr;
+    width: 7.875rem;
+    height: 1.25rem;
+}
+
+
+/* Sprites/Variations */
+
+.list .info .type.normal {
+    background-image: url(./img/type/normal.png);
+}
+
+.list .info .type.fighting {
+    background-image: url(./img/type/fighting.png);
+}
+
+.list .info .type.flying {
+    background-image: url(./img/type/flying.png);
+}
+
+.list .info .type.poison {
+    background-image: url(./img/type/poison.png);
+}
+
+.list .info .type.ground {
+    background-image: url(./img/type/ground.png);
+}
+
+.list .info .type.rock {
+    background-image: url(./img/type/rock.png);
+}
+
+.list .info .type.bug {
+    background-image: url(./img/type/bug.png);
+}
+
+.list .info .type.ghost {
+    background-image: url(./img/type/ghost.png);
+}
+
+.list .info .type.steel {
+    background-image: url(./img/type/steel.png);
+}
+
+.list .info .type.fire {
+    background-image: url(./img/type/fire.png);
+}
+
+.list .info .type.water {
+    background-image: url(./img/type/water.png);
+}
+
+.list .info .type.grass {
+    background-image: url(./img/type/grass.png);
+}
+
+.list .info .type.electric {
+    background-image: url(./img/type/electric.png);
+}
+
+.list .info .type.psychic {
+    background-image: url(./img/type/psychic.png);
+}
+
+.list .info .type.ice {
+    background-image: url(./img/type/ice.png);
+}
+
+.list .info .type.dragon {
+    background-image: url(./img/type/dragon.png);
+}
+
+.list .info .type.dark {
+    background-image: url(./img/type/dark.png);
+}
+
+.list .info .type.fairy {
+    background-image: url(./img/type/fairy.png);
+}
+
+.list li[data-type^=normal] .wrap {
+    background-position: 0 0
+}
+
+.list li[data-type$=normal] figure {
+    background-position: -192px 0
+}
+
+.list li[data-type^=fighting] .wrap {
+    background-position: -384px 0
+}
+
+.list li[data-type$=fighting] figure {
+    background-position: -576px 0
+}
+
+.list li[data-type^=flying] .wrap {
+    background-position: -768px 0
+}
+
+.list li[data-type$=flying] figure {
+    background-position: -960px 0
+}
+
+.list li[data-type^=poison] .wrap {
+    background-position: 0 -192px
+}
+
+.list li[data-type$=poison] figure {
+    background-position: -192px -192px
+}
+
+.list li[data-type^=ground] .wrap {
+    background-position: -384px -192px
+}
+
+.list li[data-type$=ground] figure {
+    background-position: -576px -192px
+}
+
+.list li[data-type^=rock] .wrap {
+    background-position: -768px -192px
+}
+
+.list li[data-type$=rock] figure {
+    background-position: -960px -192px
+}
+
+.list li[data-type^=bug] .wrap {
+    background-position: 0 -384px
+}
+
+.list li[data-type$=bug] figure {
+    background-position: -192px -384px
+}
+
+.list li[data-type^=ghost] .wrap {
+    background-position: -384px -384px
+}
+
+.list li[data-type$=ghost] figure {
+    background-position: -576px -384px
+}
+
+.list li[data-type^=steel] .wrap {
+    background-position: -768px -384px
+}
+
+.list li[data-type$=steel] figure {
+    background-position: -960px -384px
+}
+
+.list li[data-type^=fire] .wrap {
+    background-position: 0 -576px
+}
+
+.list li[data-type$=fire] figure {
+    background-position: -192px -576px
+}
+
+.list li[data-type^=water] .wrap {
+    background-position: -384px -576px
+}
+
+.list li[data-type$=water] figure {
+    background-position: -576px -576px
+}
+
+.list li[data-type^=grass] .wrap {
+    background-position: -768px -576px
+}
+
+.list li[data-type$=grass] figure {
+    background-position: -960px -576px
+}
+
+.list li[data-type^=electric] .wrap {
+    background-position: 0 -768px
+}
+
+.list li[data-type$=electric] figure {
+    background-position: -192px -768px
+}
+
+.list li[data-type^=psychic] .wrap {
+    background-position: -384px -768px
+}
+
+.list li[data-type$=psychic] figure {
+    background-position: -576px -768px
+}
+
+.list li[data-type^=ice] .wrap {
+    background-position: -768px -768px
+}
+
+.list li[data-type$=ice] figure {
+    background-position: -960px -768px
+}
+
+.list li[data-type^=dragon] .wrap {
+    background-position: 0 -960px
+}
+
+.list li[data-type$=dragon] figure {
+    background-position: -192px -960px
+}
+
+.list li[data-type^=dark] .wrap {
+    background-position: -384px -960px
+}
+
+.list li[data-type$=dark] figure {
+    background-position: -576px -960px
+}
+
+.list li[data-type^=fairy] .wrap {
+    background-position: -768px -960px
+}
+
+.list li[data-type$=fairy] figure {
+    background-position: -960px -960px
+}
+
+.list li[data-type] .info {
+    background: #68a090
+}
+
+.list li[data-type^=normal] .info {
+    background: #c6c6a7
+}
+
+.list li[data-type^=grass] .info {
+    background: #a7db8d
+}
+
+.list li[data-type^=fire] .info {
+    background: #f5ac78
+}
+
+.list li[data-type^=water] .info {
+    background: #9db7f5
+}
+
+.list li[data-type^=fighting] .info {
+    background: #d67873
+}
+
+.list li[data-type^=flying] .info {
+    background: #c6b7f5
+}
+
+.list li[data-type^=poison] .info {
+    background: #c183c1
+}
+
+.list li[data-type^=ground] .info {
+    background: #ebd69d
+}
+
+.list li[data-type^=rock] .info {
+    background: #d1c17d
+}
+
+.list li[data-type^=bug] .info {
+    background: #c6d16e
+}
+
+.list li[data-type^=ghost] .info {
+    background: #a292bc
+}
+
+.list li[data-type^=electric] .info {
+    background: #fae078
+}
+
+.list li[data-type^=psychic] .info {
+    background: #fa92b2
+}
+
+.list li[data-type^=ice] .info {
+    background: #bce6e6
+}
+
+.list li[data-type^=dragon] .info {
+    background: #a27dfa
+}
+
+.list li[data-type^=dark] .info {
+    background: #a29288
+}
+
+.list li[data-type^=steel] .info {
+    background: #d1d1e0
+}
+
+.list li[data-type^=fairy] .info {
+    background: #f4bdc9
+}
+
+
+/* Animations */
+
+@keyframes jump {
+    0%,
+    100% {
+        padding: 0.25rem 0 0 0;
+    }
+    50% {
+        padding: 0 0 0.25rem 0;
+    }
+}
+
+@keyframes shake {
+    00% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    1% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
