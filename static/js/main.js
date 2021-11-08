@@ -191,11 +191,18 @@ function populateTeamSlot( event_or_slug ) {
         event_or_slug :
         event_or_slug.currentTarget.parentNode.dataset.slug;
 
+    // Validate Pokémon exists in database
     if ( !slug in pokemonData ) {
-        console.log( "Illegal Pokémon slug" );
         return;
     }
 
+    // Validate Pokémon is not duplicated
+    const slugs = Array.from( document.querySelectorAll( "#slots li:not(.empty)" ) ).map( li => li.dataset.slug );
+    if ( slugs.includes( slug ) ) {
+        return;
+    }
+
+    // Empty a team slot if team is full
     const slot = document.querySelector( "#slots li.empty" );
     if ( slot == null ) {
         document.querySelector( "#slots li" ).click();
