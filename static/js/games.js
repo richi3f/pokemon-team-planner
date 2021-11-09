@@ -44,8 +44,8 @@ export default {
     },
     "bdsp": {
         "gen": 8,
-        "dex_names": ["Sinnoh Pokédex", "Pokémon Hideaways"],
-        "dex_slugs": ["sinnoh_bdsp", "sinnoh_underground"],
+        "dex_names": ["Sinnoh Pokédex", "Other Pokémon"],
+        "dex_slugs": ["sinnoh_bdsp", "sinnoh_other"],
         "versions": [ {"slug": "bd", "name": "Brilliant Diamond"}, {"slug": "sp", "name": "Shining Pearl"}
         ]
     },
