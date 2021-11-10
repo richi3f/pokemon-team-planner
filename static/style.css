@@ -176,8 +176,8 @@ button.button:focus {
     margin: 0.5em 0;
 }
 
-.game.name:where(.swsh, .arceus),
-.game:where(.swsh, .arceus) a img {
+.game.name:where(.swsh, .arceus, .home),
+.game:where(.swsh, .arceus, .home) a img {
     width: 10rem;
     height: 5rem;
     line-height: 5rem;
@@ -194,6 +194,10 @@ button.button:focus {
     width: 7.5rem;
 }
 
+.game.name.home,
+.game.home a img {
+    width: 7rem;
+}
 
 /* Team */
 

@@ -3,7 +3,7 @@ import pokemonData from "./pokemon.js";
 import dexData from "./dexes.js";
 import typeData from "./types.js";
 
-const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1);
+const capitalize = str => str.charAt( 0 ).toUpperCase() + str.slice( 1 );
 const getCurrentUrl = () => {
     const url = window.location.href;
     const i = url.indexOf( window.location.hash ) || url.length;
@@ -51,7 +51,7 @@ function buildPage() {
         return;
     }
     populateTeam( main.firstElementChild );
-    populateDexes( main.lastElementChild, gameData[ currentGame ] );
+    populateDexes( main.lastElementChild );
     populateFilters();
     slugs.forEach( slug => populateTeamSlot( slug ) );
 }
@@ -174,7 +174,7 @@ function populateTeam( container ) {
     for ( let i = 0 ; i < 4 ; i++ ) {
         const span = document.createElement( "span" );
         span.classList.add( POKEMON_INFO[ i ] );
-        if ( POKEMON_INFO[ i ] == "name" ) span.innerHTML = "???";
+        if ( POKEMON_INFO[ i ] === "name" ) span.innerHTML = "???";
         info.append( span );
     }
 
@@ -202,9 +202,9 @@ function populateTeam( container ) {
  * @param {Event|string} event_or_slug
  */
 function populateTeamSlot( event_or_slug ) {
-    const slug = ( typeof event_or_slug === "string" ) ?
-        event_or_slug :
-        event_or_slug.currentTarget.parentNode.dataset.slug;
+    const slug = ( typeof event_or_slug === "string" )
+        ? event_or_slug
+        : event_or_slug.currentTarget.parentNode.dataset.slug;
 
     // Validate Pokémon exists in database
     if ( !slug in pokemonData ) {
@@ -264,9 +264,9 @@ function populateTeamSlot( event_or_slug ) {
  * @param {Event|string} event_or_slug
  */
  function clearTeamSlot( event_or_slug ) {
-    var slot = ( typeof event_or_slug === "string" ) ?
-        document.querySelector( "#slots li[data-slug='" + slug + "']" ) :
-        event_or_slug.currentTarget;
+    var slot = ( typeof event_or_slug === "string" )
+        ? document.querySelector( "#slots li[data-slug='" + slug + "']" )
+        : event_or_slug.currentTarget;
 
     const slug = slot.dataset.slug;
     // Empty data
@@ -355,15 +355,14 @@ function randomizeTeam( event ) {
         <ol id="pokedexes"></ol>
     </section>
  */
-function populateDexes( container, game ) {
+function populateDexes( container ) {
+    const game = gameData[ currentGame ];
+
     const h1 = document.querySelector( "h1 .name" );
     const section = document.createElement( "section" );
     const h2 = document.createElement( "h2" );
     const div = document.createElement( "div" );
     const ol = document.createElement( "ol" );
-
-    const dexNames = game.dex_names;
-    const dexSlugs = game.dex_slugs;
 
     h1.innerHTML = getGameName( game );
     h1.classList.add( "game", currentGame );
@@ -376,19 +375,19 @@ function populateDexes( container, game ) {
     ol.id = "pokedexes";
     ol.classList.add( "list" );
 
-    dexSlugs.forEach((dexSlug, i) => {
+    game.dex_slugs.forEach( ( slug, i ) => {
         let li = document.createElement( "li" );
         let heading = document.createElement( "h3" );
         let pokedex = document.createElement( "ol" );
 
         ol.append( li );
         li.append( heading );
-        heading.innerHTML = dexNames[ i ];
+        heading.innerHTML = dexData[ slug ].name;
         li.append( pokedex );
-        pokedex.id = dexSlug;
+        pokedex.id = slug;
         pokedex.classList.add( "list", "list-pokemon", "pokedex" );
 
-        populateDex( pokedex, dexData[ dexSlug ] );
+        populateDex( pokedex, dexData[ slug ] );
     });
 }
 
@@ -399,14 +398,14 @@ function populateDexes( container, game ) {
  * @param {Object} dexEntry
  */
 function populateDex( ol, dexEntry ) {
-    const order = Object.keys( dexEntry.order );
+    const order = Object.keys( dexEntry.order ).sort( ( a, b ) => a - b );
     const entries = Object.entries( pokemonData );
     order.forEach( dexNum => {
         const ids = dexEntry.order[ dexNum ].sort( sortIds );
         ids.forEach( id => {
             const [ base_id, form_id]  = id;
             const [ slug, pokemonEntry ] = entries.find(
-                tup => tup[ 1 ].id == base_id && tup[ 1 ].form_id == form_id
+                tup => tup[ 1 ].id === base_id && tup[ 1 ].form_id === form_id
             );
             createPokemonEntry( dexNum, slug, pokemonEntry ).forEach( li => {
                 ol.append( li );
@@ -478,18 +477,16 @@ function populateFilters() {
     // Generation
     dropdown = createFilter( filters, "gen", "Generation" );
     for ( let i = 1; i <= gameData[ currentGame ].gen; i++ ) {
-        dropdown.append( createCheckbox( "gen", "Generation " + toRoman(i), i ) );
+        dropdown.append( createCheckbox( "gen", "Generation " + toRoman( i ), i ) );
     }
     // Version
-    dropdown = createFilter( filters, "version", "Version" );
-    if ( gameData[ currentGame ].versions ) {
+    const disabled = currentVersions.length === 0;
+    dropdown = createFilter( filters, "version", "Version", false, false, disabled );
+    if ( !disabled ) {
         dropdown.append( createCheckbox( "version", "Both", "both" ) );
         gameData[ currentGame ].versions.forEach( version => {
             dropdown.append( createCheckbox( "version", version.name, version.slug ) );
         });
-    } else {
-        filter.classList.add( "disabled" );
-        filter.querySelector( "button" ).innerHTML = "N/A";
     }
     // Exclude Type
     var dropdown = createFilter( filters, "exclude-type", "Exclude Type", true, false );
@@ -523,7 +520,7 @@ function populateFilters() {
  * @param {boolean} inclSelectAll
  * @returns {HTMLOListElement} dropdown
  */
-function createFilter( container, type, name, inclSelectAll = true, selectAll = true ) {
+function createFilter( container, type, name, inclSelectAll = true, selectAll = true, disabled = false ) {
     const dropdown = document.createElement( "ol" );
     dropdown.classList.add( "dropdown-menu" );
     if ( inclSelectAll ) dropdown.append( createCheckbox( type, "Select All", "all", selectAll ) );
@@ -538,8 +535,13 @@ function createFilter( container, type, name, inclSelectAll = true, selectAll = 
 
     const button = document.createElement( "button" );
     button.id = type + "-filter";
-    button.innerHTML = selectAll ? "All Selected" : "None Selected";
-    button.addEventListener( "click", expandDropdown );
+    if ( !disabled ) {
+        button.innerHTML = selectAll ? "All Selected" : "None Selected";
+        button.addEventListener( "click", expandDropdown );        
+    } else {
+        button.innerHTML = "N/A";
+        div.classList.add( "disabled" );
+    }
 
     container.append( div );
     div.append( label, button, dropdown );
@@ -646,7 +648,7 @@ function changeCheckbox( event ) {
     // If target is checked, add "active" class
     if ( target.checked ) {
         // If target was "all", add "active" class to all options
-        if ( target.value == "all" ) {
+        if ( target.value === "all" ) {
             document.querySelectorAll( selector ).forEach( input => {
                 input.checked = true;
                 input.parentNode.classList.add( "active" );
@@ -657,7 +659,7 @@ function changeCheckbox( event ) {
     // If target was unchecked, remove "active" class
     } else {
         // If target was "all", remove "active" class from all options
-        if ( target.value == "all" ) {
+        if ( target.value === "all" ) {
             document.querySelectorAll( selector ).forEach( (input) => {
                 input.checked = false;
                 input.parentNode.classList.remove( "active" );
@@ -674,7 +676,7 @@ function changeCheckbox( event ) {
     const exceptAllSelector = selector + ":not([value='all'])";
     const allOptions = document.querySelectorAll( exceptAllSelector );
     const checkedOptions = document.querySelectorAll( exceptAllSelector + ":checked" );
-    if ( allOptions.length == checkedOptions.length ) {
+    if ( allOptions.length === checkedOptions.length ) {
         const all = document.querySelector( selector + "[value='all']" );
         all.checked = true;
         all.parentNode.classList.add( "active" );
@@ -723,55 +725,52 @@ function filterDex() {
         if ( gmax ) slug = slug.substring( 0, slug.length - 5 );
         const pokemon = pokemonData[ slug ];
         // Check if Pokémon
-        const matchesQuery = query.length == 0 || slug.indexOf( query ) >= 0;
+        const matchesQuery = query.length === 0 || slug.indexOf( query ) >= 0;
         if ( matchesQuery ) {
             // Check if Pokémon belongs to any selected gen
             const isSelectedGen = gens.includes( "all" ) || gens.includes( pokemon.gen.toString() );
             if ( isSelectedGen ) {
                 // Check if Pokémon has any selected type
                 const hasType = (
-                    types.includes( "all" ) ||
-                    types.includes( pokemon.type[ 0 ] ) ||
-                    ( pokemon.type[ 1 ] && types.includes( pokemon.type[ 1 ] ) )
+                    types.includes( "all" )
+                    || types.includes( pokemon.type[ 0 ] )
+                    || ( pokemon.type[ 1 ] && types.includes( pokemon.type[ 1 ] ) )
                 );
                 if ( hasType ) {
                     // Check if Pokémon has any excluded type
                     const hasExclType = (
-                        exclTypes.includes( "all" ) ||
-                        exclTypes.includes( pokemon.type[ 0 ] ) ||
-                        ( pokemon.type[ 1 ] && exclTypes.includes( pokemon.type[ 1 ] ) )
+                        exclTypes.includes( "all" )
+                        || exclTypes.includes( pokemon.type[ 0 ] )
+                        || ( pokemon.type[ 1 ] && exclTypes.includes( pokemon.type[ 1 ] ) )
                     );
                     if ( !hasExclType ) {
                         // Check if Pokémon has any selected evolutionary stage
                         const hasSelectedEvolution = (
-                            evolutions.includes( "all" ) ||
-                            ( evolutions.includes( "nfe" ) && !pokemon.fully_evolved ) ||
-                            ( evolutions.includes( "fe" ) && pokemon.fully_evolved && !pokemon.mega ) ||
-                            ( evolutions.includes( "mega" ) && pokemon.mega )
+                            evolutions.includes( "all" )
+                            || ( evolutions.includes( "nfe" ) && !pokemon.fully_evolved )
+                            || ( evolutions.includes( "fe" ) && pokemon.fully_evolved && !pokemon.mega )
+                            || ( evolutions.includes( "mega" ) && pokemon.mega )
                         );
                         if ( hasSelectedEvolution ) {
                             // Check if Pokémon has version
                             const isSelectedVersion = (
-                                versions.includes( "all" ) || (
-                                    versions.includes( "both" ) && (
-                                        !pokemon.ver || (
-                                            !pokemon.ver.includes( currentVersions[ 0 ] ) &&
-                                            !pokemon.ver.includes( currentVersions[ 1 ] ) )
-                                        )
-                                    ) || (
-                                    pokemon.ver && (
-                                        ( versions.includes( currentVersions[ 0 ] ) && pokemon.ver.includes( currentVersions[ 0 ] ) ) ||
-                                        ( versions.includes( currentVersions[ 1 ] ) && pokemon.ver.includes( currentVersions[ 1 ] ) )
-                                    )
-                                )
+                                currentVersions.length === 0
+                                || versions.includes( "all" )
+                                || ( versions.includes( "both" )
+                                    && ( !pokemon.ver
+                                        || ( !pokemon.ver.includes( currentVersions[ 0 ] )
+                                            && !pokemon.ver.includes( currentVersions[ 1 ] ) ) ) )
+                                || ( pokemon.ver && (
+                                        ( versions.includes( currentVersions[ 0 ] ) && pokemon.ver.includes( currentVersions[ 0 ] ) )
+                                        || ( versions.includes( currentVersions[ 1 ] ) && pokemon.ver.includes( currentVersions[ 1 ] ) ) ) )
                             )
                             if ( isSelectedVersion ) {
                                 // Check if Pokémon has any tag
                                 const hasSelectedTag = (
-                                    tags.includes( "all" ) ||
-                                    ( tags.includes( "nonlegendary" ) && !pokemon.sublegendary && !pokemon.legendary && !pokemon.mythical ) ||
-                                    ( tags.includes( "gmax" ) && gmax ) ||
-                                    tags.filter( tag => tag != "gmax" ).some( tag => tag in pokemon )
+                                    tags.includes( "all" )
+                                    || ( tags.includes( "nonlegendary" ) && !pokemon.sublegendary && !pokemon.legendary && !pokemon.mythical )
+                                    || ( tags.includes( "gmax" ) && gmax )
+                                    || tags.filter( tag => tag !== "gmax" ).some( tag => tag in pokemon )
                                 );
                                 if ( hasSelectedTag ) {
                                     const isSelectedColor = colors.includes( "all" ) || colors.includes( pokemon.color );
@@ -796,7 +795,7 @@ function filterDex() {
  */
 function toggleEmptyDex() {
     document.querySelectorAll( ".pokedex" ).forEach( ol => {
-        if ( ol.children.length == ol.querySelectorAll( ":where(.filtered, .picked)" ).length ) {
+        if ( ol.children.length === ol.querySelectorAll( ":where(.filtered, .picked)" ).length ) {
             ol.parentNode.classList.add( "hidden" );
         } else {
             ol.parentNode.classList.remove( "hidden" );
@@ -819,7 +818,9 @@ function toggleEmptyDex() {
         if ( slugs[ 0 ] in gameData  ) {
             const game = slugs[ 0 ];
             if ( !gameData[ game ].disabled ) {
-                const versions = gameData[ game ].versions.map( ver => ver.slug );
+                const versions = gameData[ game ].versions
+                    ? gameData[ game ].versions.map( ver => ver.slug )
+                    : [];
                 slugs = slugs.slice( 1 );  // Remove hash
                 return [ game, versions, slugs ]
             }
@@ -833,7 +834,7 @@ function toggleEmptyDex() {
  */
 function updateTeamHash() {
     const slugs = [ currentGame ];
-    document.querySelectorAll( "#slots li:not(.empty)" ).forEach( (li) => {
+    document.querySelectorAll( "#slots li:not(.empty)" ).forEach( li => {
         slugs.push( li.dataset.slug );
     });
     const hash = slugs.join( "+" );
