@@ -75,7 +75,7 @@ article section {
     border-radius: 1em;
     border: 0.0625em solid #dedede;
     padding: 1.25em 1em 1em;
-    margin: 0 0 1.25em;
+    margin: 0 auto 1.25em;
     position: relative;
 }
 
@@ -201,12 +201,6 @@ button.button:focus {
 
 /* Team */
 
-#head {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
 #head>.wrap {
     background-color: #f0f0f0;
     padding: 1.5em 0 0;
@@ -246,12 +240,14 @@ button.button:focus {
 }
 
 .list li :where(.wrap, figure) {
+    background-size: 600% 600%;
     background-image: url(./img/types_bg.png);
     background-repeat: no-repeat;
 }
 
 .list li[data-type=""] :where(.wrap, figure) {
     background-image: url(./img/type_unknown.png);
+    background-size: contain;
 }
 
 .list li figure {
@@ -554,143 +550,143 @@ footer {
 }
 
 .list li[data-type$=normal] figure {
-    background-position: -192px 0
+    background-position: 20% 0
 }
 
 .list li[data-type^=fighting] .wrap {
-    background-position: -384px 0
+    background-position: 40% 0
 }
 
 .list li[data-type$=fighting] figure {
-    background-position: -576px 0
+    background-position: 60% 0
 }
 
 .list li[data-type^=flying] .wrap {
-    background-position: -768px 0
+    background-position: 80% 0
 }
 
 .list li[data-type$=flying] figure {
-    background-position: -960px 0
+    background-position: 100% 0
 }
 
 .list li[data-type^=poison] .wrap {
-    background-position: 0 -192px
+    background-position: 0 20%
 }
 
 .list li[data-type$=poison] figure {
-    background-position: -192px -192px
+    background-position: 20% 20%
 }
 
 .list li[data-type^=ground] .wrap {
-    background-position: -384px -192px
+    background-position: 40% 20%
 }
 
 .list li[data-type$=ground] figure {
-    background-position: -576px -192px
+    background-position: 60% 20%
 }
 
 .list li[data-type^=rock] .wrap {
-    background-position: -768px -192px
+    background-position: 80% 20%
 }
 
 .list li[data-type$=rock] figure {
-    background-position: -960px -192px
+    background-position: 100% 20%
 }
 
 .list li[data-type^=bug] .wrap {
-    background-position: 0 -384px
+    background-position: 0 40%
 }
 
 .list li[data-type$=bug] figure {
-    background-position: -192px -384px
+    background-position: 20% 40%
 }
 
 .list li[data-type^=ghost] .wrap {
-    background-position: -384px -384px
+    background-position: 40% 40%
 }
 
 .list li[data-type$=ghost] figure {
-    background-position: -576px -384px
+    background-position: 60% 40%
 }
 
 .list li[data-type^=steel] .wrap {
-    background-position: -768px -384px
+    background-position: 80% 40%
 }
 
 .list li[data-type$=steel] figure {
-    background-position: -960px -384px
+    background-position: 100% 40%
 }
 
 .list li[data-type^=fire] .wrap {
-    background-position: 0 -576px
+    background-position: 0 60%
 }
 
 .list li[data-type$=fire] figure {
-    background-position: -192px -576px
+    background-position: 20% 60%
 }
 
 .list li[data-type^=water] .wrap {
-    background-position: -384px -576px
+    background-position: 40% 60%
 }
 
 .list li[data-type$=water] figure {
-    background-position: -576px -576px
+    background-position: 60% 60%
 }
 
 .list li[data-type^=grass] .wrap {
-    background-position: -768px -576px
+    background-position: 80% 60%
 }
 
 .list li[data-type$=grass] figure {
-    background-position: -960px -576px
+    background-position: 100% 60%
 }
 
 .list li[data-type^=electric] .wrap {
-    background-position: 0 -768px
+    background-position: 0 80%
 }
 
 .list li[data-type$=electric] figure {
-    background-position: -192px -768px
+    background-position: 20% 80%
 }
 
 .list li[data-type^=psychic] .wrap {
-    background-position: -384px -768px
+    background-position: 40% 80%
 }
 
 .list li[data-type$=psychic] figure {
-    background-position: -576px -768px
+    background-position: 60% 80%
 }
 
 .list li[data-type^=ice] .wrap {
-    background-position: -768px -768px
+    background-position: 80% 80%
 }
 
 .list li[data-type$=ice] figure {
-    background-position: -960px -768px
+    background-position: 100% 80%
 }
 
 .list li[data-type^=dragon] .wrap {
-    background-position: 0 -960px
+    background-position: 0 100%
 }
 
 .list li[data-type$=dragon] figure {
-    background-position: -192px -960px
+    background-position: 20% 100%
 }
 
 .list li[data-type^=dark] .wrap {
-    background-position: -384px -960px
+    background-position: 40% 100%
 }
 
 .list li[data-type$=dark] figure {
-    background-position: -576px -960px
+    background-position: 60% 100%
 }
 
 .list li[data-type^=fairy] .wrap {
-    background-position: -768px -960px
+    background-position: 80% 100%
 }
 
 .list li[data-type$=fairy] figure {
-    background-position: -960px -960px
+    background-position: 100% 100%
 }
 
 .list li[data-type] .info {
@@ -815,5 +811,95 @@ footer {
     }
     100% {
         transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+@media screen and (min-height: 1080px) {
+    #head {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .list {
+        padding: 0;
+    }
+
+    :where(#team, #games) .list {
+        text-align: center;
+    }
+
+    #team .list li {
+        width: 8em;
+    }
+
+    #team .list img {
+        width: 5em !important;
+        margin: 0 auto !important;
+    }
+    
+    .list li :where(.wrap, figure) {
+        width: 5em;
+        margin: 0 auto;
+    }
+
+    .list li .info {
+        width: 7em;
+        height: 4em;
+        padding: 0 0.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list li .info .type {
+        display: none;
+    }
+    
+    .list-pokemon button img {
+        width: 3em;
+        height: 3em;
+    }
+}
+
+@media screen and (min-width: 775px) and (max-width: 1279px) {
+    #team {
+        max-width: 26em;
+        box-sizing: content-box;
+    }
+}
+
+@media screen and (max-width: 691px) and (orientation: portrait) {
+    article {
+        padding: 0;
+        max-width: 19.125em;
+    }
+    #games {
+        padding: 1.25em 0 1em;
+    }
+    #games .list {
+        padding: 0;
+    }
+    #games .list .game a {
+        margin: 1em 0;
+    }
+
+    #head p {
+        display: none;
+    }
+
+    #team-planner h1 .game.name {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #filters {
+        display: none;
+    }
+
+    footer {
+        font-size: 1em;
     }
 }
