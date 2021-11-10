@@ -827,7 +827,7 @@ footer {
         padding: 0;
     }
 
-    #team .list {
+    :where(#team, #games) .list {
         text-align: center;
     }
 
@@ -871,8 +871,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 691px) and (min-width: 306px) and (orientation: portrait) {
-
+@media screen and (max-width: 691px) and (orientation: portrait) {
     article {
         padding: 0;
         max-width: 19.125em;
@@ -891,7 +890,7 @@ footer {
         display: none;
     }
 
-    h1 .game.name {
+    #team-planner h1 .game.name {
         display: block;
         margin: 0 auto;
     }
