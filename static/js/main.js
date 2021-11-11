@@ -728,7 +728,9 @@ function filterDex() {
         const matchesQuery = query.length === 0 || slug.indexOf( query ) >= 0;
         if ( matchesQuery ) {
             // Check if Pokémon belongs to any selected gen
-            const isSelectedGen = gens.includes( "all" ) || gens.includes( pokemon.gen.toString() );
+            const isSelectedGen = gens.includes( "all" )
+                || ( gmax && gens.includes( "8" ) )
+                || ( !gmax && gens.includes( pokemon.gen.toString() ) );
             if ( isSelectedGen ) {
                 // Check if Pokémon has any selected type
                 const hasType = (
