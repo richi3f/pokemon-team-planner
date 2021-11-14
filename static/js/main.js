@@ -65,9 +65,7 @@ function hideHead() {
     }
 }
 
-/*******************************************************************************
- Game List
-*******************************************************************************/
+//#region Game List
 
 const GAME_PATH = IMG_PATH + "game/";
 const GAME_TEXT = "Welcome! Select a game and start planning your Pokémon team!";
@@ -122,9 +120,8 @@ function getGameName( game ) {
     return game.name || game.versions.map( ver => "Pokémon " + ver.name ).join( " and " );
 }
 
-/*******************************************************************************
- Team Slot
-*******************************************************************************/
+//#endregion
+//#region Team Slot
 
 const BASE_IMG = IMG_PATH + "pokemon/";
 const UNKNOWN_IMG = BASE_IMG + "0000_000_uk_n.png";
@@ -313,8 +310,10 @@ function getPokemonRenderUrl( pokemon, gmax = false ) {
     ].join( "_" ) + ".png";
 }
 
-
-function randomizeTeam( event ) {
+/**
+ * Randomly selects and adds up to 6 Pokémon to the current team.
+ */
+function randomizeTeam() {
     // Clear search bar
     const search = document.getElementById( "search-bar" );
     if ( search.value.length > 0 ) {
@@ -340,9 +339,8 @@ function randomizeTeam( event ) {
     }
 }
 
-/*******************************************************************************
- Dex
-*******************************************************************************/
+//#endregion
+//#region Dex
 
 /**
  * Populates the "#pokedexes" ol element with the Pokédexes available in the
@@ -450,9 +448,8 @@ function createPokemonEntry( dexNum, slug, pokemon ) {
     return [ li ];
 }
 
-/*******************************************************************************
- Filters
-*******************************************************************************/
+//#endregion
+//#region Filters
 
 const COLORS = [
     "red", "blue", "yellow", "green", "black",
@@ -805,9 +802,10 @@ function toggleEmptyDex() {
     });
 }
 
-/*******************************************************************************
- Miscellaneous
-*******************************************************************************/
+//#endregion
+//#region Team Analysis
+//#endregion
+//#region Miscellaneous
 
 /**
  * Reads the hash from the current URL and parses current game and Pokémon.
@@ -847,3 +845,5 @@ function updateTeamHash() {
         window.location.hash = hash;
     }
 }
+
+//#endregion
