@@ -192,6 +192,8 @@ function populateTeam( container ) {
 
     section.append( buttonContainer );
     buttonContainer.append( button );
+
+    createAnalysisTable( section );
 }
 
 /**
@@ -804,6 +806,65 @@ function toggleEmptyDex() {
 
 //#endregion
 //#region Team Analysis
+
+const TYPE_PATH = IMG_PATH + "type/";
+const TABLE_INDEX = [ "", "weaknesses", "immunities", "resistances", "coverage" ];
+
+/**
+ * Creates and returns a table with columns for each given type and 4 rows:
+ * weaknesses, immunities, resistances, and coverage.
+ * @param {Array} typeSlugs 
+ * @returns {HTMLElement} table
+ */
+function createTable( typeSlugs ) {
+    const table = document.createElement( "table" );
+    const thead = document.createElement( "thead" );
+    const tbody = document.createElement( "tbody" );
+    table.append( thead, tbody );
+    const rows = [];
+    for (let i = 0; i < TABLE_INDEX.length; i++) {
+        const isHeader = i == 0;
+        const tr = document.createElement( "tr" );
+        const td = document.createElement( "th" )
+        tr.append( td );
+        if ( isHeader) {
+            thead.append( tr );
+        } else {
+            tbody.append( tr );
+            tr.classList.add( TABLE_INDEX[ i ] );
+            td.innerHTML = capitalize( TABLE_INDEX[ i ] );
+        }
+        typeSlugs.forEach( slug => {
+            const td = document.createElement( isHeader ? "th" : "td" );
+            if ( isHeader ) {
+                const img = document.createElement( "img" );
+                img.setAttribute( "src", TYPE_PATH + slug + ".png" );
+                img.setAttribute( "alt", capitalize( slug ) );
+                td.append( img );
+            } else {
+                td.innerHTML = "0";
+            }
+            tr.append( td );
+            td.classList.add( slug );
+        });
+    }
+    return table;
+}
+
+/**
+ * Creates a split table for the current team's battle properties.
+ * @param {HTMLElement} container 
+ */
+function createAnalysisTable( container ) {
+    // Split table vertically
+    const types = Object.keys( typeData );
+    const typesPerTable = types.length / 2;
+    container.append(
+        createTable( types.slice( 0, typesPerTable ) ),
+        createTable( types.slice( typesPerTable ) )
+    );
+}
+
 //#endregion
 //#region Miscellaneous
 
