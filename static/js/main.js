@@ -50,6 +50,8 @@ function buildPage() {
         populateGameList( main.firstElementChild );
         return;
     }
+    completeTypeData();
+    completePokemonData();
     populateTeam( main.firstElementChild );
     populateDexes( main.lastElementChild );
     populateFilters();
@@ -254,7 +256,7 @@ function populateTeamSlot( event_or_slug ) {
         toggleEmptyDex();
     }
 
-    // TODO: update team type analysis
+    updateAnalysisTable();
     updateTeamHash();
 }
 
@@ -293,7 +295,7 @@ function populateTeamSlot( event_or_slug ) {
         toggleEmptyDex();
     }
 
-    // TODO: update team type analysis
+    updateAnalysisTable();
     updateTeamHash();
 }
 
@@ -400,14 +402,14 @@ function populateDexes( container ) {
 function populateDex( ol, dexEntry ) {
     const order = Object.keys( dexEntry.order ).sort( ( a, b ) => a - b );
     const entries = Object.entries( pokemonData );
-    order.forEach( dexNum => {
-        const ids = dexEntry.order[ dexNum ].sort( sortIds );
+    order.forEach( num => {
+        const ids = dexEntry.order[ num ].sort( sortIds );
         ids.forEach( id => {
             const [ base_id, form_id]  = id;
-            const [ slug, pokemonEntry ] = entries.find(
+            const [ slug, pokemon ] = entries.find(
                 tup => tup[ 1 ].id === base_id && tup[ 1 ].form_id === form_id
             );
-            createPokemonEntry( dexNum, slug, pokemonEntry ).forEach( li => {
+            createPokemonEntry( slug, pokemon ).forEach( li => {
                 ol.append( li );
             })
         });
@@ -416,12 +418,11 @@ function populateDex( ol, dexEntry ) {
 
 /**
  * Creates a li element containing the entry of a Pokémon.
- * @param {number} dexNum
  * @param {string} slug
  * @param {Object} pokemon
  * @returns {HTMLLIElement}
  */
-function createPokemonEntry( dexNum, slug, pokemon ) {
+function createPokemonEntry( slug, pokemon ) {
     const img = document.createElement( "img" );
     const button = document.createElement( "button" );
     const li = document.createElement( "li" );
@@ -431,7 +432,6 @@ function createPokemonEntry( dexNum, slug, pokemon ) {
     button.addEventListener( "click", populateTeamSlot );
 
     li.dataset.slug = slug;
-    li.dataset.dexNum = dexNum;
     li.dataset.id = pokemon.id;
     li.dataset.formId = pokemon.form_id;
     li.setAttribute( "title", pokemon.name );
@@ -440,6 +440,7 @@ function createPokemonEntry( dexNum, slug, pokemon ) {
     img.setAttribute( "src", getPokemonRenderUrl( pokemon ) );
     img.setAttribute( "loading", "lazy" );
 
+    // If Pokémon can Gigantamax, duplicate its entry
     if ( gameData[ currentGame ].gmax && pokemon.gmax ) {
         const clone = li.cloneNode( true );
         clone.dataset.slug = slug + "-gmax";
@@ -448,6 +449,43 @@ function createPokemonEntry( dexNum, slug, pokemon ) {
         return [ li, clone ];
     }
     return [ li ];
+}
+
+/**
+ * Completes each Pokémon's entry with type effectiveness data.
+ */
+function completePokemonData() {
+    Object.values( pokemonData ).forEach( pokemon => {
+        const type1 = pokemon.type[ 0 ];
+        const type2 = pokemon.type.length == 1
+            ? null
+            : pokemon.type[ 1 ];
+        if ( !type2 ) {
+            // If there is no secondary type, use data from primary type
+            pokemon.weaknesses = typeData[ type1 ].weak2 || [];
+            pokemon.immunities = typeData[ type1 ].immune2 || [];
+            pokemon.resistances = typeData[ type1 ].resists || [];
+            pokemon.coverage = typeData[ type1 ].weakens || [];
+        } else {
+            // Union of immunities
+            pokemon.immunities = union( typeData[ type1 ].immune2, typeData[ type2 ].immune2 );
+            // Union of differences (resists minus weakneses)
+            pokemon.resistances = union(
+                difference( typeData[ type1 ].resists, typeData[ type2 ].weak2 ),
+                difference( typeData[ type2 ].resists, typeData[ type1 ].weak2 )
+            );
+            // Union of differences (weaknesses minus resists) minus immunities
+            pokemon.weaknesses = difference(
+                union(
+                    difference( typeData[ type1 ].weak2, typeData[ type2 ].resists ),
+                    difference( typeData[ type2 ].weak2, typeData[ type1 ].resists )
+                ),
+                pokemon.immunities
+            );
+            // Union of weakened types
+            pokemon.coverage = union( typeData[ type1 ].weakens, typeData[ type2 ].weakens );
+        }
+    });
 }
 
 //#endregion
@@ -811,6 +849,21 @@ const TYPE_PATH = IMG_PATH + "type/";
 const TABLE_INDEX = [ "", "weaknesses", "immunities", "resistances", "coverage" ];
 
 /**
+ * Mutates the type data, to include what types each type is weakened by.
+ */
+function completeTypeData() {
+    Object.keys( typeData ).forEach( attackingType => {
+        typeData[ attackingType ].weakens = [];
+        Object.keys( typeData ).forEach( defendingType => {
+            if ( typeData[ defendingType ].weak2 
+                && typeData[ defendingType ].weak2.includes( attackingType ) ) {
+                typeData[ attackingType ].weakens.push( defendingType );
+            }
+        });
+    });
+}
+
+/**
  * Creates and returns a table with columns for each given type and 4 rows:
  * weaknesses, immunities, resistances, and coverage.
  * @param {Array} typeSlugs 
@@ -822,17 +875,17 @@ function createTable( typeSlugs ) {
     const tbody = document.createElement( "tbody" );
     table.append( thead, tbody );
     const rows = [];
-    for (let i = 0; i < TABLE_INDEX.length; i++) {
-        const isHeader = i == 0;
+    TABLE_INDEX.forEach( row => {
+        const isHeader = row === "";
         const tr = document.createElement( "tr" );
-        const td = document.createElement( "th" )
+        const td = document.createElement( "th" );
         tr.append( td );
         if ( isHeader) {
             thead.append( tr );
         } else {
             tbody.append( tr );
-            tr.classList.add( TABLE_INDEX[ i ] );
-            td.innerHTML = capitalize( TABLE_INDEX[ i ] );
+            tr.classList.add( row );
+            td.innerHTML = capitalize( row );
         }
         typeSlugs.forEach( slug => {
             const td = document.createElement( isHeader ? "th" : "td" );
@@ -847,7 +900,7 @@ function createTable( typeSlugs ) {
             tr.append( td );
             td.classList.add( slug );
         });
-    }
+    });
     return table;
 }
 
@@ -863,6 +916,35 @@ function createAnalysisTable( container ) {
         createTable( types.slice( 0, typesPerTable ) ),
         createTable( types.slice( typesPerTable ) )
     );
+}
+
+/**
+ * 
+ */
+function updateAnalysisTable() {
+    // Fetch current Pokémon slugs
+    const slots = document.querySelectorAll( "#slots li:not(.empty)" );
+    const slugs = Array.from( slots ).map( li => {
+        const slug = li.dataset.slug;
+        if ( slug.endsWith( "-gmax" ) ) {
+            return slug.substring( 0, slug.length - 5 );
+        }
+        return slug;
+    });
+    // Update analysis row for each type
+    TABLE_INDEX.slice( 1 ).forEach( row => {
+        Object.keys( typeData ).forEach( typeSlug => {
+            // Start counter
+            var count = 0;
+            // Increase count for each matching Pokémon
+            slugs.forEach( slug => {
+                if ( pokemonData[ slug ][ row ].includes( typeSlug ) ) count++;
+            });
+            // Update HTML
+            const td = document.querySelector( "tr." + row + " td." + typeSlug );
+            td.innerHTML = count;
+        });
+    });
 }
 
 //#endregion
@@ -905,6 +987,41 @@ function updateTeamHash() {
     } else {
         window.location.hash = hash;
     }
+}
+
+/**
+ * Returns unique elements of an array.
+ * @param {Array} array
+ * @returns {Array}
+ */
+ function set( array ) {
+    var a = array.concat();
+    for( let i = 0; i < a.length; i++ ) {
+        for( let j = i + 1; j < a.length; j++ ) {
+            if( a[ i ] === a[ j ]) a.splice( j--, 1 );
+        }
+    }
+    return a;
+}
+
+/**
+ * Returns elements in first array not present in second array.
+ * @param {Array} a
+ * @param {Array} b
+ * @returns {Array}
+ */
+function difference( a, b ) {
+    return a.filter( x => b.indexOf( x ) < 0 );
+}
+
+/**
+ * Returns unique elements of both arrays.
+ * @param {Array} a
+ * @param {Array} b
+ * @returns {Array}
+ */
+function union( a, b ) {
+    return set( a.concat( b ) );
 }
 
 //#endregion
