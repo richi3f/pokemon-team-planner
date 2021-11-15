@@ -457,10 +457,10 @@ function createPokemonEntry( slug, pokemon ) {
 function completePokemonData() {
     Object.values( pokemonData ).forEach( pokemon => {
         const type1 = pokemon.type[ 0 ];
-        const type2 = pokemon.type.length == 1
+        const type2 = pokemon.type.length === 1
             ? null
             : pokemon.type[ 1 ];
-        if ( !type2 ) {
+        if ( type2 == null ) {
             // If there is no secondary type, use data from primary type
             pokemon.weaknesses = typeData[ type1 ].weak2 || [];
             pokemon.immunities = typeData[ type1 ].immune2 || [];
@@ -871,32 +871,43 @@ function completeTypeData() {
  */
 function createTable( typeSlugs ) {
     const table = document.createElement( "table" );
+    const colgroup = document.createElement( "colgroup" );
     const thead = document.createElement( "thead" );
     const tbody = document.createElement( "tbody" );
-    table.append( thead, tbody );
-    const rows = [];
+    table.append( colgroup, thead, tbody );
     TABLE_INDEX.forEach( row => {
         const isHeader = row === "";
         const tr = document.createElement( "tr" );
         const td = document.createElement( "th" );
         tr.append( td );
-        if ( isHeader) {
+        if ( isHeader ) {
+            colgroup.append( document.createElement( "col" ) );
             thead.append( tr );
         } else {
             tbody.append( tr );
             tr.classList.add( row );
             td.innerHTML = capitalize( row );
         }
-        typeSlugs.forEach( slug => {
+        typeSlugs.forEach( ( slug, j ) => {
             const td = document.createElement( isHeader ? "th" : "td" );
             if ( isHeader ) {
+                colgroup.append( document.createElement( "col" ) );
                 const img = document.createElement( "img" );
                 img.setAttribute( "src", TYPE_PATH + slug + ".png" );
                 img.setAttribute( "alt", capitalize( slug ) );
                 td.append( img );
             } else {
                 td.innerHTML = "0";
+                td.addEventListener( "mouseover", () => {
+                    tr.classList.add( "hover" );
+                    colgroup.children[ j + 1 ].classList.add( "hover" );
+                });
+                td.addEventListener( "mouseout", () => {
+                    tr.classList.remove( "hover" );
+                    colgroup.children[ j + 1 ].classList.remove( "hover" );
+                });
             }
+            
             tr.append( td );
             td.classList.add( slug );
         });
