@@ -50,6 +50,8 @@ function buildPage() {
         populateGameList( main.firstElementChild );
         return;
     }
+    completeTypeData();
+    completePokemonData();
     populateTeam( main.firstElementChild );
     populateDexes( main.lastElementChild );
     populateFilters();
@@ -65,9 +67,7 @@ function hideHead() {
     }
 }
 
-/*******************************************************************************
- Game List
-*******************************************************************************/
+//#region Game List
 
 const GAME_PATH = IMG_PATH + "game/";
 const GAME_TEXT = "Welcome! Select a game and start planning your Pokémon team!";
@@ -122,9 +122,8 @@ function getGameName( game ) {
     return game.name || game.versions.map( ver => "Pokémon " + ver.name ).join( " and " );
 }
 
-/*******************************************************************************
- Team Slot
-*******************************************************************************/
+//#endregion
+//#region Team Slot
 
 const BASE_IMG = IMG_PATH + "pokemon/";
 const UNKNOWN_IMG = BASE_IMG + "0000_000_uk_n.png";
@@ -186,15 +185,38 @@ function populateTeam( container ) {
 
     var buttonContainer = document.createElement( "div" );
     buttonContainer.classList.add( "button" );
+    section.append( buttonContainer );
 
+    // Create button to randomize team
     var button = document.createElement( "button" );
     button.id = "randomize";
     button.innerHTML = "Randomize Team";
     button.classList.add( "button" );
     button.addEventListener( "click", randomizeTeam );
-
-    section.append( buttonContainer );
     buttonContainer.append( button );
+
+    // Create analysis table
+    const table = document.createElement( "div" );
+    table.classList.add( "table", "hidden" );
+
+    // Create button to hide/show team analysis
+    button = document.createElement( "button" );
+    button.id = "analysis";
+    button.innerHTML = "Show Team Analysis";
+    button.classList.add( "button" );
+    button.addEventListener( "click", () => {
+        if ( table.classList.contains( "hidden" ) ) {
+            button.innerHTML = "Hide Team Analysis";
+            table.classList.remove( "hidden" );
+        } else {
+            button.innerHTML = "Show Team Analysis";
+            table.classList.add( "hidden" );
+        }
+    });
+    section.append( table );
+    buttonContainer.append( button );
+
+    createAnalysisTable( table );
 }
 
 /**
@@ -255,7 +277,7 @@ function populateTeamSlot( event_or_slug ) {
         toggleEmptyDex();
     }
 
-    // TODO: update team type analysis
+    updateAnalysisTable();
     updateTeamHash();
 }
 
@@ -294,7 +316,7 @@ function populateTeamSlot( event_or_slug ) {
         toggleEmptyDex();
     }
 
-    // TODO: update team type analysis
+    updateAnalysisTable();
     updateTeamHash();
 }
 
@@ -313,8 +335,10 @@ function getPokemonRenderUrl( pokemon, gmax = false ) {
     ].join( "_" ) + ".png";
 }
 
-
-function randomizeTeam( event ) {
+/**
+ * Randomly selects and adds up to 6 Pokémon to the current team.
+ */
+function randomizeTeam() {
     // Clear search bar
     const search = document.getElementById( "search-bar" );
     if ( search.value.length > 0 ) {
@@ -340,9 +364,8 @@ function randomizeTeam( event ) {
     }
 }
 
-/*******************************************************************************
- Dex
-*******************************************************************************/
+//#endregion
+//#region Dex
 
 /**
  * Populates the "#pokedexes" ol element with the Pokédexes available in the
@@ -400,14 +423,14 @@ function populateDexes( container ) {
 function populateDex( ol, dexEntry ) {
     const order = Object.keys( dexEntry.order ).sort( ( a, b ) => a - b );
     const entries = Object.entries( pokemonData );
-    order.forEach( dexNum => {
-        const ids = dexEntry.order[ dexNum ].sort( sortIds );
+    order.forEach( num => {
+        const ids = dexEntry.order[ num ].sort( sortIds );
         ids.forEach( id => {
             const [ base_id, form_id]  = id;
-            const [ slug, pokemonEntry ] = entries.find(
+            const [ slug, pokemon ] = entries.find(
                 tup => tup[ 1 ].id === base_id && tup[ 1 ].form_id === form_id
             );
-            createPokemonEntry( dexNum, slug, pokemonEntry ).forEach( li => {
+            createPokemonEntry( slug, pokemon ).forEach( li => {
                 ol.append( li );
             })
         });
@@ -416,12 +439,11 @@ function populateDex( ol, dexEntry ) {
 
 /**
  * Creates a li element containing the entry of a Pokémon.
- * @param {number} dexNum
  * @param {string} slug
  * @param {Object} pokemon
  * @returns {HTMLLIElement}
  */
-function createPokemonEntry( dexNum, slug, pokemon ) {
+function createPokemonEntry( slug, pokemon ) {
     const img = document.createElement( "img" );
     const button = document.createElement( "button" );
     const li = document.createElement( "li" );
@@ -431,7 +453,6 @@ function createPokemonEntry( dexNum, slug, pokemon ) {
     button.addEventListener( "click", populateTeamSlot );
 
     li.dataset.slug = slug;
-    li.dataset.dexNum = dexNum;
     li.dataset.id = pokemon.id;
     li.dataset.formId = pokemon.form_id;
     li.setAttribute( "title", pokemon.name );
@@ -440,6 +461,7 @@ function createPokemonEntry( dexNum, slug, pokemon ) {
     img.setAttribute( "src", getPokemonRenderUrl( pokemon ) );
     img.setAttribute( "loading", "lazy" );
 
+    // If Pokémon can Gigantamax, duplicate its entry
     if ( gameData[ currentGame ].gmax && pokemon.gmax ) {
         const clone = li.cloneNode( true );
         clone.dataset.slug = slug + "-gmax";
@@ -450,9 +472,45 @@ function createPokemonEntry( dexNum, slug, pokemon ) {
     return [ li ];
 }
 
-/*******************************************************************************
- Filters
-*******************************************************************************/
+/**
+ * Completes each Pokémon's entry with type effectiveness data.
+ */
+function completePokemonData() {
+    Object.values( pokemonData ).forEach( pokemon => {
+        const type1 = pokemon.type[ 0 ];
+        const type2 = pokemon.type.length === 1
+            ? null
+            : pokemon.type[ 1 ];
+        if ( type2 == null ) {
+            // If there is no secondary type, use data from primary type
+            pokemon.weaknesses = typeData[ type1 ].weak2 || [];
+            pokemon.immunities = typeData[ type1 ].immune2 || [];
+            pokemon.resistances = typeData[ type1 ].resists || [];
+            pokemon.coverage = typeData[ type1 ].weakens || [];
+        } else {
+            // Union of immunities
+            pokemon.immunities = union( typeData[ type1 ].immune2, typeData[ type2 ].immune2 );
+            // Union of differences (resists minus weakneses)
+            pokemon.resistances = union(
+                difference( typeData[ type1 ].resists, typeData[ type2 ].weak2 ),
+                difference( typeData[ type2 ].resists, typeData[ type1 ].weak2 )
+            );
+            // Union of differences (weaknesses minus resists) minus immunities
+            pokemon.weaknesses = difference(
+                union(
+                    difference( typeData[ type1 ].weak2, typeData[ type2 ].resists ),
+                    difference( typeData[ type2 ].weak2, typeData[ type1 ].resists )
+                ),
+                pokemon.immunities
+            );
+            // Union of weakened types
+            pokemon.coverage = union( typeData[ type1 ].weakens, typeData[ type2 ].weakens );
+        }
+    });
+}
+
+//#endregion
+//#region Filters
 
 const COLORS = [
     "red", "blue", "yellow", "green", "black",
@@ -805,9 +863,124 @@ function toggleEmptyDex() {
     });
 }
 
-/*******************************************************************************
- Miscellaneous
-*******************************************************************************/
+//#endregion
+//#region Team Analysis
+
+const TYPE_PATH = IMG_PATH + "type/";
+const TABLE_INDEX = [ "", "weaknesses", "immunities", "resistances", "coverage" ];
+
+/**
+ * Mutates the type data, to include what types each type is weakened by.
+ */
+function completeTypeData() {
+    Object.keys( typeData ).forEach( attackingType => {
+        typeData[ attackingType ].weakens = [];
+        Object.keys( typeData ).forEach( defendingType => {
+            if ( typeData[ defendingType ].weak2 
+                && typeData[ defendingType ].weak2.includes( attackingType ) ) {
+                typeData[ attackingType ].weakens.push( defendingType );
+            }
+        });
+    });
+}
+
+/**
+ * Creates and returns a table with columns for each given type and 4 rows:
+ * weaknesses, immunities, resistances, and coverage.
+ * @param {Array} typeSlugs 
+ * @returns {HTMLElement} table
+ */
+function createTable( typeSlugs ) {
+    const table = document.createElement( "table" );
+    const colgroup = document.createElement( "colgroup" );
+    const thead = document.createElement( "thead" );
+    const tbody = document.createElement( "tbody" );
+    table.append( colgroup, thead, tbody );
+    TABLE_INDEX.forEach( row => {
+        const isHeader = row === "";
+        const tr = document.createElement( "tr" );
+        const td = document.createElement( "th" );
+        tr.append( td );
+        if ( isHeader ) {
+            colgroup.append( document.createElement( "col" ) );
+            thead.append( tr );
+        } else {
+            tbody.append( tr );
+            tr.classList.add( row );
+            td.innerHTML = capitalize( row );
+        }
+        typeSlugs.forEach( ( slug, j ) => {
+            const td = document.createElement( isHeader ? "th" : "td" );
+            if ( isHeader ) {
+                colgroup.append( document.createElement( "col" ) );
+                const img = document.createElement( "img" );
+                img.setAttribute( "src", TYPE_PATH + slug + ".png" );
+                img.setAttribute( "alt", capitalize( slug ) );
+                td.append( img );
+            } else {
+                td.innerHTML = "0";
+                td.addEventListener( "mouseover", () => {
+                    tr.classList.add( "hover" );
+                    colgroup.children[ j + 1 ].classList.add( "hover" );
+                });
+                td.addEventListener( "mouseout", () => {
+                    tr.classList.remove( "hover" );
+                    colgroup.children[ j + 1 ].classList.remove( "hover" );
+                });
+            }
+            
+            tr.append( td );
+            td.classList.add( slug );
+        });
+    });
+    return table;
+}
+
+/**
+ * Creates a split table for the current team's battle properties.
+ * @param {HTMLElement} container 
+ */
+function createAnalysisTable( container ) {
+    // Split table vertically
+    const types = Object.keys( typeData );
+    const typesPerTable = types.length / 2;
+    container.append(
+        createTable( types.slice( 0, typesPerTable ) ),
+        createTable( types.slice( typesPerTable ) )
+    );
+}
+
+/**
+ * 
+ */
+function updateAnalysisTable() {
+    // Fetch current Pokémon slugs
+    const slots = document.querySelectorAll( "#slots li:not(.empty)" );
+    const slugs = Array.from( slots ).map( li => {
+        const slug = li.dataset.slug;
+        if ( slug.endsWith( "-gmax" ) ) {
+            return slug.substring( 0, slug.length - 5 );
+        }
+        return slug;
+    });
+    // Update analysis row for each type
+    TABLE_INDEX.slice( 1 ).forEach( row => {
+        Object.keys( typeData ).forEach( typeSlug => {
+            // Start counter
+            var count = 0;
+            // Increase count for each matching Pokémon
+            slugs.forEach( slug => {
+                if ( pokemonData[ slug ][ row ].includes( typeSlug ) ) count++;
+            });
+            // Update HTML
+            const td = document.querySelector( "tr." + row + " td." + typeSlug );
+            td.innerHTML = count;
+        });
+    });
+}
+
+//#endregion
+//#region Miscellaneous
 
 /**
  * Reads the hash from the current URL and parses current game and Pokémon.
@@ -847,3 +1020,40 @@ function updateTeamHash() {
         window.location.hash = hash;
     }
 }
+
+/**
+ * Returns unique elements of an array.
+ * @param {Array} array
+ * @returns {Array}
+ */
+ function set( array ) {
+    var a = array.concat();
+    for( let i = 0; i < a.length; i++ ) {
+        for( let j = i + 1; j < a.length; j++ ) {
+            if( a[ i ] === a[ j ]) a.splice( j--, 1 );
+        }
+    }
+    return a;
+}
+
+/**
+ * Returns elements in first array not present in second array.
+ * @param {Array} a
+ * @param {Array} b
+ * @returns {Array}
+ */
+function difference( a, b ) {
+    return a.filter( x => b.indexOf( x ) < 0 );
+}
+
+/**
+ * Returns unique elements of both arrays.
+ * @param {Array} a
+ * @param {Array} b
+ * @returns {Array}
+ */
+function union( a, b ) {
+    return set( a.concat( b ) );
+}
+
+//#endregion

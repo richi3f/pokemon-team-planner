@@ -96,7 +96,7 @@ div.button {
 }
 
 div.button button.button {
-    margin: 1.5em 0 1em;
+    margin: 1.5em 0.5em 1em;
 }
 
 button.button {
@@ -443,6 +443,21 @@ button.button:focus {
     cursor: text;
 }
 
+/* Table */
+
+#team table {
+    margin: 1.5em auto;
+    text-align: center;
+}
+
+#team table tr:nth-child(even) {
+    border: 1px solid #d9d9d9;
+    border-width: 1px 0;
+}
+
+#team table :where(col, tr).hover {
+    background: #e6e6e6
+}
 
 /* Footer */
 
@@ -814,7 +829,7 @@ footer {
     }
 }
 
-@media screen and (min-height: 1080px) {
+@media screen and (min-height: 780px) {
     #head {
         position: sticky;
         top: 0;
