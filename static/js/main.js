@@ -95,9 +95,8 @@ function populateGameList( container ) {
         const name = getGameName( game );
         const li = document.createElement( "li" );
         const a = document.createElement( "a" );
-        const button = document.createElement( "button" );
         const img = document.createElement( "img" );
-        const url = (game.disabled ? "#" : "./plan/#" + slug);
+        const url = (game.disabled ? "#" : JS_PATH + "../../plan/#" + slug);
 
         ol.append( li );
         li.append( a );
@@ -987,7 +986,9 @@ function updateAnalysisTable() {
  * @returns {Array} array containing current game, versions, and slugs
  */
  function parseUrl() {
-    if ( window.location.hash ) {
+    // Make sure location is planner and hash exists
+    if ( window.location.pathname.split( "/" ).includes( "plan" )
+        && window.location.hash ) {
         let slugs = window.location.hash.substring( 1 ).split( "+" );
         // Check game is valid and not disabled
         if ( slugs[ 0 ] in gameData  ) {
