@@ -829,7 +829,7 @@ footer {
     }
 }
 
-@media screen and (min-height: 1080px) {
+@media screen and (min-height: 780px) {
     #head {
         position: sticky;
         top: 0;
