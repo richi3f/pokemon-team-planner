@@ -185,17 +185,38 @@ function populateTeam( container ) {
 
     var buttonContainer = document.createElement( "div" );
     buttonContainer.classList.add( "button" );
+    section.append( buttonContainer );
 
+    // Create button to randomize team
     var button = document.createElement( "button" );
     button.id = "randomize";
     button.innerHTML = "Randomize Team";
     button.classList.add( "button" );
     button.addEventListener( "click", randomizeTeam );
-
-    section.append( buttonContainer );
     buttonContainer.append( button );
 
-    createAnalysisTable( section );
+    // Create analysis table
+    const table = document.createElement( "div" );
+    table.classList.add( "table", "hidden" );
+
+    // Create button to hide/show team analysis
+    button = document.createElement( "button" );
+    button.id = "analysis";
+    button.innerHTML = "Show Team Analysis";
+    button.classList.add( "button" );
+    button.addEventListener( "click", () => {
+        if ( table.classList.contains( "hidden" ) ) {
+            button.innerHTML = "Hide Team Analysis";
+            table.classList.remove( "hidden" );
+        } else {
+            button.innerHTML = "Show Team Analysis";
+            table.classList.add( "hidden" );
+        }
+    });
+    section.append( table );
+    buttonContainer.append( button );
+
+    createAnalysisTable( table );
 }
 
 /**
