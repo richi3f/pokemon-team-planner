@@ -540,7 +540,7 @@ function populateFilters() {
     const disabled = currentVersions.length === 0;
     dropdown = createFilter( filters, "version", "Version", false, false, disabled );
     if ( !disabled ) {
-        dropdown.append( createCheckbox( "version", "Both", "both" ) );
+        dropdown.append( createCheckbox( "version", "Both Versions", "both" ) );
         gameData[ currentGame ].versions.forEach( version => {
             dropdown.append( createCheckbox( "version", version.name, version.slug ) );
         });
@@ -724,8 +724,10 @@ function changeCheckbox( event ) {
         } else {
             target.parentNode.classList.remove( "active" );
             const all = document.querySelector( selector + "[value='all']" );
-            all.checked = false;
-            all.parentNode.classList.remove( "active" );
+            if ( all ) {
+                all.checked = false;
+                all.parentNode.classList.remove( "active" );
+            }
         }
     }
     // Update count in button
@@ -735,8 +737,10 @@ function changeCheckbox( event ) {
     const checkedOptions = document.querySelectorAll( exceptAllSelector + ":checked" );
     if ( allOptions.length === checkedOptions.length ) {
         const all = document.querySelector( selector + "[value='all']" );
-        all.checked = true;
-        all.parentNode.classList.add( "active" );
+        if ( all ) {
+            all.checked = true;
+            all.parentNode.classList.add( "active" );
+        }
         button.innerHTML = "All Selected";
     } else {
         switch ( checkedOptions.length ) {
