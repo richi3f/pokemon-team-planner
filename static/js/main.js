@@ -830,10 +830,17 @@ function filterDex() {
                             if ( isSelectedVersion ) {
                                 // Check if Pokémon has any tag
                                 const hasSelectedTag = (
-                                    tags.includes( "all" )
-                                    || ( tags.includes( "nonlegendary" ) && !pokemon.sublegendary && !pokemon.legendary && !pokemon.mythical )
-                                    || ( tags.includes( "gmax" ) && gmax )
-                                    || tags.filter( tag => tag !== "gmax" ).some( tag => tag in pokemon )
+                                    ( tags.length > 0 )
+                                    && (
+                                        tags.includes( "all" ) || (
+                                            gmax
+                                            ? tags.includes( "gmax" )
+                                            : (
+                                                ( tags.includes( "nonlegendary" ) && !pokemon.sublegendary && !pokemon.legendary && !pokemon.mythical )
+                                                || tags.filter( tag => tag !== "gmax" ).some( tag => tag in pokemon )
+                                            )
+                                        )
+                                    )
                                 );
                                 if ( hasSelectedTag ) {
                                     const isSelectedColor = colors.includes( "all" ) || colors.includes( pokemon.color );
