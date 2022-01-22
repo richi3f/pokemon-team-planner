@@ -45,8 +45,7 @@ export default {
     "arceus": {
         "name": "Pokémon Legends: Arceus",
         "gen": 8,
-        "dex_slugs": ["hisui"],
-        "disabled": true
+        "dex_slugs": ["hisui"]
     },
     "home": {
         "name": "Pokémon HOME",
