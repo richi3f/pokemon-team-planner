@@ -330,7 +330,7 @@ function getPokemonRenderUrl( pokemon, gmax = false ) {
     return BASE_IMG + [
         String( pokemon.id ).padStart( 4, "0" ),
         String( pokemon.form_id ).padStart( 3, "0" ),
-        ( gmax && pokemon.genders.length > 1 ) ? "mf" : pokemon.genders[ 0 ],
+        ( gmax && pokemon.gender.length > 1 ) ? "mf" : pokemon.gender[ 0 ],
         gmax ? "g" : "n"
     ].join( "_" ) + ".png";
 }
