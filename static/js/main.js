@@ -476,6 +476,7 @@ function createPokemonEntry( slug, pokemon ) {
  * Completes each Pokémon's entry with additional data (e.g., type effectiveness data).
  */
 function completePokemonData() {
+    const pokemonEntries = Object.entries( pokemonData );
     Object.values( pokemonData ).forEach( pokemon => {
         const type1 = pokemon.type[ 0 ];
         const type2 = pokemon.type.length === 1
@@ -507,18 +508,48 @@ function completePokemonData() {
             pokemon.coverage = union( typeData[ type1 ].weakens, typeData[ type2 ].weakens );
         }
         pokemon.version = [];
+        // Check if Pokémon evolves, if it does set fully-evolved to false
+        pokemon.fully_evolved = true
+        if ( pokemon.evolves ) {
+            pokemon.fully_evolved = !pokemon.evolves.some( id => {
+                const [ base_id, form_id ] = id;
+                // Check if evolution is available in dex (some evolutions may not be available in certain dexes)
+                return isInDex( base_id, form_id );
+            });
+        }
     });
-    const pokemonEntries = Object.entries( pokemonData );
     Object.entries( versionData ).forEach( tup => {
         const [ version, ids ] = tup;
         ids.forEach( id => {
-            const [ base_id, form_id] = id;
+            const [ base_id, form_id ] = id;
             const [ slug, pokemon ] = pokemonEntries.find(
                 tup => tup[ 1 ].id === base_id && tup[ 1 ].form_id === form_id
             );
             pokemon.version.push( version );
         });
     });
+}
+
+/**
+ * Checks whether given Pokémon ID is present in current dex.
+ * @param {Number} base_id 
+ * @param {Number} form_id 
+ * @returns {boolean}
+ */
+function isInDex( base_id, form_id ) {
+    var result = false;
+    gameData[ currentGame ].dex_slugs.forEach( slug => {
+        Object.values( dexData[ slug ].order ).flat().forEach( id => {
+            if ( id[ 0 ] === base_id && id[ 1 ] === form_id ) {
+                result = true;
+                return;
+            }
+        });
+        if ( result ) {
+            return;
+        }
+    });
+    return result;
 }
 
 //#endregion
