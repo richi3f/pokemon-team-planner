@@ -50,7 +50,7 @@ export default {
     "home": {
         "name": "Pokémon HOME",
         "gen": 8,
-        "dex_slugs": ["kanto_home", "johto_home", "hoenn_home", "sinnoh_home", "unova_home", "kalos_home", "alola_home", "galar_home", "other_home"],
+        "dex_slugs": ["kanto_home", "johto_home", "hoenn_home", "sinnoh_home", "unova_home", "kalos_home", "alola_home", "galar_home", "hisui_home", "other_home"],
         "mega": true,
         "gmax": true
     }
