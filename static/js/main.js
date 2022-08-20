@@ -60,10 +60,14 @@ function buildPage() {
 }
 
 function hideHead() {
+    const head = document.getElementById( "head" );
     const header = document.querySelector( "header" );
-    if ( document.documentElement.scrollTop > header.offsetHeight ){
+    const table = document.querySelector( ".table" );
+    if ( document.documentElement.scrollTop > header.offsetHeight && table.classList.contains( "hidden" ) ) {
+        head.classList.add( "head--sticky" );
         header.classList.add( "hidden" );
     } else {
+        head.classList.remove( "head--sticky" );
         header.classList.remove( "hidden" );
     }
 }
