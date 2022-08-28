@@ -202,13 +202,20 @@ button.button:focus {
 /* Team */
 
 #head>.wrap {
-    background-color: #f0f0f0;
+    position: relative;
     padding: 1.5em 0 0;
+}
+
+#head>.wrap::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 5rem 0;
+    background-color: #f0f0f0;
 }
 
 #head p {
     max-width: 75%;
-    margin: 0 auto 1.25em;
+    margin: 0 auto;
 }
 
 #team .list-pokemon img {
@@ -829,11 +836,40 @@ footer {
     }
 }
 
-@media screen and (min-height: 780px) {
-    #head {
+@media screen and (min-width: 1280px) {
+    .head--sticky {
         position: sticky;
-        top: 0;
         z-index: 100;
+        top: 0;
+        left: 0;
+        margin-bottom: 2rem;
+    }
+
+    .head--sticky .info,
+    .head--sticky .button,
+    .head--sticky h2 {
+        display: none;
+    }
+
+    .head--sticky #team,
+    .head--sticky #slots {
+        width: 100%;
+        margin: 0;
+    }
+
+    .head--sticky #team {
+        display: flex;
+        height: 20vh;
+    }
+
+    .head--sticky #slots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .head--sticky li {
+        transform: scale(0.75);
     }
 }
 
@@ -854,7 +890,7 @@ footer {
         width: 5em !important;
         margin: 0 auto !important;
     }
-    
+
     .list li :where(.wrap, figure) {
         width: 5em;
         margin: 0 auto;
@@ -872,7 +908,7 @@ footer {
     .list li .info .type {
         display: none;
     }
-    
+
     .list-pokemon button img {
         width: 3em;
         height: 3em;
