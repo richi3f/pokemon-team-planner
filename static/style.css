@@ -836,7 +836,7 @@ footer {
     }
 }
 
-@media screen and (min-height: 780px) and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
     .head--sticky {
         position: sticky;
         z-index: 100;
