@@ -39,13 +39,17 @@ export default {
     "bdsp": {
         "gen": 8,
         "dex_slugs": ["sinnoh_bdsp", "sinnoh_other"],
-        "versions": [{ "slug": "bd", "name": "Brilliant Diamond" }, { "slug": "sp", "name": "Shining Pearl" }
-        ]
+        "versions": [{ "slug": "bd", "name": "Brilliant Diamond" }, { "slug": "sp", "name": "Shining Pearl" }]
     },
     "arceus": {
         "name": "Pokémon Legends: Arceus",
         "gen": 8,
         "dex_slugs": ["hisui"]
+    },
+    "sv": {
+        "disabled": true,
+        "gen": 8,
+        "versions": [{ "slug": "scarlet", "name": "Scarlet" }, { "slug": "violet", "name": "Violet" }]
     },
     "home": {
         "name": "Pokémon HOME",

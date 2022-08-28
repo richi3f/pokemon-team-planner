@@ -169,7 +169,9 @@ button.button:focus {
 }
 
 .game.name.oras,
-.game.oras a img {
+.game.oras a img,
+.game.name.sv,
+.game.sv a img {
     width: 13rem;
     height: 4rem;
     line-height: 4rem;
@@ -197,6 +199,11 @@ button.button:focus {
 .game.name.home,
 .game.home a img {
     width: 7rem;
+}
+
+.game.name.sv,
+.game.sv a img {
+    width: 14rem;
 }
 
 /* Team */
