@@ -253,7 +253,8 @@ function populateTeamSlot( event_or_slug ) {
     var gmax = slug.endsWith( "-gmax" );
 
     const pokemon = pokemonData[ gmax ? slug.substring( 0, slug.length - 5 ) : slug ];
-    slot.dataset.type = pokemon.type;
+    const type = getPokemonType( pokemon );pokemon.type
+    slot.dataset.type = type;
     slot.classList.remove( "empty" );
     slot.dataset.slug = slug;
 
@@ -270,8 +271,8 @@ function populateTeamSlot( event_or_slug ) {
 
     var span = slot.querySelectorAll( ".type" );
     span.forEach( ( span, i ) => {
-        span.classList.add( pokemon.type[ i ] );
-        span.innerHTML = ( pokemon.type[ i ] ) ? capitalize( pokemon.type[ i ] ) : "";
+        span.classList.add( type[ i ] );
+        span.innerHTML = ( type[ i ] ) ? capitalize( type[ i ] ) : "";
     });
 
 
@@ -482,10 +483,11 @@ function createPokemonEntry( slug, pokemon ) {
 function completePokemonData() {
     const pokemonEntries = Object.entries( pokemonData );
     Object.values( pokemonData ).forEach( pokemon => {
-        const type1 = pokemon.type[ 0 ];
-        const type2 = pokemon.type.length === 1
+        const type = getPokemonType( pokemon );
+        const type1 = type[ 0 ];
+        const type2 = type.length === 1
             ? null
-            : pokemon.type[ 1 ];
+            : type[ 1 ];
         if ( type2 == null ) {
             // If there is no secondary type, use data from primary type
             pokemon.weaknesses = typeData[ type1 ].weak2 || [];
@@ -554,6 +556,18 @@ function isInDex( base_id, form_id ) {
         }
     });
     return result;
+}
+
+/**
+ * Returns the type of the given Pokémon.
+ * @param {Object} pokemon 
+ */
+function getPokemonType( pokemon ) {
+    if ( pokemon.past_type == null
+        || ( gameData[ currentGame ].gen >= pokemon.past_type.generation ) ) {
+        return pokemon.type;
+    }
+    return pokemon.past_type.pokemon_type;
 }
 
 //#endregion
@@ -847,12 +861,13 @@ function filterDex() {
             );
             if ( isSelectedGen ) {
                 // Check if Pokémon has any selected type
+                const type = getPokemonType( pokemon );
                 const hasType = (
                     types.length > 0 
                     && (
                         types.includes( "all" )
-                        || types.includes( pokemon.type[ 0 ] )
-                        || ( pokemon.type[ 1 ] && types.includes( pokemon.type[ 1 ] ) )
+                        || types.includes( type[ 0 ] )
+                        || ( type[ 1 ] && types.includes( type[ 1 ] ) )
                     )
                 );
                 if ( hasType ) {
@@ -861,8 +876,8 @@ function filterDex() {
                         exclTypes.length > 0 
                         && (
                             exclTypes.includes( "all" )
-                            || exclTypes.includes( pokemon.type[ 0 ] )
-                            || ( pokemon.type[ 1 ] && exclTypes.includes( pokemon.type[ 1 ] ) )
+                            || exclTypes.includes( type[ 0 ] )
+                            || ( type[ 1 ] && exclTypes.includes( type[ 1 ] ) )
                         )
                     );
                     if ( !hasExclType ) {
