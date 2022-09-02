@@ -126,6 +126,18 @@ function getGameName( game ) {
     return game.name || game.versions.map( ver => "Pokémon " + ver.name ).join( " and " );
 }
 
+
+/**
+ * Returns the type chart corresponding to the current generation.
+ * @returns {Object}
+ */
+function getCurrentTypeData() {
+    const currentGeneration = gameData[ currentGame ].gen;
+    return typeData.filter(
+        data => data.generation <= currentGeneration
+    )[ 0 ].type_data;
+}
+
 //#endregion
 //#region Team Slot
 
@@ -482,7 +494,10 @@ function createPokemonEntry( slug, pokemon ) {
  */
 function completePokemonData() {
     const pokemonEntries = Object.entries( pokemonData );
-    Object.values( pokemonData ).forEach( pokemon => {
+    const typeData = getCurrentTypeData();
+    Object.values( pokemonData ).filter(
+        pokemon => isInDex( pokemon.id, pokemon.form_id )
+    ).forEach( pokemon => {
         const type = getPokemonType( pokemon );
         const type1 = type[ 0 ];
         const type2 = type.length === 1
@@ -513,7 +528,6 @@ function completePokemonData() {
             // Union of weakened types
             pokemon.coverage = union( typeData[ type1 ].weakens, typeData[ type2 ].weakens );
         }
-        pokemon.version = [];
         // Check if Pokémon evolves, if it does set fully-evolved to false
         pokemon.fully_evolved = true
         if ( pokemon.evolves ) {
@@ -531,6 +545,9 @@ function completePokemonData() {
             const [ slug, pokemon ] = pokemonEntries.find(
                 tup => tup[ 1 ].id === base_id && tup[ 1 ].form_id === form_id
             );
+            if ( pokemon.version == null ) {
+                pokemon.version = [];
+            }
             pokemon.version.push( version );
         });
     });
@@ -561,6 +578,7 @@ function isInDex( base_id, form_id ) {
 /**
  * Returns the type of the given Pokémon.
  * @param {Object} pokemon 
+ * @returns {string[]}
  */
 function getPokemonType( pokemon ) {
     if ( pokemon.past_type == null
@@ -583,7 +601,7 @@ const COLORS = [
  */
 function populateFilters() {
     const filters = document.getElementById( "filters" );
-    const types = Object.keys( typeData );
+    const types = Object.keys( getCurrentTypeData() );
     // Type
     var type_dropdown = createFilter( filters, "type", "Type" );
     // Evolution
@@ -992,6 +1010,7 @@ const TABLE_INDEX = [ "", "weaknesses", "immunities", "resistances", "coverage" 
  * Mutates the type data, to include what types each type is weakened by.
  */
 function completeTypeData() {
+    const typeData = getCurrentTypeData();
     Object.keys( typeData ).forEach( attackingType => {
         typeData[ attackingType ].weakens = [];
         Object.keys( typeData ).forEach( defendingType => {
@@ -1061,7 +1080,7 @@ function createTable( typeSlugs ) {
  */
 function createAnalysisTable( container ) {
     // Split table vertically
-    const types = Object.keys( typeData );
+    const types = Object.keys( getCurrentTypeData() );
     const typesPerTable = types.length / 2;
     container.append(
         createTable( types.slice( 0, typesPerTable ) ),
@@ -1084,7 +1103,7 @@ function updateAnalysisTable() {
     });
     // Update analysis row for each type
     TABLE_INDEX.slice( 1 ).forEach( row => {
-        Object.keys( typeData ).forEach( typeSlug => {
+        Object.keys( getCurrentTypeData() ).forEach( typeSlug => {
             // Start counter
             var count = 0;
             // Increase count for each matching Pokémon
