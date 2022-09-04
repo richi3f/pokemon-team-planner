@@ -36,7 +36,6 @@ const JS_PATH = getScriptParent();
 const IMG_PATH = JS_PATH + "../img/";
 
 window.onload = buildPage;
-window.onscroll  = hideHead;
 
 function buildPage() {
     const main = document.getElementById( "team-planner" );
@@ -57,13 +56,19 @@ function buildPage() {
     populateDexes( main.lastElementChild );
     populateFilters();
     slugs.forEach( slug => populateTeamSlot( slug ) );
+    window.onscroll  = hideHead;
 }
 
 function hideHead() {
     const head = document.getElementById( "head" );
     const header = document.querySelector( "header" );
     const table = document.querySelector( ".table" );
-    if ( document.documentElement.scrollTop > header.offsetHeight && table.classList.contains( "hidden" ) ) {
+    const activeFilters = document.querySelectorAll( ".filter.active" )
+    if (
+        document.documentElement.scrollTop > 750
+        && table.classList.contains( "hidden" )
+        && activeFilters.length === 0
+    ) {
         head.classList.add( "head--sticky" );
         header.classList.add( "hidden" );
     } else {
