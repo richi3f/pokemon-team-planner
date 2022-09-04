@@ -178,8 +178,8 @@ button.button:focus {
     margin: 0.5em 0;
 }
 
-.game.name:where(.swsh, .arceus, .home),
-.game:where(.swsh, .arceus, .home) a img {
+.game.name:where(.gsc, .swsh, .arceus, .home),
+.game:where(.gsc, .swsh, .arceus, .home) a img {
     width: 10rem;
     height: 5rem;
     line-height: 5rem;
@@ -199,6 +199,53 @@ button.button:focus {
 .game.name.home,
 .game.home a img {
     width: 7rem;
+}
+
+.game.name.rby,
+.game.rby a img {
+    width: 10.5rem;
+    height: 1.875rem;
+    line-height: 1.875rem;
+    margin: 1.5625rem 0;
+}
+
+.game.name.gsc,
+.game.gsc a img {
+    width: 5.625rem;
+}
+
+.game.name.rse,
+.game.rse a img,
+.game.name.dppt,
+.game.dppt a img {
+    width: 13rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin: 1.25em 0;
+}
+
+.game.name.frlg,
+.game.frlg a img {
+    width: 11.5rem;
+    height: 3.25rem;
+    line-height: 3.25rem;
+    margin: 0.875em 0;
+}
+
+.game.name.bw,
+.game.bw a img {
+    width: 12.5rem;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    margin: 0.625em 0;
+}
+
+.game.name.b2w2,
+.game.b2w2 a img {
+    width: 12rem;
+    height: 3.375rem;
+    line-height: 3.375rem;
+    margin: 0.8125em 0;
 }
 
 .game.name.sv,

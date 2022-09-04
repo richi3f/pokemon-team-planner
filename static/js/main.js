@@ -123,7 +123,27 @@ function populateGameList( container ) {
  * @returns {string}
  */
 function getGameName( game ) {
-    return game.name || game.versions.map( ver => "Pokémon " + ver.name ).join( " and " );
+    if ( game.name == null ) {
+        const versions = game.versions.map( ver => "Pokémon " + ver.name );
+        if ( game.versions.length > 2 ) {
+            versions[ versions.length - 1 ] = "and " + versions[ versions.length - 1 ];
+            return versions.join( ", " );
+        }
+        return versions.join( " and " );
+    }
+    return game.name;
+}
+
+
+/**
+ * Returns the type chart corresponding to the current generation.
+ * @returns {Object}
+ */
+function getCurrentTypeData() {
+    const currentGeneration = gameData[ currentGame ].gen;
+    return typeData.filter(
+        data => data.generation <= currentGeneration
+    )[ 0 ].type_data;
 }
 
 //#endregion
@@ -253,7 +273,8 @@ function populateTeamSlot( event_or_slug ) {
     var gmax = slug.endsWith( "-gmax" );
 
     const pokemon = pokemonData[ gmax ? slug.substring( 0, slug.length - 5 ) : slug ];
-    slot.dataset.type = pokemon.type;
+    const type = getPokemonType( pokemon );
+    slot.dataset.type = type;
     slot.classList.remove( "empty" );
     slot.dataset.slug = slug;
 
@@ -264,14 +285,14 @@ function populateTeamSlot( event_or_slug ) {
 
     slot.querySelector( ".name" ).innerHTML = name;
 
-    if ( pokemon.form ) {
-        slot.querySelector( ".form" ).innerHTML = pokemon.form;
+    if ( pokemon.form_name ) {
+        slot.querySelector( ".form" ).innerHTML = pokemon.form_name;
     }
 
     var span = slot.querySelectorAll( ".type" );
     span.forEach( ( span, i ) => {
-        span.classList.add( pokemon.type[ i ] );
-        span.innerHTML = ( pokemon.type[ i ] ) ? capitalize( pokemon.type[ i ] ) : "";
+        span.classList.add( type[ i ] );
+        span.innerHTML = ( type[ i ] ) ? capitalize( type[ i ] ) : "";
     });
 
 
@@ -332,7 +353,7 @@ function populateTeamSlot( event_or_slug ) {
  */
 function getPokemonRenderUrl( pokemon, gmax = false ) {
     return BASE_IMG + [
-        String( pokemon.id ).padStart( 4, "0" ),
+        String( pokemon.base_id ).padStart( 4, "0" ),
         String( pokemon.form_id ).padStart( 3, "0" ),
         ( gmax && pokemon.gender.length > 1 ) ? "mf" : pokemon.gender[ 0 ],
         gmax ? "g" : "n"
@@ -432,7 +453,7 @@ function populateDex( ol, dexEntry ) {
         ids.forEach( id => {
             const [ base_id, form_id] = id;
             const [ slug, pokemon ] = entries.find(
-                tup => tup[ 1 ].id === base_id && tup[ 1 ].form_id === form_id
+                tup => tup[ 1 ].base_id === base_id && tup[ 1 ].form_id === form_id
             );
             createPokemonEntry( slug, pokemon ).forEach( li => {
                 ol.append( li );
@@ -457,7 +478,7 @@ function createPokemonEntry( slug, pokemon ) {
     button.addEventListener( "click", populateTeamSlot );
 
     li.dataset.slug = slug;
-    li.dataset.id = pokemon.id;
+    li.dataset.id = pokemon.base_id;
     li.dataset.formId = pokemon.form_id;
     li.setAttribute( "title", pokemon.name );
 
@@ -466,7 +487,7 @@ function createPokemonEntry( slug, pokemon ) {
     img.setAttribute( "loading", "lazy" );
 
     // If Pokémon can Gigantamax, duplicate its entry
-    if ( gameData[ currentGame ].gmax && pokemon.gmax ) {
+    if ( gameData[ currentGame ].gmax && pokemon.has_gigantamax ) {
         const clone = li.cloneNode( true );
         clone.dataset.slug = slug + "-gmax";
         clone.querySelector( "button" ).addEventListener( "click", populateTeamSlot );
@@ -481,11 +502,15 @@ function createPokemonEntry( slug, pokemon ) {
  */
 function completePokemonData() {
     const pokemonEntries = Object.entries( pokemonData );
-    Object.values( pokemonData ).forEach( pokemon => {
-        const type1 = pokemon.type[ 0 ];
-        const type2 = pokemon.type.length === 1
+    const typeData = getCurrentTypeData();
+    Object.values( pokemonData ).filter(
+        pokemon => isInDex( pokemon.base_id, pokemon.form_id )
+    ).forEach( pokemon => {
+        const type = getPokemonType( pokemon );
+        const type1 = type[ 0 ];
+        const type2 = type.length === 1
             ? null
-            : pokemon.type[ 1 ];
+            : type[ 1 ];
         if ( type2 == null ) {
             // If there is no secondary type, use data from primary type
             pokemon.weaknesses = typeData[ type1 ].weak2 || [];
@@ -511,11 +536,10 @@ function completePokemonData() {
             // Union of weakened types
             pokemon.coverage = union( typeData[ type1 ].weakens, typeData[ type2 ].weakens );
         }
-        pokemon.version = [];
         // Check if Pokémon evolves, if it does set fully-evolved to false
         pokemon.fully_evolved = true
-        if ( pokemon.evolves ) {
-            pokemon.fully_evolved = !pokemon.evolves.some( id => {
+        if ( pokemon.evolution_ids ) {
+            pokemon.fully_evolved = !pokemon.evolution_ids.some( id => {
                 const [ base_id, form_id ] = id;
                 // Check if evolution is available in dex (some evolutions may not be available in certain dexes)
                 return isInDex( base_id, form_id );
@@ -527,8 +551,11 @@ function completePokemonData() {
         ids.forEach( id => {
             const [ base_id, form_id ] = id;
             const [ slug, pokemon ] = pokemonEntries.find(
-                tup => tup[ 1 ].id === base_id && tup[ 1 ].form_id === form_id
+                tup => tup[ 1 ].base_id === base_id && tup[ 1 ].form_id === form_id
             );
+            if ( pokemon.version == null ) {
+                pokemon.version = [];
+            }
             pokemon.version.push( version );
         });
     });
@@ -556,6 +583,19 @@ function isInDex( base_id, form_id ) {
     return result;
 }
 
+/**
+ * Returns the type of the given Pokémon.
+ * @param {Object} pokemon 
+ * @returns {string[]}
+ */
+function getPokemonType( pokemon ) {
+    if ( pokemon.past_type == null
+        || ( gameData[ currentGame ].gen >= pokemon.past_type.generation ) ) {
+        return pokemon.pokemon_type;
+    }
+    return pokemon.past_type.pokemon_type;
+}
+
 //#endregion
 //#region Filters
 
@@ -569,7 +609,7 @@ const COLORS = [
  */
 function populateFilters() {
     const filters = document.getElementById( "filters" );
-    const types = Object.keys( typeData );
+    const types = Object.keys( getCurrentTypeData() );
     // Type
     var type_dropdown = createFilter( filters, "type", "Type" );
     // Evolution
@@ -586,12 +626,16 @@ function populateFilters() {
     }
     // Version
     const disabled = currentVersions.length === 0;
-    dropdown = createFilter( filters, "version", "Version", false, false, disabled );
+    dropdown = createFilter( filters, "version", "Version", true, true, disabled );
     if ( !disabled ) {
-        dropdown.append( createCheckbox( "version", "Both Versions", "both" ) );
+        const both_text = currentVersions.length > 2 ? "All Versions" : "Both Versions";
+        dropdown.append( createCheckbox( "version", both_text, "both" ) );
         gameData[ currentGame ].versions.forEach( version => {
             dropdown.append( createCheckbox( "version", version.name, version.slug ) );
         });
+        if ( gameData[ currentGame ].transfer ) {
+            dropdown.append( createCheckbox( "version", "Transfer-Only", "transfer_" + currentGame ) );
+        }
     }
     // Exclude Type
     var dropdown = createFilter( filters, "exclude-type", "Exclude Type", true, false );
@@ -601,10 +645,10 @@ function populateFilters() {
     });
     // Category
     dropdown = createFilter( filters, "tag", "Tag" );
-    dropdown.append( createCheckbox( "tag", "Non-Legendary", "nonlegendary" ) );
-    dropdown.append( createCheckbox( "tag", "Sub-Legendary", "sublegendary" ) );
-    dropdown.append( createCheckbox( "tag", "Legendary", "legendary" ) );
-    dropdown.append( createCheckbox( "tag", "Mythical", "mythical" ) );
+    dropdown.append( createCheckbox( "tag", "Non-Legendary", "is_nonlegendary" ) );
+    dropdown.append( createCheckbox( "tag", "Sub-Legendary", "is_sublegendary" ) );
+    dropdown.append( createCheckbox( "tag", "Legendary", "is_legendary" ) );
+    dropdown.append( createCheckbox( "tag", "Mythical", "is_mythical" ) );
     if ( gameData[ currentGame ].gmax ) dropdown.append(
         createCheckbox( "tag", "Gigantamax", "gmax" )
     );
@@ -818,6 +862,134 @@ function getSelectedFilters( type ) {
 }
 
 /**
+ * Returns true if Pokémon is in version
+ * @param {Object} pokemon 
+ * @param {string[]} versions 
+ * @returns 
+ */
+function pokemonIsInVersion( pokemon, versions ) {
+    const pokemonVersion = pokemon.version || [];
+    return (
+        currentVersions.length === 0
+        || (
+            versions.length > 0
+            && (
+                ( 
+                    versions.includes( "both" )
+                    && (
+                        pokemonVersion.length === 0
+                        || (
+                            currentVersions.every( version => !pokemonVersion.includes( version ) )
+                            && !pokemonVersion.includes( "transfer_" + currentGame )
+                        )
+                    )
+                ) || (
+                    versions.some( version => pokemonVersion.includes( version ) )
+                )
+            )
+        )
+    );
+}
+
+/**
+ * Returns true if type is in selected types.
+ * @param {string[]} type 
+ * @param {string[]} selection 
+ * @returns bool
+ */
+function pokemonTypeIsSelected( type, selection ) {
+    return (
+        selection.length > 0 
+        && (
+            selection.includes( "all" )
+            || selection.includes( type[ 0 ] )
+            || ( type[ 1 ] && selection.includes( type[ 1 ] ) )
+        )
+    );
+}
+
+/**
+ * Returns true if Pokémon is in selected generations. Force Gigantamax Pokémon
+ * to be Generation 8.
+ * @param {string[]} type 
+ * @param {bool} is_gigantamax
+ * @param {string[]} selection 
+ * @returns bool
+ */
+function pokemonIsInGeneration( pokemon, is_gigantamax, generations ) {
+    return (
+        generations.length > 0
+        && (
+            generations.includes( "all" )
+            || ( is_gigantamax && generations.includes( "8" ) )
+            || ( !is_gigantamax && generations.includes( pokemon.generation.toString() ) )
+        )
+    );
+}
+
+/**
+ * Returns true if Pokémon is any of the given evolutionary stages.
+ * @param {Object} pokemon
+ * @param {string[]} colors 
+ * @returns 
+ */
+function pokemonIsEvolutionaryStage( pokemon, stages ) {
+    return (
+        stages.length > 0 
+        && (
+            stages.includes( "all" )
+            || ( stages.includes( "nfe" ) && !pokemon.fully_evolved )
+            || ( stages.includes( "fe" ) && pokemon.fully_evolved && !pokemon.is_mega )
+            || ( stages.includes( "mega" ) && pokemon.is_mega )
+        )
+    );
+}
+
+/**
+ * Returns true if Pokémon has any of the given tags.
+ * @param {Object} pokemon 
+ * @param {bool} is_gigantamax 
+ * @param {string[]} tags 
+ * @returns 
+ */
+function pokemonIsTagged( pokemon, is_gigantamax, tags ) {
+    return (
+        tags.length > 0
+        && (
+            tags.includes( "all" ) || (
+                is_gigantamax
+                ? tags.includes( "gmax" )
+                : (
+                    (
+                        tags.includes( "is_nonlegendary" )
+                        && !pokemon.is_sublegendary
+                        && !pokemon.is_legendary
+                        && !pokemon.is_mythical
+                    )
+                    || tags.filter( tag => tag !== "gmax" ).some( tag => tag in pokemon )
+                )
+            )
+        )
+    );
+}
+
+/**
+ * Returns true if Pokémon is any of the given colors.
+ * @param {Object} pokemon
+ * @param {string[]} colors 
+ * @returns 
+ */
+function pokemonIsColor( pokemon, colors ) {
+    return (
+        colors.length > 0
+        && (
+            colors.includes( "all" )
+            || colors.includes( pokemon.color )
+        )
+    );
+}
+
+/**
  * Filters the Pokémon list based on the selected filters.
  */
 function filterDex() {
@@ -833,121 +1005,20 @@ function filterDex() {
         const gmax = slug.endsWith( "-gmax" );
         if ( gmax ) slug = slug.substring( 0, slug.length - 5 );
         const pokemon = pokemonData[ slug ];
+        const type = getPokemonType( pokemon );
         // Check if Pokémon
         const matchesQuery = query.length === 0 || slug.indexOf( query ) >= 0;
-        if ( matchesQuery ) {
-            // Check if Pokémon belongs to any selected gen
-            const isSelectedGen = (
-                gens.length > 0
-                && (
-                    gens.includes( "all" )
-                    || ( gmax && gens.includes( "8" ) )
-                    || ( !gmax && gens.includes( pokemon.gen.toString() ) )
-                )
-            );
-            if ( isSelectedGen ) {
-                // Check if Pokémon has any selected type
-                const hasType = (
-                    types.length > 0 
-                    && (
-                        types.includes( "all" )
-                        || types.includes( pokemon.type[ 0 ] )
-                        || ( pokemon.type[ 1 ] && types.includes( pokemon.type[ 1 ] ) )
-                    )
-                );
-                if ( hasType ) {
-                    // Check if Pokémon has any excluded type
-                    const hasExclType = (
-                        exclTypes.length > 0 
-                        && (
-                            exclTypes.includes( "all" )
-                            || exclTypes.includes( pokemon.type[ 0 ] )
-                            || ( pokemon.type[ 1 ] && exclTypes.includes( pokemon.type[ 1 ] ) )
-                        )
-                    );
-                    if ( !hasExclType ) {
-                        // Check if Pokémon has any selected evolutionary stage
-                        const hasSelectedEvolution = (
-                            evolutions.length > 0 
-                            && (
-                                evolutions.includes( "all" )
-                                || ( evolutions.includes( "nfe" ) && !pokemon.fully_evolved )
-                                || ( evolutions.includes( "fe" ) && pokemon.fully_evolved && !pokemon.mega )
-                                || ( evolutions.includes( "mega" ) && pokemon.mega )
-                            )
-                        );
-                        if ( hasSelectedEvolution ) {
-                            // Check if Pokémon has version
-                            const isSelectedVersion = (
-                                currentVersions.length === 0
-                                || (
-                                    versions.length > 0
-                                    && (
-                                        versions.includes( "all" )
-                                        || (
-                                            versions.includes( "both" )
-                                            && (
-                                                pokemon.version.length === 0
-                                                || (
-                                                    !pokemon.version.includes( currentVersions[ 0 ] )
-                                                    && !pokemon.version.includes( currentVersions[ 1 ] )
-                                                )
-                                            )
-                                        )
-                                        || (
-                                            pokemon.version.length > 0
-                                            && (
-                                                (
-                                                    versions.includes( currentVersions[ 0 ] )
-                                                    && pokemon.version.includes( currentVersions[ 0 ] )
-                                                )
-                                                || (
-                                                    versions.includes( currentVersions[ 1 ] )
-                                                    && pokemon.version.includes( currentVersions[ 1 ] )
-                                                )
-                                            )
-                                        )
-                                    )
-                                )
-                            );
-                            if ( isSelectedVersion ) {
-                                // Check if Pokémon has any tag
-                                const hasSelectedTag = (
-                                    tags.length > 0
-                                    && (
-                                        tags.includes( "all" ) || (
-                                            gmax
-                                            ? tags.includes( "gmax" )
-                                            : (
-                                                (
-                                                    tags.includes( "nonlegendary" )
-                                                    && !pokemon.sublegendary
-                                                    && !pokemon.legendary
-                                                    && !pokemon.mythical
-                                                )
-                                                || tags.filter( tag => tag !== "gmax" ).some( tag => tag in pokemon )
-                                            )
-                                        )
-                                    )
-                                );
-                                if ( hasSelectedTag ) {
-                                    const isSelectedColor = (
-                                        colors.length > 0
-                                        && (
-                                            colors.includes( "all" )
-                                            || colors.includes( pokemon.color )
-                                        )
-                                    )
-                                    if ( isSelectedColor ) {
-                                        li.classList.remove( "filtered" );
-                                        return;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+        if ( matchesQuery 
+            && pokemonIsInGeneration( pokemon, gmax, gens )
+            && pokemonTypeIsSelected( type, types )
+            && !pokemonTypeIsSelected( type, exclTypes )
+            && pokemonIsEvolutionaryStage( pokemon, evolutions )
+            && pokemonIsInVersion( pokemon, versions )
+            && pokemonIsTagged( pokemon, gmax, tags )
+            && pokemonIsColor( pokemon, colors )
+        ) {
+            li.classList.remove( "filtered" );
+            return;
         }
         li.classList.add( "filtered" );
     });
@@ -977,6 +1048,7 @@ const TABLE_INDEX = [ "", "weaknesses", "immunities", "resistances", "coverage" 
  * Mutates the type data, to include what types each type is weakened by.
  */
 function completeTypeData() {
+    const typeData = getCurrentTypeData();
     Object.keys( typeData ).forEach( attackingType => {
         typeData[ attackingType ].weakens = [];
         Object.keys( typeData ).forEach( defendingType => {
@@ -1046,7 +1118,7 @@ function createTable( typeSlugs ) {
  */
 function createAnalysisTable( container ) {
     // Split table vertically
-    const types = Object.keys( typeData );
+    const types = Object.keys( getCurrentTypeData() );
     const typesPerTable = types.length / 2;
     container.append(
         createTable( types.slice( 0, typesPerTable ) ),
@@ -1069,7 +1141,7 @@ function updateAnalysisTable() {
     });
     // Update analysis row for each type
     TABLE_INDEX.slice( 1 ).forEach( row => {
-        Object.keys( typeData ).forEach( typeSlug => {
+        Object.keys( getCurrentTypeData() ).forEach( typeSlug => {
             // Start counter
             var count = 0;
             // Increase count for each matching Pokémon
