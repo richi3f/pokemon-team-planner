@@ -1,1 +1,23307 @@
-export default {"bulbasaur": {"id": 1, "form_id": 0, "name": "Bulbasaur", "type": ["grass", "poison"], "gender": ["mf"], "gender_ratio": 1, "gen": 1, "egg": ["monster", "grass"], "exp": "Medium Slow", "color": "green", "evolves": [[2, 0]]}, "ivysaur": {"id": 2, "form_id": 0, "name": "Ivysaur", "type": ["grass", "poison"], "gender": ["mf"], "gender_ratio": 1, "gen": 1, "egg": ["monster", "grass"], "exp": "Medium Slow", "color": "green", "evolves": [[3, 0]]}, "venusaur": {"id": 3, "form_id": 0, "name": "Venusaur", "type": ["grass", "poison"], "gender": ["fd", "md"], "gender_ratio": 1, "gen": 1, "egg": ["monster", "grass"], "exp": "Medium Slow", "color": "green", "gmax": true}, "venusaur-mega": {"id": 3, "form_id": 1, "name": "Mega Venusaur", "type": ["grass", "poison"], "gender": ["mf"], "gender_ratio": 1, "gen": 6, "egg": ["monster", "grass"], "exp": "Medium Slow", "color": "green", "mega": true}, "charmander": {"id": 4, "form_id": 0, "name": "Charmander", "type": ["fire"], "gender": ["mf"], "gender_ratio": 1, "gen": 1, "egg": ["monster", "dragon"], "exp": "Medium Slow", "color": "red", "evolves": [[5, 0]]}, "charmeleon": {"id": 5, "form_id": 0, "name": "Charmeleon", "type": ["fire"], "gender": ["mf"], "gender_ratio": 1, "gen": 1, "egg": ["monster", "dragon"], "exp": "Medium Slow", "color": "red", "evolves": [[6, 0]]}, "charizard": {"id": 6, "form_id": 0, "name": "Charizard", "type": ["fire", "flying"], "gender": ["mf"], "gender_ratio": 1, "gen": 1, "egg": ["monster", "dragon"], "exp": "Medium Slow", "color": "red", "gmax": true}, "charizard-mega-x": {"id": 6, "form_id": 1, "name": "Mega Charizard X", "type": ["fire", "dragon"], "gender": ["mf"], "gender_ratio": 1, "gen": 6, "egg": ["monster", "dragon"], "exp": "Medium Slow", "color": "black", "mega": true}, "charizard-mega-y": {"id": 6, "form_id": 2, "name": "Mega Charizard Y", "type": ["fire", "flying"], "gender": ["mf"], "gender_ratio": 1, "gen": 6, "egg": ["monster", "dragon"], "exp": "Medium Slow", "color": "red", "mega": true}, "squirtle": {"id": 7, "form_id": 0, "name": "Squirtle", "type": ["water"], "gender": ["mf"], "gender_ratio": 1, "gen": 1, "egg": ["monster", "water-1"], "exp": "Medium Slow", "color": "blue", "evolves": [[8, 0]]}, "wartortle": {"id": 8, "form_id": 0, "name": "Wartortle", "type": ["water"], "gender": ["mf"], "gender_ratio": 1, "gen": 1, "egg": ["monster", "water-1"], "exp": "Medium Slow", "color": "blue", "evolves": [[9, 0]]}, "blastoise": {"id": 9, "form_id": 0, "name": "Blastoise", "type": ["water"], "gender": ["mf"], "gender_ratio": 1, "gen": 1, "egg": ["monster", "water-1"], "exp": "Medium Slow", "color": "blue", "gmax": true}, "blastoise-mega": {"id": 9, "form_id": 1, "name": "Mega Blastoise", "type": ["water"], "gender": ["mf"], "gender_ratio": 1, "gen": 6, "egg": ["monster", "water-1"], "exp": "Medium Slow", "color": "blue", "mega": true}, "caterpie": {"id": 10, "form_id": 0, "name": "Caterpie", "type": ["bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["bug"], "exp": "Medium Fast", "color": "green", "evolves": [[11, 0]]}, "metapod": {"id": 11, "form_id": 0, "name": "Metapod", "type": ["bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["bug"], "exp": "Medium Fast", "color": "green", "evolves": [[12, 0]]}, "butterfree": {"id": 12, "form_id": 0, "name": "Butterfree", "type": ["bug", "flying"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 1, "egg": ["bug"], "exp": "Medium Fast", "color": "white", "gmax": true}, "weedle": {"id": 13, "form_id": 0, "name": "Weedle", "type": ["bug", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["bug"], "exp": "Medium Fast", "color": "brown", "evolves": [[14, 0]]}, "kakuna": {"id": 14, "form_id": 0, "name": "Kakuna", "type": ["bug", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["bug"], "exp": "Medium Fast", "color": "yellow", "evolves": [[15, 0]]}, "beedrill": {"id": 15, "form_id": 0, "name": "Beedrill", "type": ["bug", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["bug"], "exp": "Medium Fast", "color": "yellow"}, "beedrill-mega": {"id": 15, "form_id": 1, "name": "Mega Beedrill", "type": ["bug", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["bug"], "exp": "Medium Fast", "color": "yellow", "mega": true}, "pidgey": {"id": 16, "form_id": 0, "name": "Pidgey", "type": ["normal", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["flying"], "exp": "Medium Slow", "color": "brown", "evolves": [[17, 0]]}, "pidgeotto": {"id": 17, "form_id": 0, "name": "Pidgeotto", "type": ["normal", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["flying"], "exp": "Medium Slow", "color": "brown", "evolves": [[18, 0]]}, "pidgeot": {"id": 18, "form_id": 0, "name": "Pidgeot", "type": ["normal", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["flying"], "exp": "Medium Slow", "color": "brown"}, "pidgeot-mega": {"id": 18, "form_id": 1, "name": "Mega Pidgeot", "type": ["normal", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["flying"], "exp": "Medium Slow", "color": "brown", "mega": true}, "rattata": {"id": 19, "form_id": 0, "name": "Rattata", "type": ["normal"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 1, "egg": ["field"], "exp": "Medium Fast", "color": "purple", "evolves": [[20, 0]]}, "rattata-alola": {"id": 19, "form_id": 1, "name": "Alolan Rattata", "type": ["dark", "normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["field"], "exp": "Medium Fast", "color": "black", "evolves": [[20, 1]]}, "raticate": {"id": 20, "form_id": 0, "name": "Raticate", "type": ["normal"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 1, "egg": ["field"], "exp": "Medium Fast", "color": "brown"}, "raticate-alola": {"id": 20, "form_id": 1, "name": "Alolan Raticate", "type": ["dark", "normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["field"], "exp": "Medium Fast", "color": "black"}, "spearow": {"id": 21, "form_id": 0, "name": "Spearow", "type": ["normal", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["flying"], "exp": "Medium Fast", "color": "brown", "evolves": [[22, 0]]}, "fearow": {"id": 22, "form_id": 0, "name": "Fearow", "type": ["normal", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["flying"], "exp": "Medium Fast", "color": "brown"}, "ekans": {"id": 23, "form_id": 0, "name": "Ekans", "type": ["poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["field", "dragon"], "exp": "Medium Fast", "color": "purple", "evolves": [[24, 0]]}, "arbok": {"id": 24, "form_id": 0, "name": "Arbok", "type": ["poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["field", "dragon"], "exp": "Medium Fast", "color": "purple"}, "pikachu": {"id": 25, "form_id": 0, "name": "Pikachu", "type": ["electric"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 1, "egg": ["field", "fairy"], "exp": "Medium Fast", "color": "yellow", "gmax": true, "evolves": [[26, 0], [26, 1]]}, "raichu": {"id": 26, "form_id": 0, "name": "Raichu", "type": ["electric"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 1, "egg": ["field", "fairy"], "exp": "Medium Fast", "color": "yellow"}, "raichu-alola": {"id": 26, "form_id": 1, "name": "Alolan Raichu", "type": ["electric", "psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["field", "fairy"], "exp": "Medium Fast", "color": "brown"}, "sandshrew": {"id": 27, "form_id": 0, "name": "Sandshrew", "type": ["ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["field"], "exp": "Medium Fast", "color": "yellow", "evolves": [[28, 0]]}, "sandshrew-alola": {"id": 27, "form_id": 1, "name": "Alolan Sandshrew", "type": ["ice", "steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["field"], "exp": "Medium Fast", "color": "white", "evolves": [[28, 1]]}, "sandslash": {"id": 28, "form_id": 0, "name": "Sandslash", "type": ["ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["field"], "exp": "Medium Fast", "color": "yellow"}, "sandslash-alola": {"id": 28, "form_id": 1, "name": "Alolan Sandslash", "type": ["ice", "steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["field"], "exp": "Medium Fast", "color": "blue"}, "nidoran-f": {"id": 29, "form_id": 0, "name": "Nidoran\u00e2\u2122\u20ac", "type": ["poison"], "gender": ["fo"], "gender_ratio": 8, "gen": 1, "egg": ["monster", "field"], "exp": "Medium Slow", "color": "blue", "evolves": [[30, 0]]}, "nidorina": {"id": 30, "form_id": 0, "name": "Nidorina", "type": ["poison"], "gender": ["fo"], "gender_ratio": 8, "gen": 1, "egg": ["undiscovered"], "exp": "Medium Slow", "color": "blue", "evolves": [[31, 0]]}, "nidoqueen": {"id": 31, "form_id": 0, "name": "Nidoqueen", "type": ["poison", "ground"], "gender": ["fo"], "gender_ratio": 8, "gen": 1, "egg": ["undiscovered"], "exp": "Medium Slow", "color": "blue"}, "nidoran-m": {"id": 32, "form_id": 0, "name": "Nidoran\u00e2\u2122\u201a", "type": ["poison"], "gender": ["mo"], "gender_ratio": 0, "gen": 1, "egg": ["monster", "field"], "exp": "Medium Slow", "color": "purple", "evolves": [[33, 0]]}, "nidorino": {"id": 33, "form_id": 0, "name": "Nidorino", "type": ["poison"], "gender": ["mo"], "gender_ratio": 0, "gen": 1, "egg": ["monster", "field"], "exp": "Medium Slow", "color": "purple", "evolves": [[34, 0]]}, "nidoking": {"id": 34, "form_id": 0, "name": "Nidoking", "type": ["poison", "ground"], "gender": ["mo"], "gender_ratio": 0, "gen": 1, "egg": ["monster", "field"], "exp": "Medium Slow", "color": "purple"}, "clefairy": {"id": 35, "form_id": 0, "name": "Clefairy", "type": ["fairy"], "gender": ["mf"], "gender_ratio": 6, "gen": 1, "egg": ["fairy"], "exp": "Fast", "color": "pink", "evolves": [[36, 0]]}, "clefable": {"id": 36, "form_id": 0, "name": "Clefable", "type": ["fairy"], "gender": ["mf"], "gender_ratio": 6, "gen": 1, "egg": ["fairy"], "exp": "Fast", "color": "pink"}, "vulpix": {"id": 37, "form_id": 0, "name": "Vulpix", "type": ["fire"], "gender": ["mf"], "gender_ratio": 6, "gen": 1, "egg": ["field"], "exp": "Medium Fast", "color": "brown", "evolves": [[38, 0]]}, "vulpix-alola": {"id": 37, "form_id": 1, "name": "Alolan Vulpix", "type": ["ice"], "gender": ["mf"], "gender_ratio": 6, "gen": 7, "egg": ["field"], "exp": "Medium Fast", "color": "white", "evolves": [[38, 1]]}, "ninetales": {"id": 38, "form_id": 0, "name": "Ninetales", "type": ["fire"], "gender": ["mf"], "gender_ratio": 6, "gen": 1, "egg": ["field"], "exp": "Medium Fast", "color": "yellow"}, "ninetales-alola": {"id": 38, "form_id": 1, "name": "Alolan Ninetales", "type": ["ice", "fairy"], "gender": ["mf"], "gender_ratio": 6, "gen": 7, "egg": ["field"], "exp": "Medium Fast", "color": "blue"}, "jigglypuff": {"id": 39, "form_id": 0, "name": "Jigglypuff", "type": ["normal", "fairy"], "gender": ["mf"], "gender_ratio": 6, "gen": 1, "egg": ["fairy"], "exp": "Fast", "color": "pink", "evolves": [[40, 0]]}, "wigglytuff": {"id": 40, "form_id": 0, "name": "Wigglytuff", "type": ["normal", "fairy"], "gender": ["mf"], "gender_ratio": 6, "gen": 1, "egg": ["fairy"], "exp": "Fast", "color": "pink"}, "zubat": {"id": 41, "form_id": 0, "name": "Zubat", "type": ["poison", "flying"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 1, "egg": ["flying"], "exp": "Medium Fast", "color": "purple", "evolves": [[42, 0]]}, "golbat": {"id": 42, "form_id": 0, "name": "Golbat", "type": ["poison", "flying"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 1, "egg": ["flying"], "exp": "Medium Fast", "color": "purple", "evolves": [[169, 0]]}, "oddish": {"id": 43, "form_id": 0, "name": "Oddish", "type": ["grass", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["grass"], "exp": "Medium Slow", "color": "blue", "evolves": [[44, 0]]}, "gloom": {"id": 44, "form_id": 0, "name": "Gloom", "type": ["grass", "poison"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 1, "egg": ["grass"], "exp": "Medium Slow", "color": "blue", "evolves": [[45, 0], [182, 0]]}, "vileplume": {"id": 45, "form_id": 0, "name": "Vileplume", "type": ["grass", "poison"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 1, "egg": ["grass"], "exp": "Medium Slow", "color": "red"}, "paras": {"id": 46, "form_id": 0, "name": "Paras", "type": ["bug", "grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["bug", "grass"], "exp": "Medium Fast", "color": "red", "evolves": [[47, 0]]}, "parasect": {"id": 47, "form_id": 0, "name": "Parasect", "type": ["bug", "grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["bug", "grass"], "exp": "Medium Fast", "color": "red"}, "venonat": {"id": 48, "form_id": 0, "name": "Venonat", "type": ["bug", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["bug"], "exp": "Medium Fast", "color": "purple", "evolves": [[49, 0]]}, "venomoth": {"id": 49, "form_id": 0, "name": "Venomoth", "type": ["bug", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["bug"], "exp": "Medium Fast", "color": "purple"}, "diglett": {"id": 50, "form_id": 0, "name": "Diglett", "type": ["ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["field"], "exp": "Medium Fast", "color": "brown", "evolves": [[51, 0]]}, "diglett-alola": {"id": 50, "form_id": 1, "name": "Alolan Diglett", "type": ["ground", "steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["field"], "exp": "Medium Fast", "color": "brown", "evolves": [[51, 1]]}, "dugtrio": {"id": 51, "form_id": 0, "name": "Dugtrio", "type": ["ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["field"], "exp": "Medium Fast", "color": "brown"}, "dugtrio-alola": {"id": 51, "form_id": 1, "name": "Alolan Dugtrio", "type": ["ground", "steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["field"], "exp": "Medium Fast", "color": "brown"}, "meowth": {"id": 52, "form_id": 0, "name": "Meowth", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["field"], "exp": "Medium Fast", "color": "yellow", "gmax": true, "evolves": [[53, 0]]}, "meowth-alola": {"id": 52, "form_id": 1, "name": "Alolan Meowth", "type": ["dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["field"], "exp": "Medium Fast", "color": "blue", "evolves": [[53, 1]]}, "meowth-galar": {"id": 52, "form_id": 2, "name": "Galarian Meowth", "type": ["steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field"], "exp": "Medium Fast", "color": "brown", "evolves": [[863, 0]]}, "persian": {"id": 53, "form_id": 0, "name": "Persian", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["field"], "exp": "Medium Fast", "color": "yellow"}, "persian-alola": {"id": 53, "form_id": 1, "name": "Alolan Persian", "type": ["dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["field"], "exp": "Medium Fast", "color": "blue"}, "psyduck": {"id": 54, "form_id": 0, "name": "Psyduck", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["water-1", "field"], "exp": "Medium Fast", "color": "yellow", "evolves": [[55, 0]]}, "golduck": {"id": 55, "form_id": 0, "name": "Golduck", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["water-1", "field"], "exp": "Medium Fast", "color": "blue"}, "mankey": {"id": 56, "form_id": 0, "name": "Mankey", "type": ["fighting"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["field"], "exp": "Medium Fast", "color": "brown", "evolves": [[57, 0]]}, "primeape": {"id": 57, "form_id": 0, "name": "Primeape", "type": ["fighting"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["field"], "exp": "Medium Fast", "color": "brown"}, "growlithe": {"id": 58, "form_id": 0, "name": "Growlithe", "type": ["fire"], "gender": ["mf"], "gender_ratio": 2, "gen": 1, "egg": ["field"], "exp": "Slow", "color": "brown", "evolves": [[59, 0]]}, "growlithe-hisui": {"id": 58, "form_id": 1, "name": "Hisuian Growlithe", "type": ["fire", "rock"], "gender": ["mf"], "gender_ratio": 2, "gen": 8, "egg": ["field"], "exp": "Slow", "evolves": [[59, 1]]}, "arcanine": {"id": 59, "form_id": 0, "name": "Arcanine", "type": ["fire"], "gender": ["mf"], "gender_ratio": 2, "gen": 1, "egg": ["field"], "exp": "Slow", "color": "brown"}, "arcanine-hisui": {"id": 59, "form_id": 1, "name": "Hisuian Arcanine", "type": ["fire", "rock"], "gender": ["mf"], "gender_ratio": 2, "gen": 8, "egg": ["field"], "exp": "Slow"}, "poliwag": {"id": 60, "form_id": 0, "name": "Poliwag", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["water-1"], "exp": "Medium Slow", "color": "blue", "evolves": [[61, 0]]}, "poliwhirl": {"id": 61, "form_id": 0, "name": "Poliwhirl", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["water-1"], "exp": "Medium Slow", "color": "blue", "evolves": [[62, 0], [186, 0]]}, "poliwrath": {"id": 62, "form_id": 0, "name": "Poliwrath", "type": ["water", "fighting"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["water-1"], "exp": "Medium Slow", "color": "blue"}, "abra": {"id": 63, "form_id": 0, "name": "Abra", "type": ["psychic"], "gender": ["mf"], "gender_ratio": 2, "gen": 1, "egg": ["human-like"], "exp": "Medium Slow", "color": "brown", "evolves": [[64, 0]]}, "kadabra": {"id": 64, "form_id": 0, "name": "Kadabra", "type": ["psychic"], "gender": ["fd", "md"], "gender_ratio": 2, "gen": 1, "egg": ["human-like"], "exp": "Medium Slow", "color": "brown", "evolves": [[65, 0]]}, "alakazam": {"id": 65, "form_id": 0, "name": "Alakazam", "type": ["psychic"], "gender": ["fd", "md"], "gender_ratio": 2, "gen": 1, "egg": ["human-like"], "exp": "Medium Slow", "color": "brown"}, "alakazam-mega": {"id": 65, "form_id": 1, "name": "Mega Alakazam", "type": ["psychic"], "gender": ["mf"], "gender_ratio": 2, "gen": 6, "egg": ["human-like"], "exp": "Medium Slow", "color": "brown", "mega": true}, "machop": {"id": 66, "form_id": 0, "name": "Machop", "type": ["fighting"], "gender": ["mf"], "gender_ratio": 2, "gen": 1, "egg": ["human-like"], "exp": "Medium Slow", "color": "gray", "evolves": [[67, 0]]}, "machoke": {"id": 67, "form_id": 0, "name": "Machoke", "type": ["fighting"], "gender": ["mf"], "gender_ratio": 2, "gen": 1, "egg": ["human-like"], "exp": "Medium Slow", "color": "gray", "evolves": [[68, 0]]}, "machamp": {"id": 68, "form_id": 0, "name": "Machamp", "type": ["fighting"], "gender": ["mf"], "gender_ratio": 2, "gen": 1, "egg": ["human-like"], "exp": "Medium Slow", "color": "gray", "gmax": true}, "bellsprout": {"id": 69, "form_id": 0, "name": "Bellsprout", "type": ["grass", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["grass"], "exp": "Medium Slow", "color": "green", "evolves": [[70, 0]]}, "weepinbell": {"id": 70, "form_id": 0, "name": "Weepinbell", "type": ["grass", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["grass"], "exp": "Medium Slow", "color": "green", "evolves": [[71, 0]]}, "victreebel": {"id": 71, "form_id": 0, "name": "Victreebel", "type": ["grass", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["grass"], "exp": "Medium Slow", "color": "green"}, "tentacool": {"id": 72, "form_id": 0, "name": "Tentacool", "type": ["water", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["water-3"], "exp": "Slow", "color": "blue", "evolves": [[73, 0]]}, "tentacruel": {"id": 73, "form_id": 0, "name": "Tentacruel", "type": ["water", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["water-3"], "exp": "Slow", "color": "blue"}, "geodude": {"id": 74, "form_id": 0, "name": "Geodude", "type": ["rock", "ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["mineral"], "exp": "Medium Slow", "color": "brown", "evolves": [[75, 0]]}, "geodude-alola": {"id": 74, "form_id": 1, "name": "Alolan Geodude", "type": ["rock", "electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["mineral"], "exp": "Medium Slow", "color": "gray", "evolves": [[75, 1]]}, "graveler": {"id": 75, "form_id": 0, "name": "Graveler", "type": ["rock", "ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["mineral"], "exp": "Medium Slow", "color": "brown", "evolves": [[76, 0]]}, "graveler-alola": {"id": 75, "form_id": 1, "name": "Alolan Graveler", "type": ["rock", "electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["mineral"], "exp": "Medium Slow", "color": "gray", "evolves": [[76, 1]]}, "golem": {"id": 76, "form_id": 0, "name": "Golem", "type": ["rock", "ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["mineral"], "exp": "Medium Slow", "color": "brown"}, "golem-alola": {"id": 76, "form_id": 1, "name": "Alolan Golem", "type": ["rock", "electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["mineral"], "exp": "Medium Slow", "color": "gray"}, "ponyta": {"id": 77, "form_id": 0, "name": "Ponyta", "type": ["fire"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["field"], "exp": "Medium Fast", "color": "yellow", "evolves": [[78, 0]]}, "ponyta-galar": {"id": 77, "form_id": 1, "name": "Galarian Ponyta", "type": ["psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field"], "exp": "Medium Fast", "color": "white", "evolves": [[78, 1]]}, "rapidash": {"id": 78, "form_id": 0, "name": "Rapidash", "type": ["fire"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["field"], "exp": "Medium Fast", "color": "yellow"}, "rapidash-galar": {"id": 78, "form_id": 1, "name": "Galarian Rapidash", "type": ["psychic", "fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field"], "exp": "Medium Fast", "color": "white"}, "slowpoke": {"id": 79, "form_id": 0, "name": "Slowpoke", "type": ["water", "psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["monster", "water-1"], "exp": "Medium Fast", "color": "pink", "evolves": [[80, 0], [199, 0]]}, "slowpoke-galar": {"id": 79, "form_id": 1, "name": "Galarian Slowpoke", "type": ["psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["monster", "water-1"], "exp": "Medium Fast", "color": "pink", "evolves": [[80, 2], [199, 1]]}, "slowbro": {"id": 80, "form_id": 0, "name": "Slowbro", "type": ["water", "psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["monster", "water-1"], "exp": "Medium Fast", "color": "pink"}, "slowbro-mega": {"id": 80, "form_id": 1, "name": "Mega Slowbro", "type": ["water", "psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["monster", "water-1"], "exp": "Medium Fast", "color": "pink", "mega": true}, "slowbro-galar": {"id": 80, "form_id": 2, "name": "Galarian Slowbro", "type": ["poison", "psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["monster", "water-1"], "exp": "Medium Fast", "color": "pink"}, "magnemite": {"id": 81, "form_id": 0, "name": "Magnemite", "type": ["electric", "steel"], "gender": ["uk"], "gender_ratio": -1, "gen": 1, "egg": ["mineral"], "exp": "Medium Fast", "color": "gray", "evolves": [[82, 0]]}, "magneton": {"id": 82, "form_id": 0, "name": "Magneton", "type": ["electric", "steel"], "gender": ["uk"], "gender_ratio": -1, "gen": 1, "egg": ["mineral"], "exp": "Medium Fast", "color": "gray", "evolves": [[462, 0]]}, "farfetchd": {"id": 83, "form_id": 0, "name": "Farfetch'd", "type": ["normal", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["flying", "field"], "exp": "Medium Fast", "color": "brown"}, "farfetchd-galar": {"id": 83, "form_id": 1, "name": "Galarian Farfetch'd", "type": ["fighting"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["flying", "field"], "exp": "Medium Fast", "color": "brown", "evolves": [[865, 0]]}, "doduo": {"id": 84, "form_id": 0, "name": "Doduo", "type": ["normal", "flying"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 1, "egg": ["flying"], "exp": "Medium Fast", "color": "brown", "evolves": [[85, 0]]}, "dodrio": {"id": 85, "form_id": 0, "name": "Dodrio", "type": ["normal", "flying"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 1, "egg": ["flying"], "exp": "Medium Fast", "color": "brown"}, "seel": {"id": 86, "form_id": 0, "name": "Seel", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["water-1", "field"], "exp": "Medium Fast", "color": "white", "evolves": [[87, 0]]}, "dewgong": {"id": 87, "form_id": 0, "name": "Dewgong", "type": ["water", "ice"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["water-1", "field"], "exp": "Medium Fast", "color": "white"}, "grimer": {"id": 88, "form_id": 0, "name": "Grimer", "type": ["poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["amorphous"], "exp": "Medium Fast", "color": "purple", "evolves": [[89, 0]]}, "grimer-alola": {"id": 88, "form_id": 1, "name": "Alolan Grimer", "type": ["poison", "dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["amorphous"], "exp": "Medium Fast", "color": "green", "evolves": [[89, 1]]}, "muk": {"id": 89, "form_id": 0, "name": "Muk", "type": ["poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["amorphous"], "exp": "Medium Fast", "color": "purple"}, "muk-alola": {"id": 89, "form_id": 1, "name": "Alolan Muk", "type": ["poison", "dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["amorphous"], "exp": "Medium Fast", "color": "green"}, "shellder": {"id": 90, "form_id": 0, "name": "Shellder", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["water-3"], "exp": "Slow", "color": "purple", "evolves": [[91, 0]]}, "cloyster": {"id": 91, "form_id": 0, "name": "Cloyster", "type": ["water", "ice"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["water-3"], "exp": "Slow", "color": "purple"}, "gastly": {"id": 92, "form_id": 0, "name": "Gastly", "type": ["ghost", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["amorphous"], "exp": "Medium Slow", "color": "purple", "evolves": [[93, 0]]}, "haunter": {"id": 93, "form_id": 0, "name": "Haunter", "type": ["ghost", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["amorphous"], "exp": "Medium Slow", "color": "purple", "evolves": [[94, 0]]}, "gengar": {"id": 94, "form_id": 0, "name": "Gengar", "type": ["ghost", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["amorphous"], "exp": "Medium Slow", "color": "purple", "gmax": true}, "gengar-mega": {"id": 94, "form_id": 1, "name": "Mega Gengar", "type": ["ghost", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["amorphous"], "exp": "Medium Slow", "color": "purple", "mega": true}, "onix": {"id": 95, "form_id": 0, "name": "Onix", "type": ["rock", "ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["mineral"], "exp": "Medium Fast", "color": "gray", "evolves": [[208, 0]]}, "drowzee": {"id": 96, "form_id": 0, "name": "Drowzee", "type": ["psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["human-like"], "exp": "Medium Fast", "color": "yellow", "evolves": [[97, 0]]}, "hypno": {"id": 97, "form_id": 0, "name": "Hypno", "type": ["psychic"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 1, "egg": ["human-like"], "exp": "Medium Fast", "color": "yellow"}, "krabby": {"id": 98, "form_id": 0, "name": "Krabby", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["water-3"], "exp": "Medium Fast", "color": "red", "evolves": [[99, 0]]}, "kingler": {"id": 99, "form_id": 0, "name": "Kingler", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["water-3"], "exp": "Medium Fast", "color": "red", "gmax": true}, "voltorb": {"id": 100, "form_id": 0, "name": "Voltorb", "type": ["electric"], "gender": ["uk"], "gender_ratio": -1, "gen": 1, "egg": ["mineral"], "exp": "Medium Fast", "color": "red", "evolves": [[101, 0]]}, "voltorb-hisui": {"id": 100, "form_id": 1, "name": "Hisuian Voltorb", "type": ["electric", "grass"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["mineral"], "exp": "Medium Fast", "evolves": [[101, 1]]}, "electrode": {"id": 101, "form_id": 0, "name": "Electrode", "type": ["electric"], "gender": ["uk"], "gender_ratio": -1, "gen": 1, "egg": ["mineral"], "exp": "Medium Fast", "color": "red"}, "electrode-hisui": {"id": 101, "form_id": 1, "name": "Hisuian Electrode", "type": ["electric", "grass"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["mineral"], "exp": "Medium Fast"}, "exeggcute": {"id": 102, "form_id": 0, "name": "Exeggcute", "type": ["grass", "psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["grass"], "exp": "Slow", "color": "pink", "evolves": [[103, 0], [103, 1]]}, "exeggutor": {"id": 103, "form_id": 0, "name": "Exeggutor", "type": ["grass", "psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["grass"], "exp": "Slow", "color": "yellow"}, "exeggutor-alola": {"id": 103, "form_id": 1, "name": "Alolan Exeggutor", "type": ["grass", "dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["grass"], "exp": "Slow", "color": "yellow"}, "cubone": {"id": 104, "form_id": 0, "name": "Cubone", "type": ["ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["monster"], "exp": "Medium Fast", "color": "brown", "evolves": [[105, 0], [105, 1]]}, "marowak": {"id": 105, "form_id": 0, "name": "Marowak", "type": ["ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["monster"], "exp": "Medium Fast", "color": "brown"}, "marowak-alola": {"id": 105, "form_id": 1, "name": "Alolan Marowak", "type": ["fire", "ghost"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["monster"], "exp": "Medium Fast", "color": "purple"}, "hitmonlee": {"id": 106, "form_id": 0, "name": "Hitmonlee", "type": ["fighting"], "gender": ["mo"], "gender_ratio": 0, "gen": 1, "egg": ["human-like"], "exp": "Medium Fast", "color": "brown"}, "hitmonchan": {"id": 107, "form_id": 0, "name": "Hitmonchan", "type": ["fighting"], "gender": ["mo"], "gender_ratio": 0, "gen": 1, "egg": ["human-like"], "exp": "Medium Fast", "color": "brown"}, "lickitung": {"id": 108, "form_id": 0, "name": "Lickitung", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["monster"], "exp": "Medium Fast", "color": "pink", "evolves": [[463, 0]]}, "koffing": {"id": 109, "form_id": 0, "name": "Koffing", "type": ["poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["amorphous"], "exp": "Medium Fast", "color": "purple", "evolves": [[110, 0], [110, 1]]}, "weezing": {"id": 110, "form_id": 0, "name": "Weezing", "type": ["poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["amorphous"], "exp": "Medium Fast", "color": "purple"}, "weezing-galar": {"id": 110, "form_id": 1, "name": "Galarian Weezing", "type": ["poison", "fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["amorphous"], "exp": "Medium Fast", "color": "gray"}, "rhyhorn": {"id": 111, "form_id": 0, "name": "Rhyhorn", "type": ["ground", "rock"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 1, "egg": ["monster", "field"], "exp": "Slow", "color": "gray", "evolves": [[112, 0]]}, "rhydon": {"id": 112, "form_id": 0, "name": "Rhydon", "type": ["ground", "rock"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 1, "egg": ["monster", "field"], "exp": "Slow", "color": "gray", "evolves": [[464, 0]]}, "chansey": {"id": 113, "form_id": 0, "name": "Chansey", "type": ["normal"], "gender": ["fo"], "gender_ratio": 8, "gen": 1, "egg": ["fairy"], "exp": "Fast", "color": "pink", "evolves": [[242, 0]]}, "tangela": {"id": 114, "form_id": 0, "name": "Tangela", "type": ["grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["grass"], "exp": "Medium Fast", "color": "blue", "evolves": [[465, 0]]}, "kangaskhan": {"id": 115, "form_id": 0, "name": "Kangaskhan", "type": ["normal"], "gender": ["fo"], "gender_ratio": 8, "gen": 1, "egg": ["monster"], "exp": "Medium Fast", "color": "brown"}, "kangaskhan-mega": {"id": 115, "form_id": 1, "name": "Mega Kangaskhan", "type": ["normal"], "gender": ["fo"], "gender_ratio": 8, "gen": 6, "egg": ["monster"], "exp": "Medium Fast", "color": "brown", "mega": true}, "horsea": {"id": 116, "form_id": 0, "name": "Horsea", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["water-1", "dragon"], "exp": "Medium Fast", "color": "blue", "evolves": [[117, 0]]}, "seadra": {"id": 117, "form_id": 0, "name": "Seadra", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["water-1", "dragon"], "exp": "Medium Fast", "color": "blue", "evolves": [[230, 0]]}, "goldeen": {"id": 118, "form_id": 0, "name": "Goldeen", "type": ["water"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 1, "egg": ["water-2"], "exp": "Medium Fast", "color": "red", "evolves": [[119, 0]]}, "seaking": {"id": 119, "form_id": 0, "name": "Seaking", "type": ["water"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 1, "egg": ["water-2"], "exp": "Medium Fast", "color": "red"}, "staryu": {"id": 120, "form_id": 0, "name": "Staryu", "type": ["water"], "gender": ["uk"], "gender_ratio": -1, "gen": 1, "egg": ["water-3"], "exp": "Slow", "color": "brown", "evolves": [[121, 0]]}, "starmie": {"id": 121, "form_id": 0, "name": "Starmie", "type": ["water", "psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 1, "egg": ["water-3"], "exp": "Slow", "color": "purple"}, "mr-mime": {"id": 122, "form_id": 0, "name": "Mr. Mime", "type": ["psychic", "fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["human-like"], "exp": "Medium Fast", "color": "pink"}, "mr-mime-galar": {"id": 122, "form_id": 1, "name": "Galarian Mr. Mime", "type": ["ice", "psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["human-like"], "exp": "Medium Fast", "color": "white", "evolves": [[866, 0]]}, "scyther": {"id": 123, "form_id": 0, "name": "Scyther", "type": ["bug", "flying"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 1, "egg": ["bug"], "exp": "Medium Fast", "color": "green", "evolves": [[212, 0], [900, 0]]}, "jynx": {"id": 124, "form_id": 0, "name": "Jynx", "type": ["ice", "psychic"], "gender": ["fo"], "gender_ratio": 8, "gen": 1, "egg": ["human-like"], "exp": "Medium Fast", "color": "red"}, "electabuzz": {"id": 125, "form_id": 0, "name": "Electabuzz", "type": ["electric"], "gender": ["mf"], "gender_ratio": 2, "gen": 1, "egg": ["human-like"], "exp": "Medium Fast", "color": "yellow", "evolves": [[466, 0]]}, "magmar": {"id": 126, "form_id": 0, "name": "Magmar", "type": ["fire"], "gender": ["mf"], "gender_ratio": 2, "gen": 1, "egg": ["human-like"], "exp": "Medium Fast", "color": "red", "evolves": [[467, 0]]}, "pinsir": {"id": 127, "form_id": 0, "name": "Pinsir", "type": ["bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["bug"], "exp": "Slow", "color": "brown"}, "pinsir-mega": {"id": 127, "form_id": 1, "name": "Mega Pinsir", "type": ["bug", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["bug"], "exp": "Slow", "color": "brown", "mega": true}, "tauros": {"id": 128, "form_id": 0, "name": "Tauros", "type": ["normal"], "gender": ["mo"], "gender_ratio": 0, "gen": 1, "egg": ["field"], "exp": "Slow", "color": "brown"}, "magikarp": {"id": 129, "form_id": 0, "name": "Magikarp", "type": ["water"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 1, "egg": ["water-2", "dragon"], "exp": "Slow", "color": "red", "evolves": [[130, 0]]}, "gyarados": {"id": 130, "form_id": 0, "name": "Gyarados", "type": ["water", "flying"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 1, "egg": ["water-2", "dragon"], "exp": "Slow", "color": "blue"}, "gyarados-mega": {"id": 130, "form_id": 1, "name": "Mega Gyarados", "type": ["water", "dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["water-2", "dragon"], "exp": "Slow", "color": "blue", "mega": true}, "lapras": {"id": 131, "form_id": 0, "name": "Lapras", "type": ["water", "ice"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["monster", "water-1"], "exp": "Slow", "color": "blue", "gmax": true}, "ditto": {"id": 132, "form_id": 0, "name": "Ditto", "type": ["normal"], "gender": ["uk"], "gender_ratio": -1, "gen": 1, "egg": ["ditto"], "exp": "Medium Fast", "color": "purple"}, "eevee": {"id": 133, "form_id": 0, "name": "Eevee", "type": ["normal"], "gender": ["fd", "md"], "gender_ratio": 1, "gen": 1, "egg": ["field"], "exp": "Medium Fast", "color": "brown", "gmax": true, "evolves": [[134, 0], [135, 0], [136, 0], [196, 0], [197, 0], [470, 0], [471, 0], [700, 0]]}, "vaporeon": {"id": 134, "form_id": 0, "name": "Vaporeon", "type": ["water"], "gender": ["mf"], "gender_ratio": 1, "gen": 1, "egg": ["field"], "exp": "Medium Fast", "color": "blue"}, "jolteon": {"id": 135, "form_id": 0, "name": "Jolteon", "type": ["electric"], "gender": ["mf"], "gender_ratio": 1, "gen": 1, "egg": ["field"], "exp": "Medium Fast", "color": "yellow"}, "flareon": {"id": 136, "form_id": 0, "name": "Flareon", "type": ["fire"], "gender": ["mf"], "gender_ratio": 1, "gen": 1, "egg": ["field"], "exp": "Medium Fast", "color": "red"}, "porygon": {"id": 137, "form_id": 0, "name": "Porygon", "type": ["normal"], "gender": ["uk"], "gender_ratio": -1, "gen": 1, "egg": ["mineral"], "exp": "Medium Fast", "color": "pink", "evolves": [[233, 0]]}, "omanyte": {"id": 138, "form_id": 0, "name": "Omanyte", "type": ["rock", "water"], "gender": ["mf"], "gender_ratio": 1, "gen": 1, "egg": ["water-1", "water-3"], "exp": "Medium Fast", "color": "blue", "evolves": [[139, 0]]}, "omastar": {"id": 139, "form_id": 0, "name": "Omastar", "type": ["rock", "water"], "gender": ["mf"], "gender_ratio": 1, "gen": 1, "egg": ["water-1", "water-3"], "exp": "Medium Fast", "color": "blue"}, "kabuto": {"id": 140, "form_id": 0, "name": "Kabuto", "type": ["rock", "water"], "gender": ["mf"], "gender_ratio": 1, "gen": 1, "egg": ["water-1", "water-3"], "exp": "Medium Fast", "color": "brown", "evolves": [[141, 0]]}, "kabutops": {"id": 141, "form_id": 0, "name": "Kabutops", "type": ["rock", "water"], "gender": ["mf"], "gender_ratio": 1, "gen": 1, "egg": ["water-1", "water-3"], "exp": "Medium Fast", "color": "brown"}, "aerodactyl": {"id": 142, "form_id": 0, "name": "Aerodactyl", "type": ["rock", "flying"], "gender": ["mf"], "gender_ratio": 1, "gen": 1, "egg": ["flying"], "exp": "Slow", "color": "purple"}, "aerodactyl-mega": {"id": 142, "form_id": 1, "name": "Mega Aerodactyl", "type": ["rock", "flying"], "gender": ["mf"], "gender_ratio": 1, "gen": 6, "egg": ["flying"], "exp": "Slow", "color": "purple", "mega": true}, "snorlax": {"id": 143, "form_id": 0, "name": "Snorlax", "type": ["normal"], "gender": ["mf"], "gender_ratio": 1, "gen": 1, "egg": ["monster"], "exp": "Slow", "color": "black", "gmax": true}, "articuno": {"id": 144, "form_id": 0, "name": "Articuno", "type": ["ice", "flying"], "gender": ["uk"], "gender_ratio": -1, "gen": 1, "egg": ["undiscovered"], "exp": "Slow", "color": "blue", "sublegendary": true}, "articuno-galar": {"id": 144, "form_id": 1, "name": "Galarian Articuno", "type": ["psychic", "flying"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "color": "purple", "sublegendary": true}, "zapdos": {"id": 145, "form_id": 0, "name": "Zapdos", "type": ["electric", "flying"], "gender": ["uk"], "gender_ratio": -1, "gen": 1, "egg": ["undiscovered"], "exp": "Slow", "color": "yellow", "sublegendary": true}, "zapdos-galar": {"id": 145, "form_id": 1, "name": "Galarian Zapdos", "type": ["fighting", "flying"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "color": "yellow", "sublegendary": true}, "moltres": {"id": 146, "form_id": 0, "name": "Moltres", "type": ["fire", "flying"], "gender": ["uk"], "gender_ratio": -1, "gen": 1, "egg": ["undiscovered"], "exp": "Slow", "color": "yellow", "sublegendary": true}, "moltres-galar": {"id": 146, "form_id": 1, "name": "Galarian Moltres", "type": ["dark", "flying"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "color": "red", "sublegendary": true}, "dratini": {"id": 147, "form_id": 0, "name": "Dratini", "type": ["dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["water-1", "dragon"], "exp": "Slow", "color": "blue", "evolves": [[148, 0]]}, "dragonair": {"id": 148, "form_id": 0, "name": "Dragonair", "type": ["dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["water-1", "dragon"], "exp": "Slow", "color": "blue", "evolves": [[149, 0]]}, "dragonite": {"id": 149, "form_id": 0, "name": "Dragonite", "type": ["dragon", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 1, "egg": ["water-1", "dragon"], "exp": "Slow", "color": "brown"}, "mewtwo": {"id": 150, "form_id": 0, "name": "Mewtwo", "type": ["psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 1, "egg": ["undiscovered"], "exp": "Slow", "color": "purple", "legendary": true}, "mewtwo-mega-x": {"id": 150, "form_id": 1, "name": "Mega Mewtwo X", "type": ["psychic", "fighting"], "gender": ["uk"], "gender_ratio": -1, "gen": 6, "egg": ["undiscovered"], "exp": "Slow", "color": "purple", "legendary": true, "mega": true}, "mewtwo-mega-y": {"id": 150, "form_id": 2, "name": "Mega Mewtwo Y", "type": ["psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 6, "egg": ["undiscovered"], "exp": "Slow", "color": "purple", "legendary": true, "mega": true}, "mew": {"id": 151, "form_id": 0, "name": "Mew", "type": ["psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 1, "egg": ["undiscovered"], "exp": "Medium Slow", "color": "pink", "mythical": true}, "chikorita": {"id": 152, "form_id": 0, "name": "Chikorita", "type": ["grass"], "gender": ["mf"], "gender_ratio": 1, "gen": 2, "egg": ["monster", "grass"], "exp": "Medium Slow", "color": "green", "evolves": [[153, 0]]}, "bayleef": {"id": 153, "form_id": 0, "name": "Bayleef", "type": ["grass"], "gender": ["mf"], "gender_ratio": 1, "gen": 2, "egg": ["monster", "grass"], "exp": "Medium Slow", "color": "green", "evolves": [[154, 0]]}, "meganium": {"id": 154, "form_id": 0, "name": "Meganium", "type": ["grass"], "gender": ["fd", "md"], "gender_ratio": 1, "gen": 2, "egg": ["monster", "grass"], "exp": "Medium Slow", "color": "green"}, "cyndaquil": {"id": 155, "form_id": 0, "name": "Cyndaquil", "type": ["fire"], "gender": ["mf"], "gender_ratio": 1, "gen": 2, "egg": ["field"], "exp": "Medium Slow", "color": "yellow", "evolves": [[156, 0]]}, "quilava": {"id": 156, "form_id": 0, "name": "Quilava", "type": ["fire"], "gender": ["mf"], "gender_ratio": 1, "gen": 2, "egg": ["field"], "exp": "Medium Slow", "color": "yellow", "evolves": [[157, 0], [157, 1]]}, "typhlosion": {"id": 157, "form_id": 0, "name": "Typhlosion", "type": ["fire"], "gender": ["mf"], "gender_ratio": 1, "gen": 2, "egg": ["field"], "exp": "Medium Slow", "color": "yellow"}, "typhlosion-hisui": {"id": 157, "form_id": 1, "name": "Hisuian Typhlosion", "type": ["fire", "ghost"], "gender": ["mf"], "gender_ratio": 1, "gen": 8, "egg": ["field"], "exp": "Medium Slow"}, "totodile": {"id": 158, "form_id": 0, "name": "Totodile", "type": ["water"], "gender": ["mf"], "gender_ratio": 1, "gen": 2, "egg": ["monster", "water-1"], "exp": "Medium Slow", "color": "blue", "evolves": [[159, 0]]}, "croconaw": {"id": 159, "form_id": 0, "name": "Croconaw", "type": ["water"], "gender": ["mf"], "gender_ratio": 1, "gen": 2, "egg": ["monster", "water-1"], "exp": "Medium Slow", "color": "blue", "evolves": [[160, 0]]}, "feraligatr": {"id": 160, "form_id": 0, "name": "Feraligatr", "type": ["water"], "gender": ["mf"], "gender_ratio": 1, "gen": 2, "egg": ["monster", "water-1"], "exp": "Medium Slow", "color": "blue"}, "sentret": {"id": 161, "form_id": 0, "name": "Sentret", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["field"], "exp": "Medium Fast", "color": "brown", "evolves": [[162, 0]]}, "furret": {"id": 162, "form_id": 0, "name": "Furret", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["field"], "exp": "Medium Fast", "color": "brown"}, "hoothoot": {"id": 163, "form_id": 0, "name": "Hoothoot", "type": ["normal", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["flying"], "exp": "Medium Fast", "color": "brown", "evolves": [[164, 0]]}, "noctowl": {"id": 164, "form_id": 0, "name": "Noctowl", "type": ["normal", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["flying"], "exp": "Medium Fast", "color": "brown"}, "ledyba": {"id": 165, "form_id": 0, "name": "Ledyba", "type": ["bug", "flying"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 2, "egg": ["bug"], "exp": "Fast", "color": "red", "evolves": [[166, 0]]}, "ledian": {"id": 166, "form_id": 0, "name": "Ledian", "type": ["bug", "flying"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 2, "egg": ["bug"], "exp": "Fast", "color": "red"}, "spinarak": {"id": 167, "form_id": 0, "name": "Spinarak", "type": ["bug", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["bug"], "exp": "Fast", "color": "green", "evolves": [[168, 0]]}, "ariados": {"id": 168, "form_id": 0, "name": "Ariados", "type": ["bug", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["bug"], "exp": "Fast", "color": "red"}, "crobat": {"id": 169, "form_id": 0, "name": "Crobat", "type": ["poison", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["flying"], "exp": "Medium Fast", "color": "purple"}, "chinchou": {"id": 170, "form_id": 0, "name": "Chinchou", "type": ["water", "electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["water-2"], "exp": "Slow", "color": "blue", "evolves": [[171, 0]]}, "lanturn": {"id": 171, "form_id": 0, "name": "Lanturn", "type": ["water", "electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["water-2"], "exp": "Slow", "color": "blue"}, "pichu": {"id": 172, "form_id": 0, "name": "Pichu", "type": ["electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["undiscovered"], "exp": "Medium Fast", "color": "yellow", "baby": true, "evolves": [[25, 0]]}, "cleffa": {"id": 173, "form_id": 0, "name": "Cleffa", "type": ["fairy"], "gender": ["mf"], "gender_ratio": 6, "gen": 2, "egg": ["undiscovered"], "exp": "Fast", "color": "pink", "baby": true, "evolves": [[35, 0]]}, "igglybuff": {"id": 174, "form_id": 0, "name": "Igglybuff", "type": ["normal", "fairy"], "gender": ["mf"], "gender_ratio": 6, "gen": 2, "egg": ["undiscovered"], "exp": "Fast", "color": "pink", "baby": true, "evolves": [[39, 0]]}, "togepi": {"id": 175, "form_id": 0, "name": "Togepi", "type": ["fairy"], "gender": ["mf"], "gender_ratio": 1, "gen": 2, "egg": ["undiscovered"], "exp": "Fast", "color": "white", "baby": true, "evolves": [[176, 0]]}, "togetic": {"id": 176, "form_id": 0, "name": "Togetic", "type": ["fairy", "flying"], "gender": ["mf"], "gender_ratio": 1, "gen": 2, "egg": ["flying", "fairy"], "exp": "Fast", "color": "white", "evolves": [[468, 0]]}, "natu": {"id": 177, "form_id": 0, "name": "Natu", "type": ["psychic", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["flying"], "exp": "Medium Fast", "color": "green", "evolves": [[178, 0]]}, "xatu": {"id": 178, "form_id": 0, "name": "Xatu", "type": ["psychic", "flying"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 2, "egg": ["flying"], "exp": "Medium Fast", "color": "green"}, "mareep": {"id": 179, "form_id": 0, "name": "Mareep", "type": ["electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["monster", "field"], "exp": "Medium Slow", "color": "white", "evolves": [[180, 0]]}, "flaaffy": {"id": 180, "form_id": 0, "name": "Flaaffy", "type": ["electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["monster", "field"], "exp": "Medium Slow", "color": "pink", "evolves": [[181, 0]]}, "ampharos": {"id": 181, "form_id": 0, "name": "Ampharos", "type": ["electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["monster", "field"], "exp": "Medium Slow", "color": "yellow"}, "ampharos-mega": {"id": 181, "form_id": 1, "name": "Mega Ampharos", "type": ["electric", "dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["monster", "field"], "exp": "Medium Slow", "color": "yellow", "mega": true}, "bellossom": {"id": 182, "form_id": 0, "name": "Bellossom", "type": ["grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["grass"], "exp": "Medium Slow", "color": "green"}, "marill": {"id": 183, "form_id": 0, "name": "Marill", "type": ["water", "fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["water-1", "fairy"], "exp": "Fast", "color": "blue", "evolves": [[184, 0]]}, "azumarill": {"id": 184, "form_id": 0, "name": "Azumarill", "type": ["water", "fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["water-1", "fairy"], "exp": "Fast", "color": "blue"}, "sudowoodo": {"id": 185, "form_id": 0, "name": "Sudowoodo", "type": ["rock"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 2, "egg": ["mineral"], "exp": "Medium Fast", "color": "brown"}, "politoed": {"id": 186, "form_id": 0, "name": "Politoed", "type": ["water"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 2, "egg": ["water-1"], "exp": "Medium Slow", "color": "green"}, "hoppip": {"id": 187, "form_id": 0, "name": "Hoppip", "type": ["grass", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["fairy", "grass"], "exp": "Medium Slow", "color": "pink", "evolves": [[188, 0]]}, "skiploom": {"id": 188, "form_id": 0, "name": "Skiploom", "type": ["grass", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["fairy", "grass"], "exp": "Medium Slow", "color": "green", "evolves": [[189, 0]]}, "jumpluff": {"id": 189, "form_id": 0, "name": "Jumpluff", "type": ["grass", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["fairy", "grass"], "exp": "Medium Slow", "color": "blue"}, "aipom": {"id": 190, "form_id": 0, "name": "Aipom", "type": ["normal"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 2, "egg": ["field"], "exp": "Fast", "color": "purple", "evolves": [[424, 0]]}, "sunkern": {"id": 191, "form_id": 0, "name": "Sunkern", "type": ["grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["grass"], "exp": "Medium Slow", "color": "yellow", "evolves": [[192, 0]]}, "sunflora": {"id": 192, "form_id": 0, "name": "Sunflora", "type": ["grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["grass"], "exp": "Medium Slow", "color": "yellow"}, "yanma": {"id": 193, "form_id": 0, "name": "Yanma", "type": ["bug", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["bug"], "exp": "Medium Fast", "color": "red", "evolves": [[469, 0]]}, "wooper": {"id": 194, "form_id": 0, "name": "Wooper", "type": ["water", "ground"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 2, "egg": ["water-1", "field"], "exp": "Medium Fast", "color": "blue", "evolves": [[195, 0]]}, "quagsire": {"id": 195, "form_id": 0, "name": "Quagsire", "type": ["water", "ground"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 2, "egg": ["water-1", "field"], "exp": "Medium Fast", "color": "blue"}, "espeon": {"id": 196, "form_id": 0, "name": "Espeon", "type": ["psychic"], "gender": ["mf"], "gender_ratio": 1, "gen": 2, "egg": ["field"], "exp": "Medium Fast", "color": "purple"}, "umbreon": {"id": 197, "form_id": 0, "name": "Umbreon", "type": ["dark"], "gender": ["mf"], "gender_ratio": 1, "gen": 2, "egg": ["field"], "exp": "Medium Fast", "color": "black"}, "murkrow": {"id": 198, "form_id": 0, "name": "Murkrow", "type": ["dark", "flying"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 2, "egg": ["flying"], "exp": "Medium Slow", "color": "black", "evolves": [[430, 0]]}, "slowking": {"id": 199, "form_id": 0, "name": "Slowking", "type": ["water", "psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["monster", "water-1"], "exp": "Medium Fast", "color": "pink"}, "slowking-galar": {"id": 199, "form_id": 1, "name": "Galarian Slowking", "type": ["poison", "psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["monster", "water-1"], "exp": "Medium Fast", "color": "pink"}, "misdreavus": {"id": 200, "form_id": 0, "name": "Misdreavus", "type": ["ghost"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["amorphous"], "exp": "Fast", "color": "gray", "evolves": [[429, 0]]}, "unown": {"id": 201, "form_id": 0, "name": "Unown", "type": ["psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 2, "egg": ["undiscovered"], "exp": "Medium Fast", "color": "black"}, "wobbuffet": {"id": 202, "form_id": 0, "name": "Wobbuffet", "type": ["psychic"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 2, "egg": ["amorphous"], "exp": "Medium Fast", "color": "blue"}, "girafarig": {"id": 203, "form_id": 0, "name": "Girafarig", "type": ["normal", "psychic"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 2, "egg": ["field"], "exp": "Medium Fast", "color": "yellow"}, "pineco": {"id": 204, "form_id": 0, "name": "Pineco", "type": ["bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["bug"], "exp": "Medium Fast", "color": "gray", "evolves": [[205, 0]]}, "forretress": {"id": 205, "form_id": 0, "name": "Forretress", "type": ["bug", "steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["bug"], "exp": "Medium Fast", "color": "purple"}, "dunsparce": {"id": 206, "form_id": 0, "name": "Dunsparce", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["field"], "exp": "Medium Fast", "color": "yellow"}, "gligar": {"id": 207, "form_id": 0, "name": "Gligar", "type": ["ground", "flying"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 2, "egg": ["bug"], "exp": "Medium Slow", "color": "purple", "evolves": [[472, 0]]}, "steelix": {"id": 208, "form_id": 0, "name": "Steelix", "type": ["steel", "ground"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 2, "egg": ["mineral"], "exp": "Medium Fast", "color": "gray"}, "steelix-mega": {"id": 208, "form_id": 1, "name": "Mega Steelix", "type": ["steel", "ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["mineral"], "exp": "Medium Fast", "color": "gray", "mega": true}, "snubbull": {"id": 209, "form_id": 0, "name": "Snubbull", "type": ["fairy"], "gender": ["mf"], "gender_ratio": 6, "gen": 2, "egg": ["field", "fairy"], "exp": "Fast", "color": "pink", "evolves": [[210, 0]]}, "granbull": {"id": 210, "form_id": 0, "name": "Granbull", "type": ["fairy"], "gender": ["mf"], "gender_ratio": 6, "gen": 2, "egg": ["field", "fairy"], "exp": "Fast", "color": "purple"}, "qwilfish": {"id": 211, "form_id": 0, "name": "Qwilfish", "type": ["water", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["water-2"], "exp": "Medium Fast", "color": "gray"}, "qwilfish-hisui": {"id": 211, "form_id": 1, "name": "Hisuian Qwilfish", "type": ["dark", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["water-2"], "exp": "Medium Fast", "evolves": [[904, 0]]}, "scizor": {"id": 212, "form_id": 0, "name": "Scizor", "type": ["bug", "steel"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 2, "egg": ["bug"], "exp": "Medium Fast", "color": "red"}, "scizor-mega": {"id": 212, "form_id": 1, "name": "Mega Scizor", "type": ["bug", "steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["bug"], "exp": "Medium Fast", "color": "red", "mega": true}, "shuckle": {"id": 213, "form_id": 0, "name": "Shuckle", "type": ["bug", "rock"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["bug"], "exp": "Medium Slow", "color": "yellow"}, "heracross": {"id": 214, "form_id": 0, "name": "Heracross", "type": ["bug", "fighting"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 2, "egg": ["bug"], "exp": "Slow", "color": "blue"}, "heracross-mega": {"id": 214, "form_id": 1, "name": "Mega Heracross", "type": ["bug", "fighting"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["bug"], "exp": "Slow", "color": "blue", "mega": true}, "sneasel": {"id": 215, "form_id": 0, "name": "Sneasel", "type": ["dark", "ice"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 2, "egg": ["field"], "exp": "Medium Slow", "color": "black", "evolves": [[461, 0]]}, "sneasel-hisui": {"id": 215, "form_id": 1, "name": "Hisuian Sneasel", "type": ["poison", "fighting"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 8, "egg": ["field"], "exp": "Medium Slow", "evolves": [[903, 0]]}, "teddiursa": {"id": 216, "form_id": 0, "name": "Teddiursa", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["field"], "exp": "Medium Fast", "color": "brown", "evolves": [[217, 0]]}, "ursaring": {"id": 217, "form_id": 0, "name": "Ursaring", "type": ["normal"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 2, "egg": ["field"], "exp": "Medium Fast", "color": "brown", "evolves": [[901, 0]]}, "slugma": {"id": 218, "form_id": 0, "name": "Slugma", "type": ["fire"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["amorphous"], "exp": "Medium Fast", "color": "red", "evolves": [[219, 0]]}, "magcargo": {"id": 219, "form_id": 0, "name": "Magcargo", "type": ["fire", "rock"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["amorphous"], "exp": "Medium Fast", "color": "red"}, "swinub": {"id": 220, "form_id": 0, "name": "Swinub", "type": ["ice", "ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["field"], "exp": "Slow", "color": "brown", "evolves": [[221, 0]]}, "piloswine": {"id": 221, "form_id": 0, "name": "Piloswine", "type": ["ice", "ground"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 2, "egg": ["field"], "exp": "Slow", "color": "brown", "evolves": [[473, 0]]}, "corsola": {"id": 222, "form_id": 0, "name": "Corsola", "type": ["water", "rock"], "gender": ["mf"], "gender_ratio": 6, "gen": 2, "egg": ["water-1", "water-3"], "exp": "Fast", "color": "pink"}, "corsola-galar": {"id": 222, "form_id": 1, "name": "Galarian Corsola", "type": ["ghost"], "gender": ["mf"], "gender_ratio": 6, "gen": 8, "egg": ["water-1", "water-3"], "exp": "Fast", "color": "white", "evolves": [[864, 0]]}, "remoraid": {"id": 223, "form_id": 0, "name": "Remoraid", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["water-1", "water-2"], "exp": "Medium Fast", "color": "gray", "evolves": [[224, 0]]}, "octillery": {"id": 224, "form_id": 0, "name": "Octillery", "type": ["water"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 2, "egg": ["water-1", "water-2"], "exp": "Medium Fast", "color": "red"}, "delibird": {"id": 225, "form_id": 0, "name": "Delibird", "type": ["ice", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["water-1", "field"], "exp": "Fast", "color": "red"}, "mantine": {"id": 226, "form_id": 0, "name": "Mantine", "type": ["water", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["water-1"], "exp": "Slow", "color": "purple"}, "skarmory": {"id": 227, "form_id": 0, "name": "Skarmory", "type": ["steel", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["flying"], "exp": "Slow", "color": "gray"}, "houndour": {"id": 228, "form_id": 0, "name": "Houndour", "type": ["dark", "fire"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["field"], "exp": "Slow", "color": "black", "evolves": [[229, 0]]}, "houndoom": {"id": 229, "form_id": 0, "name": "Houndoom", "type": ["dark", "fire"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 2, "egg": ["field"], "exp": "Slow", "color": "black"}, "houndoom-mega": {"id": 229, "form_id": 1, "name": "Mega Houndoom", "type": ["dark", "fire"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["field"], "exp": "Slow", "color": "black", "mega": true}, "kingdra": {"id": 230, "form_id": 0, "name": "Kingdra", "type": ["water", "dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["water-1", "dragon"], "exp": "Medium Fast", "color": "blue"}, "phanpy": {"id": 231, "form_id": 0, "name": "Phanpy", "type": ["ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["field"], "exp": "Medium Fast", "color": "blue", "evolves": [[232, 0]]}, "donphan": {"id": 232, "form_id": 0, "name": "Donphan", "type": ["ground"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 2, "egg": ["field"], "exp": "Medium Fast", "color": "gray"}, "porygon2": {"id": 233, "form_id": 0, "name": "Porygon2", "type": ["normal"], "gender": ["uk"], "gender_ratio": -1, "gen": 2, "egg": ["mineral"], "exp": "Medium Fast", "color": "red", "evolves": [[474, 0]]}, "stantler": {"id": 234, "form_id": 0, "name": "Stantler", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["field"], "exp": "Slow", "color": "brown", "evolves": [[899, 0]]}, "smeargle": {"id": 235, "form_id": 0, "name": "Smeargle", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["field"], "exp": "Fast", "color": "white"}, "tyrogue": {"id": 236, "form_id": 0, "name": "Tyrogue", "type": ["fighting"], "gender": ["mo"], "gender_ratio": 0, "gen": 2, "egg": ["undiscovered"], "exp": "Medium Fast", "color": "purple", "baby": true, "evolves": [[106, 0], [107, 0], [237, 0]]}, "hitmontop": {"id": 237, "form_id": 0, "name": "Hitmontop", "type": ["fighting"], "gender": ["mo"], "gender_ratio": 0, "gen": 2, "egg": ["human-like"], "exp": "Medium Fast", "color": "brown"}, "smoochum": {"id": 238, "form_id": 0, "name": "Smoochum", "type": ["ice", "psychic"], "gender": ["fo"], "gender_ratio": 8, "gen": 2, "egg": ["undiscovered"], "exp": "Medium Fast", "color": "pink", "baby": true, "evolves": [[124, 0]]}, "elekid": {"id": 239, "form_id": 0, "name": "Elekid", "type": ["electric"], "gender": ["mf"], "gender_ratio": 2, "gen": 2, "egg": ["undiscovered"], "exp": "Medium Fast", "color": "yellow", "baby": true, "evolves": [[125, 0]]}, "magby": {"id": 240, "form_id": 0, "name": "Magby", "type": ["fire"], "gender": ["mf"], "gender_ratio": 2, "gen": 2, "egg": ["undiscovered"], "exp": "Medium Fast", "color": "red", "baby": true, "evolves": [[126, 0]]}, "miltank": {"id": 241, "form_id": 0, "name": "Miltank", "type": ["normal"], "gender": ["fo"], "gender_ratio": 8, "gen": 2, "egg": ["field"], "exp": "Slow", "color": "pink"}, "blissey": {"id": 242, "form_id": 0, "name": "Blissey", "type": ["normal"], "gender": ["fo"], "gender_ratio": 8, "gen": 2, "egg": ["fairy"], "exp": "Fast", "color": "pink"}, "raikou": {"id": 243, "form_id": 0, "name": "Raikou", "type": ["electric"], "gender": ["uk"], "gender_ratio": -1, "gen": 2, "egg": ["undiscovered"], "exp": "Slow", "color": "yellow", "sublegendary": true}, "entei": {"id": 244, "form_id": 0, "name": "Entei", "type": ["fire"], "gender": ["uk"], "gender_ratio": -1, "gen": 2, "egg": ["undiscovered"], "exp": "Slow", "color": "brown", "sublegendary": true}, "suicune": {"id": 245, "form_id": 0, "name": "Suicune", "type": ["water"], "gender": ["uk"], "gender_ratio": -1, "gen": 2, "egg": ["undiscovered"], "exp": "Slow", "color": "blue", "sublegendary": true}, "larvitar": {"id": 246, "form_id": 0, "name": "Larvitar", "type": ["rock", "ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["monster"], "exp": "Slow", "color": "green", "evolves": [[247, 0]]}, "pupitar": {"id": 247, "form_id": 0, "name": "Pupitar", "type": ["rock", "ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["monster"], "exp": "Slow", "color": "gray", "evolves": [[248, 0]]}, "tyranitar": {"id": 248, "form_id": 0, "name": "Tyranitar", "type": ["rock", "dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 2, "egg": ["monster"], "exp": "Slow", "color": "green"}, "tyranitar-mega": {"id": 248, "form_id": 1, "name": "Mega Tyranitar", "type": ["rock", "dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["monster"], "exp": "Slow", "color": "green", "mega": true}, "lugia": {"id": 249, "form_id": 0, "name": "Lugia", "type": ["psychic", "flying"], "gender": ["uk"], "gender_ratio": -1, "gen": 2, "egg": ["undiscovered"], "exp": "Slow", "color": "white", "legendary": true}, "ho-oh": {"id": 250, "form_id": 0, "name": "Ho-Oh", "type": ["fire", "flying"], "gender": ["uk"], "gender_ratio": -1, "gen": 2, "egg": ["undiscovered"], "exp": "Slow", "color": "red", "legendary": true}, "celebi": {"id": 251, "form_id": 0, "name": "Celebi", "type": ["psychic", "grass"], "gender": ["uk"], "gender_ratio": -1, "gen": 2, "egg": ["undiscovered"], "exp": "Medium Slow", "color": "green", "mythical": true}, "treecko": {"id": 252, "form_id": 0, "name": "Treecko", "type": ["grass"], "gender": ["mf"], "gender_ratio": 1, "gen": 3, "egg": ["monster", "dragon"], "exp": "Medium Slow", "color": "green", "evolves": [[253, 0]]}, "grovyle": {"id": 253, "form_id": 0, "name": "Grovyle", "type": ["grass"], "gender": ["mf"], "gender_ratio": 1, "gen": 3, "egg": ["monster", "dragon"], "exp": "Medium Slow", "color": "green", "evolves": [[254, 0]]}, "sceptile": {"id": 254, "form_id": 0, "name": "Sceptile", "type": ["grass"], "gender": ["mf"], "gender_ratio": 1, "gen": 3, "egg": ["monster", "dragon"], "exp": "Medium Slow", "color": "green"}, "sceptile-mega": {"id": 254, "form_id": 1, "name": "Mega Sceptile", "type": ["grass", "dragon"], "gender": ["mf"], "gender_ratio": 1, "gen": 6, "egg": ["monster", "dragon"], "exp": "Medium Slow", "color": "green", "mega": true}, "torchic": {"id": 255, "form_id": 0, "name": "Torchic", "type": ["fire"], "gender": ["fd", "md"], "gender_ratio": 1, "gen": 3, "egg": ["field"], "exp": "Medium Slow", "color": "red", "evolves": [[256, 0]]}, "combusken": {"id": 256, "form_id": 0, "name": "Combusken", "type": ["fire", "fighting"], "gender": ["fd", "md"], "gender_ratio": 1, "gen": 3, "egg": ["field"], "exp": "Medium Slow", "color": "red", "evolves": [[257, 0]]}, "blaziken": {"id": 257, "form_id": 0, "name": "Blaziken", "type": ["fire", "fighting"], "gender": ["fd", "md"], "gender_ratio": 1, "gen": 3, "egg": ["field"], "exp": "Medium Slow", "color": "red"}, "blaziken-mega": {"id": 257, "form_id": 1, "name": "Mega Blaziken", "type": ["fire", "fighting"], "gender": ["mf"], "gender_ratio": 1, "gen": 6, "egg": ["field"], "exp": "Medium Slow", "color": "red", "mega": true}, "mudkip": {"id": 258, "form_id": 0, "name": "Mudkip", "type": ["water"], "gender": ["mf"], "gender_ratio": 1, "gen": 3, "egg": ["monster", "water-1"], "exp": "Medium Slow", "color": "blue", "evolves": [[259, 0]]}, "marshtomp": {"id": 259, "form_id": 0, "name": "Marshtomp", "type": ["water", "ground"], "gender": ["mf"], "gender_ratio": 1, "gen": 3, "egg": ["monster", "water-1"], "exp": "Medium Slow", "color": "blue", "evolves": [[260, 0]]}, "swampert": {"id": 260, "form_id": 0, "name": "Swampert", "type": ["water", "ground"], "gender": ["mf"], "gender_ratio": 1, "gen": 3, "egg": ["monster", "water-1"], "exp": "Medium Slow", "color": "blue"}, "swampert-mega": {"id": 260, "form_id": 1, "name": "Mega Swampert", "type": ["water", "ground"], "gender": ["mf"], "gender_ratio": 1, "gen": 6, "egg": ["monster", "water-1"], "exp": "Medium Slow", "color": "blue", "mega": true}, "poochyena": {"id": 261, "form_id": 0, "name": "Poochyena", "type": ["dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["field"], "exp": "Medium Fast", "color": "gray", "evolves": [[262, 0]]}, "mightyena": {"id": 262, "form_id": 0, "name": "Mightyena", "type": ["dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["field"], "exp": "Medium Fast", "color": "gray"}, "zigzagoon": {"id": 263, "form_id": 0, "name": "Zigzagoon", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["field"], "exp": "Medium Fast", "color": "brown", "evolves": [[264, 0]]}, "zigzagoon-galar": {"id": 263, "form_id": 1, "name": "Galarian Zigzagoon", "type": ["dark", "normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field"], "exp": "Medium Fast", "color": "white", "evolves": [[264, 1]]}, "linoone": {"id": 264, "form_id": 0, "name": "Linoone", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["field"], "exp": "Medium Fast", "color": "white"}, "linoone-galar": {"id": 264, "form_id": 1, "name": "Galarian Linoone", "type": ["dark", "normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field"], "exp": "Medium Fast", "color": "white", "evolves": [[862, 0]]}, "wurmple": {"id": 265, "form_id": 0, "name": "Wurmple", "type": ["bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["bug"], "exp": "Medium Fast", "color": "red", "evolves": [[266, 0], [268, 0]]}, "silcoon": {"id": 266, "form_id": 0, "name": "Silcoon", "type": ["bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["bug"], "exp": "Medium Fast", "color": "white", "evolves": [[267, 0]]}, "beautifly": {"id": 267, "form_id": 0, "name": "Beautifly", "type": ["bug", "flying"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 3, "egg": ["bug"], "exp": "Medium Fast", "color": "yellow"}, "cascoon": {"id": 268, "form_id": 0, "name": "Cascoon", "type": ["bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["bug"], "exp": "Medium Fast", "color": "purple", "evolves": [[269, 0]]}, "dustox": {"id": 269, "form_id": 0, "name": "Dustox", "type": ["bug", "poison"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 3, "egg": ["bug"], "exp": "Medium Fast", "color": "green"}, "lotad": {"id": 270, "form_id": 0, "name": "Lotad", "type": ["water", "grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["water-1", "grass"], "exp": "Medium Slow", "color": "green", "evolves": [[271, 0]]}, "lombre": {"id": 271, "form_id": 0, "name": "Lombre", "type": ["water", "grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["water-1", "grass"], "exp": "Medium Slow", "color": "green", "evolves": [[272, 0]]}, "ludicolo": {"id": 272, "form_id": 0, "name": "Ludicolo", "type": ["water", "grass"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 3, "egg": ["water-1", "grass"], "exp": "Medium Slow", "color": "green"}, "seedot": {"id": 273, "form_id": 0, "name": "Seedot", "type": ["grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["field", "grass"], "exp": "Medium Slow", "color": "brown", "evolves": [[274, 0]]}, "nuzleaf": {"id": 274, "form_id": 0, "name": "Nuzleaf", "type": ["grass", "dark"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 3, "egg": ["field", "grass"], "exp": "Medium Slow", "color": "brown", "evolves": [[275, 0]]}, "shiftry": {"id": 275, "form_id": 0, "name": "Shiftry", "type": ["grass", "dark"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 3, "egg": ["field", "grass"], "exp": "Medium Slow", "color": "brown"}, "taillow": {"id": 276, "form_id": 0, "name": "Taillow", "type": ["normal", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["flying"], "exp": "Medium Slow", "color": "blue", "evolves": [[277, 0]]}, "swellow": {"id": 277, "form_id": 0, "name": "Swellow", "type": ["normal", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["flying"], "exp": "Medium Slow", "color": "blue"}, "wingull": {"id": 278, "form_id": 0, "name": "Wingull", "type": ["water", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["water-1", "flying"], "exp": "Medium Fast", "color": "white", "evolves": [[279, 0]]}, "pelipper": {"id": 279, "form_id": 0, "name": "Pelipper", "type": ["water", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["water-1", "flying"], "exp": "Medium Fast", "color": "yellow"}, "ralts": {"id": 280, "form_id": 0, "name": "Ralts", "type": ["psychic", "fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["amorphous"], "exp": "Slow", "color": "white", "evolves": [[281, 0]]}, "kirlia": {"id": 281, "form_id": 0, "name": "Kirlia", "type": ["psychic", "fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["amorphous"], "exp": "Slow", "color": "white", "evolves": [[282, 0], [475, 0]]}, "gardevoir": {"id": 282, "form_id": 0, "name": "Gardevoir", "type": ["psychic", "fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["amorphous"], "exp": "Slow", "color": "white"}, "gardevoir-mega": {"id": 282, "form_id": 1, "name": "Mega Gardevoir", "type": ["psychic", "fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["amorphous"], "exp": "Slow", "color": "white", "mega": true}, "surskit": {"id": 283, "form_id": 0, "name": "Surskit", "type": ["bug", "water"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["water-1", "bug"], "exp": "Medium Fast", "color": "blue", "evolves": [[284, 0]]}, "masquerain": {"id": 284, "form_id": 0, "name": "Masquerain", "type": ["bug", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["water-1", "bug"], "exp": "Medium Fast", "color": "blue"}, "shroomish": {"id": 285, "form_id": 0, "name": "Shroomish", "type": ["grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["fairy", "grass"], "exp": "Fluctuating", "color": "brown", "evolves": [[286, 0]]}, "breloom": {"id": 286, "form_id": 0, "name": "Breloom", "type": ["grass", "fighting"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["fairy", "grass"], "exp": "Fluctuating", "color": "green"}, "slakoth": {"id": 287, "form_id": 0, "name": "Slakoth", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["field"], "exp": "Slow", "color": "brown", "evolves": [[288, 0]]}, "vigoroth": {"id": 288, "form_id": 0, "name": "Vigoroth", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["field"], "exp": "Slow", "color": "white", "evolves": [[289, 0]]}, "slaking": {"id": 289, "form_id": 0, "name": "Slaking", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["field"], "exp": "Slow", "color": "brown"}, "nincada": {"id": 290, "form_id": 0, "name": "Nincada", "type": ["bug", "ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["bug"], "exp": "Erratic", "color": "gray", "evolves": [[291, 0], [292, 0]]}, "ninjask": {"id": 291, "form_id": 0, "name": "Ninjask", "type": ["bug", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["bug"], "exp": "Erratic", "color": "yellow"}, "shedinja": {"id": 292, "form_id": 0, "name": "Shedinja", "type": ["bug", "ghost"], "gender": ["uk"], "gender_ratio": -1, "gen": 3, "egg": ["mineral"], "exp": "Erratic", "color": "brown"}, "whismur": {"id": 293, "form_id": 0, "name": "Whismur", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["monster", "field"], "exp": "Medium Slow", "color": "pink", "evolves": [[294, 0]]}, "loudred": {"id": 294, "form_id": 0, "name": "Loudred", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["monster", "field"], "exp": "Medium Slow", "color": "blue", "evolves": [[295, 0]]}, "exploud": {"id": 295, "form_id": 0, "name": "Exploud", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["monster", "field"], "exp": "Medium Slow", "color": "blue"}, "makuhita": {"id": 296, "form_id": 0, "name": "Makuhita", "type": ["fighting"], "gender": ["mf"], "gender_ratio": 2, "gen": 3, "egg": ["human-like"], "exp": "Fluctuating", "color": "yellow", "evolves": [[297, 0]]}, "hariyama": {"id": 297, "form_id": 0, "name": "Hariyama", "type": ["fighting"], "gender": ["mf"], "gender_ratio": 2, "gen": 3, "egg": ["human-like"], "exp": "Fluctuating", "color": "brown"}, "azurill": {"id": 298, "form_id": 0, "name": "Azurill", "type": ["normal", "fairy"], "gender": ["mf"], "gender_ratio": 6, "gen": 3, "egg": ["undiscovered"], "exp": "Fast", "color": "blue", "baby": true, "evolves": [[183, 0]]}, "nosepass": {"id": 299, "form_id": 0, "name": "Nosepass", "type": ["rock"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["mineral"], "exp": "Medium Fast", "color": "gray", "evolves": [[476, 0]]}, "skitty": {"id": 300, "form_id": 0, "name": "Skitty", "type": ["normal"], "gender": ["mf"], "gender_ratio": 6, "gen": 3, "egg": ["field", "fairy"], "exp": "Fast", "color": "pink", "evolves": [[301, 0]]}, "delcatty": {"id": 301, "form_id": 0, "name": "Delcatty", "type": ["normal"], "gender": ["mf"], "gender_ratio": 6, "gen": 3, "egg": ["field", "fairy"], "exp": "Fast", "color": "purple"}, "sableye": {"id": 302, "form_id": 0, "name": "Sableye", "type": ["dark", "ghost"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["human-like"], "exp": "Medium Slow", "color": "purple"}, "sableye-mega": {"id": 302, "form_id": 1, "name": "Mega Sableye", "type": ["dark", "ghost"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["human-like"], "exp": "Medium Slow", "color": "purple", "mega": true}, "mawile": {"id": 303, "form_id": 0, "name": "Mawile", "type": ["steel", "fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["field", "fairy"], "exp": "Fast", "color": "black"}, "mawile-mega": {"id": 303, "form_id": 1, "name": "Mega Mawile", "type": ["steel", "fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["field", "fairy"], "exp": "Fast", "color": "black", "mega": true}, "aron": {"id": 304, "form_id": 0, "name": "Aron", "type": ["steel", "rock"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["monster"], "exp": "Slow", "color": "gray", "evolves": [[305, 0]]}, "lairon": {"id": 305, "form_id": 0, "name": "Lairon", "type": ["steel", "rock"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["monster"], "exp": "Slow", "color": "gray", "evolves": [[306, 0]]}, "aggron": {"id": 306, "form_id": 0, "name": "Aggron", "type": ["steel", "rock"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["monster"], "exp": "Slow", "color": "gray"}, "aggron-mega": {"id": 306, "form_id": 1, "name": "Mega Aggron", "type": ["steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["monster"], "exp": "Slow", "color": "gray", "mega": true}, "meditite": {"id": 307, "form_id": 0, "name": "Meditite", "type": ["fighting", "psychic"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 3, "egg": ["human-like"], "exp": "Medium Fast", "color": "blue", "evolves": [[308, 0]]}, "medicham": {"id": 308, "form_id": 0, "name": "Medicham", "type": ["fighting", "psychic"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 3, "egg": ["human-like"], "exp": "Medium Fast", "color": "red"}, "medicham-mega": {"id": 308, "form_id": 1, "name": "Mega Medicham", "type": ["fighting", "psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["human-like"], "exp": "Medium Fast", "color": "red", "mega": true}, "electrike": {"id": 309, "form_id": 0, "name": "Electrike", "type": ["electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["field"], "exp": "Slow", "color": "green", "evolves": [[310, 0]]}, "manectric": {"id": 310, "form_id": 0, "name": "Manectric", "type": ["electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["field"], "exp": "Slow", "color": "yellow"}, "manectric-mega": {"id": 310, "form_id": 1, "name": "Mega Manectric", "type": ["electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["field"], "exp": "Slow", "color": "yellow", "mega": true}, "plusle": {"id": 311, "form_id": 0, "name": "Plusle", "type": ["electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["fairy"], "exp": "Medium Fast", "color": "yellow"}, "minun": {"id": 312, "form_id": 0, "name": "Minun", "type": ["electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["fairy"], "exp": "Medium Fast", "color": "yellow"}, "volbeat": {"id": 313, "form_id": 0, "name": "Volbeat", "type": ["bug"], "gender": ["mo"], "gender_ratio": 0, "gen": 3, "egg": ["bug", "human-like"], "exp": "Erratic", "color": "gray"}, "illumise": {"id": 314, "form_id": 0, "name": "Illumise", "type": ["bug"], "gender": ["fo"], "gender_ratio": 8, "gen": 3, "egg": ["bug", "human-like"], "exp": "Fluctuating", "color": "purple"}, "roselia": {"id": 315, "form_id": 0, "name": "Roselia", "type": ["grass", "poison"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 3, "egg": ["fairy", "grass"], "exp": "Medium Slow", "color": "green", "evolves": [[407, 0]]}, "gulpin": {"id": 316, "form_id": 0, "name": "Gulpin", "type": ["poison"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 3, "egg": ["amorphous"], "exp": "Fluctuating", "color": "green", "evolves": [[317, 0]]}, "swalot": {"id": 317, "form_id": 0, "name": "Swalot", "type": ["poison"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 3, "egg": ["amorphous"], "exp": "Fluctuating", "color": "purple"}, "carvanha": {"id": 318, "form_id": 0, "name": "Carvanha", "type": ["water", "dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["water-2"], "exp": "Slow", "color": "red", "evolves": [[319, 0]]}, "sharpedo": {"id": 319, "form_id": 0, "name": "Sharpedo", "type": ["water", "dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["water-2"], "exp": "Slow", "color": "blue"}, "sharpedo-mega": {"id": 319, "form_id": 1, "name": "Mega Sharpedo", "type": ["water", "dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["water-2"], "exp": "Slow", "color": "blue", "mega": true}, "wailmer": {"id": 320, "form_id": 0, "name": "Wailmer", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["field", "water-2"], "exp": "Fluctuating", "color": "blue", "evolves": [[321, 0]]}, "wailord": {"id": 321, "form_id": 0, "name": "Wailord", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["field", "water-2"], "exp": "Fluctuating", "color": "blue"}, "numel": {"id": 322, "form_id": 0, "name": "Numel", "type": ["fire", "ground"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 3, "egg": ["field"], "exp": "Medium Fast", "color": "yellow", "evolves": [[323, 0]]}, "camerupt": {"id": 323, "form_id": 0, "name": "Camerupt", "type": ["fire", "ground"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 3, "egg": ["field"], "exp": "Medium Fast", "color": "red"}, "camerupt-mega": {"id": 323, "form_id": 1, "name": "Mega Camerupt", "type": ["fire", "ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["field"], "exp": "Medium Fast", "color": "red", "mega": true}, "torkoal": {"id": 324, "form_id": 0, "name": "Torkoal", "type": ["fire"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["field"], "exp": "Medium Fast", "color": "brown"}, "spoink": {"id": 325, "form_id": 0, "name": "Spoink", "type": ["psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["field"], "exp": "Fast", "color": "black", "evolves": [[326, 0]]}, "grumpig": {"id": 326, "form_id": 0, "name": "Grumpig", "type": ["psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["field"], "exp": "Fast", "color": "purple"}, "spinda": {"id": 327, "form_id": 0, "name": "Spinda", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["field", "human-like"], "exp": "Fast", "color": "brown"}, "trapinch": {"id": 328, "form_id": 0, "name": "Trapinch", "type": ["ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["bug"], "exp": "Medium Slow", "color": "brown", "evolves": [[329, 0]]}, "vibrava": {"id": 329, "form_id": 0, "name": "Vibrava", "type": ["ground", "dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["bug"], "exp": "Medium Slow", "color": "green", "evolves": [[330, 0]]}, "flygon": {"id": 330, "form_id": 0, "name": "Flygon", "type": ["ground", "dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["bug"], "exp": "Medium Slow", "color": "green"}, "cacnea": {"id": 331, "form_id": 0, "name": "Cacnea", "type": ["grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["grass", "human-like"], "exp": "Medium Slow", "color": "green", "evolves": [[332, 0]]}, "cacturne": {"id": 332, "form_id": 0, "name": "Cacturne", "type": ["grass", "dark"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 3, "egg": ["grass", "human-like"], "exp": "Medium Slow", "color": "green"}, "swablu": {"id": 333, "form_id": 0, "name": "Swablu", "type": ["normal", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["flying", "dragon"], "exp": "Erratic", "color": "blue", "evolves": [[334, 0]]}, "altaria": {"id": 334, "form_id": 0, "name": "Altaria", "type": ["dragon", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["flying", "dragon"], "exp": "Erratic", "color": "blue"}, "altaria-mega": {"id": 334, "form_id": 1, "name": "Mega Altaria", "type": ["dragon", "fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["flying", "dragon"], "exp": "Erratic", "color": "blue", "mega": true}, "zangoose": {"id": 335, "form_id": 0, "name": "Zangoose", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["field"], "exp": "Erratic", "color": "white"}, "seviper": {"id": 336, "form_id": 0, "name": "Seviper", "type": ["poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["field", "dragon"], "exp": "Fluctuating", "color": "black"}, "lunatone": {"id": 337, "form_id": 0, "name": "Lunatone", "type": ["rock", "psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 3, "egg": ["mineral"], "exp": "Fast", "color": "yellow"}, "solrock": {"id": 338, "form_id": 0, "name": "Solrock", "type": ["rock", "psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 3, "egg": ["mineral"], "exp": "Fast", "color": "red"}, "barboach": {"id": 339, "form_id": 0, "name": "Barboach", "type": ["water", "ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["water-2"], "exp": "Medium Fast", "color": "gray", "evolves": [[340, 0]]}, "whiscash": {"id": 340, "form_id": 0, "name": "Whiscash", "type": ["water", "ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["water-2"], "exp": "Medium Fast", "color": "blue"}, "corphish": {"id": 341, "form_id": 0, "name": "Corphish", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["water-1", "water-3"], "exp": "Fluctuating", "color": "red", "evolves": [[342, 0]]}, "crawdaunt": {"id": 342, "form_id": 0, "name": "Crawdaunt", "type": ["water", "dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["water-1", "water-3"], "exp": "Fluctuating", "color": "red"}, "baltoy": {"id": 343, "form_id": 0, "name": "Baltoy", "type": ["ground", "psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 3, "egg": ["mineral"], "exp": "Medium Fast", "color": "brown", "evolves": [[344, 0]]}, "claydol": {"id": 344, "form_id": 0, "name": "Claydol", "type": ["ground", "psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 3, "egg": ["mineral"], "exp": "Medium Fast", "color": "black"}, "lileep": {"id": 345, "form_id": 0, "name": "Lileep", "type": ["rock", "grass"], "gender": ["mf"], "gender_ratio": 1, "gen": 3, "egg": ["water-3"], "exp": "Erratic", "color": "purple", "evolves": [[346, 0]]}, "cradily": {"id": 346, "form_id": 0, "name": "Cradily", "type": ["rock", "grass"], "gender": ["mf"], "gender_ratio": 1, "gen": 3, "egg": ["water-3"], "exp": "Erratic", "color": "green"}, "anorith": {"id": 347, "form_id": 0, "name": "Anorith", "type": ["rock", "bug"], "gender": ["mf"], "gender_ratio": 1, "gen": 3, "egg": ["water-3"], "exp": "Erratic", "color": "gray", "evolves": [[348, 0]]}, "armaldo": {"id": 348, "form_id": 0, "name": "Armaldo", "type": ["rock", "bug"], "gender": ["mf"], "gender_ratio": 1, "gen": 3, "egg": ["water-3"], "exp": "Erratic", "color": "gray"}, "feebas": {"id": 349, "form_id": 0, "name": "Feebas", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["water-1", "dragon"], "exp": "Erratic", "color": "brown", "evolves": [[350, 0]]}, "milotic": {"id": 350, "form_id": 0, "name": "Milotic", "type": ["water"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 3, "egg": ["water-1", "dragon"], "exp": "Erratic", "color": "pink"}, "castform": {"id": 351, "form_id": 0, "name": "Castform", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["fairy", "amorphous"], "exp": "Medium Fast", "color": "gray"}, "kecleon": {"id": 352, "form_id": 0, "name": "Kecleon", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["field"], "exp": "Medium Slow", "color": "green"}, "shuppet": {"id": 353, "form_id": 0, "name": "Shuppet", "type": ["ghost"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["amorphous"], "exp": "Fast", "color": "black", "evolves": [[354, 0]]}, "banette": {"id": 354, "form_id": 0, "name": "Banette", "type": ["ghost"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["amorphous"], "exp": "Fast", "color": "black"}, "banette-mega": {"id": 354, "form_id": 1, "name": "Mega Banette", "type": ["ghost"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["amorphous"], "exp": "Fast", "color": "black", "mega": true}, "duskull": {"id": 355, "form_id": 0, "name": "Duskull", "type": ["ghost"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["amorphous"], "exp": "Fast", "color": "black", "evolves": [[356, 0]]}, "dusclops": {"id": 356, "form_id": 0, "name": "Dusclops", "type": ["ghost"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["amorphous"], "exp": "Fast", "color": "black", "evolves": [[477, 0]]}, "tropius": {"id": 357, "form_id": 0, "name": "Tropius", "type": ["grass", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["monster", "grass"], "exp": "Slow", "color": "green"}, "chimecho": {"id": 358, "form_id": 0, "name": "Chimecho", "type": ["psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["amorphous"], "exp": "Fast", "color": "blue"}, "absol": {"id": 359, "form_id": 0, "name": "Absol", "type": ["dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["field"], "exp": "Medium Slow", "color": "white"}, "absol-mega": {"id": 359, "form_id": 1, "name": "Mega Absol", "type": ["dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["field"], "exp": "Medium Slow", "color": "white", "mega": true}, "wynaut": {"id": 360, "form_id": 0, "name": "Wynaut", "type": ["psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["undiscovered"], "exp": "Medium Fast", "color": "blue", "baby": true, "evolves": [[202, 0]]}, "snorunt": {"id": 361, "form_id": 0, "name": "Snorunt", "type": ["ice"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["fairy", "mineral"], "exp": "Medium Fast", "color": "gray", "evolves": [[362, 0], [478, 0]]}, "glalie": {"id": 362, "form_id": 0, "name": "Glalie", "type": ["ice"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["fairy", "mineral"], "exp": "Medium Fast", "color": "gray"}, "glalie-mega": {"id": 362, "form_id": 1, "name": "Mega Glalie", "type": ["ice"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["fairy", "mineral"], "exp": "Medium Fast", "color": "gray", "mega": true}, "spheal": {"id": 363, "form_id": 0, "name": "Spheal", "type": ["ice", "water"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["water-1", "field"], "exp": "Medium Slow", "color": "blue", "evolves": [[364, 0]]}, "sealeo": {"id": 364, "form_id": 0, "name": "Sealeo", "type": ["ice", "water"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["water-1", "field"], "exp": "Medium Slow", "color": "blue", "evolves": [[365, 0]]}, "walrein": {"id": 365, "form_id": 0, "name": "Walrein", "type": ["ice", "water"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["water-1", "field"], "exp": "Medium Slow", "color": "blue"}, "clamperl": {"id": 366, "form_id": 0, "name": "Clamperl", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["water-1"], "exp": "Erratic", "color": "blue", "evolves": [[367, 0], [368, 0]]}, "huntail": {"id": 367, "form_id": 0, "name": "Huntail", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["water-1"], "exp": "Erratic", "color": "blue"}, "gorebyss": {"id": 368, "form_id": 0, "name": "Gorebyss", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["water-1"], "exp": "Erratic", "color": "pink"}, "relicanth": {"id": 369, "form_id": 0, "name": "Relicanth", "type": ["water", "rock"], "gender": ["fd", "md"], "gender_ratio": 1, "gen": 3, "egg": ["water-1", "water-2"], "exp": "Slow", "color": "gray"}, "luvdisc": {"id": 370, "form_id": 0, "name": "Luvdisc", "type": ["water"], "gender": ["mf"], "gender_ratio": 6, "gen": 3, "egg": ["water-2"], "exp": "Fast", "color": "pink"}, "bagon": {"id": 371, "form_id": 0, "name": "Bagon", "type": ["dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["dragon"], "exp": "Slow", "color": "blue", "evolves": [[372, 0]]}, "shelgon": {"id": 372, "form_id": 0, "name": "Shelgon", "type": ["dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["dragon"], "exp": "Slow", "color": "white", "evolves": [[373, 0]]}, "salamence": {"id": 373, "form_id": 0, "name": "Salamence", "type": ["dragon", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 3, "egg": ["dragon"], "exp": "Slow", "color": "blue"}, "salamence-mega": {"id": 373, "form_id": 1, "name": "Mega Salamence", "type": ["dragon", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["dragon"], "exp": "Slow", "color": "blue", "mega": true}, "beldum": {"id": 374, "form_id": 0, "name": "Beldum", "type": ["steel", "psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 3, "egg": ["mineral"], "exp": "Slow", "color": "blue", "evolves": [[375, 0]]}, "metang": {"id": 375, "form_id": 0, "name": "Metang", "type": ["steel", "psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 3, "egg": ["mineral"], "exp": "Slow", "color": "blue", "evolves": [[376, 0]]}, "metagross": {"id": 376, "form_id": 0, "name": "Metagross", "type": ["steel", "psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 3, "egg": ["mineral"], "exp": "Slow", "color": "blue"}, "metagross-mega": {"id": 376, "form_id": 1, "name": "Mega Metagross", "type": ["steel", "psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 6, "egg": ["mineral"], "exp": "Slow", "color": "blue", "mega": true}, "regirock": {"id": 377, "form_id": 0, "name": "Regirock", "type": ["rock"], "gender": ["uk"], "gender_ratio": -1, "gen": 3, "egg": ["undiscovered"], "exp": "Slow", "color": "brown", "sublegendary": true}, "regice": {"id": 378, "form_id": 0, "name": "Regice", "type": ["ice"], "gender": ["uk"], "gender_ratio": -1, "gen": 3, "egg": ["undiscovered"], "exp": "Slow", "color": "blue", "sublegendary": true}, "registeel": {"id": 379, "form_id": 0, "name": "Registeel", "type": ["steel"], "gender": ["uk"], "gender_ratio": -1, "gen": 3, "egg": ["undiscovered"], "exp": "Slow", "color": "gray", "sublegendary": true}, "latias": {"id": 380, "form_id": 0, "name": "Latias", "type": ["dragon", "psychic"], "gender": ["fo"], "gender_ratio": 8, "gen": 3, "egg": ["undiscovered"], "exp": "Slow", "color": "red", "sublegendary": true}, "latias-mega": {"id": 380, "form_id": 1, "name": "Mega Latias", "type": ["dragon", "psychic"], "gender": ["fo"], "gender_ratio": 8, "gen": 6, "egg": ["undiscovered"], "exp": "Slow", "color": "purple", "sublegendary": true, "mega": true}, "latios": {"id": 381, "form_id": 0, "name": "Latios", "type": ["dragon", "psychic"], "gender": ["mo"], "gender_ratio": 0, "gen": 3, "egg": ["undiscovered"], "exp": "Slow", "color": "blue", "sublegendary": true}, "latios-mega": {"id": 381, "form_id": 1, "name": "Mega Latios", "type": ["dragon", "psychic"], "gender": ["mo"], "gender_ratio": 0, "gen": 6, "egg": ["undiscovered"], "exp": "Slow", "color": "purple", "sublegendary": true, "mega": true}, "kyogre": {"id": 382, "form_id": 0, "name": "Kyogre", "type": ["water"], "gender": ["uk"], "gender_ratio": -1, "gen": 3, "egg": ["undiscovered"], "exp": "Slow", "color": "blue", "legendary": true}, "kyogre-primal": {"id": 382, "form_id": 1, "name": "Primal Kyogre", "type": ["water"], "gender": ["uk"], "gender_ratio": -1, "gen": 6, "egg": ["undiscovered"], "exp": "Slow", "color": "blue", "legendary": true}, "groudon": {"id": 383, "form_id": 0, "name": "Groudon", "type": ["ground"], "gender": ["uk"], "gender_ratio": -1, "gen": 3, "egg": ["undiscovered"], "exp": "Slow", "color": "red", "legendary": true}, "groudon-primal": {"id": 383, "form_id": 1, "name": "Primal Groudon", "type": ["ground", "fire"], "gender": ["uk"], "gender_ratio": -1, "gen": 6, "egg": ["undiscovered"], "exp": "Slow", "color": "red", "legendary": true}, "rayquaza": {"id": 384, "form_id": 0, "name": "Rayquaza", "type": ["dragon", "flying"], "gender": ["uk"], "gender_ratio": -1, "gen": 3, "egg": ["undiscovered"], "exp": "Slow", "color": "green", "legendary": true}, "rayquaza-mega": {"id": 384, "form_id": 1, "name": "Mega Rayquaza", "type": ["dragon", "flying"], "gender": ["uk"], "gender_ratio": -1, "gen": 6, "egg": ["undiscovered"], "exp": "Slow", "color": "green", "legendary": true, "mega": true}, "jirachi": {"id": 385, "form_id": 0, "name": "Jirachi", "type": ["steel", "psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 3, "egg": ["undiscovered"], "exp": "Slow", "color": "yellow", "mythical": true}, "deoxys": {"id": 386, "form_id": 0, "name": "Deoxys", "type": ["psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 3, "egg": ["undiscovered"], "exp": "Slow", "form": "Normal Forme", "color": "red", "mythical": true}, "deoxys-attack": {"id": 386, "form_id": 1, "name": "Deoxys", "type": ["psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 3, "egg": ["undiscovered"], "exp": "Slow", "form": "Attack Forme", "color": "red", "mythical": true}, "deoxys-defense": {"id": 386, "form_id": 2, "name": "Deoxys", "type": ["psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 3, "egg": ["undiscovered"], "exp": "Slow", "form": "Defense Forme", "color": "red", "mythical": true}, "deoxys-speed": {"id": 386, "form_id": 3, "name": "Deoxys", "type": ["psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 3, "egg": ["undiscovered"], "exp": "Slow", "form": "Speed Forme", "color": "red", "mythical": true}, "turtwig": {"id": 387, "form_id": 0, "name": "Turtwig", "type": ["grass"], "gender": ["mf"], "gender_ratio": 1, "gen": 4, "egg": ["monster", "grass"], "exp": "Medium Slow", "color": "green", "evolves": [[388, 0]]}, "grotle": {"id": 388, "form_id": 0, "name": "Grotle", "type": ["grass"], "gender": ["mf"], "gender_ratio": 1, "gen": 4, "egg": ["monster", "grass"], "exp": "Medium Slow", "color": "green", "evolves": [[389, 0]]}, "torterra": {"id": 389, "form_id": 0, "name": "Torterra", "type": ["grass", "ground"], "gender": ["mf"], "gender_ratio": 1, "gen": 4, "egg": ["monster", "grass"], "exp": "Medium Slow", "color": "green"}, "chimchar": {"id": 390, "form_id": 0, "name": "Chimchar", "type": ["fire"], "gender": ["mf"], "gender_ratio": 1, "gen": 4, "egg": ["field", "human-like"], "exp": "Medium Slow", "color": "brown", "evolves": [[391, 0]]}, "monferno": {"id": 391, "form_id": 0, "name": "Monferno", "type": ["fire", "fighting"], "gender": ["mf"], "gender_ratio": 1, "gen": 4, "egg": ["field", "human-like"], "exp": "Medium Slow", "color": "brown", "evolves": [[392, 0]]}, "infernape": {"id": 392, "form_id": 0, "name": "Infernape", "type": ["fire", "fighting"], "gender": ["mf"], "gender_ratio": 1, "gen": 4, "egg": ["field", "human-like"], "exp": "Medium Slow", "color": "brown"}, "piplup": {"id": 393, "form_id": 0, "name": "Piplup", "type": ["water"], "gender": ["mf"], "gender_ratio": 1, "gen": 4, "egg": ["water-1", "field"], "exp": "Medium Slow", "color": "blue", "evolves": [[394, 0]]}, "prinplup": {"id": 394, "form_id": 0, "name": "Prinplup", "type": ["water"], "gender": ["mf"], "gender_ratio": 1, "gen": 4, "egg": ["water-1", "field"], "exp": "Medium Slow", "color": "blue", "evolves": [[395, 0]]}, "empoleon": {"id": 395, "form_id": 0, "name": "Empoleon", "type": ["water", "steel"], "gender": ["mf"], "gender_ratio": 1, "gen": 4, "egg": ["water-1", "field"], "exp": "Medium Slow", "color": "blue"}, "starly": {"id": 396, "form_id": 0, "name": "Starly", "type": ["normal", "flying"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["flying"], "exp": "Medium Slow", "color": "brown", "evolves": [[397, 0]]}, "staravia": {"id": 397, "form_id": 0, "name": "Staravia", "type": ["normal", "flying"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["flying"], "exp": "Medium Slow", "color": "brown", "evolves": [[398, 0]]}, "staraptor": {"id": 398, "form_id": 0, "name": "Staraptor", "type": ["normal", "flying"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["flying"], "exp": "Medium Slow", "color": "brown"}, "bidoof": {"id": 399, "form_id": 0, "name": "Bidoof", "type": ["normal"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["water-1", "field"], "exp": "Medium Fast", "color": "brown", "evolves": [[400, 0]]}, "bibarel": {"id": 400, "form_id": 0, "name": "Bibarel", "type": ["normal", "water"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["water-1", "field"], "exp": "Medium Fast", "color": "brown"}, "kricketot": {"id": 401, "form_id": 0, "name": "Kricketot", "type": ["bug"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["bug"], "exp": "Medium Slow", "color": "red", "evolves": [[402, 0]]}, "kricketune": {"id": 402, "form_id": 0, "name": "Kricketune", "type": ["bug"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["bug"], "exp": "Medium Slow", "color": "red"}, "shinx": {"id": 403, "form_id": 0, "name": "Shinx", "type": ["electric"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["field"], "exp": "Medium Slow", "color": "blue", "evolves": [[404, 0]]}, "luxio": {"id": 404, "form_id": 0, "name": "Luxio", "type": ["electric"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["field"], "exp": "Medium Slow", "color": "blue", "evolves": [[405, 0]]}, "luxray": {"id": 405, "form_id": 0, "name": "Luxray", "type": ["electric"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["field"], "exp": "Medium Slow", "color": "blue"}, "budew": {"id": 406, "form_id": 0, "name": "Budew", "type": ["grass", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["undiscovered"], "exp": "Medium Slow", "color": "green", "baby": true, "evolves": [[315, 0]]}, "roserade": {"id": 407, "form_id": 0, "name": "Roserade", "type": ["grass", "poison"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["fairy", "grass"], "exp": "Medium Slow", "color": "green"}, "cranidos": {"id": 408, "form_id": 0, "name": "Cranidos", "type": ["rock"], "gender": ["mf"], "gender_ratio": 1, "gen": 4, "egg": ["monster"], "exp": "Erratic", "color": "blue", "evolves": [[409, 0]]}, "rampardos": {"id": 409, "form_id": 0, "name": "Rampardos", "type": ["rock"], "gender": ["mf"], "gender_ratio": 1, "gen": 4, "egg": ["monster"], "exp": "Erratic", "color": "blue"}, "shieldon": {"id": 410, "form_id": 0, "name": "Shieldon", "type": ["rock", "steel"], "gender": ["mf"], "gender_ratio": 1, "gen": 4, "egg": ["monster"], "exp": "Erratic", "color": "gray", "evolves": [[411, 0]]}, "bastiodon": {"id": 411, "form_id": 0, "name": "Bastiodon", "type": ["rock", "steel"], "gender": ["mf"], "gender_ratio": 1, "gen": 4, "egg": ["monster"], "exp": "Erratic", "color": "gray"}, "burmy": {"id": 412, "form_id": 0, "name": "Burmy", "type": ["bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["bug"], "exp": "Medium Fast", "form": "Plant Cloak", "color": "green", "evolves": [[413, 0], [414, 0]]}, "burmy-sandy": {"id": 412, "form_id": 1, "name": "Burmy", "type": ["bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["bug"], "exp": "Medium Fast", "form": "Sandy Cloak", "color": "brown", "evolves": [[413, 1], [414, 0]]}, "burmy-trash": {"id": 412, "form_id": 2, "name": "Burmy", "type": ["bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["bug"], "exp": "Medium Fast", "form": "Trash Cloak", "color": "red", "evolves": [[413, 2], [414, 0]]}, "wormadam": {"id": 413, "form_id": 0, "name": "Wormadam", "type": ["bug", "grass"], "gender": ["fo"], "gender_ratio": 8, "gen": 4, "egg": ["bug"], "exp": "Medium Fast", "form": "Plant Cloak", "color": "green"}, "wormadam-sandy": {"id": 413, "form_id": 1, "name": "Wormadam", "type": ["bug", "ground"], "gender": ["fo"], "gender_ratio": 8, "gen": 4, "egg": ["bug"], "exp": "Medium Fast", "form": "Sandy Cloak", "color": "brown"}, "wormadam-trash": {"id": 413, "form_id": 2, "name": "Wormadam", "type": ["bug", "steel"], "gender": ["fo"], "gender_ratio": 8, "gen": 4, "egg": ["bug"], "exp": "Medium Fast", "form": "Trash Cloak", "color": "red"}, "mothim": {"id": 414, "form_id": 0, "name": "Mothim", "type": ["bug", "flying"], "gender": ["mo"], "gender_ratio": 0, "gen": 4, "egg": ["bug"], "exp": "Medium Fast", "color": "yellow"}, "combee": {"id": 415, "form_id": 0, "name": "Combee", "type": ["bug", "flying"], "gender": ["fd", "md"], "gender_ratio": 1, "gen": 4, "egg": ["bug"], "exp": "Medium Slow", "color": "yellow", "evolves": [[416, 0]]}, "vespiquen": {"id": 416, "form_id": 0, "name": "Vespiquen", "type": ["bug", "flying"], "gender": ["fo"], "gender_ratio": 8, "gen": 4, "egg": ["bug"], "exp": "Medium Slow", "color": "yellow"}, "pachirisu": {"id": 417, "form_id": 0, "name": "Pachirisu", "type": ["electric"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["field", "fairy"], "exp": "Medium Fast", "color": "white"}, "buizel": {"id": 418, "form_id": 0, "name": "Buizel", "type": ["water"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["water-1", "field"], "exp": "Medium Fast", "color": "brown", "evolves": [[419, 0]]}, "floatzel": {"id": 419, "form_id": 0, "name": "Floatzel", "type": ["water"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["water-1", "field"], "exp": "Medium Fast", "color": "brown"}, "cherubi": {"id": 420, "form_id": 0, "name": "Cherubi", "type": ["grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["fairy", "grass"], "exp": "Medium Fast", "color": "pink", "evolves": [[421, 1]]}, "cherrim": {"id": 421, "form_id": 1, "name": "Cherrim", "type": ["grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["fairy", "grass"], "exp": "Medium Fast", "color": "pink"}, "shellos": {"id": 422, "form_id": 0, "name": "Shellos", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["water-1", "amorphous"], "exp": "Medium Fast", "form": "West Sea", "color": "purple", "evolves": [[423, 0]]}, "shellos-east": {"id": 422, "form_id": 1, "name": "Shellos", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["water-1", "amorphous"], "exp": "Medium Fast", "form": "East Sea", "color": "blue", "evolves": [[423, 1]]}, "gastrodon": {"id": 423, "form_id": 0, "name": "Gastrodon", "type": ["water", "ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["water-1", "amorphous"], "exp": "Medium Fast", "form": "West Sea", "color": "purple"}, "gastrodon-east": {"id": 423, "form_id": 1, "name": "Gastrodon", "type": ["water", "ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["water-1", "amorphous"], "exp": "Medium Fast", "form": "East Sea", "color": "blue"}, "ambipom": {"id": 424, "form_id": 0, "name": "Ambipom", "type": ["normal"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["field"], "exp": "Fast", "color": "purple"}, "drifloon": {"id": 425, "form_id": 0, "name": "Drifloon", "type": ["ghost", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["amorphous"], "exp": "Fluctuating", "color": "purple", "evolves": [[426, 0]]}, "drifblim": {"id": 426, "form_id": 0, "name": "Drifblim", "type": ["ghost", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["amorphous"], "exp": "Fluctuating", "color": "purple"}, "buneary": {"id": 427, "form_id": 0, "name": "Buneary", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["field", "human-like"], "exp": "Medium Fast", "color": "brown", "evolves": [[428, 0]]}, "lopunny": {"id": 428, "form_id": 0, "name": "Lopunny", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["field", "human-like"], "exp": "Medium Fast", "color": "brown"}, "lopunny-mega": {"id": 428, "form_id": 1, "name": "Mega Lopunny", "type": ["normal", "fighting"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["field", "human-like"], "exp": "Medium Fast", "color": "brown", "mega": true}, "mismagius": {"id": 429, "form_id": 0, "name": "Mismagius", "type": ["ghost"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["amorphous"], "exp": "Fast", "color": "purple"}, "honchkrow": {"id": 430, "form_id": 0, "name": "Honchkrow", "type": ["dark", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["flying"], "exp": "Medium Slow", "color": "black"}, "glameow": {"id": 431, "form_id": 0, "name": "Glameow", "type": ["normal"], "gender": ["mf"], "gender_ratio": 6, "gen": 4, "egg": ["field"], "exp": "Fast", "color": "gray", "evolves": [[432, 0]]}, "purugly": {"id": 432, "form_id": 0, "name": "Purugly", "type": ["normal"], "gender": ["mf"], "gender_ratio": 6, "gen": 4, "egg": ["field"], "exp": "Fast", "color": "gray"}, "chingling": {"id": 433, "form_id": 0, "name": "Chingling", "type": ["psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["undiscovered"], "exp": "Fast", "color": "yellow", "baby": true, "evolves": [[358, 0]]}, "stunky": {"id": 434, "form_id": 0, "name": "Stunky", "type": ["poison", "dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["field"], "exp": "Medium Fast", "color": "purple", "evolves": [[435, 0]]}, "skuntank": {"id": 435, "form_id": 0, "name": "Skuntank", "type": ["poison", "dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["field"], "exp": "Medium Fast", "color": "purple"}, "bronzor": {"id": 436, "form_id": 0, "name": "Bronzor", "type": ["steel", "psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["mineral"], "exp": "Medium Fast", "color": "green", "evolves": [[437, 0]]}, "bronzong": {"id": 437, "form_id": 0, "name": "Bronzong", "type": ["steel", "psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["mineral"], "exp": "Medium Fast", "color": "green"}, "bonsly": {"id": 438, "form_id": 0, "name": "Bonsly", "type": ["rock"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["undiscovered"], "exp": "Medium Fast", "color": "brown", "baby": true, "evolves": [[185, 0]]}, "mime-jr": {"id": 439, "form_id": 0, "name": "Mime Jr.", "type": ["psychic", "fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["undiscovered"], "exp": "Medium Fast", "color": "pink", "baby": true, "evolves": [[122, 0], [122, 1]]}, "happiny": {"id": 440, "form_id": 0, "name": "Happiny", "type": ["normal"], "gender": ["fo"], "gender_ratio": 8, "gen": 4, "egg": ["undiscovered"], "exp": "Fast", "color": "pink", "baby": true, "evolves": [[113, 0]]}, "chatot": {"id": 441, "form_id": 0, "name": "Chatot", "type": ["normal", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["flying"], "exp": "Medium Slow", "color": "black"}, "spiritomb": {"id": 442, "form_id": 0, "name": "Spiritomb", "type": ["ghost", "dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["amorphous"], "exp": "Medium Fast", "color": "purple"}, "gible": {"id": 443, "form_id": 0, "name": "Gible", "type": ["dragon", "ground"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["monster", "dragon"], "exp": "Slow", "color": "blue", "evolves": [[444, 0]]}, "gabite": {"id": 444, "form_id": 0, "name": "Gabite", "type": ["dragon", "ground"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["monster", "dragon"], "exp": "Slow", "color": "blue", "evolves": [[445, 0]]}, "garchomp": {"id": 445, "form_id": 0, "name": "Garchomp", "type": ["dragon", "ground"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["monster", "dragon"], "exp": "Slow", "color": "blue"}, "garchomp-mega": {"id": 445, "form_id": 1, "name": "Mega Garchomp", "type": ["dragon", "ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["monster", "dragon"], "exp": "Slow", "color": "blue", "mega": true}, "munchlax": {"id": 446, "form_id": 0, "name": "Munchlax", "type": ["normal"], "gender": ["mf"], "gender_ratio": 1, "gen": 4, "egg": ["undiscovered"], "exp": "Slow", "color": "black", "baby": true, "evolves": [[143, 0]]}, "riolu": {"id": 447, "form_id": 0, "name": "Riolu", "type": ["fighting"], "gender": ["mf"], "gender_ratio": 1, "gen": 4, "egg": ["undiscovered"], "exp": "Medium Slow", "color": "blue", "baby": true, "evolves": [[448, 0]]}, "lucario": {"id": 448, "form_id": 0, "name": "Lucario", "type": ["fighting", "steel"], "gender": ["mf"], "gender_ratio": 1, "gen": 4, "egg": ["field", "human-like"], "exp": "Medium Slow", "color": "blue"}, "lucario-mega": {"id": 448, "form_id": 1, "name": "Mega Lucario", "type": ["fighting", "steel"], "gender": ["mf"], "gender_ratio": 1, "gen": 6, "egg": ["field", "human-like"], "exp": "Medium Slow", "color": "blue", "mega": true}, "hippopotas": {"id": 449, "form_id": 0, "name": "Hippopotas", "type": ["ground"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["field"], "exp": "Slow", "color": "brown", "evolves": [[450, 0]]}, "hippowdon": {"id": 450, "form_id": 0, "name": "Hippowdon", "type": ["ground"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["field"], "exp": "Slow", "color": "brown"}, "skorupi": {"id": 451, "form_id": 0, "name": "Skorupi", "type": ["poison", "bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["bug", "water-3"], "exp": "Slow", "color": "purple", "evolves": [[452, 0]]}, "drapion": {"id": 452, "form_id": 0, "name": "Drapion", "type": ["poison", "dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["bug", "water-3"], "exp": "Slow", "color": "purple"}, "croagunk": {"id": 453, "form_id": 0, "name": "Croagunk", "type": ["poison", "fighting"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["human-like"], "exp": "Medium Fast", "color": "blue", "evolves": [[454, 0]]}, "toxicroak": {"id": 454, "form_id": 0, "name": "Toxicroak", "type": ["poison", "fighting"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["human-like"], "exp": "Medium Fast", "color": "blue"}, "carnivine": {"id": 455, "form_id": 0, "name": "Carnivine", "type": ["grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["grass"], "exp": "Slow", "color": "green"}, "finneon": {"id": 456, "form_id": 0, "name": "Finneon", "type": ["water"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["water-2"], "exp": "Erratic", "color": "blue", "evolves": [[457, 0]]}, "lumineon": {"id": 457, "form_id": 0, "name": "Lumineon", "type": ["water"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["water-2"], "exp": "Erratic", "color": "blue"}, "mantyke": {"id": 458, "form_id": 0, "name": "Mantyke", "type": ["water", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["undiscovered"], "exp": "Slow", "color": "blue", "baby": true, "evolves": [[226, 0]]}, "snover": {"id": 459, "form_id": 0, "name": "Snover", "type": ["grass", "ice"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["monster", "grass"], "exp": "Slow", "color": "white", "evolves": [[460, 0]]}, "abomasnow": {"id": 460, "form_id": 0, "name": "Abomasnow", "type": ["grass", "ice"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["monster", "grass"], "exp": "Slow", "color": "white"}, "abomasnow-mega": {"id": 460, "form_id": 1, "name": "Mega Abomasnow", "type": ["grass", "ice"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["monster", "grass"], "exp": "Slow", "color": "white", "mega": true}, "weavile": {"id": 461, "form_id": 0, "name": "Weavile", "type": ["dark", "ice"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["field"], "exp": "Medium Slow", "color": "black"}, "magnezone": {"id": 462, "form_id": 0, "name": "Magnezone", "type": ["electric", "steel"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["mineral"], "exp": "Medium Fast", "color": "gray"}, "lickilicky": {"id": 463, "form_id": 0, "name": "Lickilicky", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["monster"], "exp": "Medium Fast", "color": "pink"}, "rhyperior": {"id": 464, "form_id": 0, "name": "Rhyperior", "type": ["ground", "rock"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["monster", "field"], "exp": "Slow", "color": "gray"}, "tangrowth": {"id": 465, "form_id": 0, "name": "Tangrowth", "type": ["grass"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["grass"], "exp": "Medium Fast", "color": "blue"}, "electivire": {"id": 466, "form_id": 0, "name": "Electivire", "type": ["electric"], "gender": ["mf"], "gender_ratio": 2, "gen": 4, "egg": ["human-like"], "exp": "Medium Fast", "color": "yellow"}, "magmortar": {"id": 467, "form_id": 0, "name": "Magmortar", "type": ["fire"], "gender": ["mf"], "gender_ratio": 2, "gen": 4, "egg": ["human-like"], "exp": "Medium Fast", "color": "red"}, "togekiss": {"id": 468, "form_id": 0, "name": "Togekiss", "type": ["fairy", "flying"], "gender": ["mf"], "gender_ratio": 1, "gen": 4, "egg": ["flying", "fairy"], "exp": "Fast", "color": "white"}, "yanmega": {"id": 469, "form_id": 0, "name": "Yanmega", "type": ["bug", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["bug"], "exp": "Medium Fast", "color": "green"}, "leafeon": {"id": 470, "form_id": 0, "name": "Leafeon", "type": ["grass"], "gender": ["mf"], "gender_ratio": 1, "gen": 4, "egg": ["field"], "exp": "Medium Fast", "color": "green"}, "glaceon": {"id": 471, "form_id": 0, "name": "Glaceon", "type": ["ice"], "gender": ["mf"], "gender_ratio": 1, "gen": 4, "egg": ["field"], "exp": "Medium Fast", "color": "blue"}, "gliscor": {"id": 472, "form_id": 0, "name": "Gliscor", "type": ["ground", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["bug"], "exp": "Medium Slow", "color": "purple"}, "mamoswine": {"id": 473, "form_id": 0, "name": "Mamoswine", "type": ["ice", "ground"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 4, "egg": ["field"], "exp": "Slow", "color": "brown"}, "porygon-z": {"id": 474, "form_id": 0, "name": "Porygon-Z", "type": ["normal"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["mineral"], "exp": "Medium Fast", "color": "red"}, "gallade": {"id": 475, "form_id": 0, "name": "Gallade", "type": ["psychic", "fighting"], "gender": ["mo"], "gender_ratio": 0, "gen": 4, "egg": ["amorphous"], "exp": "Slow", "color": "white"}, "gallade-mega": {"id": 475, "form_id": 1, "name": "Mega Gallade", "type": ["psychic", "fighting"], "gender": ["mo"], "gender_ratio": 0, "gen": 6, "egg": ["amorphous"], "exp": "Slow", "color": "white", "mega": true}, "probopass": {"id": 476, "form_id": 0, "name": "Probopass", "type": ["rock", "steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["mineral"], "exp": "Medium Fast", "color": "gray"}, "dusknoir": {"id": 477, "form_id": 0, "name": "Dusknoir", "type": ["ghost"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["amorphous"], "exp": "Fast", "color": "black"}, "froslass": {"id": 478, "form_id": 0, "name": "Froslass", "type": ["ice", "ghost"], "gender": ["fo"], "gender_ratio": 8, "gen": 4, "egg": ["fairy", "mineral"], "exp": "Medium Fast", "color": "white"}, "rotom": {"id": 479, "form_id": 0, "name": "Rotom", "type": ["electric", "ghost"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["amorphous"], "exp": "Medium Fast", "color": "red"}, "rotom-heat": {"id": 479, "form_id": 1, "name": "Heat Rotom", "type": ["electric", "fire"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["amorphous"], "exp": "Medium Fast", "color": "red"}, "rotom-wash": {"id": 479, "form_id": 2, "name": "Wash Rotom", "type": ["electric", "water"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["amorphous"], "exp": "Medium Fast", "color": "red"}, "rotom-frost": {"id": 479, "form_id": 3, "name": "Frost Rotom", "type": ["electric", "ice"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["amorphous"], "exp": "Medium Fast", "color": "red"}, "rotom-fan": {"id": 479, "form_id": 4, "name": "Fan Rotom", "type": ["electric", "flying"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["amorphous"], "exp": "Medium Fast", "color": "red"}, "rotom-mow": {"id": 479, "form_id": 5, "name": "Mow Rotom", "type": ["electric", "grass"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["amorphous"], "exp": "Medium Fast", "color": "red"}, "uxie": {"id": 480, "form_id": 0, "name": "Uxie", "type": ["psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["undiscovered"], "exp": "Slow", "color": "yellow", "sublegendary": true}, "mesprit": {"id": 481, "form_id": 0, "name": "Mesprit", "type": ["psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["undiscovered"], "exp": "Slow", "color": "pink", "sublegendary": true}, "azelf": {"id": 482, "form_id": 0, "name": "Azelf", "type": ["psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["undiscovered"], "exp": "Slow", "color": "blue", "sublegendary": true}, "dialga": {"id": 483, "form_id": 0, "name": "Dialga", "type": ["steel", "dragon"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["undiscovered"], "exp": "Slow", "color": "white", "legendary": true}, "dialga-origin": {"id": 483, "form_id": 1, "name": "Dialga", "type": ["steel", "dragon"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "form": "Origin Forme", "legendary": true}, "palkia": {"id": 484, "form_id": 0, "name": "Palkia", "type": ["water", "dragon"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["undiscovered"], "exp": "Slow", "color": "purple", "legendary": true}, "palkia-origin": {"id": 484, "form_id": 1, "name": "Palkia", "type": ["water", "dragon"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "form": "Origin Forme", "legendary": true}, "heatran": {"id": 485, "form_id": 0, "name": "Heatran", "type": ["fire", "steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 4, "egg": ["undiscovered"], "exp": "Slow", "color": "brown", "sublegendary": true}, "regigigas": {"id": 486, "form_id": 0, "name": "Regigigas", "type": ["normal"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["undiscovered"], "exp": "Slow", "color": "white", "sublegendary": true}, "giratina": {"id": 487, "form_id": 0, "name": "Giratina", "type": ["ghost", "dragon"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["undiscovered"], "exp": "Slow", "form": "Altered Forme", "color": "black", "legendary": true}, "giratina-origin": {"id": 487, "form_id": 1, "name": "Giratina", "type": ["ghost", "dragon"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["undiscovered"], "exp": "Slow", "form": "Origin Forme", "color": "black", "legendary": true}, "cresselia": {"id": 488, "form_id": 0, "name": "Cresselia", "type": ["psychic"], "gender": ["fo"], "gender_ratio": 8, "gen": 4, "egg": ["undiscovered"], "exp": "Slow", "color": "yellow", "sublegendary": true}, "phione": {"id": 489, "form_id": 0, "name": "Phione", "type": ["water"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["water-1", "fairy"], "exp": "Slow", "color": "blue", "mythical": true}, "manaphy": {"id": 490, "form_id": 0, "name": "Manaphy", "type": ["water"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["water-1", "fairy"], "exp": "Slow", "color": "blue", "mythical": true}, "darkrai": {"id": 491, "form_id": 0, "name": "Darkrai", "type": ["dark"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["undiscovered"], "exp": "Slow", "color": "black", "mythical": true}, "shaymin": {"id": 492, "form_id": 0, "name": "Shaymin", "type": ["grass"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["undiscovered"], "exp": "Medium Slow", "form": "Land Forme", "color": "green", "mythical": true}, "shaymin-sky": {"id": 492, "form_id": 1, "name": "Shaymin", "type": ["grass", "flying"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["undiscovered"], "exp": "Medium Slow", "form": "Sky Forme", "color": "green", "mythical": true}, "arceus": {"id": 493, "form_id": 0, "name": "Arceus", "type": ["normal"], "gender": ["uk"], "gender_ratio": -1, "gen": 4, "egg": ["undiscovered"], "exp": "Slow", "color": "white", "mythical": true}, "victini": {"id": 494, "form_id": 0, "name": "Victini", "type": ["psychic", "fire"], "gender": ["uk"], "gender_ratio": -1, "gen": 5, "egg": ["undiscovered"], "exp": "Slow", "color": "yellow", "mythical": true}, "snivy": {"id": 495, "form_id": 0, "name": "Snivy", "type": ["grass"], "gender": ["mf"], "gender_ratio": 1, "gen": 5, "egg": ["field", "grass"], "exp": "Medium Slow", "color": "green", "evolves": [[496, 0]]}, "servine": {"id": 496, "form_id": 0, "name": "Servine", "type": ["grass"], "gender": ["mf"], "gender_ratio": 1, "gen": 5, "egg": ["field", "grass"], "exp": "Medium Slow", "color": "green", "evolves": [[497, 0]]}, "serperior": {"id": 497, "form_id": 0, "name": "Serperior", "type": ["grass"], "gender": ["mf"], "gender_ratio": 1, "gen": 5, "egg": ["field", "grass"], "exp": "Medium Slow", "color": "green"}, "tepig": {"id": 498, "form_id": 0, "name": "Tepig", "type": ["fire"], "gender": ["mf"], "gender_ratio": 1, "gen": 5, "egg": ["field"], "exp": "Medium Slow", "color": "red", "evolves": [[499, 0]]}, "pignite": {"id": 499, "form_id": 0, "name": "Pignite", "type": ["fire", "fighting"], "gender": ["mf"], "gender_ratio": 1, "gen": 5, "egg": ["field"], "exp": "Medium Slow", "color": "red", "evolves": [[500, 0]]}, "emboar": {"id": 500, "form_id": 0, "name": "Emboar", "type": ["fire", "fighting"], "gender": ["mf"], "gender_ratio": 1, "gen": 5, "egg": ["field"], "exp": "Medium Slow", "color": "red"}, "oshawott": {"id": 501, "form_id": 0, "name": "Oshawott", "type": ["water"], "gender": ["mf"], "gender_ratio": 1, "gen": 5, "egg": ["field"], "exp": "Medium Slow", "color": "blue", "evolves": [[502, 0]]}, "dewott": {"id": 502, "form_id": 0, "name": "Dewott", "type": ["water"], "gender": ["mf"], "gender_ratio": 1, "gen": 5, "egg": ["field"], "exp": "Medium Slow", "color": "blue", "evolves": [[503, 0], [503, 1]]}, "samurott": {"id": 503, "form_id": 0, "name": "Samurott", "type": ["water"], "gender": ["mf"], "gender_ratio": 1, "gen": 5, "egg": ["field"], "exp": "Medium Slow", "color": "blue"}, "samurott-hisui": {"id": 503, "form_id": 1, "name": "Hisuian Samurott", "type": ["water", "dark"], "gender": ["mf"], "gender_ratio": 1, "gen": 8, "egg": ["field"], "exp": "Medium Slow"}, "patrat": {"id": 504, "form_id": 0, "name": "Patrat", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "color": "brown", "evolves": [[505, 0]]}, "watchog": {"id": 505, "form_id": 0, "name": "Watchog", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "color": "brown"}, "lillipup": {"id": 506, "form_id": 0, "name": "Lillipup", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Slow", "color": "brown", "evolves": [[507, 0]]}, "herdier": {"id": 507, "form_id": 0, "name": "Herdier", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Slow", "color": "gray", "evolves": [[508, 0]]}, "stoutland": {"id": 508, "form_id": 0, "name": "Stoutland", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Slow", "color": "gray"}, "purrloin": {"id": 509, "form_id": 0, "name": "Purrloin", "type": ["dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "color": "purple", "evolves": [[510, 0]]}, "liepard": {"id": 510, "form_id": 0, "name": "Liepard", "type": ["dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "color": "purple"}, "pansage": {"id": 511, "form_id": 0, "name": "Pansage", "type": ["grass"], "gender": ["mf"], "gender_ratio": 1, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "color": "green", "evolves": [[512, 0]]}, "simisage": {"id": 512, "form_id": 0, "name": "Simisage", "type": ["grass"], "gender": ["mf"], "gender_ratio": 1, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "color": "green"}, "pansear": {"id": 513, "form_id": 0, "name": "Pansear", "type": ["fire"], "gender": ["mf"], "gender_ratio": 1, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "color": "red", "evolves": [[514, 0]]}, "simisear": {"id": 514, "form_id": 0, "name": "Simisear", "type": ["fire"], "gender": ["mf"], "gender_ratio": 1, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "color": "red"}, "panpour": {"id": 515, "form_id": 0, "name": "Panpour", "type": ["water"], "gender": ["mf"], "gender_ratio": 1, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "color": "blue", "evolves": [[516, 0]]}, "simipour": {"id": 516, "form_id": 0, "name": "Simipour", "type": ["water"], "gender": ["mf"], "gender_ratio": 1, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "color": "blue"}, "munna": {"id": 517, "form_id": 0, "name": "Munna", "type": ["psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Fast", "color": "pink", "evolves": [[518, 0]]}, "musharna": {"id": 518, "form_id": 0, "name": "Musharna", "type": ["psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Fast", "color": "pink"}, "pidove": {"id": 519, "form_id": 0, "name": "Pidove", "type": ["normal", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["flying"], "exp": "Medium Slow", "color": "gray", "evolves": [[520, 0]]}, "tranquill": {"id": 520, "form_id": 0, "name": "Tranquill", "type": ["normal", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["flying"], "exp": "Medium Slow", "color": "gray", "evolves": [[521, 0]]}, "unfezant": {"id": 521, "form_id": 0, "name": "Unfezant", "type": ["normal", "flying"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 5, "egg": ["flying"], "exp": "Medium Slow", "color": "gray"}, "blitzle": {"id": 522, "form_id": 0, "name": "Blitzle", "type": ["electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "color": "black", "evolves": [[523, 0]]}, "zebstrika": {"id": 523, "form_id": 0, "name": "Zebstrika", "type": ["electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "color": "black"}, "roggenrola": {"id": 524, "form_id": 0, "name": "Roggenrola", "type": ["rock"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["mineral"], "exp": "Medium Slow", "color": "blue", "evolves": [[525, 0]]}, "boldore": {"id": 525, "form_id": 0, "name": "Boldore", "type": ["rock"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["mineral"], "exp": "Medium Slow", "color": "blue", "evolves": [[526, 0]]}, "gigalith": {"id": 526, "form_id": 0, "name": "Gigalith", "type": ["rock"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["mineral"], "exp": "Medium Slow", "color": "blue"}, "woobat": {"id": 527, "form_id": 0, "name": "Woobat", "type": ["psychic", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["flying", "field"], "exp": "Medium Fast", "color": "blue", "evolves": [[528, 0]]}, "swoobat": {"id": 528, "form_id": 0, "name": "Swoobat", "type": ["psychic", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["flying", "field"], "exp": "Medium Fast", "color": "blue"}, "drilbur": {"id": 529, "form_id": 0, "name": "Drilbur", "type": ["ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "color": "gray", "evolves": [[530, 0]]}, "excadrill": {"id": 530, "form_id": 0, "name": "Excadrill", "type": ["ground", "steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "color": "gray"}, "audino": {"id": 531, "form_id": 0, "name": "Audino", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["fairy"], "exp": "Fast", "color": "pink"}, "audino-mega": {"id": 531, "form_id": 1, "name": "Mega Audino", "type": ["normal", "fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["fairy"], "exp": "Fast", "color": "white", "mega": true}, "timburr": {"id": 532, "form_id": 0, "name": "Timburr", "type": ["fighting"], "gender": ["mf"], "gender_ratio": 2, "gen": 5, "egg": ["human-like"], "exp": "Medium Slow", "color": "gray", "evolves": [[533, 0]]}, "gurdurr": {"id": 533, "form_id": 0, "name": "Gurdurr", "type": ["fighting"], "gender": ["mf"], "gender_ratio": 2, "gen": 5, "egg": ["human-like"], "exp": "Medium Slow", "color": "gray", "evolves": [[534, 0]]}, "conkeldurr": {"id": 534, "form_id": 0, "name": "Conkeldurr", "type": ["fighting"], "gender": ["mf"], "gender_ratio": 2, "gen": 5, "egg": ["human-like"], "exp": "Medium Slow", "color": "brown"}, "tympole": {"id": 535, "form_id": 0, "name": "Tympole", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["water-1"], "exp": "Medium Slow", "color": "blue", "evolves": [[536, 0]]}, "palpitoad": {"id": 536, "form_id": 0, "name": "Palpitoad", "type": ["water", "ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["water-1"], "exp": "Medium Slow", "color": "blue", "evolves": [[537, 0]]}, "seismitoad": {"id": 537, "form_id": 0, "name": "Seismitoad", "type": ["water", "ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["water-1"], "exp": "Medium Slow", "color": "blue"}, "throh": {"id": 538, "form_id": 0, "name": "Throh", "type": ["fighting"], "gender": ["mo"], "gender_ratio": 0, "gen": 5, "egg": ["human-like"], "exp": "Medium Fast", "color": "red"}, "sawk": {"id": 539, "form_id": 0, "name": "Sawk", "type": ["fighting"], "gender": ["mo"], "gender_ratio": 0, "gen": 5, "egg": ["human-like"], "exp": "Medium Fast", "color": "blue"}, "sewaddle": {"id": 540, "form_id": 0, "name": "Sewaddle", "type": ["bug", "grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["bug"], "exp": "Medium Slow", "color": "yellow", "evolves": [[541, 0]]}, "swadloon": {"id": 541, "form_id": 0, "name": "Swadloon", "type": ["bug", "grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["bug"], "exp": "Medium Slow", "color": "green", "evolves": [[542, 0]]}, "leavanny": {"id": 542, "form_id": 0, "name": "Leavanny", "type": ["bug", "grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["bug"], "exp": "Medium Slow", "color": "yellow"}, "venipede": {"id": 543, "form_id": 0, "name": "Venipede", "type": ["bug", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["bug"], "exp": "Medium Slow", "color": "red", "evolves": [[544, 0]]}, "whirlipede": {"id": 544, "form_id": 0, "name": "Whirlipede", "type": ["bug", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["bug"], "exp": "Medium Slow", "color": "gray", "evolves": [[545, 0]]}, "scolipede": {"id": 545, "form_id": 0, "name": "Scolipede", "type": ["bug", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["bug"], "exp": "Medium Slow", "color": "red"}, "cottonee": {"id": 546, "form_id": 0, "name": "Cottonee", "type": ["grass", "fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["fairy", "grass"], "exp": "Medium Fast", "color": "green", "evolves": [[547, 0]]}, "whimsicott": {"id": 547, "form_id": 0, "name": "Whimsicott", "type": ["grass", "fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["fairy", "grass"], "exp": "Medium Fast", "color": "green"}, "petilil": {"id": 548, "form_id": 0, "name": "Petilil", "type": ["grass"], "gender": ["fo"], "gender_ratio": 8, "gen": 5, "egg": ["grass"], "exp": "Medium Fast", "color": "green", "evolves": [[549, 0], [549, 1]]}, "lilligant": {"id": 549, "form_id": 0, "name": "Lilligant", "type": ["grass"], "gender": ["fo"], "gender_ratio": 8, "gen": 5, "egg": ["grass"], "exp": "Medium Fast", "color": "green"}, "lilligant-hisui": {"id": 549, "form_id": 1, "name": "Hisuian Lilligant", "type": ["grass", "fighting"], "gender": ["fo"], "gender_ratio": 8, "gen": 8, "egg": ["grass"], "exp": "Medium Fast"}, "basculin": {"id": 550, "form_id": 0, "name": "Basculin", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["water-2"], "exp": "Medium Fast", "form": "Red-Striped Form", "color": "green"}, "basculin-blue-striped": {"id": 550, "form_id": 1, "name": "Basculin", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["water-2"], "exp": "Medium Fast", "form": "Blue-Striped Form", "color": "green"}, "basculin-white-striped": {"id": 550, "form_id": 2, "name": "Basculin", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["water-2"], "exp": "Medium Fast", "form": "White-Striped Form", "evolves": [[902, 0], [902, 1]]}, "sandile": {"id": 551, "form_id": 0, "name": "Sandile", "type": ["ground", "dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Slow", "color": "brown", "evolves": [[552, 0]]}, "krokorok": {"id": 552, "form_id": 0, "name": "Krokorok", "type": ["ground", "dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Slow", "color": "brown", "evolves": [[553, 0]]}, "krookodile": {"id": 553, "form_id": 0, "name": "Krookodile", "type": ["ground", "dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Slow", "color": "red"}, "darumaka": {"id": 554, "form_id": 0, "name": "Darumaka", "type": ["fire"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Slow", "color": "red", "evolves": [[555, 0]]}, "darumaka-galar": {"id": 554, "form_id": 1, "name": "Galarian Darumaka", "type": ["ice"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field"], "exp": "Medium Slow", "color": "white", "evolves": [[555, 2]]}, "darmanitan": {"id": 555, "form_id": 0, "name": "Darmanitan", "type": ["fire"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Slow", "color": "red"}, "darmanitan-galar": {"id": 555, "form_id": 2, "name": "Galarian Darmanitan", "type": ["ice"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field"], "exp": "Medium Slow", "color": "white"}, "maractus": {"id": 556, "form_id": 0, "name": "Maractus", "type": ["grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["grass"], "exp": "Medium Fast", "color": "green"}, "dwebble": {"id": 557, "form_id": 0, "name": "Dwebble", "type": ["bug", "rock"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["bug", "mineral"], "exp": "Medium Fast", "color": "red", "evolves": [[558, 0]]}, "crustle": {"id": 558, "form_id": 0, "name": "Crustle", "type": ["bug", "rock"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["bug", "mineral"], "exp": "Medium Fast", "color": "red"}, "scraggy": {"id": 559, "form_id": 0, "name": "Scraggy", "type": ["dark", "fighting"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field", "dragon"], "exp": "Medium Fast", "color": "yellow", "evolves": [[560, 0]]}, "scrafty": {"id": 560, "form_id": 0, "name": "Scrafty", "type": ["dark", "fighting"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field", "dragon"], "exp": "Medium Fast", "color": "red"}, "sigilyph": {"id": 561, "form_id": 0, "name": "Sigilyph", "type": ["psychic", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["flying"], "exp": "Medium Fast", "color": "black"}, "yamask": {"id": 562, "form_id": 0, "name": "Yamask", "type": ["ghost"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["mineral", "amorphous"], "exp": "Medium Fast", "color": "black", "evolves": [[563, 0]]}, "yamask-galar": {"id": 562, "form_id": 1, "name": "Galarian Yamask", "type": ["ground", "ghost"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["mineral", "amorphous"], "exp": "Medium Fast", "color": "black", "evolves": [[867, 0]]}, "cofagrigus": {"id": 563, "form_id": 0, "name": "Cofagrigus", "type": ["ghost"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["mineral", "amorphous"], "exp": "Medium Fast", "color": "yellow"}, "tirtouga": {"id": 564, "form_id": 0, "name": "Tirtouga", "type": ["water", "rock"], "gender": ["mf"], "gender_ratio": 1, "gen": 5, "egg": ["water-1", "water-3"], "exp": "Medium Fast", "color": "blue", "evolves": [[565, 0]]}, "carracosta": {"id": 565, "form_id": 0, "name": "Carracosta", "type": ["water", "rock"], "gender": ["mf"], "gender_ratio": 1, "gen": 5, "egg": ["water-1", "water-3"], "exp": "Medium Fast", "color": "blue"}, "archen": {"id": 566, "form_id": 0, "name": "Archen", "type": ["rock", "flying"], "gender": ["mf"], "gender_ratio": 1, "gen": 5, "egg": ["flying", "water-3"], "exp": "Medium Fast", "color": "yellow", "evolves": [[567, 0]]}, "archeops": {"id": 567, "form_id": 0, "name": "Archeops", "type": ["rock", "flying"], "gender": ["mf"], "gender_ratio": 1, "gen": 5, "egg": ["flying", "water-3"], "exp": "Medium Fast", "color": "yellow"}, "trubbish": {"id": 568, "form_id": 0, "name": "Trubbish", "type": ["poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["mineral"], "exp": "Medium Fast", "color": "green", "evolves": [[569, 0]]}, "garbodor": {"id": 569, "form_id": 0, "name": "Garbodor", "type": ["poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["mineral"], "exp": "Medium Fast", "color": "green", "gmax": true}, "zorua": {"id": 570, "form_id": 0, "name": "Zorua", "type": ["dark"], "gender": ["mf"], "gender_ratio": 1, "gen": 5, "egg": ["field"], "exp": "Medium Slow", "color": "gray", "evolves": [[571, 0]]}, "zorua-hisui": {"id": 570, "form_id": 1, "name": "Hisuian Zorua", "type": ["normal", "ghost"], "gender": ["mf"], "gender_ratio": 1, "gen": 8, "egg": ["field"], "exp": "Medium Slow", "evolves": [[571, 1]]}, "zoroark": {"id": 571, "form_id": 0, "name": "Zoroark", "type": ["dark"], "gender": ["mf"], "gender_ratio": 1, "gen": 5, "egg": ["field"], "exp": "Medium Slow", "color": "gray"}, "zoroark-hisui": {"id": 571, "form_id": 1, "name": "Hisuian Zoroark", "type": ["normal", "ghost"], "gender": ["mf"], "gender_ratio": 1, "gen": 8, "egg": ["field"], "exp": "Medium Slow"}, "minccino": {"id": 572, "form_id": 0, "name": "Minccino", "type": ["normal"], "gender": ["mf"], "gender_ratio": 6, "gen": 5, "egg": ["field"], "exp": "Fast", "color": "gray", "evolves": [[573, 0]]}, "cinccino": {"id": 573, "form_id": 0, "name": "Cinccino", "type": ["normal"], "gender": ["mf"], "gender_ratio": 6, "gen": 5, "egg": ["field"], "exp": "Fast", "color": "gray"}, "gothita": {"id": 574, "form_id": 0, "name": "Gothita", "type": ["psychic"], "gender": ["mf"], "gender_ratio": 6, "gen": 5, "egg": ["human-like"], "exp": "Medium Slow", "color": "purple", "evolves": [[575, 0]]}, "gothorita": {"id": 575, "form_id": 0, "name": "Gothorita", "type": ["psychic"], "gender": ["mf"], "gender_ratio": 6, "gen": 5, "egg": ["human-like"], "exp": "Medium Slow", "color": "purple", "evolves": [[576, 0]]}, "gothitelle": {"id": 576, "form_id": 0, "name": "Gothitelle", "type": ["psychic"], "gender": ["mf"], "gender_ratio": 6, "gen": 5, "egg": ["human-like"], "exp": "Medium Slow", "color": "purple"}, "solosis": {"id": 577, "form_id": 0, "name": "Solosis", "type": ["psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["amorphous"], "exp": "Medium Slow", "color": "green", "evolves": [[578, 0]]}, "duosion": {"id": 578, "form_id": 0, "name": "Duosion", "type": ["psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["amorphous"], "exp": "Medium Slow", "color": "green", "evolves": [[579, 0]]}, "reuniclus": {"id": 579, "form_id": 0, "name": "Reuniclus", "type": ["psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["amorphous"], "exp": "Medium Slow", "color": "green"}, "ducklett": {"id": 580, "form_id": 0, "name": "Ducklett", "type": ["water", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["water-1", "flying"], "exp": "Medium Fast", "color": "blue", "evolves": [[581, 0]]}, "swanna": {"id": 581, "form_id": 0, "name": "Swanna", "type": ["water", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["water-1", "flying"], "exp": "Medium Fast", "color": "white"}, "vanillite": {"id": 582, "form_id": 0, "name": "Vanillite", "type": ["ice"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["mineral"], "exp": "Slow", "color": "white", "evolves": [[583, 0]]}, "vanillish": {"id": 583, "form_id": 0, "name": "Vanillish", "type": ["ice"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["mineral"], "exp": "Slow", "color": "white", "evolves": [[584, 0]]}, "vanilluxe": {"id": 584, "form_id": 0, "name": "Vanilluxe", "type": ["ice"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["mineral"], "exp": "Slow", "color": "white"}, "deerling": {"id": 585, "form_id": 0, "name": "Deerling", "type": ["normal", "grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "form": "Spring Form", "color": "pink", "evolves": [[586, 0]]}, "deerling-summer": {"id": 585, "form_id": 1, "name": "Deerling", "type": ["normal", "grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "form": "Summer Form", "color": "green", "evolves": [[586, 1]]}, "deerling-autumn": {"id": 585, "form_id": 2, "name": "Deerling", "type": ["normal", "grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "form": "Autumn Form", "color": "red", "evolves": [[586, 2]]}, "deerling-winter": {"id": 585, "form_id": 3, "name": "Deerling", "type": ["normal", "grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "form": "Winter Form", "color": "brown", "evolves": [[586, 3]]}, "sawsbuck": {"id": 586, "form_id": 0, "name": "Sawsbuck", "type": ["normal", "grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "form": "Spring Form", "color": "brown"}, "sawsbuck-summer": {"id": 586, "form_id": 1, "name": "Sawsbuck", "type": ["normal", "grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "form": "Summer Form", "color": "brown"}, "sawsbuck-autumn": {"id": 586, "form_id": 2, "name": "Sawsbuck", "type": ["normal", "grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "form": "Autumn Form", "color": "brown"}, "sawsbuck-winter": {"id": 586, "form_id": 3, "name": "Sawsbuck", "type": ["normal", "grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "form": "Winter Form", "color": "brown"}, "emolga": {"id": 587, "form_id": 0, "name": "Emolga", "type": ["electric", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "color": "white"}, "karrablast": {"id": 588, "form_id": 0, "name": "Karrablast", "type": ["bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["bug"], "exp": "Medium Fast", "color": "blue", "evolves": [[589, 0]]}, "escavalier": {"id": 589, "form_id": 0, "name": "Escavalier", "type": ["bug", "steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["bug"], "exp": "Medium Fast", "color": "gray"}, "foongus": {"id": 590, "form_id": 0, "name": "Foongus", "type": ["grass", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["grass"], "exp": "Medium Fast", "color": "white", "evolves": [[591, 0]]}, "amoonguss": {"id": 591, "form_id": 0, "name": "Amoonguss", "type": ["grass", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["grass"], "exp": "Medium Fast", "color": "white"}, "frillish": {"id": 592, "form_id": 0, "name": "Frillish", "type": ["water", "ghost"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 5, "egg": ["amorphous"], "exp": "Medium Fast", "color": "white", "evolves": [[593, 0]]}, "jellicent": {"id": 593, "form_id": 0, "name": "Jellicent", "type": ["water", "ghost"], "gender": ["fd", "md"], "gender_ratio": 4, "gen": 5, "egg": ["amorphous"], "exp": "Medium Fast", "color": "white"}, "alomomola": {"id": 594, "form_id": 0, "name": "Alomomola", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["water-1", "water-2"], "exp": "Fast", "color": "pink"}, "joltik": {"id": 595, "form_id": 0, "name": "Joltik", "type": ["bug", "electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["bug"], "exp": "Medium Fast", "color": "yellow", "evolves": [[596, 0]]}, "galvantula": {"id": 596, "form_id": 0, "name": "Galvantula", "type": ["bug", "electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["bug"], "exp": "Medium Fast", "color": "yellow"}, "ferroseed": {"id": 597, "form_id": 0, "name": "Ferroseed", "type": ["grass", "steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["grass", "mineral"], "exp": "Medium Fast", "color": "gray", "evolves": [[598, 0]]}, "ferrothorn": {"id": 598, "form_id": 0, "name": "Ferrothorn", "type": ["grass", "steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["grass", "mineral"], "exp": "Medium Fast", "color": "gray"}, "klink": {"id": 599, "form_id": 0, "name": "Klink", "type": ["steel"], "gender": ["uk"], "gender_ratio": -1, "gen": 5, "egg": ["mineral"], "exp": "Medium Slow", "color": "gray", "evolves": [[600, 0]]}, "klang": {"id": 600, "form_id": 0, "name": "Klang", "type": ["steel"], "gender": ["uk"], "gender_ratio": -1, "gen": 5, "egg": ["mineral"], "exp": "Medium Slow", "color": "gray", "evolves": [[601, 0]]}, "klinklang": {"id": 601, "form_id": 0, "name": "Klinklang", "type": ["steel"], "gender": ["uk"], "gender_ratio": -1, "gen": 5, "egg": ["mineral"], "exp": "Medium Slow", "color": "gray"}, "tynamo": {"id": 602, "form_id": 0, "name": "Tynamo", "type": ["electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["amorphous"], "exp": "Slow", "color": "white", "evolves": [[603, 0]]}, "eelektrik": {"id": 603, "form_id": 0, "name": "Eelektrik", "type": ["electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["amorphous"], "exp": "Slow", "color": "blue", "evolves": [[604, 0]]}, "eelektross": {"id": 604, "form_id": 0, "name": "Eelektross", "type": ["electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["amorphous"], "exp": "Slow", "color": "blue"}, "elgyem": {"id": 605, "form_id": 0, "name": "Elgyem", "type": ["psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["human-like"], "exp": "Medium Fast", "color": "blue", "evolves": [[606, 0]]}, "beheeyem": {"id": 606, "form_id": 0, "name": "Beheeyem", "type": ["psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["human-like"], "exp": "Medium Fast", "color": "brown"}, "litwick": {"id": 607, "form_id": 0, "name": "Litwick", "type": ["ghost", "fire"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["amorphous"], "exp": "Medium Slow", "color": "white", "evolves": [[608, 0]]}, "lampent": {"id": 608, "form_id": 0, "name": "Lampent", "type": ["ghost", "fire"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["amorphous"], "exp": "Medium Slow", "color": "black", "evolves": [[609, 0]]}, "chandelure": {"id": 609, "form_id": 0, "name": "Chandelure", "type": ["ghost", "fire"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["amorphous"], "exp": "Medium Slow", "color": "black"}, "axew": {"id": 610, "form_id": 0, "name": "Axew", "type": ["dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["monster", "dragon"], "exp": "Slow", "color": "green", "evolves": [[611, 0]]}, "fraxure": {"id": 611, "form_id": 0, "name": "Fraxure", "type": ["dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["monster", "dragon"], "exp": "Slow", "color": "green", "evolves": [[612, 0]]}, "haxorus": {"id": 612, "form_id": 0, "name": "Haxorus", "type": ["dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["monster", "dragon"], "exp": "Slow", "color": "yellow"}, "cubchoo": {"id": 613, "form_id": 0, "name": "Cubchoo", "type": ["ice"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "color": "white", "evolves": [[614, 0]]}, "beartic": {"id": 614, "form_id": 0, "name": "Beartic", "type": ["ice"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "color": "white"}, "cryogonal": {"id": 615, "form_id": 0, "name": "Cryogonal", "type": ["ice"], "gender": ["uk"], "gender_ratio": -1, "gen": 5, "egg": ["mineral"], "exp": "Medium Fast", "color": "blue"}, "shelmet": {"id": 616, "form_id": 0, "name": "Shelmet", "type": ["bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["bug"], "exp": "Medium Fast", "color": "red", "evolves": [[617, 0]]}, "accelgor": {"id": 617, "form_id": 0, "name": "Accelgor", "type": ["bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["bug"], "exp": "Medium Fast", "color": "red"}, "stunfisk": {"id": 618, "form_id": 0, "name": "Stunfisk", "type": ["ground", "electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["water-1", "amorphous"], "exp": "Medium Fast", "color": "brown"}, "stunfisk-galar": {"id": 618, "form_id": 1, "name": "Galarian Stunfisk", "type": ["ground", "steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["water-1", "amorphous"], "exp": "Medium Fast", "color": "green"}, "mienfoo": {"id": 619, "form_id": 0, "name": "Mienfoo", "type": ["fighting"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field", "human-like"], "exp": "Medium Slow", "color": "yellow", "evolves": [[620, 0]]}, "mienshao": {"id": 620, "form_id": 0, "name": "Mienshao", "type": ["fighting"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field", "human-like"], "exp": "Medium Slow", "color": "purple"}, "druddigon": {"id": 621, "form_id": 0, "name": "Druddigon", "type": ["dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["monster", "dragon"], "exp": "Medium Fast", "color": "red"}, "golett": {"id": 622, "form_id": 0, "name": "Golett", "type": ["ground", "ghost"], "gender": ["uk"], "gender_ratio": -1, "gen": 5, "egg": ["mineral"], "exp": "Medium Fast", "color": "green", "evolves": [[623, 0]]}, "golurk": {"id": 623, "form_id": 0, "name": "Golurk", "type": ["ground", "ghost"], "gender": ["uk"], "gender_ratio": -1, "gen": 5, "egg": ["mineral"], "exp": "Medium Fast", "color": "green"}, "pawniard": {"id": 624, "form_id": 0, "name": "Pawniard", "type": ["dark", "steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["human-like"], "exp": "Medium Fast", "color": "red", "evolves": [[625, 0]]}, "bisharp": {"id": 625, "form_id": 0, "name": "Bisharp", "type": ["dark", "steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["human-like"], "exp": "Medium Fast", "color": "red"}, "bouffalant": {"id": 626, "form_id": 0, "name": "Bouffalant", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "color": "brown"}, "rufflet": {"id": 627, "form_id": 0, "name": "Rufflet", "type": ["normal", "flying"], "gender": ["mo"], "gender_ratio": 0, "gen": 5, "egg": ["flying"], "exp": "Slow", "color": "white", "evolves": [[628, 0], [628, 1]]}, "braviary": {"id": 628, "form_id": 0, "name": "Braviary", "type": ["normal", "flying"], "gender": ["mo"], "gender_ratio": 0, "gen": 5, "egg": ["flying"], "exp": "Slow", "color": "red"}, "braviary-hisui": {"id": 628, "form_id": 1, "name": "Hisuian Braviary", "type": ["psychic", "flying"], "gender": ["mo"], "gender_ratio": 0, "gen": 8, "egg": ["flying"], "exp": "Slow"}, "vullaby": {"id": 629, "form_id": 0, "name": "Vullaby", "type": ["dark", "flying"], "gender": ["fo"], "gender_ratio": 8, "gen": 5, "egg": ["flying"], "exp": "Slow", "color": "brown", "evolves": [[630, 0]]}, "mandibuzz": {"id": 630, "form_id": 0, "name": "Mandibuzz", "type": ["dark", "flying"], "gender": ["fo"], "gender_ratio": 8, "gen": 5, "egg": ["flying"], "exp": "Slow", "color": "brown"}, "heatmor": {"id": 631, "form_id": 0, "name": "Heatmor", "type": ["fire"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["field"], "exp": "Medium Fast", "color": "red"}, "durant": {"id": 632, "form_id": 0, "name": "Durant", "type": ["bug", "steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["bug"], "exp": "Medium Fast", "color": "gray"}, "deino": {"id": 633, "form_id": 0, "name": "Deino", "type": ["dark", "dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["dragon"], "exp": "Slow", "color": "blue", "evolves": [[634, 0]]}, "zweilous": {"id": 634, "form_id": 0, "name": "Zweilous", "type": ["dark", "dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["dragon"], "exp": "Slow", "color": "blue", "evolves": [[635, 0]]}, "hydreigon": {"id": 635, "form_id": 0, "name": "Hydreigon", "type": ["dark", "dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["dragon"], "exp": "Slow", "color": "blue"}, "larvesta": {"id": 636, "form_id": 0, "name": "Larvesta", "type": ["bug", "fire"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["bug"], "exp": "Slow", "color": "white", "evolves": [[637, 0]]}, "volcarona": {"id": 637, "form_id": 0, "name": "Volcarona", "type": ["bug", "fire"], "gender": ["mf"], "gender_ratio": 4, "gen": 5, "egg": ["bug"], "exp": "Slow", "color": "white"}, "cobalion": {"id": 638, "form_id": 0, "name": "Cobalion", "type": ["steel", "fighting"], "gender": ["uk"], "gender_ratio": -1, "gen": 5, "egg": ["undiscovered"], "exp": "Slow", "color": "blue", "sublegendary": true}, "terrakion": {"id": 639, "form_id": 0, "name": "Terrakion", "type": ["rock", "fighting"], "gender": ["uk"], "gender_ratio": -1, "gen": 5, "egg": ["undiscovered"], "exp": "Slow", "color": "gray", "sublegendary": true}, "virizion": {"id": 640, "form_id": 0, "name": "Virizion", "type": ["grass", "fighting"], "gender": ["uk"], "gender_ratio": -1, "gen": 5, "egg": ["undiscovered"], "exp": "Slow", "color": "green", "sublegendary": true}, "tornadus": {"id": 641, "form_id": 0, "name": "Tornadus", "type": ["flying"], "gender": ["mo"], "gender_ratio": 0, "gen": 5, "egg": ["undiscovered"], "exp": "Slow", "form": "Incarnate Form", "color": "green", "sublegendary": true}, "tornadus-therian": {"id": 641, "form_id": 1, "name": "Tornadus", "type": ["flying"], "gender": ["mo"], "gender_ratio": 0, "gen": 5, "egg": ["undiscovered"], "exp": "Slow", "form": "Therian Forme", "color": "green", "sublegendary": true}, "thundurus": {"id": 642, "form_id": 0, "name": "Thundurus", "type": ["electric", "flying"], "gender": ["mo"], "gender_ratio": 0, "gen": 5, "egg": ["undiscovered"], "exp": "Slow", "form": "Incarnate Form", "color": "blue", "sublegendary": true}, "thundurus-therian": {"id": 642, "form_id": 1, "name": "Thundurus", "type": ["electric", "flying"], "gender": ["mo"], "gender_ratio": 0, "gen": 5, "egg": ["undiscovered"], "exp": "Slow", "form": "Therian Forme", "color": "blue", "sublegendary": true}, "reshiram": {"id": 643, "form_id": 0, "name": "Reshiram", "type": ["dragon", "fire"], "gender": ["uk"], "gender_ratio": -1, "gen": 5, "egg": ["undiscovered"], "exp": "Slow", "color": "white", "legendary": true}, "zekrom": {"id": 644, "form_id": 0, "name": "Zekrom", "type": ["dragon", "electric"], "gender": ["uk"], "gender_ratio": -1, "gen": 5, "egg": ["undiscovered"], "exp": "Slow", "color": "black", "legendary": true}, "landorus": {"id": 645, "form_id": 0, "name": "Landorus", "type": ["ground", "flying"], "gender": ["mo"], "gender_ratio": 0, "gen": 5, "egg": ["undiscovered"], "exp": "Slow", "form": "Incarnate Form", "color": "brown", "sublegendary": true}, "landorus-therian": {"id": 645, "form_id": 1, "name": "Landorus", "type": ["ground", "flying"], "gender": ["mo"], "gender_ratio": 0, "gen": 5, "egg": ["undiscovered"], "exp": "Slow", "form": "Therian Forme", "color": "brown", "sublegendary": true}, "kyurem": {"id": 646, "form_id": 0, "name": "Kyurem", "type": ["dragon", "ice"], "gender": ["uk"], "gender_ratio": -1, "gen": 5, "egg": ["undiscovered"], "exp": "Slow", "color": "gray", "legendary": true}, "kyurem-white": {"id": 646, "form_id": 1, "name": "White Kyurem", "type": ["dragon", "ice"], "gender": ["uk"], "gender_ratio": -1, "gen": 5, "egg": ["undiscovered"], "exp": "Slow", "color": "gray", "legendary": true}, "kyurem-black": {"id": 646, "form_id": 2, "name": "Black Kyurem", "type": ["dragon", "ice"], "gender": ["uk"], "gender_ratio": -1, "gen": 5, "egg": ["undiscovered"], "exp": "Slow", "color": "gray", "legendary": true}, "keldeo": {"id": 647, "form_id": 0, "name": "Keldeo", "type": ["water", "fighting"], "gender": ["uk"], "gender_ratio": -1, "gen": 5, "egg": ["undiscovered"], "exp": "Slow", "color": "yellow", "mythical": true}, "meloetta": {"id": 648, "form_id": 0, "name": "Meloetta", "type": ["normal", "psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 5, "egg": ["undiscovered"], "exp": "Slow", "color": "white", "mythical": true}, "genesect": {"id": 649, "form_id": 0, "name": "Genesect", "type": ["bug", "steel"], "gender": ["uk"], "gender_ratio": -1, "gen": 5, "egg": ["undiscovered"], "exp": "Slow", "color": "purple", "mythical": true}, "chespin": {"id": 650, "form_id": 0, "name": "Chespin", "type": ["grass"], "gender": ["mf"], "gender_ratio": 1, "gen": 6, "egg": ["field"], "exp": "Medium Slow", "color": "green", "evolves": [[651, 0]]}, "quilladin": {"id": 651, "form_id": 0, "name": "Quilladin", "type": ["grass"], "gender": ["mf"], "gender_ratio": 1, "gen": 6, "egg": ["field"], "exp": "Medium Slow", "color": "green", "evolves": [[652, 0]]}, "chesnaught": {"id": 652, "form_id": 0, "name": "Chesnaught", "type": ["grass", "fighting"], "gender": ["mf"], "gender_ratio": 1, "gen": 6, "egg": ["field"], "exp": "Medium Slow", "color": "green"}, "fennekin": {"id": 653, "form_id": 0, "name": "Fennekin", "type": ["fire"], "gender": ["mf"], "gender_ratio": 1, "gen": 6, "egg": ["field"], "exp": "Medium Slow", "color": "red", "evolves": [[654, 0]]}, "braixen": {"id": 654, "form_id": 0, "name": "Braixen", "type": ["fire"], "gender": ["mf"], "gender_ratio": 1, "gen": 6, "egg": ["field"], "exp": "Medium Slow", "color": "red", "evolves": [[655, 0]]}, "delphox": {"id": 655, "form_id": 0, "name": "Delphox", "type": ["fire", "psychic"], "gender": ["mf"], "gender_ratio": 1, "gen": 6, "egg": ["field"], "exp": "Medium Slow", "color": "red"}, "froakie": {"id": 656, "form_id": 0, "name": "Froakie", "type": ["water"], "gender": ["mf"], "gender_ratio": 1, "gen": 6, "egg": ["water-1"], "exp": "Medium Slow", "color": "blue", "evolves": [[657, 0]]}, "frogadier": {"id": 657, "form_id": 0, "name": "Frogadier", "type": ["water"], "gender": ["mf"], "gender_ratio": 1, "gen": 6, "egg": ["water-1"], "exp": "Medium Slow", "color": "blue", "evolves": [[658, 0]]}, "greninja": {"id": 658, "form_id": 0, "name": "Greninja", "type": ["water", "dark"], "gender": ["mf"], "gender_ratio": 1, "gen": 6, "egg": ["water-1"], "exp": "Medium Slow", "color": "blue"}, "bunnelby": {"id": 659, "form_id": 0, "name": "Bunnelby", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["field"], "exp": "Medium Fast", "color": "brown", "evolves": [[660, 0]]}, "diggersby": {"id": 660, "form_id": 0, "name": "Diggersby", "type": ["normal", "ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["field"], "exp": "Medium Fast", "color": "brown"}, "fletchling": {"id": 661, "form_id": 0, "name": "Fletchling", "type": ["normal", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["flying"], "exp": "Medium Slow", "color": "red", "evolves": [[662, 0]]}, "fletchinder": {"id": 662, "form_id": 0, "name": "Fletchinder", "type": ["fire", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["flying"], "exp": "Medium Slow", "color": "red", "evolves": [[663, 0]]}, "talonflame": {"id": 663, "form_id": 0, "name": "Talonflame", "type": ["fire", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["flying"], "exp": "Medium Slow", "color": "red"}, "scatterbug": {"id": 664, "form_id": 6, "name": "Scatterbug", "type": ["bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["bug"], "exp": "Medium Fast", "color": "black", "evolves": [[665, 6]]}, "spewpa": {"id": 665, "form_id": 6, "name": "Spewpa", "type": ["bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["bug"], "exp": "Medium Fast", "color": "black", "evolves": [[666, 6]]}, "vivillon": {"id": 666, "form_id": 6, "name": "Vivillon", "type": ["bug", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["bug"], "exp": "Medium Fast", "form": "Meadow Pattern", "color": "pink"}, "litleo": {"id": 667, "form_id": 0, "name": "Litleo", "type": ["fire", "normal"], "gender": ["mf"], "gender_ratio": 7, "gen": 6, "egg": ["field"], "exp": "Medium Slow", "color": "brown", "evolves": [[668, 0]]}, "pyroar": {"id": 668, "form_id": 0, "name": "Pyroar", "type": ["fire", "normal"], "gender": ["fd", "md"], "gender_ratio": 7, "gen": 6, "egg": ["field"], "exp": "Medium Slow", "color": "brown"}, "flabebe": {"id": 669, "form_id": 0, "name": "Flab\u00c3\u00a9b\u00c3\u00a9", "type": ["fairy"], "gender": ["fo"], "gender_ratio": 8, "gen": 6, "egg": ["fairy"], "exp": "Medium Fast", "form": "Red Flower", "color": "white", "evolves": [[670, 0]]}, "floette": {"id": 670, "form_id": 0, "name": "Floette", "type": ["fairy"], "gender": ["fo"], "gender_ratio": 8, "gen": 6, "egg": ["fairy"], "exp": "Medium Fast", "form": "Red Flower", "color": "white", "evolves": [[671, 0]]}, "florges": {"id": 671, "form_id": 0, "name": "Florges", "type": ["fairy"], "gender": ["fo"], "gender_ratio": 8, "gen": 6, "egg": ["fairy"], "exp": "Medium Fast", "form": "Red Flower", "color": "white"}, "skiddo": {"id": 672, "form_id": 0, "name": "Skiddo", "type": ["grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["field"], "exp": "Medium Fast", "color": "brown", "evolves": [[673, 0]]}, "gogoat": {"id": 673, "form_id": 0, "name": "Gogoat", "type": ["grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["field"], "exp": "Medium Fast", "color": "brown"}, "pancham": {"id": 674, "form_id": 0, "name": "Pancham", "type": ["fighting"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["field", "human-like"], "exp": "Medium Fast", "color": "white", "evolves": [[675, 0]]}, "pangoro": {"id": 675, "form_id": 0, "name": "Pangoro", "type": ["fighting", "dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["field", "human-like"], "exp": "Medium Fast", "color": "white"}, "furfrou": {"id": 676, "form_id": 0, "name": "Furfrou", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["field"], "exp": "Medium Fast", "form": "Natural Form", "color": "white"}, "espurr": {"id": 677, "form_id": 0, "name": "Espurr", "type": ["psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["field"], "exp": "Medium Fast", "color": "gray", "evolves": [[678, 0], [678, 1]]}, "meowstic": {"id": 678, "form_id": 0, "name": "Meowstic", "type": ["psychic"], "gender": ["mo"], "gender_ratio": 0, "gen": 6, "egg": ["field"], "exp": "Medium Fast", "form": "Male", "color": "blue"}, "meowstic-female": {"id": 678, "form_id": 1, "name": "Meowstic", "type": ["psychic"], "gender": ["fo"], "gender_ratio": 8, "gen": 6, "egg": ["field"], "exp": "Medium Fast", "form": "Female", "color": "white"}, "honedge": {"id": 679, "form_id": 0, "name": "Honedge", "type": ["steel", "ghost"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["mineral"], "exp": "Medium Fast", "color": "brown", "evolves": [[680, 0]]}, "doublade": {"id": 680, "form_id": 0, "name": "Doublade", "type": ["steel", "ghost"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["mineral"], "exp": "Medium Fast", "color": "brown", "evolves": [[681, 1]]}, "aegislash": {"id": 681, "form_id": 1, "name": "Aegislash", "type": ["steel", "ghost"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["mineral"], "exp": "Medium Fast", "color": "brown"}, "spritzee": {"id": 682, "form_id": 0, "name": "Spritzee", "type": ["fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["fairy"], "exp": "Medium Fast", "color": "pink", "evolves": [[683, 0]]}, "aromatisse": {"id": 683, "form_id": 0, "name": "Aromatisse", "type": ["fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["fairy"], "exp": "Medium Fast", "color": "pink"}, "swirlix": {"id": 684, "form_id": 0, "name": "Swirlix", "type": ["fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["fairy"], "exp": "Medium Fast", "color": "white", "evolves": [[685, 0]]}, "slurpuff": {"id": 685, "form_id": 0, "name": "Slurpuff", "type": ["fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["fairy"], "exp": "Medium Fast", "color": "white"}, "inkay": {"id": 686, "form_id": 0, "name": "Inkay", "type": ["dark", "psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["water-1", "water-2"], "exp": "Medium Fast", "color": "blue", "evolves": [[687, 0]]}, "malamar": {"id": 687, "form_id": 0, "name": "Malamar", "type": ["dark", "psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["water-1", "water-2"], "exp": "Medium Fast", "color": "blue"}, "binacle": {"id": 688, "form_id": 0, "name": "Binacle", "type": ["rock", "water"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["water-3"], "exp": "Medium Fast", "color": "brown", "evolves": [[689, 0]]}, "barbaracle": {"id": 689, "form_id": 0, "name": "Barbaracle", "type": ["rock", "water"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["water-3"], "exp": "Medium Fast", "color": "brown"}, "skrelp": {"id": 690, "form_id": 0, "name": "Skrelp", "type": ["poison", "water"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["water-1", "dragon"], "exp": "Medium Fast", "color": "brown", "evolves": [[691, 0]]}, "dragalge": {"id": 691, "form_id": 0, "name": "Dragalge", "type": ["poison", "dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["water-1", "dragon"], "exp": "Medium Fast", "color": "brown"}, "clauncher": {"id": 692, "form_id": 0, "name": "Clauncher", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["water-1", "water-3"], "exp": "Slow", "color": "blue", "evolves": [[693, 0]]}, "clawitzer": {"id": 693, "form_id": 0, "name": "Clawitzer", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["water-1", "water-3"], "exp": "Slow", "color": "blue"}, "helioptile": {"id": 694, "form_id": 0, "name": "Helioptile", "type": ["electric", "normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["monster", "dragon"], "exp": "Medium Fast", "color": "yellow", "evolves": [[695, 0]]}, "heliolisk": {"id": 695, "form_id": 0, "name": "Heliolisk", "type": ["electric", "normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["monster", "dragon"], "exp": "Medium Fast", "color": "yellow"}, "tyrunt": {"id": 696, "form_id": 0, "name": "Tyrunt", "type": ["rock", "dragon"], "gender": ["mf"], "gender_ratio": 1, "gen": 6, "egg": ["monster", "dragon"], "exp": "Medium Fast", "color": "brown", "evolves": [[697, 0]]}, "tyrantrum": {"id": 697, "form_id": 0, "name": "Tyrantrum", "type": ["rock", "dragon"], "gender": ["mf"], "gender_ratio": 1, "gen": 6, "egg": ["monster", "dragon"], "exp": "Medium Fast", "color": "red"}, "amaura": {"id": 698, "form_id": 0, "name": "Amaura", "type": ["rock", "ice"], "gender": ["mf"], "gender_ratio": 1, "gen": 6, "egg": ["monster"], "exp": "Medium Fast", "color": "blue", "evolves": [[699, 0]]}, "aurorus": {"id": 699, "form_id": 0, "name": "Aurorus", "type": ["rock", "ice"], "gender": ["mf"], "gender_ratio": 1, "gen": 6, "egg": ["monster"], "exp": "Medium Fast", "color": "blue"}, "sylveon": {"id": 700, "form_id": 0, "name": "Sylveon", "type": ["fairy"], "gender": ["mf"], "gender_ratio": 1, "gen": 6, "egg": ["field"], "exp": "Medium Fast", "color": "pink"}, "hawlucha": {"id": 701, "form_id": 0, "name": "Hawlucha", "type": ["fighting", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["human-like"], "exp": "Medium Fast", "color": "green"}, "dedenne": {"id": 702, "form_id": 0, "name": "Dedenne", "type": ["electric", "fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["field", "fairy"], "exp": "Medium Fast", "color": "yellow"}, "carbink": {"id": 703, "form_id": 0, "name": "Carbink", "type": ["rock", "fairy"], "gender": ["uk"], "gender_ratio": -1, "gen": 6, "egg": ["fairy", "mineral"], "exp": "Slow", "color": "gray"}, "goomy": {"id": 704, "form_id": 0, "name": "Goomy", "type": ["dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["dragon"], "exp": "Slow", "color": "purple", "evolves": [[705, 0], [705, 1]]}, "sliggoo": {"id": 705, "form_id": 0, "name": "Sliggoo", "type": ["dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["dragon"], "exp": "Slow", "color": "purple", "evolves": [[706, 0]]}, "sliggoo-hisui": {"id": 705, "form_id": 1, "name": "Hisuian Sliggoo", "type": ["dragon", "steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["dragon"], "exp": "Slow", "evolves": [[706, 1]]}, "goodra": {"id": 706, "form_id": 0, "name": "Goodra", "type": ["dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["dragon"], "exp": "Slow", "color": "purple"}, "goodra-hisui": {"id": 706, "form_id": 1, "name": "Hisuian Goodra", "type": ["dragon", "steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["dragon"], "exp": "Slow"}, "klefki": {"id": 707, "form_id": 0, "name": "Klefki", "type": ["steel", "fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["mineral"], "exp": "Fast", "color": "gray"}, "phantump": {"id": 708, "form_id": 0, "name": "Phantump", "type": ["ghost", "grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["grass", "amorphous"], "exp": "Medium Fast", "color": "brown", "evolves": [[709, 0]]}, "trevenant": {"id": 709, "form_id": 0, "name": "Trevenant", "type": ["ghost", "grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["grass", "amorphous"], "exp": "Medium Fast", "color": "brown"}, "pumpkaboo": {"id": 710, "form_id": 0, "name": "Pumpkaboo", "type": ["ghost", "grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["amorphous"], "exp": "Medium Fast", "color": "brown", "evolves": [[711, 0]]}, "gourgeist": {"id": 711, "form_id": 0, "name": "Gourgeist", "type": ["ghost", "grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["amorphous"], "exp": "Medium Fast", "color": "brown"}, "bergmite": {"id": 712, "form_id": 0, "name": "Bergmite", "type": ["ice"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["monster"], "exp": "Medium Fast", "color": "blue", "evolves": [[713, 0], [713, 1]]}, "avalugg": {"id": 713, "form_id": 0, "name": "Avalugg", "type": ["ice"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["monster"], "exp": "Medium Fast", "color": "blue"}, "avalugg-hisui": {"id": 713, "form_id": 1, "name": "Hisuian Avalugg", "type": ["ice", "rock"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["monster"], "exp": "Medium Fast"}, "noibat": {"id": 714, "form_id": 0, "name": "Noibat", "type": ["flying", "dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["flying"], "exp": "Medium Fast", "color": "purple", "evolves": [[715, 0]]}, "noivern": {"id": 715, "form_id": 0, "name": "Noivern", "type": ["flying", "dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 6, "egg": ["flying"], "exp": "Medium Fast", "color": "purple"}, "xerneas": {"id": 716, "form_id": 1, "name": "Xerneas", "type": ["fairy"], "gender": ["uk"], "gender_ratio": -1, "gen": 6, "egg": ["undiscovered"], "exp": "Slow", "color": "blue", "legendary": true}, "yveltal": {"id": 717, "form_id": 0, "name": "Yveltal", "type": ["dark", "flying"], "gender": ["uk"], "gender_ratio": -1, "gen": 6, "egg": ["undiscovered"], "exp": "Slow", "color": "red", "legendary": true}, "zygarde": {"id": 718, "form_id": 0, "name": "Zygarde", "type": ["dragon", "ground"], "gender": ["uk"], "gender_ratio": -1, "gen": 6, "egg": ["undiscovered"], "exp": "Slow", "color": "green", "legendary": true}, "zygarde-10": {"id": 718, "form_id": 2, "name": "Zygarde", "type": ["dragon", "ground"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "form": "10% Forme", "color": "black", "legendary": true}, "diancie": {"id": 719, "form_id": 0, "name": "Diancie", "type": ["rock", "fairy"], "gender": ["uk"], "gender_ratio": -1, "gen": 6, "egg": ["undiscovered"], "exp": "Slow", "color": "pink", "mythical": true}, "diancie-mega": {"id": 719, "form_id": 1, "name": "Mega Diancie", "type": ["rock", "fairy"], "gender": ["uk"], "gender_ratio": -1, "gen": 6, "egg": ["undiscovered"], "exp": "Slow", "color": "pink", "mythical": true, "mega": true}, "hoopa": {"id": 720, "form_id": 0, "name": "Hoopa Confined", "type": ["psychic", "ghost"], "gender": ["uk"], "gender_ratio": -1, "gen": 6, "egg": ["undiscovered"], "exp": "Slow", "color": "purple", "mythical": true}, "hoopa-unbound": {"id": 720, "form_id": 1, "name": "Hoopa Unbound", "type": ["psychic", "dark"], "gender": ["uk"], "gender_ratio": -1, "gen": 6, "egg": ["undiscovered"], "exp": "Slow", "color": "purple", "mythical": true}, "volcanion": {"id": 721, "form_id": 0, "name": "Volcanion", "type": ["fire", "water"], "gender": ["uk"], "gender_ratio": -1, "gen": 6, "egg": ["undiscovered"], "exp": "Slow", "color": "brown", "mythical": true}, "rowlet": {"id": 722, "form_id": 0, "name": "Rowlet", "type": ["grass", "flying"], "gender": ["mf"], "gender_ratio": 1, "gen": 7, "egg": ["flying"], "exp": "Medium Slow", "color": "brown", "evolves": [[723, 0]]}, "dartrix": {"id": 723, "form_id": 0, "name": "Dartrix", "type": ["grass", "flying"], "gender": ["mf"], "gender_ratio": 1, "gen": 7, "egg": ["flying"], "exp": "Medium Slow", "color": "brown", "evolves": [[724, 0], [724, 1]]}, "decidueye": {"id": 724, "form_id": 0, "name": "Decidueye", "type": ["grass", "ghost"], "gender": ["mf"], "gender_ratio": 1, "gen": 7, "egg": ["flying"], "exp": "Medium Slow", "color": "brown"}, "decidueye-hisui": {"id": 724, "form_id": 1, "name": "Hisuian Decidueye", "type": ["grass", "fighting"], "gender": ["mf"], "gender_ratio": 1, "gen": 8, "egg": ["flying"], "exp": "Medium Slow"}, "litten": {"id": 725, "form_id": 0, "name": "Litten", "type": ["fire"], "gender": ["mf"], "gender_ratio": 1, "gen": 7, "egg": ["field"], "exp": "Medium Slow", "color": "red", "evolves": [[726, 0]]}, "torracat": {"id": 726, "form_id": 0, "name": "Torracat", "type": ["fire"], "gender": ["mf"], "gender_ratio": 1, "gen": 7, "egg": ["field"], "exp": "Medium Slow", "color": "red", "evolves": [[727, 0]]}, "incineroar": {"id": 727, "form_id": 0, "name": "Incineroar", "type": ["fire", "dark"], "gender": ["mf"], "gender_ratio": 1, "gen": 7, "egg": ["field"], "exp": "Medium Slow", "color": "red"}, "popplio": {"id": 728, "form_id": 0, "name": "Popplio", "type": ["water"], "gender": ["mf"], "gender_ratio": 1, "gen": 7, "egg": ["water-1", "field"], "exp": "Medium Slow", "color": "blue", "evolves": [[729, 0]]}, "brionne": {"id": 729, "form_id": 0, "name": "Brionne", "type": ["water"], "gender": ["mf"], "gender_ratio": 1, "gen": 7, "egg": ["water-1", "field"], "exp": "Medium Slow", "color": "blue", "evolves": [[730, 0]]}, "primarina": {"id": 730, "form_id": 0, "name": "Primarina", "type": ["water", "fairy"], "gender": ["mf"], "gender_ratio": 1, "gen": 7, "egg": ["water-1", "field"], "exp": "Medium Slow", "color": "blue"}, "pikipek": {"id": 731, "form_id": 0, "name": "Pikipek", "type": ["normal", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["flying"], "exp": "Medium Fast", "color": "black", "evolves": [[732, 0]]}, "trumbeak": {"id": 732, "form_id": 0, "name": "Trumbeak", "type": ["normal", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["flying"], "exp": "Medium Fast", "color": "black", "evolves": [[733, 0]]}, "toucannon": {"id": 733, "form_id": 0, "name": "Toucannon", "type": ["normal", "flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["flying"], "exp": "Medium Fast", "color": "black"}, "yungoos": {"id": 734, "form_id": 0, "name": "Yungoos", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["field"], "exp": "Medium Fast", "color": "brown", "evolves": [[735, 0]]}, "gumshoos": {"id": 735, "form_id": 0, "name": "Gumshoos", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["field"], "exp": "Medium Fast", "color": "brown"}, "grubbin": {"id": 736, "form_id": 0, "name": "Grubbin", "type": ["bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["bug"], "exp": "Medium Fast", "color": "gray", "evolves": [[737, 0]]}, "charjabug": {"id": 737, "form_id": 0, "name": "Charjabug", "type": ["bug", "electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["bug"], "exp": "Medium Fast", "color": "green", "evolves": [[738, 0]]}, "vikavolt": {"id": 738, "form_id": 0, "name": "Vikavolt", "type": ["bug", "electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["bug"], "exp": "Medium Fast", "color": "blue"}, "crabrawler": {"id": 739, "form_id": 0, "name": "Crabrawler", "type": ["fighting"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["water-3"], "exp": "Medium Fast", "color": "purple", "evolves": [[740, 0]]}, "crabominable": {"id": 740, "form_id": 0, "name": "Crabominable", "type": ["fighting", "ice"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["water-3"], "exp": "Medium Fast", "color": "white"}, "oricorio": {"id": 741, "form_id": 0, "name": "Oricorio", "type": ["fire", "flying"], "gender": ["mf"], "gender_ratio": 6, "gen": 7, "egg": ["flying"], "exp": "Medium Fast", "form": "Baile Style", "color": "red"}, "oricorio-pom-pom": {"id": 741, "form_id": 1, "name": "Oricorio", "type": ["electric", "flying"], "gender": ["mf"], "gender_ratio": 6, "gen": 7, "egg": ["flying"], "exp": "Medium Fast", "form": "Pom-Pom Style", "color": "yellow"}, "oricorio-pau": {"id": 741, "form_id": 2, "name": "Oricorio", "type": ["psychic", "flying"], "gender": ["mf"], "gender_ratio": 6, "gen": 7, "egg": ["flying"], "exp": "Medium Fast", "form": "Pau'u Style", "color": "pink"}, "oricorio-sensu": {"id": 741, "form_id": 3, "name": "Oricorio", "type": ["ghost", "flying"], "gender": ["mf"], "gender_ratio": 6, "gen": 7, "egg": ["flying"], "exp": "Medium Fast", "form": "Sensu Style", "color": "purple"}, "cutiefly": {"id": 742, "form_id": 0, "name": "Cutiefly", "type": ["bug", "fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["bug", "fairy"], "exp": "Medium Fast", "color": "yellow", "evolves": [[743, 0]]}, "ribombee": {"id": 743, "form_id": 0, "name": "Ribombee", "type": ["bug", "fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["bug", "fairy"], "exp": "Medium Fast", "color": "yellow"}, "rockruff": {"id": 744, "form_id": 0, "name": "Rockruff", "type": ["rock"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["field"], "exp": "Medium Fast", "color": "brown", "evolves": [[745, 0], [745, 1]]}, "lycanroc": {"id": 745, "form_id": 0, "name": "Lycanroc", "type": ["rock"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["field"], "exp": "Medium Fast", "form": "Midday Form", "color": "brown"}, "lycanroc-midnight": {"id": 745, "form_id": 1, "name": "Lycanroc", "type": ["rock"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["field"], "exp": "Medium Fast", "form": "Midnight Form", "color": "red"}, "lycanroc-dusk": {"id": 745, "form_id": 2, "name": "Lycanroc", "type": ["rock"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["field"], "exp": "Medium Fast", "form": "Dusk Form", "color": "brown"}, "wishiwashi": {"id": 746, "form_id": 1, "name": "Wishiwashi", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["water-2"], "exp": "Fast", "color": "blue"}, "mareanie": {"id": 747, "form_id": 0, "name": "Mareanie", "type": ["poison", "water"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["water-1"], "exp": "Medium Fast", "color": "blue", "evolves": [[748, 0]]}, "toxapex": {"id": 748, "form_id": 0, "name": "Toxapex", "type": ["poison", "water"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["water-1"], "exp": "Medium Fast", "color": "blue"}, "mudbray": {"id": 749, "form_id": 0, "name": "Mudbray", "type": ["ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["field"], "exp": "Medium Fast", "color": "brown", "evolves": [[750, 0]]}, "mudsdale": {"id": 750, "form_id": 0, "name": "Mudsdale", "type": ["ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["field"], "exp": "Medium Fast", "color": "brown"}, "dewpider": {"id": 751, "form_id": 0, "name": "Dewpider", "type": ["water", "bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["water-1", "bug"], "exp": "Medium Fast", "color": "green", "evolves": [[752, 0]]}, "araquanid": {"id": 752, "form_id": 0, "name": "Araquanid", "type": ["water", "bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["water-1", "bug"], "exp": "Medium Fast", "color": "green"}, "fomantis": {"id": 753, "form_id": 0, "name": "Fomantis", "type": ["grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["grass"], "exp": "Medium Fast", "color": "pink", "evolves": [[754, 0]]}, "lurantis": {"id": 754, "form_id": 0, "name": "Lurantis", "type": ["grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["grass"], "exp": "Medium Fast", "color": "pink"}, "morelull": {"id": 755, "form_id": 0, "name": "Morelull", "type": ["grass", "fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["grass"], "exp": "Medium Fast", "color": "purple", "evolves": [[756, 0]]}, "shiinotic": {"id": 756, "form_id": 0, "name": "Shiinotic", "type": ["grass", "fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["grass"], "exp": "Medium Fast", "color": "purple"}, "salandit": {"id": 757, "form_id": 0, "name": "Salandit", "type": ["poison", "fire"], "gender": ["mf"], "gender_ratio": 1, "gen": 7, "egg": ["monster", "dragon"], "exp": "Medium Fast", "color": "black", "evolves": [[758, 0]]}, "salazzle": {"id": 758, "form_id": 0, "name": "Salazzle", "type": ["poison", "fire"], "gender": ["fo"], "gender_ratio": 8, "gen": 7, "egg": ["monster", "dragon"], "exp": "Medium Fast", "color": "black"}, "stufful": {"id": 759, "form_id": 0, "name": "Stufful", "type": ["normal", "fighting"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["field"], "exp": "Medium Fast", "color": "pink", "evolves": [[760, 0]]}, "bewear": {"id": 760, "form_id": 0, "name": "Bewear", "type": ["normal", "fighting"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["field"], "exp": "Medium Fast", "color": "pink"}, "bounsweet": {"id": 761, "form_id": 0, "name": "Bounsweet", "type": ["grass"], "gender": ["fo"], "gender_ratio": 8, "gen": 7, "egg": ["grass"], "exp": "Medium Slow", "color": "purple", "evolves": [[762, 0]]}, "steenee": {"id": 762, "form_id": 0, "name": "Steenee", "type": ["grass"], "gender": ["fo"], "gender_ratio": 8, "gen": 7, "egg": ["grass"], "exp": "Medium Slow", "color": "purple", "evolves": [[763, 0]]}, "tsareena": {"id": 763, "form_id": 0, "name": "Tsareena", "type": ["grass"], "gender": ["fo"], "gender_ratio": 8, "gen": 7, "egg": ["grass"], "exp": "Medium Slow", "color": "purple"}, "comfey": {"id": 764, "form_id": 0, "name": "Comfey", "type": ["fairy"], "gender": ["mf"], "gender_ratio": 6, "gen": 7, "egg": ["grass"], "exp": "Fast", "color": "green"}, "oranguru": {"id": 765, "form_id": 0, "name": "Oranguru", "type": ["normal", "psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["field"], "exp": "Slow", "color": "white"}, "passimian": {"id": 766, "form_id": 0, "name": "Passimian", "type": ["fighting"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["field"], "exp": "Slow", "color": "white"}, "wimpod": {"id": 767, "form_id": 0, "name": "Wimpod", "type": ["bug", "water"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["bug", "water-3"], "exp": "Medium Fast", "color": "gray", "evolves": [[768, 0]]}, "golisopod": {"id": 768, "form_id": 0, "name": "Golisopod", "type": ["bug", "water"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["bug", "water-3"], "exp": "Medium Fast", "color": "gray"}, "sandygast": {"id": 769, "form_id": 0, "name": "Sandygast", "type": ["ghost", "ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["amorphous"], "exp": "Medium Fast", "color": "brown", "evolves": [[770, 0]]}, "palossand": {"id": 770, "form_id": 0, "name": "Palossand", "type": ["ghost", "ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["amorphous"], "exp": "Medium Fast", "color": "brown"}, "pyukumuku": {"id": 771, "form_id": 0, "name": "Pyukumuku", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["water-1"], "exp": "Fast", "color": "black"}, "type-null": {"id": 772, "form_id": 0, "name": "Type: Null", "type": ["normal"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "gray", "sublegendary": true, "evolves": [[773, 0]]}, "silvally": {"id": 773, "form_id": 0, "name": "Silvally", "type": ["normal"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "gray", "sublegendary": true}, "minior": {"id": 774, "form_id": 7, "name": "Minior", "type": ["rock", "flying"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["mineral"], "exp": "Medium Slow", "form": "Red Core", "color": "red"}, "komala": {"id": 775, "form_id": 0, "name": "Komala", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["field"], "exp": "Slow", "color": "blue"}, "turtonator": {"id": 776, "form_id": 0, "name": "Turtonator", "type": ["fire", "dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["monster", "dragon"], "exp": "Medium Fast", "color": "red"}, "togedemaru": {"id": 777, "form_id": 0, "name": "Togedemaru", "type": ["electric", "steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["field", "fairy"], "exp": "Medium Fast", "color": "gray"}, "mimikyu": {"id": 778, "form_id": 0, "name": "Mimikyu", "type": ["ghost", "fairy"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["amorphous"], "exp": "Medium Fast", "color": "yellow"}, "bruxish": {"id": 779, "form_id": 0, "name": "Bruxish", "type": ["water", "psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["water-2"], "exp": "Medium Fast", "color": "pink"}, "drampa": {"id": 780, "form_id": 0, "name": "Drampa", "type": ["normal", "dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["monster", "dragon"], "exp": "Medium Fast", "color": "white"}, "dhelmise": {"id": 781, "form_id": 0, "name": "Dhelmise", "type": ["ghost", "grass"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["mineral"], "exp": "Medium Fast", "color": "green"}, "jangmo-o": {"id": 782, "form_id": 0, "name": "Jangmo-o", "type": ["dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["dragon"], "exp": "Slow", "color": "gray", "evolves": [[783, 0]]}, "hakamo-o": {"id": 783, "form_id": 0, "name": "Hakamo-o", "type": ["dragon", "fighting"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["dragon"], "exp": "Slow", "color": "gray", "evolves": [[784, 0]]}, "kommo-o": {"id": 784, "form_id": 0, "name": "Kommo-o", "type": ["dragon", "fighting"], "gender": ["mf"], "gender_ratio": 4, "gen": 7, "egg": ["dragon"], "exp": "Slow", "color": "gray"}, "tapu-koko": {"id": 785, "form_id": 0, "name": "Tapu Koko", "type": ["electric", "fairy"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "yellow", "sublegendary": true}, "tapu-lele": {"id": 786, "form_id": 0, "name": "Tapu Lele", "type": ["psychic", "fairy"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "pink", "sublegendary": true}, "tapu-bulu": {"id": 787, "form_id": 0, "name": "Tapu Bulu", "type": ["grass", "fairy"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "red", "sublegendary": true}, "tapu-fini": {"id": 788, "form_id": 0, "name": "Tapu Fini", "type": ["water", "fairy"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "purple", "sublegendary": true}, "cosmog": {"id": 789, "form_id": 0, "name": "Cosmog", "type": ["psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "blue", "legendary": true, "evolves": [[790, 0]]}, "cosmoem": {"id": 790, "form_id": 0, "name": "Cosmoem", "type": ["psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "blue", "legendary": true, "evolves": [[791, 0], [792, 0]]}, "solgaleo": {"id": 791, "form_id": 0, "name": "Solgaleo", "type": ["psychic", "steel"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "white", "legendary": true}, "lunala": {"id": 792, "form_id": 0, "name": "Lunala", "type": ["psychic", "ghost"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "purple", "legendary": true}, "nihilego": {"id": 793, "form_id": 0, "name": "Nihilego", "type": ["rock", "poison"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "white", "sublegendary": true}, "buzzwole": {"id": 794, "form_id": 0, "name": "Buzzwole", "type": ["bug", "fighting"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "red", "sublegendary": true}, "pheromosa": {"id": 795, "form_id": 0, "name": "Pheromosa", "type": ["bug", "fighting"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "white", "sublegendary": true}, "xurkitree": {"id": 796, "form_id": 0, "name": "Xurkitree", "type": ["electric"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "black", "sublegendary": true}, "celesteela": {"id": 797, "form_id": 0, "name": "Celesteela", "type": ["steel", "flying"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "green", "sublegendary": true}, "kartana": {"id": 798, "form_id": 0, "name": "Kartana", "type": ["grass", "steel"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "white", "sublegendary": true}, "guzzlord": {"id": 799, "form_id": 0, "name": "Guzzlord", "type": ["dark", "dragon"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "black", "sublegendary": true}, "necrozma": {"id": 800, "form_id": 0, "name": "Necrozma", "type": ["psychic"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "black", "legendary": true}, "necrozma-dusk": {"id": 800, "form_id": 1, "name": "Dusk Mane Necrozma", "type": ["psychic", "steel"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "yellow", "legendary": true}, "necrozma-dawn": {"id": 800, "form_id": 2, "name": "Dawn Wings Necrozma", "type": ["psychic", "ghost"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "blue", "legendary": true}, "magearna": {"id": 801, "form_id": 0, "name": "Magearna", "type": ["steel", "fairy"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "gray", "mythical": true}, "magearna-original": {"id": 801, "form_id": 1, "name": "Original Color Magearna", "type": ["steel", "fairy"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "red", "mythical": true}, "marshadow": {"id": 802, "form_id": 0, "name": "Marshadow", "type": ["fighting", "ghost"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "gray", "mythical": true}, "poipole": {"id": 803, "form_id": 0, "name": "Poipole", "type": ["poison"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "purple", "sublegendary": true, "evolves": [[804, 0]]}, "naganadel": {"id": 804, "form_id": 0, "name": "Naganadel", "type": ["poison", "dragon"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "purple", "sublegendary": true}, "stakataka": {"id": 805, "form_id": 0, "name": "Stakataka", "type": ["rock", "steel"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "gray", "sublegendary": true}, "blacephalon": {"id": 806, "form_id": 0, "name": "Blacephalon", "type": ["fire", "ghost"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "white", "sublegendary": true}, "zeraora": {"id": 807, "form_id": 0, "name": "Zeraora", "type": ["electric"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "yellow", "mythical": true}, "meltan": {"id": 808, "form_id": 0, "name": "Meltan", "type": ["steel"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "gray", "mythical": true, "evolves": [[809, 0]]}, "melmetal": {"id": 809, "form_id": 0, "name": "Melmetal", "type": ["steel"], "gender": ["uk"], "gender_ratio": -1, "gen": 7, "egg": ["undiscovered"], "exp": "Slow", "color": "gray", "mythical": true, "gmax": true}, "grookey": {"id": 810, "form_id": 0, "name": "Grookey", "type": ["grass"], "gender": ["mf"], "gender_ratio": 1, "gen": 8, "egg": ["field", "grass"], "exp": "Medium Slow", "color": "green", "evolves": [[811, 0]]}, "thwackey": {"id": 811, "form_id": 0, "name": "Thwackey", "type": ["grass"], "gender": ["mf"], "gender_ratio": 1, "gen": 8, "egg": ["field", "grass"], "exp": "Medium Slow", "color": "green", "evolves": [[812, 0]]}, "rillaboom": {"id": 812, "form_id": 0, "name": "Rillaboom", "type": ["grass"], "gender": ["mf"], "gender_ratio": 1, "gen": 8, "egg": ["field", "grass"], "exp": "Medium Slow", "color": "green", "gmax": true}, "scorbunny": {"id": 813, "form_id": 0, "name": "Scorbunny", "type": ["fire"], "gender": ["mf"], "gender_ratio": 1, "gen": 8, "egg": ["field", "human-like"], "exp": "Medium Slow", "color": "white", "evolves": [[814, 0]]}, "raboot": {"id": 814, "form_id": 0, "name": "Raboot", "type": ["fire"], "gender": ["mf"], "gender_ratio": 1, "gen": 8, "egg": ["field", "human-like"], "exp": "Medium Slow", "color": "gray", "evolves": [[815, 0]]}, "cinderace": {"id": 815, "form_id": 0, "name": "Cinderace", "type": ["fire"], "gender": ["mf"], "gender_ratio": 1, "gen": 8, "egg": ["field", "human-like"], "exp": "Medium Slow", "color": "white", "gmax": true}, "sobble": {"id": 816, "form_id": 0, "name": "Sobble", "type": ["water"], "gender": ["mf"], "gender_ratio": 1, "gen": 8, "egg": ["water-1", "field"], "exp": "Medium Slow", "color": "blue", "evolves": [[817, 0]]}, "drizzile": {"id": 817, "form_id": 0, "name": "Drizzile", "type": ["water"], "gender": ["mf"], "gender_ratio": 1, "gen": 8, "egg": ["water-1", "field"], "exp": "Medium Slow", "color": "blue", "evolves": [[818, 0]]}, "inteleon": {"id": 818, "form_id": 0, "name": "Inteleon", "type": ["water"], "gender": ["mf"], "gender_ratio": 1, "gen": 8, "egg": ["water-1", "field"], "exp": "Medium Slow", "color": "blue", "gmax": true}, "skwovet": {"id": 819, "form_id": 0, "name": "Skwovet", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field"], "exp": "Medium Fast", "color": "brown", "evolves": [[820, 0]]}, "greedent": {"id": 820, "form_id": 0, "name": "Greedent", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field"], "exp": "Medium Fast", "color": "brown"}, "rookidee": {"id": 821, "form_id": 0, "name": "Rookidee", "type": ["flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["flying"], "exp": "Medium Slow", "color": "blue", "evolves": [[822, 0]]}, "corvisquire": {"id": 822, "form_id": 0, "name": "Corvisquire", "type": ["flying"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["flying"], "exp": "Medium Slow", "color": "blue", "evolves": [[823, 0]]}, "corviknight": {"id": 823, "form_id": 0, "name": "Corviknight", "type": ["flying", "steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["flying"], "exp": "Medium Slow", "color": "purple", "gmax": true}, "blipbug": {"id": 824, "form_id": 0, "name": "Blipbug", "type": ["bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["bug"], "exp": "Medium Fast", "color": "blue", "evolves": [[825, 0]]}, "dottler": {"id": 825, "form_id": 0, "name": "Dottler", "type": ["bug", "psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["bug"], "exp": "Medium Fast", "color": "yellow", "evolves": [[826, 0]]}, "orbeetle": {"id": 826, "form_id": 0, "name": "Orbeetle", "type": ["bug", "psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["bug"], "exp": "Medium Fast", "color": "red", "gmax": true}, "nickit": {"id": 827, "form_id": 0, "name": "Nickit", "type": ["dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field"], "exp": "Fast", "color": "brown", "evolves": [[828, 0]]}, "thievul": {"id": 828, "form_id": 0, "name": "Thievul", "type": ["dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field"], "exp": "Fast", "color": "brown"}, "gossifleur": {"id": 829, "form_id": 0, "name": "Gossifleur", "type": ["grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["grass"], "exp": "Medium Fast", "color": "green", "evolves": [[830, 0]]}, "eldegoss": {"id": 830, "form_id": 0, "name": "Eldegoss", "type": ["grass"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["grass"], "exp": "Medium Fast", "color": "green"}, "wooloo": {"id": 831, "form_id": 0, "name": "Wooloo", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field"], "exp": "Medium Fast", "color": "white", "evolves": [[832, 0]]}, "dubwool": {"id": 832, "form_id": 0, "name": "Dubwool", "type": ["normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field"], "exp": "Medium Fast", "color": "white"}, "chewtle": {"id": 833, "form_id": 0, "name": "Chewtle", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["monster", "water-1"], "exp": "Medium Fast", "color": "green", "evolves": [[834, 0]]}, "drednaw": {"id": 834, "form_id": 0, "name": "Drednaw", "type": ["water", "rock"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["monster", "water-1"], "exp": "Medium Fast", "color": "green", "gmax": true}, "yamper": {"id": 835, "form_id": 0, "name": "Yamper", "type": ["electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field"], "exp": "Fast", "color": "yellow", "evolves": [[836, 0]]}, "boltund": {"id": 836, "form_id": 0, "name": "Boltund", "type": ["electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field"], "exp": "Fast", "color": "yellow"}, "rolycoly": {"id": 837, "form_id": 0, "name": "Rolycoly", "type": ["rock"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["mineral"], "exp": "Medium Slow", "color": "black", "evolves": [[838, 0]]}, "carkol": {"id": 838, "form_id": 0, "name": "Carkol", "type": ["rock", "fire"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["mineral"], "exp": "Medium Slow", "color": "black", "evolves": [[839, 0]]}, "coalossal": {"id": 839, "form_id": 0, "name": "Coalossal", "type": ["rock", "fire"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["mineral"], "exp": "Medium Slow", "color": "black", "gmax": true}, "applin": {"id": 840, "form_id": 0, "name": "Applin", "type": ["grass", "dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["grass", "dragon"], "exp": "Erratic", "color": "green", "evolves": [[841, 0], [842, 0]]}, "flapple": {"id": 841, "form_id": 0, "name": "Flapple", "type": ["grass", "dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["grass", "dragon"], "exp": "Erratic", "color": "green", "gmax": true}, "appletun": {"id": 842, "form_id": 0, "name": "Appletun", "type": ["grass", "dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["grass", "dragon"], "exp": "Erratic", "color": "green", "gmax": true}, "silicobra": {"id": 843, "form_id": 0, "name": "Silicobra", "type": ["ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field", "dragon"], "exp": "Medium Fast", "color": "green", "evolves": [[844, 0]]}, "sandaconda": {"id": 844, "form_id": 0, "name": "Sandaconda", "type": ["ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field", "dragon"], "exp": "Medium Fast", "color": "green", "gmax": true}, "cramorant": {"id": 845, "form_id": 0, "name": "Cramorant", "type": ["flying", "water"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["water-1", "flying"], "exp": "Medium Fast", "color": "blue"}, "arrokuda": {"id": 846, "form_id": 0, "name": "Arrokuda", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["water-2"], "exp": "Slow", "color": "brown", "evolves": [[847, 0]]}, "barraskewda": {"id": 847, "form_id": 0, "name": "Barraskewda", "type": ["water"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["water-2"], "exp": "Slow", "color": "brown"}, "toxel": {"id": 848, "form_id": 0, "name": "Toxel", "type": ["electric", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["undiscovered"], "exp": "Medium Slow", "color": "purple", "evolves": [[849, 0], [849, 1]]}, "toxtricity": {"id": 849, "form_id": 0, "name": "Toxtricity", "type": ["electric", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["human-like"], "exp": "Medium Slow", "form": "Amped Form", "color": "purple", "gmax": true}, "toxtricity-low-key": {"id": 849, "form_id": 1, "name": "Toxtricity", "type": ["electric", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["human-like"], "exp": "Medium Slow", "form": "Low Key Form", "color": "purple", "gmax": true}, "sizzlipede": {"id": 850, "form_id": 0, "name": "Sizzlipede", "type": ["fire", "bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["bug"], "exp": "Medium Fast", "color": "red", "evolves": [[851, 0]]}, "centiskorch": {"id": 851, "form_id": 0, "name": "Centiskorch", "type": ["fire", "bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["bug"], "exp": "Medium Fast", "color": "red", "gmax": true}, "clobbopus": {"id": 852, "form_id": 0, "name": "Clobbopus", "type": ["fighting"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["water-1", "human-like"], "exp": "Medium Slow", "color": "brown", "evolves": [[853, 0]]}, "grapploct": {"id": 853, "form_id": 0, "name": "Grapploct", "type": ["fighting"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["water-1", "human-like"], "exp": "Medium Slow", "color": "blue"}, "sinistea": {"id": 854, "form_id": 0, "name": "Sinistea", "type": ["ghost"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["mineral", "amorphous"], "exp": "Medium Fast", "color": "purple", "evolves": [[855, 0]]}, "polteageist": {"id": 855, "form_id": 0, "name": "Polteageist", "type": ["ghost"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["mineral", "amorphous"], "exp": "Medium Fast", "color": "purple"}, "hatenna": {"id": 856, "form_id": 0, "name": "Hatenna", "type": ["psychic"], "gender": ["fo"], "gender_ratio": 8, "gen": 8, "egg": ["fairy"], "exp": "Slow", "color": "pink", "evolves": [[857, 0]]}, "hattrem": {"id": 857, "form_id": 0, "name": "Hattrem", "type": ["psychic"], "gender": ["fo"], "gender_ratio": 8, "gen": 8, "egg": ["fairy"], "exp": "Slow", "color": "pink", "evolves": [[858, 0]]}, "hatterene": {"id": 858, "form_id": 0, "name": "Hatterene", "type": ["psychic", "fairy"], "gender": ["fo"], "gender_ratio": 8, "gen": 8, "egg": ["fairy"], "exp": "Slow", "color": "pink", "gmax": true}, "impidimp": {"id": 859, "form_id": 0, "name": "Impidimp", "type": ["dark", "fairy"], "gender": ["mo"], "gender_ratio": 0, "gen": 8, "egg": ["fairy", "human-like"], "exp": "Medium Fast", "color": "pink", "evolves": [[860, 0]]}, "morgrem": {"id": 860, "form_id": 0, "name": "Morgrem", "type": ["dark", "fairy"], "gender": ["mo"], "gender_ratio": 0, "gen": 8, "egg": ["fairy", "human-like"], "exp": "Medium Fast", "color": "pink", "evolves": [[861, 0]]}, "grimmsnarl": {"id": 861, "form_id": 0, "name": "Grimmsnarl", "type": ["dark", "fairy"], "gender": ["mo"], "gender_ratio": 0, "gen": 8, "egg": ["fairy", "human-like"], "exp": "Medium Fast", "color": "purple", "gmax": true}, "obstagoon": {"id": 862, "form_id": 0, "name": "Obstagoon", "type": ["dark", "normal"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field"], "exp": "Medium Fast", "color": "gray"}, "perrserker": {"id": 863, "form_id": 0, "name": "Perrserker", "type": ["steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field"], "exp": "Medium Fast", "color": "brown"}, "cursola": {"id": 864, "form_id": 0, "name": "Cursola", "type": ["ghost"], "gender": ["mf"], "gender_ratio": 6, "gen": 8, "egg": ["water-1", "water-3"], "exp": "Fast", "color": "white"}, "sirfetchd": {"id": 865, "form_id": 0, "name": "Sirfetch'd", "type": ["fighting"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["flying", "field"], "exp": "Medium Fast", "color": "white"}, "mr-rime": {"id": 866, "form_id": 0, "name": "Mr. Rime", "type": ["ice", "psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["human-like"], "exp": "Medium Fast", "color": "purple"}, "runerigus": {"id": 867, "form_id": 0, "name": "Runerigus", "type": ["ground", "ghost"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["mineral", "amorphous"], "exp": "Medium Fast", "color": "gray"}, "milcery": {"id": 868, "form_id": 0, "name": "Milcery", "type": ["fairy"], "gender": ["fo"], "gender_ratio": 8, "gen": 8, "egg": ["fairy", "amorphous"], "exp": "Medium Fast", "color": "white", "evolves": [[869, 0]]}, "alcremie": {"id": 869, "form_id": 0, "name": "Alcremie", "type": ["fairy"], "gender": ["fo"], "gender_ratio": 8, "gen": 8, "egg": ["fairy", "amorphous"], "exp": "Medium Fast", "color": "white", "gmax": true}, "falinks": {"id": 870, "form_id": 0, "name": "Falinks", "type": ["fighting"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["fairy", "mineral"], "exp": "Medium Fast", "color": "yellow"}, "pincurchin": {"id": 871, "form_id": 0, "name": "Pincurchin", "type": ["electric"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["water-1", "amorphous"], "exp": "Medium Fast", "color": "purple"}, "snom": {"id": 872, "form_id": 0, "name": "Snom", "type": ["ice", "bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["bug"], "exp": "Medium Fast", "color": "white", "evolves": [[873, 0]]}, "frosmoth": {"id": 873, "form_id": 0, "name": "Frosmoth", "type": ["ice", "bug"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["bug"], "exp": "Medium Fast", "color": "white"}, "stonjourner": {"id": 874, "form_id": 0, "name": "Stonjourner", "type": ["rock"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["mineral"], "exp": "Slow", "color": "gray"}, "eiscue": {"id": 875, "form_id": 0, "name": "Eiscue", "type": ["ice"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["water-1", "field"], "exp": "Slow", "color": "blue"}, "indeedee": {"id": 876, "form_id": 0, "name": "Indeedee", "type": ["psychic", "normal"], "gender": ["mo"], "gender_ratio": 0, "gen": 8, "egg": ["fairy"], "exp": "Fast", "form": "Male", "color": "purple"}, "indeedee-female": {"id": 876, "form_id": 1, "name": "Female Indeedee", "type": ["psychic", "normal"], "gender": ["fo"], "gender_ratio": 8, "gen": 8, "egg": ["fairy"], "exp": "Fast", "form": "Female", "color": "purple"}, "morpeko": {"id": 877, "form_id": 0, "name": "Morpeko", "type": ["electric", "dark"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field", "fairy"], "exp": "Medium Fast", "color": "yellow"}, "cufant": {"id": 878, "form_id": 0, "name": "Cufant", "type": ["steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field", "mineral"], "exp": "Medium Fast", "color": "yellow", "evolves": [[879, 0]]}, "copperajah": {"id": 879, "form_id": 0, "name": "Copperajah", "type": ["steel"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field", "mineral"], "exp": "Medium Fast", "color": "green", "gmax": true}, "dracozolt": {"id": 880, "form_id": 0, "name": "Dracozolt", "type": ["electric", "dragon"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "color": "green"}, "arctozolt": {"id": 881, "form_id": 0, "name": "Arctozolt", "type": ["electric", "ice"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "color": "blue"}, "dracovish": {"id": 882, "form_id": 0, "name": "Dracovish", "type": ["water", "dragon"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "color": "green"}, "arctovish": {"id": 883, "form_id": 0, "name": "Arctovish", "type": ["water", "ice"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "color": "blue"}, "duraludon": {"id": 884, "form_id": 0, "name": "Duraludon", "type": ["steel", "dragon"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["mineral", "dragon"], "exp": "Medium Fast", "color": "white", "gmax": true}, "dreepy": {"id": 885, "form_id": 0, "name": "Dreepy", "type": ["dragon", "ghost"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["amorphous", "dragon"], "exp": "Slow", "color": "green", "evolves": [[886, 0]]}, "drakloak": {"id": 886, "form_id": 0, "name": "Drakloak", "type": ["dragon", "ghost"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["amorphous", "dragon"], "exp": "Slow", "color": "green", "evolves": [[887, 0]]}, "dragapult": {"id": 887, "form_id": 0, "name": "Dragapult", "type": ["dragon", "ghost"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["amorphous", "dragon"], "exp": "Slow", "color": "green"}, "zacian": {"id": 888, "form_id": 0, "name": "Zacian", "type": ["fairy"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "form": "Hero of Many Battles", "color": "blue", "legendary": true}, "zacian-crowned": {"id": 888, "form_id": 1, "name": "Zacian", "type": ["fairy", "steel"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "form": "Crowned Sword", "color": "blue", "legendary": true}, "zamazenta": {"id": 889, "form_id": 0, "name": "Zamazenta", "type": ["fighting"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "form": "Hero of Many Battles", "color": "red", "legendary": true}, "zamazenta-crowned": {"id": 889, "form_id": 1, "name": "Zamazenta", "type": ["fighting", "steel"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "form": "Crowned Shield", "color": "red", "legendary": true}, "eternatus": {"id": 890, "form_id": 0, "name": "Eternatus", "type": ["poison", "dragon"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "color": "purple", "legendary": true}, "kubfu": {"id": 891, "form_id": 0, "name": "Kubfu", "type": ["fighting"], "gender": ["mf"], "gender_ratio": 1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "color": "gray", "sublegendary": true, "evolves": [[892, 0], [892, 1]]}, "urshifu": {"id": 892, "form_id": 0, "name": "Urshifu", "type": ["fighting", "dark"], "gender": ["mf"], "gender_ratio": 1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "form": "Single Strike Style", "color": "gray", "sublegendary": true, "gmax": true}, "urshifu-rapid-strike": {"id": 892, "form_id": 1, "name": "Urshifu", "type": ["fighting", "water"], "gender": ["mf"], "gender_ratio": 1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "form": "Rapid Strike Style", "color": "gray", "sublegendary": true, "gmax": true}, "zarude": {"id": 893, "form_id": 0, "name": "Zarude", "type": ["dark", "grass"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "color": "black", "mythical": true}, "regieleki": {"id": 894, "form_id": 0, "name": "Regieleki", "type": ["electric"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "color": "yellow", "sublegendary": true}, "regidrago": {"id": 895, "form_id": 0, "name": "Regidrago", "type": ["dragon"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "color": "green", "sublegendary": true}, "glastrier": {"id": 896, "form_id": 0, "name": "Glastrier", "type": ["ice"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "color": "white", "sublegendary": true}, "spectrier": {"id": 897, "form_id": 0, "name": "Spectrier", "type": ["ghost"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "color": "black", "sublegendary": true}, "calyrex": {"id": 898, "form_id": 0, "name": "Calyrex", "type": ["psychic", "grass"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "color": "green", "legendary": true}, "calyrex-ice": {"id": 898, "form_id": 1, "name": "Ice Rider Calyrex", "type": ["psychic", "ice"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "color": "white", "legendary": true}, "calyrex-shadow": {"id": 898, "form_id": 2, "name": "Shadow Rider Calyrex", "type": ["psychic", "ghost"], "gender": ["uk"], "gender_ratio": -1, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "color": "black", "legendary": true}, "wyrdeer": {"id": 899, "form_id": 0, "name": "Wyrdeer", "type": ["normal", "psychic"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field"], "exp": "Slow"}, "kleavor": {"id": 900, "form_id": 0, "name": "Kleavor", "type": ["bug", "rock"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["bug"], "exp": "Medium Fast"}, "ursaluna": {"id": 901, "form_id": 0, "name": "Ursaluna", "type": ["normal", "ground"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field"], "exp": "Medium Fast"}, "basculegion": {"id": 902, "form_id": 0, "name": "Basculegion", "type": ["water", "ghost"], "gender": ["md"], "gender_ratio": 0, "gen": 8, "egg": ["water-2"], "exp": "Medium Fast", "form": "Male"}, "basculegion-female": {"id": 902, "form_id": 1, "name": "Basculegion", "type": ["water", "ghost"], "gender": ["fd"], "gender_ratio": 8, "gen": 8, "egg": ["water-2"], "exp": "Medium Fast", "form": "Female"}, "sneasler": {"id": 903, "form_id": 0, "name": "Sneasler", "type": ["poison", "fighting"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["field"], "exp": "Medium Slow"}, "overqwil": {"id": 904, "form_id": 0, "name": "Overqwil", "type": ["dark", "poison"], "gender": ["mf"], "gender_ratio": 4, "gen": 8, "egg": ["water-2"], "exp": "Medium Fast"}, "enamorus": {"id": 905, "form_id": 0, "name": "Enamorus", "type": ["fairy", "flying"], "gender": ["fd"], "gender_ratio": 8, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "form": "Incarnate Form", "sublegendary": true}, "enamorus-therian": {"id": 905, "form_id": 1, "name": "Enamorus", "type": ["fairy", "flying"], "gender": ["fd"], "gender_ratio": 8, "gen": 8, "egg": ["undiscovered"], "exp": "Slow", "form": "Therian Forme", "sublegendary": true}};
+export default {
+    "bulbasaur": {
+        "base_id": 1,
+        "form_id": 0,
+        "name": "Bulbasaur",
+        "pokemon_type": [
+            "grass",
+            "poison"
+        ],
+        "egg_group": [
+            "monster",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                2,
+                0
+            ]
+        ]
+    },
+    "ivysaur": {
+        "base_id": 2,
+        "form_id": 0,
+        "name": "Ivysaur",
+        "pokemon_type": [
+            "grass",
+            "poison"
+        ],
+        "egg_group": [
+            "monster",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                3,
+                0
+            ]
+        ]
+    },
+    "venusaur": {
+        "base_id": 3,
+        "form_id": 0,
+        "name": "Venusaur",
+        "pokemon_type": [
+            "grass",
+            "poison"
+        ],
+        "egg_group": [
+            "monster",
+            "grass"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 1,
+        "has_gigantamax": true,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 1
+    },
+    "venusaur-mega": {
+        "base_id": 3,
+        "form_id": 1,
+        "name": "Mega Venusaur",
+        "pokemon_type": [
+            "grass",
+            "poison"
+        ],
+        "egg_group": [
+            "monster",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "is_mega": true,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 6
+    },
+    "charmander": {
+        "base_id": 4,
+        "form_id": 0,
+        "name": "Charmander",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                5,
+                0
+            ]
+        ]
+    },
+    "charmeleon": {
+        "base_id": 5,
+        "form_id": 0,
+        "name": "Charmeleon",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                6,
+                0
+            ]
+        ]
+    },
+    "charizard": {
+        "base_id": 6,
+        "form_id": 0,
+        "name": "Charizard",
+        "pokemon_type": [
+            "fire",
+            "flying"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "has_gigantamax": true,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 1
+    },
+    "charizard-mega-x": {
+        "base_id": 6,
+        "form_id": 1,
+        "name": "Mega Charizard X",
+        "pokemon_type": [
+            "fire",
+            "dragon"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "is_mega": true,
+        "color": "black",
+        "experience_group": "Medium Slow",
+        "generation": 6
+    },
+    "charizard-mega-y": {
+        "base_id": 6,
+        "form_id": 2,
+        "name": "Mega Charizard Y",
+        "pokemon_type": [
+            "fire",
+            "flying"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "is_mega": true,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 6
+    },
+    "squirtle": {
+        "base_id": 7,
+        "form_id": 0,
+        "name": "Squirtle",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "monster",
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                8,
+                0
+            ]
+        ]
+    },
+    "wartortle": {
+        "base_id": 8,
+        "form_id": 0,
+        "name": "Wartortle",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "monster",
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                9,
+                0
+            ]
+        ]
+    },
+    "blastoise": {
+        "base_id": 9,
+        "form_id": 0,
+        "name": "Blastoise",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "monster",
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "has_gigantamax": true,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 1
+    },
+    "blastoise-mega": {
+        "base_id": 9,
+        "form_id": 1,
+        "name": "Mega Blastoise",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "monster",
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "is_mega": true,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 6
+    },
+    "caterpie": {
+        "base_id": 10,
+        "form_id": 0,
+        "name": "Caterpie",
+        "pokemon_type": [
+            "bug"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                11,
+                0
+            ]
+        ]
+    },
+    "metapod": {
+        "base_id": 11,
+        "form_id": 0,
+        "name": "Metapod",
+        "pokemon_type": [
+            "bug"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                12,
+                0
+            ]
+        ]
+    },
+    "butterfree": {
+        "base_id": 12,
+        "form_id": 0,
+        "name": "Butterfree",
+        "pokemon_type": [
+            "bug",
+            "flying"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "has_gigantamax": true,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "weedle": {
+        "base_id": 13,
+        "form_id": 0,
+        "name": "Weedle",
+        "pokemon_type": [
+            "bug",
+            "poison"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                14,
+                0
+            ]
+        ]
+    },
+    "kakuna": {
+        "base_id": 14,
+        "form_id": 0,
+        "name": "Kakuna",
+        "pokemon_type": [
+            "bug",
+            "poison"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                15,
+                0
+            ]
+        ]
+    },
+    "beedrill": {
+        "base_id": 15,
+        "form_id": 0,
+        "name": "Beedrill",
+        "pokemon_type": [
+            "bug",
+            "poison"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "beedrill-mega": {
+        "base_id": 15,
+        "form_id": 1,
+        "name": "Mega Beedrill",
+        "pokemon_type": [
+            "bug",
+            "poison"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "pidgey": {
+        "base_id": 16,
+        "form_id": 0,
+        "name": "Pidgey",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                17,
+                0
+            ]
+        ]
+    },
+    "pidgeotto": {
+        "base_id": 17,
+        "form_id": 0,
+        "name": "Pidgeotto",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                18,
+                0
+            ]
+        ]
+    },
+    "pidgeot": {
+        "base_id": 18,
+        "form_id": 0,
+        "name": "Pidgeot",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 1
+    },
+    "pidgeot-mega": {
+        "base_id": 18,
+        "form_id": 1,
+        "name": "Mega Pidgeot",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 6
+    },
+    "rattata": {
+        "base_id": 19,
+        "form_id": 0,
+        "name": "Rattata",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                20,
+                0
+            ]
+        ]
+    },
+    "rattata-alola": {
+        "base_id": 19,
+        "form_id": 1,
+        "name": "Alolan Rattata",
+        "pokemon_type": [
+            "dark",
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Fast",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                20,
+                1
+            ]
+        ]
+    },
+    "raticate": {
+        "base_id": 20,
+        "form_id": 0,
+        "name": "Raticate",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "raticate-alola": {
+        "base_id": 20,
+        "form_id": 1,
+        "name": "Alolan Raticate",
+        "pokemon_type": [
+            "dark",
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "spearow": {
+        "base_id": 21,
+        "form_id": 0,
+        "name": "Spearow",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                22,
+                0
+            ]
+        ]
+    },
+    "fearow": {
+        "base_id": 22,
+        "form_id": 0,
+        "name": "Fearow",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "ekans": {
+        "base_id": 23,
+        "form_id": 0,
+        "name": "Ekans",
+        "pokemon_type": [
+            "poison"
+        ],
+        "egg_group": [
+            "field",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                24,
+                0
+            ]
+        ]
+    },
+    "arbok": {
+        "base_id": 24,
+        "form_id": 0,
+        "name": "Arbok",
+        "pokemon_type": [
+            "poison"
+        ],
+        "egg_group": [
+            "field",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "pikachu": {
+        "base_id": 25,
+        "form_id": 0,
+        "name": "Pikachu",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "field",
+            "fairy"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "has_gigantamax": true,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                26,
+                0
+            ],
+            [
+                26,
+                1
+            ]
+        ]
+    },
+    "raichu": {
+        "base_id": 26,
+        "form_id": 0,
+        "name": "Raichu",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "field",
+            "fairy"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "raichu-alola": {
+        "base_id": 26,
+        "form_id": 1,
+        "name": "Alolan Raichu",
+        "pokemon_type": [
+            "electric",
+            "psychic"
+        ],
+        "egg_group": [
+            "field",
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "sandshrew": {
+        "base_id": 27,
+        "form_id": 0,
+        "name": "Sandshrew",
+        "pokemon_type": [
+            "ground"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                28,
+                0
+            ]
+        ]
+    },
+    "sandshrew-alola": {
+        "base_id": 27,
+        "form_id": 1,
+        "name": "Alolan Sandshrew",
+        "pokemon_type": [
+            "ice",
+            "steel"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                28,
+                1
+            ]
+        ]
+    },
+    "sandslash": {
+        "base_id": 28,
+        "form_id": 0,
+        "name": "Sandslash",
+        "pokemon_type": [
+            "ground"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "sandslash-alola": {
+        "base_id": 28,
+        "form_id": 1,
+        "name": "Alolan Sandslash",
+        "pokemon_type": [
+            "ice",
+            "steel"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "nidoran-f": {
+        "base_id": 29,
+        "form_id": 0,
+        "name": "Nidoran\u00e2\u2122\u20ac",
+        "pokemon_type": [
+            "poison"
+        ],
+        "egg_group": [
+            "monster",
+            "field"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                30,
+                0
+            ]
+        ]
+    },
+    "nidorina": {
+        "base_id": 30,
+        "form_id": 0,
+        "name": "Nidorina",
+        "pokemon_type": [
+            "poison"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                31,
+                0
+            ]
+        ]
+    },
+    "nidoqueen": {
+        "base_id": 31,
+        "form_id": 0,
+        "name": "Nidoqueen",
+        "pokemon_type": [
+            "poison",
+            "ground"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 1
+    },
+    "nidoran-m": {
+        "base_id": 32,
+        "form_id": 0,
+        "name": "Nidoran\u00e2\u2122\u201a",
+        "pokemon_type": [
+            "poison"
+        ],
+        "egg_group": [
+            "monster",
+            "field"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "color": "purple",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                33,
+                0
+            ]
+        ]
+    },
+    "nidorino": {
+        "base_id": 33,
+        "form_id": 0,
+        "name": "Nidorino",
+        "pokemon_type": [
+            "poison"
+        ],
+        "egg_group": [
+            "monster",
+            "field"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "color": "purple",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                34,
+                0
+            ]
+        ]
+    },
+    "nidoking": {
+        "base_id": 34,
+        "form_id": 0,
+        "name": "Nidoking",
+        "pokemon_type": [
+            "poison",
+            "ground"
+        ],
+        "egg_group": [
+            "monster",
+            "field"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "color": "purple",
+        "experience_group": "Medium Slow",
+        "generation": 1
+    },
+    "clefairy": {
+        "base_id": 35,
+        "form_id": 0,
+        "name": "Clefairy",
+        "pokemon_type": [
+            "fairy"
+        ],
+        "past_type": {
+            "generation": 6,
+            "pokemon_type": [
+                "normal"
+            ]
+        },
+        "egg_group": [
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "pink",
+        "experience_group": "Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                36,
+                0
+            ]
+        ]
+    },
+    "clefable": {
+        "base_id": 36,
+        "form_id": 0,
+        "name": "Clefable",
+        "pokemon_type": [
+            "fairy"
+        ],
+        "past_type": {
+            "generation": 6,
+            "pokemon_type": [
+                "normal"
+            ]
+        },
+        "egg_group": [
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "pink",
+        "experience_group": "Fast",
+        "generation": 1
+    },
+    "vulpix": {
+        "base_id": 37,
+        "form_id": 0,
+        "name": "Vulpix",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                38,
+                0
+            ]
+        ]
+    },
+    "vulpix-alola": {
+        "base_id": 37,
+        "form_id": 1,
+        "name": "Alolan Vulpix",
+        "pokemon_type": [
+            "ice"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                38,
+                1
+            ]
+        ]
+    },
+    "ninetales": {
+        "base_id": 38,
+        "form_id": 0,
+        "name": "Ninetales",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "ninetales-alola": {
+        "base_id": 38,
+        "form_id": 1,
+        "name": "Alolan Ninetales",
+        "pokemon_type": [
+            "ice",
+            "fairy"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "jigglypuff": {
+        "base_id": 39,
+        "form_id": 0,
+        "name": "Jigglypuff",
+        "pokemon_type": [
+            "normal",
+            "fairy"
+        ],
+        "past_type": {
+            "generation": 6,
+            "pokemon_type": [
+                "normal"
+            ]
+        },
+        "egg_group": [
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "pink",
+        "experience_group": "Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                40,
+                0
+            ]
+        ]
+    },
+    "wigglytuff": {
+        "base_id": 40,
+        "form_id": 0,
+        "name": "Wigglytuff",
+        "pokemon_type": [
+            "normal",
+            "fairy"
+        ],
+        "past_type": {
+            "generation": 6,
+            "pokemon_type": [
+                "normal"
+            ]
+        },
+        "egg_group": [
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "pink",
+        "experience_group": "Fast",
+        "generation": 1
+    },
+    "zubat": {
+        "base_id": 41,
+        "form_id": 0,
+        "name": "Zubat",
+        "pokemon_type": [
+            "poison",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                42,
+                0
+            ]
+        ]
+    },
+    "golbat": {
+        "base_id": 42,
+        "form_id": 0,
+        "name": "Golbat",
+        "pokemon_type": [
+            "poison",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                169,
+                0
+            ]
+        ]
+    },
+    "oddish": {
+        "base_id": 43,
+        "form_id": 0,
+        "name": "Oddish",
+        "pokemon_type": [
+            "grass",
+            "poison"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                44,
+                0
+            ]
+        ]
+    },
+    "gloom": {
+        "base_id": 44,
+        "form_id": 0,
+        "name": "Gloom",
+        "pokemon_type": [
+            "grass",
+            "poison"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                45,
+                0
+            ],
+            [
+                182,
+                0
+            ]
+        ]
+    },
+    "vileplume": {
+        "base_id": 45,
+        "form_id": 0,
+        "name": "Vileplume",
+        "pokemon_type": [
+            "grass",
+            "poison"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 1
+    },
+    "paras": {
+        "base_id": 46,
+        "form_id": 0,
+        "name": "Paras",
+        "pokemon_type": [
+            "bug",
+            "grass"
+        ],
+        "egg_group": [
+            "bug",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                47,
+                0
+            ]
+        ]
+    },
+    "parasect": {
+        "base_id": 47,
+        "form_id": 0,
+        "name": "Parasect",
+        "pokemon_type": [
+            "bug",
+            "grass"
+        ],
+        "egg_group": [
+            "bug",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "venonat": {
+        "base_id": 48,
+        "form_id": 0,
+        "name": "Venonat",
+        "pokemon_type": [
+            "bug",
+            "poison"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                49,
+                0
+            ]
+        ]
+    },
+    "venomoth": {
+        "base_id": 49,
+        "form_id": 0,
+        "name": "Venomoth",
+        "pokemon_type": [
+            "bug",
+            "poison"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "diglett": {
+        "base_id": 50,
+        "form_id": 0,
+        "name": "Diglett",
+        "pokemon_type": [
+            "ground"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                51,
+                0
+            ]
+        ]
+    },
+    "diglett-alola": {
+        "base_id": 50,
+        "form_id": 1,
+        "name": "Alolan Diglett",
+        "pokemon_type": [
+            "ground",
+            "steel"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                51,
+                1
+            ]
+        ]
+    },
+    "dugtrio": {
+        "base_id": 51,
+        "form_id": 0,
+        "name": "Dugtrio",
+        "pokemon_type": [
+            "ground"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "dugtrio-alola": {
+        "base_id": 51,
+        "form_id": 1,
+        "name": "Alolan Dugtrio",
+        "pokemon_type": [
+            "ground",
+            "steel"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "meowth": {
+        "base_id": 52,
+        "form_id": 0,
+        "name": "Meowth",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "has_gigantamax": true,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                53,
+                0
+            ]
+        ]
+    },
+    "meowth-alola": {
+        "base_id": 52,
+        "form_id": 1,
+        "name": "Alolan Meowth",
+        "pokemon_type": [
+            "dark"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                53,
+                1
+            ]
+        ]
+    },
+    "meowth-galar": {
+        "base_id": 52,
+        "form_id": 2,
+        "name": "Galarian Meowth",
+        "pokemon_type": [
+            "steel"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                863,
+                0
+            ]
+        ]
+    },
+    "persian": {
+        "base_id": 53,
+        "form_id": 0,
+        "name": "Persian",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "persian-alola": {
+        "base_id": 53,
+        "form_id": 1,
+        "name": "Alolan Persian",
+        "pokemon_type": [
+            "dark"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "psyduck": {
+        "base_id": 54,
+        "form_id": 0,
+        "name": "Psyduck",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                55,
+                0
+            ]
+        ]
+    },
+    "golduck": {
+        "base_id": 55,
+        "form_id": 0,
+        "name": "Golduck",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "mankey": {
+        "base_id": 56,
+        "form_id": 0,
+        "name": "Mankey",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                57,
+                0
+            ]
+        ]
+    },
+    "primeape": {
+        "base_id": 57,
+        "form_id": 0,
+        "name": "Primeape",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "growlithe": {
+        "base_id": 58,
+        "form_id": 0,
+        "name": "Growlithe",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 2,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                59,
+                0
+            ]
+        ]
+    },
+    "growlithe-hisui": {
+        "base_id": 58,
+        "form_id": 1,
+        "name": "Hisuian Growlithe",
+        "pokemon_type": [
+            "fire",
+            "rock"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 2,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                59,
+                1
+            ]
+        ]
+    },
+    "arcanine": {
+        "base_id": 59,
+        "form_id": 0,
+        "name": "Arcanine",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 2,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 1
+    },
+    "arcanine-hisui": {
+        "base_id": 59,
+        "form_id": 1,
+        "name": "Hisuian Arcanine",
+        "pokemon_type": [
+            "fire",
+            "rock"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 2,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "poliwag": {
+        "base_id": 60,
+        "form_id": 0,
+        "name": "Poliwag",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                61,
+                0
+            ]
+        ]
+    },
+    "poliwhirl": {
+        "base_id": 61,
+        "form_id": 0,
+        "name": "Poliwhirl",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                62,
+                0
+            ],
+            [
+                186,
+                0
+            ]
+        ]
+    },
+    "poliwrath": {
+        "base_id": 62,
+        "form_id": 0,
+        "name": "Poliwrath",
+        "pokemon_type": [
+            "water",
+            "fighting"
+        ],
+        "egg_group": [
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 1
+    },
+    "abra": {
+        "base_id": 63,
+        "form_id": 0,
+        "name": "Abra",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 2,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                64,
+                0
+            ]
+        ]
+    },
+    "kadabra": {
+        "base_id": 64,
+        "form_id": 0,
+        "name": "Kadabra",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 2,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                65,
+                0
+            ]
+        ]
+    },
+    "alakazam": {
+        "base_id": 65,
+        "form_id": 0,
+        "name": "Alakazam",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 2,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 1
+    },
+    "alakazam-mega": {
+        "base_id": 65,
+        "form_id": 1,
+        "name": "Mega Alakazam",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 2,
+        "is_mega": true,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 6
+    },
+    "machop": {
+        "base_id": 66,
+        "form_id": 0,
+        "name": "Machop",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 2,
+        "color": "gray",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                67,
+                0
+            ]
+        ]
+    },
+    "machoke": {
+        "base_id": 67,
+        "form_id": 0,
+        "name": "Machoke",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 2,
+        "color": "gray",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                68,
+                0
+            ]
+        ]
+    },
+    "machamp": {
+        "base_id": 68,
+        "form_id": 0,
+        "name": "Machamp",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 2,
+        "has_gigantamax": true,
+        "color": "gray",
+        "experience_group": "Medium Slow",
+        "generation": 1
+    },
+    "bellsprout": {
+        "base_id": 69,
+        "form_id": 0,
+        "name": "Bellsprout",
+        "pokemon_type": [
+            "grass",
+            "poison"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                70,
+                0
+            ]
+        ]
+    },
+    "weepinbell": {
+        "base_id": 70,
+        "form_id": 0,
+        "name": "Weepinbell",
+        "pokemon_type": [
+            "grass",
+            "poison"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                71,
+                0
+            ]
+        ]
+    },
+    "victreebel": {
+        "base_id": 71,
+        "form_id": 0,
+        "name": "Victreebel",
+        "pokemon_type": [
+            "grass",
+            "poison"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 1
+    },
+    "tentacool": {
+        "base_id": 72,
+        "form_id": 0,
+        "name": "Tentacool",
+        "pokemon_type": [
+            "water",
+            "poison"
+        ],
+        "egg_group": [
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                73,
+                0
+            ]
+        ]
+    },
+    "tentacruel": {
+        "base_id": 73,
+        "form_id": 0,
+        "name": "Tentacruel",
+        "pokemon_type": [
+            "water",
+            "poison"
+        ],
+        "egg_group": [
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 1
+    },
+    "geodude": {
+        "base_id": 74,
+        "form_id": 0,
+        "name": "Geodude",
+        "pokemon_type": [
+            "rock",
+            "ground"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                75,
+                0
+            ]
+        ]
+    },
+    "geodude-alola": {
+        "base_id": 74,
+        "form_id": 1,
+        "name": "Alolan Geodude",
+        "pokemon_type": [
+            "rock",
+            "electric"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Slow",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                75,
+                1
+            ]
+        ]
+    },
+    "graveler": {
+        "base_id": 75,
+        "form_id": 0,
+        "name": "Graveler",
+        "pokemon_type": [
+            "rock",
+            "ground"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                76,
+                0
+            ]
+        ]
+    },
+    "graveler-alola": {
+        "base_id": 75,
+        "form_id": 1,
+        "name": "Alolan Graveler",
+        "pokemon_type": [
+            "rock",
+            "electric"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Slow",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                76,
+                1
+            ]
+        ]
+    },
+    "golem": {
+        "base_id": 76,
+        "form_id": 0,
+        "name": "Golem",
+        "pokemon_type": [
+            "rock",
+            "ground"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 1
+    },
+    "golem-alola": {
+        "base_id": 76,
+        "form_id": 1,
+        "name": "Alolan Golem",
+        "pokemon_type": [
+            "rock",
+            "electric"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Slow",
+        "generation": 7
+    },
+    "ponyta": {
+        "base_id": 77,
+        "form_id": 0,
+        "name": "Ponyta",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                78,
+                0
+            ]
+        ]
+    },
+    "ponyta-galar": {
+        "base_id": 77,
+        "form_id": 1,
+        "name": "Galarian Ponyta",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                78,
+                1
+            ]
+        ]
+    },
+    "rapidash": {
+        "base_id": 78,
+        "form_id": 0,
+        "name": "Rapidash",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "rapidash-galar": {
+        "base_id": 78,
+        "form_id": 1,
+        "name": "Galarian Rapidash",
+        "pokemon_type": [
+            "psychic",
+            "fairy"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "slowpoke": {
+        "base_id": 79,
+        "form_id": 0,
+        "name": "Slowpoke",
+        "pokemon_type": [
+            "water",
+            "psychic"
+        ],
+        "egg_group": [
+            "monster",
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                80,
+                0
+            ],
+            [
+                199,
+                0
+            ]
+        ]
+    },
+    "slowpoke-galar": {
+        "base_id": 79,
+        "form_id": 1,
+        "name": "Galarian Slowpoke",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "monster",
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                80,
+                2
+            ],
+            [
+                199,
+                1
+            ]
+        ]
+    },
+    "slowbro": {
+        "base_id": 80,
+        "form_id": 0,
+        "name": "Slowbro",
+        "pokemon_type": [
+            "water",
+            "psychic"
+        ],
+        "egg_group": [
+            "monster",
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "slowbro-mega": {
+        "base_id": 80,
+        "form_id": 1,
+        "name": "Mega Slowbro",
+        "pokemon_type": [
+            "water",
+            "psychic"
+        ],
+        "egg_group": [
+            "monster",
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "slowbro-galar": {
+        "base_id": 80,
+        "form_id": 2,
+        "name": "Galarian Slowbro",
+        "pokemon_type": [
+            "poison",
+            "psychic"
+        ],
+        "egg_group": [
+            "monster",
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "magnemite": {
+        "base_id": 81,
+        "form_id": 0,
+        "name": "Magnemite",
+        "pokemon_type": [
+            "electric",
+            "steel"
+        ],
+        "past_type": {
+            "generation": 2,
+            "pokemon_type": [
+                "electric"
+            ]
+        },
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                82,
+                0
+            ]
+        ]
+    },
+    "magneton": {
+        "base_id": 82,
+        "form_id": 0,
+        "name": "Magneton",
+        "pokemon_type": [
+            "electric",
+            "steel"
+        ],
+        "past_type": {
+            "generation": 2,
+            "pokemon_type": [
+                "electric"
+            ]
+        },
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                462,
+                0
+            ]
+        ]
+    },
+    "farfetchd": {
+        "base_id": 83,
+        "form_id": 0,
+        "name": "Farfetch'd",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "farfetchd-galar": {
+        "base_id": 83,
+        "form_id": 1,
+        "name": "Galarian Farfetch'd",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "flying",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                865,
+                0
+            ]
+        ]
+    },
+    "doduo": {
+        "base_id": 84,
+        "form_id": 0,
+        "name": "Doduo",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                85,
+                0
+            ]
+        ]
+    },
+    "dodrio": {
+        "base_id": 85,
+        "form_id": 0,
+        "name": "Dodrio",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "seel": {
+        "base_id": 86,
+        "form_id": 0,
+        "name": "Seel",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                87,
+                0
+            ]
+        ]
+    },
+    "dewgong": {
+        "base_id": 87,
+        "form_id": 0,
+        "name": "Dewgong",
+        "pokemon_type": [
+            "water",
+            "ice"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "grimer": {
+        "base_id": 88,
+        "form_id": 0,
+        "name": "Grimer",
+        "pokemon_type": [
+            "poison"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                89,
+                0
+            ]
+        ]
+    },
+    "grimer-alola": {
+        "base_id": 88,
+        "form_id": 1,
+        "name": "Alolan Grimer",
+        "pokemon_type": [
+            "poison",
+            "dark"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                89,
+                1
+            ]
+        ]
+    },
+    "muk": {
+        "base_id": 89,
+        "form_id": 0,
+        "name": "Muk",
+        "pokemon_type": [
+            "poison"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "muk-alola": {
+        "base_id": 89,
+        "form_id": 1,
+        "name": "Alolan Muk",
+        "pokemon_type": [
+            "poison",
+            "dark"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "shellder": {
+        "base_id": 90,
+        "form_id": 0,
+        "name": "Shellder",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                91,
+                0
+            ]
+        ]
+    },
+    "cloyster": {
+        "base_id": 91,
+        "form_id": 0,
+        "name": "Cloyster",
+        "pokemon_type": [
+            "water",
+            "ice"
+        ],
+        "egg_group": [
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 1
+    },
+    "gastly": {
+        "base_id": 92,
+        "form_id": 0,
+        "name": "Gastly",
+        "pokemon_type": [
+            "ghost",
+            "poison"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                93,
+                0
+            ]
+        ]
+    },
+    "haunter": {
+        "base_id": 93,
+        "form_id": 0,
+        "name": "Haunter",
+        "pokemon_type": [
+            "ghost",
+            "poison"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                94,
+                0
+            ]
+        ]
+    },
+    "gengar": {
+        "base_id": 94,
+        "form_id": 0,
+        "name": "Gengar",
+        "pokemon_type": [
+            "ghost",
+            "poison"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "has_gigantamax": true,
+        "color": "purple",
+        "experience_group": "Medium Slow",
+        "generation": 1
+    },
+    "gengar-mega": {
+        "base_id": 94,
+        "form_id": 1,
+        "name": "Mega Gengar",
+        "pokemon_type": [
+            "ghost",
+            "poison"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "purple",
+        "experience_group": "Medium Slow",
+        "generation": 6
+    },
+    "onix": {
+        "base_id": 95,
+        "form_id": 0,
+        "name": "Onix",
+        "pokemon_type": [
+            "rock",
+            "ground"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                208,
+                0
+            ]
+        ]
+    },
+    "drowzee": {
+        "base_id": 96,
+        "form_id": 0,
+        "name": "Drowzee",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                97,
+                0
+            ]
+        ]
+    },
+    "hypno": {
+        "base_id": 97,
+        "form_id": 0,
+        "name": "Hypno",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "krabby": {
+        "base_id": 98,
+        "form_id": 0,
+        "name": "Krabby",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                99,
+                0
+            ]
+        ]
+    },
+    "kingler": {
+        "base_id": 99,
+        "form_id": 0,
+        "name": "Kingler",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "has_gigantamax": true,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "voltorb": {
+        "base_id": 100,
+        "form_id": 0,
+        "name": "Voltorb",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                101,
+                0
+            ]
+        ]
+    },
+    "voltorb-hisui": {
+        "base_id": 100,
+        "form_id": 1,
+        "name": "Hisuian Voltorb",
+        "pokemon_type": [
+            "electric",
+            "grass"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                101,
+                1
+            ]
+        ]
+    },
+    "electrode": {
+        "base_id": 101,
+        "form_id": 0,
+        "name": "Electrode",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "electrode-hisui": {
+        "base_id": 101,
+        "form_id": 1,
+        "name": "Hisuian Electrode",
+        "pokemon_type": [
+            "electric",
+            "grass"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "exeggcute": {
+        "base_id": 102,
+        "form_id": 0,
+        "name": "Exeggcute",
+        "pokemon_type": [
+            "grass",
+            "psychic"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                103,
+                0
+            ],
+            [
+                103,
+                1
+            ]
+        ]
+    },
+    "exeggutor": {
+        "base_id": 103,
+        "form_id": 0,
+        "name": "Exeggutor",
+        "pokemon_type": [
+            "grass",
+            "psychic"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Slow",
+        "generation": 1
+    },
+    "exeggutor-alola": {
+        "base_id": 103,
+        "form_id": 1,
+        "name": "Alolan Exeggutor",
+        "pokemon_type": [
+            "grass",
+            "dragon"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "cubone": {
+        "base_id": 104,
+        "form_id": 0,
+        "name": "Cubone",
+        "pokemon_type": [
+            "ground"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                105,
+                0
+            ],
+            [
+                105,
+                1
+            ]
+        ]
+    },
+    "marowak": {
+        "base_id": 105,
+        "form_id": 0,
+        "name": "Marowak",
+        "pokemon_type": [
+            "ground"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "marowak-alola": {
+        "base_id": 105,
+        "form_id": 1,
+        "name": "Alolan Marowak",
+        "pokemon_type": [
+            "fire",
+            "ghost"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "hitmonlee": {
+        "base_id": 106,
+        "form_id": 0,
+        "name": "Hitmonlee",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "hitmonchan": {
+        "base_id": 107,
+        "form_id": 0,
+        "name": "Hitmonchan",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "lickitung": {
+        "base_id": 108,
+        "form_id": 0,
+        "name": "Lickitung",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                463,
+                0
+            ]
+        ]
+    },
+    "koffing": {
+        "base_id": 109,
+        "form_id": 0,
+        "name": "Koffing",
+        "pokemon_type": [
+            "poison"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                110,
+                0
+            ],
+            [
+                110,
+                1
+            ]
+        ]
+    },
+    "weezing": {
+        "base_id": 110,
+        "form_id": 0,
+        "name": "Weezing",
+        "pokemon_type": [
+            "poison"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "weezing-galar": {
+        "base_id": 110,
+        "form_id": 1,
+        "name": "Galarian Weezing",
+        "pokemon_type": [
+            "poison",
+            "fairy"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "rhyhorn": {
+        "base_id": 111,
+        "form_id": 0,
+        "name": "Rhyhorn",
+        "pokemon_type": [
+            "ground",
+            "rock"
+        ],
+        "egg_group": [
+            "monster",
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                112,
+                0
+            ]
+        ]
+    },
+    "rhydon": {
+        "base_id": 112,
+        "form_id": 0,
+        "name": "Rhydon",
+        "pokemon_type": [
+            "ground",
+            "rock"
+        ],
+        "egg_group": [
+            "monster",
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                464,
+                0
+            ]
+        ]
+    },
+    "chansey": {
+        "base_id": 113,
+        "form_id": 0,
+        "name": "Chansey",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "fairy"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "pink",
+        "experience_group": "Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                242,
+                0
+            ]
+        ]
+    },
+    "tangela": {
+        "base_id": 114,
+        "form_id": 0,
+        "name": "Tangela",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                465,
+                0
+            ]
+        ]
+    },
+    "kangaskhan": {
+        "base_id": 115,
+        "form_id": 0,
+        "name": "Kangaskhan",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "kangaskhan-mega": {
+        "base_id": 115,
+        "form_id": 1,
+        "name": "Mega Kangaskhan",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "is_mega": true,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "horsea": {
+        "base_id": 116,
+        "form_id": 0,
+        "name": "Horsea",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                117,
+                0
+            ]
+        ]
+    },
+    "seadra": {
+        "base_id": 117,
+        "form_id": 0,
+        "name": "Seadra",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                230,
+                0
+            ]
+        ]
+    },
+    "goldeen": {
+        "base_id": 118,
+        "form_id": 0,
+        "name": "Goldeen",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                119,
+                0
+            ]
+        ]
+    },
+    "seaking": {
+        "base_id": 119,
+        "form_id": 0,
+        "name": "Seaking",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "staryu": {
+        "base_id": 120,
+        "form_id": 0,
+        "name": "Staryu",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_3"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                121,
+                0
+            ]
+        ]
+    },
+    "starmie": {
+        "base_id": 121,
+        "form_id": 0,
+        "name": "Starmie",
+        "pokemon_type": [
+            "water",
+            "psychic"
+        ],
+        "egg_group": [
+            "water_3"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 1
+    },
+    "mr-mime": {
+        "base_id": 122,
+        "form_id": 0,
+        "name": "Mr. Mime",
+        "pokemon_type": [
+            "psychic",
+            "fairy"
+        ],
+        "past_type": {
+            "generation": 6,
+            "pokemon_type": [
+                "psychic"
+            ]
+        },
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "mr-mime-galar": {
+        "base_id": 122,
+        "form_id": 1,
+        "name": "Galarian Mr. Mime",
+        "pokemon_type": [
+            "ice",
+            "psychic"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                866,
+                0
+            ]
+        ]
+    },
+    "scyther": {
+        "base_id": 123,
+        "form_id": 0,
+        "name": "Scyther",
+        "pokemon_type": [
+            "bug",
+            "flying"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                212,
+                0
+            ],
+            [
+                900,
+                0
+            ]
+        ]
+    },
+    "jynx": {
+        "base_id": 124,
+        "form_id": 0,
+        "name": "Jynx",
+        "pokemon_type": [
+            "ice",
+            "psychic"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "electabuzz": {
+        "base_id": 125,
+        "form_id": 0,
+        "name": "Electabuzz",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 2,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                466,
+                0
+            ]
+        ]
+    },
+    "magmar": {
+        "base_id": 126,
+        "form_id": 0,
+        "name": "Magmar",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 2,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                467,
+                0
+            ]
+        ]
+    },
+    "pinsir": {
+        "base_id": 127,
+        "form_id": 0,
+        "name": "Pinsir",
+        "pokemon_type": [
+            "bug"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 1
+    },
+    "pinsir-mega": {
+        "base_id": 127,
+        "form_id": 1,
+        "name": "Mega Pinsir",
+        "pokemon_type": [
+            "bug",
+            "flying"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "tauros": {
+        "base_id": 128,
+        "form_id": 0,
+        "name": "Tauros",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 1
+    },
+    "magikarp": {
+        "base_id": 129,
+        "form_id": 0,
+        "name": "Magikarp",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_2",
+            "dragon"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                130,
+                0
+            ]
+        ]
+    },
+    "gyarados": {
+        "base_id": 130,
+        "form_id": 0,
+        "name": "Gyarados",
+        "pokemon_type": [
+            "water",
+            "flying"
+        ],
+        "egg_group": [
+            "water_2",
+            "dragon"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 1
+    },
+    "gyarados-mega": {
+        "base_id": 130,
+        "form_id": 1,
+        "name": "Mega Gyarados",
+        "pokemon_type": [
+            "water",
+            "dark"
+        ],
+        "egg_group": [
+            "water_2",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "lapras": {
+        "base_id": 131,
+        "form_id": 0,
+        "name": "Lapras",
+        "pokemon_type": [
+            "water",
+            "ice"
+        ],
+        "egg_group": [
+            "monster",
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "has_gigantamax": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 1
+    },
+    "ditto": {
+        "base_id": 132,
+        "form_id": 0,
+        "name": "Ditto",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "ditto"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "eevee": {
+        "base_id": 133,
+        "form_id": 0,
+        "name": "Eevee",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 1,
+        "has_gigantamax": true,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                134,
+                0
+            ],
+            [
+                135,
+                0
+            ],
+            [
+                136,
+                0
+            ],
+            [
+                196,
+                0
+            ],
+            [
+                197,
+                0
+            ],
+            [
+                470,
+                0
+            ],
+            [
+                471,
+                0
+            ],
+            [
+                700,
+                0
+            ]
+        ]
+    },
+    "vaporeon": {
+        "base_id": 134,
+        "form_id": 0,
+        "name": "Vaporeon",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "jolteon": {
+        "base_id": 135,
+        "form_id": 0,
+        "name": "Jolteon",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "flareon": {
+        "base_id": 136,
+        "form_id": 0,
+        "name": "Flareon",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "porygon": {
+        "base_id": 137,
+        "form_id": 0,
+        "name": "Porygon",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                233,
+                0
+            ]
+        ]
+    },
+    "omanyte": {
+        "base_id": 138,
+        "form_id": 0,
+        "name": "Omanyte",
+        "pokemon_type": [
+            "rock",
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                139,
+                0
+            ]
+        ]
+    },
+    "omastar": {
+        "base_id": 139,
+        "form_id": 0,
+        "name": "Omastar",
+        "pokemon_type": [
+            "rock",
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "kabuto": {
+        "base_id": 140,
+        "form_id": 0,
+        "name": "Kabuto",
+        "pokemon_type": [
+            "rock",
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                141,
+                0
+            ]
+        ]
+    },
+    "kabutops": {
+        "base_id": 141,
+        "form_id": 0,
+        "name": "Kabutops",
+        "pokemon_type": [
+            "rock",
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 1
+    },
+    "aerodactyl": {
+        "base_id": 142,
+        "form_id": 0,
+        "name": "Aerodactyl",
+        "pokemon_type": [
+            "rock",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 1
+    },
+    "aerodactyl-mega": {
+        "base_id": 142,
+        "form_id": 1,
+        "name": "Mega Aerodactyl",
+        "pokemon_type": [
+            "rock",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "is_mega": true,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "snorlax": {
+        "base_id": 143,
+        "form_id": 0,
+        "name": "Snorlax",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "has_gigantamax": true,
+        "color": "black",
+        "experience_group": "Slow",
+        "generation": 1
+    },
+    "articuno": {
+        "base_id": 144,
+        "form_id": 0,
+        "name": "Articuno",
+        "pokemon_type": [
+            "ice",
+            "flying"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 1
+    },
+    "articuno-galar": {
+        "base_id": 144,
+        "form_id": 1,
+        "name": "Galarian Articuno",
+        "pokemon_type": [
+            "psychic",
+            "flying"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "zapdos": {
+        "base_id": 145,
+        "form_id": 0,
+        "name": "Zapdos",
+        "pokemon_type": [
+            "electric",
+            "flying"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "yellow",
+        "experience_group": "Slow",
+        "generation": 1
+    },
+    "zapdos-galar": {
+        "base_id": 145,
+        "form_id": 1,
+        "name": "Galarian Zapdos",
+        "pokemon_type": [
+            "fighting",
+            "flying"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "yellow",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "moltres": {
+        "base_id": 146,
+        "form_id": 0,
+        "name": "Moltres",
+        "pokemon_type": [
+            "fire",
+            "flying"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "yellow",
+        "experience_group": "Slow",
+        "generation": 1
+    },
+    "moltres-galar": {
+        "base_id": 146,
+        "form_id": 1,
+        "name": "Galarian Moltres",
+        "pokemon_type": [
+            "dark",
+            "flying"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "red",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "dratini": {
+        "base_id": 147,
+        "form_id": 0,
+        "name": "Dratini",
+        "pokemon_type": [
+            "dragon"
+        ],
+        "egg_group": [
+            "water_1",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                148,
+                0
+            ]
+        ]
+    },
+    "dragonair": {
+        "base_id": 148,
+        "form_id": 0,
+        "name": "Dragonair",
+        "pokemon_type": [
+            "dragon"
+        ],
+        "egg_group": [
+            "water_1",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 1,
+        "evolution_ids": [
+            [
+                149,
+                0
+            ]
+        ]
+    },
+    "dragonite": {
+        "base_id": 149,
+        "form_id": 0,
+        "name": "Dragonite",
+        "pokemon_type": [
+            "dragon",
+            "flying"
+        ],
+        "egg_group": [
+            "water_1",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 1
+    },
+    "mewtwo": {
+        "base_id": 150,
+        "form_id": 0,
+        "name": "Mewtwo",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 1
+    },
+    "mewtwo-mega-x": {
+        "base_id": 150,
+        "form_id": 1,
+        "name": "Mega Mewtwo X",
+        "pokemon_type": [
+            "psychic",
+            "fighting"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "is_mega": true,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "mewtwo-mega-y": {
+        "base_id": 150,
+        "form_id": 2,
+        "name": "Mega Mewtwo Y",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "is_mega": true,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "mew": {
+        "base_id": 151,
+        "form_id": 0,
+        "name": "Mew",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "pink",
+        "experience_group": "Medium Slow",
+        "generation": 1
+    },
+    "chikorita": {
+        "base_id": 152,
+        "form_id": 0,
+        "name": "Chikorita",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "monster",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                153,
+                0
+            ]
+        ]
+    },
+    "bayleef": {
+        "base_id": 153,
+        "form_id": 0,
+        "name": "Bayleef",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "monster",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                154,
+                0
+            ]
+        ]
+    },
+    "meganium": {
+        "base_id": 154,
+        "form_id": 0,
+        "name": "Meganium",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "monster",
+            "grass"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 1,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 2
+    },
+    "cyndaquil": {
+        "base_id": 155,
+        "form_id": 0,
+        "name": "Cyndaquil",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "yellow",
+        "experience_group": "Medium Slow",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                156,
+                0
+            ]
+        ]
+    },
+    "quilava": {
+        "base_id": 156,
+        "form_id": 0,
+        "name": "Quilava",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "yellow",
+        "experience_group": "Medium Slow",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                157,
+                0
+            ],
+            [
+                157,
+                1
+            ]
+        ]
+    },
+    "typhlosion": {
+        "base_id": 157,
+        "form_id": 0,
+        "name": "Typhlosion",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "yellow",
+        "experience_group": "Medium Slow",
+        "generation": 2
+    },
+    "typhlosion-hisui": {
+        "base_id": 157,
+        "form_id": 1,
+        "name": "Hisuian Typhlosion",
+        "pokemon_type": [
+            "fire",
+            "ghost"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "yellow",
+        "experience_group": "Medium Slow",
+        "generation": 8
+    },
+    "totodile": {
+        "base_id": 158,
+        "form_id": 0,
+        "name": "Totodile",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "monster",
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                159,
+                0
+            ]
+        ]
+    },
+    "croconaw": {
+        "base_id": 159,
+        "form_id": 0,
+        "name": "Croconaw",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "monster",
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                160,
+                0
+            ]
+        ]
+    },
+    "feraligatr": {
+        "base_id": 160,
+        "form_id": 0,
+        "name": "Feraligatr",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "monster",
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 2
+    },
+    "sentret": {
+        "base_id": 161,
+        "form_id": 0,
+        "name": "Sentret",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                162,
+                0
+            ]
+        ]
+    },
+    "furret": {
+        "base_id": 162,
+        "form_id": 0,
+        "name": "Furret",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 2
+    },
+    "hoothoot": {
+        "base_id": 163,
+        "form_id": 0,
+        "name": "Hoothoot",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                164,
+                0
+            ]
+        ]
+    },
+    "noctowl": {
+        "base_id": 164,
+        "form_id": 0,
+        "name": "Noctowl",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 2
+    },
+    "ledyba": {
+        "base_id": 165,
+        "form_id": 0,
+        "name": "Ledyba",
+        "pokemon_type": [
+            "bug",
+            "flying"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                166,
+                0
+            ]
+        ]
+    },
+    "ledian": {
+        "base_id": 166,
+        "form_id": 0,
+        "name": "Ledian",
+        "pokemon_type": [
+            "bug",
+            "flying"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Fast",
+        "generation": 2
+    },
+    "spinarak": {
+        "base_id": 167,
+        "form_id": 0,
+        "name": "Spinarak",
+        "pokemon_type": [
+            "bug",
+            "poison"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                168,
+                0
+            ]
+        ]
+    },
+    "ariados": {
+        "base_id": 168,
+        "form_id": 0,
+        "name": "Ariados",
+        "pokemon_type": [
+            "bug",
+            "poison"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Fast",
+        "generation": 2
+    },
+    "crobat": {
+        "base_id": 169,
+        "form_id": 0,
+        "name": "Crobat",
+        "pokemon_type": [
+            "poison",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 2
+    },
+    "chinchou": {
+        "base_id": 170,
+        "form_id": 0,
+        "name": "Chinchou",
+        "pokemon_type": [
+            "water",
+            "electric"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                171,
+                0
+            ]
+        ]
+    },
+    "lanturn": {
+        "base_id": 171,
+        "form_id": 0,
+        "name": "Lanturn",
+        "pokemon_type": [
+            "water",
+            "electric"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 2
+    },
+    "pichu": {
+        "base_id": 172,
+        "form_id": 0,
+        "name": "Pichu",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_baby": true,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                25,
+                0
+            ]
+        ]
+    },
+    "cleffa": {
+        "base_id": 173,
+        "form_id": 0,
+        "name": "Cleffa",
+        "pokemon_type": [
+            "fairy"
+        ],
+        "past_type": {
+            "generation": 6,
+            "pokemon_type": [
+                "normal"
+            ]
+        },
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "is_baby": true,
+        "color": "pink",
+        "experience_group": "Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                35,
+                0
+            ]
+        ]
+    },
+    "igglybuff": {
+        "base_id": 174,
+        "form_id": 0,
+        "name": "Igglybuff",
+        "pokemon_type": [
+            "normal",
+            "fairy"
+        ],
+        "past_type": {
+            "generation": 6,
+            "pokemon_type": [
+                "normal"
+            ]
+        },
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "is_baby": true,
+        "color": "pink",
+        "experience_group": "Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                39,
+                0
+            ]
+        ]
+    },
+    "togepi": {
+        "base_id": 175,
+        "form_id": 0,
+        "name": "Togepi",
+        "pokemon_type": [
+            "fairy"
+        ],
+        "past_type": {
+            "generation": 6,
+            "pokemon_type": [
+                "normal"
+            ]
+        },
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "is_baby": true,
+        "color": "white",
+        "experience_group": "Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                176,
+                0
+            ]
+        ]
+    },
+    "togetic": {
+        "base_id": 176,
+        "form_id": 0,
+        "name": "Togetic",
+        "pokemon_type": [
+            "fairy",
+            "flying"
+        ],
+        "past_type": {
+            "generation": 6,
+            "pokemon_type": [
+                "normal",
+                "flying"
+            ]
+        },
+        "egg_group": [
+            "flying",
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "white",
+        "experience_group": "Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                468,
+                0
+            ]
+        ]
+    },
+    "natu": {
+        "base_id": 177,
+        "form_id": 0,
+        "name": "Natu",
+        "pokemon_type": [
+            "psychic",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                178,
+                0
+            ]
+        ]
+    },
+    "xatu": {
+        "base_id": 178,
+        "form_id": 0,
+        "name": "Xatu",
+        "pokemon_type": [
+            "psychic",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 2
+    },
+    "mareep": {
+        "base_id": 179,
+        "form_id": 0,
+        "name": "Mareep",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "monster",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Slow",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                180,
+                0
+            ]
+        ]
+    },
+    "flaaffy": {
+        "base_id": 180,
+        "form_id": 0,
+        "name": "Flaaffy",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "monster",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Medium Slow",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                181,
+                0
+            ]
+        ]
+    },
+    "ampharos": {
+        "base_id": 181,
+        "form_id": 0,
+        "name": "Ampharos",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "monster",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Slow",
+        "generation": 2
+    },
+    "ampharos-mega": {
+        "base_id": 181,
+        "form_id": 1,
+        "name": "Mega Ampharos",
+        "pokemon_type": [
+            "electric",
+            "dragon"
+        ],
+        "egg_group": [
+            "monster",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "yellow",
+        "experience_group": "Medium Slow",
+        "generation": 6
+    },
+    "bellossom": {
+        "base_id": 182,
+        "form_id": 0,
+        "name": "Bellossom",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 2
+    },
+    "marill": {
+        "base_id": 183,
+        "form_id": 0,
+        "name": "Marill",
+        "pokemon_type": [
+            "water",
+            "fairy"
+        ],
+        "past_type": {
+            "generation": 6,
+            "pokemon_type": [
+                "water"
+            ]
+        },
+        "egg_group": [
+            "water_1",
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                184,
+                0
+            ]
+        ]
+    },
+    "azumarill": {
+        "base_id": 184,
+        "form_id": 0,
+        "name": "Azumarill",
+        "pokemon_type": [
+            "water",
+            "fairy"
+        ],
+        "past_type": {
+            "generation": 6,
+            "pokemon_type": [
+                "water"
+            ]
+        },
+        "egg_group": [
+            "water_1",
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Fast",
+        "generation": 2
+    },
+    "sudowoodo": {
+        "base_id": 185,
+        "form_id": 0,
+        "name": "Sudowoodo",
+        "pokemon_type": [
+            "rock"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 2
+    },
+    "politoed": {
+        "base_id": 186,
+        "form_id": 0,
+        "name": "Politoed",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 2
+    },
+    "hoppip": {
+        "base_id": 187,
+        "form_id": 0,
+        "name": "Hoppip",
+        "pokemon_type": [
+            "grass",
+            "flying"
+        ],
+        "egg_group": [
+            "fairy",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Medium Slow",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                188,
+                0
+            ]
+        ]
+    },
+    "skiploom": {
+        "base_id": 188,
+        "form_id": 0,
+        "name": "Skiploom",
+        "pokemon_type": [
+            "grass",
+            "flying"
+        ],
+        "egg_group": [
+            "fairy",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                189,
+                0
+            ]
+        ]
+    },
+    "jumpluff": {
+        "base_id": 189,
+        "form_id": 0,
+        "name": "Jumpluff",
+        "pokemon_type": [
+            "grass",
+            "flying"
+        ],
+        "egg_group": [
+            "fairy",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 2
+    },
+    "aipom": {
+        "base_id": 190,
+        "form_id": 0,
+        "name": "Aipom",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                424,
+                0
+            ]
+        ]
+    },
+    "sunkern": {
+        "base_id": 191,
+        "form_id": 0,
+        "name": "Sunkern",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Slow",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                192,
+                0
+            ]
+        ]
+    },
+    "sunflora": {
+        "base_id": 192,
+        "form_id": 0,
+        "name": "Sunflora",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Slow",
+        "generation": 2
+    },
+    "yanma": {
+        "base_id": 193,
+        "form_id": 0,
+        "name": "Yanma",
+        "pokemon_type": [
+            "bug",
+            "flying"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                469,
+                0
+            ]
+        ]
+    },
+    "wooper": {
+        "base_id": 194,
+        "form_id": 0,
+        "name": "Wooper",
+        "pokemon_type": [
+            "water",
+            "ground"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                195,
+                0
+            ]
+        ]
+    },
+    "quagsire": {
+        "base_id": 195,
+        "form_id": 0,
+        "name": "Quagsire",
+        "pokemon_type": [
+            "water",
+            "ground"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 2
+    },
+    "espeon": {
+        "base_id": 196,
+        "form_id": 0,
+        "name": "Espeon",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 2
+    },
+    "umbreon": {
+        "base_id": 197,
+        "form_id": 0,
+        "name": "Umbreon",
+        "pokemon_type": [
+            "dark"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "black",
+        "experience_group": "Medium Fast",
+        "generation": 2
+    },
+    "murkrow": {
+        "base_id": 198,
+        "form_id": 0,
+        "name": "Murkrow",
+        "pokemon_type": [
+            "dark",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Slow",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                430,
+                0
+            ]
+        ]
+    },
+    "slowking": {
+        "base_id": 199,
+        "form_id": 0,
+        "name": "Slowking",
+        "pokemon_type": [
+            "water",
+            "psychic"
+        ],
+        "egg_group": [
+            "monster",
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 2
+    },
+    "slowking-galar": {
+        "base_id": 199,
+        "form_id": 1,
+        "name": "Galarian Slowking",
+        "pokemon_type": [
+            "poison",
+            "psychic"
+        ],
+        "egg_group": [
+            "monster",
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "misdreavus": {
+        "base_id": 200,
+        "form_id": 0,
+        "name": "Misdreavus",
+        "pokemon_type": [
+            "ghost"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                429,
+                0
+            ]
+        ]
+    },
+    "unown": {
+        "base_id": 201,
+        "form_id": 0,
+        "name": "Unown",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "black",
+        "experience_group": "Medium Fast",
+        "generation": 2
+    },
+    "wobbuffet": {
+        "base_id": 202,
+        "form_id": 0,
+        "name": "Wobbuffet",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 2
+    },
+    "girafarig": {
+        "base_id": 203,
+        "form_id": 0,
+        "name": "Girafarig",
+        "pokemon_type": [
+            "normal",
+            "psychic"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 2
+    },
+    "pineco": {
+        "base_id": 204,
+        "form_id": 0,
+        "name": "Pineco",
+        "pokemon_type": [
+            "bug"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                205,
+                0
+            ]
+        ]
+    },
+    "forretress": {
+        "base_id": 205,
+        "form_id": 0,
+        "name": "Forretress",
+        "pokemon_type": [
+            "bug",
+            "steel"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 2
+    },
+    "dunsparce": {
+        "base_id": 206,
+        "form_id": 0,
+        "name": "Dunsparce",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 2
+    },
+    "gligar": {
+        "base_id": 207,
+        "form_id": 0,
+        "name": "Gligar",
+        "pokemon_type": [
+            "ground",
+            "flying"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Slow",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                472,
+                0
+            ]
+        ]
+    },
+    "steelix": {
+        "base_id": 208,
+        "form_id": 0,
+        "name": "Steelix",
+        "pokemon_type": [
+            "steel",
+            "ground"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 2
+    },
+    "steelix-mega": {
+        "base_id": 208,
+        "form_id": 1,
+        "name": "Mega Steelix",
+        "pokemon_type": [
+            "steel",
+            "ground"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "snubbull": {
+        "base_id": 209,
+        "form_id": 0,
+        "name": "Snubbull",
+        "pokemon_type": [
+            "fairy"
+        ],
+        "past_type": {
+            "generation": 6,
+            "pokemon_type": [
+                "normal"
+            ]
+        },
+        "egg_group": [
+            "field",
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "pink",
+        "experience_group": "Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                210,
+                0
+            ]
+        ]
+    },
+    "granbull": {
+        "base_id": 210,
+        "form_id": 0,
+        "name": "Granbull",
+        "pokemon_type": [
+            "fairy"
+        ],
+        "past_type": {
+            "generation": 6,
+            "pokemon_type": [
+                "normal"
+            ]
+        },
+        "egg_group": [
+            "field",
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "purple",
+        "experience_group": "Fast",
+        "generation": 2
+    },
+    "qwilfish": {
+        "base_id": 211,
+        "form_id": 0,
+        "name": "Qwilfish",
+        "pokemon_type": [
+            "water",
+            "poison"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 2
+    },
+    "qwilfish-hisui": {
+        "base_id": 211,
+        "form_id": 1,
+        "name": "Hisuian Qwilfish",
+        "pokemon_type": [
+            "dark",
+            "poison"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                904,
+                0
+            ]
+        ]
+    },
+    "scizor": {
+        "base_id": 212,
+        "form_id": 0,
+        "name": "Scizor",
+        "pokemon_type": [
+            "bug",
+            "steel"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 2
+    },
+    "scizor-mega": {
+        "base_id": 212,
+        "form_id": 1,
+        "name": "Mega Scizor",
+        "pokemon_type": [
+            "bug",
+            "steel"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "shuckle": {
+        "base_id": 213,
+        "form_id": 0,
+        "name": "Shuckle",
+        "pokemon_type": [
+            "bug",
+            "rock"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Slow",
+        "generation": 2
+    },
+    "heracross": {
+        "base_id": 214,
+        "form_id": 0,
+        "name": "Heracross",
+        "pokemon_type": [
+            "bug",
+            "fighting"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 2
+    },
+    "heracross-mega": {
+        "base_id": 214,
+        "form_id": 1,
+        "name": "Mega Heracross",
+        "pokemon_type": [
+            "bug",
+            "fighting"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "sneasel": {
+        "base_id": 215,
+        "form_id": 0,
+        "name": "Sneasel",
+        "pokemon_type": [
+            "dark",
+            "ice"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Slow",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                461,
+                0
+            ]
+        ]
+    },
+    "sneasel-hisui": {
+        "base_id": 215,
+        "form_id": 1,
+        "name": "Hisuian Sneasel",
+        "pokemon_type": [
+            "fighting",
+            "poison"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Slow",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                903,
+                0
+            ]
+        ]
+    },
+    "teddiursa": {
+        "base_id": 216,
+        "form_id": 0,
+        "name": "Teddiursa",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                217,
+                0
+            ]
+        ]
+    },
+    "ursaring": {
+        "base_id": 217,
+        "form_id": 0,
+        "name": "Ursaring",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                901,
+                0
+            ]
+        ]
+    },
+    "slugma": {
+        "base_id": 218,
+        "form_id": 0,
+        "name": "Slugma",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                219,
+                0
+            ]
+        ]
+    },
+    "magcargo": {
+        "base_id": 219,
+        "form_id": 0,
+        "name": "Magcargo",
+        "pokemon_type": [
+            "fire",
+            "rock"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 2
+    },
+    "swinub": {
+        "base_id": 220,
+        "form_id": 0,
+        "name": "Swinub",
+        "pokemon_type": [
+            "ice",
+            "ground"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                221,
+                0
+            ]
+        ]
+    },
+    "piloswine": {
+        "base_id": 221,
+        "form_id": 0,
+        "name": "Piloswine",
+        "pokemon_type": [
+            "ice",
+            "ground"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                473,
+                0
+            ]
+        ]
+    },
+    "corsola": {
+        "base_id": 222,
+        "form_id": 0,
+        "name": "Corsola",
+        "pokemon_type": [
+            "water",
+            "rock"
+        ],
+        "egg_group": [
+            "water_1",
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "pink",
+        "experience_group": "Fast",
+        "generation": 2
+    },
+    "corsola-galar": {
+        "base_id": 222,
+        "form_id": 1,
+        "name": "Galarian Corsola",
+        "pokemon_type": [
+            "ghost"
+        ],
+        "egg_group": [
+            "water_1",
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "white",
+        "experience_group": "Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                864,
+                0
+            ]
+        ]
+    },
+    "remoraid": {
+        "base_id": 223,
+        "form_id": 0,
+        "name": "Remoraid",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                224,
+                0
+            ]
+        ]
+    },
+    "octillery": {
+        "base_id": 224,
+        "form_id": 0,
+        "name": "Octillery",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "water_2"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 2
+    },
+    "delibird": {
+        "base_id": 225,
+        "form_id": 0,
+        "name": "Delibird",
+        "pokemon_type": [
+            "ice",
+            "flying"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Fast",
+        "generation": 2
+    },
+    "mantine": {
+        "base_id": 226,
+        "form_id": 0,
+        "name": "Mantine",
+        "pokemon_type": [
+            "water",
+            "flying"
+        ],
+        "egg_group": [
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 2
+    },
+    "skarmory": {
+        "base_id": 227,
+        "form_id": 0,
+        "name": "Skarmory",
+        "pokemon_type": [
+            "steel",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 2
+    },
+    "houndour": {
+        "base_id": 228,
+        "form_id": 0,
+        "name": "Houndour",
+        "pokemon_type": [
+            "dark",
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Slow",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                229,
+                0
+            ]
+        ]
+    },
+    "houndoom": {
+        "base_id": 229,
+        "form_id": 0,
+        "name": "Houndoom",
+        "pokemon_type": [
+            "dark",
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Slow",
+        "generation": 2
+    },
+    "houndoom-mega": {
+        "base_id": 229,
+        "form_id": 1,
+        "name": "Mega Houndoom",
+        "pokemon_type": [
+            "dark",
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "black",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "kingdra": {
+        "base_id": 230,
+        "form_id": 0,
+        "name": "Kingdra",
+        "pokemon_type": [
+            "water",
+            "dragon"
+        ],
+        "egg_group": [
+            "water_1",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 2
+    },
+    "phanpy": {
+        "base_id": 231,
+        "form_id": 0,
+        "name": "Phanpy",
+        "pokemon_type": [
+            "ground"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                232,
+                0
+            ]
+        ]
+    },
+    "donphan": {
+        "base_id": 232,
+        "form_id": 0,
+        "name": "Donphan",
+        "pokemon_type": [
+            "ground"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 2
+    },
+    "porygon2": {
+        "base_id": 233,
+        "form_id": 0,
+        "name": "Porygon2",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                474,
+                0
+            ]
+        ]
+    },
+    "stantler": {
+        "base_id": 234,
+        "form_id": 0,
+        "name": "Stantler",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                899,
+                0
+            ]
+        ]
+    },
+    "smeargle": {
+        "base_id": 235,
+        "form_id": 0,
+        "name": "Smeargle",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Fast",
+        "generation": 2
+    },
+    "tyrogue": {
+        "base_id": 236,
+        "form_id": 0,
+        "name": "Tyrogue",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "is_baby": true,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                106,
+                0
+            ],
+            [
+                107,
+                0
+            ],
+            [
+                237,
+                0
+            ]
+        ]
+    },
+    "hitmontop": {
+        "base_id": 237,
+        "form_id": 0,
+        "name": "Hitmontop",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 2
+    },
+    "smoochum": {
+        "base_id": 238,
+        "form_id": 0,
+        "name": "Smoochum",
+        "pokemon_type": [
+            "ice",
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "is_baby": true,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                124,
+                0
+            ]
+        ]
+    },
+    "elekid": {
+        "base_id": 239,
+        "form_id": 0,
+        "name": "Elekid",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 2,
+        "is_baby": true,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                125,
+                0
+            ]
+        ]
+    },
+    "magby": {
+        "base_id": 240,
+        "form_id": 0,
+        "name": "Magby",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 2,
+        "is_baby": true,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                126,
+                0
+            ]
+        ]
+    },
+    "miltank": {
+        "base_id": 241,
+        "form_id": 0,
+        "name": "Miltank",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "pink",
+        "experience_group": "Slow",
+        "generation": 2
+    },
+    "blissey": {
+        "base_id": 242,
+        "form_id": 0,
+        "name": "Blissey",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "fairy"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "pink",
+        "experience_group": "Fast",
+        "generation": 2
+    },
+    "raikou": {
+        "base_id": 243,
+        "form_id": 0,
+        "name": "Raikou",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "yellow",
+        "experience_group": "Slow",
+        "generation": 2
+    },
+    "entei": {
+        "base_id": 244,
+        "form_id": 0,
+        "name": "Entei",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 2
+    },
+    "suicune": {
+        "base_id": 245,
+        "form_id": 0,
+        "name": "Suicune",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 2
+    },
+    "larvitar": {
+        "base_id": 246,
+        "form_id": 0,
+        "name": "Larvitar",
+        "pokemon_type": [
+            "rock",
+            "ground"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Slow",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                247,
+                0
+            ]
+        ]
+    },
+    "pupitar": {
+        "base_id": 247,
+        "form_id": 0,
+        "name": "Pupitar",
+        "pokemon_type": [
+            "rock",
+            "ground"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 2,
+        "evolution_ids": [
+            [
+                248,
+                0
+            ]
+        ]
+    },
+    "tyranitar": {
+        "base_id": 248,
+        "form_id": 0,
+        "name": "Tyranitar",
+        "pokemon_type": [
+            "rock",
+            "dark"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Slow",
+        "generation": 2
+    },
+    "tyranitar-mega": {
+        "base_id": 248,
+        "form_id": 1,
+        "name": "Mega Tyranitar",
+        "pokemon_type": [
+            "rock",
+            "dark"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "green",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "lugia": {
+        "base_id": 249,
+        "form_id": 0,
+        "name": "Lugia",
+        "pokemon_type": [
+            "psychic",
+            "flying"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 2
+    },
+    "ho-oh": {
+        "base_id": 250,
+        "form_id": 0,
+        "name": "Ho-Oh",
+        "pokemon_type": [
+            "fire",
+            "flying"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "red",
+        "experience_group": "Slow",
+        "generation": 2
+    },
+    "celebi": {
+        "base_id": 251,
+        "form_id": 0,
+        "name": "Celebi",
+        "pokemon_type": [
+            "psychic",
+            "grass"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 2
+    },
+    "treecko": {
+        "base_id": 252,
+        "form_id": 0,
+        "name": "Treecko",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                253,
+                0
+            ]
+        ]
+    },
+    "grovyle": {
+        "base_id": 253,
+        "form_id": 0,
+        "name": "Grovyle",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                254,
+                0
+            ]
+        ]
+    },
+    "sceptile": {
+        "base_id": 254,
+        "form_id": 0,
+        "name": "Sceptile",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 3
+    },
+    "sceptile-mega": {
+        "base_id": 254,
+        "form_id": 1,
+        "name": "Mega Sceptile",
+        "pokemon_type": [
+            "grass",
+            "dragon"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "is_mega": true,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 6
+    },
+    "torchic": {
+        "base_id": 255,
+        "form_id": 0,
+        "name": "Torchic",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 1,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                256,
+                0
+            ]
+        ]
+    },
+    "combusken": {
+        "base_id": 256,
+        "form_id": 0,
+        "name": "Combusken",
+        "pokemon_type": [
+            "fire",
+            "fighting"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 1,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                257,
+                0
+            ]
+        ]
+    },
+    "blaziken": {
+        "base_id": 257,
+        "form_id": 0,
+        "name": "Blaziken",
+        "pokemon_type": [
+            "fire",
+            "fighting"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 1,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 3
+    },
+    "blaziken-mega": {
+        "base_id": 257,
+        "form_id": 1,
+        "name": "Mega Blaziken",
+        "pokemon_type": [
+            "fire",
+            "fighting"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "is_mega": true,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 6
+    },
+    "mudkip": {
+        "base_id": 258,
+        "form_id": 0,
+        "name": "Mudkip",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "monster",
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                259,
+                0
+            ]
+        ]
+    },
+    "marshtomp": {
+        "base_id": 259,
+        "form_id": 0,
+        "name": "Marshtomp",
+        "pokemon_type": [
+            "water",
+            "ground"
+        ],
+        "egg_group": [
+            "monster",
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                260,
+                0
+            ]
+        ]
+    },
+    "swampert": {
+        "base_id": 260,
+        "form_id": 0,
+        "name": "Swampert",
+        "pokemon_type": [
+            "water",
+            "ground"
+        ],
+        "egg_group": [
+            "monster",
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 3
+    },
+    "swampert-mega": {
+        "base_id": 260,
+        "form_id": 1,
+        "name": "Mega Swampert",
+        "pokemon_type": [
+            "water",
+            "ground"
+        ],
+        "egg_group": [
+            "monster",
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "is_mega": true,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 6
+    },
+    "poochyena": {
+        "base_id": 261,
+        "form_id": 0,
+        "name": "Poochyena",
+        "pokemon_type": [
+            "dark"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                262,
+                0
+            ]
+        ]
+    },
+    "mightyena": {
+        "base_id": 262,
+        "form_id": 0,
+        "name": "Mightyena",
+        "pokemon_type": [
+            "dark"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 3
+    },
+    "zigzagoon": {
+        "base_id": 263,
+        "form_id": 0,
+        "name": "Zigzagoon",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                264,
+                0
+            ]
+        ]
+    },
+    "zigzagoon-galar": {
+        "base_id": 263,
+        "form_id": 1,
+        "name": "Galarian Zigzagoon",
+        "pokemon_type": [
+            "dark",
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                264,
+                1
+            ]
+        ]
+    },
+    "linoone": {
+        "base_id": 264,
+        "form_id": 0,
+        "name": "Linoone",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 3
+    },
+    "linoone-galar": {
+        "base_id": 264,
+        "form_id": 1,
+        "name": "Galarian Linoone",
+        "pokemon_type": [
+            "dark",
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                862,
+                0
+            ]
+        ]
+    },
+    "wurmple": {
+        "base_id": 265,
+        "form_id": 0,
+        "name": "Wurmple",
+        "pokemon_type": [
+            "bug"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                266,
+                0
+            ],
+            [
+                268,
+                0
+            ]
+        ]
+    },
+    "silcoon": {
+        "base_id": 266,
+        "form_id": 0,
+        "name": "Silcoon",
+        "pokemon_type": [
+            "bug"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                267,
+                0
+            ]
+        ]
+    },
+    "beautifly": {
+        "base_id": 267,
+        "form_id": 0,
+        "name": "Beautifly",
+        "pokemon_type": [
+            "bug",
+            "flying"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 3
+    },
+    "cascoon": {
+        "base_id": 268,
+        "form_id": 0,
+        "name": "Cascoon",
+        "pokemon_type": [
+            "bug"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                269,
+                0
+            ]
+        ]
+    },
+    "dustox": {
+        "base_id": 269,
+        "form_id": 0,
+        "name": "Dustox",
+        "pokemon_type": [
+            "bug",
+            "poison"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 3
+    },
+    "lotad": {
+        "base_id": 270,
+        "form_id": 0,
+        "name": "Lotad",
+        "pokemon_type": [
+            "water",
+            "grass"
+        ],
+        "egg_group": [
+            "water_1",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                271,
+                0
+            ]
+        ]
+    },
+    "lombre": {
+        "base_id": 271,
+        "form_id": 0,
+        "name": "Lombre",
+        "pokemon_type": [
+            "water",
+            "grass"
+        ],
+        "egg_group": [
+            "water_1",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                272,
+                0
+            ]
+        ]
+    },
+    "ludicolo": {
+        "base_id": 272,
+        "form_id": 0,
+        "name": "Ludicolo",
+        "pokemon_type": [
+            "water",
+            "grass"
+        ],
+        "egg_group": [
+            "water_1",
+            "grass"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 3
+    },
+    "seedot": {
+        "base_id": 273,
+        "form_id": 0,
+        "name": "Seedot",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "field",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                274,
+                0
+            ]
+        ]
+    },
+    "nuzleaf": {
+        "base_id": 274,
+        "form_id": 0,
+        "name": "Nuzleaf",
+        "pokemon_type": [
+            "grass",
+            "dark"
+        ],
+        "egg_group": [
+            "field",
+            "grass"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                275,
+                0
+            ]
+        ]
+    },
+    "shiftry": {
+        "base_id": 275,
+        "form_id": 0,
+        "name": "Shiftry",
+        "pokemon_type": [
+            "grass",
+            "dark"
+        ],
+        "egg_group": [
+            "field",
+            "grass"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 3
+    },
+    "taillow": {
+        "base_id": 276,
+        "form_id": 0,
+        "name": "Taillow",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                277,
+                0
+            ]
+        ]
+    },
+    "swellow": {
+        "base_id": 277,
+        "form_id": 0,
+        "name": "Swellow",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 3
+    },
+    "wingull": {
+        "base_id": 278,
+        "form_id": 0,
+        "name": "Wingull",
+        "pokemon_type": [
+            "water",
+            "flying"
+        ],
+        "egg_group": [
+            "water_1",
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                279,
+                0
+            ]
+        ]
+    },
+    "pelipper": {
+        "base_id": 279,
+        "form_id": 0,
+        "name": "Pelipper",
+        "pokemon_type": [
+            "water",
+            "flying"
+        ],
+        "egg_group": [
+            "water_1",
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 3
+    },
+    "ralts": {
+        "base_id": 280,
+        "form_id": 0,
+        "name": "Ralts",
+        "pokemon_type": [
+            "psychic",
+            "fairy"
+        ],
+        "past_type": {
+            "generation": 6,
+            "pokemon_type": [
+                "psychic"
+            ]
+        },
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                281,
+                0
+            ]
+        ]
+    },
+    "kirlia": {
+        "base_id": 281,
+        "form_id": 0,
+        "name": "Kirlia",
+        "pokemon_type": [
+            "psychic",
+            "fairy"
+        ],
+        "past_type": {
+            "generation": 6,
+            "pokemon_type": [
+                "psychic"
+            ]
+        },
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                282,
+                0
+            ],
+            [
+                475,
+                0
+            ]
+        ]
+    },
+    "gardevoir": {
+        "base_id": 282,
+        "form_id": 0,
+        "name": "Gardevoir",
+        "pokemon_type": [
+            "psychic",
+            "fairy"
+        ],
+        "past_type": {
+            "generation": 6,
+            "pokemon_type": [
+                "psychic"
+            ]
+        },
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 3
+    },
+    "gardevoir-mega": {
+        "base_id": 282,
+        "form_id": 1,
+        "name": "Mega Gardevoir",
+        "pokemon_type": [
+            "psychic",
+            "fairy"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "surskit": {
+        "base_id": 283,
+        "form_id": 0,
+        "name": "Surskit",
+        "pokemon_type": [
+            "bug",
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                284,
+                0
+            ]
+        ]
+    },
+    "masquerain": {
+        "base_id": 284,
+        "form_id": 0,
+        "name": "Masquerain",
+        "pokemon_type": [
+            "bug",
+            "flying"
+        ],
+        "egg_group": [
+            "water_1",
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 3
+    },
+    "shroomish": {
+        "base_id": 285,
+        "form_id": 0,
+        "name": "Shroomish",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "fairy",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Fluctuating",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                286,
+                0
+            ]
+        ]
+    },
+    "breloom": {
+        "base_id": 286,
+        "form_id": 0,
+        "name": "Breloom",
+        "pokemon_type": [
+            "grass",
+            "fighting"
+        ],
+        "egg_group": [
+            "fairy",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Fluctuating",
+        "generation": 3
+    },
+    "slakoth": {
+        "base_id": 287,
+        "form_id": 0,
+        "name": "Slakoth",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                288,
+                0
+            ]
+        ]
+    },
+    "vigoroth": {
+        "base_id": 288,
+        "form_id": 0,
+        "name": "Vigoroth",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                289,
+                0
+            ]
+        ]
+    },
+    "slaking": {
+        "base_id": 289,
+        "form_id": 0,
+        "name": "Slaking",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 3
+    },
+    "nincada": {
+        "base_id": 290,
+        "form_id": 0,
+        "name": "Nincada",
+        "pokemon_type": [
+            "bug",
+            "ground"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Erratic",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                291,
+                0
+            ],
+            [
+                292,
+                0
+            ]
+        ]
+    },
+    "ninjask": {
+        "base_id": 291,
+        "form_id": 0,
+        "name": "Ninjask",
+        "pokemon_type": [
+            "bug",
+            "flying"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Erratic",
+        "generation": 3
+    },
+    "shedinja": {
+        "base_id": 292,
+        "form_id": 0,
+        "name": "Shedinja",
+        "pokemon_type": [
+            "bug",
+            "ghost"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "brown",
+        "experience_group": "Erratic",
+        "generation": 3
+    },
+    "whismur": {
+        "base_id": 293,
+        "form_id": 0,
+        "name": "Whismur",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "monster",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Medium Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                294,
+                0
+            ]
+        ]
+    },
+    "loudred": {
+        "base_id": 294,
+        "form_id": 0,
+        "name": "Loudred",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "monster",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                295,
+                0
+            ]
+        ]
+    },
+    "exploud": {
+        "base_id": 295,
+        "form_id": 0,
+        "name": "Exploud",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "monster",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 3
+    },
+    "makuhita": {
+        "base_id": 296,
+        "form_id": 0,
+        "name": "Makuhita",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 2,
+        "color": "yellow",
+        "experience_group": "Fluctuating",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                297,
+                0
+            ]
+        ]
+    },
+    "hariyama": {
+        "base_id": 297,
+        "form_id": 0,
+        "name": "Hariyama",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 2,
+        "color": "brown",
+        "experience_group": "Fluctuating",
+        "generation": 3
+    },
+    "azurill": {
+        "base_id": 298,
+        "form_id": 0,
+        "name": "Azurill",
+        "pokemon_type": [
+            "normal",
+            "fairy"
+        ],
+        "past_type": {
+            "generation": 6,
+            "pokemon_type": [
+                "normal"
+            ]
+        },
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "is_baby": true,
+        "color": "blue",
+        "experience_group": "Fast",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                183,
+                0
+            ]
+        ]
+    },
+    "nosepass": {
+        "base_id": 299,
+        "form_id": 0,
+        "name": "Nosepass",
+        "pokemon_type": [
+            "rock"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                476,
+                0
+            ]
+        ]
+    },
+    "skitty": {
+        "base_id": 300,
+        "form_id": 0,
+        "name": "Skitty",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field",
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "pink",
+        "experience_group": "Fast",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                301,
+                0
+            ]
+        ]
+    },
+    "delcatty": {
+        "base_id": 301,
+        "form_id": 0,
+        "name": "Delcatty",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field",
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "purple",
+        "experience_group": "Fast",
+        "generation": 3
+    },
+    "sableye": {
+        "base_id": 302,
+        "form_id": 0,
+        "name": "Sableye",
+        "pokemon_type": [
+            "dark",
+            "ghost"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Slow",
+        "generation": 3
+    },
+    "sableye-mega": {
+        "base_id": 302,
+        "form_id": 1,
+        "name": "Mega Sableye",
+        "pokemon_type": [
+            "dark",
+            "ghost"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "purple",
+        "experience_group": "Medium Slow",
+        "generation": 6
+    },
+    "mawile": {
+        "base_id": 303,
+        "form_id": 0,
+        "name": "Mawile",
+        "pokemon_type": [
+            "steel",
+            "fairy"
+        ],
+        "past_type": {
+            "generation": 6,
+            "pokemon_type": [
+                "steel"
+            ]
+        },
+        "egg_group": [
+            "field",
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Fast",
+        "generation": 3
+    },
+    "mawile-mega": {
+        "base_id": 303,
+        "form_id": 1,
+        "name": "Mega Mawile",
+        "pokemon_type": [
+            "steel",
+            "fairy"
+        ],
+        "egg_group": [
+            "field",
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "black",
+        "experience_group": "Fast",
+        "generation": 6
+    },
+    "aron": {
+        "base_id": 304,
+        "form_id": 0,
+        "name": "Aron",
+        "pokemon_type": [
+            "steel",
+            "rock"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                305,
+                0
+            ]
+        ]
+    },
+    "lairon": {
+        "base_id": 305,
+        "form_id": 0,
+        "name": "Lairon",
+        "pokemon_type": [
+            "steel",
+            "rock"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                306,
+                0
+            ]
+        ]
+    },
+    "aggron": {
+        "base_id": 306,
+        "form_id": 0,
+        "name": "Aggron",
+        "pokemon_type": [
+            "steel",
+            "rock"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 3
+    },
+    "aggron-mega": {
+        "base_id": 306,
+        "form_id": 1,
+        "name": "Mega Aggron",
+        "pokemon_type": [
+            "steel"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "meditite": {
+        "base_id": 307,
+        "form_id": 0,
+        "name": "Meditite",
+        "pokemon_type": [
+            "fighting",
+            "psychic"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                308,
+                0
+            ]
+        ]
+    },
+    "medicham": {
+        "base_id": 308,
+        "form_id": 0,
+        "name": "Medicham",
+        "pokemon_type": [
+            "fighting",
+            "psychic"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 3
+    },
+    "medicham-mega": {
+        "base_id": 308,
+        "form_id": 1,
+        "name": "Mega Medicham",
+        "pokemon_type": [
+            "fighting",
+            "psychic"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "electrike": {
+        "base_id": 309,
+        "form_id": 0,
+        "name": "Electrike",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                310,
+                0
+            ]
+        ]
+    },
+    "manectric": {
+        "base_id": 310,
+        "form_id": 0,
+        "name": "Manectric",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Slow",
+        "generation": 3
+    },
+    "manectric-mega": {
+        "base_id": 310,
+        "form_id": 1,
+        "name": "Mega Manectric",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "yellow",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "plusle": {
+        "base_id": 311,
+        "form_id": 0,
+        "name": "Plusle",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 3
+    },
+    "minun": {
+        "base_id": 312,
+        "form_id": 0,
+        "name": "Minun",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 3
+    },
+    "volbeat": {
+        "base_id": 313,
+        "form_id": 0,
+        "name": "Volbeat",
+        "pokemon_type": [
+            "bug"
+        ],
+        "egg_group": [
+            "bug",
+            "human_like"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "color": "gray",
+        "experience_group": "Erratic",
+        "generation": 3
+    },
+    "illumise": {
+        "base_id": 314,
+        "form_id": 0,
+        "name": "Illumise",
+        "pokemon_type": [
+            "bug"
+        ],
+        "egg_group": [
+            "bug",
+            "human_like"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "purple",
+        "experience_group": "Fluctuating",
+        "generation": 3
+    },
+    "roselia": {
+        "base_id": 315,
+        "form_id": 0,
+        "name": "Roselia",
+        "pokemon_type": [
+            "grass",
+            "poison"
+        ],
+        "egg_group": [
+            "fairy",
+            "grass"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                407,
+                0
+            ]
+        ]
+    },
+    "gulpin": {
+        "base_id": 316,
+        "form_id": 0,
+        "name": "Gulpin",
+        "pokemon_type": [
+            "poison"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Fluctuating",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                317,
+                0
+            ]
+        ]
+    },
+    "swalot": {
+        "base_id": 317,
+        "form_id": 0,
+        "name": "Swalot",
+        "pokemon_type": [
+            "poison"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Fluctuating",
+        "generation": 3
+    },
+    "carvanha": {
+        "base_id": 318,
+        "form_id": 0,
+        "name": "Carvanha",
+        "pokemon_type": [
+            "water",
+            "dark"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                319,
+                0
+            ]
+        ]
+    },
+    "sharpedo": {
+        "base_id": 319,
+        "form_id": 0,
+        "name": "Sharpedo",
+        "pokemon_type": [
+            "water",
+            "dark"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 3
+    },
+    "sharpedo-mega": {
+        "base_id": 319,
+        "form_id": 1,
+        "name": "Mega Sharpedo",
+        "pokemon_type": [
+            "water",
+            "dark"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "wailmer": {
+        "base_id": 320,
+        "form_id": 0,
+        "name": "Wailmer",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "field",
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Fluctuating",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                321,
+                0
+            ]
+        ]
+    },
+    "wailord": {
+        "base_id": 321,
+        "form_id": 0,
+        "name": "Wailord",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "field",
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Fluctuating",
+        "generation": 3
+    },
+    "numel": {
+        "base_id": 322,
+        "form_id": 0,
+        "name": "Numel",
+        "pokemon_type": [
+            "fire",
+            "ground"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                323,
+                0
+            ]
+        ]
+    },
+    "camerupt": {
+        "base_id": 323,
+        "form_id": 0,
+        "name": "Camerupt",
+        "pokemon_type": [
+            "fire",
+            "ground"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 3
+    },
+    "camerupt-mega": {
+        "base_id": 323,
+        "form_id": 1,
+        "name": "Mega Camerupt",
+        "pokemon_type": [
+            "fire",
+            "ground"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "torkoal": {
+        "base_id": 324,
+        "form_id": 0,
+        "name": "Torkoal",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 3
+    },
+    "spoink": {
+        "base_id": 325,
+        "form_id": 0,
+        "name": "Spoink",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Fast",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                326,
+                0
+            ]
+        ]
+    },
+    "grumpig": {
+        "base_id": 326,
+        "form_id": 0,
+        "name": "Grumpig",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Fast",
+        "generation": 3
+    },
+    "spinda": {
+        "base_id": 327,
+        "form_id": 0,
+        "name": "Spinda",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field",
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Fast",
+        "generation": 3
+    },
+    "trapinch": {
+        "base_id": 328,
+        "form_id": 0,
+        "name": "Trapinch",
+        "pokemon_type": [
+            "ground"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                329,
+                0
+            ]
+        ]
+    },
+    "vibrava": {
+        "base_id": 329,
+        "form_id": 0,
+        "name": "Vibrava",
+        "pokemon_type": [
+            "ground",
+            "dragon"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                330,
+                0
+            ]
+        ]
+    },
+    "flygon": {
+        "base_id": 330,
+        "form_id": 0,
+        "name": "Flygon",
+        "pokemon_type": [
+            "ground",
+            "dragon"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 3
+    },
+    "cacnea": {
+        "base_id": 331,
+        "form_id": 0,
+        "name": "Cacnea",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "grass",
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                332,
+                0
+            ]
+        ]
+    },
+    "cacturne": {
+        "base_id": 332,
+        "form_id": 0,
+        "name": "Cacturne",
+        "pokemon_type": [
+            "grass",
+            "dark"
+        ],
+        "egg_group": [
+            "grass",
+            "human_like"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 3
+    },
+    "swablu": {
+        "base_id": 333,
+        "form_id": 0,
+        "name": "Swablu",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Erratic",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                334,
+                0
+            ]
+        ]
+    },
+    "altaria": {
+        "base_id": 334,
+        "form_id": 0,
+        "name": "Altaria",
+        "pokemon_type": [
+            "dragon",
+            "flying"
+        ],
+        "egg_group": [
+            "flying",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Erratic",
+        "generation": 3
+    },
+    "altaria-mega": {
+        "base_id": 334,
+        "form_id": 1,
+        "name": "Mega Altaria",
+        "pokemon_type": [
+            "dragon",
+            "fairy"
+        ],
+        "egg_group": [
+            "flying",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "blue",
+        "experience_group": "Erratic",
+        "generation": 6
+    },
+    "zangoose": {
+        "base_id": 335,
+        "form_id": 0,
+        "name": "Zangoose",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Erratic",
+        "generation": 3
+    },
+    "seviper": {
+        "base_id": 336,
+        "form_id": 0,
+        "name": "Seviper",
+        "pokemon_type": [
+            "poison"
+        ],
+        "egg_group": [
+            "field",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Fluctuating",
+        "generation": 3
+    },
+    "lunatone": {
+        "base_id": 337,
+        "form_id": 0,
+        "name": "Lunatone",
+        "pokemon_type": [
+            "rock",
+            "psychic"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "yellow",
+        "experience_group": "Fast",
+        "generation": 3
+    },
+    "solrock": {
+        "base_id": 338,
+        "form_id": 0,
+        "name": "Solrock",
+        "pokemon_type": [
+            "rock",
+            "psychic"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "red",
+        "experience_group": "Fast",
+        "generation": 3
+    },
+    "barboach": {
+        "base_id": 339,
+        "form_id": 0,
+        "name": "Barboach",
+        "pokemon_type": [
+            "water",
+            "ground"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                340,
+                0
+            ]
+        ]
+    },
+    "whiscash": {
+        "base_id": 340,
+        "form_id": 0,
+        "name": "Whiscash",
+        "pokemon_type": [
+            "water",
+            "ground"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 3
+    },
+    "corphish": {
+        "base_id": 341,
+        "form_id": 0,
+        "name": "Corphish",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Fluctuating",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                342,
+                0
+            ]
+        ]
+    },
+    "crawdaunt": {
+        "base_id": 342,
+        "form_id": 0,
+        "name": "Crawdaunt",
+        "pokemon_type": [
+            "water",
+            "dark"
+        ],
+        "egg_group": [
+            "water_1",
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Fluctuating",
+        "generation": 3
+    },
+    "baltoy": {
+        "base_id": 343,
+        "form_id": 0,
+        "name": "Baltoy",
+        "pokemon_type": [
+            "ground",
+            "psychic"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                344,
+                0
+            ]
+        ]
+    },
+    "claydol": {
+        "base_id": 344,
+        "form_id": 0,
+        "name": "Claydol",
+        "pokemon_type": [
+            "ground",
+            "psychic"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "black",
+        "experience_group": "Medium Fast",
+        "generation": 3
+    },
+    "lileep": {
+        "base_id": 345,
+        "form_id": 0,
+        "name": "Lileep",
+        "pokemon_type": [
+            "rock",
+            "grass"
+        ],
+        "egg_group": [
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "purple",
+        "experience_group": "Erratic",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                346,
+                0
+            ]
+        ]
+    },
+    "cradily": {
+        "base_id": 346,
+        "form_id": 0,
+        "name": "Cradily",
+        "pokemon_type": [
+            "rock",
+            "grass"
+        ],
+        "egg_group": [
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "green",
+        "experience_group": "Erratic",
+        "generation": 3
+    },
+    "anorith": {
+        "base_id": 347,
+        "form_id": 0,
+        "name": "Anorith",
+        "pokemon_type": [
+            "rock",
+            "bug"
+        ],
+        "egg_group": [
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "gray",
+        "experience_group": "Erratic",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                348,
+                0
+            ]
+        ]
+    },
+    "armaldo": {
+        "base_id": 348,
+        "form_id": 0,
+        "name": "Armaldo",
+        "pokemon_type": [
+            "rock",
+            "bug"
+        ],
+        "egg_group": [
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "gray",
+        "experience_group": "Erratic",
+        "generation": 3
+    },
+    "feebas": {
+        "base_id": 349,
+        "form_id": 0,
+        "name": "Feebas",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Erratic",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                350,
+                0
+            ]
+        ]
+    },
+    "milotic": {
+        "base_id": 350,
+        "form_id": 0,
+        "name": "Milotic",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "dragon"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Erratic",
+        "generation": 3
+    },
+    "castform": {
+        "base_id": 351,
+        "form_id": 0,
+        "name": "Castform",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "fairy",
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 3
+    },
+    "kecleon": {
+        "base_id": 352,
+        "form_id": 0,
+        "name": "Kecleon",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 3
+    },
+    "shuppet": {
+        "base_id": 353,
+        "form_id": 0,
+        "name": "Shuppet",
+        "pokemon_type": [
+            "ghost"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Fast",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                354,
+                0
+            ]
+        ]
+    },
+    "banette": {
+        "base_id": 354,
+        "form_id": 0,
+        "name": "Banette",
+        "pokemon_type": [
+            "ghost"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Fast",
+        "generation": 3
+    },
+    "banette-mega": {
+        "base_id": 354,
+        "form_id": 1,
+        "name": "Mega Banette",
+        "pokemon_type": [
+            "ghost"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "black",
+        "experience_group": "Fast",
+        "generation": 6
+    },
+    "duskull": {
+        "base_id": 355,
+        "form_id": 0,
+        "name": "Duskull",
+        "pokemon_type": [
+            "ghost"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Fast",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                356,
+                0
+            ]
+        ]
+    },
+    "dusclops": {
+        "base_id": 356,
+        "form_id": 0,
+        "name": "Dusclops",
+        "pokemon_type": [
+            "ghost"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Fast",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                477,
+                0
+            ]
+        ]
+    },
+    "tropius": {
+        "base_id": 357,
+        "form_id": 0,
+        "name": "Tropius",
+        "pokemon_type": [
+            "grass",
+            "flying"
+        ],
+        "egg_group": [
+            "monster",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Slow",
+        "generation": 3
+    },
+    "chimecho": {
+        "base_id": 358,
+        "form_id": 0,
+        "name": "Chimecho",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Fast",
+        "generation": 3
+    },
+    "absol": {
+        "base_id": 359,
+        "form_id": 0,
+        "name": "Absol",
+        "pokemon_type": [
+            "dark"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Slow",
+        "generation": 3
+    },
+    "absol-mega": {
+        "base_id": 359,
+        "form_id": 1,
+        "name": "Mega Absol",
+        "pokemon_type": [
+            "dark"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "white",
+        "experience_group": "Medium Slow",
+        "generation": 6
+    },
+    "wynaut": {
+        "base_id": 360,
+        "form_id": 0,
+        "name": "Wynaut",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_baby": true,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                202,
+                0
+            ]
+        ]
+    },
+    "snorunt": {
+        "base_id": 361,
+        "form_id": 0,
+        "name": "Snorunt",
+        "pokemon_type": [
+            "ice"
+        ],
+        "egg_group": [
+            "fairy",
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                362,
+                0
+            ],
+            [
+                478,
+                0
+            ]
+        ]
+    },
+    "glalie": {
+        "base_id": 362,
+        "form_id": 0,
+        "name": "Glalie",
+        "pokemon_type": [
+            "ice"
+        ],
+        "egg_group": [
+            "fairy",
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 3
+    },
+    "glalie-mega": {
+        "base_id": 362,
+        "form_id": 1,
+        "name": "Mega Glalie",
+        "pokemon_type": [
+            "ice"
+        ],
+        "egg_group": [
+            "fairy",
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "spheal": {
+        "base_id": 363,
+        "form_id": 0,
+        "name": "Spheal",
+        "pokemon_type": [
+            "ice",
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                364,
+                0
+            ]
+        ]
+    },
+    "sealeo": {
+        "base_id": 364,
+        "form_id": 0,
+        "name": "Sealeo",
+        "pokemon_type": [
+            "ice",
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                365,
+                0
+            ]
+        ]
+    },
+    "walrein": {
+        "base_id": 365,
+        "form_id": 0,
+        "name": "Walrein",
+        "pokemon_type": [
+            "ice",
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 3
+    },
+    "clamperl": {
+        "base_id": 366,
+        "form_id": 0,
+        "name": "Clamperl",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Erratic",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                367,
+                0
+            ],
+            [
+                368,
+                0
+            ]
+        ]
+    },
+    "huntail": {
+        "base_id": 367,
+        "form_id": 0,
+        "name": "Huntail",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Erratic",
+        "generation": 3
+    },
+    "gorebyss": {
+        "base_id": 368,
+        "form_id": 0,
+        "name": "Gorebyss",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Erratic",
+        "generation": 3
+    },
+    "relicanth": {
+        "base_id": 369,
+        "form_id": 0,
+        "name": "Relicanth",
+        "pokemon_type": [
+            "water",
+            "rock"
+        ],
+        "egg_group": [
+            "water_1",
+            "water_2"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 1,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 3
+    },
+    "luvdisc": {
+        "base_id": 370,
+        "form_id": 0,
+        "name": "Luvdisc",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "pink",
+        "experience_group": "Fast",
+        "generation": 3
+    },
+    "bagon": {
+        "base_id": 371,
+        "form_id": 0,
+        "name": "Bagon",
+        "pokemon_type": [
+            "dragon"
+        ],
+        "egg_group": [
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                372,
+                0
+            ]
+        ]
+    },
+    "shelgon": {
+        "base_id": 372,
+        "form_id": 0,
+        "name": "Shelgon",
+        "pokemon_type": [
+            "dragon"
+        ],
+        "egg_group": [
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                373,
+                0
+            ]
+        ]
+    },
+    "salamence": {
+        "base_id": 373,
+        "form_id": 0,
+        "name": "Salamence",
+        "pokemon_type": [
+            "dragon",
+            "flying"
+        ],
+        "egg_group": [
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 3
+    },
+    "salamence-mega": {
+        "base_id": 373,
+        "form_id": 1,
+        "name": "Mega Salamence",
+        "pokemon_type": [
+            "dragon",
+            "flying"
+        ],
+        "egg_group": [
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "beldum": {
+        "base_id": 374,
+        "form_id": 0,
+        "name": "Beldum",
+        "pokemon_type": [
+            "steel",
+            "psychic"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                375,
+                0
+            ]
+        ]
+    },
+    "metang": {
+        "base_id": 375,
+        "form_id": 0,
+        "name": "Metang",
+        "pokemon_type": [
+            "steel",
+            "psychic"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 3,
+        "evolution_ids": [
+            [
+                376,
+                0
+            ]
+        ]
+    },
+    "metagross": {
+        "base_id": 376,
+        "form_id": 0,
+        "name": "Metagross",
+        "pokemon_type": [
+            "steel",
+            "psychic"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 3
+    },
+    "metagross-mega": {
+        "base_id": 376,
+        "form_id": 1,
+        "name": "Mega Metagross",
+        "pokemon_type": [
+            "steel",
+            "psychic"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mega": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "regirock": {
+        "base_id": 377,
+        "form_id": 0,
+        "name": "Regirock",
+        "pokemon_type": [
+            "rock"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 3
+    },
+    "regice": {
+        "base_id": 378,
+        "form_id": 0,
+        "name": "Regice",
+        "pokemon_type": [
+            "ice"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 3
+    },
+    "registeel": {
+        "base_id": 379,
+        "form_id": 0,
+        "name": "Registeel",
+        "pokemon_type": [
+            "steel"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 3
+    },
+    "latias": {
+        "base_id": 380,
+        "form_id": 0,
+        "name": "Latias",
+        "pokemon_type": [
+            "dragon",
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "is_sublegendary": true,
+        "color": "red",
+        "experience_group": "Slow",
+        "generation": 3
+    },
+    "latias-mega": {
+        "base_id": 380,
+        "form_id": 1,
+        "name": "Mega Latias",
+        "pokemon_type": [
+            "dragon",
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "is_sublegendary": true,
+        "is_mega": true,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "latios": {
+        "base_id": 381,
+        "form_id": 0,
+        "name": "Latios",
+        "pokemon_type": [
+            "dragon",
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "is_sublegendary": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 3
+    },
+    "latios-mega": {
+        "base_id": 381,
+        "form_id": 1,
+        "name": "Mega Latios",
+        "pokemon_type": [
+            "dragon",
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "is_sublegendary": true,
+        "is_mega": true,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "kyogre": {
+        "base_id": 382,
+        "form_id": 0,
+        "name": "Kyogre",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 3
+    },
+    "kyogre-primal": {
+        "base_id": 382,
+        "form_id": 1,
+        "name": "Primal Kyogre",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "groudon": {
+        "base_id": 383,
+        "form_id": 0,
+        "name": "Groudon",
+        "pokemon_type": [
+            "ground"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "red",
+        "experience_group": "Slow",
+        "generation": 3
+    },
+    "groudon-primal": {
+        "base_id": 383,
+        "form_id": 1,
+        "name": "Primal Groudon",
+        "pokemon_type": [
+            "ground",
+            "fire"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "red",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "rayquaza": {
+        "base_id": 384,
+        "form_id": 0,
+        "name": "Rayquaza",
+        "pokemon_type": [
+            "dragon",
+            "flying"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "green",
+        "experience_group": "Slow",
+        "generation": 3
+    },
+    "rayquaza-mega": {
+        "base_id": 384,
+        "form_id": 1,
+        "name": "Mega Rayquaza",
+        "pokemon_type": [
+            "dragon",
+            "flying"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "is_mega": true,
+        "color": "green",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "jirachi": {
+        "base_id": 385,
+        "form_id": 0,
+        "name": "Jirachi",
+        "pokemon_type": [
+            "steel",
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "yellow",
+        "experience_group": "Slow",
+        "generation": 3
+    },
+    "deoxys": {
+        "base_id": 386,
+        "form_id": 0,
+        "name": "Deoxys",
+        "form_name": "Normal Forme",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "red",
+        "experience_group": "Slow",
+        "generation": 3
+    },
+    "deoxys-attack": {
+        "base_id": 386,
+        "form_id": 1,
+        "name": "Deoxys",
+        "form_name": "Attack Forme",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "red",
+        "experience_group": "Slow",
+        "generation": 3
+    },
+    "deoxys-defense": {
+        "base_id": 386,
+        "form_id": 2,
+        "name": "Deoxys",
+        "form_name": "Defense Forme",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "red",
+        "experience_group": "Slow",
+        "generation": 3
+    },
+    "deoxys-speed": {
+        "base_id": 386,
+        "form_id": 3,
+        "name": "Deoxys",
+        "form_name": "Speed Forme",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "red",
+        "experience_group": "Slow",
+        "generation": 3
+    },
+    "turtwig": {
+        "base_id": 387,
+        "form_id": 0,
+        "name": "Turtwig",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "monster",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                388,
+                0
+            ]
+        ]
+    },
+    "grotle": {
+        "base_id": 388,
+        "form_id": 0,
+        "name": "Grotle",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "monster",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                389,
+                0
+            ]
+        ]
+    },
+    "torterra": {
+        "base_id": 389,
+        "form_id": 0,
+        "name": "Torterra",
+        "pokemon_type": [
+            "grass",
+            "ground"
+        ],
+        "egg_group": [
+            "monster",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 4
+    },
+    "chimchar": {
+        "base_id": 390,
+        "form_id": 0,
+        "name": "Chimchar",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field",
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                391,
+                0
+            ]
+        ]
+    },
+    "monferno": {
+        "base_id": 391,
+        "form_id": 0,
+        "name": "Monferno",
+        "pokemon_type": [
+            "fire",
+            "fighting"
+        ],
+        "egg_group": [
+            "field",
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                392,
+                0
+            ]
+        ]
+    },
+    "infernape": {
+        "base_id": 392,
+        "form_id": 0,
+        "name": "Infernape",
+        "pokemon_type": [
+            "fire",
+            "fighting"
+        ],
+        "egg_group": [
+            "field",
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 4
+    },
+    "piplup": {
+        "base_id": 393,
+        "form_id": 0,
+        "name": "Piplup",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                394,
+                0
+            ]
+        ]
+    },
+    "prinplup": {
+        "base_id": 394,
+        "form_id": 0,
+        "name": "Prinplup",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                395,
+                0
+            ]
+        ]
+    },
+    "empoleon": {
+        "base_id": 395,
+        "form_id": 0,
+        "name": "Empoleon",
+        "pokemon_type": [
+            "water",
+            "steel"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 4
+    },
+    "starly": {
+        "base_id": 396,
+        "form_id": 0,
+        "name": "Starly",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                397,
+                0
+            ]
+        ]
+    },
+    "staravia": {
+        "base_id": 397,
+        "form_id": 0,
+        "name": "Staravia",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                398,
+                0
+            ]
+        ]
+    },
+    "staraptor": {
+        "base_id": 398,
+        "form_id": 0,
+        "name": "Staraptor",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 4
+    },
+    "bidoof": {
+        "base_id": 399,
+        "form_id": 0,
+        "name": "Bidoof",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                400,
+                0
+            ]
+        ]
+    },
+    "bibarel": {
+        "base_id": 400,
+        "form_id": 0,
+        "name": "Bibarel",
+        "pokemon_type": [
+            "normal",
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "kricketot": {
+        "base_id": 401,
+        "form_id": 0,
+        "name": "Kricketot",
+        "pokemon_type": [
+            "bug"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                402,
+                0
+            ]
+        ]
+    },
+    "kricketune": {
+        "base_id": 402,
+        "form_id": 0,
+        "name": "Kricketune",
+        "pokemon_type": [
+            "bug"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 4
+    },
+    "shinx": {
+        "base_id": 403,
+        "form_id": 0,
+        "name": "Shinx",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                404,
+                0
+            ]
+        ]
+    },
+    "luxio": {
+        "base_id": 404,
+        "form_id": 0,
+        "name": "Luxio",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                405,
+                0
+            ]
+        ]
+    },
+    "luxray": {
+        "base_id": 405,
+        "form_id": 0,
+        "name": "Luxray",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 4
+    },
+    "budew": {
+        "base_id": 406,
+        "form_id": 0,
+        "name": "Budew",
+        "pokemon_type": [
+            "grass",
+            "poison"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_baby": true,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                315,
+                0
+            ]
+        ]
+    },
+    "roserade": {
+        "base_id": 407,
+        "form_id": 0,
+        "name": "Roserade",
+        "pokemon_type": [
+            "grass",
+            "poison"
+        ],
+        "egg_group": [
+            "fairy",
+            "grass"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 4
+    },
+    "cranidos": {
+        "base_id": 408,
+        "form_id": 0,
+        "name": "Cranidos",
+        "pokemon_type": [
+            "rock"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Erratic",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                409,
+                0
+            ]
+        ]
+    },
+    "rampardos": {
+        "base_id": 409,
+        "form_id": 0,
+        "name": "Rampardos",
+        "pokemon_type": [
+            "rock"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Erratic",
+        "generation": 4
+    },
+    "shieldon": {
+        "base_id": 410,
+        "form_id": 0,
+        "name": "Shieldon",
+        "pokemon_type": [
+            "rock",
+            "steel"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "gray",
+        "experience_group": "Erratic",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                411,
+                0
+            ]
+        ]
+    },
+    "bastiodon": {
+        "base_id": 411,
+        "form_id": 0,
+        "name": "Bastiodon",
+        "pokemon_type": [
+            "rock",
+            "steel"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "gray",
+        "experience_group": "Erratic",
+        "generation": 4
+    },
+    "burmy": {
+        "base_id": 412,
+        "form_id": 0,
+        "name": "Burmy",
+        "form_name": "Plant Cloak",
+        "pokemon_type": [
+            "bug"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                413,
+                0
+            ],
+            [
+                414,
+                0
+            ]
+        ]
+    },
+    "burmy-sandy": {
+        "base_id": 412,
+        "form_id": 1,
+        "name": "Burmy",
+        "form_name": "Sandy Cloak",
+        "pokemon_type": [
+            "bug"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                413,
+                1
+            ],
+            [
+                414,
+                0
+            ]
+        ]
+    },
+    "burmy-trash": {
+        "base_id": 412,
+        "form_id": 2,
+        "name": "Burmy",
+        "form_name": "Trash Cloak",
+        "pokemon_type": [
+            "bug"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                413,
+                2
+            ],
+            [
+                414,
+                0
+            ]
+        ]
+    },
+    "wormadam": {
+        "base_id": 413,
+        "form_id": 0,
+        "name": "Wormadam",
+        "form_name": "Plant Cloak",
+        "pokemon_type": [
+            "bug",
+            "grass"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "wormadam-sandy": {
+        "base_id": 413,
+        "form_id": 1,
+        "name": "Wormadam",
+        "form_name": "Sandy Cloak",
+        "pokemon_type": [
+            "bug",
+            "ground"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "wormadam-trash": {
+        "base_id": 413,
+        "form_id": 2,
+        "name": "Wormadam",
+        "form_name": "Trash Cloak",
+        "pokemon_type": [
+            "bug",
+            "steel"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "mothim": {
+        "base_id": 414,
+        "form_id": 0,
+        "name": "Mothim",
+        "pokemon_type": [
+            "bug",
+            "flying"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "combee": {
+        "base_id": 415,
+        "form_id": 0,
+        "name": "Combee",
+        "pokemon_type": [
+            "bug",
+            "flying"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 1,
+        "color": "yellow",
+        "experience_group": "Medium Slow",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                416,
+                0
+            ]
+        ]
+    },
+    "vespiquen": {
+        "base_id": 416,
+        "form_id": 0,
+        "name": "Vespiquen",
+        "pokemon_type": [
+            "bug",
+            "flying"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "yellow",
+        "experience_group": "Medium Slow",
+        "generation": 4
+    },
+    "pachirisu": {
+        "base_id": 417,
+        "form_id": 0,
+        "name": "Pachirisu",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "field",
+            "fairy"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "buizel": {
+        "base_id": 418,
+        "form_id": 0,
+        "name": "Buizel",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                419,
+                0
+            ]
+        ]
+    },
+    "floatzel": {
+        "base_id": 419,
+        "form_id": 0,
+        "name": "Floatzel",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "cherubi": {
+        "base_id": 420,
+        "form_id": 0,
+        "name": "Cherubi",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "fairy",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                421,
+                1
+            ]
+        ]
+    },
+    "cherrim": {
+        "base_id": 421,
+        "form_id": 1,
+        "name": "Cherrim",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "fairy",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "shellos": {
+        "base_id": 422,
+        "form_id": 0,
+        "name": "Shellos",
+        "form_name": "West Sea",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                423,
+                0
+            ]
+        ]
+    },
+    "shellos-east": {
+        "base_id": 422,
+        "form_id": 1,
+        "name": "Shellos",
+        "form_name": "East Sea",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                423,
+                1
+            ]
+        ]
+    },
+    "gastrodon": {
+        "base_id": 423,
+        "form_id": 0,
+        "name": "Gastrodon",
+        "form_name": "West Sea",
+        "pokemon_type": [
+            "water",
+            "ground"
+        ],
+        "egg_group": [
+            "water_1",
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "gastrodon-east": {
+        "base_id": 423,
+        "form_id": 1,
+        "name": "Gastrodon",
+        "form_name": "East Sea",
+        "pokemon_type": [
+            "water",
+            "ground"
+        ],
+        "egg_group": [
+            "water_1",
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "ambipom": {
+        "base_id": 424,
+        "form_id": 0,
+        "name": "Ambipom",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Fast",
+        "generation": 4
+    },
+    "drifloon": {
+        "base_id": 425,
+        "form_id": 0,
+        "name": "Drifloon",
+        "pokemon_type": [
+            "ghost",
+            "flying"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Fluctuating",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                426,
+                0
+            ]
+        ]
+    },
+    "drifblim": {
+        "base_id": 426,
+        "form_id": 0,
+        "name": "Drifblim",
+        "pokemon_type": [
+            "ghost",
+            "flying"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Fluctuating",
+        "generation": 4
+    },
+    "buneary": {
+        "base_id": 427,
+        "form_id": 0,
+        "name": "Buneary",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field",
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                428,
+                0
+            ]
+        ]
+    },
+    "lopunny": {
+        "base_id": 428,
+        "form_id": 0,
+        "name": "Lopunny",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field",
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "lopunny-mega": {
+        "base_id": 428,
+        "form_id": 1,
+        "name": "Mega Lopunny",
+        "pokemon_type": [
+            "normal",
+            "fighting"
+        ],
+        "egg_group": [
+            "field",
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "mismagius": {
+        "base_id": 429,
+        "form_id": 0,
+        "name": "Mismagius",
+        "pokemon_type": [
+            "ghost"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Fast",
+        "generation": 4
+    },
+    "honchkrow": {
+        "base_id": 430,
+        "form_id": 0,
+        "name": "Honchkrow",
+        "pokemon_type": [
+            "dark",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Slow",
+        "generation": 4
+    },
+    "glameow": {
+        "base_id": 431,
+        "form_id": 0,
+        "name": "Glameow",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "gray",
+        "experience_group": "Fast",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                432,
+                0
+            ]
+        ]
+    },
+    "purugly": {
+        "base_id": 432,
+        "form_id": 0,
+        "name": "Purugly",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "gray",
+        "experience_group": "Fast",
+        "generation": 4
+    },
+    "chingling": {
+        "base_id": 433,
+        "form_id": 0,
+        "name": "Chingling",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_baby": true,
+        "color": "yellow",
+        "experience_group": "Fast",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                358,
+                0
+            ]
+        ]
+    },
+    "stunky": {
+        "base_id": 434,
+        "form_id": 0,
+        "name": "Stunky",
+        "pokemon_type": [
+            "poison",
+            "dark"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                435,
+                0
+            ]
+        ]
+    },
+    "skuntank": {
+        "base_id": 435,
+        "form_id": 0,
+        "name": "Skuntank",
+        "pokemon_type": [
+            "poison",
+            "dark"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "bronzor": {
+        "base_id": 436,
+        "form_id": 0,
+        "name": "Bronzor",
+        "pokemon_type": [
+            "steel",
+            "psychic"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                437,
+                0
+            ]
+        ]
+    },
+    "bronzong": {
+        "base_id": 437,
+        "form_id": 0,
+        "name": "Bronzong",
+        "pokemon_type": [
+            "steel",
+            "psychic"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "bonsly": {
+        "base_id": 438,
+        "form_id": 0,
+        "name": "Bonsly",
+        "pokemon_type": [
+            "rock"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_baby": true,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                185,
+                0
+            ]
+        ]
+    },
+    "mime-jr": {
+        "base_id": 439,
+        "form_id": 0,
+        "name": "Mime Jr.",
+        "pokemon_type": [
+            "psychic",
+            "fairy"
+        ],
+        "past_type": {
+            "generation": 6,
+            "pokemon_type": [
+                "psychic"
+            ]
+        },
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_baby": true,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                122,
+                0
+            ],
+            [
+                122,
+                1
+            ]
+        ]
+    },
+    "happiny": {
+        "base_id": 440,
+        "form_id": 0,
+        "name": "Happiny",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "is_baby": true,
+        "color": "pink",
+        "experience_group": "Fast",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                113,
+                0
+            ]
+        ]
+    },
+    "chatot": {
+        "base_id": 441,
+        "form_id": 0,
+        "name": "Chatot",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Slow",
+        "generation": 4
+    },
+    "spiritomb": {
+        "base_id": 442,
+        "form_id": 0,
+        "name": "Spiritomb",
+        "pokemon_type": [
+            "ghost",
+            "dark"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "gible": {
+        "base_id": 443,
+        "form_id": 0,
+        "name": "Gible",
+        "pokemon_type": [
+            "dragon",
+            "ground"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                444,
+                0
+            ]
+        ]
+    },
+    "gabite": {
+        "base_id": 444,
+        "form_id": 0,
+        "name": "Gabite",
+        "pokemon_type": [
+            "dragon",
+            "ground"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                445,
+                0
+            ]
+        ]
+    },
+    "garchomp": {
+        "base_id": 445,
+        "form_id": 0,
+        "name": "Garchomp",
+        "pokemon_type": [
+            "dragon",
+            "ground"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 4
+    },
+    "garchomp-mega": {
+        "base_id": 445,
+        "form_id": 1,
+        "name": "Mega Garchomp",
+        "pokemon_type": [
+            "dragon",
+            "ground"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "munchlax": {
+        "base_id": 446,
+        "form_id": 0,
+        "name": "Munchlax",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "is_baby": true,
+        "color": "black",
+        "experience_group": "Slow",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                143,
+                0
+            ]
+        ]
+    },
+    "riolu": {
+        "base_id": 447,
+        "form_id": 0,
+        "name": "Riolu",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "is_baby": true,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                448,
+                0
+            ]
+        ]
+    },
+    "lucario": {
+        "base_id": 448,
+        "form_id": 0,
+        "name": "Lucario",
+        "pokemon_type": [
+            "fighting",
+            "steel"
+        ],
+        "egg_group": [
+            "field",
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 4
+    },
+    "lucario-mega": {
+        "base_id": 448,
+        "form_id": 1,
+        "name": "Mega Lucario",
+        "pokemon_type": [
+            "fighting",
+            "steel"
+        ],
+        "egg_group": [
+            "field",
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "is_mega": true,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 6
+    },
+    "hippopotas": {
+        "base_id": 449,
+        "form_id": 0,
+        "name": "Hippopotas",
+        "pokemon_type": [
+            "ground"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                450,
+                0
+            ]
+        ]
+    },
+    "hippowdon": {
+        "base_id": 450,
+        "form_id": 0,
+        "name": "Hippowdon",
+        "pokemon_type": [
+            "ground"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 4
+    },
+    "skorupi": {
+        "base_id": 451,
+        "form_id": 0,
+        "name": "Skorupi",
+        "pokemon_type": [
+            "poison",
+            "bug"
+        ],
+        "egg_group": [
+            "bug",
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                452,
+                0
+            ]
+        ]
+    },
+    "drapion": {
+        "base_id": 452,
+        "form_id": 0,
+        "name": "Drapion",
+        "pokemon_type": [
+            "poison",
+            "dark"
+        ],
+        "egg_group": [
+            "bug",
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 4
+    },
+    "croagunk": {
+        "base_id": 453,
+        "form_id": 0,
+        "name": "Croagunk",
+        "pokemon_type": [
+            "poison",
+            "fighting"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                454,
+                0
+            ]
+        ]
+    },
+    "toxicroak": {
+        "base_id": 454,
+        "form_id": 0,
+        "name": "Toxicroak",
+        "pokemon_type": [
+            "poison",
+            "fighting"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "carnivine": {
+        "base_id": 455,
+        "form_id": 0,
+        "name": "Carnivine",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Slow",
+        "generation": 4
+    },
+    "finneon": {
+        "base_id": 456,
+        "form_id": 0,
+        "name": "Finneon",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Erratic",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                457,
+                0
+            ]
+        ]
+    },
+    "lumineon": {
+        "base_id": 457,
+        "form_id": 0,
+        "name": "Lumineon",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Erratic",
+        "generation": 4
+    },
+    "mantyke": {
+        "base_id": 458,
+        "form_id": 0,
+        "name": "Mantyke",
+        "pokemon_type": [
+            "water",
+            "flying"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_baby": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                226,
+                0
+            ]
+        ]
+    },
+    "snover": {
+        "base_id": 459,
+        "form_id": 0,
+        "name": "Snover",
+        "pokemon_type": [
+            "grass",
+            "ice"
+        ],
+        "egg_group": [
+            "monster",
+            "grass"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 4,
+        "evolution_ids": [
+            [
+                460,
+                0
+            ]
+        ]
+    },
+    "abomasnow": {
+        "base_id": 460,
+        "form_id": 0,
+        "name": "Abomasnow",
+        "pokemon_type": [
+            "grass",
+            "ice"
+        ],
+        "egg_group": [
+            "monster",
+            "grass"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 4
+    },
+    "abomasnow-mega": {
+        "base_id": 460,
+        "form_id": 1,
+        "name": "Mega Abomasnow",
+        "pokemon_type": [
+            "grass",
+            "ice"
+        ],
+        "egg_group": [
+            "monster",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "weavile": {
+        "base_id": 461,
+        "form_id": 0,
+        "name": "Weavile",
+        "pokemon_type": [
+            "dark",
+            "ice"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Slow",
+        "generation": 4
+    },
+    "magnezone": {
+        "base_id": 462,
+        "form_id": 0,
+        "name": "Magnezone",
+        "pokemon_type": [
+            "electric",
+            "steel"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "lickilicky": {
+        "base_id": 463,
+        "form_id": 0,
+        "name": "Lickilicky",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "rhyperior": {
+        "base_id": 464,
+        "form_id": 0,
+        "name": "Rhyperior",
+        "pokemon_type": [
+            "ground",
+            "rock"
+        ],
+        "egg_group": [
+            "monster",
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 4
+    },
+    "tangrowth": {
+        "base_id": 465,
+        "form_id": 0,
+        "name": "Tangrowth",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "electivire": {
+        "base_id": 466,
+        "form_id": 0,
+        "name": "Electivire",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 2,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "magmortar": {
+        "base_id": 467,
+        "form_id": 0,
+        "name": "Magmortar",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 2,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "togekiss": {
+        "base_id": 468,
+        "form_id": 0,
+        "name": "Togekiss",
+        "pokemon_type": [
+            "fairy",
+            "flying"
+        ],
+        "past_type": {
+            "generation": 6,
+            "pokemon_type": [
+                "normal",
+                "flying"
+            ]
+        },
+        "egg_group": [
+            "flying",
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "white",
+        "experience_group": "Fast",
+        "generation": 4
+    },
+    "yanmega": {
+        "base_id": 469,
+        "form_id": 0,
+        "name": "Yanmega",
+        "pokemon_type": [
+            "bug",
+            "flying"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "leafeon": {
+        "base_id": 470,
+        "form_id": 0,
+        "name": "Leafeon",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "glaceon": {
+        "base_id": 471,
+        "form_id": 0,
+        "name": "Glaceon",
+        "pokemon_type": [
+            "ice"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "gliscor": {
+        "base_id": 472,
+        "form_id": 0,
+        "name": "Gliscor",
+        "pokemon_type": [
+            "ground",
+            "flying"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Slow",
+        "generation": 4
+    },
+    "mamoswine": {
+        "base_id": 473,
+        "form_id": 0,
+        "name": "Mamoswine",
+        "pokemon_type": [
+            "ice",
+            "ground"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 4
+    },
+    "porygon-z": {
+        "base_id": 474,
+        "form_id": 0,
+        "name": "Porygon-Z",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "gallade": {
+        "base_id": 475,
+        "form_id": 0,
+        "name": "Gallade",
+        "pokemon_type": [
+            "psychic",
+            "fighting"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 4
+    },
+    "gallade-mega": {
+        "base_id": 475,
+        "form_id": 1,
+        "name": "Mega Gallade",
+        "pokemon_type": [
+            "psychic",
+            "fighting"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "is_mega": true,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "probopass": {
+        "base_id": 476,
+        "form_id": 0,
+        "name": "Probopass",
+        "pokemon_type": [
+            "rock",
+            "steel"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "dusknoir": {
+        "base_id": 477,
+        "form_id": 0,
+        "name": "Dusknoir",
+        "pokemon_type": [
+            "ghost"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Fast",
+        "generation": 4
+    },
+    "froslass": {
+        "base_id": 478,
+        "form_id": 0,
+        "name": "Froslass",
+        "pokemon_type": [
+            "ice",
+            "ghost"
+        ],
+        "egg_group": [
+            "fairy",
+            "mineral"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "rotom": {
+        "base_id": 479,
+        "form_id": 0,
+        "name": "Rotom",
+        "pokemon_type": [
+            "electric",
+            "ghost"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "rotom-heat": {
+        "base_id": 479,
+        "form_id": 1,
+        "name": "Heat Rotom",
+        "pokemon_type": [
+            "electric",
+            "fire"
+        ],
+        "past_type": {
+            "generation": 5,
+            "pokemon_type": [
+                "electric",
+                "ghost"
+            ]
+        },
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "rotom-wash": {
+        "base_id": 479,
+        "form_id": 2,
+        "name": "Wash Rotom",
+        "pokemon_type": [
+            "electric",
+            "water"
+        ],
+        "past_type": {
+            "generation": 5,
+            "pokemon_type": [
+                "electric",
+                "ghost"
+            ]
+        },
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "rotom-frost": {
+        "base_id": 479,
+        "form_id": 3,
+        "name": "Frost Rotom",
+        "pokemon_type": [
+            "electric",
+            "ice"
+        ],
+        "past_type": {
+            "generation": 5,
+            "pokemon_type": [
+                "electric",
+                "ghost"
+            ]
+        },
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "rotom-fan": {
+        "base_id": 479,
+        "form_id": 4,
+        "name": "Fan Rotom",
+        "pokemon_type": [
+            "electric",
+            "flying"
+        ],
+        "past_type": {
+            "generation": 5,
+            "pokemon_type": [
+                "electric",
+                "ghost"
+            ]
+        },
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "rotom-mow": {
+        "base_id": 479,
+        "form_id": 5,
+        "name": "Mow Rotom",
+        "pokemon_type": [
+            "electric",
+            "grass"
+        ],
+        "past_type": {
+            "generation": 5,
+            "pokemon_type": [
+                "electric",
+                "ghost"
+            ]
+        },
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 4
+    },
+    "uxie": {
+        "base_id": 480,
+        "form_id": 0,
+        "name": "Uxie",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "yellow",
+        "experience_group": "Slow",
+        "generation": 4
+    },
+    "mesprit": {
+        "base_id": 481,
+        "form_id": 0,
+        "name": "Mesprit",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "pink",
+        "experience_group": "Slow",
+        "generation": 4
+    },
+    "azelf": {
+        "base_id": 482,
+        "form_id": 0,
+        "name": "Azelf",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 4
+    },
+    "dialga": {
+        "base_id": 483,
+        "form_id": 0,
+        "name": "Dialga",
+        "pokemon_type": [
+            "steel",
+            "dragon"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 4
+    },
+    "dialga-origin": {
+        "base_id": 483,
+        "form_id": 1,
+        "name": "Dialga",
+        "form_name": "Origin Forme",
+        "pokemon_type": [
+            "steel",
+            "dragon"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "palkia": {
+        "base_id": 484,
+        "form_id": 0,
+        "name": "Palkia",
+        "pokemon_type": [
+            "water",
+            "dragon"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 4
+    },
+    "palkia-origin": {
+        "base_id": 484,
+        "form_id": 1,
+        "name": "Palkia",
+        "form_name": "Origin Forme",
+        "pokemon_type": [
+            "water",
+            "dragon"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "heatran": {
+        "base_id": 485,
+        "form_id": 0,
+        "name": "Heatran",
+        "pokemon_type": [
+            "fire",
+            "steel"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_sublegendary": true,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 4
+    },
+    "regigigas": {
+        "base_id": 486,
+        "form_id": 0,
+        "name": "Regigigas",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 4
+    },
+    "giratina": {
+        "base_id": 487,
+        "form_id": 0,
+        "name": "Giratina",
+        "form_name": "Altered Forme",
+        "pokemon_type": [
+            "ghost",
+            "dragon"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "black",
+        "experience_group": "Slow",
+        "generation": 4
+    },
+    "giratina-origin": {
+        "base_id": 487,
+        "form_id": 1,
+        "name": "Giratina",
+        "form_name": "Origin Forme",
+        "pokemon_type": [
+            "ghost",
+            "dragon"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "black",
+        "experience_group": "Slow",
+        "generation": 4
+    },
+    "cresselia": {
+        "base_id": 488,
+        "form_id": 0,
+        "name": "Cresselia",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "is_sublegendary": true,
+        "color": "yellow",
+        "experience_group": "Slow",
+        "generation": 4
+    },
+    "phione": {
+        "base_id": 489,
+        "form_id": 0,
+        "name": "Phione",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "fairy"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 4
+    },
+    "manaphy": {
+        "base_id": 490,
+        "form_id": 0,
+        "name": "Manaphy",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "fairy"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 4
+    },
+    "darkrai": {
+        "base_id": 491,
+        "form_id": 0,
+        "name": "Darkrai",
+        "pokemon_type": [
+            "dark"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "black",
+        "experience_group": "Slow",
+        "generation": 4
+    },
+    "shaymin": {
+        "base_id": 492,
+        "form_id": 0,
+        "name": "Shaymin",
+        "form_name": "Land Forme",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 4
+    },
+    "shaymin-sky": {
+        "base_id": 492,
+        "form_id": 1,
+        "name": "Shaymin",
+        "form_name": "Sky Forme",
+        "pokemon_type": [
+            "grass",
+            "flying"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 4
+    },
+    "arceus": {
+        "base_id": 493,
+        "form_id": 0,
+        "name": "Arceus",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 4
+    },
+    "victini": {
+        "base_id": 494,
+        "form_id": 0,
+        "name": "Victini",
+        "pokemon_type": [
+            "psychic",
+            "fire"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "yellow",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "snivy": {
+        "base_id": 495,
+        "form_id": 0,
+        "name": "Snivy",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "field",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                496,
+                0
+            ]
+        ]
+    },
+    "servine": {
+        "base_id": 496,
+        "form_id": 0,
+        "name": "Servine",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "field",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                497,
+                0
+            ]
+        ]
+    },
+    "serperior": {
+        "base_id": 497,
+        "form_id": 0,
+        "name": "Serperior",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "field",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 5
+    },
+    "tepig": {
+        "base_id": 498,
+        "form_id": 0,
+        "name": "Tepig",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                499,
+                0
+            ]
+        ]
+    },
+    "pignite": {
+        "base_id": 499,
+        "form_id": 0,
+        "name": "Pignite",
+        "pokemon_type": [
+            "fire",
+            "fighting"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                500,
+                0
+            ]
+        ]
+    },
+    "emboar": {
+        "base_id": 500,
+        "form_id": 0,
+        "name": "Emboar",
+        "pokemon_type": [
+            "fire",
+            "fighting"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 5
+    },
+    "oshawott": {
+        "base_id": 501,
+        "form_id": 0,
+        "name": "Oshawott",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                502,
+                0
+            ]
+        ]
+    },
+    "dewott": {
+        "base_id": 502,
+        "form_id": 0,
+        "name": "Dewott",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                503,
+                0
+            ],
+            [
+                503,
+                1
+            ]
+        ]
+    },
+    "samurott": {
+        "base_id": 503,
+        "form_id": 0,
+        "name": "Samurott",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 5
+    },
+    "samurott-hisui": {
+        "base_id": 503,
+        "form_id": 1,
+        "name": "Hisuian Samurott",
+        "pokemon_type": [
+            "water",
+            "dark"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 8
+    },
+    "patrat": {
+        "base_id": 504,
+        "form_id": 0,
+        "name": "Patrat",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                505,
+                0
+            ]
+        ]
+    },
+    "watchog": {
+        "base_id": 505,
+        "form_id": 0,
+        "name": "Watchog",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "lillipup": {
+        "base_id": 506,
+        "form_id": 0,
+        "name": "Lillipup",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                507,
+                0
+            ]
+        ]
+    },
+    "herdier": {
+        "base_id": 507,
+        "form_id": 0,
+        "name": "Herdier",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                508,
+                0
+            ]
+        ]
+    },
+    "stoutland": {
+        "base_id": 508,
+        "form_id": 0,
+        "name": "Stoutland",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Slow",
+        "generation": 5
+    },
+    "purrloin": {
+        "base_id": 509,
+        "form_id": 0,
+        "name": "Purrloin",
+        "pokemon_type": [
+            "dark"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                510,
+                0
+            ]
+        ]
+    },
+    "liepard": {
+        "base_id": 510,
+        "form_id": 0,
+        "name": "Liepard",
+        "pokemon_type": [
+            "dark"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "pansage": {
+        "base_id": 511,
+        "form_id": 0,
+        "name": "Pansage",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                512,
+                0
+            ]
+        ]
+    },
+    "simisage": {
+        "base_id": 512,
+        "form_id": 0,
+        "name": "Simisage",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "pansear": {
+        "base_id": 513,
+        "form_id": 0,
+        "name": "Pansear",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                514,
+                0
+            ]
+        ]
+    },
+    "simisear": {
+        "base_id": 514,
+        "form_id": 0,
+        "name": "Simisear",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "panpour": {
+        "base_id": 515,
+        "form_id": 0,
+        "name": "Panpour",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                516,
+                0
+            ]
+        ]
+    },
+    "simipour": {
+        "base_id": 516,
+        "form_id": 0,
+        "name": "Simipour",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "munna": {
+        "base_id": 517,
+        "form_id": 0,
+        "name": "Munna",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                518,
+                0
+            ]
+        ]
+    },
+    "musharna": {
+        "base_id": 518,
+        "form_id": 0,
+        "name": "Musharna",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Fast",
+        "generation": 5
+    },
+    "pidove": {
+        "base_id": 519,
+        "form_id": 0,
+        "name": "Pidove",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                520,
+                0
+            ]
+        ]
+    },
+    "tranquill": {
+        "base_id": 520,
+        "form_id": 0,
+        "name": "Tranquill",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                521,
+                0
+            ]
+        ]
+    },
+    "unfezant": {
+        "base_id": 521,
+        "form_id": 0,
+        "name": "Unfezant",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Slow",
+        "generation": 5
+    },
+    "blitzle": {
+        "base_id": 522,
+        "form_id": 0,
+        "name": "Blitzle",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                523,
+                0
+            ]
+        ]
+    },
+    "zebstrika": {
+        "base_id": 523,
+        "form_id": 0,
+        "name": "Zebstrika",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "roggenrola": {
+        "base_id": 524,
+        "form_id": 0,
+        "name": "Roggenrola",
+        "pokemon_type": [
+            "rock"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                525,
+                0
+            ]
+        ]
+    },
+    "boldore": {
+        "base_id": 525,
+        "form_id": 0,
+        "name": "Boldore",
+        "pokemon_type": [
+            "rock"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                526,
+                0
+            ]
+        ]
+    },
+    "gigalith": {
+        "base_id": 526,
+        "form_id": 0,
+        "name": "Gigalith",
+        "pokemon_type": [
+            "rock"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 5
+    },
+    "woobat": {
+        "base_id": 527,
+        "form_id": 0,
+        "name": "Woobat",
+        "pokemon_type": [
+            "psychic",
+            "flying"
+        ],
+        "egg_group": [
+            "flying",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                528,
+                0
+            ]
+        ]
+    },
+    "swoobat": {
+        "base_id": 528,
+        "form_id": 0,
+        "name": "Swoobat",
+        "pokemon_type": [
+            "psychic",
+            "flying"
+        ],
+        "egg_group": [
+            "flying",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "drilbur": {
+        "base_id": 529,
+        "form_id": 0,
+        "name": "Drilbur",
+        "pokemon_type": [
+            "ground"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                530,
+                0
+            ]
+        ]
+    },
+    "excadrill": {
+        "base_id": 530,
+        "form_id": 0,
+        "name": "Excadrill",
+        "pokemon_type": [
+            "ground",
+            "steel"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "audino": {
+        "base_id": 531,
+        "form_id": 0,
+        "name": "Audino",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Fast",
+        "generation": 5
+    },
+    "audino-mega": {
+        "base_id": 531,
+        "form_id": 1,
+        "name": "Mega Audino",
+        "pokemon_type": [
+            "normal",
+            "fairy"
+        ],
+        "egg_group": [
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "color": "white",
+        "experience_group": "Fast",
+        "generation": 6
+    },
+    "timburr": {
+        "base_id": 532,
+        "form_id": 0,
+        "name": "Timburr",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 2,
+        "color": "gray",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                533,
+                0
+            ]
+        ]
+    },
+    "gurdurr": {
+        "base_id": 533,
+        "form_id": 0,
+        "name": "Gurdurr",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 2,
+        "color": "gray",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                534,
+                0
+            ]
+        ]
+    },
+    "conkeldurr": {
+        "base_id": 534,
+        "form_id": 0,
+        "name": "Conkeldurr",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 2,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 5
+    },
+    "tympole": {
+        "base_id": 535,
+        "form_id": 0,
+        "name": "Tympole",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                536,
+                0
+            ]
+        ]
+    },
+    "palpitoad": {
+        "base_id": 536,
+        "form_id": 0,
+        "name": "Palpitoad",
+        "pokemon_type": [
+            "water",
+            "ground"
+        ],
+        "egg_group": [
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                537,
+                0
+            ]
+        ]
+    },
+    "seismitoad": {
+        "base_id": 537,
+        "form_id": 0,
+        "name": "Seismitoad",
+        "pokemon_type": [
+            "water",
+            "ground"
+        ],
+        "egg_group": [
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 5
+    },
+    "throh": {
+        "base_id": 538,
+        "form_id": 0,
+        "name": "Throh",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "sawk": {
+        "base_id": 539,
+        "form_id": 0,
+        "name": "Sawk",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "sewaddle": {
+        "base_id": 540,
+        "form_id": 0,
+        "name": "Sewaddle",
+        "pokemon_type": [
+            "bug",
+            "grass"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                541,
+                0
+            ]
+        ]
+    },
+    "swadloon": {
+        "base_id": 541,
+        "form_id": 0,
+        "name": "Swadloon",
+        "pokemon_type": [
+            "bug",
+            "grass"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                542,
+                0
+            ]
+        ]
+    },
+    "leavanny": {
+        "base_id": 542,
+        "form_id": 0,
+        "name": "Leavanny",
+        "pokemon_type": [
+            "bug",
+            "grass"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Slow",
+        "generation": 5
+    },
+    "venipede": {
+        "base_id": 543,
+        "form_id": 0,
+        "name": "Venipede",
+        "pokemon_type": [
+            "bug",
+            "poison"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                544,
+                0
+            ]
+        ]
+    },
+    "whirlipede": {
+        "base_id": 544,
+        "form_id": 0,
+        "name": "Whirlipede",
+        "pokemon_type": [
+            "bug",
+            "poison"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                545,
+                0
+            ]
+        ]
+    },
+    "scolipede": {
+        "base_id": 545,
+        "form_id": 0,
+        "name": "Scolipede",
+        "pokemon_type": [
+            "bug",
+            "poison"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 5
+    },
+    "cottonee": {
+        "base_id": 546,
+        "form_id": 0,
+        "name": "Cottonee",
+        "pokemon_type": [
+            "grass",
+            "fairy"
+        ],
+        "past_type": {
+            "generation": 6,
+            "pokemon_type": [
+                "grass"
+            ]
+        },
+        "egg_group": [
+            "fairy",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                547,
+                0
+            ]
+        ]
+    },
+    "whimsicott": {
+        "base_id": 547,
+        "form_id": 0,
+        "name": "Whimsicott",
+        "pokemon_type": [
+            "grass",
+            "fairy"
+        ],
+        "past_type": {
+            "generation": 6,
+            "pokemon_type": [
+                "grass"
+            ]
+        },
+        "egg_group": [
+            "fairy",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "petilil": {
+        "base_id": 548,
+        "form_id": 0,
+        "name": "Petilil",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                549,
+                0
+            ],
+            [
+                549,
+                1
+            ]
+        ]
+    },
+    "lilligant": {
+        "base_id": 549,
+        "form_id": 0,
+        "name": "Lilligant",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "lilligant-hisui": {
+        "base_id": 549,
+        "form_id": 1,
+        "name": "Hisuian Lilligant",
+        "pokemon_type": [
+            "grass",
+            "fighting"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "basculin": {
+        "base_id": 550,
+        "form_id": 0,
+        "name": "Basculin",
+        "form_name": "Red-Striped Form",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "basculin-blue-striped": {
+        "base_id": 550,
+        "form_id": 1,
+        "name": "Basculin",
+        "form_name": "Blue-Striped Form",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "basculin-white-striped": {
+        "base_id": 550,
+        "form_id": 2,
+        "name": "Basculin",
+        "form_name": "White-Striped Form",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                902,
+                0
+            ],
+            [
+                902,
+                1
+            ]
+        ]
+    },
+    "sandile": {
+        "base_id": 551,
+        "form_id": 0,
+        "name": "Sandile",
+        "pokemon_type": [
+            "ground",
+            "dark"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                552,
+                0
+            ]
+        ]
+    },
+    "krokorok": {
+        "base_id": 552,
+        "form_id": 0,
+        "name": "Krokorok",
+        "pokemon_type": [
+            "ground",
+            "dark"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                553,
+                0
+            ]
+        ]
+    },
+    "krookodile": {
+        "base_id": 553,
+        "form_id": 0,
+        "name": "Krookodile",
+        "pokemon_type": [
+            "ground",
+            "dark"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 5
+    },
+    "darumaka": {
+        "base_id": 554,
+        "form_id": 0,
+        "name": "Darumaka",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                555,
+                0
+            ]
+        ]
+    },
+    "darumaka-galar": {
+        "base_id": 554,
+        "form_id": 1,
+        "name": "Galarian Darumaka",
+        "pokemon_type": [
+            "ice"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Slow",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                555,
+                2
+            ]
+        ]
+    },
+    "darmanitan": {
+        "base_id": 555,
+        "form_id": 0,
+        "name": "Darmanitan",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 5
+    },
+    "darmanitan-galar": {
+        "base_id": 555,
+        "form_id": 2,
+        "name": "Galarian Darmanitan",
+        "pokemon_type": [
+            "ice"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Slow",
+        "generation": 8
+    },
+    "maractus": {
+        "base_id": 556,
+        "form_id": 0,
+        "name": "Maractus",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "dwebble": {
+        "base_id": 557,
+        "form_id": 0,
+        "name": "Dwebble",
+        "pokemon_type": [
+            "bug",
+            "rock"
+        ],
+        "egg_group": [
+            "bug",
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                558,
+                0
+            ]
+        ]
+    },
+    "crustle": {
+        "base_id": 558,
+        "form_id": 0,
+        "name": "Crustle",
+        "pokemon_type": [
+            "bug",
+            "rock"
+        ],
+        "egg_group": [
+            "bug",
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "scraggy": {
+        "base_id": 559,
+        "form_id": 0,
+        "name": "Scraggy",
+        "pokemon_type": [
+            "dark",
+            "fighting"
+        ],
+        "egg_group": [
+            "field",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                560,
+                0
+            ]
+        ]
+    },
+    "scrafty": {
+        "base_id": 560,
+        "form_id": 0,
+        "name": "Scrafty",
+        "pokemon_type": [
+            "dark",
+            "fighting"
+        ],
+        "egg_group": [
+            "field",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "sigilyph": {
+        "base_id": 561,
+        "form_id": 0,
+        "name": "Sigilyph",
+        "pokemon_type": [
+            "psychic",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "yamask": {
+        "base_id": 562,
+        "form_id": 0,
+        "name": "Yamask",
+        "pokemon_type": [
+            "ghost"
+        ],
+        "egg_group": [
+            "mineral",
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                563,
+                0
+            ]
+        ]
+    },
+    "yamask-galar": {
+        "base_id": 562,
+        "form_id": 1,
+        "name": "Galarian Yamask",
+        "pokemon_type": [
+            "ground",
+            "ghost"
+        ],
+        "egg_group": [
+            "mineral",
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                867,
+                0
+            ]
+        ]
+    },
+    "cofagrigus": {
+        "base_id": 563,
+        "form_id": 0,
+        "name": "Cofagrigus",
+        "pokemon_type": [
+            "ghost"
+        ],
+        "egg_group": [
+            "mineral",
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "tirtouga": {
+        "base_id": 564,
+        "form_id": 0,
+        "name": "Tirtouga",
+        "pokemon_type": [
+            "water",
+            "rock"
+        ],
+        "egg_group": [
+            "water_1",
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                565,
+                0
+            ]
+        ]
+    },
+    "carracosta": {
+        "base_id": 565,
+        "form_id": 0,
+        "name": "Carracosta",
+        "pokemon_type": [
+            "water",
+            "rock"
+        ],
+        "egg_group": [
+            "water_1",
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "archen": {
+        "base_id": 566,
+        "form_id": 0,
+        "name": "Archen",
+        "pokemon_type": [
+            "rock",
+            "flying"
+        ],
+        "egg_group": [
+            "flying",
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                567,
+                0
+            ]
+        ]
+    },
+    "archeops": {
+        "base_id": 567,
+        "form_id": 0,
+        "name": "Archeops",
+        "pokemon_type": [
+            "rock",
+            "flying"
+        ],
+        "egg_group": [
+            "flying",
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "trubbish": {
+        "base_id": 568,
+        "form_id": 0,
+        "name": "Trubbish",
+        "pokemon_type": [
+            "poison"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                569,
+                0
+            ]
+        ]
+    },
+    "garbodor": {
+        "base_id": 569,
+        "form_id": 0,
+        "name": "Garbodor",
+        "pokemon_type": [
+            "poison"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "has_gigantamax": true,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "zorua": {
+        "base_id": 570,
+        "form_id": 0,
+        "name": "Zorua",
+        "pokemon_type": [
+            "dark"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "gray",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                571,
+                0
+            ]
+        ]
+    },
+    "zorua-hisui": {
+        "base_id": 570,
+        "form_id": 1,
+        "name": "Hisuian Zorua",
+        "pokemon_type": [
+            "normal",
+            "ghost"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "gray",
+        "experience_group": "Medium Slow",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                571,
+                1
+            ]
+        ]
+    },
+    "zoroark": {
+        "base_id": 571,
+        "form_id": 0,
+        "name": "Zoroark",
+        "pokemon_type": [
+            "dark"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "gray",
+        "experience_group": "Medium Slow",
+        "generation": 5
+    },
+    "zoroark-hisui": {
+        "base_id": 571,
+        "form_id": 1,
+        "name": "Hisuian Zoroark",
+        "pokemon_type": [
+            "normal",
+            "ghost"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "gray",
+        "experience_group": "Medium Slow",
+        "generation": 8
+    },
+    "minccino": {
+        "base_id": 572,
+        "form_id": 0,
+        "name": "Minccino",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "gray",
+        "experience_group": "Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                573,
+                0
+            ]
+        ]
+    },
+    "cinccino": {
+        "base_id": 573,
+        "form_id": 0,
+        "name": "Cinccino",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "gray",
+        "experience_group": "Fast",
+        "generation": 5
+    },
+    "gothita": {
+        "base_id": 574,
+        "form_id": 0,
+        "name": "Gothita",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "purple",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                575,
+                0
+            ]
+        ]
+    },
+    "gothorita": {
+        "base_id": 575,
+        "form_id": 0,
+        "name": "Gothorita",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "purple",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                576,
+                0
+            ]
+        ]
+    },
+    "gothitelle": {
+        "base_id": 576,
+        "form_id": 0,
+        "name": "Gothitelle",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "purple",
+        "experience_group": "Medium Slow",
+        "generation": 5
+    },
+    "solosis": {
+        "base_id": 577,
+        "form_id": 0,
+        "name": "Solosis",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                578,
+                0
+            ]
+        ]
+    },
+    "duosion": {
+        "base_id": 578,
+        "form_id": 0,
+        "name": "Duosion",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                579,
+                0
+            ]
+        ]
+    },
+    "reuniclus": {
+        "base_id": 579,
+        "form_id": 0,
+        "name": "Reuniclus",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 5
+    },
+    "ducklett": {
+        "base_id": 580,
+        "form_id": 0,
+        "name": "Ducklett",
+        "pokemon_type": [
+            "water",
+            "flying"
+        ],
+        "egg_group": [
+            "water_1",
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                581,
+                0
+            ]
+        ]
+    },
+    "swanna": {
+        "base_id": 581,
+        "form_id": 0,
+        "name": "Swanna",
+        "pokemon_type": [
+            "water",
+            "flying"
+        ],
+        "egg_group": [
+            "water_1",
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "vanillite": {
+        "base_id": 582,
+        "form_id": 0,
+        "name": "Vanillite",
+        "pokemon_type": [
+            "ice"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                583,
+                0
+            ]
+        ]
+    },
+    "vanillish": {
+        "base_id": 583,
+        "form_id": 0,
+        "name": "Vanillish",
+        "pokemon_type": [
+            "ice"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                584,
+                0
+            ]
+        ]
+    },
+    "vanilluxe": {
+        "base_id": 584,
+        "form_id": 0,
+        "name": "Vanilluxe",
+        "pokemon_type": [
+            "ice"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "deerling": {
+        "base_id": 585,
+        "form_id": 0,
+        "name": "Deerling",
+        "form_name": "Spring Form",
+        "pokemon_type": [
+            "normal",
+            "grass"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                586,
+                0
+            ]
+        ]
+    },
+    "deerling-summer": {
+        "base_id": 585,
+        "form_id": 1,
+        "name": "Deerling",
+        "form_name": "Summer Form",
+        "pokemon_type": [
+            "normal",
+            "grass"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                586,
+                1
+            ]
+        ]
+    },
+    "deerling-autumn": {
+        "base_id": 585,
+        "form_id": 2,
+        "name": "Deerling",
+        "form_name": "Autumn Form",
+        "pokemon_type": [
+            "normal",
+            "grass"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                586,
+                2
+            ]
+        ]
+    },
+    "deerling-winter": {
+        "base_id": 585,
+        "form_id": 3,
+        "name": "Deerling",
+        "form_name": "Winter Form",
+        "pokemon_type": [
+            "normal",
+            "grass"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                586,
+                3
+            ]
+        ]
+    },
+    "sawsbuck": {
+        "base_id": 586,
+        "form_id": 0,
+        "name": "Sawsbuck",
+        "form_name": "Spring Form",
+        "pokemon_type": [
+            "normal",
+            "grass"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "sawsbuck-summer": {
+        "base_id": 586,
+        "form_id": 1,
+        "name": "Sawsbuck",
+        "form_name": "Summer Form",
+        "pokemon_type": [
+            "normal",
+            "grass"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "sawsbuck-autumn": {
+        "base_id": 586,
+        "form_id": 2,
+        "name": "Sawsbuck",
+        "form_name": "Autumn Form",
+        "pokemon_type": [
+            "normal",
+            "grass"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "sawsbuck-winter": {
+        "base_id": 586,
+        "form_id": 3,
+        "name": "Sawsbuck",
+        "form_name": "Winter Form",
+        "pokemon_type": [
+            "normal",
+            "grass"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "emolga": {
+        "base_id": 587,
+        "form_id": 0,
+        "name": "Emolga",
+        "pokemon_type": [
+            "electric",
+            "flying"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "karrablast": {
+        "base_id": 588,
+        "form_id": 0,
+        "name": "Karrablast",
+        "pokemon_type": [
+            "bug"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                589,
+                0
+            ]
+        ]
+    },
+    "escavalier": {
+        "base_id": 589,
+        "form_id": 0,
+        "name": "Escavalier",
+        "pokemon_type": [
+            "bug",
+            "steel"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "foongus": {
+        "base_id": 590,
+        "form_id": 0,
+        "name": "Foongus",
+        "pokemon_type": [
+            "grass",
+            "poison"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                591,
+                0
+            ]
+        ]
+    },
+    "amoonguss": {
+        "base_id": 591,
+        "form_id": 0,
+        "name": "Amoonguss",
+        "pokemon_type": [
+            "grass",
+            "poison"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "frillish": {
+        "base_id": 592,
+        "form_id": 0,
+        "name": "Frillish",
+        "pokemon_type": [
+            "water",
+            "ghost"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                593,
+                0
+            ]
+        ]
+    },
+    "jellicent": {
+        "base_id": 593,
+        "form_id": 0,
+        "name": "Jellicent",
+        "pokemon_type": [
+            "water",
+            "ghost"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "alomomola": {
+        "base_id": 594,
+        "form_id": 0,
+        "name": "Alomomola",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Fast",
+        "generation": 5
+    },
+    "joltik": {
+        "base_id": 595,
+        "form_id": 0,
+        "name": "Joltik",
+        "pokemon_type": [
+            "bug",
+            "electric"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                596,
+                0
+            ]
+        ]
+    },
+    "galvantula": {
+        "base_id": 596,
+        "form_id": 0,
+        "name": "Galvantula",
+        "pokemon_type": [
+            "bug",
+            "electric"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "ferroseed": {
+        "base_id": 597,
+        "form_id": 0,
+        "name": "Ferroseed",
+        "pokemon_type": [
+            "grass",
+            "steel"
+        ],
+        "egg_group": [
+            "grass",
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                598,
+                0
+            ]
+        ]
+    },
+    "ferrothorn": {
+        "base_id": 598,
+        "form_id": 0,
+        "name": "Ferrothorn",
+        "pokemon_type": [
+            "grass",
+            "steel"
+        ],
+        "egg_group": [
+            "grass",
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "klink": {
+        "base_id": 599,
+        "form_id": 0,
+        "name": "Klink",
+        "pokemon_type": [
+            "steel"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "gray",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                600,
+                0
+            ]
+        ]
+    },
+    "klang": {
+        "base_id": 600,
+        "form_id": 0,
+        "name": "Klang",
+        "pokemon_type": [
+            "steel"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "gray",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                601,
+                0
+            ]
+        ]
+    },
+    "klinklang": {
+        "base_id": 601,
+        "form_id": 0,
+        "name": "Klinklang",
+        "pokemon_type": [
+            "steel"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "gray",
+        "experience_group": "Medium Slow",
+        "generation": 5
+    },
+    "tynamo": {
+        "base_id": 602,
+        "form_id": 0,
+        "name": "Tynamo",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                603,
+                0
+            ]
+        ]
+    },
+    "eelektrik": {
+        "base_id": 603,
+        "form_id": 0,
+        "name": "Eelektrik",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                604,
+                0
+            ]
+        ]
+    },
+    "eelektross": {
+        "base_id": 604,
+        "form_id": 0,
+        "name": "Eelektross",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "elgyem": {
+        "base_id": 605,
+        "form_id": 0,
+        "name": "Elgyem",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                606,
+                0
+            ]
+        ]
+    },
+    "beheeyem": {
+        "base_id": 606,
+        "form_id": 0,
+        "name": "Beheeyem",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "litwick": {
+        "base_id": 607,
+        "form_id": 0,
+        "name": "Litwick",
+        "pokemon_type": [
+            "ghost",
+            "fire"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                608,
+                0
+            ]
+        ]
+    },
+    "lampent": {
+        "base_id": 608,
+        "form_id": 0,
+        "name": "Lampent",
+        "pokemon_type": [
+            "ghost",
+            "fire"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                609,
+                0
+            ]
+        ]
+    },
+    "chandelure": {
+        "base_id": 609,
+        "form_id": 0,
+        "name": "Chandelure",
+        "pokemon_type": [
+            "ghost",
+            "fire"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Slow",
+        "generation": 5
+    },
+    "axew": {
+        "base_id": 610,
+        "form_id": 0,
+        "name": "Axew",
+        "pokemon_type": [
+            "dragon"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                611,
+                0
+            ]
+        ]
+    },
+    "fraxure": {
+        "base_id": 611,
+        "form_id": 0,
+        "name": "Fraxure",
+        "pokemon_type": [
+            "dragon"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                612,
+                0
+            ]
+        ]
+    },
+    "haxorus": {
+        "base_id": 612,
+        "form_id": 0,
+        "name": "Haxorus",
+        "pokemon_type": [
+            "dragon"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "cubchoo": {
+        "base_id": 613,
+        "form_id": 0,
+        "name": "Cubchoo",
+        "pokemon_type": [
+            "ice"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                614,
+                0
+            ]
+        ]
+    },
+    "beartic": {
+        "base_id": 614,
+        "form_id": 0,
+        "name": "Beartic",
+        "pokemon_type": [
+            "ice"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "cryogonal": {
+        "base_id": 615,
+        "form_id": 0,
+        "name": "Cryogonal",
+        "pokemon_type": [
+            "ice"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "shelmet": {
+        "base_id": 616,
+        "form_id": 0,
+        "name": "Shelmet",
+        "pokemon_type": [
+            "bug"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                617,
+                0
+            ]
+        ]
+    },
+    "accelgor": {
+        "base_id": 617,
+        "form_id": 0,
+        "name": "Accelgor",
+        "pokemon_type": [
+            "bug"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "stunfisk": {
+        "base_id": 618,
+        "form_id": 0,
+        "name": "Stunfisk",
+        "pokemon_type": [
+            "ground",
+            "electric"
+        ],
+        "egg_group": [
+            "water_1",
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "stunfisk-galar": {
+        "base_id": 618,
+        "form_id": 1,
+        "name": "Galarian Stunfisk",
+        "pokemon_type": [
+            "ground",
+            "steel"
+        ],
+        "egg_group": [
+            "water_1",
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "mienfoo": {
+        "base_id": 619,
+        "form_id": 0,
+        "name": "Mienfoo",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "field",
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                620,
+                0
+            ]
+        ]
+    },
+    "mienshao": {
+        "base_id": 620,
+        "form_id": 0,
+        "name": "Mienshao",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "field",
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Slow",
+        "generation": 5
+    },
+    "druddigon": {
+        "base_id": 621,
+        "form_id": 0,
+        "name": "Druddigon",
+        "pokemon_type": [
+            "dragon"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "golett": {
+        "base_id": 622,
+        "form_id": 0,
+        "name": "Golett",
+        "pokemon_type": [
+            "ground",
+            "ghost"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                623,
+                0
+            ]
+        ]
+    },
+    "golurk": {
+        "base_id": 623,
+        "form_id": 0,
+        "name": "Golurk",
+        "pokemon_type": [
+            "ground",
+            "ghost"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "pawniard": {
+        "base_id": 624,
+        "form_id": 0,
+        "name": "Pawniard",
+        "pokemon_type": [
+            "dark",
+            "steel"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                625,
+                0
+            ]
+        ]
+    },
+    "bisharp": {
+        "base_id": 625,
+        "form_id": 0,
+        "name": "Bisharp",
+        "pokemon_type": [
+            "dark",
+            "steel"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "bouffalant": {
+        "base_id": 626,
+        "form_id": 0,
+        "name": "Bouffalant",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "rufflet": {
+        "base_id": 627,
+        "form_id": 0,
+        "name": "Rufflet",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                628,
+                0
+            ],
+            [
+                628,
+                1
+            ]
+        ]
+    },
+    "braviary": {
+        "base_id": 628,
+        "form_id": 0,
+        "name": "Braviary",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "color": "red",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "braviary-hisui": {
+        "base_id": 628,
+        "form_id": 1,
+        "name": "Hisuian Braviary",
+        "pokemon_type": [
+            "psychic",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "vullaby": {
+        "base_id": 629,
+        "form_id": 0,
+        "name": "Vullaby",
+        "pokemon_type": [
+            "dark",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                630,
+                0
+            ]
+        ]
+    },
+    "mandibuzz": {
+        "base_id": 630,
+        "form_id": 0,
+        "name": "Mandibuzz",
+        "pokemon_type": [
+            "dark",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "heatmor": {
+        "base_id": 631,
+        "form_id": 0,
+        "name": "Heatmor",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "durant": {
+        "base_id": 632,
+        "form_id": 0,
+        "name": "Durant",
+        "pokemon_type": [
+            "bug",
+            "steel"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 5
+    },
+    "deino": {
+        "base_id": 633,
+        "form_id": 0,
+        "name": "Deino",
+        "pokemon_type": [
+            "dark",
+            "dragon"
+        ],
+        "egg_group": [
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                634,
+                0
+            ]
+        ]
+    },
+    "zweilous": {
+        "base_id": 634,
+        "form_id": 0,
+        "name": "Zweilous",
+        "pokemon_type": [
+            "dark",
+            "dragon"
+        ],
+        "egg_group": [
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                635,
+                0
+            ]
+        ]
+    },
+    "hydreigon": {
+        "base_id": 635,
+        "form_id": 0,
+        "name": "Hydreigon",
+        "pokemon_type": [
+            "dark",
+            "dragon"
+        ],
+        "egg_group": [
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "larvesta": {
+        "base_id": 636,
+        "form_id": 0,
+        "name": "Larvesta",
+        "pokemon_type": [
+            "bug",
+            "fire"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 5,
+        "evolution_ids": [
+            [
+                637,
+                0
+            ]
+        ]
+    },
+    "volcarona": {
+        "base_id": 637,
+        "form_id": 0,
+        "name": "Volcarona",
+        "pokemon_type": [
+            "bug",
+            "fire"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "cobalion": {
+        "base_id": 638,
+        "form_id": 0,
+        "name": "Cobalion",
+        "pokemon_type": [
+            "steel",
+            "fighting"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "terrakion": {
+        "base_id": 639,
+        "form_id": 0,
+        "name": "Terrakion",
+        "pokemon_type": [
+            "rock",
+            "fighting"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "virizion": {
+        "base_id": 640,
+        "form_id": 0,
+        "name": "Virizion",
+        "pokemon_type": [
+            "grass",
+            "fighting"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "green",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "tornadus": {
+        "base_id": 641,
+        "form_id": 0,
+        "name": "Tornadus",
+        "form_name": "Incarnate Form",
+        "pokemon_type": [
+            "flying"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "is_sublegendary": true,
+        "color": "green",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "tornadus-therian": {
+        "base_id": 641,
+        "form_id": 1,
+        "name": "Tornadus",
+        "form_name": "Therian Forme",
+        "pokemon_type": [
+            "flying"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "is_sublegendary": true,
+        "color": "green",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "thundurus": {
+        "base_id": 642,
+        "form_id": 0,
+        "name": "Thundurus",
+        "form_name": "Incarnate Form",
+        "pokemon_type": [
+            "electric",
+            "flying"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "is_sublegendary": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "thundurus-therian": {
+        "base_id": 642,
+        "form_id": 1,
+        "name": "Thundurus",
+        "form_name": "Therian Forme",
+        "pokemon_type": [
+            "electric",
+            "flying"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "is_sublegendary": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "reshiram": {
+        "base_id": 643,
+        "form_id": 0,
+        "name": "Reshiram",
+        "pokemon_type": [
+            "dragon",
+            "fire"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "zekrom": {
+        "base_id": 644,
+        "form_id": 0,
+        "name": "Zekrom",
+        "pokemon_type": [
+            "dragon",
+            "electric"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "black",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "landorus": {
+        "base_id": 645,
+        "form_id": 0,
+        "name": "Landorus",
+        "form_name": "Incarnate Form",
+        "pokemon_type": [
+            "ground",
+            "flying"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "is_sublegendary": true,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "landorus-therian": {
+        "base_id": 645,
+        "form_id": 1,
+        "name": "Landorus",
+        "form_name": "Therian Forme",
+        "pokemon_type": [
+            "ground",
+            "flying"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "is_sublegendary": true,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "kyurem": {
+        "base_id": 646,
+        "form_id": 0,
+        "name": "Kyurem",
+        "pokemon_type": [
+            "dragon",
+            "ice"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "kyurem-white": {
+        "base_id": 646,
+        "form_id": 1,
+        "name": "White Kyurem",
+        "pokemon_type": [
+            "dragon",
+            "ice"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "kyurem-black": {
+        "base_id": 646,
+        "form_id": 2,
+        "name": "Black Kyurem",
+        "pokemon_type": [
+            "dragon",
+            "ice"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "keldeo": {
+        "base_id": 647,
+        "form_id": 0,
+        "name": "Keldeo",
+        "pokemon_type": [
+            "water",
+            "fighting"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "yellow",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "meloetta": {
+        "base_id": 648,
+        "form_id": 0,
+        "name": "Meloetta",
+        "pokemon_type": [
+            "normal",
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "genesect": {
+        "base_id": 649,
+        "form_id": 0,
+        "name": "Genesect",
+        "pokemon_type": [
+            "bug",
+            "steel"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 5
+    },
+    "chespin": {
+        "base_id": 650,
+        "form_id": 0,
+        "name": "Chespin",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                651,
+                0
+            ]
+        ]
+    },
+    "quilladin": {
+        "base_id": 651,
+        "form_id": 0,
+        "name": "Quilladin",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                652,
+                0
+            ]
+        ]
+    },
+    "chesnaught": {
+        "base_id": 652,
+        "form_id": 0,
+        "name": "Chesnaught",
+        "pokemon_type": [
+            "grass",
+            "fighting"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 6
+    },
+    "fennekin": {
+        "base_id": 653,
+        "form_id": 0,
+        "name": "Fennekin",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                654,
+                0
+            ]
+        ]
+    },
+    "braixen": {
+        "base_id": 654,
+        "form_id": 0,
+        "name": "Braixen",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                655,
+                0
+            ]
+        ]
+    },
+    "delphox": {
+        "base_id": 655,
+        "form_id": 0,
+        "name": "Delphox",
+        "pokemon_type": [
+            "fire",
+            "psychic"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 6
+    },
+    "froakie": {
+        "base_id": 656,
+        "form_id": 0,
+        "name": "Froakie",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                657,
+                0
+            ]
+        ]
+    },
+    "frogadier": {
+        "base_id": 657,
+        "form_id": 0,
+        "name": "Frogadier",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                658,
+                0
+            ]
+        ]
+    },
+    "greninja": {
+        "base_id": 658,
+        "form_id": 0,
+        "name": "Greninja",
+        "pokemon_type": [
+            "water",
+            "dark"
+        ],
+        "egg_group": [
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 6
+    },
+    "bunnelby": {
+        "base_id": 659,
+        "form_id": 0,
+        "name": "Bunnelby",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                660,
+                0
+            ]
+        ]
+    },
+    "diggersby": {
+        "base_id": 660,
+        "form_id": 0,
+        "name": "Diggersby",
+        "pokemon_type": [
+            "normal",
+            "ground"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "fletchling": {
+        "base_id": 661,
+        "form_id": 0,
+        "name": "Fletchling",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                662,
+                0
+            ]
+        ]
+    },
+    "fletchinder": {
+        "base_id": 662,
+        "form_id": 0,
+        "name": "Fletchinder",
+        "pokemon_type": [
+            "fire",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                663,
+                0
+            ]
+        ]
+    },
+    "talonflame": {
+        "base_id": 663,
+        "form_id": 0,
+        "name": "Talonflame",
+        "pokemon_type": [
+            "fire",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 6
+    },
+    "scatterbug": {
+        "base_id": 664,
+        "form_id": 6,
+        "name": "Scatterbug",
+        "pokemon_type": [
+            "bug"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Fast",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                665,
+                6
+            ]
+        ]
+    },
+    "spewpa": {
+        "base_id": 665,
+        "form_id": 6,
+        "name": "Spewpa",
+        "pokemon_type": [
+            "bug"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Fast",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                666,
+                6
+            ]
+        ]
+    },
+    "vivillon": {
+        "base_id": 666,
+        "form_id": 6,
+        "name": "Vivillon",
+        "form_name": "Meadow Pattern",
+        "pokemon_type": [
+            "bug",
+            "flying"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "litleo": {
+        "base_id": 667,
+        "form_id": 0,
+        "name": "Litleo",
+        "pokemon_type": [
+            "fire",
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 7,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                668,
+                0
+            ]
+        ]
+    },
+    "pyroar": {
+        "base_id": 668,
+        "form_id": 0,
+        "name": "Pyroar",
+        "pokemon_type": [
+            "fire",
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fd",
+            "md"
+        ],
+        "gender_ratio": 7,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 6
+    },
+    "flabebe": {
+        "base_id": 669,
+        "form_id": 0,
+        "name": "Flab\u00c3\u00a9b\u00c3\u00a9",
+        "form_name": "Red Flower",
+        "pokemon_type": [
+            "fairy"
+        ],
+        "egg_group": [
+            "fairy"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                670,
+                0
+            ]
+        ]
+    },
+    "floette": {
+        "base_id": 670,
+        "form_id": 0,
+        "name": "Floette",
+        "form_name": "Red Flower",
+        "pokemon_type": [
+            "fairy"
+        ],
+        "egg_group": [
+            "fairy"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                671,
+                0
+            ]
+        ]
+    },
+    "florges": {
+        "base_id": 671,
+        "form_id": 0,
+        "name": "Florges",
+        "form_name": "Red Flower",
+        "pokemon_type": [
+            "fairy"
+        ],
+        "egg_group": [
+            "fairy"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "skiddo": {
+        "base_id": 672,
+        "form_id": 0,
+        "name": "Skiddo",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                673,
+                0
+            ]
+        ]
+    },
+    "gogoat": {
+        "base_id": 673,
+        "form_id": 0,
+        "name": "Gogoat",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "pancham": {
+        "base_id": 674,
+        "form_id": 0,
+        "name": "Pancham",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "field",
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                675,
+                0
+            ]
+        ]
+    },
+    "pangoro": {
+        "base_id": 675,
+        "form_id": 0,
+        "name": "Pangoro",
+        "pokemon_type": [
+            "fighting",
+            "dark"
+        ],
+        "egg_group": [
+            "field",
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "furfrou": {
+        "base_id": 676,
+        "form_id": 0,
+        "name": "Furfrou",
+        "form_name": "Natural Form",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "espurr": {
+        "base_id": 677,
+        "form_id": 0,
+        "name": "Espurr",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                678,
+                0
+            ],
+            [
+                678,
+                1
+            ]
+        ]
+    },
+    "meowstic": {
+        "base_id": 678,
+        "form_id": 0,
+        "name": "Meowstic",
+        "form_name": "Male",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "meowstic-female": {
+        "base_id": 678,
+        "form_id": 1,
+        "name": "Meowstic",
+        "form_name": "Female",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "honedge": {
+        "base_id": 679,
+        "form_id": 0,
+        "name": "Honedge",
+        "pokemon_type": [
+            "steel",
+            "ghost"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                680,
+                0
+            ]
+        ]
+    },
+    "doublade": {
+        "base_id": 680,
+        "form_id": 0,
+        "name": "Doublade",
+        "pokemon_type": [
+            "steel",
+            "ghost"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                681,
+                1
+            ]
+        ]
+    },
+    "aegislash": {
+        "base_id": 681,
+        "form_id": 1,
+        "name": "Aegislash",
+        "pokemon_type": [
+            "steel",
+            "ghost"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "spritzee": {
+        "base_id": 682,
+        "form_id": 0,
+        "name": "Spritzee",
+        "pokemon_type": [
+            "fairy"
+        ],
+        "egg_group": [
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                683,
+                0
+            ]
+        ]
+    },
+    "aromatisse": {
+        "base_id": 683,
+        "form_id": 0,
+        "name": "Aromatisse",
+        "pokemon_type": [
+            "fairy"
+        ],
+        "egg_group": [
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "swirlix": {
+        "base_id": 684,
+        "form_id": 0,
+        "name": "Swirlix",
+        "pokemon_type": [
+            "fairy"
+        ],
+        "egg_group": [
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                685,
+                0
+            ]
+        ]
+    },
+    "slurpuff": {
+        "base_id": 685,
+        "form_id": 0,
+        "name": "Slurpuff",
+        "pokemon_type": [
+            "fairy"
+        ],
+        "egg_group": [
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "inkay": {
+        "base_id": 686,
+        "form_id": 0,
+        "name": "Inkay",
+        "pokemon_type": [
+            "dark",
+            "psychic"
+        ],
+        "egg_group": [
+            "water_1",
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                687,
+                0
+            ]
+        ]
+    },
+    "malamar": {
+        "base_id": 687,
+        "form_id": 0,
+        "name": "Malamar",
+        "pokemon_type": [
+            "dark",
+            "psychic"
+        ],
+        "egg_group": [
+            "water_1",
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "binacle": {
+        "base_id": 688,
+        "form_id": 0,
+        "name": "Binacle",
+        "pokemon_type": [
+            "rock",
+            "water"
+        ],
+        "egg_group": [
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                689,
+                0
+            ]
+        ]
+    },
+    "barbaracle": {
+        "base_id": 689,
+        "form_id": 0,
+        "name": "Barbaracle",
+        "pokemon_type": [
+            "rock",
+            "water"
+        ],
+        "egg_group": [
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "skrelp": {
+        "base_id": 690,
+        "form_id": 0,
+        "name": "Skrelp",
+        "pokemon_type": [
+            "poison",
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                691,
+                0
+            ]
+        ]
+    },
+    "dragalge": {
+        "base_id": 691,
+        "form_id": 0,
+        "name": "Dragalge",
+        "pokemon_type": [
+            "poison",
+            "dragon"
+        ],
+        "egg_group": [
+            "water_1",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "clauncher": {
+        "base_id": 692,
+        "form_id": 0,
+        "name": "Clauncher",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                693,
+                0
+            ]
+        ]
+    },
+    "clawitzer": {
+        "base_id": 693,
+        "form_id": 0,
+        "name": "Clawitzer",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "helioptile": {
+        "base_id": 694,
+        "form_id": 0,
+        "name": "Helioptile",
+        "pokemon_type": [
+            "electric",
+            "normal"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                695,
+                0
+            ]
+        ]
+    },
+    "heliolisk": {
+        "base_id": 695,
+        "form_id": 0,
+        "name": "Heliolisk",
+        "pokemon_type": [
+            "electric",
+            "normal"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "tyrunt": {
+        "base_id": 696,
+        "form_id": 0,
+        "name": "Tyrunt",
+        "pokemon_type": [
+            "rock",
+            "dragon"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                697,
+                0
+            ]
+        ]
+    },
+    "tyrantrum": {
+        "base_id": 697,
+        "form_id": 0,
+        "name": "Tyrantrum",
+        "pokemon_type": [
+            "rock",
+            "dragon"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "amaura": {
+        "base_id": 698,
+        "form_id": 0,
+        "name": "Amaura",
+        "pokemon_type": [
+            "rock",
+            "ice"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                699,
+                0
+            ]
+        ]
+    },
+    "aurorus": {
+        "base_id": 699,
+        "form_id": 0,
+        "name": "Aurorus",
+        "pokemon_type": [
+            "rock",
+            "ice"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "sylveon": {
+        "base_id": 700,
+        "form_id": 0,
+        "name": "Sylveon",
+        "pokemon_type": [
+            "fairy"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "hawlucha": {
+        "base_id": 701,
+        "form_id": 0,
+        "name": "Hawlucha",
+        "pokemon_type": [
+            "fighting",
+            "flying"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "dedenne": {
+        "base_id": 702,
+        "form_id": 0,
+        "name": "Dedenne",
+        "pokemon_type": [
+            "electric",
+            "fairy"
+        ],
+        "egg_group": [
+            "field",
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "carbink": {
+        "base_id": 703,
+        "form_id": 0,
+        "name": "Carbink",
+        "pokemon_type": [
+            "rock",
+            "fairy"
+        ],
+        "egg_group": [
+            "fairy",
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "goomy": {
+        "base_id": 704,
+        "form_id": 0,
+        "name": "Goomy",
+        "pokemon_type": [
+            "dragon"
+        ],
+        "egg_group": [
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                705,
+                0
+            ],
+            [
+                705,
+                1
+            ]
+        ]
+    },
+    "sliggoo": {
+        "base_id": 705,
+        "form_id": 0,
+        "name": "Sliggoo",
+        "pokemon_type": [
+            "dragon"
+        ],
+        "egg_group": [
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                706,
+                0
+            ]
+        ]
+    },
+    "sliggoo-hisui": {
+        "base_id": 705,
+        "form_id": 1,
+        "name": "Hisuian Sliggoo",
+        "pokemon_type": [
+            "steel",
+            "dragon"
+        ],
+        "egg_group": [
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                706,
+                1
+            ]
+        ]
+    },
+    "goodra": {
+        "base_id": 706,
+        "form_id": 0,
+        "name": "Goodra",
+        "pokemon_type": [
+            "dragon"
+        ],
+        "egg_group": [
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "goodra-hisui": {
+        "base_id": 706,
+        "form_id": 1,
+        "name": "Hisuian Goodra",
+        "pokemon_type": [
+            "steel",
+            "dragon"
+        ],
+        "egg_group": [
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "klefki": {
+        "base_id": 707,
+        "form_id": 0,
+        "name": "Klefki",
+        "pokemon_type": [
+            "steel",
+            "fairy"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Fast",
+        "generation": 6
+    },
+    "phantump": {
+        "base_id": 708,
+        "form_id": 0,
+        "name": "Phantump",
+        "pokemon_type": [
+            "ghost",
+            "grass"
+        ],
+        "egg_group": [
+            "grass",
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                709,
+                0
+            ]
+        ]
+    },
+    "trevenant": {
+        "base_id": 709,
+        "form_id": 0,
+        "name": "Trevenant",
+        "pokemon_type": [
+            "ghost",
+            "grass"
+        ],
+        "egg_group": [
+            "grass",
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "pumpkaboo": {
+        "base_id": 710,
+        "form_id": 0,
+        "name": "Pumpkaboo",
+        "pokemon_type": [
+            "ghost",
+            "grass"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                711,
+                0
+            ]
+        ]
+    },
+    "gourgeist": {
+        "base_id": 711,
+        "form_id": 0,
+        "name": "Gourgeist",
+        "pokemon_type": [
+            "ghost",
+            "grass"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "bergmite": {
+        "base_id": 712,
+        "form_id": 0,
+        "name": "Bergmite",
+        "pokemon_type": [
+            "ice"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                713,
+                0
+            ],
+            [
+                713,
+                1
+            ]
+        ]
+    },
+    "avalugg": {
+        "base_id": 713,
+        "form_id": 0,
+        "name": "Avalugg",
+        "pokemon_type": [
+            "ice"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "avalugg-hisui": {
+        "base_id": 713,
+        "form_id": 1,
+        "name": "Hisuian Avalugg",
+        "pokemon_type": [
+            "ice",
+            "rock"
+        ],
+        "egg_group": [
+            "monster"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "noibat": {
+        "base_id": 714,
+        "form_id": 0,
+        "name": "Noibat",
+        "pokemon_type": [
+            "flying",
+            "dragon"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 6,
+        "evolution_ids": [
+            [
+                715,
+                0
+            ]
+        ]
+    },
+    "noivern": {
+        "base_id": 715,
+        "form_id": 0,
+        "name": "Noivern",
+        "pokemon_type": [
+            "flying",
+            "dragon"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 6
+    },
+    "xerneas": {
+        "base_id": 716,
+        "form_id": 1,
+        "name": "Xerneas",
+        "pokemon_type": [
+            "fairy"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "yveltal": {
+        "base_id": 717,
+        "form_id": 0,
+        "name": "Yveltal",
+        "pokemon_type": [
+            "dark",
+            "flying"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "red",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "zygarde": {
+        "base_id": 718,
+        "form_id": 0,
+        "name": "Zygarde",
+        "pokemon_type": [
+            "dragon",
+            "ground"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "green",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "zygarde-10": {
+        "base_id": 718,
+        "form_id": 2,
+        "name": "Zygarde",
+        "form_name": "10% Forme",
+        "pokemon_type": [
+            "dragon",
+            "ground"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "black",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "zygarde-complete": {
+        "base_id": 718,
+        "form_id": 4,
+        "name": "Zygarde",
+        "form_name": "Complete Forme",
+        "pokemon_type": [
+            "dragon",
+            "ground"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "black",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "diancie": {
+        "base_id": 719,
+        "form_id": 0,
+        "name": "Diancie",
+        "pokemon_type": [
+            "rock",
+            "fairy"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "pink",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "diancie-mega": {
+        "base_id": 719,
+        "form_id": 1,
+        "name": "Mega Diancie",
+        "pokemon_type": [
+            "rock",
+            "fairy"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "is_mega": true,
+        "color": "pink",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "hoopa": {
+        "base_id": 720,
+        "form_id": 0,
+        "name": "Hoopa Confined",
+        "pokemon_type": [
+            "psychic",
+            "ghost"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "hoopa-unbound": {
+        "base_id": 720,
+        "form_id": 1,
+        "name": "Hoopa Unbound",
+        "pokemon_type": [
+            "psychic",
+            "dark"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "volcanion": {
+        "base_id": 721,
+        "form_id": 0,
+        "name": "Volcanion",
+        "pokemon_type": [
+            "fire",
+            "water"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 6
+    },
+    "rowlet": {
+        "base_id": 722,
+        "form_id": 0,
+        "name": "Rowlet",
+        "pokemon_type": [
+            "grass",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                723,
+                0
+            ]
+        ]
+    },
+    "dartrix": {
+        "base_id": 723,
+        "form_id": 0,
+        "name": "Dartrix",
+        "pokemon_type": [
+            "grass",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                724,
+                0
+            ],
+            [
+                724,
+                1
+            ]
+        ]
+    },
+    "decidueye": {
+        "base_id": 724,
+        "form_id": 0,
+        "name": "Decidueye",
+        "pokemon_type": [
+            "grass",
+            "ghost"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 7
+    },
+    "decidueye-hisui": {
+        "base_id": 724,
+        "form_id": 1,
+        "name": "Hisuian Decidueye",
+        "pokemon_type": [
+            "grass",
+            "fighting"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 8
+    },
+    "litten": {
+        "base_id": 725,
+        "form_id": 0,
+        "name": "Litten",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                726,
+                0
+            ]
+        ]
+    },
+    "torracat": {
+        "base_id": 726,
+        "form_id": 0,
+        "name": "Torracat",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                727,
+                0
+            ]
+        ]
+    },
+    "incineroar": {
+        "base_id": 727,
+        "form_id": 0,
+        "name": "Incineroar",
+        "pokemon_type": [
+            "fire",
+            "dark"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 7
+    },
+    "popplio": {
+        "base_id": 728,
+        "form_id": 0,
+        "name": "Popplio",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                729,
+                0
+            ]
+        ]
+    },
+    "brionne": {
+        "base_id": 729,
+        "form_id": 0,
+        "name": "Brionne",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                730,
+                0
+            ]
+        ]
+    },
+    "primarina": {
+        "base_id": 730,
+        "form_id": 0,
+        "name": "Primarina",
+        "pokemon_type": [
+            "water",
+            "fairy"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 7
+    },
+    "pikipek": {
+        "base_id": 731,
+        "form_id": 0,
+        "name": "Pikipek",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Fast",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                732,
+                0
+            ]
+        ]
+    },
+    "trumbeak": {
+        "base_id": 732,
+        "form_id": 0,
+        "name": "Trumbeak",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Fast",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                733,
+                0
+            ]
+        ]
+    },
+    "toucannon": {
+        "base_id": 733,
+        "form_id": 0,
+        "name": "Toucannon",
+        "pokemon_type": [
+            "normal",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "yungoos": {
+        "base_id": 734,
+        "form_id": 0,
+        "name": "Yungoos",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                735,
+                0
+            ]
+        ]
+    },
+    "gumshoos": {
+        "base_id": 735,
+        "form_id": 0,
+        "name": "Gumshoos",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "grubbin": {
+        "base_id": 736,
+        "form_id": 0,
+        "name": "Grubbin",
+        "pokemon_type": [
+            "bug"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                737,
+                0
+            ]
+        ]
+    },
+    "charjabug": {
+        "base_id": 737,
+        "form_id": 0,
+        "name": "Charjabug",
+        "pokemon_type": [
+            "bug",
+            "electric"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                738,
+                0
+            ]
+        ]
+    },
+    "vikavolt": {
+        "base_id": 738,
+        "form_id": 0,
+        "name": "Vikavolt",
+        "pokemon_type": [
+            "bug",
+            "electric"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "crabrawler": {
+        "base_id": 739,
+        "form_id": 0,
+        "name": "Crabrawler",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                740,
+                0
+            ]
+        ]
+    },
+    "crabominable": {
+        "base_id": 740,
+        "form_id": 0,
+        "name": "Crabominable",
+        "pokemon_type": [
+            "fighting",
+            "ice"
+        ],
+        "egg_group": [
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "oricorio": {
+        "base_id": 741,
+        "form_id": 0,
+        "name": "Oricorio",
+        "form_name": "Baile Style",
+        "pokemon_type": [
+            "fire",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "oricorio-pom-pom": {
+        "base_id": 741,
+        "form_id": 1,
+        "name": "Oricorio",
+        "form_name": "Pom-Pom Style",
+        "pokemon_type": [
+            "electric",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "oricorio-pau": {
+        "base_id": 741,
+        "form_id": 2,
+        "name": "Oricorio",
+        "form_name": "Pau'u Style",
+        "pokemon_type": [
+            "psychic",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "oricorio-sensu": {
+        "base_id": 741,
+        "form_id": 3,
+        "name": "Oricorio",
+        "form_name": "Sensu Style",
+        "pokemon_type": [
+            "ghost",
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "cutiefly": {
+        "base_id": 742,
+        "form_id": 0,
+        "name": "Cutiefly",
+        "pokemon_type": [
+            "bug",
+            "fairy"
+        ],
+        "egg_group": [
+            "bug",
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                743,
+                0
+            ]
+        ]
+    },
+    "ribombee": {
+        "base_id": 743,
+        "form_id": 0,
+        "name": "Ribombee",
+        "pokemon_type": [
+            "bug",
+            "fairy"
+        ],
+        "egg_group": [
+            "bug",
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "rockruff": {
+        "base_id": 744,
+        "form_id": 0,
+        "name": "Rockruff",
+        "pokemon_type": [
+            "rock"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                745,
+                0
+            ],
+            [
+                745,
+                1
+            ]
+        ]
+    },
+    "lycanroc": {
+        "base_id": 745,
+        "form_id": 0,
+        "name": "Lycanroc",
+        "form_name": "Midday Form",
+        "pokemon_type": [
+            "rock"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "lycanroc-midnight": {
+        "base_id": 745,
+        "form_id": 1,
+        "name": "Lycanroc",
+        "form_name": "Midnight Form",
+        "pokemon_type": [
+            "rock"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "lycanroc-dusk": {
+        "base_id": 745,
+        "form_id": 2,
+        "name": "Lycanroc",
+        "form_name": "Dusk Form",
+        "pokemon_type": [
+            "rock"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "wishiwashi": {
+        "base_id": 746,
+        "form_id": 1,
+        "name": "Wishiwashi",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Fast",
+        "generation": 7
+    },
+    "mareanie": {
+        "base_id": 747,
+        "form_id": 0,
+        "name": "Mareanie",
+        "pokemon_type": [
+            "poison",
+            "water"
+        ],
+        "egg_group": [
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                748,
+                0
+            ]
+        ]
+    },
+    "toxapex": {
+        "base_id": 748,
+        "form_id": 0,
+        "name": "Toxapex",
+        "pokemon_type": [
+            "poison",
+            "water"
+        ],
+        "egg_group": [
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "mudbray": {
+        "base_id": 749,
+        "form_id": 0,
+        "name": "Mudbray",
+        "pokemon_type": [
+            "ground"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                750,
+                0
+            ]
+        ]
+    },
+    "mudsdale": {
+        "base_id": 750,
+        "form_id": 0,
+        "name": "Mudsdale",
+        "pokemon_type": [
+            "ground"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "dewpider": {
+        "base_id": 751,
+        "form_id": 0,
+        "name": "Dewpider",
+        "pokemon_type": [
+            "water",
+            "bug"
+        ],
+        "egg_group": [
+            "water_1",
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                752,
+                0
+            ]
+        ]
+    },
+    "araquanid": {
+        "base_id": 752,
+        "form_id": 0,
+        "name": "Araquanid",
+        "pokemon_type": [
+            "water",
+            "bug"
+        ],
+        "egg_group": [
+            "water_1",
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "fomantis": {
+        "base_id": 753,
+        "form_id": 0,
+        "name": "Fomantis",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                754,
+                0
+            ]
+        ]
+    },
+    "lurantis": {
+        "base_id": 754,
+        "form_id": 0,
+        "name": "Lurantis",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "morelull": {
+        "base_id": 755,
+        "form_id": 0,
+        "name": "Morelull",
+        "pokemon_type": [
+            "grass",
+            "fairy"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                756,
+                0
+            ]
+        ]
+    },
+    "shiinotic": {
+        "base_id": 756,
+        "form_id": 0,
+        "name": "Shiinotic",
+        "pokemon_type": [
+            "grass",
+            "fairy"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "salandit": {
+        "base_id": 757,
+        "form_id": 0,
+        "name": "Salandit",
+        "pokemon_type": [
+            "poison",
+            "fire"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "black",
+        "experience_group": "Medium Fast",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                758,
+                0
+            ]
+        ]
+    },
+    "salazzle": {
+        "base_id": 758,
+        "form_id": 0,
+        "name": "Salazzle",
+        "pokemon_type": [
+            "poison",
+            "fire"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "black",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "stufful": {
+        "base_id": 759,
+        "form_id": 0,
+        "name": "Stufful",
+        "pokemon_type": [
+            "normal",
+            "fighting"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                760,
+                0
+            ]
+        ]
+    },
+    "bewear": {
+        "base_id": 760,
+        "form_id": 0,
+        "name": "Bewear",
+        "pokemon_type": [
+            "normal",
+            "fighting"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "bounsweet": {
+        "base_id": 761,
+        "form_id": 0,
+        "name": "Bounsweet",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "purple",
+        "experience_group": "Medium Slow",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                762,
+                0
+            ]
+        ]
+    },
+    "steenee": {
+        "base_id": 762,
+        "form_id": 0,
+        "name": "Steenee",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "purple",
+        "experience_group": "Medium Slow",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                763,
+                0
+            ]
+        ]
+    },
+    "tsareena": {
+        "base_id": 763,
+        "form_id": 0,
+        "name": "Tsareena",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "purple",
+        "experience_group": "Medium Slow",
+        "generation": 7
+    },
+    "comfey": {
+        "base_id": 764,
+        "form_id": 0,
+        "name": "Comfey",
+        "pokemon_type": [
+            "fairy"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "green",
+        "experience_group": "Fast",
+        "generation": 7
+    },
+    "oranguru": {
+        "base_id": 765,
+        "form_id": 0,
+        "name": "Oranguru",
+        "pokemon_type": [
+            "normal",
+            "psychic"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "passimian": {
+        "base_id": 766,
+        "form_id": 0,
+        "name": "Passimian",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "wimpod": {
+        "base_id": 767,
+        "form_id": 0,
+        "name": "Wimpod",
+        "pokemon_type": [
+            "bug",
+            "water"
+        ],
+        "egg_group": [
+            "bug",
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                768,
+                0
+            ]
+        ]
+    },
+    "golisopod": {
+        "base_id": 768,
+        "form_id": 0,
+        "name": "Golisopod",
+        "pokemon_type": [
+            "bug",
+            "water"
+        ],
+        "egg_group": [
+            "bug",
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "sandygast": {
+        "base_id": 769,
+        "form_id": 0,
+        "name": "Sandygast",
+        "pokemon_type": [
+            "ghost",
+            "ground"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                770,
+                0
+            ]
+        ]
+    },
+    "palossand": {
+        "base_id": 770,
+        "form_id": 0,
+        "name": "Palossand",
+        "pokemon_type": [
+            "ghost",
+            "ground"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "pyukumuku": {
+        "base_id": 771,
+        "form_id": 0,
+        "name": "Pyukumuku",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Fast",
+        "generation": 7
+    },
+    "type-null": {
+        "base_id": 772,
+        "form_id": 0,
+        "name": "Type: Null",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                773,
+                0
+            ]
+        ]
+    },
+    "silvally": {
+        "base_id": 773,
+        "form_id": 0,
+        "name": "Silvally",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "minior": {
+        "base_id": 774,
+        "form_id": 7,
+        "name": "Minior",
+        "form_name": "Red Core",
+        "pokemon_type": [
+            "rock",
+            "flying"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "red",
+        "experience_group": "Medium Slow",
+        "generation": 7
+    },
+    "komala": {
+        "base_id": 775,
+        "form_id": 0,
+        "name": "Komala",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "turtonator": {
+        "base_id": 776,
+        "form_id": 0,
+        "name": "Turtonator",
+        "pokemon_type": [
+            "fire",
+            "dragon"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "togedemaru": {
+        "base_id": 777,
+        "form_id": 0,
+        "name": "Togedemaru",
+        "pokemon_type": [
+            "electric",
+            "steel"
+        ],
+        "egg_group": [
+            "field",
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "mimikyu": {
+        "base_id": 778,
+        "form_id": 0,
+        "name": "Mimikyu",
+        "pokemon_type": [
+            "ghost",
+            "fairy"
+        ],
+        "egg_group": [
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "bruxish": {
+        "base_id": 779,
+        "form_id": 0,
+        "name": "Bruxish",
+        "pokemon_type": [
+            "water",
+            "psychic"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "drampa": {
+        "base_id": 780,
+        "form_id": 0,
+        "name": "Drampa",
+        "pokemon_type": [
+            "normal",
+            "dragon"
+        ],
+        "egg_group": [
+            "monster",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "dhelmise": {
+        "base_id": 781,
+        "form_id": 0,
+        "name": "Dhelmise",
+        "pokemon_type": [
+            "ghost",
+            "grass"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 7
+    },
+    "jangmo-o": {
+        "base_id": 782,
+        "form_id": 0,
+        "name": "Jangmo-o",
+        "pokemon_type": [
+            "dragon"
+        ],
+        "egg_group": [
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                783,
+                0
+            ]
+        ]
+    },
+    "hakamo-o": {
+        "base_id": 783,
+        "form_id": 0,
+        "name": "Hakamo-o",
+        "pokemon_type": [
+            "dragon",
+            "fighting"
+        ],
+        "egg_group": [
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                784,
+                0
+            ]
+        ]
+    },
+    "kommo-o": {
+        "base_id": 784,
+        "form_id": 0,
+        "name": "Kommo-o",
+        "pokemon_type": [
+            "dragon",
+            "fighting"
+        ],
+        "egg_group": [
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "tapu-koko": {
+        "base_id": 785,
+        "form_id": 0,
+        "name": "Tapu Koko",
+        "pokemon_type": [
+            "electric",
+            "fairy"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "yellow",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "tapu-lele": {
+        "base_id": 786,
+        "form_id": 0,
+        "name": "Tapu Lele",
+        "pokemon_type": [
+            "psychic",
+            "fairy"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "pink",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "tapu-bulu": {
+        "base_id": 787,
+        "form_id": 0,
+        "name": "Tapu Bulu",
+        "pokemon_type": [
+            "grass",
+            "fairy"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "red",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "tapu-fini": {
+        "base_id": 788,
+        "form_id": 0,
+        "name": "Tapu Fini",
+        "pokemon_type": [
+            "water",
+            "fairy"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "cosmog": {
+        "base_id": 789,
+        "form_id": 0,
+        "name": "Cosmog",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                790,
+                0
+            ]
+        ]
+    },
+    "cosmoem": {
+        "base_id": 790,
+        "form_id": 0,
+        "name": "Cosmoem",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                791,
+                0
+            ],
+            [
+                792,
+                0
+            ]
+        ]
+    },
+    "solgaleo": {
+        "base_id": 791,
+        "form_id": 0,
+        "name": "Solgaleo",
+        "pokemon_type": [
+            "psychic",
+            "steel"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "lunala": {
+        "base_id": 792,
+        "form_id": 0,
+        "name": "Lunala",
+        "pokemon_type": [
+            "psychic",
+            "ghost"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "nihilego": {
+        "base_id": 793,
+        "form_id": 0,
+        "name": "Nihilego",
+        "pokemon_type": [
+            "rock",
+            "poison"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "buzzwole": {
+        "base_id": 794,
+        "form_id": 0,
+        "name": "Buzzwole",
+        "pokemon_type": [
+            "bug",
+            "fighting"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "red",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "pheromosa": {
+        "base_id": 795,
+        "form_id": 0,
+        "name": "Pheromosa",
+        "pokemon_type": [
+            "bug",
+            "fighting"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "xurkitree": {
+        "base_id": 796,
+        "form_id": 0,
+        "name": "Xurkitree",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "black",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "celesteela": {
+        "base_id": 797,
+        "form_id": 0,
+        "name": "Celesteela",
+        "pokemon_type": [
+            "steel",
+            "flying"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "green",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "kartana": {
+        "base_id": 798,
+        "form_id": 0,
+        "name": "Kartana",
+        "pokemon_type": [
+            "grass",
+            "steel"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "guzzlord": {
+        "base_id": 799,
+        "form_id": 0,
+        "name": "Guzzlord",
+        "pokemon_type": [
+            "dark",
+            "dragon"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "black",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "necrozma": {
+        "base_id": 800,
+        "form_id": 0,
+        "name": "Necrozma",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "black",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "necrozma-dusk": {
+        "base_id": 800,
+        "form_id": 1,
+        "name": "Dusk Mane Necrozma",
+        "pokemon_type": [
+            "psychic",
+            "steel"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "yellow",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "necrozma-dawn": {
+        "base_id": 800,
+        "form_id": 2,
+        "name": "Dawn Wings Necrozma",
+        "pokemon_type": [
+            "psychic",
+            "ghost"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "necrozma-ultra": {
+        "base_id": 800,
+        "form_id": 3,
+        "name": "Ultra Necrozma",
+        "pokemon_type": [
+            "psychic",
+            "dragon"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "yellow",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "magearna": {
+        "base_id": 801,
+        "form_id": 0,
+        "name": "Magearna",
+        "pokemon_type": [
+            "steel",
+            "fairy"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "magearna-original": {
+        "base_id": 801,
+        "form_id": 1,
+        "name": "Original Color Magearna",
+        "pokemon_type": [
+            "steel",
+            "fairy"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "red",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "marshadow": {
+        "base_id": 802,
+        "form_id": 0,
+        "name": "Marshadow",
+        "pokemon_type": [
+            "fighting",
+            "ghost"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "poipole": {
+        "base_id": 803,
+        "form_id": 0,
+        "name": "Poipole",
+        "pokemon_type": [
+            "poison"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                804,
+                0
+            ]
+        ]
+    },
+    "naganadel": {
+        "base_id": 804,
+        "form_id": 0,
+        "name": "Naganadel",
+        "pokemon_type": [
+            "poison",
+            "dragon"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "stakataka": {
+        "base_id": 805,
+        "form_id": 0,
+        "name": "Stakataka",
+        "pokemon_type": [
+            "rock",
+            "steel"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "blacephalon": {
+        "base_id": 806,
+        "form_id": 0,
+        "name": "Blacephalon",
+        "pokemon_type": [
+            "fire",
+            "ghost"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "zeraora": {
+        "base_id": 807,
+        "form_id": 0,
+        "name": "Zeraora",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "yellow",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "meltan": {
+        "base_id": 808,
+        "form_id": 0,
+        "name": "Meltan",
+        "pokemon_type": [
+            "steel"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 7,
+        "evolution_ids": [
+            [
+                809,
+                0
+            ]
+        ]
+    },
+    "melmetal": {
+        "base_id": 809,
+        "form_id": 0,
+        "name": "Melmetal",
+        "pokemon_type": [
+            "steel"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "has_gigantamax": true,
+        "is_mythical": true,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 7
+    },
+    "grookey": {
+        "base_id": 810,
+        "form_id": 0,
+        "name": "Grookey",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "field",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                811,
+                0
+            ]
+        ]
+    },
+    "thwackey": {
+        "base_id": 811,
+        "form_id": 0,
+        "name": "Thwackey",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "field",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                812,
+                0
+            ]
+        ]
+    },
+    "rillaboom": {
+        "base_id": 812,
+        "form_id": 0,
+        "name": "Rillaboom",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "field",
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "has_gigantamax": true,
+        "color": "green",
+        "experience_group": "Medium Slow",
+        "generation": 8
+    },
+    "scorbunny": {
+        "base_id": 813,
+        "form_id": 0,
+        "name": "Scorbunny",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field",
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "white",
+        "experience_group": "Medium Slow",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                814,
+                0
+            ]
+        ]
+    },
+    "raboot": {
+        "base_id": 814,
+        "form_id": 0,
+        "name": "Raboot",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field",
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "gray",
+        "experience_group": "Medium Slow",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                815,
+                0
+            ]
+        ]
+    },
+    "cinderace": {
+        "base_id": 815,
+        "form_id": 0,
+        "name": "Cinderace",
+        "pokemon_type": [
+            "fire"
+        ],
+        "egg_group": [
+            "field",
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "has_gigantamax": true,
+        "color": "white",
+        "experience_group": "Medium Slow",
+        "generation": 8
+    },
+    "sobble": {
+        "base_id": 816,
+        "form_id": 0,
+        "name": "Sobble",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                817,
+                0
+            ]
+        ]
+    },
+    "drizzile": {
+        "base_id": 817,
+        "form_id": 0,
+        "name": "Drizzile",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                818,
+                0
+            ]
+        ]
+    },
+    "inteleon": {
+        "base_id": 818,
+        "form_id": 0,
+        "name": "Inteleon",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "has_gigantamax": true,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 8
+    },
+    "skwovet": {
+        "base_id": 819,
+        "form_id": 0,
+        "name": "Skwovet",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                820,
+                0
+            ]
+        ]
+    },
+    "greedent": {
+        "base_id": 820,
+        "form_id": 0,
+        "name": "Greedent",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "rookidee": {
+        "base_id": 821,
+        "form_id": 0,
+        "name": "Rookidee",
+        "pokemon_type": [
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                822,
+                0
+            ]
+        ]
+    },
+    "corvisquire": {
+        "base_id": 822,
+        "form_id": 0,
+        "name": "Corvisquire",
+        "pokemon_type": [
+            "flying"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                823,
+                0
+            ]
+        ]
+    },
+    "corviknight": {
+        "base_id": 823,
+        "form_id": 0,
+        "name": "Corviknight",
+        "pokemon_type": [
+            "flying",
+            "steel"
+        ],
+        "egg_group": [
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "has_gigantamax": true,
+        "color": "purple",
+        "experience_group": "Medium Slow",
+        "generation": 8
+    },
+    "blipbug": {
+        "base_id": 824,
+        "form_id": 0,
+        "name": "Blipbug",
+        "pokemon_type": [
+            "bug"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                825,
+                0
+            ]
+        ]
+    },
+    "dottler": {
+        "base_id": 825,
+        "form_id": 0,
+        "name": "Dottler",
+        "pokemon_type": [
+            "bug",
+            "psychic"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                826,
+                0
+            ]
+        ]
+    },
+    "orbeetle": {
+        "base_id": 826,
+        "form_id": 0,
+        "name": "Orbeetle",
+        "pokemon_type": [
+            "bug",
+            "psychic"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "has_gigantamax": true,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "nickit": {
+        "base_id": 827,
+        "form_id": 0,
+        "name": "Nickit",
+        "pokemon_type": [
+            "dark"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                828,
+                0
+            ]
+        ]
+    },
+    "thievul": {
+        "base_id": 828,
+        "form_id": 0,
+        "name": "Thievul",
+        "pokemon_type": [
+            "dark"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Fast",
+        "generation": 8
+    },
+    "gossifleur": {
+        "base_id": 829,
+        "form_id": 0,
+        "name": "Gossifleur",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                830,
+                0
+            ]
+        ]
+    },
+    "eldegoss": {
+        "base_id": 830,
+        "form_id": 0,
+        "name": "Eldegoss",
+        "pokemon_type": [
+            "grass"
+        ],
+        "egg_group": [
+            "grass"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "wooloo": {
+        "base_id": 831,
+        "form_id": 0,
+        "name": "Wooloo",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                832,
+                0
+            ]
+        ]
+    },
+    "dubwool": {
+        "base_id": 832,
+        "form_id": 0,
+        "name": "Dubwool",
+        "pokemon_type": [
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "chewtle": {
+        "base_id": 833,
+        "form_id": 0,
+        "name": "Chewtle",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "monster",
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                834,
+                0
+            ]
+        ]
+    },
+    "drednaw": {
+        "base_id": 834,
+        "form_id": 0,
+        "name": "Drednaw",
+        "pokemon_type": [
+            "water",
+            "rock"
+        ],
+        "egg_group": [
+            "monster",
+            "water_1"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "has_gigantamax": true,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "yamper": {
+        "base_id": 835,
+        "form_id": 0,
+        "name": "Yamper",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                836,
+                0
+            ]
+        ]
+    },
+    "boltund": {
+        "base_id": 836,
+        "form_id": 0,
+        "name": "Boltund",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Fast",
+        "generation": 8
+    },
+    "rolycoly": {
+        "base_id": 837,
+        "form_id": 0,
+        "name": "Rolycoly",
+        "pokemon_type": [
+            "rock"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Slow",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                838,
+                0
+            ]
+        ]
+    },
+    "carkol": {
+        "base_id": 838,
+        "form_id": 0,
+        "name": "Carkol",
+        "pokemon_type": [
+            "rock",
+            "fire"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Slow",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                839,
+                0
+            ]
+        ]
+    },
+    "coalossal": {
+        "base_id": 839,
+        "form_id": 0,
+        "name": "Coalossal",
+        "pokemon_type": [
+            "rock",
+            "fire"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "has_gigantamax": true,
+        "color": "black",
+        "experience_group": "Medium Slow",
+        "generation": 8
+    },
+    "applin": {
+        "base_id": 840,
+        "form_id": 0,
+        "name": "Applin",
+        "pokemon_type": [
+            "grass",
+            "dragon"
+        ],
+        "egg_group": [
+            "grass",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Erratic",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                841,
+                0
+            ],
+            [
+                842,
+                0
+            ]
+        ]
+    },
+    "flapple": {
+        "base_id": 841,
+        "form_id": 0,
+        "name": "Flapple",
+        "pokemon_type": [
+            "grass",
+            "dragon"
+        ],
+        "egg_group": [
+            "grass",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "has_gigantamax": true,
+        "color": "green",
+        "experience_group": "Erratic",
+        "generation": 8
+    },
+    "appletun": {
+        "base_id": 842,
+        "form_id": 0,
+        "name": "Appletun",
+        "pokemon_type": [
+            "grass",
+            "dragon"
+        ],
+        "egg_group": [
+            "grass",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "has_gigantamax": true,
+        "color": "green",
+        "experience_group": "Erratic",
+        "generation": 8
+    },
+    "silicobra": {
+        "base_id": 843,
+        "form_id": 0,
+        "name": "Silicobra",
+        "pokemon_type": [
+            "ground"
+        ],
+        "egg_group": [
+            "field",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                844,
+                0
+            ]
+        ]
+    },
+    "sandaconda": {
+        "base_id": 844,
+        "form_id": 0,
+        "name": "Sandaconda",
+        "pokemon_type": [
+            "ground"
+        ],
+        "egg_group": [
+            "field",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "has_gigantamax": true,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "cramorant": {
+        "base_id": 845,
+        "form_id": 0,
+        "name": "Cramorant",
+        "pokemon_type": [
+            "flying",
+            "water"
+        ],
+        "egg_group": [
+            "water_1",
+            "flying"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "arrokuda": {
+        "base_id": 846,
+        "form_id": 0,
+        "name": "Arrokuda",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                847,
+                0
+            ]
+        ]
+    },
+    "barraskewda": {
+        "base_id": 847,
+        "form_id": 0,
+        "name": "Barraskewda",
+        "pokemon_type": [
+            "water"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "toxel": {
+        "base_id": 848,
+        "form_id": 0,
+        "name": "Toxel",
+        "pokemon_type": [
+            "electric",
+            "poison"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "is_baby": true,
+        "color": "purple",
+        "experience_group": "Medium Slow",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                849,
+                0
+            ],
+            [
+                849,
+                1
+            ]
+        ]
+    },
+    "toxtricity": {
+        "base_id": 849,
+        "form_id": 0,
+        "name": "Toxtricity",
+        "form_name": "Amped Form",
+        "pokemon_type": [
+            "electric",
+            "poison"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "has_gigantamax": true,
+        "color": "purple",
+        "experience_group": "Medium Slow",
+        "generation": 8
+    },
+    "toxtricity-low-key": {
+        "base_id": 849,
+        "form_id": 1,
+        "name": "Toxtricity",
+        "form_name": "Low Key Form",
+        "pokemon_type": [
+            "electric",
+            "poison"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "has_gigantamax": true,
+        "color": "purple",
+        "experience_group": "Medium Slow",
+        "generation": 8
+    },
+    "sizzlipede": {
+        "base_id": 850,
+        "form_id": 0,
+        "name": "Sizzlipede",
+        "pokemon_type": [
+            "fire",
+            "bug"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                851,
+                0
+            ]
+        ]
+    },
+    "centiskorch": {
+        "base_id": 851,
+        "form_id": 0,
+        "name": "Centiskorch",
+        "pokemon_type": [
+            "fire",
+            "bug"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "has_gigantamax": true,
+        "color": "red",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "clobbopus": {
+        "base_id": 852,
+        "form_id": 0,
+        "name": "Clobbopus",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "water_1",
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Slow",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                853,
+                0
+            ]
+        ]
+    },
+    "grapploct": {
+        "base_id": 853,
+        "form_id": 0,
+        "name": "Grapploct",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "water_1",
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 8
+    },
+    "sinistea": {
+        "base_id": 854,
+        "form_id": 0,
+        "name": "Sinistea",
+        "pokemon_type": [
+            "ghost"
+        ],
+        "egg_group": [
+            "mineral",
+            "amorphous"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                855,
+                0
+            ]
+        ]
+    },
+    "polteageist": {
+        "base_id": 855,
+        "form_id": 0,
+        "name": "Polteageist",
+        "pokemon_type": [
+            "ghost"
+        ],
+        "egg_group": [
+            "mineral",
+            "amorphous"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "hatenna": {
+        "base_id": 856,
+        "form_id": 0,
+        "name": "Hatenna",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "fairy"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "pink",
+        "experience_group": "Slow",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                857,
+                0
+            ]
+        ]
+    },
+    "hattrem": {
+        "base_id": 857,
+        "form_id": 0,
+        "name": "Hattrem",
+        "pokemon_type": [
+            "psychic"
+        ],
+        "egg_group": [
+            "fairy"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "pink",
+        "experience_group": "Slow",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                858,
+                0
+            ]
+        ]
+    },
+    "hatterene": {
+        "base_id": 858,
+        "form_id": 0,
+        "name": "Hatterene",
+        "pokemon_type": [
+            "psychic",
+            "fairy"
+        ],
+        "egg_group": [
+            "fairy"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "has_gigantamax": true,
+        "color": "pink",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "impidimp": {
+        "base_id": 859,
+        "form_id": 0,
+        "name": "Impidimp",
+        "pokemon_type": [
+            "dark",
+            "fairy"
+        ],
+        "egg_group": [
+            "fairy",
+            "human_like"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                860,
+                0
+            ]
+        ]
+    },
+    "morgrem": {
+        "base_id": 860,
+        "form_id": 0,
+        "name": "Morgrem",
+        "pokemon_type": [
+            "dark",
+            "fairy"
+        ],
+        "egg_group": [
+            "fairy",
+            "human_like"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "color": "pink",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                861,
+                0
+            ]
+        ]
+    },
+    "grimmsnarl": {
+        "base_id": 861,
+        "form_id": 0,
+        "name": "Grimmsnarl",
+        "pokemon_type": [
+            "dark",
+            "fairy"
+        ],
+        "egg_group": [
+            "fairy",
+            "human_like"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "has_gigantamax": true,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "obstagoon": {
+        "base_id": 862,
+        "form_id": 0,
+        "name": "Obstagoon",
+        "pokemon_type": [
+            "dark",
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "perrserker": {
+        "base_id": 863,
+        "form_id": 0,
+        "name": "Perrserker",
+        "pokemon_type": [
+            "steel"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "cursola": {
+        "base_id": 864,
+        "form_id": 0,
+        "name": "Cursola",
+        "pokemon_type": [
+            "ghost"
+        ],
+        "egg_group": [
+            "water_1",
+            "water_3"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 6,
+        "color": "white",
+        "experience_group": "Fast",
+        "generation": 8
+    },
+    "sirfetchd": {
+        "base_id": 865,
+        "form_id": 0,
+        "name": "Sirfetch'd",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "flying",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "mr-rime": {
+        "base_id": 866,
+        "form_id": 0,
+        "name": "Mr. Rime",
+        "pokemon_type": [
+            "ice",
+            "psychic"
+        ],
+        "egg_group": [
+            "human_like"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "runerigus": {
+        "base_id": 867,
+        "form_id": 0,
+        "name": "Runerigus",
+        "pokemon_type": [
+            "ground",
+            "ghost"
+        ],
+        "egg_group": [
+            "mineral",
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "milcery": {
+        "base_id": 868,
+        "form_id": 0,
+        "name": "Milcery",
+        "pokemon_type": [
+            "fairy"
+        ],
+        "egg_group": [
+            "fairy",
+            "amorphous"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                869,
+                0
+            ]
+        ]
+    },
+    "alcremie": {
+        "base_id": 869,
+        "form_id": 0,
+        "name": "Alcremie",
+        "pokemon_type": [
+            "fairy"
+        ],
+        "egg_group": [
+            "fairy",
+            "amorphous"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "has_gigantamax": true,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "falinks": {
+        "base_id": 870,
+        "form_id": 0,
+        "name": "Falinks",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "fairy",
+            "mineral"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "pincurchin": {
+        "base_id": 871,
+        "form_id": 0,
+        "name": "Pincurchin",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "water_1",
+            "amorphous"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "purple",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "snom": {
+        "base_id": 872,
+        "form_id": 0,
+        "name": "Snom",
+        "pokemon_type": [
+            "ice",
+            "bug"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                873,
+                0
+            ]
+        ]
+    },
+    "frosmoth": {
+        "base_id": 873,
+        "form_id": 0,
+        "name": "Frosmoth",
+        "pokemon_type": [
+            "ice",
+            "bug"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "stonjourner": {
+        "base_id": 874,
+        "form_id": 0,
+        "name": "Stonjourner",
+        "pokemon_type": [
+            "rock"
+        ],
+        "egg_group": [
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "eiscue": {
+        "base_id": 875,
+        "form_id": 0,
+        "name": "Eiscue",
+        "pokemon_type": [
+            "ice"
+        ],
+        "egg_group": [
+            "water_1",
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "indeedee": {
+        "base_id": 876,
+        "form_id": 0,
+        "name": "Indeedee",
+        "form_name": "Male",
+        "pokemon_type": [
+            "psychic",
+            "normal"
+        ],
+        "egg_group": [
+            "fairy"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "color": "purple",
+        "experience_group": "Fast",
+        "generation": 8
+    },
+    "indeedee-female": {
+        "base_id": 876,
+        "form_id": 1,
+        "name": "Indeedee",
+        "form_name": "Female",
+        "pokemon_type": [
+            "psychic",
+            "normal"
+        ],
+        "egg_group": [
+            "fairy"
+        ],
+        "gender": [
+            "fo"
+        ],
+        "gender_ratio": 8,
+        "color": "purple",
+        "experience_group": "Fast",
+        "generation": 8
+    },
+    "morpeko": {
+        "base_id": 877,
+        "form_id": 0,
+        "name": "Morpeko",
+        "pokemon_type": [
+            "electric",
+            "dark"
+        ],
+        "egg_group": [
+            "field",
+            "fairy"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "cufant": {
+        "base_id": 878,
+        "form_id": 0,
+        "name": "Cufant",
+        "pokemon_type": [
+            "steel"
+        ],
+        "egg_group": [
+            "field",
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                879,
+                0
+            ]
+        ]
+    },
+    "copperajah": {
+        "base_id": 879,
+        "form_id": 0,
+        "name": "Copperajah",
+        "pokemon_type": [
+            "steel"
+        ],
+        "egg_group": [
+            "field",
+            "mineral"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "has_gigantamax": true,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "dracozolt": {
+        "base_id": 880,
+        "form_id": 0,
+        "name": "Dracozolt",
+        "pokemon_type": [
+            "electric",
+            "dragon"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "green",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "arctozolt": {
+        "base_id": 881,
+        "form_id": 0,
+        "name": "Arctozolt",
+        "pokemon_type": [
+            "electric",
+            "ice"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "dracovish": {
+        "base_id": 882,
+        "form_id": 0,
+        "name": "Dracovish",
+        "pokemon_type": [
+            "water",
+            "dragon"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "green",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "arctovish": {
+        "base_id": 883,
+        "form_id": 0,
+        "name": "Arctovish",
+        "pokemon_type": [
+            "water",
+            "ice"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "duraludon": {
+        "base_id": 884,
+        "form_id": 0,
+        "name": "Duraludon",
+        "pokemon_type": [
+            "steel",
+            "dragon"
+        ],
+        "egg_group": [
+            "mineral",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "has_gigantamax": true,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "dreepy": {
+        "base_id": 885,
+        "form_id": 0,
+        "name": "Dreepy",
+        "pokemon_type": [
+            "dragon",
+            "ghost"
+        ],
+        "egg_group": [
+            "amorphous",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Slow",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                886,
+                0
+            ]
+        ]
+    },
+    "drakloak": {
+        "base_id": 886,
+        "form_id": 0,
+        "name": "Drakloak",
+        "pokemon_type": [
+            "dragon",
+            "ghost"
+        ],
+        "egg_group": [
+            "amorphous",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Slow",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                887,
+                0
+            ]
+        ]
+    },
+    "dragapult": {
+        "base_id": 887,
+        "form_id": 0,
+        "name": "Dragapult",
+        "pokemon_type": [
+            "dragon",
+            "ghost"
+        ],
+        "egg_group": [
+            "amorphous",
+            "dragon"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "zacian": {
+        "base_id": 888,
+        "form_id": 0,
+        "name": "Zacian",
+        "form_name": "Hero of Many Battles",
+        "pokemon_type": [
+            "fairy"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "zacian-crowned": {
+        "base_id": 888,
+        "form_id": 1,
+        "name": "Zacian",
+        "form_name": "Crowned Sword",
+        "pokemon_type": [
+            "fairy",
+            "steel"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "zamazenta": {
+        "base_id": 889,
+        "form_id": 0,
+        "name": "Zamazenta",
+        "form_name": "Hero of Many Battles",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "red",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "zamazenta-crowned": {
+        "base_id": 889,
+        "form_id": 1,
+        "name": "Zamazenta",
+        "form_name": "Crowned Shield",
+        "pokemon_type": [
+            "fighting",
+            "steel"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "red",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "eternatus": {
+        "base_id": 890,
+        "form_id": 0,
+        "name": "Eternatus",
+        "pokemon_type": [
+            "poison",
+            "dragon"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "purple",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "kubfu": {
+        "base_id": 891,
+        "form_id": 0,
+        "name": "Kubfu",
+        "pokemon_type": [
+            "fighting"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "is_sublegendary": true,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 8,
+        "evolution_ids": [
+            [
+                892,
+                0
+            ],
+            [
+                892,
+                1
+            ]
+        ]
+    },
+    "urshifu": {
+        "base_id": 892,
+        "form_id": 0,
+        "name": "Urshifu",
+        "form_name": "Single Strike Style",
+        "pokemon_type": [
+            "fighting",
+            "dark"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "has_gigantamax": true,
+        "is_sublegendary": true,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "urshifu-rapid-strike": {
+        "base_id": 892,
+        "form_id": 1,
+        "name": "Urshifu",
+        "form_name": "Rapid Strike Style",
+        "pokemon_type": [
+            "fighting",
+            "water"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 1,
+        "has_gigantamax": true,
+        "is_sublegendary": true,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "zarude": {
+        "base_id": 893,
+        "form_id": 0,
+        "name": "Zarude",
+        "pokemon_type": [
+            "dark",
+            "grass"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "black",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "regieleki": {
+        "base_id": 894,
+        "form_id": 0,
+        "name": "Regieleki",
+        "pokemon_type": [
+            "electric"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "yellow",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "regidrago": {
+        "base_id": 895,
+        "form_id": 0,
+        "name": "Regidrago",
+        "pokemon_type": [
+            "dragon"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "green",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "glastrier": {
+        "base_id": 896,
+        "form_id": 0,
+        "name": "Glastrier",
+        "pokemon_type": [
+            "ice"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "spectrier": {
+        "base_id": 897,
+        "form_id": 0,
+        "name": "Spectrier",
+        "pokemon_type": [
+            "ghost"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_sublegendary": true,
+        "color": "black",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "calyrex": {
+        "base_id": 898,
+        "form_id": 0,
+        "name": "Calyrex",
+        "pokemon_type": [
+            "psychic",
+            "grass"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "green",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "calyrex-ice": {
+        "base_id": 898,
+        "form_id": 1,
+        "name": "Ice Rider Calyrex",
+        "pokemon_type": [
+            "psychic",
+            "ice"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "white",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "calyrex-shadow": {
+        "base_id": 898,
+        "form_id": 2,
+        "name": "Shadow Rider Calyrex",
+        "pokemon_type": [
+            "psychic",
+            "ghost"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "uk"
+        ],
+        "gender_ratio": -1,
+        "is_legendary": true,
+        "color": "black",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "wyrdeer": {
+        "base_id": 899,
+        "form_id": 0,
+        "name": "Wyrdeer",
+        "pokemon_type": [
+            "normal",
+            "psychic"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "kleavor": {
+        "base_id": 900,
+        "form_id": 0,
+        "name": "Kleavor",
+        "pokemon_type": [
+            "bug",
+            "rock"
+        ],
+        "egg_group": [
+            "bug"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "ursaluna": {
+        "base_id": 901,
+        "form_id": 0,
+        "name": "Ursaluna",
+        "pokemon_type": [
+            "ground",
+            "normal"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "basculegion": {
+        "base_id": 902,
+        "form_id": 0,
+        "name": "Basculegion",
+        "form_name": "Male",
+        "pokemon_type": [
+            "water",
+            "ghost"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "md"
+        ],
+        "gender_ratio": 0,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "basculegion-female": {
+        "base_id": 902,
+        "form_id": 1,
+        "name": "Basculegion",
+        "form_name": "Female",
+        "pokemon_type": [
+            "water",
+            "ghost"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "fd"
+        ],
+        "gender_ratio": 8,
+        "color": "green",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "sneasler": {
+        "base_id": 903,
+        "form_id": 0,
+        "name": "Sneasler",
+        "pokemon_type": [
+            "fighting",
+            "poison"
+        ],
+        "egg_group": [
+            "field"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 8
+    },
+    "overqwil": {
+        "base_id": 904,
+        "form_id": 0,
+        "name": "Overqwil",
+        "pokemon_type": [
+            "dark",
+            "poison"
+        ],
+        "egg_group": [
+            "water_2"
+        ],
+        "gender": [
+            "mf"
+        ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Fast",
+        "generation": 8
+    },
+    "enamorus": {
+        "base_id": 905,
+        "form_id": 0,
+        "name": "Enamorus",
+        "form_name": "Incarnate Form",
+        "pokemon_type": [
+            "fairy",
+            "flying"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "fd"
+        ],
+        "gender_ratio": 8,
+        "is_sublegendary": true,
+        "color": "pink",
+        "experience_group": "Slow",
+        "generation": 8
+    },
+    "enamorus-therian": {
+        "base_id": 905,
+        "form_id": 1,
+        "name": "Enamorus",
+        "form_name": "Therian Forme",
+        "pokemon_type": [
+            "fairy",
+            "flying"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "fd"
+        ],
+        "gender_ratio": 8,
+        "is_sublegendary": true,
+        "color": "pink",
+        "experience_group": "Slow",
+        "generation": 8
+    }
+};
