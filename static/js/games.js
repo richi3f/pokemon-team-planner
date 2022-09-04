@@ -145,6 +145,11 @@ export default {
         "gen": 8,
         "dex_slugs": ["hisui"]
     },
+    "sv": {
+        "disabled": true,
+        "gen": 8,
+        "versions": [{ "slug": "scarlet", "name": "Scarlet" }, { "slug": "violet", "name": "Violet" }]
+    },
     "home": {
         "name": "Pokémon HOME",
         "gen": 8,
