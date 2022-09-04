@@ -123,7 +123,15 @@ function populateGameList( container ) {
  * @returns {string}
  */
 function getGameName( game ) {
-    return game.name || game.versions.map( ver => "Pokémon " + ver.name ).join( " and " );
+    if ( game.name == null ) {
+        const versions = game.versions.map( ver => "Pokémon " + ver.name );
+        if ( game.versions.length > 2 ) {
+            versions[ versions.length - 1 ] = "and " + versions[ versions.length - 1 ];
+            return versions.join( ", " );
+        }
+        return versions.join( " and " );
+    }
+    return game.name;
 }
 
 
@@ -265,7 +273,7 @@ function populateTeamSlot( event_or_slug ) {
     var gmax = slug.endsWith( "-gmax" );
 
     const pokemon = pokemonData[ gmax ? slug.substring( 0, slug.length - 5 ) : slug ];
-    const type = getPokemonType( pokemon );pokemon.type
+    const type = getPokemonType( pokemon );
     slot.dataset.type = type;
     slot.classList.remove( "empty" );
     slot.dataset.slug = slug;
@@ -277,8 +285,8 @@ function populateTeamSlot( event_or_slug ) {
 
     slot.querySelector( ".name" ).innerHTML = name;
 
-    if ( pokemon.form ) {
-        slot.querySelector( ".form" ).innerHTML = pokemon.form;
+    if ( pokemon.form_name ) {
+        slot.querySelector( ".form" ).innerHTML = pokemon.form_name;
     }
 
     var span = slot.querySelectorAll( ".type" );
@@ -345,7 +353,7 @@ function populateTeamSlot( event_or_slug ) {
  */
 function getPokemonRenderUrl( pokemon, gmax = false ) {
     return BASE_IMG + [
-        String( pokemon.id ).padStart( 4, "0" ),
+        String( pokemon.base_id ).padStart( 4, "0" ),
         String( pokemon.form_id ).padStart( 3, "0" ),
         ( gmax && pokemon.gender.length > 1 ) ? "mf" : pokemon.gender[ 0 ],
         gmax ? "g" : "n"
@@ -445,7 +453,7 @@ function populateDex( ol, dexEntry ) {
         ids.forEach( id => {
             const [ base_id, form_id] = id;
             const [ slug, pokemon ] = entries.find(
-                tup => tup[ 1 ].id === base_id && tup[ 1 ].form_id === form_id
+                tup => tup[ 1 ].base_id === base_id && tup[ 1 ].form_id === form_id
             );
             createPokemonEntry( slug, pokemon ).forEach( li => {
                 ol.append( li );
@@ -470,7 +478,7 @@ function createPokemonEntry( slug, pokemon ) {
     button.addEventListener( "click", populateTeamSlot );
 
     li.dataset.slug = slug;
-    li.dataset.id = pokemon.id;
+    li.dataset.id = pokemon.base_id;
     li.dataset.formId = pokemon.form_id;
     li.setAttribute( "title", pokemon.name );
 
@@ -479,7 +487,7 @@ function createPokemonEntry( slug, pokemon ) {
     img.setAttribute( "loading", "lazy" );
 
     // If Pokémon can Gigantamax, duplicate its entry
-    if ( gameData[ currentGame ].gmax && pokemon.gmax ) {
+    if ( gameData[ currentGame ].gmax && pokemon.has_gigantamax ) {
         const clone = li.cloneNode( true );
         clone.dataset.slug = slug + "-gmax";
         clone.querySelector( "button" ).addEventListener( "click", populateTeamSlot );
@@ -496,7 +504,7 @@ function completePokemonData() {
     const pokemonEntries = Object.entries( pokemonData );
     const typeData = getCurrentTypeData();
     Object.values( pokemonData ).filter(
-        pokemon => isInDex( pokemon.id, pokemon.form_id )
+        pokemon => isInDex( pokemon.base_id, pokemon.form_id )
     ).forEach( pokemon => {
         const type = getPokemonType( pokemon );
         const type1 = type[ 0 ];
@@ -530,8 +538,8 @@ function completePokemonData() {
         }
         // Check if Pokémon evolves, if it does set fully-evolved to false
         pokemon.fully_evolved = true
-        if ( pokemon.evolves ) {
-            pokemon.fully_evolved = !pokemon.evolves.some( id => {
+        if ( pokemon.evolution_ids ) {
+            pokemon.fully_evolved = !pokemon.evolution_ids.some( id => {
                 const [ base_id, form_id ] = id;
                 // Check if evolution is available in dex (some evolutions may not be available in certain dexes)
                 return isInDex( base_id, form_id );
@@ -543,7 +551,7 @@ function completePokemonData() {
         ids.forEach( id => {
             const [ base_id, form_id ] = id;
             const [ slug, pokemon ] = pokemonEntries.find(
-                tup => tup[ 1 ].id === base_id && tup[ 1 ].form_id === form_id
+                tup => tup[ 1 ].base_id === base_id && tup[ 1 ].form_id === form_id
             );
             if ( pokemon.version == null ) {
                 pokemon.version = [];
@@ -583,7 +591,7 @@ function isInDex( base_id, form_id ) {
 function getPokemonType( pokemon ) {
     if ( pokemon.past_type == null
         || ( gameData[ currentGame ].gen >= pokemon.past_type.generation ) ) {
-        return pokemon.type;
+        return pokemon.pokemon_type;
     }
     return pokemon.past_type.pokemon_type;
 }
@@ -626,7 +634,7 @@ function populateFilters() {
             dropdown.append( createCheckbox( "version", version.name, version.slug ) );
         });
         if ( gameData[ currentGame ].transfer ) {
-            dropdown.append( createCheckbox( "version", "Transfer-Only", "transfer_" + currentGame, false ) );
+            dropdown.append( createCheckbox( "version", "Transfer-Only", "transfer_" + currentGame ) );
         }
     }
     // Exclude Type
@@ -637,10 +645,10 @@ function populateFilters() {
     });
     // Category
     dropdown = createFilter( filters, "tag", "Tag" );
-    dropdown.append( createCheckbox( "tag", "Non-Legendary", "nonlegendary" ) );
-    dropdown.append( createCheckbox( "tag", "Sub-Legendary", "sublegendary" ) );
-    dropdown.append( createCheckbox( "tag", "Legendary", "legendary" ) );
-    dropdown.append( createCheckbox( "tag", "Mythical", "mythical" ) );
+    dropdown.append( createCheckbox( "tag", "Non-Legendary", "is_nonlegendary" ) );
+    dropdown.append( createCheckbox( "tag", "Sub-Legendary", "is_sublegendary" ) );
+    dropdown.append( createCheckbox( "tag", "Legendary", "is_legendary" ) );
+    dropdown.append( createCheckbox( "tag", "Mythical", "is_mythical" ) );
     if ( gameData[ currentGame ].gmax ) dropdown.append(
         createCheckbox( "tag", "Gigantamax", "gmax" )
     );
@@ -914,7 +922,7 @@ function pokemonIsInGeneration( pokemon, is_gigantamax, generations ) {
         && (
             generations.includes( "all" )
             || ( is_gigantamax && generations.includes( "8" ) )
-            || ( !is_gigantamax && generations.includes( pokemon.gen.toString() ) )
+            || ( !is_gigantamax && generations.includes( pokemon.generation.toString() ) )
         )
     );
 }
@@ -931,8 +939,8 @@ function pokemonIsEvolutionaryStage( pokemon, stages ) {
         && (
             stages.includes( "all" )
             || ( stages.includes( "nfe" ) && !pokemon.fully_evolved )
-            || ( stages.includes( "fe" ) && pokemon.fully_evolved && !pokemon.mega )
-            || ( stages.includes( "mega" ) && pokemon.mega )
+            || ( stages.includes( "fe" ) && pokemon.fully_evolved && !pokemon.is_mega )
+            || ( stages.includes( "mega" ) && pokemon.is_mega )
         )
     );
 }
@@ -953,10 +961,10 @@ function pokemonIsTagged( pokemon, is_gigantamax, tags ) {
                 ? tags.includes( "gmax" )
                 : (
                     (
-                        tags.includes( "nonlegendary" )
-                        && !pokemon.sublegendary
-                        && !pokemon.legendary
-                        && !pokemon.mythical
+                        tags.includes( "is_nonlegendary" )
+                        && !pokemon.is_sublegendary
+                        && !pokemon.is_legendary
+                        && !pokemon.is_mythical
                     )
                     || tags.filter( tag => tag !== "gmax" ).some( tag => tag in pokemon )
                 )
