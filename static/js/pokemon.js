@@ -880,7 +880,7 @@ export default {
     "nidoran-f": {
         "base_id": 29,
         "form_id": 0,
-        "name": "Nidoran\u00e2\u2122\u20ac",
+        "name": "Nidoran♀",
         "pokemon_type": [
             "poison"
         ],
@@ -948,7 +948,7 @@ export default {
     "nidoran-m": {
         "base_id": 32,
         "form_id": 0,
-        "name": "Nidoran\u00e2\u2122\u201a",
+        "name": "Nidoran♂",
         "pokemon_type": [
             "poison"
         ],
@@ -11408,6 +11408,7 @@ export default {
         "base_id": 421,
         "form_id": 1,
         "name": "Cherrim",
+        "form_name": "Sunshine Form",
         "pokemon_type": [
             "grass"
         ],
@@ -14804,6 +14805,7 @@ export default {
         "base_id": 555,
         "form_id": 0,
         "name": "Darmanitan",
+        "form_name": "Standard Mode",
         "pokemon_type": [
             "fire"
         ],
@@ -14822,6 +14824,7 @@ export default {
         "base_id": 555,
         "form_id": 2,
         "name": "Galarian Darmanitan",
+        "form_name": "Standard Mode",
         "pokemon_type": [
             "ice"
         ],
@@ -16935,7 +16938,7 @@ export default {
         "base_id": 641,
         "form_id": 0,
         "name": "Tornadus",
-        "form_name": "Incarnate Form",
+        "form_name": "Incarnate Forme",
         "pokemon_type": [
             "flying"
         ],
@@ -16975,7 +16978,7 @@ export default {
         "base_id": 642,
         "form_id": 0,
         "name": "Thundurus",
-        "form_name": "Incarnate Form",
+        "form_name": "Incarnate Forme",
         "pokemon_type": [
             "electric",
             "flying"
@@ -17057,7 +17060,7 @@ export default {
         "base_id": 645,
         "form_id": 0,
         "name": "Landorus",
-        "form_name": "Incarnate Form",
+        "form_name": "Incarnate Forme",
         "pokemon_type": [
             "ground",
             "flying"
@@ -17159,6 +17162,7 @@ export default {
         "base_id": 647,
         "form_id": 0,
         "name": "Keldeo",
+        "form_name": "Ordinary Form",
         "pokemon_type": [
             "water",
             "fighting"
@@ -17179,6 +17183,7 @@ export default {
         "base_id": 648,
         "form_id": 0,
         "name": "Meloetta",
+        "form_name": "Aria Forme",
         "pokemon_type": [
             "normal",
             "psychic"
@@ -17416,6 +17421,25 @@ export default {
         "experience_group": "Medium Slow",
         "generation": 6
     },
+    "greninja-ash": {
+        "base_id": 658,
+        "form_id": 2,
+        "name": "Ash-Greninja",
+        "pokemon_type": [
+            "water",
+            "dark"
+        ],
+        "egg_group": [
+            "undiscovered"
+        ],
+        "gender": [
+            "mo"
+        ],
+        "gender_ratio": 0,
+        "color": "blue",
+        "experience_group": "Medium Slow",
+        "generation": 7
+    },
     "bunnelby": {
         "base_id": 659,
         "form_id": 0,
@@ -17644,7 +17668,7 @@ export default {
     "flabebe": {
         "base_id": 669,
         "form_id": 0,
-        "name": "Flab\u00c3\u00a9b\u00c3\u00a9",
+        "name": "Flabébé",
         "form_name": "Red Flower",
         "pokemon_type": [
             "fairy"
@@ -17936,6 +17960,7 @@ export default {
         "base_id": 681,
         "form_id": 1,
         "name": "Aegislash",
+        "form_name": "Blade Forme",
         "pokemon_type": [
             "steel",
             "ghost"
@@ -18611,6 +18636,7 @@ export default {
         "base_id": 710,
         "form_id": 0,
         "name": "Pumpkaboo",
+        "form_name": "Average Size",
         "pokemon_type": [
             "ghost",
             "grass"
@@ -18636,6 +18662,7 @@ export default {
         "base_id": 711,
         "form_id": 0,
         "name": "Gourgeist",
+        "form_name": "Average Size",
         "pokemon_type": [
             "ghost",
             "grass"
@@ -18803,6 +18830,7 @@ export default {
         "base_id": 718,
         "form_id": 0,
         "name": "Zygarde",
+        "form_name": "50% Forme",
         "pokemon_type": [
             "dragon",
             "ground"
@@ -19628,6 +19656,7 @@ export default {
         "base_id": 746,
         "form_id": 1,
         "name": "Wishiwashi",
+        "form_name": "School Form",
         "pokemon_type": [
             "water"
         ],
@@ -23266,7 +23295,7 @@ export default {
         "base_id": 905,
         "form_id": 0,
         "name": "Enamorus",
-        "form_name": "Incarnate Form",
+        "form_name": "Incarnate Forme",
         "pokemon_type": [
             "fairy",
             "flying"
