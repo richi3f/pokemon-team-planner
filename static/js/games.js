@@ -51,8 +51,8 @@ export default {
         "gen": 4,
         "dex_slugs": ["johto_hgss", "national_hgss"],
         "versions": [
-            { "slug": "heartgold", "name": "Heart Gold" },
-            { "slug": "soulsilver", "name": "Soul Silver" },
+            { "slug": "heartgold", "name": "HeartGold" },
+            { "slug": "soulsilver", "name": "SoulSilver" },
         ],
         "transfer": true
     },
@@ -78,47 +78,61 @@ export default {
     },
     "xy": {
         "gen": 6,
-        "dex_slugs": ["kalos_central", "kalos_coastal", "kalos_mountain"],
+        "dex_slugs": [
+            "kalos_central",
+            "kalos_coastal",
+            "kalos_mountain",
+            "national_xy"
+        ],
         "mega": true,
         "versions": [
             { "slug": "x", "name": "X" },
             { "slug": "y", "name": "Y" }
-        ]
+        ],
+        "transfer": true
     },
     "oras": {
         "gen": 6,
-        "dex_slugs": ["hoenn_oras"],
+        "dex_slugs": ["hoenn_oras", "national_oras"],
         "mega": true,
         "versions": [
-            { "slug": "or", "name": "Omega Ruby" },
-            { "slug": "as", "name": "Alpha Sapphire" }
-        ]
+            { "slug": "omega_ruby", "name": "Omega Ruby" },
+            { "slug": "alpha_sapphire", "name": "Alpha Sapphire" }
+        ],
+        "transfer": true
     },
     "sm": {
         "gen": 7,
-        "dex_slugs": ["alola", "alola_scan"],
+        "dex_slugs": ["alola", "alola_scan", "national_sm"],
         "mega": true,
         "versions": [
-            { "slug": "s", "name": "Sun" },
-            { "slug": "m", "name": "Moon" }
-        ]
+            { "slug": "sun", "name": "Sun" },
+            { "slug": "moon", "name": "Moon" }
+        ],
+        "transfer": true
     },
     "usum": {
         "gen": 7,
-        "dex_slugs": ["alola_usum", "alola_scan_usum", "alola_wormhole_usum"],
+        "dex_slugs": [
+            "alola_usum",
+            "alola_scan_usum",
+            "alola_wormhole_usum",
+            "national_usum"
+        ],
         "mega": true,
         "versions": [
-            { "slug": "us", "name": "Ultra Sun" },
-            { "slug": "um", "name": "Ultra Moon" }
-        ]
+            { "slug": "ultra_sun", "name": "Ultra Sun" },
+            { "slug": "ultra_moon", "name": "Ultra Moon" }
+        ],
+        "transfer": true
     },
     "lgpe": {
         "gen": 7,
         "dex_slugs": ["kanto_lgpe"],
         "mega": true,
         "versions": [
-            { "slug": "p", "name": "Let's Go Pikachu!" },
-            { "slug": "e", "name": "Let's Go Eevee!" }
+            { "slug": "lets_go_pikachu", "name": "Let's Go Pikachu!" },
+            { "slug": "lets_go_eevee", "name": "Let's Go Eevee!" }
         ]
     },
     "swsh": {
@@ -126,17 +140,17 @@ export default {
         "dex_slugs": ["galar", "galar_armor", "galar_crown", "galar_other"],
         "gmax": true,
         "versions": [
-            { "slug": "sw", "name": "Sword" },
-            { "slug": "sh", "name": "Shield" }
+            { "slug": "sword", "name": "Sword" },
+            { "slug": "shield", "name": "Shield" }
         ],
         "transfer": true
     },
     "bdsp": {
         "gen": 8,
-        "dex_slugs": ["sinnoh_bdsp", "sinnoh_other"],
+        "dex_slugs": ["sinnoh", "national_bdsp"],
         "versions": [
-            { "slug": "bd", "name": "Brilliant Diamond" },
-            { "slug": "sp", "name": "Shining Pearl" }
+            { "slug": "brilliant_diamond", "name": "Brilliant Diamond" },
+            { "slug": "shining_pearl", "name": "Shining Pearl" }
         ],
         "transfer": true
     },
@@ -148,12 +162,26 @@ export default {
     "sv": {
         "disabled": true,
         "gen": 8,
-        "versions": [{ "slug": "scarlet", "name": "Scarlet" }, { "slug": "violet", "name": "Violet" }]
+        "versions": [
+            { "slug": "scarlet", "name": "Scarlet" },
+            { "slug": "violet", "name": "Violet" }
+        ]
     },
     "home": {
         "name": "Pokémon HOME",
         "gen": 8,
-        "dex_slugs": ["kanto_home", "johto_home", "hoenn_home", "sinnoh_home", "unova_home", "kalos_home", "alola_home", "galar_home", "hisui_home", "other_home"],
+        "dex_slugs": [
+            "kanto_home",
+            "johto_home",
+            "hoenn_home",
+            "sinnoh_home",
+            "unova_home",
+            "kalos_home",
+            "alola_home",
+            "galar_home",
+            "hisui_home",
+            "other_home"
+        ],
         "mega": true,
         "gmax": true
     }
