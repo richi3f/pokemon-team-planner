@@ -56,24 +56,25 @@ function buildPage() {
     populateDexes( main.lastElementChild );
     populateFilters();
     slugs.forEach( slug => populateTeamSlot( slug ) );
-    window.onscroll  = hideHead;
+    window.onscroll = shrinkHead;
 }
 
-function hideHead() {
+/**
+ * Shrink header when scrolling
+ */
+ function shrinkHead() {
     const head = document.getElementById( "head" );
-    const header = document.querySelector( "header" );
+    const target = document.getElementById( "pokedexes" ).getBoundingClientRect().top;
     const table = document.querySelector( ".table" );
-    const activeFilters = document.querySelectorAll( ".filter.active" )
+    const activeFilters = document.querySelectorAll( ".filter.active" );
     if (
-        document.documentElement.scrollTop > 750
+        target < 0 
         && table.classList.contains( "hidden" )
         && activeFilters.length === 0
     ) {
         head.classList.add( "head--sticky" );
-        header.classList.add( "hidden" );
     } else {
         head.classList.remove( "head--sticky" );
-        header.classList.remove( "hidden" );
     }
 }
 
