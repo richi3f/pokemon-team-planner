@@ -1,6 +1,14 @@
 
 /* General */
 
+@font-face {
+    font-family: 'icons';
+    src: url('icons.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
 body {
     background-color: #f0f0f0;
     font: 16px/1.5 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -274,12 +282,18 @@ button.button:focus {
 
 #team .list-pokemon img {
     width: 10em;
+    height: 10em;
     margin: 1em;
     filter: drop-shadow(0 0 0.5px #1b1b1b);
+    /*filter: drop-shadow(1px 0 0 black)
+            drop-shadow(0 1px 0 black)
+            drop-shadow(-1px 0 0 black)
+            drop-shadow(0 -1px 0 black);*/
 }
 
 #team .list-pokemon [data-slug$="-gmax"] img {
     width: 12em;
+    height: 12em;
     margin: 0;
 }
 
@@ -292,11 +306,11 @@ button.button:focus {
     padding: 0;
 }
 
-#team .list-pokemon li:not([data-slug=""]) {
+#team .list-pokemon li:not([data-slug=""]) :where(.wrap, .info) {
     cursor: no-drop;
 }
 
-#team .list-pokemon li:not([data-slug=""]):hover {
+#team .list-pokemon li:not([data-slug=""]).hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
 }
@@ -304,7 +318,6 @@ button.button:focus {
 .list li :where(.wrap, figure) {
     background-size: 600% 600%;
     background-image: url(./img/types_bg.png);
-    background-repeat: no-repeat;
 }
 
 .list li[data-type=""] :where(.wrap, figure) {
@@ -361,6 +374,39 @@ button.button:focus {
 .pokedex li.filtered,
 .pokedex li.picked {
     display: none;
+}
+
+
+.list li .toggles {
+    margin: 0.5em 0 0;
+    text-align: center;
+}
+
+.list li .toggles button {
+    font-family: 'icons';
+    background: #fff;
+    display: inline-block;
+    width: 1.5em;
+    font-size: 1em;
+    line-height: 1.5em;
+    border-radius: .75em;
+    filter: drop-shadow(0 0 1px #1b1b1b);
+    color: #ccc;
+    margin: 0.25em 0.5em;
+}
+
+.list li .toggles button.shiny.selected {
+    color: #E96D23;
+}
+
+.list li .toggles button.female {
+    color: #fff;
+    background: #EF547D;
+}
+
+.list li .toggles button.male {
+    color: #fff;
+    background: #3B71DC;
 }
 
 
@@ -948,6 +994,7 @@ footer {
 
     #team .list img {
         width: 5em !important;
+        height: 5em !important;
         margin: 0 auto !important;
     }
 
