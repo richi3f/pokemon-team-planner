@@ -47,13 +47,13 @@ function buildPage() {
             window.location.href = "../";
             return;
         }
-        populateGameList( main.firstElementChild );
+        populateGameList( document.getElementById( "head" ) );
         return;
     }
     completeTypeData();
     completePokemonData();
-    populateTeam( main.firstElementChild );
-    populateDexes( main.lastElementChild );
+    populateTeam( document.getElementById( "head" ) );
+    populateDexes( document.getElementById( "tail" ) );
     populateFilters();
     slugs.forEach( slug => populateTeamSlot( slug ) );
     window.onscroll = shrinkHead;
@@ -157,7 +157,6 @@ function getCurrentTypeData() {
 
 const BASE_IMG = IMG_PATH + "pokemon/";
 const UNKNOWN_IMG = BASE_IMG + "0000_000_uk_n.png";
-const POKEMON_INFO = ["name", "form", "type", "type"];
 
 /**
  * Populates the page with empty team slots.
@@ -181,35 +180,20 @@ function populateTeam( container ) {
     div.append( section );
     section.append( h2, ul );
 
-    var li = document.createElement( "li" );
-    li.classList.add( "empty" );
-    li.dataset.slug = "";
-    li.dataset.type = "";
-    li.addEventListener( "click", clearTeamSlot );
-
-    var wrap = document.createElement( "div" );
-    wrap.classList.add( "wrap" );
-    var fig = document.createElement( "figure" );
-    var img = document.createElement( "img" );
-    img.setAttribute( "src", UNKNOWN_IMG );
-    var info = document.createElement( "div" );
-    info.classList.add( "info" );
-
-    ul.append( li );
-    li.append( wrap, info );
-    wrap.append( fig );
-    fig.append( img );
-
-    for ( let i = 0 ; i < 4 ; i++ ) {
-        const span = document.createElement( "span" );
-        span.classList.add( POKEMON_INFO[ i ] );
-        if ( POKEMON_INFO[ i ] === "name" ) span.innerHTML = "???";
-        info.append( span );
-    }
-
-    for ( let i = 0 ; i < 5 ; i++ ) {
-        const clone = li.cloneNode( true )
-        clone.addEventListener( "click", clearTeamSlot );
+    const template = document.querySelector( "#team-slot" );
+    for ( let i = 0 ; i < 6 ; i++ ) {
+        const clone = template.content.cloneNode( true );
+        clone.querySelectorAll( ".wrap, .info" ).forEach( div => {
+            div.addEventListener( "click", clearTeamSlot );
+            div.addEventListener( "mouseenter", ( event ) => {
+                event.target.parentNode.classList.add( "hover" );
+            });
+            div.addEventListener( "mouseleave", ( event ) => {
+                event.target.parentNode.classList.remove( "hover" );
+            });
+        });
+        clone.querySelector( ".female" ).addEventListener( "click", toggleGender );
+        clone.querySelector( ".shiny" ).addEventListener( "click", toggleShiny );
         ul.append( clone );
     }
 
@@ -234,16 +218,34 @@ function populateTeam( container ) {
     button.id = "analysis";
     button.innerHTML = "Show Team Analysis";
     button.classList.add( "button" );
-    button.addEventListener( "click", () => {
+    button.addEventListener( "click", ( event ) => {
         if ( table.classList.contains( "hidden" ) ) {
-            button.innerHTML = "Hide Team Analysis";
+            event.target.innerHTML = "Hide Team Analysis";
             table.classList.remove( "hidden" );
         } else {
-            button.innerHTML = "Show Team Analysis";
+            event.target.innerHTML = "Show Team Analysis";
             table.classList.add( "hidden" );
         }
     });
     section.append( table );
+    buttonContainer.append( button );
+
+    // Create button to show advanced controls
+    button = document.createElement( "button" );
+    button.id = "toggles";
+    button.innerHTML = "Hide Toggles";
+    button.classList.add( "button" );
+    button.addEventListener( "click", ( event ) => {
+        document.querySelectorAll( ".toggles" ).forEach( div => {
+            if ( div.classList.contains( "hidden" ) ) {
+                event.target.innerHTML = "Hide Toggles";
+                div.classList.remove( "hidden" );
+            } else {
+                event.target.innerHTML = "Show Toggles";
+                div.classList.add( "hidden" );
+            }
+        });
+    });
     buttonContainer.append( button );
 
     createAnalysisTable( table );
@@ -272,7 +274,7 @@ function populateTeamSlot( event_or_slug ) {
     // Empty a team slot if team is full
     const slot = document.querySelector( "#slots li.empty" );
     if ( slot == null ) {
-        document.querySelector( "#slots li" ).click();
+        document.querySelector( "#slots li .wrap" ).click();
         return populateTeamSlot( slug );
     }
 
@@ -281,7 +283,7 @@ function populateTeamSlot( event_or_slug ) {
     const pokemon = pokemonData[ gmax ? slug.substring( 0, slug.length - 5 ) : slug ];
     const type = getPokemonType( pokemon );
     slot.dataset.type = type;
-    slot.classList.remove( "empty" );
+    slot.classList.remove( "empty", "hover" );
     slot.dataset.slug = slug;
 
     const name = ( gmax ? "Gigantamax " : "" ) + pokemon.name;
@@ -301,6 +303,15 @@ function populateTeamSlot( event_or_slug ) {
         span.innerHTML = ( type[ i ] ) ? capitalize( type[ i ] ) : "";
     });
 
+    const button = slot.querySelector( ".male, .female" );
+    if ( !gmax && pokemon.gender.length === 2 ) {
+        button.classList.remove( "hidden", "male" );
+        button.classList.add( "female" );
+        button.innerHTML = "&female;";
+    } else {
+        button.classList.add( "hidden" );
+    }
+    slot.querySelector( ".shiny" ).classList.remove( "hidden", "selected" );
 
     const li = document.querySelector( ".pokedex li[data-slug='" + slug + "']" );
     if ( li ) {
@@ -319,11 +330,14 @@ function populateTeamSlot( event_or_slug ) {
  function clearTeamSlot( event_or_slug ) {
     var slot = ( typeof event_or_slug === "string" )
         ? document.querySelector( "#slots li[data-slug='" + slug + "']" )
-        : event_or_slug.currentTarget;
+        : event_or_slug.currentTarget.parentNode;
 
     const slug = slot.dataset.slug;
+    if (slug === "") return;
+
     // Empty data
     slot.classList.add( "empty" );
+    slot.classList.remove( "hover" );
     slot.dataset.slug = "";
     slot.dataset.type = "";
 
@@ -337,6 +351,11 @@ function populateTeamSlot( event_or_slug ) {
         span.setAttribute( "class", "type" );
         span.innerHTML = "";
     });
+    const button = slot.querySelector( ".male, .female" );
+    button.classList.remove( "male" );
+    button.classList.add( "hidden", "female" );
+    button.innerHTML = "&female;";
+    slot.querySelector( ".shiny" ).classList.add( "hidden" );
 
     // Move to last place
     slot.parentNode.append( slot );
@@ -367,6 +386,59 @@ function getPokemonRenderUrl( pokemon, gmax = false ) {
 }
 
 /**
+ * Toggles the gender of a Pokémon.
+ * @param {Event|string} event_or_slug 
+ */
+function toggleGender( event_or_slug ) {
+    var slot = ( typeof event_or_slug === "string" )
+        ? document.querySelector( "#slots li[data-slug='" + slug + "']" )
+        : event_or_slug.currentTarget.closest( "li[data-slug]" );
+
+    const slug = slot.dataset.slug;
+    if ( pokemonData[ slug ].gender.length !== 2 ) return;
+
+    const button = slot.querySelector( ".male, .female" );
+    const img = slot.querySelector( "img" );
+    var src = img.getAttribute( "src" );
+    src = src.replace( /[fm]d/g, ( m ) => {
+        return { md: "fd", fd: "md" }[m]
+    });
+    img.setAttribute( "src", src );
+    if ( src.includes( "fd" ) ) {
+        button.classList.remove( "male" );
+        button.classList.add( "female" );
+        button.innerHTML = "&female;";
+    } else {
+        button.classList.add( "male" );
+        button.classList.remove( "female" );
+        button.innerHTML = "&male;";
+    }
+}
+
+/**
+ * Toggles a Pokémon's shinyness.
+ * @param {Event|slug} event_or_slug 
+ */
+function toggleShiny( event_or_slug ) {
+    var slot = ( typeof event_or_slug === "string" )
+        ? document.querySelector( "#slots li[data-slug='" + slug + "']" )
+        : event_or_slug.currentTarget.closest( "li[data-slug]" );
+
+    const img = slot.querySelector( "img" );
+    var src = img.getAttribute( "src" ).split("/");
+    var dir = "pokemon";
+    const button = slot.querySelector( ".shiny" );
+    if ( button.classList.contains( "selected" ) ) {
+        button.classList.remove( "selected" );
+    } else {
+        button.classList.add( "selected" );
+        dir = "shiny-pokemon";
+    }
+    src = [...src.slice(0, src.length - 2), dir, src[src.length - 1]].join( "/" );
+    img.setAttribute( "src", src );
+}
+
+/**
  * Randomly selects and adds up to 6 Pokémon to the current team.
  */
 function randomizeTeam() {
@@ -377,7 +449,9 @@ function randomizeTeam() {
         filterDex();
     }
     // Clear current team
-    document.querySelectorAll( "#slots li:not(.empty)" ).forEach( li => li.click() );
+    document.querySelectorAll( "#slots li:not(.empty) .wrap" ).forEach( li => {
+        li.click();
+    });
     // List Pokémon that can be added to the team
     const slugs = Array.from(
         document.querySelectorAll( ".pokedex li:not(.filtered):not(.picked)" )
