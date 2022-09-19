@@ -93,7 +93,7 @@ function populateGameList( container ) {
     const p = document.createElement( "p" );
     const ol = document.createElement( "ol" );
 
-    container.append( section );
+    container.querySelector( "header" ).after( section );
     section.append( h2, p, ol );
     section.id = "games";
     h2.innerHTML = "Games";
@@ -107,7 +107,7 @@ function populateGameList( container ) {
         const li = document.createElement( "li" );
         const a = document.createElement( "a" );
         const img = document.createElement( "img" );
-        const url = (game.disabled ? "#" : JS_PATH + "../../plan/#" + slug);
+        const url = ( game.disabled ? "#" : JS_PATH + "../../plan/#" + slug );
 
         ol.append( li );
         li.append( a );
@@ -333,7 +333,7 @@ function populateTeamSlot( event_or_slug ) {
         : event_or_slug.currentTarget.parentNode;
 
     const slug = slot.dataset.slug;
-    if (slug === "") return;
+    if ( slug === "" ) return;
 
     // Empty data
     slot.classList.add( "empty" );
@@ -434,7 +434,7 @@ function toggleShiny( event_or_slug ) {
         button.classList.add( "selected" );
         dir = "shiny-pokemon";
     }
-    src = [...src.slice(0, src.length - 2), dir, src[src.length - 1]].join( "/" );
+    src = [ ...src.slice( 0, src.length - 2 ), dir, src[ src.length - 1 ] ].join( "/" );
     img.setAttribute( "src", src );
 }
 
@@ -567,7 +567,8 @@ function createPokemonEntry( slug, pokemon ) {
     img.setAttribute( "loading", "lazy" );
 
     // If Pokémon can Gigantamax, duplicate its entry
-    if ( gameData[ currentGame ].gmax && pokemon.has_gigantamax ) {
+    if ( gameData[ currentGame ].gmax
+        && pokemon.has_gigantamax && !pokemon.is_cosmetic ) {
         const clone = li.cloneNode( true );
         clone.dataset.slug = slug + "-gmax";
         clone.querySelector( "button" ).addEventListener( "click", populateTeamSlot );
@@ -625,6 +626,24 @@ function completePokemonData() {
                 return isInDex( base_id, form_id );
             });
         }
+        // Check if Pokémon is non-legendary
+        if ( !( pokemon.is_sublegendary || pokemon.is_legendary || pokemon.is_mythical ) ) {
+            pokemon.is_nonlegendary = true;
+        }
+        // Check if Pokémon is cosmetic/battle-only/Arceus/Silvally
+        if (
+            ( pokemon.is_battle_only && !pokemon.is_mega )
+            || pokemon.is_cosmetic
+            || ( pokemon.form_id > 0
+                && ( pokemon.name === "Arceus" || pokemon.name === "Silvally")
+            )
+        ) {
+            pokemon.is_misc_form = true;
+        };
+        // Check if Pokémon is base form
+        if ( pokemon.is_mega || !pokemon.is_misc_form ) {
+            pokemon.is_not_misc_form = true;
+        };
     });
     Object.entries( versionData ).forEach( tup => {
         const [ version, ids ] = tup;
@@ -729,9 +748,16 @@ function populateFilters() {
     dropdown.append( createCheckbox( "tag", "Sub-Legendary", "is_sublegendary" ) );
     dropdown.append( createCheckbox( "tag", "Legendary", "is_legendary" ) );
     dropdown.append( createCheckbox( "tag", "Mythical", "is_mythical" ) );
-    if ( gameData[ currentGame ].gmax ) dropdown.append(
-        createCheckbox( "tag", "Gigantamax", "gmax" )
-    );
+    if ( gameData[ currentGame ].gen >= 2 ) {
+        const checkbox = createCheckbox( "tag", "All Forms", "is_not_misc_form" );
+        checkbox.classList.add( "hidden" );
+        checkbox.querySelector( "input" ).setAttribute( "readonly", "" );
+        dropdown.append( checkbox );
+        if ( gameData[ currentGame ].gmax ) dropdown.append(
+            createCheckbox( "tag", "Gigantamax", "gmax" )
+        );
+        dropdown.append( createCheckbox( "tag", "Misc. Forms", "is_misc_form", false ) );
+    }
     // Color
     dropdown = createFilter( filters, "color", "Color" );
     COLORS.forEach( value => {
@@ -739,6 +765,12 @@ function populateFilters() {
     })
     // Search
     createSearchBar( filters );
+    // Fire change event to hide misc. forms
+    const input = document.getElementById( "filter-tag-is_misc_form" );
+    if ( input != null ) {
+        const event = new Event( "change" );
+        input.dispatchEvent( event );
+    }
 }
 
 /**
@@ -812,7 +844,7 @@ function expandDropdown( event ) {
     const parent = event.currentTarget.parentNode;
     const active = parent.classList.contains( "active" );
     // Collapse all dropdown menus
-    document.querySelectorAll( ".filter" ).forEach( (filter) => {
+    document.querySelectorAll( ".filter" ).forEach( filter => {
         filter.classList.remove( "active" );
     });
     // Expand/collapse dropdown menu
@@ -889,7 +921,7 @@ function changeCheckbox( event ) {
     } else {
         // If target was "all", remove "active" class from all options
         if ( target.value === "all" ) {
-            document.querySelectorAll( selector ).forEach( (input) => {
+            document.querySelectorAll( selector ).forEach( input => {
                 input.checked = false;
                 input.parentNode.classList.remove( "active" );
             });
@@ -923,7 +955,7 @@ function changeCheckbox( event ) {
                 button.innerHTML = "1 Selected";
                 break;
             default:
-                button.innerHTML = String(checkedOptions.length) + " Selected";
+                button.innerHTML = String( checkedOptions.length ) + " Selected";
         }
     }
     filterDex();
@@ -1033,22 +1065,19 @@ function pokemonIsEvolutionaryStage( pokemon, stages ) {
  * @returns 
  */
 function pokemonIsTagged( pokemon, is_gigantamax, tags ) {
+    if ( tags.length === 0 ) return false;
+    if ( tags.includes( "all" ) ) return true;
+    const tag_group_a = tags.filter( tag => {
+        return !tag.includes( "misc_form" );
+    });
+    if ( tag_group_a.length === 0 ) return false;
+    const tag_group_b = difference( tags, tag_group_a );
     return (
-        tags.length > 0
-        && (
-            tags.includes( "all" ) || (
-                is_gigantamax
-                ? tags.includes( "gmax" )
-                : (
-                    (
-                        tags.includes( "is_nonlegendary" )
-                        && !pokemon.is_sublegendary
-                        && !pokemon.is_legendary
-                        && !pokemon.is_mythical
-                    )
-                    || tags.filter( tag => tag !== "gmax" ).some( tag => tag in pokemon )
-                )
-            )
+        is_gigantamax
+        ? tag_group_a.includes( "gmax" )
+        : (
+            tag_group_a.some( tag => tag in pokemon )
+            && tag_group_b.some( tag => tag in pokemon )
         )
     );
 }
