@@ -261,6 +261,26 @@ button.button:focus {
     width: 14rem;
 }
 
+/* FAQ */
+
+#faq dl {
+    margin: 2em;
+}
+
+#faq dl p {
+    text-align: left;
+    margin: 1em 0;
+    max-width: none;
+}
+
+#faq abbr {
+    text-decoration: none;
+}
+
+dt {
+    font-weight: 700;
+}
+
 /* Team */
 
 #head>.wrap {
@@ -277,7 +297,7 @@ button.button:focus {
 
 #head p {
     max-width: 75%;
-    margin: 0 auto;
+    margin: 1em auto;
 }
 
 #team .list-pokemon img {
