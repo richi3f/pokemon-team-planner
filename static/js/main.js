@@ -748,11 +748,11 @@ function populateFilters() {
     dropdown.append( createCheckbox( "tag", "Sub-Legendary", "is_sublegendary" ) );
     dropdown.append( createCheckbox( "tag", "Legendary", "is_legendary" ) );
     dropdown.append( createCheckbox( "tag", "Mythical", "is_mythical" ) );
+    const checkbox = createCheckbox( "tag", "All Forms", "is_not_misc_form" );
+    checkbox.classList.add( "hidden" );
+    checkbox.querySelector( "input" ).setAttribute( "readonly", "" );
+    dropdown.append( checkbox );
     if ( gameData[ currentGame ].gen >= 2 ) {
-        const checkbox = createCheckbox( "tag", "All Forms", "is_not_misc_form" );
-        checkbox.classList.add( "hidden" );
-        checkbox.querySelector( "input" ).setAttribute( "readonly", "" );
-        dropdown.append( checkbox );
         if ( gameData[ currentGame ].gmax ) dropdown.append(
             createCheckbox( "tag", "Gigantamax", "gmax" )
         );
