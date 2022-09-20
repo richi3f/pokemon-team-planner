@@ -1072,8 +1072,12 @@ footer {
         margin: 1em 0;
     }
 
-    #head p {
+    #head header p {
         display: none;
+    }
+
+    #head dd {
+        margin: 0;
     }
 
     #team-planner h1 .game.name {
