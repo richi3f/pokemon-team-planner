@@ -160,12 +160,13 @@ export default {
         "dex_slugs": ["hisui"]
     },
     "sv": {
-        "disabled": true,
-        "gen": 8,
+        "gen": 9,
+        "dex_slugs": ["paldea"],
         "versions": [
             { "slug": "scarlet", "name": "Scarlet" },
             { "slug": "violet", "name": "Violet" }
-        ]
+        ],
+        "tera": true
     },
     "home": {
         "name": "Pokémon HOME",
