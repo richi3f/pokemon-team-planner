@@ -65,11 +65,11 @@ function buildPage() {
  function shrinkHead() {
     const head = document.getElementById( "head" );
     const target = document.getElementById( "pokedexes" ).getBoundingClientRect().top;
-    const table = document.querySelector( ".table" );
+    const analysis = document.querySelector( "#type-analysis" );
     const activeFilters = document.querySelectorAll( ".filter.active" );
     if (
         target < 0 
-        && table.classList.contains( "hidden" )
+        && analysis.classList.contains( "hidden" )
         && activeFilters.length === 0
     ) {
         head.classList.add( "head--sticky" );
@@ -209,9 +209,19 @@ function populateTeam( container ) {
     button.addEventListener( "click", randomizeTeam );
     buttonContainer.append( button );
 
-    // Create analysis table
-    const table = document.createElement( "div" );
-    table.classList.add( "table", "hidden" );
+    // Create analysis section
+    const analysis = document.createElement( "div" );
+    analysis.setAttribute( "id", "type-analysis" );
+    const defTallies = document.createElement( "div" );
+    const defHeading = document.createElement( "h3" );
+    defHeading.innerHTML = "Team Defense";
+    createTallies( defTallies );
+    const atkTallies = defTallies.cloneNode( true );
+    defTallies.classList.add( "defense" );
+    atkTallies.classList.add( "attack" );
+    const atkHeading = document.createElement( "h3" );
+    atkHeading.innerHTML = "Team Offense";
+    analysis.append( defHeading, defTallies, atkHeading, atkTallies );
 
     // Create button to hide/show team analysis
     button = document.createElement( "button" );
@@ -219,15 +229,15 @@ function populateTeam( container ) {
     button.innerHTML = "Show Team Analysis";
     button.classList.add( "button" );
     button.addEventListener( "click", ( event ) => {
-        if ( table.classList.contains( "hidden" ) ) {
+        if ( analysis.classList.contains( "hidden" ) ) {
             event.target.innerHTML = "Hide Team Analysis";
-            table.classList.remove( "hidden" );
+            analysis.classList.remove( "hidden" );
         } else {
             event.target.innerHTML = "Show Team Analysis";
-            table.classList.add( "hidden" );
+            analysis.classList.add( "hidden" );
         }
     });
-    section.append( table );
+    section.append( analysis );
     buttonContainer.append( button );
 
     // Create button to show advanced controls
@@ -247,8 +257,6 @@ function populateTeam( container ) {
         });
     });
     buttonContainer.append( button );
-
-    createAnalysisTable( table );
 }
 
 /**
@@ -319,7 +327,7 @@ function populateTeamSlot( event_or_slug ) {
         toggleEmptyDex();
     }
 
-    updateAnalysisTable();
+    updateTeamAnalysis();
     updateTeamHash();
 }
 
@@ -366,7 +374,7 @@ function populateTeamSlot( event_or_slug ) {
         toggleEmptyDex();
     }
 
-    updateAnalysisTable();
+    updateTeamAnalysis();
     updateTeamHash();
 }
 
@@ -1151,7 +1159,6 @@ function toggleEmptyDex() {
 //#region Team Analysis
 
 const TYPE_PATH = IMG_PATH + "type/";
-const TABLE_INDEX = [ "", "weaknesses", "immunities", "resistances", "coverage" ];
 
 /**
  * Mutates the type data, to include what types each type is weakened by.
@@ -1170,75 +1177,29 @@ function completeTypeData() {
 }
 
 /**
- * Creates and returns a table with columns for each given type and 4 rows:
- * weaknesses, immunities, resistances, and coverage.
- * @param {Array} typeSlugs 
- * @returns {HTMLElement} table
+ * Creates tallies for each type and appends to container.
+ * @param {HTMLElement} container
  */
-function createTable( typeSlugs ) {
-    const table = document.createElement( "table" );
-    const colgroup = document.createElement( "colgroup" );
-    const thead = document.createElement( "thead" );
-    const tbody = document.createElement( "tbody" );
-    table.append( colgroup, thead, tbody );
-    TABLE_INDEX.forEach( row => {
-        const isHeader = row === "";
-        const tr = document.createElement( "tr" );
-        const td = document.createElement( "th" );
-        tr.append( td );
-        if ( isHeader ) {
-            colgroup.append( document.createElement( "col" ) );
-            thead.append( tr );
-        } else {
-            tbody.append( tr );
-            tr.classList.add( row );
-            td.innerHTML = capitalize( row );
-        }
-        typeSlugs.forEach( ( slug, j ) => {
-            const td = document.createElement( isHeader ? "th" : "td" );
-            if ( isHeader ) {
-                colgroup.append( document.createElement( "col" ) );
-                const img = document.createElement( "img" );
-                img.setAttribute( "src", TYPE_PATH + slug + ".png" );
-                img.setAttribute( "alt", capitalize( slug ) );
-                td.append( img );
-            } else {
-                td.innerHTML = "0";
-                td.addEventListener( "mouseover", () => {
-                    tr.classList.add( "hover" );
-                    colgroup.children[ j + 1 ].classList.add( "hover" );
-                });
-                td.addEventListener( "mouseout", () => {
-                    tr.classList.remove( "hover" );
-                    colgroup.children[ j + 1 ].classList.remove( "hover" );
-                });
-            }
-            
-            tr.append( td );
-            td.classList.add( slug );
-        });
+function createTallies( container ) {
+    const template = document.querySelector( "#type-tally" );
+    template.innerHTML = template.innerHTML.replace( />\s+</g, "><" );
+    const typeData = getCurrentTypeData();
+    Object.keys( typeData ).forEach( type => {
+        const clone = template.content.cloneNode( true );
+        const span = clone.querySelector( ".type" );
+        const typeName = capitalize( type );
+        clone.querySelector( "div" ).classList.add( type );
+        span.innerHTML = capitalize( typeName );
+        span.setAttribute( "title", typeName );
+        container.append( clone );
     });
-    return table;
 }
 
 /**
- * Creates a split table for the current team's battle properties.
- * @param {HTMLElement} container 
+ * Calculates how many Pokémon resist, are weak to, or can deal super effective
+ * damage to each type.
  */
-function createAnalysisTable( container ) {
-    // Split table vertically
-    const types = Object.keys( getCurrentTypeData() );
-    const typesPerTable = types.length / 2;
-    container.append(
-        createTable( types.slice( 0, typesPerTable ) ),
-        createTable( types.slice( typesPerTable ) )
-    );
-}
-
-/**
- * 
- */
-function updateAnalysisTable() {
+function updateTeamAnalysis() {
     // Fetch current Pokémon slugs
     const slots = document.querySelectorAll( "#slots li:not(.empty)" );
     const slugs = Array.from( slots ).map( li => {
@@ -1248,18 +1209,46 @@ function updateAnalysisTable() {
         }
         return slug;
     });
-    // Update analysis row for each type
-    TABLE_INDEX.slice( 1 ).forEach( row => {
-        Object.keys( getCurrentTypeData() ).forEach( typeSlug => {
-            // Start counter
-            var count = 0;
-            // Increase count for each matching Pokémon
-            slugs.forEach( slug => {
-                if ( pokemonData[ slug ][ row ].includes( typeSlug ) ) count++;
-            });
-            // Update HTML
-            const td = document.querySelector( "tr." + row + " td." + typeSlug );
-            td.innerHTML = count;
+    // Update team defense and offense
+    const defTallies = document.querySelector( "#type-analysis .defense" );
+    const atkTallies = document.querySelector( "#type-analysis .attack" );
+    Object.keys( getCurrentTypeData() ).forEach( type => {
+        var weakCount = 0, resistCount = 0, coverageCount = 0;
+        // Update counts per type (resistances includes immunities)
+        slugs.forEach( slug => {
+            if ( pokemonData[ slug ][ "weaknesses" ].includes( type ) ) weakCount++;
+            else if ( pokemonData[ slug ][ "resistances" ].includes( type ) ) resistCount++;
+            else if ( pokemonData[ slug ][ "immunities" ].includes( type ) ) resistCount++;
+            if ( pokemonData[ slug ][ "coverage" ].includes( type ) ) coverageCount++;
+        });
+        if ( ( resistCount - weakCount ) < 0 ) {
+            defTallies.querySelector( "div." + type ).classList.add( "negative" );
+        } else {
+            defTallies.querySelector( "div." + type ).classList.remove( "negative" );
+        }
+        defTallies.querySelectorAll( "." + type + " .tally li" ).forEach( element => {
+            if ( weakCount > 0 ) {
+                element.setAttribute( "class", "negative" );
+                element.innerHTML = -1;
+                weakCount--;
+            } else if ( resistCount > 0 ) {
+                element.setAttribute( "class", "positive" );
+                element.innerHTML = 1;
+                resistCount--;
+            } else {
+                element.setAttribute( "class", "" );
+                element.innerHTML = 0;
+            }
+        });
+        atkTallies.querySelectorAll( "." + type + " .tally li" ).forEach( element => {
+            if ( coverageCount > 0 ) {
+                element.setAttribute( "class", "positive" );
+                element.innerHTML = 1;
+                coverageCount--;
+            } else {
+                element.setAttribute( "class", "" );
+                element.innerHTML = 0;
+            }
         });
     });
 }
