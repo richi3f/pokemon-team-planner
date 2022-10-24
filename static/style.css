@@ -578,18 +578,128 @@ dt {
 
 /* Table */
 
-#team table {
-    margin: 1.5em auto;
+#type-analysis {
+    display: grid;
+    gap: 1em;
     text-align: center;
-}
-
-#team table tr:nth-child(even) {
+    background: #fff;
     border: 1px solid #d9d9d9;
-    border-width: 1px 0;
+    border-radius: 1em;
+    padding: 1em;
 }
 
-#team table :where(col, tr).hover {
-    background: #e6e6e6
+#type-analysis :where(.attack, .defense) {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fill, 6.875em);
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+#type-analysis h3 {
+    margin: 0;
+}
+
+.tally__type-symbol {
+    background-size: contain;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    text-indent: -999em;
+}
+
+.tally_warning .tally__type-symbol {
+    filter: drop-shadow(0 0 0.5em #ee6622);
+}
+
+.tally_bug .tally__type-symbol {
+    background-image: url(img/type/bug_sym.png);
+}
+.tally_dark .tally__type-symbol {
+    background-image: url(img/type/dark_sym.png);
+}
+.tally_dragon .tally__type-symbol {
+    background-image: url(img/type/dragon_sym.png);
+}
+.tally_electric .tally__type-symbol {
+    background-image: url(img/type/electric_sym.png);
+}
+.tally_fairy .tally__type-symbol {
+    background-image: url(img/type/fairy_sym.png);
+}
+.tally_fighting .tally__type-symbol {
+    background-image: url(img/type/fighting_sym.png);
+}
+.tally_fire .tally__type-symbol {
+    background-image: url(img/type/fire_sym.png);
+}
+.tally_flying .tally__type-symbol {
+    background-image: url(img/type/flying_sym.png);
+}
+.tally_ghost .tally__type-symbol {
+    background-image: url(img/type/ghost_sym.png);
+}
+.tally_grass .tally__type-symbol {
+    background-image: url(img/type/grass_sym.png);
+}
+.tally_ground .tally__type-symbol {
+    background-image: url(img/type/ground_sym.png);
+}
+.tally_ice .tally__type-symbol {
+    background-image: url(img/type/ice_sym.png);
+}
+.tally_normal .tally__type-symbol {
+    background-image: url(img/type/normal_sym.png);
+}
+.tally_poison .tally__type-symbol {
+    background-image: url(img/type/poison_sym.png);
+}
+.tally_psychic .tally__type-symbol {
+    background-image: url(img/type/psychic_sym.png);
+}
+.tally_rock .tally__type-symbol {
+    background-image: url(img/type/rock_sym.png);
+}
+.tally_steel .tally__type-symbol {
+    background-image: url(img/type/steel_sym.png);
+}
+.tally_water .tally__type-symbol {
+    background-image: url(img/type/water_sym.png);
+}
+
+.tally__marks {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.tally__mark {
+    display: inline-block;
+    width: 0.5em;
+    height: 2em;
+    text-indent: -999em;
+    background-color: #e6e6e6;
+    border-radius: 0.125em;
+    margin: 0 0 0 0.3125em;
+    position: relative;
+}
+
+:where(.tally__mark_positive, .tally__mark_negative):hover {
+    top: -0.25em;
+}
+
+.tally__mark_positive {
+    background-color: #33aa77;
+}
+
+.tally__mark_negative {
+    background-color: #ee6622;
+}
+
+.cloudy {
+    opacity: 0.5;
+    filter: grayscale(1);
 }
 
 /* Footer */

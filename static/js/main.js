@@ -65,11 +65,11 @@ function buildPage() {
  function shrinkHead() {
     const head = document.getElementById( "head" );
     const target = document.getElementById( "pokedexes" ).getBoundingClientRect().top;
-    const table = document.querySelector( ".table" );
+    const analysis = document.querySelector( "#type-analysis" );
     const activeFilters = document.querySelectorAll( ".filter.active" );
     if (
         target < 0 
-        && table.classList.contains( "hidden" )
+        && analysis.classList.contains( "hidden" )
         && activeFilters.length === 0
     ) {
         head.classList.add( "head--sticky" );
@@ -209,9 +209,24 @@ function populateTeam( container ) {
     button.addEventListener( "click", randomizeTeam );
     buttonContainer.append( button );
 
-    // Create analysis table
-    const table = document.createElement( "div" );
-    table.classList.add( "table", "hidden" );
+    // Create analysis section
+    const analysis = document.createElement( "div" );
+    analysis.classList.add( "hidden" );
+    analysis.setAttribute( "id", "type-analysis" );
+    const defTallies = document.createElement( "ol" );
+    const defHeading = document.createElement( "h3" );
+    defHeading.innerHTML = "Team Defense";
+    createTallies( defTallies );
+    const atkTallies = defTallies.cloneNode( true );
+    defTallies.classList.add( "defense" );
+    atkTallies.classList.add( "attack" );
+    const atkHeading = document.createElement( "h3" );
+    atkHeading.innerHTML = "Team Offense";
+    analysis.append( defHeading, defTallies, atkHeading, atkTallies );
+    analysis.querySelectorAll( ".tally__mark" ).forEach( mark => {
+        mark.addEventListener( "mouseenter", highlightTargetPokemon );
+        mark.addEventListener( "mouseleave", removeHighlights );
+    });
 
     // Create button to hide/show team analysis
     button = document.createElement( "button" );
@@ -219,15 +234,15 @@ function populateTeam( container ) {
     button.innerHTML = "Show Team Analysis";
     button.classList.add( "button" );
     button.addEventListener( "click", ( event ) => {
-        if ( table.classList.contains( "hidden" ) ) {
+        if ( analysis.classList.contains( "hidden" ) ) {
             event.target.innerHTML = "Hide Team Analysis";
-            table.classList.remove( "hidden" );
+            analysis.classList.remove( "hidden" );
         } else {
             event.target.innerHTML = "Show Team Analysis";
-            table.classList.add( "hidden" );
+            analysis.classList.add( "hidden" );
         }
     });
-    section.append( table );
+    section.append( analysis );
     buttonContainer.append( button );
 
     // Create button to show advanced controls
@@ -247,8 +262,6 @@ function populateTeam( container ) {
         });
     });
     buttonContainer.append( button );
-
-    createAnalysisTable( table );
 }
 
 /**
@@ -319,7 +332,7 @@ function populateTeamSlot( event_or_slug ) {
         toggleEmptyDex();
     }
 
-    updateAnalysisTable();
+    updateTeamAnalysis();
     updateTeamHash();
 }
 
@@ -366,7 +379,7 @@ function populateTeamSlot( event_or_slug ) {
         toggleEmptyDex();
     }
 
-    updateAnalysisTable();
+    updateTeamAnalysis();
     updateTeamHash();
 }
 
@@ -1151,7 +1164,6 @@ function toggleEmptyDex() {
 //#region Team Analysis
 
 const TYPE_PATH = IMG_PATH + "type/";
-const TABLE_INDEX = [ "", "weaknesses", "immunities", "resistances", "coverage" ];
 
 /**
  * Mutates the type data, to include what types each type is weakened by.
@@ -1170,96 +1182,117 @@ function completeTypeData() {
 }
 
 /**
- * Creates and returns a table with columns for each given type and 4 rows:
- * weaknesses, immunities, resistances, and coverage.
- * @param {Array} typeSlugs 
- * @returns {HTMLElement} table
+ * Creates tallies for each type and appends to container.
+ * @param {HTMLElement} container
  */
-function createTable( typeSlugs ) {
-    const table = document.createElement( "table" );
-    const colgroup = document.createElement( "colgroup" );
-    const thead = document.createElement( "thead" );
-    const tbody = document.createElement( "tbody" );
-    table.append( colgroup, thead, tbody );
-    TABLE_INDEX.forEach( row => {
-        const isHeader = row === "";
-        const tr = document.createElement( "tr" );
-        const td = document.createElement( "th" );
-        tr.append( td );
-        if ( isHeader ) {
-            colgroup.append( document.createElement( "col" ) );
-            thead.append( tr );
-        } else {
-            tbody.append( tr );
-            tr.classList.add( row );
-            td.innerHTML = capitalize( row );
-        }
-        typeSlugs.forEach( ( slug, j ) => {
-            const td = document.createElement( isHeader ? "th" : "td" );
-            if ( isHeader ) {
-                colgroup.append( document.createElement( "col" ) );
-                const img = document.createElement( "img" );
-                img.setAttribute( "src", TYPE_PATH + slug + ".png" );
-                img.setAttribute( "alt", capitalize( slug ) );
-                td.append( img );
-            } else {
-                td.innerHTML = "0";
-                td.addEventListener( "mouseover", () => {
-                    tr.classList.add( "hover" );
-                    colgroup.children[ j + 1 ].classList.add( "hover" );
-                });
-                td.addEventListener( "mouseout", () => {
-                    tr.classList.remove( "hover" );
-                    colgroup.children[ j + 1 ].classList.remove( "hover" );
-                });
-            }
-            
-            tr.append( td );
-            td.classList.add( slug );
-        });
+function createTallies( container ) {
+    const template = document.getElementById( "tally" );
+    template.innerHTML = template.innerHTML.replace( />\s+</g, "><" );
+    const typeData = getCurrentTypeData();
+    Object.keys( typeData ).forEach( type => {
+        const clone = template.content.cloneNode( true );
+        const symbol = clone.querySelector( ".tally__type-symbol" );
+        const typeName = capitalize( type );
+        clone.querySelector( ".tally" ).classList.add( "tally_" + type );
+        symbol.innerHTML = capitalize( typeName );
+        symbol.setAttribute( "title", typeName );
+        container.append( clone );
     });
-    return table;
 }
 
 /**
- * Creates a split table for the current team's battle properties.
- * @param {HTMLElement} container 
+ * Highlight a tally's target Pokémon.
+ * @param {Event} event 
  */
-function createAnalysisTable( container ) {
-    // Split table vertically
-    const types = Object.keys( getCurrentTypeData() );
-    const typesPerTable = types.length / 2;
-    container.append(
-        createTable( types.slice( 0, typesPerTable ) ),
-        createTable( types.slice( typesPerTable ) )
-    );
+function highlightTargetPokemon( event ) {
+    const slug = event.currentTarget.dataset.slug;
+    if ( slug === "" ) return;
+    document.querySelectorAll( "#slots li" ).forEach( slot => {
+        if ( slug === slot.dataset.slug ) return;
+        slot.classList.add( "cloudy" );
+    });
 }
 
 /**
- * 
+ * Remove any highlighted Pokémon.
+ * @param {Event} event 
+ * @returns 
  */
-function updateAnalysisTable() {
+function removeHighlights( event ) {
+    const slug = event.currentTarget.dataset.slug;
+    if ( slug === "" ) return;
+    document.querySelectorAll( "#slots li" ).forEach( slot => {
+        slot.classList.remove( "cloudy" );
+    });
+}
+
+
+/**
+ * Calculates how many Pokémon resist, are weak to, or can deal super effective
+ * damage to each type.
+ */
+function updateTeamAnalysis() {
     // Fetch current Pokémon slugs
     const slots = document.querySelectorAll( "#slots li:not(.empty)" );
     const slugs = Array.from( slots ).map( li => {
-        const slug = li.dataset.slug;
-        if ( slug.endsWith( "-gmax" ) ) {
-            return slug.substring( 0, slug.length - 5 );
-        }
-        return slug;
+        return li.dataset.slug;
     });
-    // Update analysis row for each type
-    TABLE_INDEX.slice( 1 ).forEach( row => {
-        Object.keys( getCurrentTypeData() ).forEach( typeSlug => {
-            // Start counter
-            var count = 0;
-            // Increase count for each matching Pokémon
-            slugs.forEach( slug => {
-                if ( pokemonData[ slug ][ row ].includes( typeSlug ) ) count++;
-            });
-            // Update HTML
-            const td = document.querySelector( "tr." + row + " td." + typeSlug );
-            td.innerHTML = count;
+    // Update team defense and offense
+    const defTallies = document.querySelector( "#type-analysis .defense" );
+    const atkTallies = document.querySelector( "#type-analysis .attack" );
+    Object.keys( getCurrentTypeData() ).forEach( type => {
+        const weakPokemon = [], resistPokemon = [], coveragePokemon = [];
+        // Update counts per type (resistances includes immunities)
+        slugs.forEach( slug => {
+            const origSlug = slug;
+            if ( slug.endsWith( "-gmax" ) ) slug = slug.substring( 0, slug.length - 5 );
+            if ( pokemonData[ slug ][ "weaknesses" ].includes( type ) )
+                weakPokemon.push( origSlug );
+            else if ( pokemonData[ slug ][ "resistances" ].includes( type ) )
+                resistPokemon.push( origSlug );
+            else if ( pokemonData[ slug ][ "immunities" ].includes( type ) )
+                resistPokemon.push( origSlug );
+            if ( pokemonData[ slug ][ "coverage" ].includes( type ) )
+                coveragePokemon.push( origSlug );
+        });
+        const defCount = resistPokemon.length - weakPokemon.length;
+        const atkCount = coveragePokemon.length;
+        const selector = ".tally_" + type;
+        if ( defCount < 0 ) {
+            defTallies.querySelector( selector ).classList.add( "tally_warning" );
+        } else {
+            defTallies.querySelector( selector ).classList.remove( "tally_warning" );
+        }
+        if ( defCount + atkCount < 0 ) {
+            atkTallies.querySelector( selector ).classList.add( "tally_warning" );
+        } else {
+            atkTallies.querySelector( selector ).classList.remove( "tally_warning" );
+        }
+        defTallies.querySelectorAll( selector + " .tally__mark" ).forEach( element => {
+            element.setAttribute( "class", "tally__mark" );
+            if ( weakPokemon.length > 0 ) {
+                element.dataset.slug = weakPokemon.shift();
+                element.classList.add( "tally__mark_negative" );
+                element.innerHTML = -1;
+            } else if ( resistPokemon.length > 0 ) {
+                element.dataset.slug = resistPokemon.shift();
+                element.classList.add( "tally__mark_positive" );
+                element.innerHTML = 1;
+            } else {
+                element.dataset.slug = "";
+                element.innerHTML = 0;
+            }
+        });
+        atkTallies.querySelectorAll( selector + " .tally__mark" ).forEach( element => {
+            element.setAttribute( "class", "tally__mark" );
+            if ( coveragePokemon.length > 0 ) {
+                element.dataset.slug = coveragePokemon.shift();
+                element.classList.add( "tally__mark_positive" );
+                element.innerHTML = 1;
+            } else {
+                element.dataset.slug = "";
+                element.innerHTML = 0;
+            }
         });
     });
 }
