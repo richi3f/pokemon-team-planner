@@ -211,15 +211,15 @@ function populateTeam( container ) {
 
     // Create analysis section
     const analysis = document.createElement( "div" );
-    analysis.classList.add( "hidden" );
+    analysis.classList.add( "grid", "hidden" );
     analysis.setAttribute( "id", "type-analysis" );
     const defTallies = document.createElement( "ol" );
     const defHeading = document.createElement( "h3" );
     defHeading.innerHTML = "Team Defense";
     createTallies( defTallies );
     const atkTallies = defTallies.cloneNode( true );
-    defTallies.classList.add( "defense" );
-    atkTallies.classList.add( "attack" );
+    defTallies.classList.add( "grid", "defense" );
+    atkTallies.classList.add( "grid", "attack" );
     const atkHeading = document.createElement( "h3" );
     atkHeading.innerHTML = "Team Offense";
     analysis.append( defHeading, defTallies, atkHeading, atkTallies );
