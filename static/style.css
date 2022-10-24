@@ -613,7 +613,7 @@ dt {
 }
 
 .tally_warning .tally__type-symbol {
-    filter: drop-shadow(0 0 0.5em #ee6622);
+    filter: drop-shadow(0 0 0.5em #ef8a62);
 }
 
 .tally_bug .tally__type-symbol {
@@ -694,11 +694,11 @@ dt {
 }
 
 .tally__mark_positive {
-    background-color: #33aa77;
+    background-color: #67a9cf;
 }
 
 .tally__mark_negative {
-    background-color: #ee6622;
+    background-color: #ef8a62;
 }
 
 .cloudy {
