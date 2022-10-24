@@ -221,7 +221,7 @@ function populateTeam( container ) {
     defTallies.classList.add( "grid", "defense" );
     atkTallies.classList.add( "grid", "attack" );
     const atkHeading = document.createElement( "h3" );
-    atkHeading.innerHTML = "Team Offense";
+    atkHeading.innerHTML = "Coverage";
     analysis.append( defHeading, defTallies, atkHeading, atkTallies );
     analysis.querySelectorAll( ".tally__mark" ).forEach( mark => {
         mark.addEventListener( "mouseenter", highlightTargetPokemon );
