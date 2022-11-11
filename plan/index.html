@@ -15,17 +15,17 @@
 <body>
 <article id="team-planner">
     <template id="team-slot">
-        <li class="empty" data-slug="" data-type="">
-            <div class="wrap">
-                <figure><img src="../static/js/../img/pokemon/0000_000_uk_n.png" alt=""></figure>
+        <li class="slot slot_empty" data-slug="" data-type="">
+            <div class="slot__remove-button slot__bg-type-1">
+                <figure class="slot__bg-type-2"><img class="slot__pokemon-render" src="../static/js/../img/pokemon/0000_000_uk_n.png" alt=""></figure>
             </div>
-            <div class="info">
-                <span class="name">???</span><span class="form"></span>
-                <span class="type"></span><span class="type"></span>
+            <div class="slot__info">
+                <span class="slot__name">???</span><span class="slot__form"></span>
+                <span class="slot__type"></span><span class="slot__type"></span>
             </div>
-            <div class="toggles">
-                <button class="hidden female selected">&female;</button>
-                <button class="hidden shiny">✨</button>
+            <div class="slot__toggle-container">
+                <button class="slot__toggle slot__toggle_hidden slot__toggle_female">&female;</button>
+                <button class="slot__toggle slot__toggle_hidden slot__toggle_regular">✨</button>
             </div>
         </li>
     </template>

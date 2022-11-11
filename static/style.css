@@ -300,7 +300,7 @@ dt {
     margin: 1em auto;
 }
 
-#team .list-pokemon img {
+.slot__pokemon-render {
     width: 10em;
     height: 10em;
     margin: 1em;
@@ -311,7 +311,7 @@ dt {
             drop-shadow(0 -1px 0 black);*/
 }
 
-#team .list-pokemon [data-slug$="-gmax"] img {
+.slot[data-slug$="-gmax"] .slot__pokemon-render {
     width: 12em;
     height: 12em;
     margin: 0;
@@ -321,35 +321,38 @@ dt {
     text-align: center;
 }
 
-#team .list-pokemon li {
+.slot {
     width: 12rem;
     padding: 0;
 }
 
-#team .list-pokemon li:not([data-slug=""]) :where(.wrap, .info) {
+.slot__remove-button,
+.slot__info {
     cursor: no-drop;
 }
 
-#team .list-pokemon li:not([data-slug=""]).hover {
+.slot_populated.slot_hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
 }
 
-.list li :where(.wrap, figure) {
+.slot__bg-type-1,
+.slot__bg-type-2 {
     background-size: 600% 600%;
     background-image: url(./img/types_bg.png);
 }
 
-.list li[data-type=""] :where(.wrap, figure) {
+.slot_empty .slot__bg-type-1,
+.slot_empty .slot__bg-type-2 {
     background-image: url(./img/type_unknown.png);
     background-size: contain;
 }
 
-.list li figure {
+.slot__bg-type-2 {
     margin: 0;
 }
 
-.list li .info {
+.slot__info {
     width: 11em;
     text-align: center;
     height: 4em;
@@ -358,30 +361,27 @@ dt {
     padding: 0.25em 0;
 }
 
-.list li .info :where(.name, .form, .type) {
+.slot__name, .slot__form, .slot__type {
     display: inline-block;
     line-height: 1.5rem;
     font-size: 0.875em;
 }
 
-.list li.empty .info .name {
-    line-height: 3rem;
+.slot_empty .slot__name {
+    list-style: 3rem;
 }
 
-.list li .info :where(.name, .type) {
+.slot__name {
     font-weight: 700;
-}
-
-.list li .info .name {
     width: 100%;
 }
 
-.list li .info .form {
+.slot__form {
     display: none;
     font-size: 0.75em;
 }
 
-.list li .info .type {
+.slot__type {
     width: 5em;
     background-size: contain;
     background-repeat: no-repeat;
@@ -390,45 +390,52 @@ dt {
     text-indent: -999em;
 }
 
-.list li .info .type.undefined,
+.slot__type_undefined,
 .pokedex li.filtered,
 .pokedex li.picked {
     display: none;
 }
 
 
-.list li .toggles {
-    margin: 0.5em 0 0;
-    text-align: center;
+.slot__toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
 }
 
-.list li .toggles button {
+.slot__toggle-container_hidden {
+    display: none;
+}
+
+.slot__toggle {
     font-family: 'icons';
     background: #fff;
-    display: inline-block;
     width: 1.5em;
     font-size: 1em;
     line-height: 1.5em;
     border-radius: .75em;
     filter: drop-shadow(0 0 1px #1b1b1b);
     color: #ccc;
-    margin: 0.25em 0.5em;
 }
 
-.list li .toggles button.shiny.selected {
+.slot__toggle_shiny {
     color: #E96D23;
 }
 
-.list li .toggles button.female {
+.slot__toggle_female {
     color: #fff;
     background: #EF547D;
 }
 
-.list li .toggles button.male {
+.slot__toggle_male {
     color: #fff;
     background: #3B71DC;
 }
 
+.slot__toggle_hidden {
+    display: none;
+}
 
 /* Dex */
 
@@ -701,7 +708,7 @@ dt {
     background-color: #ef8a62;
 }
 
-.cloudy {
+.slot_grayscale {
     opacity: 0.5;
     filter: grayscale(1);
 }
@@ -735,295 +742,295 @@ footer {
 
 /* Sprites/Variations */
 
-.list .info .type.normal {
+.slot__type_normal {
     background-image: url(./img/type/normal.png);
 }
 
-.list .info .type.fighting {
+.slot__type_fighting {
     background-image: url(./img/type/fighting.png);
 }
 
-.list .info .type.flying {
+.slot__type_flying {
     background-image: url(./img/type/flying.png);
 }
 
-.list .info .type.poison {
+.slot__type_poison {
     background-image: url(./img/type/poison.png);
 }
 
-.list .info .type.ground {
+.slot__type_ground {
     background-image: url(./img/type/ground.png);
 }
 
-.list .info .type.rock {
+.slot__type_rock {
     background-image: url(./img/type/rock.png);
 }
 
-.list .info .type.bug {
+.slot__type_bug {
     background-image: url(./img/type/bug.png);
 }
 
-.list .info .type.ghost {
+.slot__type_ghost {
     background-image: url(./img/type/ghost.png);
 }
 
-.list .info .type.steel {
+.slot__type_steel {
     background-image: url(./img/type/steel.png);
 }
 
-.list .info .type.fire {
+.slot__type_fire {
     background-image: url(./img/type/fire.png);
 }
 
-.list .info .type.water {
+.slot__type_water {
     background-image: url(./img/type/water.png);
 }
 
-.list .info .type.grass {
+.slot__type_grass {
     background-image: url(./img/type/grass.png);
 }
 
-.list .info .type.electric {
+.slot__type_electric {
     background-image: url(./img/type/electric.png);
 }
 
-.list .info .type.psychic {
+.slot__type_psychic {
     background-image: url(./img/type/psychic.png);
 }
 
-.list .info .type.ice {
+.slot__type_ice {
     background-image: url(./img/type/ice.png);
 }
 
-.list .info .type.dragon {
+.slot__type_dragon {
     background-image: url(./img/type/dragon.png);
 }
 
-.list .info .type.dark {
+.slot__type_dark {
     background-image: url(./img/type/dark.png);
 }
 
-.list .info .type.fairy {
+.slot__type_fairy {
     background-image: url(./img/type/fairy.png);
 }
 
-.list li[data-type^=normal] .wrap {
+.slot[data-type^=normal] .slot__bg-type-1 {
     background-position: 0 0
 }
 
-.list li[data-type$=normal] figure {
+.slot[data-type$=normal] .slot__bg-type-2 {
     background-position: 20% 0
 }
 
-.list li[data-type^=fighting] .wrap {
+.slot[data-type^=fighting] .slot__bg-type-1 {
     background-position: 40% 0
 }
 
-.list li[data-type$=fighting] figure {
+.slot[data-type$=fighting] .slot__bg-type-2 {
     background-position: 60% 0
 }
 
-.list li[data-type^=flying] .wrap {
+.slot[data-type^=flying] .slot__bg-type-1 {
     background-position: 80% 0
 }
 
-.list li[data-type$=flying] figure {
+.slot[data-type$=flying] .slot__bg-type-2 {
     background-position: 100% 0
 }
 
-.list li[data-type^=poison] .wrap {
+.slot[data-type^=poison] .slot__bg-type-1 {
     background-position: 0 20%
 }
 
-.list li[data-type$=poison] figure {
+.slot[data-type$=poison] .slot__bg-type-2 {
     background-position: 20% 20%
 }
 
-.list li[data-type^=ground] .wrap {
+.slot[data-type^=ground] .slot__bg-type-1 {
     background-position: 40% 20%
 }
 
-.list li[data-type$=ground] figure {
+.slot[data-type$=ground] .slot__bg-type-2 {
     background-position: 60% 20%
 }
 
-.list li[data-type^=rock] .wrap {
+.slot[data-type^=rock] .slot__bg-type-1 {
     background-position: 80% 20%
 }
 
-.list li[data-type$=rock] figure {
+.slot[data-type$=rock] .slot__bg-type-2 {
     background-position: 100% 20%
 }
 
-.list li[data-type^=bug] .wrap {
+.slot[data-type^=bug] .slot__bg-type-1 {
     background-position: 0 40%
 }
 
-.list li[data-type$=bug] figure {
+.slot[data-type$=bug] .slot__bg-type-2 {
     background-position: 20% 40%
 }
 
-.list li[data-type^=ghost] .wrap {
+.slot[data-type^=ghost] .slot__bg-type-1 {
     background-position: 40% 40%
 }
 
-.list li[data-type$=ghost] figure {
+.slot[data-type$=ghost] .slot__bg-type-2 {
     background-position: 60% 40%
 }
 
-.list li[data-type^=steel] .wrap {
+.slot[data-type^=steel] .slot__bg-type-1 {
     background-position: 80% 40%
 }
 
-.list li[data-type$=steel] figure {
+.slot[data-type$=steel] .slot__bg-type-2 {
     background-position: 100% 40%
 }
 
-.list li[data-type^=fire] .wrap {
+.slot[data-type^=fire] .slot__bg-type-1 {
     background-position: 0 60%
 }
 
-.list li[data-type$=fire] figure {
+.slot[data-type$=fire] .slot__bg-type-2 {
     background-position: 20% 60%
 }
 
-.list li[data-type^=water] .wrap {
+.slot[data-type^=water] .slot__bg-type-1 {
     background-position: 40% 60%
 }
 
-.list li[data-type$=water] figure {
+.slot[data-type$=water] .slot__bg-type-2 {
     background-position: 60% 60%
 }
 
-.list li[data-type^=grass] .wrap {
+.slot[data-type^=grass] .slot__bg-type-1 {
     background-position: 80% 60%
 }
 
-.list li[data-type$=grass] figure {
+.slot[data-type$=grass] .slot__bg-type-2 {
     background-position: 100% 60%
 }
 
-.list li[data-type^=electric] .wrap {
+.slot[data-type^=electric] .slot__bg-type-1 {
     background-position: 0 80%
 }
 
-.list li[data-type$=electric] figure {
+.slot[data-type$=electric] .slot__bg-type-2 {
     background-position: 20% 80%
 }
 
-.list li[data-type^=psychic] .wrap {
+.slot[data-type^=psychic] .slot__bg-type-1 {
     background-position: 40% 80%
 }
 
-.list li[data-type$=psychic] figure {
+.slot[data-type$=psychic] .slot__bg-type-2 {
     background-position: 60% 80%
 }
 
-.list li[data-type^=ice] .wrap {
+.slot[data-type^=ice] .slot__bg-type-1 {
     background-position: 80% 80%
 }
 
-.list li[data-type$=ice] figure {
+.slot[data-type$=ice] .slot__bg-type-2 {
     background-position: 100% 80%
 }
 
-.list li[data-type^=dragon] .wrap {
+.slot[data-type^=dragon] .slot__bg-type-1 {
     background-position: 0 100%
 }
 
-.list li[data-type$=dragon] figure {
+.slot[data-type$=dragon] .slot__bg-type-2 {
     background-position: 20% 100%
 }
 
-.list li[data-type^=dark] .wrap {
+.slot[data-type^=dark] .slot__bg-type-1 {
     background-position: 40% 100%
 }
 
-.list li[data-type$=dark] figure {
+.slot[data-type$=dark] .slot__bg-type-2 {
     background-position: 60% 100%
 }
 
-.list li[data-type^=fairy] .wrap {
+.slot[data-type^=fairy] .slot__bg-type-1 {
     background-position: 80% 100%
 }
 
-.list li[data-type$=fairy] figure {
+.slot[data-type$=fairy] .slot__bg-type-2 {
     background-position: 100% 100%
 }
 
-.list li[data-type] .info {
+.slot_empty .slot__info {
     background: #68a090
 }
 
-.list li[data-type^=normal] .info {
+.slot[data-type^=normal] .slot__info {
     background: #c6c6a7
 }
 
-.list li[data-type^=grass] .info {
+.slot[data-type^=grass] .slot__info {
     background: #a7db8d
 }
 
-.list li[data-type^=fire] .info {
+.slot[data-type^=fire] .slot__info {
     background: #f5ac78
 }
 
-.list li[data-type^=water] .info {
+.slot[data-type^=water] .slot__info {
     background: #9db7f5
 }
 
-.list li[data-type^=fighting] .info {
+.slot[data-type^=fighting] .slot__info {
     background: #d67873
 }
 
-.list li[data-type^=flying] .info {
+.slot[data-type^=flying] .slot__info {
     background: #c6b7f5
 }
 
-.list li[data-type^=poison] .info {
+.slot[data-type^=poison] .slot__info {
     background: #c183c1
 }
 
-.list li[data-type^=ground] .info {
+.slot[data-type^=ground] .slot__info {
     background: #ebd69d
 }
 
-.list li[data-type^=rock] .info {
+.slot[data-type^=rock] .slot__info {
     background: #d1c17d
 }
 
-.list li[data-type^=bug] .info {
+.slot[data-type^=bug] .slot__info {
     background: #c6d16e
 }
 
-.list li[data-type^=ghost] .info {
+.slot[data-type^=ghost] .slot__info {
     background: #a292bc
 }
 
-.list li[data-type^=electric] .info {
+.slot[data-type^=electric] .slot__info {
     background: #fae078
 }
 
-.list li[data-type^=psychic] .info {
+.slot[data-type^=psychic] .slot__info {
     background: #fa92b2
 }
 
-.list li[data-type^=ice] .info {
+.slot[data-type^=ice] .slot__info {
     background: #bce6e6
 }
 
-.list li[data-type^=dragon] .info {
+.slot[data-type^=dragon] .slot__info {
     background: #a27dfa
 }
 
-.list li[data-type^=dark] .info {
+.slot[data-type^=dark] .slot__info {
     background: #a29288
 }
 
-.list li[data-type^=steel] .info {
+.slot[data-type^=steel] .slot__info {
     background: #d1d1e0
 }
 
-.list li[data-type^=fairy] .info {
+.slot[data-type^=fairy] .slot__info {
     background: #f4bdc9
 }
 
@@ -1092,8 +1099,8 @@ footer {
     }
 
     .head--sticky header,
-    .head--sticky .info,
-    .head--sticky .toggles,
+    .head--sticky .slot__info,
+    .head--sticky .slot__toggle-container,
     .head--sticky .button,
     .head--sticky h2 {
         display: none;
@@ -1130,22 +1137,23 @@ footer {
         text-align: center;
     }
 
-    #team .list li {
+    .slot {
         width: 8em;
     }
 
-    #team .list img {
-        width: 5em !important;
-        height: 5em !important;
-        margin: 0 auto !important;
+    .slot__pokemon-render {
+        width: 5em;
+        height: 5em;
+        margin: 0 auto;
     }
 
-    .list li :where(.wrap, figure) {
+    .slot__bg-type-1,
+    .slot__bg-type-2 {
         width: 5em;
         margin: 0 auto;
     }
 
-    .list li .info {
+    .slot__info {
         width: 7em;
         height: 4em;
         padding: 0 0.5em;
@@ -1154,7 +1162,7 @@ footer {
         align-items: center;
     }
 
-    .list li .info .type {
+    .slot__type {
         display: none;
     }
 
