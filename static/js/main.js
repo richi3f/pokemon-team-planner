@@ -8,7 +8,7 @@ const capitalize = str => str.charAt( 0 ).toUpperCase() + str.slice( 1 );
 const getCurrentUrl = () => {
     const url = window.location.href;
     const i = url.indexOf( window.location.hash ) || url.length;
-    return url.substr( 0, i );
+    return url.substring( 0, i );
 };
 const getScriptParent = () => {
     var src = document.querySelector( "script[type='module']" ).getAttribute( "src" );
@@ -183,17 +183,17 @@ function populateTeam( container ) {
     const template = document.querySelector( "#team-slot" );
     for ( let i = 0 ; i < 6 ; i++ ) {
         const clone = template.content.cloneNode( true );
-        clone.querySelectorAll( ".wrap, .info" ).forEach( div => {
+        clone.querySelectorAll( ".slot__remove-button, .slot__info" ).forEach( div => {
             div.addEventListener( "click", clearTeamSlot );
             div.addEventListener( "mouseenter", ( event ) => {
-                event.target.parentNode.classList.add( "hover" );
+                event.target.parentNode.classList.add( "slot_hover" );
             });
             div.addEventListener( "mouseleave", ( event ) => {
-                event.target.parentNode.classList.remove( "hover" );
+                event.target.parentNode.classList.remove( "slot_hover" );
             });
         });
-        clone.querySelector( ".female" ).addEventListener( "click", toggleGender );
-        clone.querySelector( ".shiny" ).addEventListener( "click", toggleShiny );
+        clone.querySelector( ".slot__toggle_female" ).addEventListener( "click", toggleGender );
+        clone.querySelector( ".slot__toggle_regular" ).addEventListener( "click", toggleShiny );
         ul.append( clone );
     }
 
@@ -251,13 +251,14 @@ function populateTeam( container ) {
     button.innerHTML = "Hide Toggles";
     button.classList.add( "button" );
     button.addEventListener( "click", ( event ) => {
-        document.querySelectorAll( ".toggles" ).forEach( div => {
-            if ( div.classList.contains( "hidden" ) ) {
+        document.querySelectorAll( ".slot__toggle-container" ).forEach( div => {
+            const selector = "slot__toggle-container_hidden";
+            if ( div.classList.contains( selector ) ) {
                 event.target.innerHTML = "Hide Toggles";
-                div.classList.remove( "hidden" );
+                div.classList.remove( selector );
             } else {
                 event.target.innerHTML = "Show Toggles";
-                div.classList.add( "hidden" );
+                div.classList.add( selector );
             }
         });
     });
@@ -279,15 +280,15 @@ function populateTeamSlot( event_or_slug ) {
     }
 
     // Validate Pokémon is not duplicated
-    const slugs = Array.from( document.querySelectorAll( "#slots li:not(.empty)" ) ).map( li => li.dataset.slug );
+    const slugs = Array.from( document.querySelectorAll( ".slot_populated" ) ).map( li => li.dataset.slug );
     if ( slugs.includes( slug ) ) {
         return;
     }
 
     // Empty a team slot if team is full
-    const slot = document.querySelector( "#slots li.empty" );
+    const slot = document.querySelector( ".slot_empty" );
     if ( slot == null ) {
-        document.querySelector( "#slots li .wrap" ).click();
+        document.querySelector( ".slot" ).click();
         return populateTeamSlot( slug );
     }
 
@@ -296,35 +297,38 @@ function populateTeamSlot( event_or_slug ) {
     const pokemon = pokemonData[ gmax ? slug.substring( 0, slug.length - 5 ) : slug ];
     const type = getPokemonType( pokemon );
     slot.dataset.type = type;
-    slot.classList.remove( "empty", "hover" );
+    slot.classList.add( "slot_populated" );
+    slot.classList.remove( "slot_empty", "slot_hover" );
     slot.dataset.slug = slug;
 
     const name = ( gmax ? "Gigantamax " : "" ) + pokemon.name;
-    const img = slot.querySelector( "img" );
+    const img = slot.querySelector( ".slot__pokemon-render" );
     img.setAttribute( "src", getPokemonRenderUrl( pokemon, gmax ) );
     img.setAttribute( "alt", name );
 
-    slot.querySelector( ".name" ).innerHTML = name;
+    slot.querySelector( ".slot__name" ).innerHTML = name;
 
     if ( pokemon.form_name ) {
-        slot.querySelector( ".form" ).innerHTML = pokemon.form_name;
+        slot.querySelector( ".slot__form" ).innerHTML = pokemon.form_name;
     }
 
-    var span = slot.querySelectorAll( ".type" );
+    var span = slot.querySelectorAll( ".slot__type" );
     span.forEach( ( span, i ) => {
-        span.classList.add( type[ i ] );
+        span.classList.add( "slot__type_" + type[ i ] );
         span.innerHTML = ( type[ i ] ) ? capitalize( type[ i ] ) : "";
     });
 
-    const button = slot.querySelector( ".male, .female" );
+    const genderToggle = slot.querySelector( ".slot__toggle_male, .slot__toggle_female" );
     if ( !gmax && pokemon.gender.length === 2 ) {
-        button.classList.remove( "hidden", "male" );
-        button.classList.add( "female" );
-        button.innerHTML = "&female;";
+        genderToggle.classList.remove( "slot__toggle_hidden", "slot__toggle_male" );
+        genderToggle.classList.add( "slot__toggle_female" );
+        genderToggle.innerHTML = "&female;";
     } else {
-        button.classList.add( "hidden" );
+        genderToggle.classList.add( "slot__toggle_hidden" );
     }
-    slot.querySelector( ".shiny" ).classList.remove( "hidden", "selected" );
+    const shinyToggle = slot.querySelector( ".slot__toggle_regular, .slot__toggle_shiny" );
+    shinyToggle.classList.remove( "slot__toggle_hidden", "slot__toggle_shiny" );
+    shinyToggle.classList.add( "slot__toggle_regular" );
 
     const li = document.querySelector( ".pokedex li[data-slug='" + slug + "']" );
     if ( li ) {
@@ -342,33 +346,35 @@ function populateTeamSlot( event_or_slug ) {
  */
  function clearTeamSlot( event_or_slug ) {
     var slot = ( typeof event_or_slug === "string" )
-        ? document.querySelector( "#slots li[data-slug='" + slug + "']" )
+        ? document.querySelector( ".slot[data-slug='" + slug + "']" )
         : event_or_slug.currentTarget.parentNode;
 
     const slug = slot.dataset.slug;
     if ( slug === "" ) return;
 
     // Empty data
-    slot.classList.add( "empty" );
-    slot.classList.remove( "hover" );
+    slot.classList.add( "slot_empty" );
+    slot.classList.remove( "slot_hover", "slot_populated" );
     slot.dataset.slug = "";
     slot.dataset.type = "";
 
-    const img = slot.querySelector( "img" );
+    const img = slot.querySelector( ".slot__pokemon-render" );
     img.setAttribute( "src", UNKNOWN_IMG );
     img.setAttribute( "alt", "" );
 
-    slot.querySelector( ".name" ).innerHTML = "???";
-    slot.querySelector( ".form" ).innerHTML = "";
-    slot.querySelectorAll( ".type" ).forEach( span => {
-        span.setAttribute( "class", "type" );
+    slot.querySelector( ".slot__name" ).innerHTML = "???";
+    slot.querySelector( ".slot__form" ).innerHTML = "";
+    slot.querySelectorAll( ".slot__type" ).forEach( span => {
+        span.setAttribute( "class", "slot__type" );
         span.innerHTML = "";
     });
-    const button = slot.querySelector( ".male, .female" );
-    button.classList.remove( "male" );
-    button.classList.add( "hidden", "female" );
-    button.innerHTML = "&female;";
-    slot.querySelector( ".shiny" ).classList.add( "hidden" );
+    const genderToggle = slot.querySelector( ".slot__toggle_male, .slot__toggle_female" );
+    genderToggle.classList.remove( "slot__toggle_male" );
+    genderToggle.classList.add( "slot__toggle_hidden", "slot__toggle_female" );
+    genderToggle.innerHTML = "&female;";
+    const shinyToggle = slot.querySelector( ".slot__toggle_regular, .slot__toggle_shiny" );
+    shinyToggle.classList.remove( "slot__toggle_shiny" );
+    shinyToggle.classList.add("slot__toggle_hidden", "slot__toggle_regular" );
 
     // Move to last place
     slot.parentNode.append( slot );
@@ -404,26 +410,26 @@ function getPokemonRenderUrl( pokemon, gmax = false ) {
  */
 function toggleGender( event_or_slug ) {
     var slot = ( typeof event_or_slug === "string" )
-        ? document.querySelector( "#slots li[data-slug='" + slug + "']" )
+        ? document.querySelector( ".slot[data-slug='" + slug + "']" )
         : event_or_slug.currentTarget.closest( "li[data-slug]" );
 
     const slug = slot.dataset.slug;
     if ( pokemonData[ slug ].gender.length !== 2 ) return;
 
-    const button = slot.querySelector( ".male, .female" );
-    const img = slot.querySelector( "img" );
+    const button = slot.querySelector( ".slot__toggle_male, .slot__toggle_female" );
+    const img = slot.querySelector( ".slot__pokemon-render" );
     var src = img.getAttribute( "src" );
     src = src.replace( /[fm]d/g, ( m ) => {
         return { md: "fd", fd: "md" }[m]
     });
     img.setAttribute( "src", src );
     if ( src.includes( "fd" ) ) {
-        button.classList.remove( "male" );
-        button.classList.add( "female" );
+        button.classList.remove( "slot__toggle_male" );
+        button.classList.add( "slot__toggle_female" );
         button.innerHTML = "&female;";
     } else {
-        button.classList.add( "male" );
-        button.classList.remove( "female" );
+        button.classList.add( "slot__toggle_male" );
+        button.classList.remove( "slot__toggle_female" );
         button.innerHTML = "&male;";
     }
 }
@@ -434,17 +440,19 @@ function toggleGender( event_or_slug ) {
  */
 function toggleShiny( event_or_slug ) {
     var slot = ( typeof event_or_slug === "string" )
-        ? document.querySelector( "#slots li[data-slug='" + slug + "']" )
-        : event_or_slug.currentTarget.closest( "li[data-slug]" );
+        ? document.querySelector( ".slot[data-slug='" + slug + "']" )
+        : event_or_slug.currentTarget.closest( ".slot[data-slug]" );
 
-    const img = slot.querySelector( "img" );
+    const img = slot.querySelector( ".slot__pokemon-render" );
     var src = img.getAttribute( "src" ).split("/");
     var dir = "pokemon";
-    const button = slot.querySelector( ".shiny" );
-    if ( button.classList.contains( "selected" ) ) {
-        button.classList.remove( "selected" );
+    const button = slot.querySelector( ".slot__toggle_regular, .slot__toggle_shiny" );
+    if ( button.classList.contains( "slot__toggle_shiny" ) ) {
+        button.classList.add( "slot__toggle_regular" );
+        button.classList.remove( "slot__toggle_shiny" );
     } else {
-        button.classList.add( "selected" );
+        button.classList.add( "slot__toggle_shiny" );
+        button.classList.remove( "slot__toggle_regular" );
         dir = "shiny-pokemon";
     }
     src = [ ...src.slice( 0, src.length - 2 ), dir, src[ src.length - 1 ] ].join( "/" );
@@ -462,7 +470,7 @@ function randomizeTeam() {
         filterDex();
     }
     // Clear current team
-    document.querySelectorAll( "#slots li:not(.empty) .wrap" ).forEach( li => {
+    document.querySelectorAll( ".slot_populated .slot__remove-button" ).forEach( li => {
         li.click();
     });
     // List Pokémon that can be added to the team
@@ -1207,9 +1215,9 @@ function createTallies( container ) {
 function highlightTargetPokemon( event ) {
     const slug = event.currentTarget.dataset.slug;
     if ( slug === "" ) return;
-    document.querySelectorAll( "#slots li" ).forEach( slot => {
+    document.querySelectorAll( ".slot" ).forEach( slot => {
         if ( slug === slot.dataset.slug ) return;
-        slot.classList.add( "cloudy" );
+        slot.classList.add( "slot_grayscale" );
     });
 }
 
@@ -1221,8 +1229,8 @@ function highlightTargetPokemon( event ) {
 function removeHighlights( event ) {
     const slug = event.currentTarget.dataset.slug;
     if ( slug === "" ) return;
-    document.querySelectorAll( "#slots li" ).forEach( slot => {
-        slot.classList.remove( "cloudy" );
+    document.querySelectorAll( ".slot" ).forEach( slot => {
+        slot.classList.remove( "slot_grayscale" );
     });
 }
 
@@ -1233,7 +1241,7 @@ function removeHighlights( event ) {
  */
 function updateTeamAnalysis() {
     // Fetch current Pokémon slugs
-    const slots = document.querySelectorAll( "#slots li:not(.empty)" );
+    const slots = document.querySelectorAll( ".slot_populated" );
     const slugs = Array.from( slots ).map( li => {
         return li.dataset.slug;
     });
@@ -1329,7 +1337,7 @@ function updateTeamAnalysis() {
  */
 function updateTeamHash() {
     const slugs = [ currentGame ];
-    document.querySelectorAll( "#slots li:not(.empty)" ).forEach( li => {
+    document.querySelectorAll( ".slot_populated" ).forEach( li => {
         slugs.push( li.dataset.slug );
     });
     const hash = slugs.join( "+" );
