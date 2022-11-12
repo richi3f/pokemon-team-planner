@@ -161,12 +161,13 @@ export default {
     },
     "sv": {
         "gen": 9,
-        "dex_slugs": ["paldea"],
+        "dex_slugs": ["paldea", "paldea_transfer"],
         "versions": [
             { "slug": "scarlet", "name": "Scarlet" },
             { "slug": "violet", "name": "Violet" }
         ],
-        "tera": true
+        "tera": true,
+        "transfer": true
     },
     "home": {
         "name": "Pokémon HOME",
