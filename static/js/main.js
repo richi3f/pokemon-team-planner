@@ -424,6 +424,8 @@ function getPokemonRenderUrl( pokemon, gmax = false ) {
  * @param {Event|string} event_or_slug 
  */
 function toggleGender( event_or_slug ) {
+    if ( currentGame == "sv" ) return;
+
     var slot = ( typeof event_or_slug === "string" )
         ? document.querySelector( "#slots li[data-slug='" + slug + "']" )
         : event_or_slug.currentTarget.closest( "li[data-slug]" );
@@ -454,6 +456,8 @@ function toggleGender( event_or_slug ) {
  * @param {Event|slug} event_or_slug 
  */
 function toggleShiny( event_or_slug ) {
+    if ( currentGame == "sv" ) return;
+
     var slot = ( typeof event_or_slug === "string" )
         ? document.querySelector( "#slots li[data-slug='" + slug + "']" )
         : event_or_slug.currentTarget.closest( "li[data-slug]" );
