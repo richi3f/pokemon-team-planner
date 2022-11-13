@@ -269,8 +269,6 @@ function populateTeam( container ) {
         });
         buttonContainer.append( button );
     }
-
-    createAnalysisTable( table );
 }
 
 /**
