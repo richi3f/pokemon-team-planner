@@ -959,7 +959,8 @@ export default {
         "gender_ratio": 4,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "evolution_ids": [ [ 936, 0 ] ]
     },
     "growlithe": {
         "base_id": 58,
@@ -3673,7 +3674,8 @@ export default {
         "gender_ratio": 4,
         "color": "yellow",
         "experience_group": "Medium Fast",
-        "generation": 2
+        "generation": 2,
+        "evolution_ids": [ [ 945, 0 ] ]
     },
     "pineco": {
         "base_id": 204,
@@ -3710,7 +3712,8 @@ export default {
         "gender_ratio": 4,
         "color": "yellow",
         "experience_group": "Medium Fast",
-        "generation": 2
+        "generation": 2,
+        "evolution_ids": [ [ 944, 0 ] ]
     },
     "gligar": {
         "base_id": 207,
@@ -10307,7 +10310,8 @@ export default {
         "gender_ratio": 4,
         "color": "red",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "evolution_ids": [ [ 980, 0 ] ]
     },
     "bouffalant": {
         "base_id": 626,
@@ -15935,6 +15939,7 @@ export default {
         "base_id": 936,
         "form_id": 0,
         "name": "Annihilape",
+        "pokemon_type": [ "fighting", "ghost" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
