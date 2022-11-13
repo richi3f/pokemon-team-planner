@@ -156,7 +156,9 @@ function getCurrentTypeData() {
 //#region Team Slot
 
 const BASE_IMG = IMG_PATH + "pokemon/";
+const SV_BASE_IMG = IMG_PATH + "sv-pokemon/";
 const UNKNOWN_IMG = BASE_IMG + "0000_000_uk_n.png";
+const SV_UNKNOWN_IMG = SV_BASE_IMG + "0000_000.png"
 
 /**
  * Populates the page with empty team slots.
@@ -194,6 +196,9 @@ function populateTeam( container ) {
         });
         clone.querySelector( ".female" ).addEventListener( "click", toggleGender );
         clone.querySelector( ".shiny" ).addEventListener( "click", toggleShiny );
+        if ( currentGame == "sv" ) {
+            clone.querySelector( "img" ).setAttribute( "src", SV_UNKNOWN_IMG );
+        }
         ul.append( clone );
     }
 
@@ -246,22 +251,26 @@ function populateTeam( container ) {
     buttonContainer.append( button );
 
     // Create button to show advanced controls
-    button = document.createElement( "button" );
-    button.id = "toggles";
-    button.innerHTML = "Hide Toggles";
-    button.classList.add( "button" );
-    button.addEventListener( "click", ( event ) => {
-        document.querySelectorAll( ".toggles" ).forEach( div => {
-            if ( div.classList.contains( "hidden" ) ) {
-                event.target.innerHTML = "Hide Toggles";
-                div.classList.remove( "hidden" );
-            } else {
-                event.target.innerHTML = "Show Toggles";
-                div.classList.add( "hidden" );
-            }
+    if ( currentGame != "sv" ) {    
+        button = document.createElement( "button" );
+        button.id = "toggles";
+        button.innerHTML = "Hide Toggles";
+        button.classList.add( "button" );
+        button.addEventListener( "click", ( event ) => {
+            document.querySelectorAll( ".toggles" ).forEach( div => {
+                if ( div.classList.contains( "hidden" ) ) {
+                    event.target.innerHTML = "Hide Toggles";
+                    div.classList.remove( "hidden" );
+                } else {
+                    event.target.innerHTML = "Show Toggles";
+                    div.classList.add( "hidden" );
+                }
+            });
         });
-    });
-    buttonContainer.append( button );
+        buttonContainer.append( button );
+    }
+
+    createAnalysisTable( table );
 }
 
 /**
@@ -326,6 +335,12 @@ function populateTeamSlot( event_or_slug ) {
     }
     slot.querySelector( ".shiny" ).classList.remove( "hidden", "selected" );
 
+    if ( currentGame == "sv" ) {
+        slot.querySelectorAll( ".toggles button" ).forEach( toggle => {
+            toggle.classList.add( "hidden" );
+        });
+    }
+
     const li = document.querySelector( ".pokedex li[data-slug='" + slug + "']" );
     if ( li ) {
         li.classList.add( "picked" );
@@ -355,7 +370,7 @@ function populateTeamSlot( event_or_slug ) {
     slot.dataset.type = "";
 
     const img = slot.querySelector( "img" );
-    img.setAttribute( "src", UNKNOWN_IMG );
+    img.setAttribute( "src", currentGame == "sv" ? SV_UNKNOWN_IMG : UNKNOWN_IMG );
     img.setAttribute( "alt", "" );
 
     slot.querySelector( ".name" ).innerHTML = "???";
@@ -390,6 +405,14 @@ function populateTeamSlot( event_or_slug ) {
  * @returns {string} url
  */
 function getPokemonRenderUrl( pokemon, gmax = false ) {
+    if ( currentGame == "sv" ) {
+        return (
+            SV_BASE_IMG
+            + String( pokemon.base_id ).padStart( 4, "0" )
+            + "_" + String( pokemon.form_id ).padStart( 3, "0" )
+            + ".png"
+        );
+    }
     return BASE_IMG + [
         String( pokemon.base_id ).padStart( 4, "0" ),
         String( pokemon.form_id ).padStart( 3, "0" ),
