@@ -99,15 +99,14 @@ article section {
     vertical-align: top;
 }
 
-div.button {
-    text-align: center;
+.team__buttons {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 12em);
+    gap: 1em;
 }
 
-div.button button.button {
-    margin: 1.5em 0.5em 1em;
-}
-
-button.button {
+.team__button {
     background-color: #4d6ad8;
     color: #f0f0f0;
     font-weight: 700;
@@ -119,8 +118,8 @@ button.button {
     box-sizing: border-box
 }
 
-button.button:hover,
-button.button:focus {
+.team__button:hover,
+.team__button:focus {
     color: #f0f0f0;
     text-decoration: none
 }
@@ -263,17 +262,17 @@ button.button:focus {
 
 /* FAQ */
 
-#faq dl {
+.head__faq dl {
     margin: 2em;
 }
 
-#faq dl p {
+.head__faq dl p {
     text-align: left;
     margin: 1em 0;
     max-width: none;
 }
 
-#faq abbr {
+.head__faq abbr {
     text-decoration: none;
 }
 
@@ -283,21 +282,32 @@ dt {
 
 /* Team */
 
-#head>.wrap {
+.head__team {
     position: relative;
     padding: 1.5em 0 0;
 }
 
-#head>.wrap::before {
+.head__team::before {
     content: "";
     position: absolute;
     inset: 0 0 5rem 0;
     background-color: #f0f0f0;
 }
 
-#head p {
+.head__header p {
     max-width: 75%;
     margin: 1em auto;
+}
+
+.team {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr;
+    padding: 2em;
+}
+
+.team__heading {
+    left: 1em;
 }
 
 .slot__pokemon-render {
@@ -317,12 +327,22 @@ dt {
     margin: 0;
 }
 
-#team .list-pokemon {
-    text-align: center;
+.team__slots {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .slot {
-    width: 12rem;
+    display: grid;
+    gap: 0.5em;
+    grid-template-rows: 12em 4em 1fr;
+    justify-items: center;
+    width: 12em;
     padding: 0;
 }
 
@@ -357,7 +377,6 @@ dt {
     text-align: center;
     height: 4em;
     border-radius: 0.625em;
-    margin: 0.5em auto 0;
     padding: 0.25em 0;
 }
 
@@ -402,6 +421,7 @@ dt {
     align-items: center;
     justify-content: center;
     gap: 0.5em;
+    margin: 0.25em 0 0;
 }
 
 .slot__toggle-container_hidden {
@@ -585,15 +605,6 @@ dt {
 
 /* Table */
 
-#type-analysis {
-    text-align: center;
-    background: #fff;
-    border: 1px solid #d9d9d9;
-    border-radius: 1em;
-    padding: 1em;
-    justify-content: stretch;
-}
-
 .grid {
     display: grid;
     gap: 1em;
@@ -603,11 +614,24 @@ dt {
     padding: 0;
 }
 
-#type-analysis .grid {
+.team__type-analysis {
+    text-align: center;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 1em;
+    padding: 1em;
+    justify-content: stretch;
+}
+
+.type-analysis_hidden {
+    display: none;
+}
+
+.type-analysis__grid {
     grid-template-columns: repeat(auto-fill, 6.875em);
 }
 
-#type-analysis h3 {
+.type-analysis__heading {
     margin: 0;
 }
 
@@ -1084,7 +1108,7 @@ footer {
 }
 
 @media screen and (min-width: 1280px) {
-    .head--sticky {
+    .head_sticky {
         position: sticky;
         z-index: 100;
         top: -1px;
@@ -1092,39 +1116,41 @@ footer {
         margin-bottom: 2rem;
     }
 
-    .head--sticky > .wrap {
+    .head_sticky > .wrap {
         height: 100%;
         transition: 0.4s;
         background: transparent;
     }
 
-    .head--sticky header,
-    .head--sticky .slot__info,
-    .head--sticky .slot__toggle-container,
-    .head--sticky .button,
-    .head--sticky h2 {
+    .head_sticky header,
+    .head_sticky .slot__info,
+    .head_sticky .slot__toggle-container,
+    .head_sticky .button,
+    .head_sticky h2 {
         display: none;
     }
 
-    .head--sticky #team,
-    .head--sticky #slots {
+    .head_sticky .team,
+    .head_sticky .team__slots {
         width: 100%;
         margin: 0;
     }
 
-    .head--sticky #team {
+    .head_sticky .team {
         display: flex;
         height: 20vh;
+        min-height: 9em;
     }
 
-    .head--sticky #slots {
+    .head_sticky .team__slots {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .head--sticky li {
+    .head_sticky .slot {
         transform: scale(0.75);
+        grid-template-rows: 1fr;
     }
 }
 
@@ -1173,7 +1199,7 @@ footer {
 }
 
 @media screen and (min-width: 775px) and (max-width: 1279px) {
-    #team {
+    .team {
         max-width: 26em;
         box-sizing: content-box;
     }
@@ -1194,11 +1220,11 @@ footer {
         margin: 1em 0;
     }
 
-    #head header p {
+    .head__header p {
         display: none;
     }
 
-    #head dd {
+    .head dd {
         margin: 0;
     }
 
