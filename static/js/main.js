@@ -603,6 +603,7 @@ function createPokemonEntry( slug, pokemon ) {
     img.setAttribute( "alt", pokemon.name );
     img.setAttribute( "src", getPokemonRenderUrl( pokemon ) );
     img.setAttribute( "loading", "lazy" );
+    if ( currentGame == "sv" ) img.classList.add( "sv" );
 
     // If Pokémon can Gigantamax, duplicate its entry
     if ( gameData[ currentGame ].gmax
