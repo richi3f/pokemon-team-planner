@@ -47,12 +47,12 @@ function buildPage() {
             window.location.href = "../";
             return;
         }
-        populateGameList( document.getElementById( "head" ) );
+        populateGameList( document.querySelector( ".head" ) );
         return;
     }
     completeTypeData();
     completePokemonData();
-    populateTeam( document.getElementById( "head" ) );
+    populateTeam( document.querySelector( ".head" ) );
     populateDexes( document.getElementById( "tail" ) );
     populateFilters();
     slugs.forEach( slug => populateTeamSlot( slug ) );
@@ -63,18 +63,18 @@ function buildPage() {
  * Shrink header when scrolling
  */
  function shrinkHead() {
-    const head = document.getElementById( "head" );
+    const head = document.querySelector( ".head" );
     const target = document.getElementById( "pokedexes" ).getBoundingClientRect().top;
-    const analysis = document.querySelector( "#type-analysis" );
+    const analysis = document.querySelector( ".team__type-analysis" );
     const activeFilters = document.querySelectorAll( ".filter.active" );
     if (
         target < 0 
-        && analysis.classList.contains( "hidden" )
+        && analysis.classList.contains( "type-analysis_hidden" )
         && activeFilters.length === 0
     ) {
-        head.classList.add( "head--sticky" );
+        head.classList.add( "head_sticky" );
     } else {
-        head.classList.remove( "head--sticky" );
+        head.classList.remove( "head_sticky" );
     }
 }
 
@@ -164,17 +164,18 @@ const UNKNOWN_IMG = BASE_IMG + "0000_000_uk_n.png";
  */
 function populateTeam( container ) {
     const div = document.createElement( "div" );
-    div.classList.add( "wrap" );
+    div.classList.add( "head__team" );
 
     const section = document.createElement( "section" );
     section.id = "team";
+    section.classList.add( "team" );
 
     const h2 = document.createElement( "h2" );
     h2.innerHTML = "Your Team";
+    h2.classList.add( "team__heading" );
 
     const ul = document.createElement( "ul" );
-    ul.id = "slots"
-    ul.classList.add( "list", "list-pokemon" );
+    ul.classList.add( "team__slots" );
 
     container.append( div );
     div.append( section );
@@ -198,30 +199,30 @@ function populateTeam( container ) {
     }
 
     var buttonContainer = document.createElement( "div" );
-    buttonContainer.classList.add( "button" );
+    buttonContainer.classList.add( "team__buttons" );
     section.append( buttonContainer );
 
     // Create button to randomize team
     var button = document.createElement( "button" );
-    button.id = "randomize";
     button.innerHTML = "Randomize Team";
-    button.classList.add( "button" );
+    button.classList.add( "team__button" );
     button.addEventListener( "click", randomizeTeam );
     buttonContainer.append( button );
 
     // Create analysis section
     const analysis = document.createElement( "div" );
-    analysis.classList.add( "grid", "hidden" );
-    analysis.setAttribute( "id", "type-analysis" );
+    analysis.classList.add( "grid", "team__type-analysis", "type-analysis_hidden" );
     const defTallies = document.createElement( "ol" );
     const defHeading = document.createElement( "h3" );
     defHeading.innerHTML = "Team Defense";
+    defHeading.classList.add( "type-analysis__heading" );
     createTallies( defTallies );
     const atkTallies = defTallies.cloneNode( true );
-    defTallies.classList.add( "grid", "defense" );
-    atkTallies.classList.add( "grid", "attack" );
+    defTallies.classList.add( "grid", "type-analysis__grid", "type-analysis__grid_defense" );
+    atkTallies.classList.add( "grid", "type-analysis__grid", "type-analysis__grid_attack" );
     const atkHeading = document.createElement( "h3" );
     atkHeading.innerHTML = "Coverage";
+    atkHeading.classList.add( "type-analysis__heading" );
     analysis.append( defHeading, defTallies, atkHeading, atkTallies );
     analysis.querySelectorAll( ".tally__mark" ).forEach( mark => {
         mark.addEventListener( "mouseenter", highlightTargetPokemon );
@@ -230,16 +231,16 @@ function populateTeam( container ) {
 
     // Create button to hide/show team analysis
     button = document.createElement( "button" );
-    button.id = "analysis";
     button.innerHTML = "Show Team Analysis";
-    button.classList.add( "button" );
+    button.classList.add( "team__button" );
     button.addEventListener( "click", ( event ) => {
-        if ( analysis.classList.contains( "hidden" ) ) {
+        const selector = "type-analysis_hidden";
+        if ( analysis.classList.contains( selector ) ) {
             event.target.innerHTML = "Hide Team Analysis";
-            analysis.classList.remove( "hidden" );
+            analysis.classList.remove( selector );
         } else {
             event.target.innerHTML = "Show Team Analysis";
-            analysis.classList.add( "hidden" );
+            analysis.classList.add( selector );
         }
     });
     section.append( analysis );
@@ -247,9 +248,8 @@ function populateTeam( container ) {
 
     // Create button to show advanced controls
     button = document.createElement( "button" );
-    button.id = "toggles";
     button.innerHTML = "Hide Toggles";
-    button.classList.add( "button" );
+    button.classList.add( "team__button" );
     button.addEventListener( "click", ( event ) => {
         document.querySelectorAll( ".slot__toggle-container" ).forEach( div => {
             const selector = "slot__toggle-container_hidden";
@@ -1246,8 +1246,8 @@ function updateTeamAnalysis() {
         return li.dataset.slug;
     });
     // Update team defense and offense
-    const defTallies = document.querySelector( "#type-analysis .defense" );
-    const atkTallies = document.querySelector( "#type-analysis .attack" );
+    const defTallies = document.querySelector( ".type-analysis__grid_defense" );
+    const atkTallies = document.querySelector( ".type-analysis__grid_attack" );
     Object.keys( getCurrentTypeData() ).forEach( type => {
         const weakPokemon = [], resistPokemon = [], coveragePokemon = [];
         // Update counts per type (resistances includes immunities)
