@@ -3713,7 +3713,7 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 2,
-        "evolution_ids": [ [ 944, 0 ] ]
+        "evolution_ids": [ [ 944, 0 ], [ 944, 1 ] ]
     },
     "gligar": {
         "base_id": 207,
@@ -15731,7 +15731,7 @@ export default {
         "gender": [ "mf" ],
         "gender_ratio": 4,
         "generation": 9,
-        "evolution_ids": [ [ 917, 0 ] ]
+        "evolution_ids": [ [ 918, 0 ] ]
     },
     "spidops": {
         "base_id": 918,
@@ -15804,6 +15804,8 @@ export default {
         "egg_group": [ "water_1", "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
         "generation": 9
     },
     "tandemaus": {
@@ -15837,6 +15839,7 @@ export default {
         "egg_group": [ "field", "fairy" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
+        "is_cosmetic": true,
         "generation": 9
     },
     "fidough": {
@@ -15869,7 +15872,7 @@ export default {
         "gender": [ "mf" ],
         "gender_ratio": 4,
         "generation": 9,
-        "evolution_ids": [ [ 929, 0 ] ]
+        "evolution_ids": [ [ 930, 0 ] ]
     },
     "dolliv": {
         "base_id": 930,
@@ -15880,7 +15883,7 @@ export default {
         "gender": [ "mf" ],
         "gender_ratio": 4,
         "generation": 9,
-        "evolution_ids": [ [ 930, 0 ] ]
+        "evolution_ids": [ [ 931, 0 ] ]
     },
     "arboliva": {
         "base_id": 931,
@@ -15903,6 +15906,42 @@ export default {
         "gender_ratio": 4,
         "generation": 9
     },
+    "squawkabilly-blue": {
+        "base_id": 932,
+        "form_id": 1,
+        "name": "Squawkabilly",
+        "form_name": "Blue Plumage",
+        "pokemon_type": [ "normal", "flying" ],
+        "egg_group": [ "flying" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "is_cosmetic": true,
+        "generation": 9
+    },
+    "squawkabilly-yellow": {
+        "base_id": 932,
+        "form_id": 2,
+        "name": "Squawkabilly",
+        "form_name": "Yellow Plumage",
+        "pokemon_type": [ "normal", "flying" ],
+        "egg_group": [ "flying" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "is_cosmetic": true,
+        "generation": 9
+    },
+    "squawkabilly-white": {
+        "base_id": 932,
+        "form_id": 3,
+        "name": "Squawkabilly",
+        "form_name": "White Plumage",
+        "pokemon_type": [ "normal", "flying" ],
+        "egg_group": [ "flying" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "is_cosmetic": true,
+        "generation": 9
+    },
     "nacli": {
         "base_id": 933,
         "form_id": 0,
@@ -15912,7 +15951,7 @@ export default {
         "gender": [ "mf" ],
         "gender_ratio": 4,
         "generation": 9,
-        "evolution_ids": [ [ 933, 0 ] ]
+        "evolution_ids": [ [ 934, 0 ] ]
     },
     "naclstack": {
         "base_id": 934,
@@ -15923,7 +15962,7 @@ export default {
         "gender": [ "mf" ],
         "gender_ratio": 4,
         "generation": 9,
-        "evolution_ids": [ [ 934, 0 ] ]
+        "evolution_ids": [ [ 935, 0 ] ]
     },
     "garganacl": {
         "base_id": 935,
@@ -15943,6 +15982,7 @@ export default {
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
+        "experience_group": "Medium Fast",
         "generation": 9
     },
     "charcadet": {
@@ -16027,6 +16067,22 @@ export default {
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 9
+    },
+    "dudunsparce-three-segment": {
+        "base_id": 944,
+        "form_id": 1,
+        "name": "Dudunsparce",
+        "form_name": "Three-Segment Form",
+        "pokemon_type": [ "normal" ],
+        "egg_group": [ "field" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "is_cosmetic": true,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
         "generation": 9
     },
     "farigiraf": {
@@ -16037,6 +16093,8 @@ export default {
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
         "generation": 9
     },
     "maschiff": {
@@ -16163,7 +16221,7 @@ export default {
         "gender": [ "mf" ],
         "gender_ratio": 4,
         "generation": 9,
-        "evolution_ids": [ [ 957, 0 ] ]
+        "evolution_ids": [ [ 958, 0 ] ]
     },
     "rabsca": {
         "base_id": 958,
@@ -16184,7 +16242,7 @@ export default {
         "gender": [ "mf" ],
         "gender_ratio": 4,
         "generation": 9,
-        "evolution_ids": [ [ 959, 0 ] ]
+        "evolution_ids": [ [ 960, 0 ] ]
     },
     "espathra": {
         "base_id": 960,
@@ -16415,6 +16473,8 @@ export default {
         "egg_group": [ "human_like" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
+        "color": "red",
+        "experience_group": "Medium Fast",
         "generation": 9
     },
     "veluza": {
@@ -16446,6 +16506,30 @@ export default {
         "egg_group": [ "water_2" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
+        "generation": 9
+    },
+    "tatsugiri-droopy": {
+        "base_id": 983,
+        "form_id": 1,
+        "name": "Tatsugiri",
+        "form_name": "Droopy Form",
+        "pokemon_type": [ "dragon", "water" ],
+        "egg_group": [ "water_2" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "is_cosmetic": true,
+        "generation": 9
+    },
+    "tatsugiri-stretchy": {
+        "base_id": 983,
+        "form_id": 2,
+        "name": "Tatsugiri",
+        "form_name": "Stretchy Form",
+        "pokemon_type": [ "dragon", "water" ],
+        "egg_group": [ "water_2" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "is_cosmetic": true,
         "generation": 9
     },
     "great-tusk": {
@@ -16605,6 +16689,18 @@ export default {
         "form_id": 0,
         "name": "Gimmighoul",
         "form_name": "Chest Form",
+        "pokemon_type": [ "ghost" ],
+        "egg_group": [ "undiscovered" ],
+        "gender": [ "uk" ],
+        "gender_ratio": -1,
+        "generation": 9,
+        "evolution_ids": [ [ 1000, 0 ] ]
+    },
+    "gimmighoul-roaming": {
+        "base_id": 999,
+        "form_id": 1,
+        "name": "Gimmighoul",
+        "form_name": "Roaming Form",
         "pokemon_type": [ "ghost" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],

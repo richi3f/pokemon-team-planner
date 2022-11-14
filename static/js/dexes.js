@@ -9349,8 +9349,8 @@ export default {
             "400": [ [ 1008, 0 ] ]
         }
     },
-    "paldea_transfer": {
-        "name": "Transfer Pok\u00e9mon",
+    "paldea_other": {
+        "name": "Other Pok\u00e9mon",
         "order": {
             "4": [ [ 4, 0 ] ],
             "5": [ [ 5, 0 ] ],
