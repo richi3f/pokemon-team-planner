@@ -516,7 +516,7 @@ dt {
 
 .pokedex-entry:hover {
     background-color: #cdf;
-    border-radius: 2em;
+    border-radius: 3em;
 }
 
 .pokedex-entry_filtered,
@@ -529,6 +529,12 @@ dt {
     height: 4rem;
     padding: 0.125rem 0;    
     filter: drop-shadow(0 0 0.5px #1b1b1b);
+}
+
+.pokedex-entry__thumb_sv {
+    width: 5rem;
+    height: 5rem;
+    filter: none;
 }
 
 .pokedex-entry__button:hover .pokedex-entry__thumb {

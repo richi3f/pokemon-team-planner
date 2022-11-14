@@ -618,6 +618,7 @@ function createPokemonEntry( slug, pokemon ) {
     img.setAttribute( "src", getPokemonRenderUrl( pokemon ) );
     img.setAttribute( "loading", "lazy" );
     img.classList.add( "pokedex-entry__thumb" );
+    if ( currentGame == "sv" ) img.classList.add( "pokedex-entry__thumb_sv" );
 
     // If Pokémon can Gigantamax, duplicate its entry
     if ( gameData[ currentGame ].gmax
