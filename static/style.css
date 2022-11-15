@@ -459,22 +459,51 @@ dt {
 
 /* Dex */
 
-.list.pokedex li {
-    margin: 0.5em;
+.picker__pokedexes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin: 1em 0;
+    padding: 0;
 }
-.list.pokedex li:hover {
+
+.picker__pokedex-container_hidden {
+    display: none;
+}
+
+.picker__pokedex-name {
+    margin: 0;
+}
+
+.picker__pokedex {
+    list-style: none;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fill, 4em);
+    justify-content: center;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.pokedex-entry:hover {
     background-color: #cdf;
     border-radius: 2em;
 }
 
-.list-pokemon button img {
+.pokedex-entry_filtered,
+.pokedex-entry_picked {
+    display: none;
+}
+
+.pokedex-entry__thumb {
     width: 4rem;
     height: 4rem;
     padding: 0.125rem 0;    
     filter: drop-shadow(0 0 0.5px #1b1b1b);
 }
 
-.list-pokemon button:hover img {
+.pokedex-entry__button:hover .pokedex-entry__thumb {
     animation: jump 0.33s linear infinite;
 }
 
@@ -1192,7 +1221,7 @@ footer {
         display: none;
     }
 
-    .list-pokemon button img {
+    .pokedex-entry__thumb {
         width: 3em;
         height: 3em;
     }

@@ -330,9 +330,9 @@ function populateTeamSlot( event_or_slug ) {
     shinyToggle.classList.remove( "slot__toggle_hidden", "slot__toggle_shiny" );
     shinyToggle.classList.add( "slot__toggle_regular" );
 
-    const li = document.querySelector( ".pokedex li[data-slug='" + slug + "']" );
+    const li = document.querySelector( ".pokedex-entry[data-slug='" + slug + "']" );
     if ( li ) {
-        li.classList.add( "picked" );
+        li.classList.add( "pokedex-entry_picked" );
         toggleEmptyDex();
     }
 
@@ -379,9 +379,9 @@ function populateTeamSlot( event_or_slug ) {
     // Move to last place
     slot.parentNode.append( slot );
 
-    const li = document.querySelector( ".pokedex li[data-slug='" + slug + "']" );
+    const li = document.querySelector( ".pokedex-entry[data-slug='" + slug + "']" );
     if ( li ) {
-        li.classList.remove( "picked" );
+        li.classList.remove( "pokedex-entry_picked" );
         toggleEmptyDex();
     }
 
@@ -475,7 +475,7 @@ function randomizeTeam() {
     });
     // List Pokémon that can be added to the team
     const slugs = Array.from(
-        document.querySelectorAll( ".pokedex li:not(.filtered):not(.picked)" )
+        document.querySelectorAll( ".pokedex-entry:not(.pokedex-entry_filtered):not(.pokedex-entry_picked)" )
     ).map( li => li.dataset.slug );
     // If there are Pokémon available, add up to 6 random picks
     if ( slugs.length > 0 ) {
@@ -522,19 +522,21 @@ function populateDexes( container ) {
     h2.innerHTML = "Your Options";
     div.id = "filters";
     ol.id = "pokedexes";
-    ol.classList.add( "list" );
+    ol.classList.add( "picker__pokedexes" );
 
     game.dex_slugs.forEach( ( slug, i ) => {
         let li = document.createElement( "li" );
         let heading = document.createElement( "h3" );
         let pokedex = document.createElement( "ol" );
+        li.classList.add( "picker__pokedex-container" );
 
         ol.append( li );
         li.append( heading );
         heading.innerHTML = dexData[ slug ].name;
+        heading.classList.add( "picker__pokedex-name" );
         li.append( pokedex );
         pokedex.id = slug;
-        pokedex.classList.add( "list", "list-pokemon", "pokedex" );
+        pokedex.classList.add( "picker__pokedex" );
 
         populateDex( pokedex, dexData[ slug ] );
     });
@@ -577,15 +579,18 @@ function createPokemonEntry( slug, pokemon ) {
     li.append( button );
     button.append( img );
     button.addEventListener( "click", populateTeamSlot );
+    button.classList.add( "pokedex-entry__button" );
 
     li.dataset.slug = slug;
     li.dataset.id = pokemon.base_id;
     li.dataset.formId = pokemon.form_id;
     li.setAttribute( "title", pokemon.name );
+    li.classList.add( "pokedex-entry" )
 
     img.setAttribute( "alt", pokemon.name );
     img.setAttribute( "src", getPokemonRenderUrl( pokemon ) );
     img.setAttribute( "loading", "lazy" );
+    img.classList.add( "pokedex-entry__thumb" );
 
     // If Pokémon can Gigantamax, duplicate its entry
     if ( gameData[ currentGame ].gmax
@@ -1130,7 +1135,7 @@ function filterDex() {
         getSelectedFilters( "color" )
     ];
     const query = normalize( document.getElementById( "search-bar" ).value );
-    document.querySelectorAll( ".pokedex li" ).forEach( li => {
+    document.querySelectorAll( ".pokedex-entry" ).forEach( li => {
         var slug = li.dataset.slug;
         const gmax = slug.endsWith( "-gmax" );
         if ( gmax ) slug = slug.substring( 0, slug.length - 5 );
@@ -1147,10 +1152,10 @@ function filterDex() {
             && pokemonIsTagged( pokemon, gmax, tags )
             && pokemonIsColor( pokemon, colors )
         ) {
-            li.classList.remove( "filtered" );
+            li.classList.remove( "pokedex-entry_filtered" );
             return;
         }
-        li.classList.add( "filtered" );
+        li.classList.add( "pokedex-entry_filtered" );
     });
     toggleEmptyDex();
 }
@@ -1159,11 +1164,11 @@ function filterDex() {
  * Hides/shows any Pokédex that is empty (i.e., all Pokémon picked or filtered).
  */
 function toggleEmptyDex() {
-    document.querySelectorAll( ".pokedex" ).forEach( ol => {
-        if ( ol.children.length === ol.querySelectorAll( ":where(.filtered, .picked)" ).length ) {
-            ol.parentNode.classList.add( "hidden" );
+    document.querySelectorAll( ".picker__pokedex" ).forEach( ol => {
+        if ( ol.children.length === ol.querySelectorAll( ":where(.pokedex-entry_filtered, .pokedex-entry_picked)" ).length ) {
+            ol.parentNode.classList.add( "picker__pokedex-container_hidden" );
         } else {
-            ol.parentNode.classList.remove( "hidden" );
+            ol.parentNode.classList.remove( "picker__pokedex-container_hidden" );
         }
     });
 }
