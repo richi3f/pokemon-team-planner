@@ -1116,17 +1116,17 @@ footer {
         margin-bottom: 2rem;
     }
 
-    .head_sticky > .wrap {
+    .head_sticky .head__team {
         height: 100%;
         transition: 0.4s;
         background: transparent;
     }
 
-    .head_sticky header,
+    .head_sticky .head__header,
     .head_sticky .slot__info,
     .head_sticky .slot__toggle-container,
-    .head_sticky .button,
-    .head_sticky h2 {
+    .head_sticky .team__buttons,
+    .head_sticky .team__heading {
         display: none;
     }
 
