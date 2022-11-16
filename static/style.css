@@ -507,8 +507,8 @@ dt {
 .picker__pokedex {
     list-style: none;
     display: grid;
-    gap: 1em;
-    grid-template-columns: repeat(auto-fill, 4em);
+    gap: 0.25em;
+    grid-template-columns: repeat(auto-fill, 5em);
     justify-content: center;
     margin: 1em 0;
     padding: 0;
@@ -531,7 +531,8 @@ dt {
 .pokedex-entry__thumb {
     width: 4rem;
     height: 4rem;
-    padding: 0.125rem 0;    
+    padding: 0.125rem 0;
+    margin: 0.5em;
     filter: drop-shadow(0 0 0.5px #1b1b1b);
 }
 
@@ -539,6 +540,7 @@ dt {
     width: 5rem;
     height: 5rem;
     filter: none;
+    margin: 0;
 }
 
 .pokedex-entry__button:hover .pokedex-entry__thumb {
@@ -1277,12 +1279,17 @@ dt {
     }
 
     .picker__pokedex {
-        grid-template-columns: repeat(auto-fill, 3em);
+        grid-template-columns: repeat(auto-fill, 4em);
     }
 
     .pokedex-entry__thumb {
         width: 3em;
         height: 3em;
+    }
+
+    .pokedex-entry__thumb_sv {
+        width: 4em;
+        height: 4em;
     }
 }
 
