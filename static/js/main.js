@@ -300,18 +300,22 @@ function populateTeamSlot( event_or_slug ) {
     slot.classList.remove( "slot_empty", "slot_hover" );
     slot.dataset.slug = slug;
 
-    const name = ( gmax ? "Gigantamax " : "" ) + pokemon.name;
     const img = slot.querySelector( ".slot__pokemon-render" );
     img.setAttribute( "src", getPokemonRenderUrl( pokemon, gmax ) );
-    img.setAttribute( "alt", name );
+    img.setAttribute( "alt", pokemon.name );
 
-    slot.querySelector( ".slot__name" ).innerHTML = name;
+    slot.querySelector( ".slot__name" ).innerHTML = pokemon.name;
 
-    if ( pokemon.form_name ) {
-        slot.querySelector( ".slot__form" ).innerHTML = pokemon.form_name;
+    const form = gmax ? "Gigantamax" : pokemon.form_name;
+    var span =  slot.querySelector( ".slot__form" );
+    if ( form ) {
+        span.innerHTML = form;
+        span.classList.remove( "slot__form_none" );
+    } else {
+        span.classList.add( "slot__form_none" );
     }
 
-    var span = slot.querySelectorAll( ".slot__type" );
+    span = slot.querySelectorAll( ".slot__type" );
     span.forEach( ( span, i ) => {
         span.classList.add( "slot__type_" + type[ i ] );
         span.innerHTML = ( type[ i ] ) ? capitalize( type[ i ] ) : "";
@@ -362,7 +366,9 @@ function populateTeamSlot( event_or_slug ) {
     img.setAttribute( "alt", "" );
 
     slot.querySelector( ".slot__name" ).innerHTML = "???";
-    slot.querySelector( ".slot__form" ).innerHTML = "";
+    const span = slot.querySelector( ".slot__form" );
+    span.innerHTML = "";
+    span.classList.add( "slot__form_none" );
     slot.querySelectorAll( ".slot__type" ).forEach( span => {
         span.setAttribute( "class", "slot__type" );
         span.innerHTML = "";
