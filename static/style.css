@@ -804,21 +804,21 @@ dt {
 
 /* Footer */
 
-footer {
+.tail__footer {
     font-size: 0.75em;
     text-align: right
 }
 
-#donation {
+.footer__donation {
     line-height: 1.25rem;
     text-align: center
 }
 
-#bugs {
+.footer__feedback {
     text-align: center
 }
 
-#donation a {
+.footer__donation-button {
     background: url(https://img.shields.io/badge/donation%20via-PayPal-blue.svg);
     display: inline-block;
     vertical-align: middle;
@@ -1311,7 +1311,7 @@ footer {
         display: none;
     }
 
-    footer {
+    .tail__footer {
         font-size: 1em;
     }
 }
