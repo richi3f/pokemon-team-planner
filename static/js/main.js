@@ -94,10 +94,10 @@ function populateGameList( container ) {
 
     container.querySelector( "header" ).after( section );
     section.append( h2, p, ol );
-    section.id = "games";
+    section.classList.add( "head__game-picker" );
     h2.innerHTML = "Games";
     p.innerHTML = GAME_TEXT;
-    ol.classList.add( "list" );
+    ol.classList.add( "game-picker" );
 
     const games = Object.entries( gameData );
     games.forEach( tup => {
@@ -112,13 +112,15 @@ function populateGameList( container ) {
         li.append( a );
         a.append( img );
 
-        li.classList.add( "game", slug );
+        li.classList.add( "game-picker__game" );
+        a.classList.add( "game-picker__button" );
         a.setAttribute( "title", name );
         a.setAttribute( "href", url );
+        img.classList.add( "game-picker__game-logo", "game-picker__game-logo_" + slug );
         img.setAttribute( "alt", name );
         img.setAttribute( "src", GAME_PATH + slug + ".png" );
 
-        if ( game.disabled ) li.classList.add( "disabled" );
+        if ( game.disabled ) li.classList.add( "game-picker__game_disabled" );
     });
 }
 
@@ -166,7 +168,6 @@ function populateTeam( container ) {
     div.classList.add( "head__team" );
 
     const section = document.createElement( "section" );
-    section.id = "team";
     section.classList.add( "team" );
 
     const h2 = document.createElement( "h2" );
@@ -210,15 +211,15 @@ function populateTeam( container ) {
 
     // Create analysis section
     const analysis = document.createElement( "div" );
-    analysis.classList.add( "grid", "team__type-analysis", "type-analysis_hidden" );
+    analysis.classList.add( "team__type-analysis", "type-analysis_hidden" );
     const defTallies = document.createElement( "ol" );
     const defHeading = document.createElement( "h3" );
     defHeading.innerHTML = "Team Defense";
     defHeading.classList.add( "type-analysis__heading" );
     createTallies( defTallies );
     const atkTallies = defTallies.cloneNode( true );
-    defTallies.classList.add( "grid", "type-analysis__grid", "type-analysis__grid_defense" );
-    atkTallies.classList.add( "grid", "type-analysis__grid", "type-analysis__grid_attack" );
+    defTallies.classList.add( "type-analysis__grid", "type-analysis__grid_defense" );
+    atkTallies.classList.add( "type-analysis__grid", "type-analysis__grid_attack" );
     const atkHeading = document.createElement( "h3" );
     atkHeading.innerHTML = "Coverage";
     atkHeading.classList.add( "type-analysis__heading" );
@@ -507,15 +508,16 @@ function randomizeTeam() {
 function populateDexes( container ) {
     const game = gameData[ currentGame ];
 
-    const h1 = document.querySelector( "h1 .name" );
+    const h1 = document.querySelector( ".head__game-name" );
     const section = document.createElement( "section" );
     const h2 = document.createElement( "h2" );
     const div = document.createElement( "div" );
     const ol = document.createElement( "ol" );
 
+    h1.parentNode.classList.add( "head__game-button" );
     h1.innerHTML = getGameName( game );
-    h1.classList.add( "game", currentGame );
-    h1.style.background = "url('" + GAME_PATH + currentGame + ".png')";
+    h1.classList.add( "head__game-logo", "head__game-logo_" + currentGame );
+    h1.style.backgroundImage = "url('" + GAME_PATH + currentGame + ".png')";
     container.prepend( section );
     section.append( h2, div, ol );
     section.classList.add( "tail__picker" );
@@ -778,7 +780,7 @@ function populateFilters() {
     dropdown.append( createCheckbox( "tag", "Legendary", "is_legendary" ) );
     dropdown.append( createCheckbox( "tag", "Mythical", "is_mythical" ) );
     const checkbox = createCheckbox( "tag", "All Forms", "is_not_misc_form" );
-    checkbox.classList.add( "hidden" );
+    checkbox.classList.add( "dropdown-menu-item_hidden" );
     checkbox.querySelector( "input" ).setAttribute( "readonly", "" );
     dropdown.append( checkbox );
     if ( gameData[ currentGame ].gen >= 2 ) {
