@@ -100,9 +100,9 @@ article section {
 }
 
 .team__buttons {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    grid-template-columns: repeat(3, 12em);
     gap: 1em;
 }
 
@@ -115,7 +115,8 @@ article section {
     padding: .2em .5em;
     border-radius: .25em;
     cursor: pointer;
-    box-sizing: border-box
+    box-sizing: border-box;
+    flex-basis: 12em;
 }
 
 .team__button:hover,
@@ -409,9 +410,7 @@ dt {
     text-indent: -999em;
 }
 
-.slot__type_undefined,
-.pokedex li.filtered,
-.pokedex li.picked {
+.slot__type_undefined {
     display: none;
 }
 
@@ -1194,6 +1193,7 @@ footer {
 
     .slot {
         width: 8em;
+        grid-template-rows: 5em 4em 1fr;
     }
 
     .slot__pokemon-render {
@@ -1219,6 +1219,10 @@ footer {
 
     .slot__type {
         display: none;
+    }
+
+    .picker__pokedex {
+        grid-template-columns: repeat(auto-fill, 3em);
     }
 
     .pokedex-entry__thumb {
