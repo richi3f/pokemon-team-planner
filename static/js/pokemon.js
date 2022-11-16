@@ -41,7 +41,8 @@ export default {
     "venusaur-mega": {
         "base_id": 3,
         "form_id": 1,
-        "name": "Mega Venusaur",
+        "name": "Venusaur",
+        "form_name": "Mega Venusaur",
         "pokemon_type": [ "grass", "poison" ],
         "egg_group": [ "monster", "grass" ],
         "gender": [ "mf" ],
@@ -94,7 +95,8 @@ export default {
     "charizard-mega-x": {
         "base_id": 6,
         "form_id": 1,
-        "name": "Mega Charizard X",
+        "name": "Charizard",
+        "form_name": "Mega Charizard X",
         "pokemon_type": [ "fire", "dragon" ],
         "egg_group": [ "monster", "dragon" ],
         "gender": [ "mf" ],
@@ -108,7 +110,8 @@ export default {
     "charizard-mega-y": {
         "base_id": 6,
         "form_id": 2,
-        "name": "Mega Charizard Y",
+        "name": "Charizard",
+        "form_name": "Mega Charizard Y",
         "pokemon_type": [ "fire", "flying" ],
         "egg_group": [ "monster", "dragon" ],
         "gender": [ "mf" ],
@@ -161,7 +164,8 @@ export default {
     "blastoise-mega": {
         "base_id": 9,
         "form_id": 1,
-        "name": "Mega Blastoise",
+        "name": "Blastoise",
+        "form_name": "Mega Blastoise",
         "pokemon_type": [ "water" ],
         "egg_group": [ "monster", "water_1" ],
         "gender": [ "mf" ],
@@ -252,7 +256,8 @@ export default {
     "beedrill-mega": {
         "base_id": 15,
         "form_id": 1,
-        "name": "Mega Beedrill",
+        "name": "Beedrill",
+        "form_name": "Mega Beedrill",
         "pokemon_type": [ "bug", "poison" ],
         "egg_group": [ "bug" ],
         "gender": [ "mf" ],
@@ -304,7 +309,8 @@ export default {
     "pidgeot-mega": {
         "base_id": 18,
         "form_id": 1,
-        "name": "Mega Pidgeot",
+        "name": "Pidgeot",
+        "form_name": "Mega Pidgeot",
         "pokemon_type": [ "normal", "flying" ],
         "egg_group": [ "flying" ],
         "gender": [ "mf" ],
@@ -331,7 +337,8 @@ export default {
     "rattata-alola": {
         "base_id": 19,
         "form_id": 1,
-        "name": "Alolan Rattata",
+        "name": "Rattata",
+        "form_name": "Alolan Form",
         "pokemon_type": [ "dark", "normal" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -356,7 +363,8 @@ export default {
     "raticate-alola": {
         "base_id": 20,
         "form_id": 1,
-        "name": "Alolan Raticate",
+        "name": "Raticate",
+        "form_name": "Alolan Form",
         "pokemon_type": [ "dark", "normal" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -444,7 +452,8 @@ export default {
     "raichu-alola": {
         "base_id": 26,
         "form_id": 1,
-        "name": "Alolan Raichu",
+        "name": "Raichu",
+        "form_name": "Alolan Form",
         "pokemon_type": [ "electric", "psychic" ],
         "egg_group": [ "field", "fairy" ],
         "gender": [ "mf" ],
@@ -469,7 +478,8 @@ export default {
     "sandshrew-alola": {
         "base_id": 27,
         "form_id": 1,
-        "name": "Alolan Sandshrew",
+        "name": "Sandshrew",
+        "form_name": "Alolan Form",
         "pokemon_type": [ "ice", "steel" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -494,7 +504,8 @@ export default {
     "sandslash-alola": {
         "base_id": 28,
         "form_id": 1,
-        "name": "Alolan Sandslash",
+        "name": "Sandslash",
+        "form_name": "Alolan Form",
         "pokemon_type": [ "ice", "steel" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -622,7 +633,8 @@ export default {
     "vulpix-alola": {
         "base_id": 37,
         "form_id": 1,
-        "name": "Alolan Vulpix",
+        "name": "Vulpix",
+        "form_name": "Alolan Form",
         "pokemon_type": [ "ice" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -647,7 +659,8 @@ export default {
     "ninetales-alola": {
         "base_id": 38,
         "form_id": 1,
-        "name": "Alolan Ninetales",
+        "name": "Ninetales",
+        "form_name": "Alolan Form",
         "pokemon_type": [ "ice", "fairy" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -813,7 +826,8 @@ export default {
     "diglett-alola": {
         "base_id": 50,
         "form_id": 1,
-        "name": "Alolan Diglett",
+        "name": "Diglett",
+        "form_name": "Alolan Form",
         "pokemon_type": [ "ground", "steel" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -838,7 +852,8 @@ export default {
     "dugtrio-alola": {
         "base_id": 51,
         "form_id": 1,
-        "name": "Alolan Dugtrio",
+        "name": "Dugtrio",
+        "form_name": "Alolan Form",
         "pokemon_type": [ "ground", "steel" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -864,7 +879,8 @@ export default {
     "meowth-alola": {
         "base_id": 52,
         "form_id": 1,
-        "name": "Alolan Meowth",
+        "name": "Meowth",
+        "form_name": "Alolan Form",
         "pokemon_type": [ "dark" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -877,7 +893,8 @@ export default {
     "meowth-galar": {
         "base_id": 52,
         "form_id": 2,
-        "name": "Galarian Meowth",
+        "name": "Meowth",
+        "form_name": "Galarian Form",
         "pokemon_type": [ "steel" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -902,7 +919,8 @@ export default {
     "persian-alola": {
         "base_id": 53,
         "form_id": 1,
-        "name": "Alolan Persian",
+        "name": "Persian",
+        "form_name": "Alolan Form",
         "pokemon_type": [ "dark" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -978,7 +996,8 @@ export default {
     "growlithe-hisui": {
         "base_id": 58,
         "form_id": 1,
-        "name": "Hisuian Growlithe",
+        "name": "Growlithe",
+        "form_name": "Hisuian Form",
         "pokemon_type": [ "fire", "rock" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -1003,7 +1022,8 @@ export default {
     "arcanine-hisui": {
         "base_id": 59,
         "form_id": 1,
-        "name": "Hisuian Arcanine",
+        "name": "Arcanine",
+        "form_name": "Hisuian Form",
         "pokemon_type": [ "fire", "rock" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -1091,7 +1111,8 @@ export default {
     "alakazam-mega": {
         "base_id": 65,
         "form_id": 1,
-        "name": "Mega Alakazam",
+        "name": "Alakazam",
+        "form_name": "Mega Alakazam",
         "pokemon_type": [ "psychic" ],
         "egg_group": [ "human_like" ],
         "gender": [ "mf" ],
@@ -1220,7 +1241,8 @@ export default {
     "geodude-alola": {
         "base_id": 74,
         "form_id": 1,
-        "name": "Alolan Geodude",
+        "name": "Geodude",
+        "form_name": "Alolan Form",
         "pokemon_type": [ "rock", "electric" ],
         "egg_group": [ "mineral" ],
         "gender": [ "mf" ],
@@ -1246,7 +1268,8 @@ export default {
     "graveler-alola": {
         "base_id": 75,
         "form_id": 1,
-        "name": "Alolan Graveler",
+        "name": "Graveler",
+        "form_name": "Alolan Form",
         "pokemon_type": [ "rock", "electric" ],
         "egg_group": [ "mineral" ],
         "gender": [ "mf" ],
@@ -1271,7 +1294,8 @@ export default {
     "golem-alola": {
         "base_id": 76,
         "form_id": 1,
-        "name": "Alolan Golem",
+        "name": "Golem",
+        "form_name": "Alolan Form",
         "pokemon_type": [ "rock", "electric" ],
         "egg_group": [ "mineral" ],
         "gender": [ "mf" ],
@@ -1296,7 +1320,8 @@ export default {
     "ponyta-galar": {
         "base_id": 77,
         "form_id": 1,
-        "name": "Galarian Ponyta",
+        "name": "Ponyta",
+        "form_name": "Galarian Form",
         "pokemon_type": [ "psychic" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -1321,7 +1346,8 @@ export default {
     "rapidash-galar": {
         "base_id": 78,
         "form_id": 1,
-        "name": "Galarian Rapidash",
+        "name": "Rapidash",
+        "form_name": "Galarian Form",
         "pokemon_type": [ "psychic", "fairy" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -1346,7 +1372,8 @@ export default {
     "slowpoke-galar": {
         "base_id": 79,
         "form_id": 1,
-        "name": "Galarian Slowpoke",
+        "name": "Slowpoke",
+        "form_name": "Galarian Form",
         "pokemon_type": [ "psychic" ],
         "egg_group": [ "monster", "water_1" ],
         "gender": [ "mf" ],
@@ -1371,7 +1398,8 @@ export default {
     "slowbro-mega": {
         "base_id": 80,
         "form_id": 1,
-        "name": "Mega Slowbro",
+        "name": "Slowbro",
+        "form_name": "Mega Slowbro",
         "pokemon_type": [ "water", "psychic" ],
         "egg_group": [ "monster", "water_1" ],
         "gender": [ "mf" ],
@@ -1385,7 +1413,8 @@ export default {
     "slowbro-galar": {
         "base_id": 80,
         "form_id": 2,
-        "name": "Galarian Slowbro",
+        "name": "Slowbro",
+        "form_name": "Galarian Form",
         "pokemon_type": [ "poison", "psychic" ],
         "egg_group": [ "monster", "water_1" ],
         "gender": [ "mf" ],
@@ -1437,7 +1466,8 @@ export default {
     "farfetchd-galar": {
         "base_id": 83,
         "form_id": 1,
-        "name": "Galarian Farfetch'd",
+        "name": "Farfetch'd",
+        "form_name": "Galarian Form",
         "pokemon_type": [ "fighting" ],
         "egg_group": [ "flying", "field" ],
         "gender": [ "mf" ],
@@ -1513,7 +1543,8 @@ export default {
     "grimer-alola": {
         "base_id": 88,
         "form_id": 1,
-        "name": "Alolan Grimer",
+        "name": "Grimer",
+        "form_name": "Alolan Form",
         "pokemon_type": [ "poison", "dark" ],
         "egg_group": [ "amorphous" ],
         "gender": [ "mf" ],
@@ -1538,7 +1569,8 @@ export default {
     "muk-alola": {
         "base_id": 89,
         "form_id": 1,
-        "name": "Alolan Muk",
+        "name": "Muk",
+        "form_name": "Alolan Form",
         "pokemon_type": [ "poison", "dark" ],
         "egg_group": [ "amorphous" ],
         "gender": [ "mf" ],
@@ -1614,7 +1646,8 @@ export default {
     "gengar-mega": {
         "base_id": 94,
         "form_id": 1,
-        "name": "Mega Gengar",
+        "name": "Gengar",
+        "form_name": "Mega Gengar",
         "pokemon_type": [ "ghost", "poison" ],
         "egg_group": [ "amorphous" ],
         "gender": [ "mf" ],
@@ -1705,7 +1738,8 @@ export default {
     "voltorb-hisui": {
         "base_id": 100,
         "form_id": 1,
-        "name": "Hisuian Voltorb",
+        "name": "Voltorb",
+        "form_name": "Hisuian Form",
         "pokemon_type": [ "electric", "grass" ],
         "egg_group": [ "mineral" ],
         "gender": [ "uk" ],
@@ -1730,7 +1764,8 @@ export default {
     "electrode-hisui": {
         "base_id": 101,
         "form_id": 1,
-        "name": "Hisuian Electrode",
+        "name": "Electrode",
+        "form_name": "Hisuian Form",
         "pokemon_type": [ "electric", "grass" ],
         "egg_group": [ "mineral" ],
         "gender": [ "uk" ],
@@ -1767,7 +1802,8 @@ export default {
     "exeggutor-alola": {
         "base_id": 103,
         "form_id": 1,
-        "name": "Alolan Exeggutor",
+        "name": "Exeggutor",
+        "form_name": "Alolan Form",
         "pokemon_type": [ "grass", "dragon" ],
         "egg_group": [ "grass" ],
         "gender": [ "mf" ],
@@ -1804,7 +1840,8 @@ export default {
     "marowak-alola": {
         "base_id": 105,
         "form_id": 1,
-        "name": "Alolan Marowak",
+        "name": "Marowak",
+        "form_name": "Alolan Form",
         "pokemon_type": [ "fire", "ghost" ],
         "egg_group": [ "monster" ],
         "gender": [ "mf" ],
@@ -1878,7 +1915,8 @@ export default {
     "weezing-galar": {
         "base_id": 110,
         "form_id": 1,
-        "name": "Galarian Weezing",
+        "name": "Weezing",
+        "form_name": "Galarian Form",
         "pokemon_type": [ "poison", "fairy" ],
         "egg_group": [ "amorphous" ],
         "gender": [ "mf" ],
@@ -1954,7 +1992,8 @@ export default {
     "kangaskhan-mega": {
         "base_id": 115,
         "form_id": 1,
-        "name": "Mega Kangaskhan",
+        "name": "Kangaskhan",
+        "form_name": "Mega Kangaskhan",
         "pokemon_type": [ "normal" ],
         "egg_group": [ "monster" ],
         "gender": [ "fo" ],
@@ -2057,7 +2096,8 @@ export default {
     "mr-mime-galar": {
         "base_id": 122,
         "form_id": 1,
-        "name": "Galarian Mr. Mime",
+        "name": "Mr. Mime",
+        "form_name": "Galarian Form",
         "pokemon_type": [ "ice", "psychic" ],
         "egg_group": [ "human_like" ],
         "gender": [ "mf" ],
@@ -2133,7 +2173,8 @@ export default {
     "pinsir-mega": {
         "base_id": 127,
         "form_id": 1,
-        "name": "Mega Pinsir",
+        "name": "Pinsir",
+        "form_name": "Mega Pinsir",
         "pokemon_type": [ "bug", "flying" ],
         "egg_group": [ "bug" ],
         "gender": [ "mf" ],
@@ -2223,7 +2264,8 @@ export default {
     "gyarados-mega": {
         "base_id": 130,
         "form_id": 1,
-        "name": "Mega Gyarados",
+        "name": "Gyarados",
+        "form_name": "Mega Gyarados",
         "pokemon_type": [ "water", "dark" ],
         "egg_group": [ "water_2", "dragon" ],
         "gender": [ "mf" ],
@@ -2387,7 +2429,8 @@ export default {
     "aerodactyl-mega": {
         "base_id": 142,
         "form_id": 1,
-        "name": "Mega Aerodactyl",
+        "name": "Aerodactyl",
+        "form_name": "Mega Aerodactyl",
         "pokemon_type": [ "rock", "flying" ],
         "egg_group": [ "flying" ],
         "gender": [ "mf" ],
@@ -2427,7 +2470,8 @@ export default {
     "articuno-galar": {
         "base_id": 144,
         "form_id": 1,
-        "name": "Galarian Articuno",
+        "name": "Articuno",
+        "form_name": "Galarian Form",
         "pokemon_type": [ "psychic", "flying" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
@@ -2453,7 +2497,8 @@ export default {
     "zapdos-galar": {
         "base_id": 145,
         "form_id": 1,
-        "name": "Galarian Zapdos",
+        "name": "Zapdos",
+        "form_name": "Galarian Form",
         "pokemon_type": [ "fighting", "flying" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
@@ -2479,7 +2524,8 @@ export default {
     "moltres-galar": {
         "base_id": 146,
         "form_id": 1,
-        "name": "Galarian Moltres",
+        "name": "Moltres",
+        "form_name": "Galarian Form",
         "pokemon_type": [ "dark", "flying" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
@@ -2543,7 +2589,8 @@ export default {
     "mewtwo-mega-x": {
         "base_id": 150,
         "form_id": 1,
-        "name": "Mega Mewtwo X",
+        "name": "Mewtwo",
+        "form_name": "Mega Mewtwo X",
         "pokemon_type": [ "psychic", "fighting" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
@@ -2558,7 +2605,8 @@ export default {
     "mewtwo-mega-y": {
         "base_id": 150,
         "form_id": 2,
-        "name": "Mega Mewtwo Y",
+        "name": "Mewtwo",
+        "form_name": "Mega Mewtwo Y",
         "pokemon_type": [ "psychic" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
@@ -2662,7 +2710,8 @@ export default {
     "typhlosion-hisui": {
         "base_id": 157,
         "form_id": 1,
-        "name": "Hisuian Typhlosion",
+        "name": "Typhlosion",
+        "form_name": "Hisuian Form",
         "pokemon_type": [ "fire", "ghost" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -2985,7 +3034,8 @@ export default {
     "ampharos-mega": {
         "base_id": 181,
         "form_id": 1,
-        "name": "Mega Ampharos",
+        "name": "Ampharos",
+        "form_name": "Mega Ampharos",
         "pokemon_type": [ "electric", "dragon" ],
         "egg_group": [ "monster", "field" ],
         "gender": [ "mf" ],
@@ -3239,7 +3289,8 @@ export default {
     "slowking-galar": {
         "base_id": 199,
         "form_id": 1,
-        "name": "Galarian Slowking",
+        "name": "Slowking",
+        "form_name": "Galarian Form",
         "pokemon_type": [ "poison", "psychic" ],
         "egg_group": [ "monster", "water_1" ],
         "gender": [ "mf" ],
@@ -3743,7 +3794,8 @@ export default {
     "steelix-mega": {
         "base_id": 208,
         "form_id": 1,
-        "name": "Mega Steelix",
+        "name": "Steelix",
+        "form_name": "Mega Steelix",
         "pokemon_type": [ "steel", "ground" ],
         "egg_group": [ "mineral" ],
         "gender": [ "mf" ],
@@ -3796,7 +3848,8 @@ export default {
     "qwilfish-hisui": {
         "base_id": 211,
         "form_id": 1,
-        "name": "Hisuian Qwilfish",
+        "name": "Qwilfish",
+        "form_name": "Hisuian Form",
         "pokemon_type": [ "dark", "poison" ],
         "egg_group": [ "water_2" ],
         "gender": [ "mf" ],
@@ -3821,7 +3874,8 @@ export default {
     "scizor-mega": {
         "base_id": 212,
         "form_id": 1,
-        "name": "Mega Scizor",
+        "name": "Scizor",
+        "form_name": "Mega Scizor",
         "pokemon_type": [ "bug", "steel" ],
         "egg_group": [ "bug" ],
         "gender": [ "mf" ],
@@ -3859,7 +3913,8 @@ export default {
     "heracross-mega": {
         "base_id": 214,
         "form_id": 1,
-        "name": "Mega Heracross",
+        "name": "Heracross",
+        "form_name": "Mega Heracross",
         "pokemon_type": [ "bug", "fighting" ],
         "egg_group": [ "bug" ],
         "gender": [ "mf" ],
@@ -3886,7 +3941,8 @@ export default {
     "sneasel-hisui": {
         "base_id": 215,
         "form_id": 1,
-        "name": "Hisuian Sneasel",
+        "name": "Sneasel",
+        "form_name": "Hisuian Form",
         "pokemon_type": [ "fighting", "poison" ],
         "egg_group": [ "field" ],
         "gender": [ "fd", "md" ],
@@ -3988,7 +4044,8 @@ export default {
     "corsola-galar": {
         "base_id": 222,
         "form_id": 1,
-        "name": "Galarian Corsola",
+        "name": "Corsola",
+        "form_name": "Galarian Form",
         "pokemon_type": [ "ghost" ],
         "egg_group": [ "water_1", "water_3" ],
         "gender": [ "mf" ],
@@ -4087,7 +4144,8 @@ export default {
     "houndoom-mega": {
         "base_id": 229,
         "form_id": 1,
-        "name": "Mega Houndoom",
+        "name": "Houndoom",
+        "form_name": "Mega Houndoom",
         "pokemon_type": [ "dark", "fire" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -4345,7 +4403,8 @@ export default {
     "tyranitar-mega": {
         "base_id": 248,
         "form_id": 1,
-        "name": "Mega Tyranitar",
+        "name": "Tyranitar",
+        "form_name": "Mega Tyranitar",
         "pokemon_type": [ "rock", "dark" ],
         "egg_group": [ "monster" ],
         "gender": [ "mf" ],
@@ -4436,7 +4495,8 @@ export default {
     "sceptile-mega": {
         "base_id": 254,
         "form_id": 1,
-        "name": "Mega Sceptile",
+        "name": "Sceptile",
+        "form_name": "Mega Sceptile",
         "pokemon_type": [ "grass", "dragon" ],
         "egg_group": [ "monster", "dragon" ],
         "gender": [ "mf" ],
@@ -4488,7 +4548,8 @@ export default {
     "blaziken-mega": {
         "base_id": 257,
         "form_id": 1,
-        "name": "Mega Blaziken",
+        "name": "Blaziken",
+        "form_name": "Mega Blaziken",
         "pokemon_type": [ "fire", "fighting" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -4540,7 +4601,8 @@ export default {
     "swampert-mega": {
         "base_id": 260,
         "form_id": 1,
-        "name": "Mega Swampert",
+        "name": "Swampert",
+        "form_name": "Mega Swampert",
         "pokemon_type": [ "water", "ground" ],
         "egg_group": [ "monster", "water_1" ],
         "gender": [ "mf" ],
@@ -4592,7 +4654,8 @@ export default {
     "zigzagoon-galar": {
         "base_id": 263,
         "form_id": 1,
-        "name": "Galarian Zigzagoon",
+        "name": "Zigzagoon",
+        "form_name": "Galarian Form",
         "pokemon_type": [ "dark", "normal" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -4617,7 +4680,8 @@ export default {
     "linoone-galar": {
         "base_id": 264,
         "form_id": 1,
-        "name": "Galarian Linoone",
+        "name": "Linoone",
+        "form_name": "Galarian Form",
         "pokemon_type": [ "dark", "normal" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -4860,7 +4924,8 @@ export default {
     "gardevoir-mega": {
         "base_id": 282,
         "form_id": 1,
-        "name": "Mega Gardevoir",
+        "name": "Gardevoir",
+        "form_name": "Mega Gardevoir",
         "pokemon_type": [ "psychic", "fairy" ],
         "egg_group": [ "amorphous" ],
         "gender": [ "mf" ],
@@ -5127,7 +5192,8 @@ export default {
     "sableye-mega": {
         "base_id": 302,
         "form_id": 1,
-        "name": "Mega Sableye",
+        "name": "Sableye",
+        "form_name": "Mega Sableye",
         "pokemon_type": [ "dark", "ghost" ],
         "egg_group": [ "human_like" ],
         "gender": [ "mf" ],
@@ -5154,7 +5220,8 @@ export default {
     "mawile-mega": {
         "base_id": 303,
         "form_id": 1,
-        "name": "Mega Mawile",
+        "name": "Mawile",
+        "form_name": "Mega Mawile",
         "pokemon_type": [ "steel", "fairy" ],
         "egg_group": [ "field", "fairy" ],
         "gender": [ "mf" ],
@@ -5206,7 +5273,8 @@ export default {
     "aggron-mega": {
         "base_id": 306,
         "form_id": 1,
-        "name": "Mega Aggron",
+        "name": "Aggron",
+        "form_name": "Mega Aggron",
         "pokemon_type": [ "steel" ],
         "egg_group": [ "monster" ],
         "gender": [ "mf" ],
@@ -5245,7 +5313,8 @@ export default {
     "medicham-mega": {
         "base_id": 308,
         "form_id": 1,
-        "name": "Mega Medicham",
+        "name": "Medicham",
+        "form_name": "Mega Medicham",
         "pokemon_type": [ "fighting", "psychic" ],
         "egg_group": [ "human_like" ],
         "gender": [ "mf" ],
@@ -5284,7 +5353,8 @@ export default {
     "manectric-mega": {
         "base_id": 310,
         "form_id": 1,
-        "name": "Mega Manectric",
+        "name": "Manectric",
+        "form_name": "Mega Manectric",
         "pokemon_type": [ "electric" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -5409,7 +5479,8 @@ export default {
     "sharpedo-mega": {
         "base_id": 319,
         "form_id": 1,
-        "name": "Mega Sharpedo",
+        "name": "Sharpedo",
+        "form_name": "Mega Sharpedo",
         "pokemon_type": [ "water", "dark" ],
         "egg_group": [ "water_2" ],
         "gender": [ "mf" ],
@@ -5473,7 +5544,8 @@ export default {
     "camerupt-mega": {
         "base_id": 323,
         "form_id": 1,
-        "name": "Mega Camerupt",
+        "name": "Camerupt",
+        "form_name": "Mega Camerupt",
         "pokemon_type": [ "fire", "ground" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -5624,7 +5696,8 @@ export default {
     "altaria-mega": {
         "base_id": 334,
         "form_id": 1,
-        "name": "Mega Altaria",
+        "name": "Altaria",
+        "form_name": "Mega Altaria",
         "pokemon_type": [ "dragon", "fairy" ],
         "egg_group": [ "flying", "dragon" ],
         "gender": [ "mf" ],
@@ -5928,7 +6001,8 @@ export default {
     "banette-mega": {
         "base_id": 354,
         "form_id": 1,
-        "name": "Mega Banette",
+        "name": "Banette",
+        "form_name": "Mega Banette",
         "pokemon_type": [ "ghost" ],
         "egg_group": [ "amorphous" ],
         "gender": [ "mf" ],
@@ -6004,7 +6078,8 @@ export default {
     "absol-mega": {
         "base_id": 359,
         "form_id": 1,
-        "name": "Mega Absol",
+        "name": "Absol",
+        "form_name": "Mega Absol",
         "pokemon_type": [ "dark" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -6057,7 +6132,8 @@ export default {
     "glalie-mega": {
         "base_id": 362,
         "form_id": 1,
-        "name": "Mega Glalie",
+        "name": "Glalie",
+        "form_name": "Mega Glalie",
         "pokemon_type": [ "ice" ],
         "egg_group": [ "fairy", "mineral" ],
         "gender": [ "mf" ],
@@ -6208,7 +6284,8 @@ export default {
     "salamence-mega": {
         "base_id": 373,
         "form_id": 1,
-        "name": "Mega Salamence",
+        "name": "Salamence",
+        "form_name": "Mega Salamence",
         "pokemon_type": [ "dragon", "flying" ],
         "egg_group": [ "dragon" ],
         "gender": [ "mf" ],
@@ -6260,7 +6337,8 @@ export default {
     "metagross-mega": {
         "base_id": 376,
         "form_id": 1,
-        "name": "Mega Metagross",
+        "name": "Metagross",
+        "form_name": "Mega Metagross",
         "pokemon_type": [ "steel", "psychic" ],
         "egg_group": [ "mineral" ],
         "gender": [ "uk" ],
@@ -6326,7 +6404,8 @@ export default {
     "latias-mega": {
         "base_id": 380,
         "form_id": 1,
-        "name": "Mega Latias",
+        "name": "Latias",
+        "form_name": "Mega Latias",
         "pokemon_type": [ "dragon", "psychic" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "fo" ],
@@ -6354,7 +6433,8 @@ export default {
     "latios-mega": {
         "base_id": 381,
         "form_id": 1,
-        "name": "Mega Latios",
+        "name": "Latios",
+        "form_name": "Mega Latios",
         "pokemon_type": [ "dragon", "psychic" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "mo" ],
@@ -6382,7 +6462,8 @@ export default {
     "kyogre-primal": {
         "base_id": 382,
         "form_id": 1,
-        "name": "Primal Kyogre",
+        "name": "Kyogre",
+        "form_name": "Primal Reversion",
         "pokemon_type": [ "water" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
@@ -6409,7 +6490,8 @@ export default {
     "groudon-primal": {
         "base_id": 383,
         "form_id": 1,
-        "name": "Primal Groudon",
+        "name": "Groudon",
+        "form_name": "Primal Reversion",
         "pokemon_type": [ "ground", "fire" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
@@ -6436,7 +6518,8 @@ export default {
     "rayquaza-mega": {
         "base_id": 384,
         "form_id": 1,
-        "name": "Mega Rayquaza",
+        "name": "Rayquaza",
+        "form_name": "Mega Rayquaza",
         "pokemon_type": [ "dragon", "flying" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
@@ -7147,7 +7230,8 @@ export default {
     "lopunny-mega": {
         "base_id": 428,
         "form_id": 1,
-        "name": "Mega Lopunny",
+        "name": "Lopunny",
+        "form_name": "Mega Lopunny",
         "pokemon_type": [ "normal", "fighting" ],
         "egg_group": [ "field", "human_like" ],
         "gender": [ "mf" ],
@@ -7379,7 +7463,8 @@ export default {
     "garchomp-mega": {
         "base_id": 445,
         "form_id": 1,
-        "name": "Mega Garchomp",
+        "name": "Garchomp",
+        "form_name": "Mega Garchomp",
         "pokemon_type": [ "dragon", "ground" ],
         "egg_group": [ "monster", "dragon" ],
         "gender": [ "mf" ],
@@ -7433,7 +7518,8 @@ export default {
     "lucario-mega": {
         "base_id": 448,
         "form_id": 1,
-        "name": "Mega Lucario",
+        "name": "Lucario",
+        "form_name": "Mega Lucario",
         "pokemon_type": [ "fighting", "steel" ],
         "egg_group": [ "field", "human_like" ],
         "gender": [ "mf" ],
@@ -7598,7 +7684,8 @@ export default {
     "abomasnow-mega": {
         "base_id": 460,
         "form_id": 1,
-        "name": "Mega Abomasnow",
+        "name": "Abomasnow",
+        "form_name": "Mega Abomasnow",
         "pokemon_type": [ "grass", "ice" ],
         "egg_group": [ "monster", "grass" ],
         "gender": [ "mf" ],
@@ -7793,7 +7880,8 @@ export default {
     "gallade-mega": {
         "base_id": 475,
         "form_id": 1,
-        "name": "Mega Gallade",
+        "name": "Gallade",
+        "form_name": "Mega Gallade",
         "pokemon_type": [ "psychic", "fighting" ],
         "egg_group": [ "amorphous" ],
         "gender": [ "mo" ],
@@ -7855,7 +7943,8 @@ export default {
     "rotom-heat": {
         "base_id": 479,
         "form_id": 1,
-        "name": "Heat Rotom",
+        "name": "Rotom",
+        "form_name": "Heat Rotom",
         "pokemon_type": [ "electric", "fire" ],
         "past_type": { "generation": 5, "pokemon_type": [ "electric", "ghost" ] },
         "egg_group": [ "amorphous" ],
@@ -7868,7 +7957,8 @@ export default {
     "rotom-wash": {
         "base_id": 479,
         "form_id": 2,
-        "name": "Wash Rotom",
+        "name": "Rotom",
+        "form_name": "Wash Rotom",
         "pokemon_type": [ "electric", "water" ],
         "past_type": { "generation": 5, "pokemon_type": [ "electric", "ghost" ] },
         "egg_group": [ "amorphous" ],
@@ -7881,7 +7971,8 @@ export default {
     "rotom-frost": {
         "base_id": 479,
         "form_id": 3,
-        "name": "Frost Rotom",
+        "name": "Rotom",
+        "form_name": "Frost Rotom",
         "pokemon_type": [ "electric", "ice" ],
         "past_type": { "generation": 5, "pokemon_type": [ "electric", "ghost" ] },
         "egg_group": [ "amorphous" ],
@@ -7894,7 +7985,8 @@ export default {
     "rotom-fan": {
         "base_id": 479,
         "form_id": 4,
-        "name": "Fan Rotom",
+        "name": "Rotom",
+        "form_name": "Fan Rotom",
         "pokemon_type": [ "electric", "flying" ],
         "past_type": { "generation": 5, "pokemon_type": [ "electric", "ghost" ] },
         "egg_group": [ "amorphous" ],
@@ -7907,7 +7999,8 @@ export default {
     "rotom-mow": {
         "base_id": 479,
         "form_id": 5,
-        "name": "Mow Rotom",
+        "name": "Rotom",
+        "form_name": "Mow Rotom",
         "pokemon_type": [ "electric", "grass" ],
         "past_type": { "generation": 5, "pokemon_type": [ "electric", "ghost" ] },
         "egg_group": [ "amorphous" ],
@@ -8525,7 +8618,8 @@ export default {
     "samurott-hisui": {
         "base_id": 503,
         "form_id": 1,
-        "name": "Hisuian Samurott",
+        "name": "Samurott",
+        "form_name": "Hisuian Form",
         "pokemon_type": [ "water", "dark" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -8888,7 +8982,8 @@ export default {
     "audino-mega": {
         "base_id": 531,
         "form_id": 1,
-        "name": "Mega Audino",
+        "name": "Audino",
+        "form_name": "Mega Audino",
         "pokemon_type": [ "normal", "fairy" ],
         "egg_group": [ "fairy" ],
         "gender": [ "mf" ],
@@ -9130,7 +9225,8 @@ export default {
     "lilligant-hisui": {
         "base_id": 549,
         "form_id": 1,
-        "name": "Hisuian Lilligant",
+        "name": "Lilligant",
+        "form_name": "Hisuian Form",
         "pokemon_type": [ "grass", "fighting" ],
         "egg_group": [ "grass" ],
         "gender": [ "fo" ],
@@ -9233,7 +9329,8 @@ export default {
     "darumaka-galar": {
         "base_id": 554,
         "form_id": 1,
-        "name": "Galarian Darumaka",
+        "name": "Darumaka",
+        "form_name": "Galarian Form",
         "pokemon_type": [ "ice" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -9273,8 +9370,8 @@ export default {
     "darmanitan-galar": {
         "base_id": 555,
         "form_id": 2,
-        "name": "Galarian Darmanitan",
-        "form_name": "Standard Mode",
+        "name": "Darmanitan",
+        "form_name": "Galarian Form",
         "pokemon_type": [ "ice" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -9286,7 +9383,7 @@ export default {
     "darmanitan-galar-zen": {
         "base_id": 555,
         "form_id": 3,
-        "name": "Galarian Darmanitan",
+        "name": "Darmanitan",
         "form_name": "Zen Mode",
         "pokemon_type": [ "ice", "fire" ],
         "egg_group": [ "field" ],
@@ -9387,7 +9484,8 @@ export default {
     "yamask-galar": {
         "base_id": 562,
         "form_id": 1,
-        "name": "Galarian Yamask",
+        "name": "Yamask",
+        "form_name": "Galarian Form",
         "pokemon_type": [ "ground", "ghost" ],
         "egg_group": [ "mineral", "amorphous" ],
         "gender": [ "mf" ],
@@ -9501,7 +9599,8 @@ export default {
     "zorua-hisui": {
         "base_id": 570,
         "form_id": 1,
-        "name": "Hisuian Zorua",
+        "name": "Zorua",
+        "form_name": "Hisuian Form",
         "pokemon_type": [ "normal", "ghost" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -9526,7 +9625,8 @@ export default {
     "zoroark-hisui": {
         "base_id": 571,
         "form_id": 1,
-        "name": "Hisuian Zoroark",
+        "name": "Zoroark",
+        "form_name": "Hisuian Form",
         "pokemon_type": [ "normal", "ghost" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
@@ -10216,7 +10316,8 @@ export default {
     "stunfisk-galar": {
         "base_id": 618,
         "form_id": 1,
-        "name": "Galarian Stunfisk",
+        "name": "Stunfisk",
+        "form_name": "Galarian Form",
         "pokemon_type": [ "ground", "steel" ],
         "egg_group": [ "water_1", "amorphous" ],
         "gender": [ "mf" ],
@@ -10353,7 +10454,8 @@ export default {
     "braviary-hisui": {
         "base_id": 628,
         "form_id": 1,
-        "name": "Hisuian Braviary",
+        "name": "Braviary",
+        "form_name": "Hisuian Form",
         "pokemon_type": [ "psychic", "flying" ],
         "egg_group": [ "flying" ],
         "gender": [ "mo" ],
@@ -10639,7 +10741,8 @@ export default {
     "kyurem-white": {
         "base_id": 646,
         "form_id": 1,
-        "name": "White Kyurem",
+        "name": "Kyurem",
+        "form_name": "White Kyurem",
         "pokemon_type": [ "dragon", "ice" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
@@ -10652,7 +10755,8 @@ export default {
     "kyurem-black": {
         "base_id": 646,
         "form_id": 2,
-        "name": "Black Kyurem",
+        "name": "Kyurem",
+        "form_name": "Black Kyurem",
         "pokemon_type": [ "dragon", "ice" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
@@ -10850,7 +10954,8 @@ export default {
     "greninja-ash": {
         "base_id": 658,
         "form_id": 2,
-        "name": "Ash-Greninja",
+        "name": "Greninja",
+        "form_name": "Ash-Greninja",
         "pokemon_type": [ "water", "dark" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "mo" ],
@@ -12053,7 +12158,8 @@ export default {
     "sliggoo-hisui": {
         "base_id": 705,
         "form_id": 1,
-        "name": "Hisuian Sliggoo",
+        "name": "Sliggoo",
+        "form_name": "Hisuian Form",
         "pokemon_type": [ "steel", "dragon" ],
         "egg_group": [ "dragon" ],
         "gender": [ "mf" ],
@@ -12078,7 +12184,8 @@ export default {
     "goodra-hisui": {
         "base_id": 706,
         "form_id": 1,
-        "name": "Hisuian Goodra",
+        "name": "Goodra",
+        "form_name": "Hisuian Form",
         "pokemon_type": [ "steel", "dragon" ],
         "egg_group": [ "dragon" ],
         "gender": [ "mf" ],
@@ -12266,7 +12373,8 @@ export default {
     "avalugg-hisui": {
         "base_id": 713,
         "form_id": 1,
-        "name": "Hisuian Avalugg",
+        "name": "Avalugg",
+        "form_name": "Hisuian Form",
         "pokemon_type": [ "ice", "rock" ],
         "egg_group": [ "monster" ],
         "gender": [ "mf" ],
@@ -12401,7 +12509,8 @@ export default {
     "diancie-mega": {
         "base_id": 719,
         "form_id": 1,
-        "name": "Mega Diancie",
+        "name": "Diancie",
+        "form_name": "Mega Diancie",
         "pokemon_type": [ "rock", "fairy" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
@@ -12416,7 +12525,8 @@ export default {
     "hoopa": {
         "base_id": 720,
         "form_id": 0,
-        "name": "Hoopa Confined",
+        "name": "Hoopa",
+        "form_name": "Hoopa Confined",
         "pokemon_type": [ "psychic", "ghost" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
@@ -12429,7 +12539,8 @@ export default {
     "hoopa-unbound": {
         "base_id": 720,
         "form_id": 1,
-        "name": "Hoopa Unbound",
+        "name": "Hoopa",
+        "form_name": "Hoopa Unbound",
         "pokemon_type": [ "psychic", "dark" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
@@ -12493,7 +12604,8 @@ export default {
     "decidueye-hisui": {
         "base_id": 724,
         "form_id": 1,
-        "name": "Hisuian Decidueye",
+        "name": "Decidueye",
+        "form_name": "Hisuian Form",
         "pokemon_type": [ "grass", "fighting" ],
         "egg_group": [ "flying" ],
         "gender": [ "mf" ],
@@ -13908,7 +14020,8 @@ export default {
     "necrozma-dusk": {
         "base_id": 800,
         "form_id": 1,
-        "name": "Dusk Mane Necrozma",
+        "name": "Necrozma",
+        "form_name": "Dusk Mane",
         "pokemon_type": [ "psychic", "steel" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
@@ -13921,7 +14034,8 @@ export default {
     "necrozma-dawn": {
         "base_id": 800,
         "form_id": 2,
-        "name": "Dawn Wings Necrozma",
+        "name": "Necrozma",
+        "form_name": "Dawn Wings",
         "pokemon_type": [ "psychic", "ghost" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
@@ -13934,7 +14048,8 @@ export default {
     "necrozma-ultra": {
         "base_id": 800,
         "form_id": 3,
-        "name": "Ultra Necrozma",
+        "name": "Necrozma",
+        "form_name": "Ultra Necrozma",
         "pokemon_type": [ "psychic", "dragon" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
@@ -13961,7 +14076,8 @@ export default {
     "magearna-original": {
         "base_id": 801,
         "form_id": 1,
-        "name": "Original Color Magearna",
+        "name": "Magearna",
+        "form_name": "Original Color",
         "pokemon_type": [ "steel", "fairy" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
@@ -15456,7 +15572,8 @@ export default {
     "calyrex-ice": {
         "base_id": 898,
         "form_id": 1,
-        "name": "Ice Rider Calyrex",
+        "name": "Calyrex",
+        "form_name": "Ice Rider",
         "pokemon_type": [ "psychic", "ice" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
@@ -15469,7 +15586,8 @@ export default {
     "calyrex-shadow": {
         "base_id": 898,
         "form_id": 2,
-        "name": "Shadow Rider Calyrex",
+        "name": "Calyrex",
+        "form_name": "Shadow Rider",
         "pokemon_type": [ "psychic", "ghost" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
