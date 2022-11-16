@@ -88,18 +88,6 @@ article section {
     position: relative;
 }
 
-.list {
-    list-style: none;
-    max-width: 80em;
-    padding: 0 1.25em;
-    margin: 1em auto;
-}
-
-.list-pokemon li {
-    display: inline-block;
-    vertical-align: top;
-}
-
 .team__buttons {
     display: flex;
     flex-wrap: wrap;
@@ -126,139 +114,163 @@ article section {
     text-decoration: none
 }
 
-.hidden {
-    display: none !important;
-}
-
-
 /* Game */
 
-#team-planner h1 .game.name {
-    text-indent: -999em;
-    margin: 0;
+.head__game-picker {
+    padding: 2em;
 }
 
-.game {
-    display: inline-block;
+.head__game-button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
 }
 
-.game a {
-    display: inline-block;
+.game-picker {
+    list-style: none;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fill, 16em);
+    justify-content: center;
+    padding: 0;
+    margin: 2em 0;
+}
+
+.game-picker__button {
+    display: block;
     background: #fff;
     text-align: center;
-    width: 14em;
+    width: 16m;
     padding: 1em;
-    box-sizing: content-box;
+    box-sizing: border-box;
     border: 1px solid #d9d9d9;
     border-radius: 0.5em;
-    margin: 1em;
 }
 
-.game a:hover {
+.game-picker__button:hover {
     background: #d9d9d9;
 }
 
-.game.disabled a img {
+.game-picker__game_disabled {
     filter: grayscale(1);
 }
 
-.game.name,
-.game a img {
+.game-picker__game_disabled .game-picker__button {
+    cursor: auto;
+    background: #e6e6e6;
+}
+
+.head__game-logo,
+.game-picker__game-logo {
     width: 14rem;
     height: 3.5rem;
     line-height: 3.5rem;
     margin: 0.75em 0;
 }
 
-.game.name.xy,
-.game.xy a img {
+.head__game-logo {
+    display: block;
+    text-indent: -999em;
+    margin: 0;
+}
+
+.head__game-logo_xy,
+.game-picker__game-logo_xy {
     height: 3rem;
     line-height: 3rem;
     margin: 1em 0;
 }
 
-.game.name.oras,
-.game.oras a img,
-.game.name.sv,
-.game.sv a img {
+.head__game-logo_oras,
+.game-picker__game-logo_oras,
+.head__game-logo_sv,
+.game-picker__game-logo_sv {
     width: 13rem;
     height: 4rem;
     line-height: 4rem;
     margin: 0.5em 0;
 }
 
-.game.name:where(.gsc, .swsh, .arceus, .home),
-.game:where(.gsc, .swsh, .arceus, .home) a img {
+.head__game-logo_gsc,
+.game-picker__game-logo_gsc,
+.head__game-logo_swsh,
+.game-picker__game-logo_swsh,
+.head__game-logo_arceus,
+.game-picker__game-logo_arceus,
+.head__game-logo_home,
+.game-picker__game-logo_home {
     width: 10rem;
     height: 5rem;
     line-height: 5rem;
     margin: 0;
 }
 
-.game.name.bdsp,
-.game.bdsp a img {
+.head__game-logo_bdsp,
+.game-picker__game-logo_bdsp {
     width: 11rem;
 }
 
-.game.name.arceus,
-.game.arceus a img {
+.head__game-logo_arceus,
+.game-picker__game-logo_arceus {
     width: 7.5rem;
 }
 
-.game.name.home,
-.game.home a img {
+.head__game-logo_home,
+.game-picker__game-logo_home {
     width: 7rem;
 }
 
-.game.name.rby,
-.game.rby a img {
+.head__game-logo_rby,
+.game-picker__game-logo_rby {
     width: 10.5rem;
     height: 1.875rem;
     line-height: 1.875rem;
     margin: 1.5625rem 0;
 }
 
-.game.name.gsc,
-.game.gsc a img {
+.head__game-logo_gsc,
+.game-picker__game-logo_gsc {
     width: 5.625rem;
 }
 
-.game.name.rse,
-.game.rse a img,
-.game.name.dppt,
-.game.dppt a img {
+.head__game-logo_rse,
+.game-picker__game-logo_rse,
+.head__game-logo_dppt,
+.game-picker__game-logo_dppt {
     width: 13rem;
     height: 2.5rem;
     line-height: 2.5rem;
     margin: 1.25em 0;
 }
 
-.game.name.frlg,
-.game.frlg a img {
+.head__game-logo_frlg,
+.game-picker__game-logo_frlg {
     width: 11.5rem;
     height: 3.25rem;
     line-height: 3.25rem;
     margin: 0.875em 0;
 }
 
-.game.name.bw,
-.game.bw a img {
+.head__game-logo_bw,
+.game-picker__game-logo_bw {
     width: 12.5rem;
     height: 3.75rem;
     line-height: 3.75rem;
     margin: 0.625em 0;
 }
 
-.game.name.b2w2,
-.game.b2w2 a img {
+.head__game-logo_b2w2,
+.game-picker__game-logo_b2w2 {
     width: 12rem;
     height: 3.375rem;
     line-height: 3.375rem;
     margin: 0.8125em 0;
 }
 
-.game.name.sv,
-.game.sv a img {
+.head__game-logo_sv,
+.game-picker__game-logo_sv {
     width: 14rem;
 }
 
@@ -387,10 +399,6 @@ dt {
 
 .slot__name, .slot__form, .slot__type {
     line-height: 1;
-}
-
-.slot_empty .slot__name {
-    list-style: 3rem;
 }
 
 .slot__name-container {
@@ -588,7 +596,6 @@ dt {
     right: 1em;
 }
 
-.game.disabled a,
 .filter__button:hover,
 :where(.filter_active, .filter_disabled) .filter__button,
 .filter__dropdown-menu li.disabled {
@@ -662,6 +669,10 @@ dt {
     color: #f0f0f0;
 }
 
+.dropdown-menu-item_hidden {
+    display: none;
+}
+
 .dropdown-menu-item__name {
     width: 100%;
     cursor: pointer;
@@ -674,22 +685,16 @@ dt {
 
 /* Table */
 
-.grid {
-    display: grid;
-    gap: 1em;
-    justify-content: space-evenly;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
 .team__type-analysis {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: stretch;
     text-align: center;
     background: #fff;
     border: 1px solid #d9d9d9;
     border-radius: 1em;
     padding: 1em;
-    justify-content: stretch;
 }
 
 .type-analysis_hidden {
@@ -697,7 +702,13 @@ dt {
 }
 
 .type-analysis__grid {
+    display: grid;
+    gap: 1em;
     grid-template-columns: repeat(auto-fill, 6.875em);
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .type-analysis__heading {
@@ -1225,14 +1236,6 @@ dt {
 }
 
 @media screen and (max-width: 1279px) {
-    .list {
-        padding: 0;
-    }
-
-    :where(#team, #games) .list {
-        text-align: center;
-    }
-
     .slot {
         width: 8em;
         grid-template-rows: 5em 4em 1fr;
@@ -1285,14 +1288,8 @@ dt {
         padding: 0;
         max-width: 19.125em;
     }
-    #games {
+    .head__game-picker {
         padding: 1.25em 0 1em;
-    }
-    #games .list {
-        padding: 0;
-    }
-    #games .list .game a {
-        margin: 1em 0;
     }
 
     .head__header p {
@@ -1303,9 +1300,10 @@ dt {
         margin: 0;
     }
 
-    #team-planner h1 .game.name {
-        display: block;
-        margin: 0 auto;
+    .head__game-logo {
+        background-repeat: no-repeat;
+        background-position: center;
+        flex-basis: 100%;
     }
 
     .team {
