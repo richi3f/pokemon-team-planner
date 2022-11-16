@@ -38,7 +38,6 @@ const IMG_PATH = JS_PATH + "../img/";
 window.onload = buildPage;
 
 function buildPage() {
-    const main = document.getElementById( "team-planner" );
     var slugs;
     [ currentGame, currentVersions, slugs ] = parseUrl();
     if ( !currentGame ) {
@@ -53,7 +52,7 @@ function buildPage() {
     completeTypeData();
     completePokemonData();
     populateTeam( document.querySelector( ".head" ) );
-    populateDexes( document.getElementById( "tail" ) );
+    populateDexes( document.querySelector( ".tail" ) );
     populateFilters();
     slugs.forEach( slug => populateTeamSlot( slug ) );
     window.onscroll = shrinkHead;
