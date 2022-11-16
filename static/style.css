@@ -409,6 +409,10 @@ dt {
     font-size: 0.75em;
 }
 
+.slot__form_none {
+    display: none;
+}
+
 .slot__type-container {
     list-style: none;
     padding: 0;
@@ -1048,7 +1052,8 @@ dt {
 }
 
 .slot_empty .slot__info {
-    background: #68a090
+    background: #68a090;
+    grid-template-rows: 1fr;
 }
 
 .slot[data-type^=normal] .slot__info {
