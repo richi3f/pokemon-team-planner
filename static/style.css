@@ -514,9 +514,13 @@ dt {
     padding: 0;
 }
 
+.pokedex-entry {
+    background-color: #eee;
+    border-radius: 0.5em;
+}
+
 .pokedex-entry:hover {
     background-color: #cdf;
-    border-radius: 3em;
 }
 
 .pokedex-entry_filtered,
