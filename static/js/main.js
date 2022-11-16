@@ -64,9 +64,9 @@ function buildPage() {
  */
  function shrinkHead() {
     const head = document.querySelector( ".head" );
-    const target = document.getElementById( "pokedexes" ).getBoundingClientRect().top;
+    const target = document.querySelector( ".picker__pokedexes" ).getBoundingClientRect().top;
     const analysis = document.querySelector( ".team__type-analysis" );
-    const activeFilters = document.querySelectorAll( ".filter.active" );
+    const activeFilters = document.querySelectorAll( ".filter_active" );
     if (
         target < 0 
         && analysis.classList.contains( "type-analysis_hidden" )
@@ -288,7 +288,7 @@ function populateTeamSlot( event_or_slug ) {
     // Empty a team slot if team is full
     const slot = document.querySelector( ".slot_empty" );
     if ( slot == null ) {
-        document.querySelector( ".slot" ).click();
+        document.querySelector( ".slot__remove-button" ).click();
         return populateTeamSlot( slug );
     }
 
@@ -498,11 +498,6 @@ function randomizeTeam() {
  * selected game.
  * @param {HTMLElement} container
  * @param {Object} game
-    <section id="options">
-        <h2>Your Options</h2>
-        <div id="filters"></div>
-        <ol id="pokedexes"></ol>
-    </section>
  */
 function populateDexes( container ) {
     const game = gameData[ currentGame ];
@@ -518,10 +513,10 @@ function populateDexes( container ) {
     h1.style.background = "url('" + GAME_PATH + currentGame + ".png')";
     container.prepend( section );
     section.append( h2, div, ol );
-    section.id = "options";
+    section.classList.add( "tail__picker" );
     h2.innerHTML = "Your Options";
-    div.id = "filters";
-    ol.id = "pokedexes";
+    h2.classList.add( "picker__heading" );
+    div.classList.add( "picker__filters" );
     ol.classList.add( "picker__pokedexes" );
 
     game.dex_slugs.forEach( ( slug, i ) => {
@@ -733,10 +728,11 @@ const COLORS = [
  * Populate the drop-down menus with the available filters.
  */
 function populateFilters() {
-    const filters = document.getElementById( "filters" );
+    const filters = document.querySelector( ".picker__filters" );
     const types = Object.keys( getCurrentTypeData() );
     // Type
     var type_dropdown = createFilter( filters, "type", "Type" );
+    type_dropdown.classList.add( "filter__dropdown-menu_3col" );
     // Evolution
     var dropdown = createFilter( filters, "evolution", "Evolution" );
     dropdown.append( createCheckbox( "evolution", "Not Fully Evolved", "nfe" ) );
@@ -746,6 +742,7 @@ function populateFilters() {
     );
     // Generation
     dropdown = createFilter( filters, "gen", "Generation" );
+    if ( gameData[ currentGame ].gen > 6 ) dropdown.classList.add( "filter__dropdown-menu_2col" );
     for ( let i = 1; i <= gameData[ currentGame ].gen; i++ ) {
         dropdown.append( createCheckbox( "gen", "Generation " + toRoman( i ), i ) );
     }
@@ -764,6 +761,7 @@ function populateFilters() {
     }
     // Exclude Type
     var dropdown = createFilter( filters, "exclude-type", "Exclude Type", true, false );
+    dropdown.classList.add( "filter__dropdown-menu_3col" );
     types.forEach( value => {
         type_dropdown.append( createCheckbox( "type", capitalize( value ), value ) );
         dropdown.append( createCheckbox( "exclude-type", capitalize( value ), value, false ) );
@@ -786,6 +784,7 @@ function populateFilters() {
     }
     // Color
     dropdown = createFilter( filters, "color", "Color" );
+    dropdown.classList.add( "filter__dropdown-menu_2col" );
     COLORS.forEach( value => {
         dropdown.append( createCheckbox( "color", capitalize( value ), value ) );
     })
@@ -809,7 +808,7 @@ function populateFilters() {
  */
 function createFilter( container, type, name, inclSelectAll = true, selectAll = true, disabled = false ) {
     const dropdown = document.createElement( "ol" );
-    dropdown.classList.add( "dropdown-menu" );
+    dropdown.classList.add( "filter__dropdown-menu" );
     if ( inclSelectAll ) dropdown.append( createCheckbox( type, "Select All", "all", selectAll ) );
 
     const div = document.createElement( "div" );
@@ -817,17 +816,20 @@ function createFilter( container, type, name, inclSelectAll = true, selectAll = 
     div.classList.add( "filter" );
 
     const label = document.createElement( "label" );
+    label.classList.add( "filter__name" );
     label.setAttribute( "for", type + "-filter" );
     label.innerHTML = name;
 
     const button = document.createElement( "button" );
+    button.classList.add( "filter__button" );
     button.id = type + "-filter";
     if ( !disabled ) {
         button.innerHTML = selectAll ? "All Selected" : "None Selected";
-        button.addEventListener( "click", expandDropdown );        
+        button.addEventListener( "click", expandDropdown );
+        div.classList.add( "filter_enabled" );
     } else {
         button.innerHTML = "N/A";
-        div.classList.add( "disabled" );
+        div.classList.add( "filter_disabled" );
     }
 
     container.append( div );
@@ -847,11 +849,13 @@ function createSearchBar( container ) {
     div.classList.add( "filter" );
 
     const label = document.createElement( "label" );
+    label.classList.add( "filter__name" );
     label.setAttribute( "for", "search-bar" );
     label.innerHTML = "Search";
 
     const input = document.createElement( "input" );
     input.id = "search-bar";
+    input.classList.add( "filter__search-bar" );
     input.setAttribute( "type", "search" );
     input.setAttribute( "placeholder", "by Pokémon name" );
     input.addEventListener( "input", filterDex );
@@ -868,16 +872,16 @@ function createSearchBar( container ) {
  */
 function expandDropdown( event ) {
     const parent = event.currentTarget.parentNode;
-    const active = parent.classList.contains( "active" );
+    const active = parent.classList.contains( "filter_active" );
     // Collapse all dropdown menus
     document.querySelectorAll( ".filter" ).forEach( filter => {
-        filter.classList.remove( "active" );
+        filter.classList.remove( "filter_active" );
     });
     // Expand/collapse dropdown menu
     if ( active ) {
-        parent.classList.remove( "active" );
+        parent.classList.remove( "filter_active" );
     } else {
-        parent.classList.add( "active" );
+        parent.classList.add( "filter_active" );
         document.addEventListener( "click", collapseDropdown );
     }
 }
@@ -889,8 +893,8 @@ function expandDropdown( event ) {
 function collapseDropdown( event ) {
     const target = event.target;
     // Detect click outside dropdown menu
-    if ( !target.closest( ".filter.active :where(button, .dropdown-menu)" ) ) {
-        document.querySelectorAll( ".filter.active" ).forEach( div => div.classList.remove( "active" ) );
+    if ( !target.closest( ".filter_active :where(button, .filter__dropdown-menu)" ) ) {
+        document.querySelectorAll( ".filter_active" ).forEach( div => div.classList.remove( "filter_active" ) );
         document.removeEventListener( "click", collapseDropdown );
     }
 }
@@ -906,10 +910,12 @@ function collapseDropdown( event ) {
  */
 function createCheckbox( type, name, value, checked = true, isRadio = false ) {
     const li = document.createElement( "li" );
-    if ( checked ) li.classList.add( "active" );
+    li.classList.add( "dropdown-menu-item" );
+    if ( checked ) li.classList.add( "dropdown-menu-item_active" );
 
     const input = document.createElement( "input" );
     input.id = [ "filter", type, value ].join( "-" );
+    input.classList.add( "dropdown-menu-item__checkbox" );
     input.setAttribute( "name", type );
     input.setAttribute( "value", value );
     input.setAttribute( "type", isRadio ? "radio" : "checkbox" );
@@ -917,6 +923,7 @@ function createCheckbox( type, name, value, checked = true, isRadio = false ) {
     input.addEventListener( "change", changeCheckbox );
 
     const label = document.createElement( "label" );
+    label.classList.add( "dropdown-menu-item__name" );
     label.setAttribute( "for", input.id );
     label.innerHTML = name;
 
@@ -932,16 +939,17 @@ function changeCheckbox( event ) {
     const target = event.currentTarget;
     const name = target.getAttribute( "name" );
     const selector = "input[name='" + name + "']";
+    const activeClass = "dropdown-menu-item_active";
     // If target is checked, add "active" class
     if ( target.checked ) {
         // If target was "all", add "active" class to all options
         if ( target.value === "all" ) {
             document.querySelectorAll( selector ).forEach( input => {
                 input.checked = true;
-                input.parentNode.classList.add( "active" );
+                input.parentNode.classList.add( activeClass );
             });
         } else {
-            target.parentNode.classList.add( "active" );
+            target.parentNode.classList.add( activeClass );
         }
     // If target was unchecked, remove "active" class
     } else {
@@ -949,14 +957,14 @@ function changeCheckbox( event ) {
         if ( target.value === "all" ) {
             document.querySelectorAll( selector ).forEach( input => {
                 input.checked = false;
-                input.parentNode.classList.remove( "active" );
+                input.parentNode.classList.remove( activeClass );
             });
         } else {
-            target.parentNode.classList.remove( "active" );
+            target.parentNode.classList.remove( activeClass );
             const all = document.querySelector( selector + "[value='all']" );
             if ( all ) {
                 all.checked = false;
-                all.parentNode.classList.remove( "active" );
+                all.parentNode.classList.remove( activeClass );
             }
         }
     }
@@ -969,7 +977,7 @@ function changeCheckbox( event ) {
         const all = document.querySelector( selector + "[value='all']" );
         if ( all ) {
             all.checked = true;
-            all.parentNode.classList.add( "active" );
+            all.parentNode.classList.add( activeClass );
         }
         button.innerHTML = "All Selected";
     } else {
@@ -994,7 +1002,7 @@ function changeCheckbox( event ) {
  */
 function getSelectedFilters( type ) {
     const selection = Array.from( document.querySelectorAll(
-        "#" + type + "-filter + .dropdown-menu .active input"
+        ".dropdown-menu-item_active input[name='" + type + "']"
     ) );
     return selection.map( input => input.value );
 }
