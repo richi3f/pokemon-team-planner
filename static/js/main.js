@@ -52,6 +52,7 @@ function buildPage() {
     completeTypeData();
     completePokemonData();
     populateTeam( document.querySelector( ".head" ) );
+    populateTeraPicker( document.querySelector( ".slot__toggle-container" ) );
     populateDexes( document.querySelector( ".tail" ) );
     populateFilters();
     slugs.forEach( slug => populateTeamSlot( slug ) );
@@ -196,13 +197,15 @@ function populateTeam( container ) {
             });
         });
         if ( currentGame == "sv" ) {
-            clone.querySelector( ".slot__pokemon-render" ).setAttribute( "src", SV_UNKNOWN_IMG );
+            const img = clone.querySelector( ".slot__pokemon-render" );
+            img.classList.add( "slot__pokemon-render_sv" );
+            img.setAttribute( "src", SV_UNKNOWN_IMG );
         } else {
             clone.querySelector( ".slot__toggle_female" ).addEventListener( "click", toggleGender );
             clone.querySelector( ".slot__toggle_regular" ).addEventListener( "click", toggleShiny );
         }
         if ( gameData[ currentGame ].tera ) {
-            clone.querySelector( ".slot__toggle_tera" ).addEventListener( "click", toggleTeraType );
+            clone.querySelector( ".slot__toggle_tera" ).addEventListener( "click", showTeraPicker );
         }
         ul.append( clone );
     }
@@ -274,6 +277,36 @@ function populateTeam( container ) {
         });
         buttonContainer.append( button );
     }
+}
+
+/**
+ * Populates a tooltip with buttons to change a Pokémon's Tera Type.
+ * @param {HTMLElement} container 
+ */
+function populateTeraPicker( container ) {
+    if ( !gameData[ currentGame ].tera ) return;
+
+    const picker = document.createElement( "ol" );
+    picker.classList.add( "tera-picker", "tera-picker_hidden" );
+
+    const typeData = getCurrentTypeData();
+    Object.keys( typeData ).forEach( type => {
+        const container = document.createElement( "li" );
+        const button = document.createElement( "button" );
+    
+        picker.append( container );
+        container.append( button );
+
+        button.classList.add(
+            "tera-picker__button", "tera-picker__button_" + type
+        );
+        button.dataset.type = type;
+        button.innerHTML = capitalize( type );
+        button.setAttribute( "title", capitalize( type ) );
+        button.addEventListener( "click", terastallize );
+    });
+
+    container.append( picker );
 }
 
 /**
@@ -479,7 +512,7 @@ function toggleGender( event_or_slug ) {
     const img = slot.querySelector( ".slot__pokemon-render" );
     var src = img.getAttribute( "src" );
     src = src.replace( /[fm]d/g, ( m ) => {
-        return { md: "fd", fd: "md" }[m]
+        return { md: "fd", fd: "md" }[ m ]
     });
     img.setAttribute( "src", src );
     if ( src.includes( "fd" ) ) {
@@ -521,52 +554,114 @@ function toggleShiny( event_or_slug ) {
 }
 
 /**
- * Toggles a Pokémon's shinyness.
+ * Show the Tera Type picker.
  * @param {Event|slug} event_or_slug 
  */
-function toggleTeraType( event_or_slug ) {
+function showTeraPicker( event_or_slug ) {
     if ( !gameData[ currentGame ].tera ) return;
 
     var slot = ( typeof event_or_slug === "string" )
         ? document.querySelector( ".slot[data-slug='" + slug + "']" )
         : event_or_slug.currentTarget.closest( ".slot[data-slug]" );
 
-    const type = slot.dataset.type.split( "," );
-
     const icon = slot.querySelector( ".slot__toggle_tera" );
-    const info = slot.querySelector( ".slot__info" );
-    const bg1 = slot.querySelector( ".slot__bg-type-1" );
-    const bg2 = slot.querySelector( ".slot__bg-type-2" );
     if ( icon.classList.contains( "slot__toggle_tera_none" ) ) {
-        var tera = "bug";
-        // Remove current type style
-        icon.classList.remove( "slot__toggle_tera_none" );
-        info.classList.remove( "slot__info_" + type[ 0 ] );
-        bg1.classList.remove( "slot__bg-type-1_" + type[ 0 ] );
-        bg2.classList.remove( "slot__bg-type-2_" + type.slice( -1 ) );
-        // Add tera type style
-        icon.classList.add( "slot__toggle_tera_" + tera );
-        info.classList.add( "slot__info_" + tera );
-        bg1.classList.add( "slot__bg-type-1_" + tera );
-        bg2.classList.add( "slot__bg-type-2_" + tera );
-        slot.dataset.tera = "bug";
-        // TODO: Show type selector
+        // Show tera type picker
+        const picker = document.querySelector( ".tera-picker" );
+        if ( slot.contains( picker )
+            && picker.classList.contains( "tera-picker_active" )
+        ) {
+            // Hide if already open and clicking button again
+            picker.classList.remove( "tera-picker_active" );
+            picker.classList.add( "tera-picker_hidden" );
+            document.removeEventListener( "click", hideTeraPicker );
+        } else {
+            // Move/show otherwise
+            slot.querySelector( ".slot__toggle-container" ).append( picker );
+            picker.classList.add( "tera-picker_active" );
+            picker.classList.remove( "tera-picker_hidden" );
+            document.addEventListener( "click", hideTeraPicker );
+        }
     } else {
+        // Remove tera type
+        const type = slot.dataset.type.split( "," );
         const tera = slot.dataset.tera;
+        
+        const info = slot.querySelector( ".slot__info" );
+        const bg1 = slot.querySelector( ".slot__bg-type-1" );
+        const bg2 = slot.querySelector( ".slot__bg-type-2" );
+
         // Remove tera type style
         icon.classList.remove( "slot__toggle_tera_" + tera );
         info.classList.remove( "slot__info_" + tera );
         bg1.classList.remove( "slot__bg-type-1_" + tera );
         bg2.classList.remove( "slot__bg-type-2_" + tera );
+
         // Reinstate type style
         icon.classList.add( "slot__toggle_tera_none" );
         info.classList.add( "slot__info_" + type[ 0 ] );
         bg1.classList.add( "slot__bg-type-1_" + type[ 0 ] );
         bg2.classList.add( "slot__bg-type-2_" + type.slice( -1 ) );
         slot.dataset.tera = "";
+        updateTeamAnalysis();
     }
+}
+
+/**
+ * Hide the Tera Type picker.
+ * @param {Event} event
+ */
+ function hideTeraPicker( event ) {
+    const target = event.target;
+    const picker = document.querySelector( ".tera-picker_active" );
+    // Detect click outside dropdown menu
+    if ( picker == null
+        || (
+            !picker.contains( target )
+            && !picker.parentElement.querySelector( ".slot__toggle_tera" ).contains( target )
+        ) ) {
+        const picker = document.querySelector( ".tera-picker" );
+        picker.classList.remove( "tera-picker_active" );
+        picker.classList.add( "tera-picker_hidden" );
+        document.removeEventListener( "click", hideTeraPicker );
+    }
+}
+
+/**
+ * Change the Tera Type of a Pokémon.
+ * @param {Event} event
+ */
+function terastallize( event ) {
+    const slot = event.currentTarget.closest( ".slot[data-slug]" );
+    const type = slot.dataset.type.split( "," );
+    const tera = event.currentTarget.dataset.type;
+
+    const icon = slot.querySelector( ".slot__toggle_tera" );
+    const info = slot.querySelector( ".slot__info" );
+    const bg1 = slot.querySelector( ".slot__bg-type-1" );
+    const bg2 = slot.querySelector( ".slot__bg-type-2" );
+
+    // Remove current type style
+    icon.classList.remove( "slot__toggle_tera_none" );
+    info.classList.remove( "slot__info_" + type[ 0 ] );
+    bg1.classList.remove( "slot__bg-type-1_" + type[ 0 ] );
+    bg2.classList.remove( "slot__bg-type-2_" + type.slice( -1 ) );
+
+    // Add tera type style
+    icon.classList.add( "slot__toggle_tera_" + tera );
+    info.classList.add( "slot__info_" + tera );
+    bg1.classList.add( "slot__bg-type-1_" + tera );
+    bg2.classList.add( "slot__bg-type-2_" + tera );
+    slot.dataset.tera = tera;
+
+    // Hide picker
+    const picker = slot.querySelector( ".tera-picker" );
+    picker.classList.add( "tera-picker_hidden" );
+    picker.classList.remove( "tera-picker_active" );
+
     updateTeamAnalysis();
 }
+
 
 /**
  * Randomly selects and adds up to 6 Pokémon to the current team.
