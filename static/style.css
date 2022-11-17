@@ -331,6 +331,10 @@ dt {
             drop-shadow(0 -1px 0 black);*/
 }
 
+.slot__pokemon-render_sv {
+    filter: none;
+}
+
 .slot[data-slug$="-gmax"] .slot__pokemon-render {
     width: 12em;
     height: 12em;
@@ -445,6 +449,7 @@ dt {
 
 
 .slot__toggle-container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -481,9 +486,60 @@ dt {
     background: #3B71DC;
 }
 
+.slot__toggle_tera {
+    text-indent: -999em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid #d9d9d9;
+    border-radius: 1em;
+    box-sizing: content-box;
+    color: #aaa;
+    filter: none;
+}
+
+.slot__toggle_tera_none {
+    background-position: center;
+    background-image: url(img/tera.svg);
+    background-size: 75%;
+}
+
 .slot__toggle_hidden {
     display: none;
 }
+
+.tera-picker {
+    position: absolute;
+    list-style: none;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(6, 2em);
+    gap: 1em;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 0.5em;
+    top: 2em;
+    left: -8.75em;
+    z-index: 100;
+    filter: drop-shadow(0 2px 5px rgba(91,91,91,0.25));
+}
+
+.tera-picker_hidden {
+    display: none;
+}
+
+.tera-picker__button {
+    text-indent: -999em;
+    border: 1px solid #d9d9d9;
+    border-radius: 1em;
+    width: 2em;
+    height: 2em;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .tera-picker__button:hover {
+    border-width: 2px;
+  }
 
 /* Dex */
 
@@ -507,16 +563,20 @@ dt {
 .picker__pokedex {
     list-style: none;
     display: grid;
-    gap: 1em;
-    grid-template-columns: repeat(auto-fill, 4em);
+    gap: 0.25em;
+    grid-template-columns: repeat(auto-fill, 5em);
     justify-content: center;
     margin: 1em 0;
     padding: 0;
 }
 
+.pokedex-entry {
+    background-color: #eee;
+    border-radius: 0.5em;
+}
+
 .pokedex-entry:hover {
     background-color: #cdf;
-    border-radius: 2em;
 }
 
 .pokedex-entry_filtered,
@@ -527,8 +587,16 @@ dt {
 .pokedex-entry__thumb {
     width: 4rem;
     height: 4rem;
-    padding: 0.125rem 0;    
+    padding: 0.125rem 0;
+    margin: 0.5em;
     filter: drop-shadow(0 0 0.5px #1b1b1b);
+}
+
+.pokedex-entry__thumb_sv {
+    width: 5rem;
+    height: 5rem;
+    filter: none;
+    margin: 0;
 }
 
 .pokedex-entry__button:hover .pokedex-entry__thumb {
@@ -727,57 +795,110 @@ dt {
     filter: drop-shadow(0 0 0.5em #ef8a62);
 }
 
+.slot__toggle_tera_bug,
+.tera-picker__button_bug,
 .tally_bug .tally__type-symbol {
     background-image: url(img/type/bug_sym.png);
 }
+
+.slot__toggle_tera_dark,
+.tera-picker__button_dark,
 .tally_dark .tally__type-symbol {
     background-image: url(img/type/dark_sym.png);
 }
+
+.slot__toggle_tera_dragon,
+.tera-picker__button_dragon,
 .tally_dragon .tally__type-symbol {
     background-image: url(img/type/dragon_sym.png);
 }
+
+.slot__toggle_tera_electric,
+.tera-picker__button_electric,
 .tally_electric .tally__type-symbol {
     background-image: url(img/type/electric_sym.png);
 }
+
+.slot__toggle_tera_fairy,
+.tera-picker__button_fairy,
 .tally_fairy .tally__type-symbol {
     background-image: url(img/type/fairy_sym.png);
 }
+
+.slot__toggle_tera_fighting,
+.tera-picker__button_fighting,
 .tally_fighting .tally__type-symbol {
     background-image: url(img/type/fighting_sym.png);
 }
+
+.slot__toggle_tera_fire,
+.tera-picker__button_fire,
 .tally_fire .tally__type-symbol {
     background-image: url(img/type/fire_sym.png);
 }
+
+.slot__toggle_tera_flying,
+.tera-picker__button_flying,
 .tally_flying .tally__type-symbol {
     background-image: url(img/type/flying_sym.png);
 }
+
+.slot__toggle_tera_ghost,
+.tera-picker__button_ghost,
 .tally_ghost .tally__type-symbol {
     background-image: url(img/type/ghost_sym.png);
 }
+
+.slot__toggle_tera_grass,
+.tera-picker__button_grass,
 .tally_grass .tally__type-symbol {
     background-image: url(img/type/grass_sym.png);
 }
+
+.slot__toggle_tera_ground,
+.tera-picker__button_ground,
 .tally_ground .tally__type-symbol {
     background-image: url(img/type/ground_sym.png);
 }
+
+.slot__toggle_tera_ice,
+.tera-picker__button_ice,
 .tally_ice .tally__type-symbol {
     background-image: url(img/type/ice_sym.png);
 }
+
+.slot__toggle_tera_normal,
+.tera-picker__button_normal,
 .tally_normal .tally__type-symbol {
     background-image: url(img/type/normal_sym.png);
 }
+
+.slot__toggle_tera_poison,
+.tera-picker__button_poison,
 .tally_poison .tally__type-symbol {
     background-image: url(img/type/poison_sym.png);
 }
+
+.slot__toggle_tera_psychic,
+.tera-picker__button_psychic,
 .tally_psychic .tally__type-symbol {
     background-image: url(img/type/psychic_sym.png);
 }
+
+.slot__toggle_tera_rock,
+.tera-picker__button_rock,
 .tally_rock .tally__type-symbol {
     background-image: url(img/type/rock_sym.png);
 }
+
+.slot__toggle_tera_steel,
+.tera-picker__button_steel,
 .tally_steel .tally__type-symbol {
     background-image: url(img/type/steel_sym.png);
 }
+
+.slot__toggle_tera_water,
+.tera-picker__button_water,
 .tally_water .tally__type-symbol {
     background-image: url(img/type/water_sym.png);
 }
@@ -918,147 +1039,147 @@ dt {
     background-image: url(./img/type/fairy.png);
 }
 
-.slot[data-type^=normal] .slot__bg-type-1 {
+.slot__bg-type-1_normal {
     background-position: 0 0
 }
 
-.slot[data-type$=normal] .slot__bg-type-2 {
+.slot__bg-type-2_normal {
     background-position: 20% 0
 }
 
-.slot[data-type^=fighting] .slot__bg-type-1 {
+.slot__bg-type-1_fighting {
     background-position: 40% 0
 }
 
-.slot[data-type$=fighting] .slot__bg-type-2 {
+.slot__bg-type-2_fighting {
     background-position: 60% 0
 }
 
-.slot[data-type^=flying] .slot__bg-type-1 {
+.slot__bg-type-1_flying {
     background-position: 80% 0
 }
 
-.slot[data-type$=flying] .slot__bg-type-2 {
+.slot__bg-type-2_flying {
     background-position: 100% 0
 }
 
-.slot[data-type^=poison] .slot__bg-type-1 {
+.slot__bg-type-1_poison {
     background-position: 0 20%
 }
 
-.slot[data-type$=poison] .slot__bg-type-2 {
+.slot__bg-type-2_poison {
     background-position: 20% 20%
 }
 
-.slot[data-type^=ground] .slot__bg-type-1 {
+.slot__bg-type-1_ground {
     background-position: 40% 20%
 }
 
-.slot[data-type$=ground] .slot__bg-type-2 {
+.slot__bg-type-2_ground {
     background-position: 60% 20%
 }
 
-.slot[data-type^=rock] .slot__bg-type-1 {
+.slot__bg-type-1_rock {
     background-position: 80% 20%
 }
 
-.slot[data-type$=rock] .slot__bg-type-2 {
+.slot__bg-type-2_rock {
     background-position: 100% 20%
 }
 
-.slot[data-type^=bug] .slot__bg-type-1 {
+.slot__bg-type-1_bug {
     background-position: 0 40%
 }
 
-.slot[data-type$=bug] .slot__bg-type-2 {
+.slot__bg-type-2_bug {
     background-position: 20% 40%
 }
 
-.slot[data-type^=ghost] .slot__bg-type-1 {
+.slot__bg-type-1_ghost {
     background-position: 40% 40%
 }
 
-.slot[data-type$=ghost] .slot__bg-type-2 {
+.slot__bg-type-2_ghost {
     background-position: 60% 40%
 }
 
-.slot[data-type^=steel] .slot__bg-type-1 {
+.slot__bg-type-1_steel {
     background-position: 80% 40%
 }
 
-.slot[data-type$=steel] .slot__bg-type-2 {
+.slot__bg-type-2_steel {
     background-position: 100% 40%
 }
 
-.slot[data-type^=fire] .slot__bg-type-1 {
+.slot__bg-type-1_fire {
     background-position: 0 60%
 }
 
-.slot[data-type$=fire] .slot__bg-type-2 {
+.slot__bg-type-2_fire {
     background-position: 20% 60%
 }
 
-.slot[data-type^=water] .slot__bg-type-1 {
+.slot__bg-type-1_water {
     background-position: 40% 60%
 }
 
-.slot[data-type$=water] .slot__bg-type-2 {
+.slot__bg-type-2_water {
     background-position: 60% 60%
 }
 
-.slot[data-type^=grass] .slot__bg-type-1 {
+.slot__bg-type-1_grass {
     background-position: 80% 60%
 }
 
-.slot[data-type$=grass] .slot__bg-type-2 {
+.slot__bg-type-2_grass {
     background-position: 100% 60%
 }
 
-.slot[data-type^=electric] .slot__bg-type-1 {
+.slot__bg-type-1_electric {
     background-position: 0 80%
 }
 
-.slot[data-type$=electric] .slot__bg-type-2 {
+.slot__bg-type-2_electric {
     background-position: 20% 80%
 }
 
-.slot[data-type^=psychic] .slot__bg-type-1 {
+.slot__bg-type-1_psychic {
     background-position: 40% 80%
 }
 
-.slot[data-type$=psychic] .slot__bg-type-2 {
+.slot__bg-type-2_psychic {
     background-position: 60% 80%
 }
 
-.slot[data-type^=ice] .slot__bg-type-1 {
+.slot__bg-type-1_ice {
     background-position: 80% 80%
 }
 
-.slot[data-type$=ice] .slot__bg-type-2 {
+.slot__bg-type-2_ice {
     background-position: 100% 80%
 }
 
-.slot[data-type^=dragon] .slot__bg-type-1 {
+.slot__bg-type-1_dragon {
     background-position: 0 100%
 }
 
-.slot[data-type$=dragon] .slot__bg-type-2 {
+.slot__bg-type-2_dragon {
     background-position: 20% 100%
 }
 
-.slot[data-type^=dark] .slot__bg-type-1 {
+.slot__bg-type-1_dark {
     background-position: 40% 100%
 }
 
-.slot[data-type$=dark] .slot__bg-type-2 {
+.slot__bg-type-2_dark {
     background-position: 60% 100%
 }
 
-.slot[data-type^=fairy] .slot__bg-type-1 {
+.slot__bg-type-1_fairy {
     background-position: 80% 100%
 }
 
-.slot[data-type$=fairy] .slot__bg-type-2 {
+.slot__bg-type-2_fairy {
     background-position: 100% 100%
 }
 
@@ -1067,75 +1188,75 @@ dt {
     grid-template-rows: 1fr;
 }
 
-.slot[data-type^=normal] .slot__info {
+.slot__info_normal {
     background: #c6c6a7
 }
 
-.slot[data-type^=grass] .slot__info {
+.slot__info_grass {
     background: #a7db8d
 }
 
-.slot[data-type^=fire] .slot__info {
+.slot__info_fire {
     background: #f5ac78
 }
 
-.slot[data-type^=water] .slot__info {
+.slot__info_water {
     background: #9db7f5
 }
 
-.slot[data-type^=fighting] .slot__info {
+.slot__info_fighting {
     background: #d67873
 }
 
-.slot[data-type^=flying] .slot__info {
+.slot__info_flying {
     background: #c6b7f5
 }
 
-.slot[data-type^=poison] .slot__info {
+.slot__info_poison {
     background: #c183c1
 }
 
-.slot[data-type^=ground] .slot__info {
+.slot__info_ground {
     background: #ebd69d
 }
 
-.slot[data-type^=rock] .slot__info {
+.slot__info_rock {
     background: #d1c17d
 }
 
-.slot[data-type^=bug] .slot__info {
+.slot__info_bug {
     background: #c6d16e
 }
 
-.slot[data-type^=ghost] .slot__info {
+.slot__info_ghost {
     background: #a292bc
 }
 
-.slot[data-type^=electric] .slot__info {
+.slot__info_electric {
     background: #fae078
 }
 
-.slot[data-type^=psychic] .slot__info {
+.slot__info_psychic {
     background: #fa92b2
 }
 
-.slot[data-type^=ice] .slot__info {
+.slot__info_ice {
     background: #bce6e6
 }
 
-.slot[data-type^=dragon] .slot__info {
+.slot__info_dragon {
     background: #a27dfa
 }
 
-.slot[data-type^=dark] .slot__info {
+.slot__info_dark {
     background: #a29288
 }
 
-.slot[data-type^=steel] .slot__info {
+.slot__info_steel {
     background: #d1d1e0
 }
 
-.slot[data-type^=fairy] .slot__info {
+.slot__info_fairy {
     background: #f4bdc9
 }
 
@@ -1221,6 +1342,8 @@ dt {
         display: flex;
         height: 20vh;
         min-height: 9em;
+        max-height: 12em;
+        padding: 0;
     }
 
     .head_sticky .team__slots {
@@ -1267,12 +1390,17 @@ dt {
     }
 
     .picker__pokedex {
-        grid-template-columns: repeat(auto-fill, 3em);
+        grid-template-columns: repeat(auto-fill, 4em);
     }
 
     .pokedex-entry__thumb {
         width: 3em;
         height: 3em;
+    }
+
+    .pokedex-entry__thumb_sv {
+        width: 4em;
+        height: 4em;
     }
 }
 

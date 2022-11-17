@@ -52,6 +52,7 @@ function buildPage() {
     completeTypeData();
     completePokemonData();
     populateTeam( document.querySelector( ".head" ) );
+    populateTeraPicker( document.querySelector( ".slot__toggle-container" ) );
     populateDexes( document.querySelector( ".tail" ) );
     populateFilters();
     slugs.forEach( slug => populateTeamSlot( slug ) );
@@ -157,7 +158,9 @@ function getCurrentTypeData() {
 //#region Team Slot
 
 const BASE_IMG = IMG_PATH + "pokemon/";
+const SV_BASE_IMG = IMG_PATH + "sv-pokemon/";
 const UNKNOWN_IMG = BASE_IMG + "0000_000_uk_n.png";
+const SV_UNKNOWN_IMG = SV_BASE_IMG + "0000_000.png"
 
 /**
  * Populates the page with empty team slots.
@@ -193,8 +196,17 @@ function populateTeam( container ) {
                 event.target.parentNode.classList.remove( "slot_hover" );
             });
         });
-        clone.querySelector( ".slot__toggle_female" ).addEventListener( "click", toggleGender );
-        clone.querySelector( ".slot__toggle_regular" ).addEventListener( "click", toggleShiny );
+        if ( currentGame == "sv" ) {
+            const img = clone.querySelector( ".slot__pokemon-render" );
+            img.classList.add( "slot__pokemon-render_sv" );
+            img.setAttribute( "src", SV_UNKNOWN_IMG );
+        } else {
+            clone.querySelector( ".slot__toggle_female" ).addEventListener( "click", toggleGender );
+            clone.querySelector( ".slot__toggle_regular" ).addEventListener( "click", toggleShiny );
+        }
+        if ( gameData[ currentGame ].tera ) {
+            clone.querySelector( ".slot__toggle_tera" ).addEventListener( "click", showTeraPicker );
+        }
         ul.append( clone );
     }
 
@@ -247,22 +259,54 @@ function populateTeam( container ) {
     buttonContainer.append( button );
 
     // Create button to show advanced controls
-    button = document.createElement( "button" );
-    button.innerHTML = "Hide Toggles";
-    button.classList.add( "team__button" );
-    button.addEventListener( "click", ( event ) => {
-        document.querySelectorAll( ".slot__toggle-container" ).forEach( div => {
-            const selector = "slot__toggle-container_hidden";
-            if ( div.classList.contains( selector ) ) {
-                event.target.innerHTML = "Hide Toggles";
-                div.classList.remove( selector );
-            } else {
-                event.target.innerHTML = "Show Toggles";
-                div.classList.add( selector );
-            }
+    if ( currentGame != "sv" ) {     
+        button = document.createElement( "button" );
+        button.innerHTML = "Hide Toggles";
+        button.classList.add( "team__button" );
+        button.addEventListener( "click", ( event ) => {
+            document.querySelectorAll( ".slot__toggle-container" ).forEach( div => {
+                const selector = "slot__toggle-container_hidden";
+                if ( div.classList.contains( selector ) ) {
+                    event.target.innerHTML = "Hide Toggles";
+                    div.classList.remove( selector );
+                } else {
+                    event.target.innerHTML = "Show Toggles";
+                    div.classList.add( selector );
+                }
+            });
         });
+        buttonContainer.append( button );
+    }
+}
+
+/**
+ * Populates a tooltip with buttons to change a Pokémon's Tera Type.
+ * @param {HTMLElement} container 
+ */
+function populateTeraPicker( container ) {
+    if ( !gameData[ currentGame ].tera ) return;
+
+    const picker = document.createElement( "ol" );
+    picker.classList.add( "tera-picker", "tera-picker_hidden" );
+
+    const typeData = getCurrentTypeData();
+    Object.keys( typeData ).forEach( type => {
+        const container = document.createElement( "li" );
+        const button = document.createElement( "button" );
+    
+        picker.append( container );
+        container.append( button );
+
+        button.classList.add(
+            "tera-picker__button", "tera-picker__button_" + type
+        );
+        button.dataset.type = type;
+        button.innerHTML = capitalize( type );
+        button.setAttribute( "title", capitalize( type ) );
+        button.addEventListener( "click", terastallize );
     });
-    buttonContainer.append( button );
+
+    container.append( picker );
 }
 
 /**
@@ -300,6 +344,11 @@ function populateTeamSlot( event_or_slug ) {
     slot.classList.add( "slot_populated" );
     slot.classList.remove( "slot_empty", "slot_hover" );
     slot.dataset.slug = slug;
+    slot.dataset.tera = "";
+
+    slot.querySelector( ".slot__bg-type-1" ).classList.add( "slot__bg-type-1_" + type[ 0 ] );
+    slot.querySelector( ".slot__bg-type-2" ).classList.add( "slot__bg-type-2_" + type.slice( -1 ) );
+    slot.querySelector( ".slot__info" ).classList.add( "slot__info_" + type[ 0 ] );
 
     const img = slot.querySelector( ".slot__pokemon-render" );
     img.setAttribute( "src", getPokemonRenderUrl( pokemon, gmax ) );
@@ -334,6 +383,16 @@ function populateTeamSlot( event_or_slug ) {
     shinyToggle.classList.remove( "slot__toggle_hidden", "slot__toggle_shiny" );
     shinyToggle.classList.add( "slot__toggle_regular" );
 
+    if ( currentGame == "sv" ) {
+        slot.querySelectorAll( ".slot__toggle" ).forEach( toggle => {
+            toggle.classList.add( "slot__toggle_hidden" );
+        });
+    }
+    if ( gameData[ currentGame ].tera ) {
+        const teraToggle = slot.querySelector( ".slot__toggle_tera" );
+        teraToggle.classList.remove( "slot__toggle_hidden" );
+    }
+
     const li = document.querySelector( ".pokedex-entry[data-slug='" + slug + "']" );
     if ( li ) {
         li.classList.add( "pokedex-entry_picked" );
@@ -356,14 +415,28 @@ function populateTeamSlot( event_or_slug ) {
     const slug = slot.dataset.slug;
     if ( slug === "" ) return;
 
+    const type = slot.dataset.type.split( "," );
+    const tera = slot.dataset.tera;
+
     // Empty data
     slot.classList.add( "slot_empty" );
     slot.classList.remove( "slot_hover", "slot_populated" );
     slot.dataset.slug = "";
     slot.dataset.type = "";
+    slot.dataset.tera = "";
+
+    slot.querySelector( ".slot__bg-type-1" ).classList.remove(
+        "slot__bg-type-1_" + type[ 0 ], "slot__bg-type-1_" + tera
+    );
+    slot.querySelector( ".slot__bg-type-2" ).classList.remove(
+        "slot__bg-type-2_" + type.slice( -1 ), "slot__bg-type-2_" + tera
+    );
+    slot.querySelector( ".slot__info" ).classList.remove(
+        "slot__info_" + type[ 0 ], "slot__info_" + tera
+    );
 
     const img = slot.querySelector( ".slot__pokemon-render" );
-    img.setAttribute( "src", UNKNOWN_IMG );
+    img.setAttribute( "src", currentGame == "sv" ? SV_UNKNOWN_IMG : UNKNOWN_IMG );
     img.setAttribute( "alt", "" );
 
     slot.querySelector( ".slot__name" ).innerHTML = "???";
@@ -381,6 +454,9 @@ function populateTeamSlot( event_or_slug ) {
     const shinyToggle = slot.querySelector( ".slot__toggle_regular, .slot__toggle_shiny" );
     shinyToggle.classList.remove( "slot__toggle_shiny" );
     shinyToggle.classList.add("slot__toggle_hidden", "slot__toggle_regular" );
+    const teraToggle = slot.querySelector( ".slot__toggle_tera" );
+    teraToggle.classList.remove( "slot__toggle_tera_" + tera );
+    teraToggle.classList.add( "slot__toggle_hidden", "slot__toggle_tera_none" );
 
     // Move to last place
     slot.parentNode.append( slot );
@@ -402,6 +478,14 @@ function populateTeamSlot( event_or_slug ) {
  * @returns {string} url
  */
 function getPokemonRenderUrl( pokemon, gmax = false ) {
+    if ( currentGame == "sv" ) {
+        return (
+            SV_BASE_IMG
+            + String( pokemon.base_id ).padStart( 4, "0" )
+            + "_" + String( pokemon.form_id ).padStart( 3, "0" )
+            + ".png"
+        );
+    }
     return BASE_IMG + [
         String( pokemon.base_id ).padStart( 4, "0" ),
         String( pokemon.form_id ).padStart( 3, "0" ),
@@ -415,6 +499,8 @@ function getPokemonRenderUrl( pokemon, gmax = false ) {
  * @param {Event|string} event_or_slug 
  */
 function toggleGender( event_or_slug ) {
+    if ( currentGame == "sv" ) return;
+
     var slot = ( typeof event_or_slug === "string" )
         ? document.querySelector( ".slot[data-slug='" + slug + "']" )
         : event_or_slug.currentTarget.closest( "li[data-slug]" );
@@ -426,7 +512,7 @@ function toggleGender( event_or_slug ) {
     const img = slot.querySelector( ".slot__pokemon-render" );
     var src = img.getAttribute( "src" );
     src = src.replace( /[fm]d/g, ( m ) => {
-        return { md: "fd", fd: "md" }[m]
+        return { md: "fd", fd: "md" }[ m ]
     });
     img.setAttribute( "src", src );
     if ( src.includes( "fd" ) ) {
@@ -445,6 +531,8 @@ function toggleGender( event_or_slug ) {
  * @param {Event|slug} event_or_slug 
  */
 function toggleShiny( event_or_slug ) {
+    if ( currentGame == "sv" ) return;
+
     var slot = ( typeof event_or_slug === "string" )
         ? document.querySelector( ".slot[data-slug='" + slug + "']" )
         : event_or_slug.currentTarget.closest( ".slot[data-slug]" );
@@ -464,6 +552,116 @@ function toggleShiny( event_or_slug ) {
     src = [ ...src.slice( 0, src.length - 2 ), dir, src[ src.length - 1 ] ].join( "/" );
     img.setAttribute( "src", src );
 }
+
+/**
+ * Show the Tera Type picker.
+ * @param {Event|slug} event_or_slug 
+ */
+function showTeraPicker( event_or_slug ) {
+    if ( !gameData[ currentGame ].tera ) return;
+
+    var slot = ( typeof event_or_slug === "string" )
+        ? document.querySelector( ".slot[data-slug='" + slug + "']" )
+        : event_or_slug.currentTarget.closest( ".slot[data-slug]" );
+
+    const icon = slot.querySelector( ".slot__toggle_tera" );
+    if ( icon.classList.contains( "slot__toggle_tera_none" ) ) {
+        // Show tera type picker
+        const picker = document.querySelector( ".tera-picker" );
+        if ( slot.contains( picker )
+            && picker.classList.contains( "tera-picker_active" )
+        ) {
+            // Hide if already open and clicking button again
+            picker.classList.remove( "tera-picker_active" );
+            picker.classList.add( "tera-picker_hidden" );
+            document.removeEventListener( "click", hideTeraPicker );
+        } else {
+            // Move/show otherwise
+            slot.querySelector( ".slot__toggle-container" ).append( picker );
+            picker.classList.add( "tera-picker_active" );
+            picker.classList.remove( "tera-picker_hidden" );
+            document.addEventListener( "click", hideTeraPicker );
+        }
+    } else {
+        // Remove tera type
+        const type = slot.dataset.type.split( "," );
+        const tera = slot.dataset.tera;
+        
+        const info = slot.querySelector( ".slot__info" );
+        const bg1 = slot.querySelector( ".slot__bg-type-1" );
+        const bg2 = slot.querySelector( ".slot__bg-type-2" );
+
+        // Remove tera type style
+        icon.classList.remove( "slot__toggle_tera_" + tera );
+        info.classList.remove( "slot__info_" + tera );
+        bg1.classList.remove( "slot__bg-type-1_" + tera );
+        bg2.classList.remove( "slot__bg-type-2_" + tera );
+
+        // Reinstate type style
+        icon.classList.add( "slot__toggle_tera_none" );
+        info.classList.add( "slot__info_" + type[ 0 ] );
+        bg1.classList.add( "slot__bg-type-1_" + type[ 0 ] );
+        bg2.classList.add( "slot__bg-type-2_" + type.slice( -1 ) );
+        slot.dataset.tera = "";
+        updateTeamAnalysis();
+    }
+}
+
+/**
+ * Hide the Tera Type picker.
+ * @param {Event} event
+ */
+ function hideTeraPicker( event ) {
+    const target = event.target;
+    const picker = document.querySelector( ".tera-picker_active" );
+    // Detect click outside dropdown menu
+    if ( picker == null
+        || (
+            !picker.contains( target )
+            && !picker.parentElement.querySelector( ".slot__toggle_tera" ).contains( target )
+        ) ) {
+        const picker = document.querySelector( ".tera-picker" );
+        picker.classList.remove( "tera-picker_active" );
+        picker.classList.add( "tera-picker_hidden" );
+        document.removeEventListener( "click", hideTeraPicker );
+    }
+}
+
+/**
+ * Change the Tera Type of a Pokémon.
+ * @param {Event} event
+ */
+function terastallize( event ) {
+    const slot = event.currentTarget.closest( ".slot[data-slug]" );
+    const type = slot.dataset.type.split( "," );
+    const tera = event.currentTarget.dataset.type;
+
+    const icon = slot.querySelector( ".slot__toggle_tera" );
+    const info = slot.querySelector( ".slot__info" );
+    const bg1 = slot.querySelector( ".slot__bg-type-1" );
+    const bg2 = slot.querySelector( ".slot__bg-type-2" );
+
+    // Remove current type style
+    icon.classList.remove( "slot__toggle_tera_none" );
+    info.classList.remove( "slot__info_" + type[ 0 ] );
+    bg1.classList.remove( "slot__bg-type-1_" + type[ 0 ] );
+    bg2.classList.remove( "slot__bg-type-2_" + type.slice( -1 ) );
+
+    // Add tera type style
+    icon.classList.add( "slot__toggle_tera_" + tera );
+    info.classList.add( "slot__info_" + tera );
+    bg1.classList.add( "slot__bg-type-1_" + tera );
+    bg2.classList.add( "slot__bg-type-2_" + tera );
+    slot.dataset.tera = tera;
+
+    // Hide picker
+    const picker = slot.querySelector( ".tera-picker" );
+    picker.classList.add( "tera-picker_hidden" );
+    picker.classList.remove( "tera-picker_active" );
+
+    updateTeamAnalysis();
+}
+
 
 /**
  * Randomly selects and adds up to 6 Pokémon to the current team.
@@ -593,6 +791,7 @@ function createPokemonEntry( slug, pokemon ) {
     img.setAttribute( "src", getPokemonRenderUrl( pokemon ) );
     img.setAttribute( "loading", "lazy" );
     img.classList.add( "pokedex-entry__thumb" );
+    if ( currentGame == "sv" ) img.classList.add( "pokedex-entry__thumb_sv" );
 
     // If Pokémon can Gigantamax, duplicate its entry
     if ( gameData[ currentGame ].gmax
@@ -1260,29 +1459,50 @@ function removeHighlights( event ) {
  * damage to each type.
  */
 function updateTeamAnalysis() {
+    const typeData = getCurrentTypeData();
     // Fetch current Pokémon slugs
     const slots = document.querySelectorAll( ".slot_populated" );
-    const slugs = Array.from( slots ).map( li => {
-        return li.dataset.slug;
-    });
+    const slugs = Array.from( slots ).map( li => li.dataset.slug );
+    const teras = Array.from( slots ).map( li => li.dataset.tera );
     // Update team defense and offense
     const defTallies = document.querySelector( ".type-analysis__grid_defense" );
     const atkTallies = document.querySelector( ".type-analysis__grid_attack" );
     Object.keys( getCurrentTypeData() ).forEach( type => {
         const weakPokemon = [], resistPokemon = [], coveragePokemon = [];
         // Update counts per type (resistances includes immunities)
-        slugs.forEach( slug => {
-            const origSlug = slug;
+        for ( let i = 0; i < slugs.length; i++ ) {
+            let slug = slugs[ i ];
+            let tera = teras[ i ];
             if ( slug.endsWith( "-gmax" ) ) slug = slug.substring( 0, slug.length - 5 );
-            if ( pokemonData[ slug ][ "weaknesses" ].includes( type ) )
-                weakPokemon.push( origSlug );
-            else if ( pokemonData[ slug ][ "resistances" ].includes( type ) )
-                resistPokemon.push( origSlug );
-            else if ( pokemonData[ slug ][ "immunities" ].includes( type ) )
-                resistPokemon.push( origSlug );
-            if ( pokemonData[ slug ][ "coverage" ].includes( type ) )
-                coveragePokemon.push( origSlug );
-        });
+            // If no tera type, use Pokémon data
+            // If tera type, use type data
+            if (
+                ( !tera && pokemonData[ slug ][ "weaknesses" ].includes( type ) )
+                || ( tera && typeData[ tera ].weak2.includes( type ) )
+            ) {
+                weakPokemon.push( slugs[ i ] );
+            } else if (
+                (
+                    !tera && (
+                        pokemonData[ slug ][ "resistances" ].includes( type )
+                        || pokemonData[ slug ][ "immunities" ].includes( type )
+                    )
+                ) || (
+                    tera && (
+                        typeData[ tera ].resists.includes( type )
+                        || typeData[ tera ].immune2.includes( type )
+                    )
+                )
+            ) {
+                resistPokemon.push( slugs[ i ] );
+            }
+            if (
+                pokemonData[ slug ][ "coverage" ].includes( type )
+                || ( tera && typeData[ tera ].weakens.includes( type ) )
+            ) {
+                coveragePokemon.push( slugs[ i ] );
+            }
+        }
         const defCount = resistPokemon.length - weakPokemon.length;
         const atkCount = coveragePokemon.length;
         const selector = ".tally_" + type;

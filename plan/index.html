@@ -15,7 +15,7 @@
 <body>
 <article class="team-planner">
     <template id="team-slot">
-        <li class="slot slot_empty" data-slug="" data-type="">
+        <li class="slot slot_empty" data-slug="" data-type="" data-tera="">
             <div class="slot__remove-button slot__bg-type-1">
                 <figure class="slot__bg-type-2"><img class="slot__pokemon-render" src="../static/js/../img/pokemon/0000_000_uk_n.png" alt=""></figure>
             </div>
@@ -30,8 +30,9 @@
                 </ol>
             </div>
             <div class="slot__toggle-container">
-                <button class="slot__toggle slot__toggle_hidden slot__toggle_female">&female;</button>
-                <button class="slot__toggle slot__toggle_hidden slot__toggle_regular">✨</button>
+                <button class="slot__toggle slot__toggle_hidden slot__toggle_female" title="Toggle Gender">&female;</button>
+                <button class="slot__toggle slot__toggle_hidden slot__toggle_regular" title="Toggle Shiny">✨</button>
+                <button class="slot__toggle slot__toggle_hidden slot__toggle_tera slot__toggle_tera_none" title="Terastallize">🔯</button>
             </div>
         </li>
     </template>
