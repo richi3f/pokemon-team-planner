@@ -1233,6 +1233,8 @@ dt {
         display: flex;
         height: 20vh;
         min-height: 9em;
+        max-height: 12em;
+        padding: 0;
     }
 
     .head_sticky .team__slots {
