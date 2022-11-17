@@ -456,7 +456,9 @@ function populateTeamSlot( event_or_slug ) {
     shinyToggle.classList.add("slot__toggle_hidden", "slot__toggle_regular" );
     const teraToggle = slot.querySelector( ".slot__toggle_tera" );
     teraToggle.classList.remove( "slot__toggle_tera_" + tera );
-    teraToggle.classList.add( "slot__toggle_hidden", "slot__toggle_tera_none" );
+    teraToggle.classList.add(
+        "slot__toggle_hidden", "slot__toggle_tera_none", "slot__toggle_tera_picked"
+    );
 
     // Move to last place
     slot.parentNode.append( slot );
@@ -592,12 +594,14 @@ function showTeraPicker( event_or_slug ) {
         const bg2 = slot.querySelector( ".slot__bg-type-2" );
 
         // Remove tera type style
+        icon.classList.remove( "slot__toggle_tera_picked" );
         icon.classList.remove( "slot__toggle_tera_" + tera );
         info.classList.remove( "slot__info_" + tera );
         bg1.classList.remove( "slot__bg-type-1_" + tera );
         bg2.classList.remove( "slot__bg-type-2_" + tera );
 
         // Reinstate type style
+        icon.setAttribute( "title", "Terastallize" );
         icon.classList.add( "slot__toggle_tera_none" );
         info.classList.add( "slot__info_" + type[ 0 ] );
         bg1.classList.add( "slot__bg-type-1_" + type[ 0 ] );
@@ -642,12 +646,14 @@ function terastallize( event ) {
     const bg2 = slot.querySelector( ".slot__bg-type-2" );
 
     // Remove current type style
+    icon.setAttribute( "title", "Reset Type" );
     icon.classList.remove( "slot__toggle_tera_none" );
     info.classList.remove( "slot__info_" + type[ 0 ] );
     bg1.classList.remove( "slot__bg-type-1_" + type[ 0 ] );
     bg2.classList.remove( "slot__bg-type-2_" + type.slice( -1 ) );
 
     // Add tera type style
+    icon.classList.add( "slot__toggle_tera_picked" );
     icon.classList.add( "slot__toggle_tera_" + tera );
     info.classList.add( "slot__info_" + tera );
     bg1.classList.add( "slot__bg-type-1_" + tera );

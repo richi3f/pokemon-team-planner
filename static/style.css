@@ -496,8 +496,9 @@ dt {
     filter: none;
 }
 
-.slot__toggle_tera:not(.slot__toggle_tera_none):hover {
+.slot__toggle_tera_picked:hover {
     transform: scale(0.75);
+    cursor: no-drop;
 }
 
 .slot__toggle_tera_none {
