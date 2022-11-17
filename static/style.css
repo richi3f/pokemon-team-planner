@@ -331,6 +331,10 @@ dt {
             drop-shadow(0 -1px 0 black);*/
 }
 
+.slot__pokemon-render_sv {
+    filter: none;
+}
+
 .slot[data-slug$="-gmax"] .slot__pokemon-render {
     width: 12em;
     height: 12em;
@@ -445,6 +449,7 @@ dt {
 
 
 .slot__toggle-container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -488,12 +493,53 @@ dt {
     border: 1px solid #d9d9d9;
     border-radius: 1em;
     box-sizing: content-box;
+    color: #aaa;
     filter: none;
+}
+
+.slot__toggle_tera_none {
+    background-position: center;
+    background-image: url(img/tera.svg);
+    background-size: 75%;
 }
 
 .slot__toggle_hidden {
     display: none;
 }
+
+.tera-picker {
+    position: absolute;
+    list-style: none;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(6, 2em);
+    gap: 1em;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 0.5em;
+    top: 2em;
+    left: -8.75em;
+    z-index: 100;
+    filter: drop-shadow(0 2px 5px rgba(91,91,91,0.25));
+}
+
+.tera-picker_hidden {
+    display: none;
+}
+
+.tera-picker__button {
+    text-indent: -999em;
+    border: 1px solid #d9d9d9;
+    border-radius: 1em;
+    width: 2em;
+    height: 2em;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .tera-picker__button:hover {
+    border-width: 2px;
+  }
 
 /* Dex */
 
@@ -750,91 +796,109 @@ dt {
 }
 
 .slot__toggle_tera_bug,
+.tera-picker__button_bug,
 .tally_bug .tally__type-symbol {
     background-image: url(img/type/bug_sym.png);
 }
 
 .slot__toggle_tera_dark,
+.tera-picker__button_dark,
 .tally_dark .tally__type-symbol {
     background-image: url(img/type/dark_sym.png);
 }
 
 .slot__toggle_tera_dragon,
+.tera-picker__button_dragon,
 .tally_dragon .tally__type-symbol {
     background-image: url(img/type/dragon_sym.png);
 }
 
 .slot__toggle_tera_electric,
+.tera-picker__button_electric,
 .tally_electric .tally__type-symbol {
     background-image: url(img/type/electric_sym.png);
 }
 
 .slot__toggle_tera_fairy,
+.tera-picker__button_fairy,
 .tally_fairy .tally__type-symbol {
     background-image: url(img/type/fairy_sym.png);
 }
 
 .slot__toggle_tera_fighting,
+.tera-picker__button_fighting,
 .tally_fighting .tally__type-symbol {
     background-image: url(img/type/fighting_sym.png);
 }
 
 .slot__toggle_tera_fire,
+.tera-picker__button_fire,
 .tally_fire .tally__type-symbol {
     background-image: url(img/type/fire_sym.png);
 }
 
 .slot__toggle_tera_flying,
+.tera-picker__button_flying,
 .tally_flying .tally__type-symbol {
     background-image: url(img/type/flying_sym.png);
 }
 
 .slot__toggle_tera_ghost,
+.tera-picker__button_ghost,
 .tally_ghost .tally__type-symbol {
     background-image: url(img/type/ghost_sym.png);
 }
 
 .slot__toggle_tera_grass,
+.tera-picker__button_grass,
 .tally_grass .tally__type-symbol {
     background-image: url(img/type/grass_sym.png);
 }
 
 .slot__toggle_tera_ground,
+.tera-picker__button_ground,
 .tally_ground .tally__type-symbol {
     background-image: url(img/type/ground_sym.png);
 }
 
 .slot__toggle_tera_ice,
+.tera-picker__button_ice,
 .tally_ice .tally__type-symbol {
     background-image: url(img/type/ice_sym.png);
 }
 
 .slot__toggle_tera_normal,
+.tera-picker__button_normal,
 .tally_normal .tally__type-symbol {
     background-image: url(img/type/normal_sym.png);
 }
 
 .slot__toggle_tera_poison,
+.tera-picker__button_poison,
 .tally_poison .tally__type-symbol {
     background-image: url(img/type/poison_sym.png);
 }
 
 .slot__toggle_tera_psychic,
+.tera-picker__button_psychic,
 .tally_psychic .tally__type-symbol {
     background-image: url(img/type/psychic_sym.png);
 }
 
 .slot__toggle_tera_rock,
+.tera-picker__button_rock,
 .tally_rock .tally__type-symbol {
     background-image: url(img/type/rock_sym.png);
 }
 
 .slot__toggle_tera_steel,
+.tera-picker__button_steel,
 .tally_steel .tally__type-symbol {
     background-image: url(img/type/steel_sym.png);
 }
 
 .slot__toggle_tera_water,
+.tera-picker__button_water,
 .tally_water .tally__type-symbol {
     background-image: url(img/type/water_sym.png);
 }
