@@ -488,19 +488,26 @@ dt {
 
 .slot__toggle_tera {
     text-indent: -999em;
+    width: 2em;
+    height: 2em;
+    background-color: transparent;
     background-repeat: no-repeat;
     background-size: contain;
-    border: 1px solid #d9d9d9;
-    border-radius: 1em;
-    box-sizing: content-box;
-    color: #aaa;
     filter: none;
 }
 
+.slot__toggle_tera:not(.slot__toggle_tera_none):hover {
+    transform: scale(0.75);
+}
+
 .slot__toggle_tera_none {
-    background-position: center;
-    background-image: url(img/tera.svg);
-    background-size: 75%;
+    background-color: #a6a6a6;
+    mask-image: url(img/type/tera.png);
+    mask-size: 2em;
+}
+
+.slot__toggle_tera_none:hover {
+    background-color: #686868;
 }
 
 .slot__toggle_hidden {
@@ -517,8 +524,8 @@ dt {
     background: #fff;
     border: 1px solid #d9d9d9;
     border-radius: 0.5em;
-    top: 2em;
-    left: -8.75em;
+    top: 2.25em;
+    left: -8.5em;
     z-index: 100;
     filter: drop-shadow(0 2px 5px rgba(91,91,91,0.25));
 }
@@ -529,8 +536,6 @@ dt {
 
 .tera-picker__button {
     text-indent: -999em;
-    border: 1px solid #d9d9d9;
-    border-radius: 1em;
     width: 2em;
     height: 2em;
     background-repeat: no-repeat;
@@ -538,7 +543,7 @@ dt {
   }
 
   .tera-picker__button:hover {
-    border-width: 2px;
+    transform: scale(1.25);
   }
 
 /* Dex */
@@ -795,112 +800,166 @@ dt {
     filter: drop-shadow(0 0 0.5em #ef8a62);
 }
 
-.slot__toggle_tera_bug,
-.tera-picker__button_bug,
-.tally_bug .tally__type-symbol {
-    background-image: url(img/type/bug_sym.png);
-}
-
-.slot__toggle_tera_dark,
-.tera-picker__button_dark,
-.tally_dark .tally__type-symbol {
-    background-image: url(img/type/dark_sym.png);
-}
-
-.slot__toggle_tera_dragon,
-.tera-picker__button_dragon,
-.tally_dragon .tally__type-symbol {
-    background-image: url(img/type/dragon_sym.png);
-}
-
-.slot__toggle_tera_electric,
-.tera-picker__button_electric,
-.tally_electric .tally__type-symbol {
-    background-image: url(img/type/electric_sym.png);
-}
-
-.slot__toggle_tera_fairy,
-.tera-picker__button_fairy,
-.tally_fairy .tally__type-symbol {
-    background-image: url(img/type/fairy_sym.png);
+.slot__toggle_tera_normal,
+.tera-picker__button_normal {
+    background-image: url(img/type/normal_tera.png);
 }
 
 .slot__toggle_tera_fighting,
-.tera-picker__button_fighting,
-.tally_fighting .tally__type-symbol {
-    background-image: url(img/type/fighting_sym.png);
-}
-
-.slot__toggle_tera_fire,
-.tera-picker__button_fire,
-.tally_fire .tally__type-symbol {
-    background-image: url(img/type/fire_sym.png);
+.tera-picker__button_fighting {
+    background-image: url(img/type/fighting_tera.png);
 }
 
 .slot__toggle_tera_flying,
-.tera-picker__button_flying,
-.tally_flying .tally__type-symbol {
-    background-image: url(img/type/flying_sym.png);
+.tera-picker__button_flying {
+    background-image: url(img/type/flying_tera.png);
 }
 
-.slot__toggle_tera_ghost,
-.tera-picker__button_ghost,
-.tally_ghost .tally__type-symbol {
-    background-image: url(img/type/ghost_sym.png);
-}
-
-.slot__toggle_tera_grass,
-.tera-picker__button_grass,
-.tally_grass .tally__type-symbol {
-    background-image: url(img/type/grass_sym.png);
+.slot__toggle_tera_poison,
+.tera-picker__button_poison {
+    background-image: url(img/type/poison_tera.png);
 }
 
 .slot__toggle_tera_ground,
-.tera-picker__button_ground,
-.tally_ground .tally__type-symbol {
-    background-image: url(img/type/ground_sym.png);
+.tera-picker__button_ground {
+    background-image: url(img/type/ground_tera.png);
+}
+
+.slot__toggle_tera_rock,
+.tera-picker__button_rock {
+    background-image: url(img/type/rock_tera.png);
+}
+
+.slot__toggle_tera_bug,
+.tera-picker__button_bug {
+    background-image: url(img/type/bug_tera.png);
+}
+
+.slot__toggle_tera_ghost,
+.tera-picker__button_ghost {
+    background-image: url(img/type/ghost_tera.png);
+}
+
+.slot__toggle_tera_steel,
+.tera-picker__button_steel {
+    background-image: url(img/type/steel_tera.png);
+}
+
+.slot__toggle_tera_fire,
+.tera-picker__button_fire {
+    background-image: url(img/type/fire_tera.png);
+}
+
+.slot__toggle_tera_water,
+.tera-picker__button_water {
+    background-image: url(img/type/water_tera.png);
+}
+
+.slot__toggle_tera_grass,
+.tera-picker__button_grass {
+    background-image: url(img/type/grass_tera.png);
+}
+
+.slot__toggle_tera_electric,
+.tera-picker__button_electric {
+    background-image: url(img/type/electric_tera.png);
+}
+
+.slot__toggle_tera_psychic,
+.tera-picker__button_psychic {
+    background-image: url(img/type/psychic_tera.png);
 }
 
 .slot__toggle_tera_ice,
-.tera-picker__button_ice,
-.tally_ice .tally__type-symbol {
-    background-image: url(img/type/ice_sym.png);
+.tera-picker__button_ice {
+    background-image: url(img/type/ice_tera.png);
 }
 
-.slot__toggle_tera_normal,
-.tera-picker__button_normal,
+.slot__toggle_tera_dragon,
+.tera-picker__button_dragon {
+    background-image: url(img/type/dragon_tera.png);
+}
+
+.slot__toggle_tera_dark,
+.tera-picker__button_dark {
+    background-image: url(img/type/dark_tera.png);
+}
+
+.slot__toggle_tera_fairy,
+.tera-picker__button_fairy {
+    background-image: url(img/type/fairy_tera.png);
+}
+
 .tally_normal .tally__type-symbol {
     background-image: url(img/type/normal_sym.png);
 }
 
-.slot__toggle_tera_poison,
-.tera-picker__button_poison,
+.tally_fighting .tally__type-symbol {
+    background-image: url(img/type/fighting_sym.png);
+}
+
+.tally_flying .tally__type-symbol {
+    background-image: url(img/type/flying_sym.png);
+}
+
 .tally_poison .tally__type-symbol {
     background-image: url(img/type/poison_sym.png);
 }
 
-.slot__toggle_tera_psychic,
-.tera-picker__button_psychic,
-.tally_psychic .tally__type-symbol {
-    background-image: url(img/type/psychic_sym.png);
+.tally_ground .tally__type-symbol {
+    background-image: url(img/type/ground_sym.png);
 }
 
-.slot__toggle_tera_rock,
-.tera-picker__button_rock,
 .tally_rock .tally__type-symbol {
     background-image: url(img/type/rock_sym.png);
 }
 
-.slot__toggle_tera_steel,
-.tera-picker__button_steel,
+.tally_bug .tally__type-symbol {
+    background-image: url(img/type/bug_sym.png);
+}
+
+.tally_ghost .tally__type-symbol {
+    background-image: url(img/type/ghost_sym.png);
+}
+
 .tally_steel .tally__type-symbol {
     background-image: url(img/type/steel_sym.png);
 }
 
-.slot__toggle_tera_water,
-.tera-picker__button_water,
+.tally_fire .tally__type-symbol {
+    background-image: url(img/type/fire_sym.png);
+}
+
 .tally_water .tally__type-symbol {
     background-image: url(img/type/water_sym.png);
+}
+
+.tally_grass .tally__type-symbol {
+    background-image: url(img/type/grass_sym.png);
+}
+
+.tally_electric .tally__type-symbol {
+    background-image: url(img/type/electric_sym.png);
+}
+
+.tally_psychic .tally__type-symbol {
+    background-image: url(img/type/psychic_sym.png);
+}
+
+.tally_ice .tally__type-symbol {
+    background-image: url(img/type/ice_sym.png);
+}
+
+.tally_dragon .tally__type-symbol {
+    background-image: url(img/type/dragon_sym.png);
+}
+
+.tally_dark .tally__type-symbol {
+    background-image: url(img/type/dark_sym.png);
+}
+
+.tally_fairy .tally__type-symbol {
+    background-image: url(img/type/fairy_sym.png);
 }
 
 .tally__marks {
@@ -1436,6 +1495,11 @@ dt {
 
     .team {
         padding: 2em 1em;
+    }
+
+    .tera-picker {
+        grid-template-columns: repeat(3, 2em);
+        left: -4em;
     }
 
     .picker__filters {
