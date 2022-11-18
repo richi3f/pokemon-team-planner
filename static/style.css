@@ -505,6 +505,8 @@ dt {
     background-color: #a6a6a6;
     mask-image: url(img/type/tera.png);
     mask-size: 2em;
+    -webkit-mask-image: url(img/type/tera.png);
+    -webkit-mask-size: 2em;
 }
 
 .slot__toggle_tera_none:hover {
