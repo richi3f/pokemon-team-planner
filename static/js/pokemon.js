@@ -2197,7 +2197,7 @@ export default {
         "experience_group": "Slow",
         "generation": 1
     },
-    "tauros-paldea": {
+    "tauros-paldea-combat": {
         "base_id": 128,
         "form_id": 1,
         "name": "Tauros",
@@ -15952,20 +15952,8 @@ export default {
         "experience_group": "Medium Fast",
         "generation": 9
     },
-    "clodsire": {
-        "base_id": 924,
-        "form_id": 0,
-        "name": "Clodsire",
-        "pokemon_type": [ "poison", "ground" ],
-        "egg_group": [ "water_1", "field" ],
-        "gender": [ "mf" ],
-        "gender_ratio": 4,
-        "color": "brown",
-        "experience_group": "Medium Fast",
-        "generation": 9
-    },
     "tandemaus": {
-        "base_id": 925,
+        "base_id": 924,
         "form_id": 0,
         "name": "Tandemaus",
         "pokemon_type": [ "normal" ],
@@ -15978,7 +15966,7 @@ export default {
         "evolution_ids": [ [ 926, 0 ], [ 926, 1 ] ]
     },
     "maushold": {
-        "base_id": 926,
+        "base_id": 925,
         "form_id": 0,
         "name": "Maushold",
         "form_name": "Family of Three",
@@ -15992,7 +15980,7 @@ export default {
         "generation": 9
     },
     "maushold-four": {
-        "base_id": 926,
+        "base_id": 925,
         "form_id": 1,
         "name": "Maushold",
         "form_name": "Family of Four",
@@ -16005,7 +15993,7 @@ export default {
         "generation": 9
     },
     "fidough": {
-        "base_id": 927,
+        "base_id": 926,
         "form_id": 0,
         "name": "Fidough",
         "pokemon_type": [ "fairy" ],
@@ -16018,7 +16006,7 @@ export default {
         "evolution_ids": [ [ 928, 0 ] ]
     },
     "dachsbun": {
-        "base_id": 928,
+        "base_id": 927,
         "form_id": 0,
         "name": "Dachsbun",
         "pokemon_type": [ "fairy" ],
@@ -16030,7 +16018,7 @@ export default {
         "generation": 9
     },
     "smoliv": {
-        "base_id": 929,
+        "base_id": 928,
         "form_id": 0,
         "name": "Smoliv",
         "pokemon_type": [ "grass", "normal" ],
@@ -16043,7 +16031,7 @@ export default {
         "evolution_ids": [ [ 930, 0 ] ]
     },
     "dolliv": {
-        "base_id": 930,
+        "base_id": 929,
         "form_id": 0,
         "name": "Dolliv",
         "pokemon_type": [ "grass", "normal" ],
@@ -16056,7 +16044,7 @@ export default {
         "evolution_ids": [ [ 931, 0 ] ]
     },
     "arboliva": {
-        "base_id": 931,
+        "base_id": 930,
         "form_id": 0,
         "name": "Arboliva",
         "pokemon_type": [ "grass", "normal" ],
@@ -16068,7 +16056,7 @@ export default {
         "generation": 9
     },
     "squawkabilly": {
-        "base_id": 932,
+        "base_id": 931,
         "form_id": 0,
         "name": "Squawkabilly",
         "form_name": "Green Plumage",
@@ -16081,7 +16069,7 @@ export default {
         "generation": 9
     },
     "squawkabilly-blue": {
-        "base_id": 932,
+        "base_id": 931,
         "form_id": 1,
         "name": "Squawkabilly",
         "form_name": "Blue Plumage",
@@ -16095,7 +16083,7 @@ export default {
         "generation": 9
     },
     "squawkabilly-yellow": {
-        "base_id": 932,
+        "base_id": 931,
         "form_id": 2,
         "name": "Squawkabilly",
         "form_name": "Yellow Plumage",
@@ -16109,7 +16097,7 @@ export default {
         "generation": 9
     },
     "squawkabilly-white": {
-        "base_id": 932,
+        "base_id": 931,
         "form_id": 3,
         "name": "Squawkabilly",
         "form_name": "White Plumage",
@@ -16123,7 +16111,7 @@ export default {
         "generation": 9
     },
     "nacli": {
-        "base_id": 933,
+        "base_id": 932,
         "form_id": 0,
         "name": "Nacli",
         "pokemon_type": [ "rock" ],
@@ -16136,7 +16124,7 @@ export default {
         "evolution_ids": [ [ 934, 0 ] ]
     },
     "naclstack": {
-        "base_id": 934,
+        "base_id": 933,
         "form_id": 0,
         "name": "Naclstack",
         "pokemon_type": [ "rock" ],
@@ -16149,7 +16137,7 @@ export default {
         "evolution_ids": [ [ 935, 0 ] ]
     },
     "garganacl": {
-        "base_id": 935,
+        "base_id": 934,
         "form_id": 0,
         "name": "Garganacl",
         "pokemon_type": [ "rock" ],
@@ -16160,20 +16148,8 @@ export default {
         "experience_group": "Medium Slow",
         "generation": 9
     },
-    "annihilape": {
-        "base_id": 936,
-        "form_id": 0,
-        "name": "Annihilape",
-        "pokemon_type": [ "fighting", "ghost" ],
-        "egg_group": [ "field" ],
-        "gender": [ "mf" ],
-        "gender_ratio": 4,
-        "color": "gray",
-        "experience_group": "Medium Fast",
-        "generation": 9
-    },
     "charcadet": {
-        "base_id": 937,
+        "base_id": 935,
         "form_id": 0,
         "name": "Charcadet",
         "pokemon_type": [ "fire" ],
@@ -16186,7 +16162,7 @@ export default {
         "evolution_ids": [ [ 938, 0 ], [ 939, 0 ] ]
     },
     "armarouge": {
-        "base_id": 938,
+        "base_id": 936,
         "form_id": 0,
         "name": "Armarouge",
         "pokemon_type": [ "fire", "psychic" ],
@@ -16198,7 +16174,7 @@ export default {
         "generation": 9
     },
     "ceruledge": {
-        "base_id": 939,
+        "base_id": 937,
         "form_id": 0,
         "name": "Ceruledge",
         "pokemon_type": [ "fire", "ghost" ],
@@ -16210,7 +16186,7 @@ export default {
         "generation": 9
     },
     "tadbulb": {
-        "base_id": 940,
+        "base_id": 938,
         "form_id": 0,
         "name": "Tadbulb",
         "pokemon_type": [ "electric" ],
@@ -16223,7 +16199,7 @@ export default {
         "evolution_ids": [ [ 941, 0 ] ]
     },
     "bellibolt": {
-        "base_id": 941,
+        "base_id": 939,
         "form_id": 0,
         "name": "Bellibolt",
         "pokemon_type": [ "electric" ],
@@ -16235,7 +16211,7 @@ export default {
         "generation": 9
     },
     "wattrel": {
-        "base_id": 942,
+        "base_id": 940,
         "form_id": 0,
         "name": "Wattrel",
         "pokemon_type": [ "electric", "flying" ],
@@ -16248,7 +16224,7 @@ export default {
         "evolution_ids": [ [ 943, 0 ] ]
     },
     "kilowattrel": {
-        "base_id": 943,
+        "base_id": 941,
         "form_id": 0,
         "name": "Kilowattrel",
         "pokemon_type": [ "electric", "flying" ],
@@ -16259,47 +16235,8 @@ export default {
         "experience_group": "Medium Slow",
         "generation": 9
     },
-    "dudunsparce": {
-        "base_id": 944,
-        "form_id": 0,
-        "name": "Dudunsparce",
-        "form_name": "Two-Segment Form",
-        "pokemon_type": [ "normal" ],
-        "egg_group": [ "field" ],
-        "gender": [ "mf" ],
-        "gender_ratio": 4,
-        "color": "yellow",
-        "experience_group": "Medium Fast",
-        "generation": 9
-    },
-    "dudunsparce-three-segment": {
-        "base_id": 944,
-        "form_id": 1,
-        "name": "Dudunsparce",
-        "form_name": "Three-Segment Form",
-        "pokemon_type": [ "normal" ],
-        "egg_group": [ "field" ],
-        "gender": [ "mf" ],
-        "gender_ratio": 4,
-        "is_cosmetic": true,
-        "color": "yellow",
-        "experience_group": "Medium Fast",
-        "generation": 9
-    },
-    "farigiraf": {
-        "base_id": 945,
-        "form_id": 0,
-        "name": "Farigiraf",
-        "pokemon_type": [ "normal", "psychic" ],
-        "egg_group": [ "field" ],
-        "gender": [ "mf" ],
-        "gender_ratio": 4,
-        "color": "brown",
-        "experience_group": "Medium Fast",
-        "generation": 9
-    },
     "maschiff": {
-        "base_id": 946,
+        "base_id": 942,
         "form_id": 0,
         "name": "Maschiff",
         "pokemon_type": [ "dark" ],
@@ -16312,7 +16249,7 @@ export default {
         "evolution_ids": [ [ 947, 0 ] ]
     },
     "mabosstiff": {
-        "base_id": 947,
+        "base_id": 943,
         "form_id": 0,
         "name": "Mabosstiff",
         "pokemon_type": [ "dark" ],
@@ -16324,7 +16261,7 @@ export default {
         "generation": 9
     },
     "shroodle": {
-        "base_id": 948,
+        "base_id": 944,
         "form_id": 0,
         "name": "Shroodle",
         "pokemon_type": [ "poison", "normal" ],
@@ -16337,7 +16274,7 @@ export default {
         "evolution_ids": [ [ 949, 0 ] ]
     },
     "grafaiai": {
-        "base_id": 949,
+        "base_id": 945,
         "form_id": 0,
         "name": "Grafaiai",
         "pokemon_type": [ "poison", "normal" ],
@@ -16349,7 +16286,7 @@ export default {
         "generation": 9
     },
     "bramblin": {
-        "base_id": 950,
+        "base_id": 946,
         "form_id": 0,
         "name": "Bramblin",
         "pokemon_type": [ "grass", "ghost" ],
@@ -16362,7 +16299,7 @@ export default {
         "evolution_ids": [ [ 951, 0 ] ]
     },
     "brambleghast": {
-        "base_id": 951,
+        "base_id": 947,
         "form_id": 0,
         "name": "Brambleghast",
         "pokemon_type": [ "grass", "ghost" ],
@@ -16374,7 +16311,7 @@ export default {
         "generation": 9
     },
     "toedscool": {
-        "base_id": 952,
+        "base_id": 948,
         "form_id": 0,
         "name": "Toedscool",
         "pokemon_type": [ "ground", "grass" ],
@@ -16387,7 +16324,7 @@ export default {
         "evolution_ids": [ [ 953, 0 ] ]
     },
     "toedscruel": {
-        "base_id": 953,
+        "base_id": 949,
         "form_id": 0,
         "name": "Toedscruel",
         "pokemon_type": [ "ground", "grass" ],
@@ -16399,7 +16336,7 @@ export default {
         "generation": 9
     },
     "klawf": {
-        "base_id": 954,
+        "base_id": 950,
         "form_id": 0,
         "name": "Klawf",
         "pokemon_type": [ "rock" ],
@@ -16411,7 +16348,7 @@ export default {
         "generation": 9
     },
     "capsakid": {
-        "base_id": 955,
+        "base_id": 951,
         "form_id": 0,
         "name": "Capsakid",
         "pokemon_type": [ "grass" ],
@@ -16424,7 +16361,7 @@ export default {
         "evolution_ids": [ [ 956, 0 ] ]
     },
     "scovillain": {
-        "base_id": 956,
+        "base_id": 952,
         "form_id": 0,
         "name": "Scovillain",
         "pokemon_type": [ "grass", "fire" ],
@@ -16436,7 +16373,7 @@ export default {
         "generation": 9
     },
     "rellor": {
-        "base_id": 957,
+        "base_id": 953,
         "form_id": 0,
         "name": "Rellor",
         "pokemon_type": [ "bug" ],
@@ -16449,7 +16386,7 @@ export default {
         "evolution_ids": [ [ 958, 0 ] ]
     },
     "rabsca": {
-        "base_id": 958,
+        "base_id": 954,
         "form_id": 0,
         "name": "Rabsca",
         "pokemon_type": [ "bug", "psychic" ],
@@ -16461,7 +16398,7 @@ export default {
         "generation": 9
     },
     "flittle": {
-        "base_id": 959,
+        "base_id": 955,
         "form_id": 0,
         "name": "Flittle",
         "pokemon_type": [ "psychic" ],
@@ -16474,7 +16411,7 @@ export default {
         "evolution_ids": [ [ 960, 0 ] ]
     },
     "espathra": {
-        "base_id": 960,
+        "base_id": 956,
         "form_id": 0,
         "name": "Espathra",
         "pokemon_type": [ "psychic" ],
@@ -16486,7 +16423,7 @@ export default {
         "generation": 9
     },
     "tinkatink": {
-        "base_id": 961,
+        "base_id": 957,
         "form_id": 0,
         "name": "Tinkatink",
         "pokemon_type": [ "fairy", "steel" ],
@@ -16499,7 +16436,7 @@ export default {
         "evolution_ids": [ [ 962, 0 ] ]
     },
     "tinkatuff": {
-        "base_id": 962,
+        "base_id": 958,
         "form_id": 0,
         "name": "Tinkatuff",
         "pokemon_type": [ "fairy", "steel" ],
@@ -16512,7 +16449,7 @@ export default {
         "evolution_ids": [ [ 963, 0 ] ]
     },
     "tinkaton": {
-        "base_id": 963,
+        "base_id": 959,
         "form_id": 0,
         "name": "Tinkaton",
         "pokemon_type": [ "fairy", "steel" ],
@@ -16524,7 +16461,7 @@ export default {
         "generation": 9
     },
     "wiglett": {
-        "base_id": 964,
+        "base_id": 960,
         "form_id": 0,
         "name": "Wiglett",
         "pokemon_type": [ "water" ],
@@ -16537,7 +16474,7 @@ export default {
         "evolution_ids": [ [ 965, 0 ] ]
     },
     "wugtrio": {
-        "base_id": 965,
+        "base_id": 961,
         "form_id": 0,
         "name": "Wugtrio",
         "pokemon_type": [ "water" ],
@@ -16549,7 +16486,7 @@ export default {
         "generation": 9
     },
     "bombirdier": {
-        "base_id": 966,
+        "base_id": 962,
         "form_id": 0,
         "name": "Bombirdier",
         "pokemon_type": [ "flying", "dark" ],
@@ -16561,7 +16498,7 @@ export default {
         "generation": 9
     },
     "finizen": {
-        "base_id": 967,
+        "base_id": 963,
         "form_id": 0,
         "name": "Finizen",
         "pokemon_type": [ "water" ],
@@ -16574,7 +16511,7 @@ export default {
         "evolution_ids": [ [ 968, 0 ] ]
     },
     "palafin": {
-        "base_id": 968,
+        "base_id": 964,
         "form_id": 0,
         "name": "Palafin",
         "form_name": "Zero Form",
@@ -16587,7 +16524,7 @@ export default {
         "generation": 9
     },
     "palafin-hero": {
-        "base_id": 968,
+        "base_id": 964,
         "form_id": 1,
         "name": "Palafin",
         "form_name": "Hero Form",
@@ -16601,7 +16538,7 @@ export default {
         "generation": 9
     },
     "varoom": {
-        "base_id": 969,
+        "base_id": 965,
         "form_id": 0,
         "name": "Varoom",
         "pokemon_type": [ "steel", "poison" ],
@@ -16614,7 +16551,7 @@ export default {
         "evolution_ids": [ [ 970, 0 ] ]
     },
     "revavroom": {
-        "base_id": 970,
+        "base_id": 966,
         "form_id": 0,
         "name": "Revavroom",
         "pokemon_type": [ "steel", "poison" ],
@@ -16626,7 +16563,7 @@ export default {
         "generation": 9
     },
     "cyclizar": {
-        "base_id": 971,
+        "base_id": 967,
         "form_id": 0,
         "name": "Cyclizar",
         "pokemon_type": [ "dragon", "normal" ],
@@ -16638,7 +16575,7 @@ export default {
         "generation": 9
     },
     "orthworm": {
-        "base_id": 972,
+        "base_id": 968,
         "form_id": 0,
         "name": "Orthworm",
         "pokemon_type": [ "steel" ],
@@ -16650,7 +16587,7 @@ export default {
         "generation": 9
     },
     "glimmet": {
-        "base_id": 973,
+        "base_id": 969,
         "form_id": 0,
         "name": "Glimmet",
         "pokemon_type": [ "rock", "poison" ],
@@ -16663,7 +16600,7 @@ export default {
         "evolution_ids": [ [ 974, 0 ] ]
     },
     "glimmora": {
-        "base_id": 974,
+        "base_id": 970,
         "form_id": 0,
         "name": "Glimmora",
         "pokemon_type": [ "rock", "poison" ],
@@ -16675,7 +16612,7 @@ export default {
         "generation": 9
     },
     "greavard": {
-        "base_id": 975,
+        "base_id": 971,
         "form_id": 0,
         "name": "Greavard",
         "pokemon_type": [ "ghost" ],
@@ -16688,7 +16625,7 @@ export default {
         "evolution_ids": [ [ 976, 0 ] ]
     },
     "houndstone": {
-        "base_id": 976,
+        "base_id": 972,
         "form_id": 0,
         "name": "Houndstone",
         "pokemon_type": [ "ghost" ],
@@ -16700,7 +16637,7 @@ export default {
         "generation": 9
     },
     "flamigo": {
-        "base_id": 977,
+        "base_id": 973,
         "form_id": 0,
         "name": "Flamigo",
         "pokemon_type": [ "flying", "fighting" ],
@@ -16712,7 +16649,7 @@ export default {
         "generation": 9
     },
     "cetoddle": {
-        "base_id": 978,
+        "base_id": 974,
         "form_id": 0,
         "name": "Cetoddle",
         "pokemon_type": [ "ice" ],
@@ -16725,7 +16662,7 @@ export default {
         "evolution_ids": [ [ 979, 0 ] ]
     },
     "cetitan": {
-        "base_id": 979,
+        "base_id": 975,
         "form_id": 0,
         "name": "Cetitan",
         "pokemon_type": [ "ice" ],
@@ -16736,20 +16673,8 @@ export default {
         "experience_group": "Medium Slow",
         "generation": 9
     },
-    "kingambit": {
-        "base_id": 980,
-        "form_id": 0,
-        "name": "Kingambit",
-        "pokemon_type": [ "dark", "steel" ],
-        "egg_group": [ "human_like" ],
-        "gender": [ "mf" ],
-        "gender_ratio": 4,
-        "color": "black",
-        "experience_group": "Medium Fast",
-        "generation": 9
-    },
     "veluza": {
-        "base_id": 981,
+        "base_id": 976,
         "form_id": 0,
         "name": "Veluza",
         "pokemon_type": [ "water", "psychic" ],
@@ -16761,7 +16686,7 @@ export default {
         "generation": 9
     },
     "dondozo": {
-        "base_id": 982,
+        "base_id": 977,
         "form_id": 0,
         "name": "Dondozo",
         "pokemon_type": [ "water" ],
@@ -16773,7 +16698,7 @@ export default {
         "generation": 9
     },
     "tatsugiri": {
-        "base_id": 983,
+        "base_id": 978,
         "form_id": 0,
         "name": "Tatsugiri",
         "form_name": "Curly Form",
@@ -16786,7 +16711,7 @@ export default {
         "generation": 9
     },
     "tatsugiri-droopy": {
-        "base_id": 983,
+        "base_id": 978,
         "form_id": 1,
         "name": "Tatsugiri",
         "form_name": "Droopy Form",
@@ -16800,7 +16725,7 @@ export default {
         "generation": 9
     },
     "tatsugiri-stretchy": {
-        "base_id": 983,
+        "base_id": 978,
         "form_id": 2,
         "name": "Tatsugiri",
         "form_name": "Stretchy Form",
@@ -16811,6 +16736,81 @@ export default {
         "is_cosmetic": true,
         "color": "yellow",
         "experience_group": "Medium Slow",
+        "generation": 9
+    },
+    "annihilape": {
+        "base_id": 979,
+        "form_id": 0,
+        "name": "Annihilape",
+        "pokemon_type": [ "fighting", "ghost" ],
+        "egg_group": [ "field" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "color": "gray",
+        "experience_group": "Medium Fast",
+        "generation": 9
+    },
+    "clodsire": {
+        "base_id": 980,
+        "form_id": 0,
+        "name": "Clodsire",
+        "pokemon_type": [ "poison", "ground" ],
+        "egg_group": [ "water_1", "field" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 9
+    },
+    "farigiraf": {
+        "base_id": 981,
+        "form_id": 0,
+        "name": "Farigiraf",
+        "pokemon_type": [ "normal", "psychic" ],
+        "egg_group": [ "field" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "color": "brown",
+        "experience_group": "Medium Fast",
+        "generation": 9
+    },
+    "dudunsparce": {
+        "base_id": 982,
+        "form_id": 0,
+        "name": "Dudunsparce",
+        "form_name": "Two-Segment Form",
+        "pokemon_type": [ "normal" ],
+        "egg_group": [ "field" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 9
+    },
+    "dudunsparce-three-segment": {
+        "base_id": 982,
+        "form_id": 1,
+        "name": "Dudunsparce",
+        "form_name": "Three-Segment Form",
+        "pokemon_type": [ "normal" ],
+        "egg_group": [ "field" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "is_cosmetic": true,
+        "color": "yellow",
+        "experience_group": "Medium Fast",
+        "generation": 9
+    },
+    "kingambit": {
+        "base_id": 983,
+        "form_id": 0,
+        "name": "Kingambit",
+        "pokemon_type": [ "dark", "steel" ],
+        "egg_group": [ "human_like" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "color": "black",
+        "experience_group": "Medium Fast",
         "generation": 9
     },
     "great-tusk": {
@@ -17115,6 +17115,7 @@ export default {
         "base_id": 1007,
         "form_id": 0,
         "name": "Koraidon",
+        "form_name": "Apex Build",
         "pokemon_type": [ "fighting", "dragon" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
@@ -17128,12 +17129,37 @@ export default {
         "base_id": 1008,
         "form_id": 0,
         "name": "Miraidon",
+        "form_name": "Ultimate Mode",
         "pokemon_type": [ "electric", "dragon" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
         "is_legendary": true,
         "color": "blue",
+        "experience_group": "Slow",
+        "generation": 9
+    },
+    "walking-wake": {
+        "base_id": 1009,
+        "form_id": 0,
+        "name": "Walking Wake",
+        "pokemon_type": [ "water", "dragon" ],
+        "egg_group": [ "undiscovered" ],
+        "gender": [ "uk" ],
+        "gender_ratio": -1,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 9
+    },
+    "iron-leaves": {
+        "base_id": 1010,
+        "form_id": 0,
+        "name": "Iron Leaves",
+        "pokemon_type": [ "grass", "psychic" ],
+        "egg_group": [ "undiscovered" ],
+        "gender": [ "uk" ],
+        "gender_ratio": -1,
+        "color": "green",
         "experience_group": "Slow",
         "generation": 9
     }
