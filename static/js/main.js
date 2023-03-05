@@ -877,6 +877,10 @@ function completePokemonData() {
             });
         }
         // Check if Pokémon is non-legendary
+        if ( gameData[ currentGame ].gen < 9 && pokemon.is_ub ) {
+            // Prior to Gen 9, UBs were tagged as sub-legendary
+            pokemon.is_sublegendary = true;
+        }
         if ( !( pokemon.is_sublegendary || pokemon.is_legendary || pokemon.is_mythical ) ) {
             pokemon.is_nonlegendary = true;
         }
