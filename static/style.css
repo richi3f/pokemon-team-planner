@@ -335,7 +335,7 @@ dt {
     filter: none;
 }
 
-.slot[data-slug$="-gmax"] .slot__pokemon-render {
+.slot__pokemon-render_gmax {
     width: 12em;
     height: 12em;
     margin: 0;
@@ -1426,7 +1426,8 @@ dt {
         grid-template-rows: 5em 4em 1fr;
     }
 
-    .slot__pokemon-render {
+    .slot__pokemon-render,
+    .slot__pokemon-render_gmax {
         width: 5em;
         height: 5em;
         margin: 0 auto;

@@ -351,6 +351,7 @@ function populateTeamSlot( event_or_slug ) {
     slot.querySelector( ".slot__info" ).classList.add( "slot__info_" + type[ 0 ] );
 
     const img = slot.querySelector( ".slot__pokemon-render" );
+    if ( gmax ) img.classList.add( "slot__pokemon-render_gmax" );
     img.setAttribute( "src", getPokemonRenderUrl( pokemon, gmax ) );
     img.setAttribute( "alt", pokemon.name );
 
@@ -436,6 +437,7 @@ function populateTeamSlot( event_or_slug ) {
     );
 
     const img = slot.querySelector( ".slot__pokemon-render" );
+    img.classList.remove( "slot__pokemon-render_gmax" );
     img.setAttribute( "src", currentGame == "sv" ? SV_UNKNOWN_IMG : UNKNOWN_IMG );
     img.setAttribute( "alt", "" );
 
