@@ -71,7 +71,7 @@ function buildPage() {
     const analysis = document.querySelector( ".team__type-analysis" );
     const activeFilters = document.querySelectorAll( ".filter_active" );
     if (
-        target < 0 
+        target < 0
         && analysis.classList.contains( "type-analysis_hidden" )
         && activeFilters.length === 0
     ) {
@@ -274,7 +274,7 @@ function populateTeam( container ) {
     buttonContainer.append( button );
 
     // Create button to show advanced controls
-    if ( currentGame != "sv" ) {     
+    if ( currentGame != "sv" ) {
         button = document.createElement( "button" );
         button.innerHTML = "Hide Toggles";
         button.classList.add( "team__button" );
@@ -296,7 +296,7 @@ function populateTeam( container ) {
 
 /**
  * Populates a tooltip with buttons to change a Pokémon's Tera Type.
- * @param {HTMLElement} container 
+ * @param {HTMLElement} container
  */
 function populateTeraPicker( container ) {
     if ( !gameData[ currentGame ].tera ) return;
@@ -308,7 +308,7 @@ function populateTeraPicker( container ) {
     Object.keys( typeData ).forEach( type => {
         const container = document.createElement( "li" );
         const button = document.createElement( "button" );
-    
+
         picker.append( container );
         container.append( button );
 
@@ -513,7 +513,7 @@ function getPokemonRenderUrl( pokemon, gmax = false ) {
 
 /**
  * Toggles the gender of a Pokémon.
- * @param {Event|string} event_or_slug 
+ * @param {Event|string} event_or_slug
  */
 function toggleGender( event_or_slug ) {
     if ( currentGame == "sv" ) return;
@@ -545,7 +545,7 @@ function toggleGender( event_or_slug ) {
 
 /**
  * Toggles a Pokémon's shinyness.
- * @param {Event|slug} event_or_slug 
+ * @param {Event|slug} event_or_slug
  */
 function toggleShiny( event_or_slug ) {
     if ( currentGame == "sv" ) return;
@@ -572,7 +572,7 @@ function toggleShiny( event_or_slug ) {
 
 /**
  * Show the Tera Type picker.
- * @param {Event|slug} event_or_slug 
+ * @param {Event|slug} event_or_slug
  */
 function showTeraPicker( event_or_slug ) {
     if ( !gameData[ currentGame ].tera ) return;
@@ -603,7 +603,7 @@ function showTeraPicker( event_or_slug ) {
         // Remove tera type
         const type = slot.dataset.type.split( "," );
         const tera = slot.dataset.tera;
-        
+
         const info = slot.querySelector( ".slot__info" );
         const bg1 = slot.querySelector( ".slot__bg-type-1" );
         const bg2 = slot.querySelector( ".slot__bg-type-2" );
@@ -910,8 +910,8 @@ function completePokemonData() {
 
 /**
  * Checks whether given Pokémon ID is present in current dex.
- * @param {Number} base_id 
- * @param {Number} form_id 
+ * @param {Number} base_id
+ * @param {Number} form_id
  * @returns {boolean}
  */
 function isInDex( base_id, form_id ) {
@@ -932,7 +932,7 @@ function isInDex( base_id, form_id ) {
 
 /**
  * Returns the type of the given Pokémon.
- * @param {Object} pokemon 
+ * @param {Object} pokemon
  * @returns {string[]}
  */
 function getPokemonType( pokemon ) {
@@ -1067,7 +1067,7 @@ function createFilter( container, type, name, inclSelectAll = true, selectAll = 
 
 /**
  * Creates a search bar to filter Pokémon by name.
- * @param {HTMLElement} container 
+ * @param {HTMLElement} container
  * @returns {HTMLInputElement}
  */
 function createSearchBar( container ) {
@@ -1236,9 +1236,9 @@ function getSelectedFilters( type ) {
 
 /**
  * Returns true if Pokémon is in version
- * @param {Object} pokemon 
- * @param {string[]} versions 
- * @returns 
+ * @param {Object} pokemon
+ * @param {string[]} versions
+ * @returns
  */
 function pokemonIsInVersion( pokemon, versions ) {
     const pokemonVersion = pokemon.version || [];
@@ -1247,7 +1247,7 @@ function pokemonIsInVersion( pokemon, versions ) {
         || (
             versions.length > 0
             && (
-                ( 
+                (
                     versions.includes( "both" )
                     && (
                         pokemonVersion.length === 0
@@ -1266,13 +1266,13 @@ function pokemonIsInVersion( pokemon, versions ) {
 
 /**
  * Returns true if type is in selected types.
- * @param {string[]} type 
- * @param {string[]} selection 
+ * @param {string[]} type
+ * @param {string[]} selection
  * @returns bool
  */
 function pokemonTypeIsSelected( type, selection ) {
     return (
-        selection.length > 0 
+        selection.length > 0
         && (
             selection.includes( "all" )
             || selection.includes( type[ 0 ] )
@@ -1284,9 +1284,9 @@ function pokemonTypeIsSelected( type, selection ) {
 /**
  * Returns true if Pokémon is in selected generations. Force Gigantamax Pokémon
  * to be Generation 8.
- * @param {string[]} type 
+ * @param {string[]} type
  * @param {bool} is_gigantamax
- * @param {string[]} selection 
+ * @param {string[]} selection
  * @returns bool
  */
 function pokemonIsInGeneration( pokemon, is_gigantamax, generations ) {
@@ -1303,12 +1303,12 @@ function pokemonIsInGeneration( pokemon, is_gigantamax, generations ) {
 /**
  * Returns true if Pokémon is any of the given evolutionary stages.
  * @param {Object} pokemon
- * @param {string[]} colors 
- * @returns 
+ * @param {string[]} colors
+ * @returns
  */
 function pokemonIsEvolutionaryStage( pokemon, stages ) {
     return (
-        stages.length > 0 
+        stages.length > 0
         && (
             stages.includes( "all" )
             || ( stages.includes( "nfe" ) && !pokemon.fully_evolved )
@@ -1320,10 +1320,10 @@ function pokemonIsEvolutionaryStage( pokemon, stages ) {
 
 /**
  * Returns true if Pokémon has any of the given tags.
- * @param {Object} pokemon 
- * @param {bool} is_gigantamax 
- * @param {string[]} tags 
- * @returns 
+ * @param {Object} pokemon
+ * @param {bool} is_gigantamax
+ * @param {string[]} tags
+ * @returns
  */
 function pokemonIsTagged( pokemon, is_gigantamax, tags ) {
     if ( tags.length === 0 ) return false;
@@ -1346,8 +1346,8 @@ function pokemonIsTagged( pokemon, is_gigantamax, tags ) {
 /**
  * Returns true if Pokémon is any of the given colors.
  * @param {Object} pokemon
- * @param {string[]} colors 
- * @returns 
+ * @param {string[]} colors
+ * @returns
  */
 function pokemonIsColor( pokemon, colors ) {
     return (
@@ -1378,7 +1378,7 @@ function filterDex() {
         const type = getPokemonType( pokemon );
         // Check if Pokémon
         const matchesQuery = query.length === 0 || slug.indexOf( query ) >= 0;
-        if ( matchesQuery 
+        if ( matchesQuery
             && pokemonIsInGeneration( pokemon, gmax, gens )
             && pokemonTypeIsSelected( type, types )
             && !pokemonTypeIsSelected( type, exclTypes )
@@ -1421,7 +1421,7 @@ function completeTypeData() {
     Object.keys( typeData ).forEach( attackingType => {
         typeData[ attackingType ].weakens = [];
         Object.keys( typeData ).forEach( defendingType => {
-            if ( typeData[ defendingType ].weak2 
+            if ( typeData[ defendingType ].weak2
                 && typeData[ defendingType ].weak2.includes( attackingType ) ) {
                 typeData[ attackingType ].weakens.push( defendingType );
             }
@@ -1450,7 +1450,7 @@ function createTallies( container ) {
 
 /**
  * Highlight a tally's target Pokémon.
- * @param {Event} event 
+ * @param {Event} event
  */
 function highlightTargetPokemon( event ) {
     const slug = event.currentTarget.dataset.slug;
@@ -1463,8 +1463,8 @@ function highlightTargetPokemon( event ) {
 
 /**
  * Remove any highlighted Pokémon.
- * @param {Event} event 
- * @returns 
+ * @param {Event} event
+ * @returns
  */
 function removeHighlights( event ) {
     const slug = event.currentTarget.dataset.slug;
