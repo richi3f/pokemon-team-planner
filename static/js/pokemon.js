@@ -13921,7 +13921,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
-        "is_sublegendary": true,
+        "is_ub": true,
         "color": "white",
         "experience_group": "Slow",
         "generation": 7
@@ -13934,7 +13934,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
-        "is_sublegendary": true,
+        "is_ub": true,
         "color": "red",
         "experience_group": "Slow",
         "generation": 7
@@ -13947,7 +13947,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
-        "is_sublegendary": true,
+        "is_ub": true,
         "color": "white",
         "experience_group": "Slow",
         "generation": 7
@@ -13960,7 +13960,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
-        "is_sublegendary": true,
+        "is_ub": true,
         "color": "black",
         "experience_group": "Slow",
         "generation": 7
@@ -13973,7 +13973,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
-        "is_sublegendary": true,
+        "is_ub": true,
         "color": "green",
         "experience_group": "Slow",
         "generation": 7
@@ -13986,7 +13986,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
-        "is_sublegendary": true,
+        "is_ub": true,
         "color": "white",
         "experience_group": "Slow",
         "generation": 7
@@ -13999,7 +13999,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
-        "is_sublegendary": true,
+        "is_ub": true,
         "color": "black",
         "experience_group": "Slow",
         "generation": 7
@@ -14109,7 +14109,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
-        "is_sublegendary": true,
+        "is_ub": true,
         "color": "purple",
         "experience_group": "Slow",
         "generation": 7,
@@ -14123,7 +14123,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
-        "is_sublegendary": true,
+        "is_ub": true,
         "color": "purple",
         "experience_group": "Slow",
         "generation": 7
@@ -14136,7 +14136,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
-        "is_sublegendary": true,
+        "is_ub": true,
         "color": "gray",
         "experience_group": "Slow",
         "generation": 7
@@ -14149,7 +14149,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
-        "is_sublegendary": true,
+        "is_ub": true,
         "color": "white",
         "experience_group": "Slow",
         "generation": 7
@@ -16821,6 +16821,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
+        "is_paradox": true,
         "color": "purple",
         "experience_group": "Slow",
         "generation": 9
@@ -16833,6 +16834,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
+        "is_paradox": true,
         "color": "pink",
         "experience_group": "Slow",
         "generation": 9
@@ -16845,6 +16847,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
+        "is_paradox": true,
         "color": "gray",
         "experience_group": "Slow",
         "generation": 9
@@ -16857,6 +16860,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
+        "is_paradox": true,
         "color": "gray",
         "experience_group": "Slow",
         "generation": 9
@@ -16869,6 +16873,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
+        "is_paradox": true,
         "color": "red",
         "experience_group": "Slow",
         "generation": 9
@@ -16881,6 +16886,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
+        "is_paradox": true,
         "color": "gray",
         "experience_group": "Slow",
         "generation": 9
@@ -16893,6 +16899,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
+        "is_paradox": true,
         "color": "gray",
         "experience_group": "Slow",
         "generation": 9
@@ -16905,6 +16912,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
+        "is_paradox": true,
         "color": "red",
         "experience_group": "Slow",
         "generation": 9
@@ -16917,6 +16925,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
+        "is_paradox": true,
         "color": "gray",
         "experience_group": "Slow",
         "generation": 9
@@ -16929,6 +16938,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
+        "is_paradox": true,
         "color": "blue",
         "experience_group": "Slow",
         "generation": 9
@@ -16941,6 +16951,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
+        "is_paradox": true,
         "color": "yellow",
         "experience_group": "Slow",
         "generation": 9
@@ -16953,6 +16964,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
+        "is_paradox": true,
         "color": "green",
         "experience_group": "Slow",
         "generation": 9
@@ -17095,6 +17107,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
+        "is_paradox": true,
         "color": "green",
         "experience_group": "Slow",
         "generation": 9
@@ -17107,6 +17120,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
+        "is_paradox": true,
         "color": "white",
         "experience_group": "Slow",
         "generation": 9
@@ -17121,6 +17135,7 @@ export default {
         "gender": [ "uk" ],
         "gender_ratio": -1,
         "is_legendary": true,
+        "is_paradox": true,
         "color": "red",
         "experience_group": "Slow",
         "generation": 9
@@ -17135,6 +17150,7 @@ export default {
         "gender": [ "uk" ],
         "gender_ratio": -1,
         "is_legendary": true,
+        "is_paradox": true,
         "color": "blue",
         "experience_group": "Slow",
         "generation": 9
@@ -17147,6 +17163,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
+        "is_paradox": true,
         "color": "blue",
         "experience_group": "Slow",
         "generation": 9
@@ -17159,6 +17176,7 @@ export default {
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
+        "is_paradox": true,
         "color": "green",
         "experience_group": "Slow",
         "generation": 9
