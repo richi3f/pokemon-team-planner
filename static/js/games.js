@@ -171,7 +171,7 @@ export default {
     },
     "home": {
         "name": "Pokémon HOME",
-        "gen": 8,
+        "gen": 9,
         "dex_slugs": [
             "kanto_home",
             "johto_home",
@@ -182,9 +182,11 @@ export default {
             "alola_home",
             "galar_home",
             "hisui_home",
+            "paldea_home",
             "other_home"
         ],
         "mega": true,
-        "gmax": true
+        "gmax": true,
+        "tera": true,
     }
 };

@@ -211,14 +211,8 @@ function populateTeam( container ) {
                 event.target.parentNode.classList.remove( "slot_hover" );
             });
         });
-        if ( currentGame == "sv" ) {
-            const img = clone.querySelector( ".slot__pokemon-render" );
-            img.classList.add( "slot__pokemon-render_sv" );
-            img.setAttribute( "src", SV_UNKNOWN_IMG );
-        } else {
-            clone.querySelector( ".slot__toggle_female" ).addEventListener( "click", toggleGender );
-            clone.querySelector( ".slot__toggle_regular" ).addEventListener( "click", toggleShiny );
-        }
+        clone.querySelector( ".slot__toggle_female" ).addEventListener( "click", toggleGender );
+        clone.querySelector( ".slot__toggle_regular" ).addEventListener( "click", toggleShiny );
         if ( gameData[ currentGame ].tera ) {
             clone.querySelector( ".slot__toggle_tera" ).addEventListener( "click", showTeraPicker );
         }
@@ -274,24 +268,22 @@ function populateTeam( container ) {
     buttonContainer.append( button );
 
     // Create button to show advanced controls
-    if ( currentGame != "sv" ) {
-        button = document.createElement( "button" );
-        button.innerHTML = "Hide Toggles";
-        button.classList.add( "team__button" );
-        button.addEventListener( "click", ( event ) => {
-            document.querySelectorAll( ".slot__toggle-container" ).forEach( div => {
-                const selector = "slot__toggle-container_hidden";
-                if ( div.classList.contains( selector ) ) {
-                    event.target.innerHTML = "Hide Toggles";
-                    div.classList.remove( selector );
-                } else {
-                    event.target.innerHTML = "Show Toggles";
-                    div.classList.add( selector );
-                }
-            });
+    button = document.createElement( "button" );
+    button.innerHTML = "Hide Toggles";
+    button.classList.add( "team__button" );
+    button.addEventListener( "click", ( event ) => {
+        document.querySelectorAll( ".slot__toggle-container" ).forEach( div => {
+            const selector = "slot__toggle-container_hidden";
+            if ( div.classList.contains( selector ) ) {
+                event.target.innerHTML = "Hide Toggles";
+                div.classList.remove( selector );
+            } else {
+                event.target.innerHTML = "Show Toggles";
+                div.classList.add( selector );
+            }
         });
-        buttonContainer.append( button );
-    }
+    });
+    buttonContainer.append( button );
 }
 
 /**
@@ -399,11 +391,6 @@ function populateTeamSlot( event_or_slug ) {
     shinyToggle.classList.remove( "slot__toggle_hidden", "slot__toggle_shiny" );
     shinyToggle.classList.add( "slot__toggle_regular" );
 
-    if ( currentGame == "sv" ) {
-        slot.querySelectorAll( ".slot__toggle" ).forEach( toggle => {
-            toggle.classList.add( "slot__toggle_hidden" );
-        });
-    }
     if ( gameData[ currentGame ].tera ) {
         const teraToggle = slot.querySelector( ".slot__toggle_tera" );
         teraToggle.classList.remove( "slot__toggle_hidden" );
@@ -453,7 +440,7 @@ function populateTeamSlot( event_or_slug ) {
 
     const img = slot.querySelector( ".slot__pokemon-render" );
     img.classList.remove( "slot__pokemon-render_gmax" );
-    img.setAttribute( "src", currentGame == "sv" ? SV_UNKNOWN_IMG : UNKNOWN_IMG );
+    img.setAttribute( "src", UNKNOWN_IMG );
     img.setAttribute( "alt", "" );
 
     slot.querySelector( ".slot__name" ).innerHTML = "???";
@@ -497,14 +484,6 @@ function populateTeamSlot( event_or_slug ) {
  * @returns {string} url
  */
 function getPokemonRenderUrl( pokemon, gmax = false ) {
-    if ( currentGame == "sv" ) {
-        return (
-            SV_BASE_IMG
-            + String( pokemon.base_id ).padStart( 4, "0" )
-            + "_" + String( pokemon.form_id ).padStart( 3, "0" )
-            + ".png"
-        );
-    }
     return BASE_IMG + [
         String( pokemon.base_id ).padStart( 4, "0" ),
         String( pokemon.form_id ).padStart( 3, "0" ),
@@ -518,8 +497,6 @@ function getPokemonRenderUrl( pokemon, gmax = false ) {
  * @param {Event|string} event_or_slug
  */
 function toggleGender( event_or_slug ) {
-    if ( currentGame == "sv" ) return;
-
     var slot = ( typeof event_or_slug === "string" )
         ? document.querySelector( ".slot[data-slug='" + slug + "']" )
         : event_or_slug.currentTarget.closest( "li[data-slug]" );
@@ -550,8 +527,6 @@ function toggleGender( event_or_slug ) {
  * @param {Event|slug} event_or_slug
  */
 function toggleShiny( event_or_slug ) {
-    if ( currentGame == "sv" ) return;
-
     var slot = ( typeof event_or_slug === "string" )
         ? document.querySelector( ".slot[data-slug='" + slug + "']" )
         : event_or_slug.currentTarget.closest( ".slot[data-slug]" );
@@ -814,7 +789,6 @@ function createPokemonEntry( slug, pokemon ) {
     img.setAttribute( "src", getPokemonRenderUrl( pokemon ) );
     img.setAttribute( "loading", "lazy" );
     img.classList.add( "pokedex-entry__thumb" );
-    if ( currentGame == "sv" ) img.classList.add( "pokedex-entry__thumb_sv" );
 
     // If Pokémon can Gigantamax, duplicate its entry
     if ( gameData[ currentGame ].gmax
