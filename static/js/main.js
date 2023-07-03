@@ -1614,3 +1614,21 @@ function union( a, b ) {
 }
 
 //#endregion
+
+//Darkmode toggle button
+var darkModeButton = document.getElementById("darkModeButton");
+if(darkModeButton) {
+    darkModeButton.addEventListener("click", function() {
+        document.body.classList.toggle("dark-mode");
+        var isDarkMode = document.body.classList.contains("dark-mode");
+        localStorage.setItem("darkMode", isDarkMode)
+      });
+}
+
+//Keeps dark mode between pages
+window.addEventListener("load", function() {
+    var darkMode = this.localStorage.getItem("darkMode");
+    if(darkMode === "true") {
+        this.document.body.classList.add("dark-mode");
+    }
+})

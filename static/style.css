@@ -23,6 +23,44 @@ caption {
     color: #333
 }
 
+/*Inside*/
+.dark-mode .head__faq, 
+.dark-mode .head__game-picker, 
+.dark-mode .team {
+    background-color: #222222;
+    color: white;
+}
+
+.dark-mode .tail__picker, 
+.dark-mode .filter__button:hover {
+    background-color: #222222;
+}
+
+/*Outside*/
+.dark-mode,
+.dark-mode .team-planner, 
+.dark-mode .game-picker__button,
+.dark-mode .head__team::before,
+.dark-mode .pokedex-entry__button,
+.dark-mode .filter__button,
+.dark-mode .filter__search-bar {
+    background-color: #313131;
+}
+
+.dark-mode .darkButton, 
+.dark-mode a, 
+.dark-mode .tail__footer,
+.dark-mode .filter__name, 
+.dark-mode .picker__pokedex-name, 
+.dark-mode .filter__button,
+.dark-mode .filter__search-bar {
+    color: white;
+}
+
+.dark-mode h2 {
+    background: linear-gradient(0deg, #222222 50%, #313131 50%);
+}
+
 h1, h2, h3 {
     font-weight: 700;
     text-align: center;
