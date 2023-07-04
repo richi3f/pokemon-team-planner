@@ -43,7 +43,8 @@ caption {
 .dark-mode .head__team::before,
 .dark-mode .pokedex-entry__button,
 .dark-mode .filter__button,
-.dark-mode .filter__search-bar {
+.dark-mode .filter__search-bar, 
+.dark-mode .team__type-analysis {
     background-color: #313131;
 }
 
