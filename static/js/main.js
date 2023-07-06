@@ -1631,4 +1631,7 @@ window.addEventListener("load", function() {
     if(darkMode === "true") {
         this.document.body.classList.add("dark-mode");
     }
+    setTimeout(function() {
+        document.getElementById("body").style.display = "";
+    }, 200);
 })
