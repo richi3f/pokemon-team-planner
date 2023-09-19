@@ -802,6 +802,10 @@ dt {
     height: 2em;
 }
 
+.dropdown-menu-item_active .dropdown-menu-item__icon {
+    filter: brightness(0.25) invert(1);
+}
+
 .dropdown-menu-item__checkbox {
     cursor: pointer;
     font-size: inherit;
