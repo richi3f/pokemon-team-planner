@@ -249,6 +249,8 @@ function populateTeam( container ) {
         mark.addEventListener( "mouseenter", highlightTargetPokemon );
         mark.addEventListener( "mouseleave", removeHighlights );
     });
+    const note = document.querySelector( ".type-analysis__note" );
+    analysis.append( note );
 
     // Create button to hide/show team analysis
     button = document.createElement( "button" );
