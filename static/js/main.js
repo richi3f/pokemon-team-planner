@@ -933,6 +933,10 @@ const COLORS = [
     "red", "blue", "yellow", "green", "black",
     "brown", "purple", "gray", "white", "pink"
 ];
+const EXPERIENCE = [
+    "Erratic", "Fast", "Medium Fast", "Medium Slow", "Slow", "Fluctuating"
+];
+const SHAPES = 14;
 
 /**
  * Populate the drop-down menus with the available filters.
@@ -997,9 +1001,20 @@ function populateFilters() {
     dropdown.classList.add( "filter__dropdown-menu_2col" );
     COLORS.forEach( value => {
         dropdown.append( createCheckbox( "color", capitalize( value ), value ) );
-    })
+    });
     // Search
     createSearchBar( filters );
+    // Experience
+    dropdown = createFilter( filters, "experience", "Experience" );
+    EXPERIENCE.forEach( value => {
+        dropdown.append( createCheckbox( "experience", value, value ) );
+    });
+    // Shape
+    dropdown = createFilter( filters, "shape", "Shape" );
+    dropdown.classList.add( "filter__dropdown-menu_2col" );
+    [...Array(SHAPES).keys()].forEach( value => {
+        dropdown.append( createCheckbox( "shape", value + 1, value + 1 ) );
+    });
     // Fire change event to hide misc. forms
     const input = document.getElementById( "filter-tag-is_misc_form" );
     if ( input != null ) {
@@ -1286,7 +1301,7 @@ function pokemonIsInGeneration( pokemon, is_gigantamax, generations ) {
 /**
  * Returns true if Pokémon is any of the given evolutionary stages.
  * @param {Object} pokemon
- * @param {string[]} colors
+ * @param {string[]} stages
  * @returns
  */
 function pokemonIsEvolutionaryStage( pokemon, stages ) {
@@ -1343,14 +1358,47 @@ function pokemonIsColor( pokemon, colors ) {
 }
 
 /**
+ * Returns true if Pokémon is in any of the given Experience groups.
+ * @param {Object} pokemon
+ * @param {string[]} groups
+ * @returns
+ */
+function pokemonIsInExperienceGroup( pokemon, groups ) {
+    return (
+        groups.length > 0
+        && (
+            groups.includes( "all" )
+            || groups.includes( pokemon.experience_group )
+        )
+    );
+}
+
+/**
+ * Returns true if Pokémon is any of the given shapes.
+ * @param {Object} pokemon
+ * @param {string[]} shapes
+ * @returns
+ */
+function pokemonIsShaped( pokemon, shapes ) {
+    return (
+        shapes.length > 0
+        && (
+            shapes.includes( "all" )
+            || shapes.includes( pokemon.shape.toString() )
+        )
+    );
+}
+
+/**
  * Filters the Pokémon list based on the selected filters.
  */
 function filterDex() {
-    const [ gens, tags, types, exclTypes, evolutions, versions, colors ] = [
+    const [ gens, tags, types, exclTypes, evolutions, versions, colors, groups, shapes ] = [
         getSelectedFilters( "gen" ), getSelectedFilters( "tag" ),
         getSelectedFilters( "type" ), getSelectedFilters( "exclude-type" ),
         getSelectedFilters( "evolution" ), getSelectedFilters( "version" ),
-        getSelectedFilters( "color" )
+        getSelectedFilters( "color" ), getSelectedFilters( "experience" ),
+        getSelectedFilters( "shape" )
     ];
     const query = normalize( document.getElementById( "search-bar" ).value );
     document.querySelectorAll( ".pokedex-entry" ).forEach( li => {
@@ -1369,6 +1417,8 @@ function filterDex() {
             && pokemonIsInVersion( pokemon, versions )
             && pokemonIsTagged( pokemon, gmax, tags )
             && pokemonIsColor( pokemon, colors )
+            && pokemonIsInExperienceGroup( pokemon, groups )
+            && pokemonIsShaped( pokemon, shapes )
         ) {
             li.classList.remove( "pokedex-entry_filtered" );
             return;
