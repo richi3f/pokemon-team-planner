@@ -570,11 +570,28 @@ function showTeraPicker( event_or_slug ) {
             picker.classList.add( "tera-picker_hidden" );
             document.removeEventListener( "click", hideTeraPicker );
         } else {
-            // Move/show otherwise
+            // Move picker to current slot
             slot.querySelector( ".slot__toggle-container" ).append( picker );
-            picker.classList.add( "tera-picker_active" );
-            picker.classList.remove( "tera-picker_hidden" );
-            document.addEventListener( "click", hideTeraPicker );
+            // Terastallize Ogerpon (fixed Tera)
+            switch ( slot.dataset.slug ) {
+                case "ogerpon":
+                    picker.querySelector( ".tera-picker__button_grass" ).click();
+                    break;
+                case "ogerpon-wellspring":
+                    picker.querySelector( ".tera-picker__button_water" ).click();
+                    break;
+                case "ogerpon-hearthflame":
+                    picker.querySelector( ".tera-picker__button_fire" ).click();
+                    break;
+                case "ogerpon-cornerstone":
+                    picker.querySelector( ".tera-picker__button_rock" ).click();
+                    break;
+                default:
+                    // Show Tera Type picker
+                    picker.classList.add( "tera-picker_active" );
+                    picker.classList.remove( "tera-picker_hidden" );
+                    document.addEventListener( "click", hideTeraPicker );
+            }
         }
     } else {
         // Remove tera type
