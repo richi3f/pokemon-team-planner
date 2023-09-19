@@ -713,15 +713,22 @@ dt {
 
 .filter__dropdown-menu_3col {
     grid-auto-flow: column;
-    grid-template-columns: repeat(2, 12em);
-    grid-template-rows: repeat(10, 2em);
+    grid-template-columns: repeat(3, 8em);
+    grid-template-rows: repeat(7, 2em);
+}
+
+.filter__dropdown-menu_icons {
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 8em);
+    grid-template-rows: repeat(6, 2.5em);
 }
 
 .filter__dropdown-menu_2col .dropdown-menu-item:first-child {
     grid-area: 1 / span 2;
 }
 
-.filter__dropdown-menu_3col .dropdown-menu-item:first-child {
+.filter__dropdown-menu_3col .dropdown-menu-item:first-child,
+.filter__dropdown-menu_icons .dropdown-menu-item:first-child {
     grid-area: 1 / span 3;
 }
 
@@ -752,6 +759,11 @@ dt {
 .dropdown-menu-item__name {
     width: 100%;
     cursor: pointer;
+}
+
+.dropdown-menu-item__icon {
+    width: 2em;
+    height: 2em;
 }
 
 .dropdown-menu-item__checkbox {

@@ -996,9 +996,9 @@ function populateFilters() {
     });
     // Shape
     dropdown = createFilter( filters, "shape", "Shape" );
-    dropdown.classList.add( "filter__dropdown-menu_2col" );
+    dropdown.classList.add( "filter__dropdown-menu_icons" );
     [...Array(SHAPES).keys()].forEach( value => {
-        dropdown.append( createCheckbox( "shape", value + 1, value + 1 ) );
+        dropdown.append( createShapeCheckbox( value + 1 ) );
     });
     // Fire change event to hide misc. forms
     const input = document.getElementById( "filter-tag-is_misc_form" );
@@ -1140,6 +1140,42 @@ function createCheckbox( type, name, value, checked = true, isRadio = false ) {
     li.append( label, input );
     return li;
 }
+
+
+const SHAPE_PATH = IMG_PATH + "shape/";
+
+/**
+ * Creates a checkbox option for the shape filter (has icon instead of text).
+ * @param {string} value
+ * @returns {HTMLLIElement}
+ */
+function createShapeCheckbox( value ) {
+    const li = document.createElement( "li" );
+    li.classList.add( "dropdown-menu-item" );
+    li.classList.add( "dropdown-menu-item_active" );
+
+    const input = document.createElement( "input" );
+    input.id = [ "filter", "shape", value ].join( "-" );
+    input.classList.add( "dropdown-menu-item__checkbox" );
+    input.setAttribute( "name", "shape" );
+    input.setAttribute( "value", value );
+    input.setAttribute( "type", "checkbox" );
+    input.setAttribute( "checked", "" );
+    input.addEventListener( "change", changeCheckbox );
+
+    const label = document.createElement( "label" );
+    label.classList.add( "dropdown-menu-item__name" );
+    label.setAttribute( "for", input.id );
+
+    const img = document.createElement( "img" );
+    img.classList.add( "dropdown-menu-item__icon" );
+    img.setAttribute( "src", SHAPE_PATH + value.toString() + ".png" );
+    label.append( img );
+
+    li.append( label, input );
+    return li;
+}
+
 
 /**
  * Handles a change in a filter.
