@@ -9,8 +9,41 @@
     font-display: block;
 }
 
+html {
+    --darkest-bg-color: #f0f0f0;
+    --darkest-txt-color: #333;
+    --darker-bg-color: #f6f6f6;
+    --dark-bg-color: #fff;
+    --dark-txt-color-hover: #333;
+    --dark-bg-color-hover: #f5f5f5;
+    --dropdown-menu-active-bg-color: #428bca;
+    --dropdown-menu-active-color: #fff;
+    --pokedex-entry-bg-color: #eee;
+    --pokedex-entry-bg-color-hover: #cdf;
+    --pokedex-entry-img-filter: drop-shadow(0 0 0.5px #1b1b1b);
+    --slot-color: #333;
+    --slot-filter: none;
+}
+
+html[data-theme="dark"] {
+    --darkest-bg-color: #1b1b1b;
+    --darkest-txt-color: #fff;
+    --darker-bg-color: #343434;
+    --dark-bg-color: #848484;
+    --dark-txt-color-hover: #343434;
+    --dark-bg-color-hover: #cdcdcd;
+    --dropdown-menu-active-bg-color: #4c5e7f;
+    --dropdown-menu-active-color: #fff;
+    --pokedex-entry-bg-color: #848484;
+    --pokedex-entry-bg-color-hover: #cdcdcd;
+    --pokedex-entry-img-filter: drop-shadow(0 0 0.5px #1b1b1b) brightness(0.9) contrast(1.1);
+    --slot-color: #343434;
+    --slot-filter: contrast(1.1) brightness(0.9);
+}
+
+
 body {
-    background-color: #f0f0f0;
+    background-color: var(--darkest-bg-color);
     font: 16px/1.5 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     overflow-y: scroll
 }
@@ -20,7 +53,7 @@ a,
 a:hover,
 a:focus,
 caption {
-    color: #333
+    color: var(--darkest-txt-color);
 }
 
 h1, h2, h3 {
@@ -35,8 +68,8 @@ h1 {
 }
 
 h2 {
-    background: #f0f0f0;
-    background: linear-gradient(0deg, rgba(246, 246, 246, 1) 50%, rgba(240, 240, 240, 1) 50%);
+    background: var(--darkest-bg-color);
+    background: linear-gradient(0deg, var(--darker-bg-color) 50%, var(--darkest-bg-color) 50%);
     color: #4d6ad8;
     font-size: 1.5em;
     text-align: left;
@@ -73,14 +106,14 @@ button {
 }
 
 article {
-    background-color: #f0f0f0;
+    background-color: var(--darkest-bg-color);
     max-width: 81.875em;
     padding: 0 1.25em;
     margin: 1em auto
 }
 
 article section {
-    background: #f6f6f6;
+    background: var(--darker-bg-color);
     border-radius: 1em;
     border: 0.0625em solid #dedede;
     padding: 1.25em 1em 1em;
@@ -97,7 +130,7 @@ article section {
 
 .team__button {
     background-color: #4d6ad8;
-    color: #f0f0f0;
+    color: var(--darkest-bg-color);
     font-weight: 700;
     text-align: center;
     display: inline-block;
@@ -110,7 +143,7 @@ article section {
 
 .team__button:hover,
 .team__button:focus {
-    color: #f0f0f0;
+    color: var(--darkest-bg-color);
     text-decoration: none
 }
 
@@ -305,7 +338,7 @@ dt {
     content: "";
     position: absolute;
     inset: 0 0 5rem 0;
-    background-color: #f0f0f0;
+    background-color: var(--darkest-bg-color);
 }
 
 .head__header p {
@@ -365,6 +398,7 @@ dt {
 .slot__remove-button,
 .slot__info {
     cursor: no-drop;
+    filter: var(--slot-filter);
 }
 
 .slot_populated.slot_hover {
@@ -403,6 +437,7 @@ dt {
 
 .slot__name, .slot__form, .slot__type {
     line-height: 1;
+    color: var(--slot-color);
 }
 
 .slot__name-container {
@@ -524,7 +559,7 @@ dt {
     display: grid;
     grid-template-columns: repeat(6, 2em);
     gap: 1em;
-    background: #fff;
+    background: var(--dark-bg-color);
     border: 1px solid #d9d9d9;
     border-radius: 0.5em;
     top: 2.25em;
@@ -579,12 +614,12 @@ dt {
 }
 
 .pokedex-entry {
-    background-color: #eee;
+    background-color: var(--pokedex-entry-bg-color);
     border-radius: 0.5em;
 }
 
 .pokedex-entry:hover {
-    background-color: #cdf;
+    background-color: var(--pokedex-entry-bg-color-hover);
 }
 
 .pokedex-entry_filtered,
@@ -597,7 +632,7 @@ dt {
     height: 4rem;
     padding: 0.125rem 0;
     margin: 0.5em;
-    filter: drop-shadow(0 0 0.5px #1b1b1b);
+    filter: var(--pokedex-entry-img-filter);
 }
 
 .pokedex-entry__thumb_sv {
@@ -645,7 +680,7 @@ dt {
     padding: 0.375rem 0.1875rem;
     font-size: .875em;
     line-height: 1.125rem;
-    background: #fff;
+    background: var(--dark-bg-color);
     color: inherit;
     cursor: pointer;
     border: 1px solid #d9d9d9
@@ -690,7 +725,7 @@ dt {
 .filter__dropdown-menu {
     display: grid;
     grid-template-columns: 12em;
-    background: #fff;
+    background: var(--dark-bg-color);
     font-size: 0.875em;
     text-align: left;
     min-width: 10.5rem;
@@ -743,13 +778,14 @@ dt {
 }
 
 .dropdown-menu-item:hover {
-    background: #f5f5f5;
+    background: var(--dark-bg-color-hover);
+    color: var(--dark-txt-color-hover);
 }
 
 .dropdown-menu-item_active,
 .dropdown-menu-item_active:hover {
-    background: #428bca;
-    color: #f0f0f0;
+    background: var(--dropdown-menu-active-bg-color);
+    color: var(--dropdown-menu-active-color);
 }
 
 .dropdown-menu-item_hidden {
@@ -783,7 +819,7 @@ dt {
     gap: 1em;
     justify-content: stretch;
     text-align: center;
-    background: #fff;
+    background: var(--dark-bg-color);
     border: 1px solid #d9d9d9;
     border-radius: 1em;
     padding: 1em;
