@@ -57,6 +57,9 @@ function buildPage() {
     populateFilters();
     slugs.forEach( slug => populateTeamSlot( slug ) );
     window.onscroll = shrinkHead;
+    const defaultTheme = window.matchMedia( "(prefers-color-scheme:dark)" ).matches ? "dark" : "light";
+    const currentTheme = localStorage.getItem( "theme" ) || defaultTheme;
+    toggleTheme( currentTheme );
 }
 
 /**
@@ -77,6 +80,18 @@ function buildPage() {
         head.classList.remove( "head_sticky" );
     }
 }
+
+/**
+ * Toggle between dark and light color scheme
+ */
+function toggleTheme( theme = null ) {
+    const html = document.getElementsByTagName( "html" )[ 0 ];
+    const currentTheme = html.dataset.theme;
+    const newTheme = theme || ( currentTheme == "light" ? "dark" : "light" );
+    html.dataset.theme = newTheme;
+    localStorage.setItem( "theme", newTheme );
+}
+
 
 //#region Game List
 
