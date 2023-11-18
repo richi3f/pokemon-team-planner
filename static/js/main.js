@@ -234,6 +234,8 @@ function populateTeam( container ) {
         mark.addEventListener( "mouseenter", highlightTargetPokemon );
         mark.addEventListener( "mouseleave", removeHighlights );
     });
+    const note = document.querySelector( ".type-analysis__note" );
+    analysis.append( note );
 
     // Create button to hide/show team analysis
     button = document.createElement( "button" );
@@ -555,11 +557,28 @@ function showTeraPicker( event_or_slug ) {
             picker.classList.add( "tera-picker_hidden" );
             document.removeEventListener( "click", hideTeraPicker );
         } else {
-            // Move/show otherwise
+            // Move picker to current slot
             slot.querySelector( ".slot__toggle-container" ).append( picker );
-            picker.classList.add( "tera-picker_active" );
-            picker.classList.remove( "tera-picker_hidden" );
-            document.addEventListener( "click", hideTeraPicker );
+            // Terastallize Ogerpon (fixed Tera)
+            switch ( slot.dataset.slug ) {
+                case "ogerpon":
+                    picker.querySelector( ".tera-picker__button_grass" ).click();
+                    break;
+                case "ogerpon-wellspring":
+                    picker.querySelector( ".tera-picker__button_water" ).click();
+                    break;
+                case "ogerpon-hearthflame":
+                    picker.querySelector( ".tera-picker__button_fire" ).click();
+                    break;
+                case "ogerpon-cornerstone":
+                    picker.querySelector( ".tera-picker__button_rock" ).click();
+                    break;
+                default:
+                    // Show Tera Type picker
+                    picker.classList.add( "tera-picker_active" );
+                    picker.classList.remove( "tera-picker_hidden" );
+                    document.addEventListener( "click", hideTeraPicker );
+            }
         }
     } else {
         // Remove tera type
@@ -918,6 +937,10 @@ const COLORS = [
     "red", "blue", "yellow", "green", "black",
     "brown", "purple", "gray", "white", "pink"
 ];
+const EXPERIENCE = [
+    "Erratic", "Fast", "Medium Fast", "Medium Slow", "Slow", "Fluctuating"
+];
+const SHAPES = 14;
 
 /**
  * Populate the drop-down menus with the available filters.
@@ -982,9 +1005,20 @@ function populateFilters() {
     dropdown.classList.add( "filter__dropdown-menu_2col" );
     COLORS.forEach( value => {
         dropdown.append( createCheckbox( "color", capitalize( value ), value ) );
-    })
+    });
     // Search
     createSearchBar( filters );
+    // Experience
+    dropdown = createFilter( filters, "experience", "Experience" );
+    EXPERIENCE.forEach( value => {
+        dropdown.append( createCheckbox( "experience", value, value ) );
+    });
+    // Shape
+    dropdown = createFilter( filters, "shape", "Shape" );
+    dropdown.classList.add( "filter__dropdown-menu_icons" );
+    [...Array(SHAPES).keys()].forEach( value => {
+        dropdown.append( createShapeCheckbox( value + 1 ) );
+    });
     // Fire change event to hide misc. forms
     const input = document.getElementById( "filter-tag-is_misc_form" );
     if ( input != null ) {
@@ -1125,6 +1159,42 @@ function createCheckbox( type, name, value, checked = true, isRadio = false ) {
     li.append( label, input );
     return li;
 }
+
+
+const SHAPE_PATH = IMG_PATH + "shape/";
+
+/**
+ * Creates a checkbox option for the shape filter (has icon instead of text).
+ * @param {string} value
+ * @returns {HTMLLIElement}
+ */
+function createShapeCheckbox( value ) {
+    const li = document.createElement( "li" );
+    li.classList.add( "dropdown-menu-item" );
+    li.classList.add( "dropdown-menu-item_active" );
+
+    const input = document.createElement( "input" );
+    input.id = [ "filter", "shape", value ].join( "-" );
+    input.classList.add( "dropdown-menu-item__checkbox" );
+    input.setAttribute( "name", "shape" );
+    input.setAttribute( "value", value );
+    input.setAttribute( "type", "checkbox" );
+    input.setAttribute( "checked", "" );
+    input.addEventListener( "change", changeCheckbox );
+
+    const label = document.createElement( "label" );
+    label.classList.add( "dropdown-menu-item__name" );
+    label.setAttribute( "for", input.id );
+
+    const img = document.createElement( "img" );
+    img.classList.add( "dropdown-menu-item__icon" );
+    img.setAttribute( "src", SHAPE_PATH + value.toString() + ".png" );
+    label.append( img );
+
+    li.append( label, input );
+    return li;
+}
+
 
 /**
  * Handles a change in a filter.
@@ -1271,7 +1341,7 @@ function pokemonIsInGeneration( pokemon, is_gigantamax, generations ) {
 /**
  * Returns true if Pokémon is any of the given evolutionary stages.
  * @param {Object} pokemon
- * @param {string[]} colors
+ * @param {string[]} stages
  * @returns
  */
 function pokemonIsEvolutionaryStage( pokemon, stages ) {
@@ -1328,14 +1398,47 @@ function pokemonIsColor( pokemon, colors ) {
 }
 
 /**
+ * Returns true if Pokémon is in any of the given Experience groups.
+ * @param {Object} pokemon
+ * @param {string[]} groups
+ * @returns
+ */
+function pokemonIsInExperienceGroup( pokemon, groups ) {
+    return (
+        groups.length > 0
+        && (
+            groups.includes( "all" )
+            || groups.includes( pokemon.experience_group )
+        )
+    );
+}
+
+/**
+ * Returns true if Pokémon is any of the given shapes.
+ * @param {Object} pokemon
+ * @param {string[]} shapes
+ * @returns
+ */
+function pokemonIsShaped( pokemon, shapes ) {
+    return (
+        shapes.length > 0
+        && (
+            shapes.includes( "all" )
+            || shapes.includes( pokemon.shape.toString() )
+        )
+    );
+}
+
+/**
  * Filters the Pokémon list based on the selected filters.
  */
 function filterDex() {
-    const [ gens, tags, types, exclTypes, evolutions, versions, colors ] = [
+    const [ gens, tags, types, exclTypes, evolutions, versions, colors, groups, shapes ] = [
         getSelectedFilters( "gen" ), getSelectedFilters( "tag" ),
         getSelectedFilters( "type" ), getSelectedFilters( "exclude-type" ),
         getSelectedFilters( "evolution" ), getSelectedFilters( "version" ),
-        getSelectedFilters( "color" )
+        getSelectedFilters( "color" ), getSelectedFilters( "experience" ),
+        getSelectedFilters( "shape" )
     ];
     const query = normalize( document.getElementById( "search-bar" ).value );
     document.querySelectorAll( ".pokedex-entry" ).forEach( li => {
@@ -1354,6 +1457,8 @@ function filterDex() {
             && pokemonIsInVersion( pokemon, versions )
             && pokemonIsTagged( pokemon, gmax, tags )
             && pokemonIsColor( pokemon, colors )
+            && pokemonIsInExperienceGroup( pokemon, groups )
+            && pokemonIsShaped( pokemon, shapes )
         ) {
             li.classList.remove( "pokedex-entry_filtered" );
             return;
