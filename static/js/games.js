@@ -161,7 +161,7 @@ export default {
     },
     "sv": {
         "gen": 9,
-        "dex_slugs": ["paldea", "paldea_kitakami", "paldea_other"],
+        "dex_slugs": ["paldea", "paldea_kitakami", "paldea_blueberry", "paldea_other"],
         "versions": [
             { "slug": "scarlet", "name": "Scarlet" },
             { "slug": "violet", "name": "Violet" }

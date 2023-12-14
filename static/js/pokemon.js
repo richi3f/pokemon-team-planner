@@ -16496,7 +16496,8 @@ export default {
         "shape": 10,
         "color": "white",
         "experience_group": "Medium Fast",
-        "generation": 8
+        "generation": 8,
+        "evolution_ids": [ [ 1018, 0 ] ]
     },
     "dreepy": {
         "base_id": 885,
@@ -18524,7 +18525,8 @@ export default {
         "shape": 1,
         "color": "green",
         "experience_group": "Erratic",
-        "generation": 9
+        "generation": 9,
+        "evolution_ids": [ [ 1019, 0 ] ]
     },
     "poltchageist": {
         "base_id": 1012,
@@ -18652,6 +18654,100 @@ export default {
         "is_sublegendary": true,
         "shape": 11,
         "color": "gray",
+        "experience_group": "Slow",
+        "generation": 9
+    },
+    "archaludon": {
+        "base_id": 1018,
+        "form_id": 0,
+        "name": "Archaludon",
+        "pokemon_type": [ "steel", "dragon" ],
+        "egg_group": [ "mineral", "dragon" ],
+        "gender_ratio": 4,
+        "color": "white",
+        "experience_group": "Medium Fast",
+        "generation": 9
+    },
+    "hydrapple": {
+        "base_id": 1019,
+        "form_id": 0,
+        "name": "Hydrapple",
+        "pokemon_type": [ "grass", "dragon" ],
+        "egg_group": [ "grass", "dragon" ],
+        "gender_ratio": 4,
+        "color": "green",
+        "experience_group": "Erratic",
+        "generation": 9
+    },
+    "gouging-fire": {
+        "base_id": 1020,
+        "form_id": 0,
+        "name": "Gouging Fire",
+        "pokemon_type": [ "fire", "dragon" ],
+        "egg_group": [ "undiscovered" ],
+        "gender_ratio": -1,
+        "is_paradox": true,
+        "color": "brown",
+        "experience_group": "Slow",
+        "generation": 9
+    },
+    "raging-bolt": {
+        "base_id": 1021,
+        "form_id": 0,
+        "name": "Raging Bolt",
+        "pokemon_type": [ "electric", "dragon" ],
+        "egg_group": [ "undiscovered" ],
+        "gender_ratio": -1,
+        "is_paradox": true,
+        "color": "yellow",
+        "experience_group": "Slow",
+        "generation": 9
+    },
+    "iron-boulder": {
+        "base_id": 1022,
+        "form_id": 0,
+        "name": "Iron Boulder",
+        "pokemon_type": [ "rock", "psychic" ],
+        "egg_group": [ "undiscovered" ],
+        "gender_ratio": -1,
+        "is_paradox": true,
+        "color": "gray",
+        "experience_group": "Slow",
+        "generation": 9
+    },
+    "iron-crown": {
+        "base_id": 1023,
+        "form_id": 0,
+        "name": "Iron Crown",
+        "pokemon_type": [ "steel", "psychic" ],
+        "egg_group": [ "undiscovered" ],
+        "gender_ratio": -1,
+        "is_paradox": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 9
+    },
+    "terapagos": {
+        "base_id": 1024,
+        "form_id": 0,
+        "name": "Terapagos",
+        "pokemon_type": [ "normal" ],
+        "egg_group": [ "undiscovered" ],
+        "gender_ratio": 4,
+        "is_legendary": true,
+        "color": "blue",
+        "experience_group": "Slow",
+        "generation": 9
+    },
+    "pecharunt": {
+        "base_id": 1025,
+        "form_id": 0,
+        "name": "Pecharunt",
+        "pokemon_type": [ "poison", "ghost" ],
+        "egg_group": [ "undiscovered" ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "color": "purple",
         "experience_group": "Slow",
         "generation": 9
     }
