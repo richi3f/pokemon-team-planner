@@ -378,7 +378,8 @@ function populateTeamSlot( event_or_slug ) {
     shinyToggle.classList.remove( "slot__toggle_hidden", "slot__toggle_shiny" );
     shinyToggle.classList.add( "slot__toggle_regular" );
 
-    if ( gameData[ currentGame ].tera ) {
+    // Enable Tera Type toggle (except Terapagos)
+    if ( gameData[ currentGame ].tera && !slug.includes( "terapagos" ) ) {
         const teraToggle = slot.querySelector( ".slot__toggle_tera" );
         teraToggle.classList.remove( "slot__toggle_hidden" );
     }
