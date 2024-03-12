@@ -28,6 +28,13 @@ export default {
         ],
         "transfer": true
     },
+    "colo": {
+        "name": "Pokémon Colosseum",
+        "gen": 3,
+        "dex_slugs": [
+            "colo_gift", "colo_snag", "colo_transfer"
+        ]
+    },
     "frlg": {
         "gen": 3,
         "dex_slugs": ["kanto", "national_frlg"],
@@ -36,6 +43,16 @@ export default {
             { "slug": "leafgreen", "name": "LeafGreen" },
         ],
         "transfer": true
+    },
+    "xd": {
+        "name": "Pokémon XD: Gale of Darkness",
+        "gen": 3,
+        "dex_slugs": [
+            "xd_gift",
+            "xd_snag",
+            "xd_pokespot",
+            "xd_transfer"
+        ]
     },
     "dppt": {
         "gen": 4,
@@ -168,6 +185,11 @@ export default {
         ],
         "tera": true,
         "transfer": true
+    },
+    "lza": {
+        "name": "Pokémon Legends: Z-A",
+        "gen": 9,
+        "disabled": true
     },
     "home": {
         "name": "Pokémon HOME",
