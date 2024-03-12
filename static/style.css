@@ -274,6 +274,30 @@ article section {
     width: 14rem;
 }
 
+.head__game-logo_colo,
+.game-picker__game-logo_colo {
+    height: 4.125rem;
+    line-height: 4.125rem;
+    margin: 0.4375rem 0;
+    width: 9.5rem;
+}
+
+.head__game-logo_xd,
+.game-picker__game-logo_xd {
+    height: 4.375rem;
+    line-height: 4.375rem;
+    margin: 0.3125rem 0;
+    width: 10rem;
+}
+
+.head__game-logo_lza,
+.game-picker__game-logo_lza {
+    height: 4.5rem;
+    line-height: 4.5rem;
+    margin: 0.25rem 0;
+    width: 9.5rem;
+}
+
 /* FAQ */
 
 .head__faq dl {
