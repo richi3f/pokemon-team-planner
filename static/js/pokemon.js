@@ -1053,7 +1053,7 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 936, 0 ] ]
+        "evolution_ids": [ [ 979, 0 ] ]
     },
     "growlithe": {
         "base_id": 58,
@@ -3471,7 +3471,7 @@ export default {
         "color": "blue",
         "experience_group": "Medium Fast",
         "generation": 9,
-        "evolution_ids": [ [ 924, 0 ] ]
+        "evolution_ids": [ [ 980, 0 ] ]
     },
     "quagsire": {
         "base_id": 195,
@@ -4011,7 +4011,7 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 2,
-        "evolution_ids": [ [ 945, 0 ] ]
+        "evolution_ids": [ [ 981, 0 ] ]
     },
     "pineco": {
         "base_id": 204,
@@ -4052,7 +4052,7 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 2,
-        "evolution_ids": [ [ 944, 0 ], [ 944, 1 ] ]
+        "evolution_ids": [ [ 982, 0 ], [ 982, 1 ] ]
     },
     "gligar": {
         "base_id": 207,
