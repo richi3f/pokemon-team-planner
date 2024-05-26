@@ -2376,7 +2376,7 @@ export default {
         "gender": [ "md" ],
         "gender_ratio": 0,
         "shape": 5,
-        "color": "brown",
+        "color": "black",
         "experience_group": "Slow",
         "generation": 9
     },
@@ -2390,7 +2390,7 @@ export default {
         "gender": [ "md" ],
         "gender_ratio": 0,
         "shape": 5,
-        "color": "brown",
+        "color": "black",
         "experience_group": "Slow",
         "generation": 9
     },
@@ -2404,7 +2404,7 @@ export default {
         "gender": [ "md" ],
         "gender_ratio": 0,
         "shape": 5,
-        "color": "brown",
+        "color": "black",
         "experience_group": "Slow",
         "generation": 9
     },
@@ -3468,7 +3468,7 @@ export default {
         "gender": [ "mf" ],
         "gender_ratio": 4,
         "shape": 2,
-        "color": "blue",
+        "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 9,
         "evolution_ids": [ [ 980, 0 ] ]
@@ -17435,7 +17435,7 @@ export default {
         "gender": [ "mf" ],
         "gender_ratio": 4,
         "shape": 11,
-        "color": "blue",
+        "color": "purple",
         "experience_group": "Slow",
         "generation": 9
     },
@@ -18002,7 +18002,7 @@ export default {
         "gender": [ "mf" ],
         "gender_ratio": 4,
         "shape": 3,
-        "color": "pink",
+        "color": "red",
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -18017,7 +18017,7 @@ export default {
         "gender_ratio": 4,
         "is_cosmetic": true,
         "shape": 3,
-        "color": "red",
+        "color": "pink",
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -18155,7 +18155,7 @@ export default {
         "gender_ratio": -1,
         "is_paradox": true,
         "shape": 10,
-        "color": "gray",
+        "color": "white",
         "experience_group": "Slow",
         "generation": 9
     },
@@ -18183,7 +18183,7 @@ export default {
         "gender_ratio": -1,
         "is_paradox": true,
         "shape": 6,
-        "color": "red",
+        "color": "white",
         "experience_group": "Slow",
         "generation": 9
     },
@@ -18267,7 +18267,7 @@ export default {
         "gender_ratio": -1,
         "is_paradox": true,
         "shape": 6,
-        "color": "yellow",
+        "color": "white",
         "experience_group": "Slow",
         "generation": 9
     },
@@ -18308,7 +18308,7 @@ export default {
         "gender": [ "mf" ],
         "gender_ratio": 4,
         "shape": 10,
-        "color": "gray",
+        "color": "blue",
         "experience_group": "Slow",
         "generation": 9,
         "evolution_ids": [ [ 998, 0 ] ]
@@ -18322,7 +18322,7 @@ export default {
         "gender": [ "mf" ],
         "gender_ratio": 4,
         "shape": 10,
-        "color": "gray",
+        "color": "blue",
         "experience_group": "Slow",
         "generation": 9
     },
@@ -18336,7 +18336,7 @@ export default {
         "gender": [ "uk" ],
         "gender_ratio": -1,
         "shape": 9,
-        "color": "brown",
+        "color": "red",
         "experience_group": "Slow",
         "generation": 9,
         "evolution_ids": [ [ 1000, 0 ] ]
@@ -18352,7 +18352,7 @@ export default {
         "gender_ratio": -1,
         "is_cosmetic": true,
         "shape": 11,
-        "color": "blue",
+        "color": "gray",
         "experience_group": "Slow",
         "generation": 9,
         "evolution_ids": [ [ 1000, 0 ] ]
@@ -18436,7 +18436,7 @@ export default {
         "gender_ratio": -1,
         "is_paradox": true,
         "shape": 5,
-        "color": "green",
+        "color": "blue",
         "experience_group": "Slow",
         "generation": 9
     },
@@ -18482,7 +18482,7 @@ export default {
         "is_legendary": true,
         "is_paradox": true,
         "shape": 5,
-        "color": "blue",
+        "color": "purple",
         "experience_group": "Slow",
         "generation": 9
     },
