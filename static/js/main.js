@@ -828,7 +828,7 @@ function idToName( slugs ) {
         }
     });
     // Only keep a slug when a matching name has replaced the id
-    return slugs.filter( slug => { isNaN( slug ) } );
+    return slugs.filter( slug => isNaN( slug ) );
 }
 
 /**
