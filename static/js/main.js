@@ -821,8 +821,8 @@ function idToName( slugs ) {
         if ( isNaN( slug ) ) { return };
         // Change slug from id to name if possible
         for ( const mon in pokemonData ) {
-            if ( Number( mon.base_id ) === Number( slug ) ) {
-                slugs[ i ] = mon.name.toLowerCase();
+            if ( Number( pokemonData.mon.base_id ) === Number( slug ) ) {
+                slugs[ i ] = mon;
             }
         }
     });
