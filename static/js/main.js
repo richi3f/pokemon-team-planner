@@ -51,6 +51,7 @@ function buildPage() {
     }
     completeTypeData();
     completePokemonData();
+    slugs = idToName( slugs );
     populateTeam( document.querySelector( ".head" ) );
     populateTeraPicker( document.querySelector( ".slot__toggle-container" ) );
     populateDexes( document.querySelector( ".tail" ) );
@@ -805,6 +806,28 @@ function createPokemonEntry( slug, pokemon ) {
         return [ li, clone ];
     }
     return [ li ];
+}
+
+/**
+ * Given an array of slugs (ids or names), replace the ids with
+ * corresponding names if possible. If a slug is an id, only keep it when a matching
+ * name has been found to replace it.
+ * @param {string[]} slugs
+ * @return {string[]} Formated slugs array with names instead of ids
+ */
+function idToName( slugs ) {
+    slugs.forEach( ( slug, i ) => {
+        // Not a number means probably a name, ignore
+        if ( isNaN( slug ) ) { return };
+        // Change slug from id to name if possible
+        for ( const mon in pokemonData ) {
+            if ( Number( mon.base_id ) === Number( slug ) ) {
+                slugs[ i ] = mon.name.toLowerCase();
+            }
+        }
+    });
+    // Only keep a slug when a matching name has replaced the id
+    return slugs.filter( slug => { isNaN( slug ) } );
 }
 
 /**
