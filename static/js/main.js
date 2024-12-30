@@ -823,6 +823,7 @@ function idToName( slugs ) {
         for ( const mon in pokemonData ) {
             if ( Number( pokemonData[mon].base_id ) === Number( slug ) ) {
                 slugs[ i ] = mon;
+                break;
             }
         }
     });
