@@ -4149,7 +4149,7 @@ export default {
         "gender": [ "mf" ],
         "gender_ratio": 4,
         "shape": 3,
-        "color": "gray",
+        "color": "black",
         "experience_group": "Medium Fast",
         "generation": 8,
         "evolution_ids": [ [ 904, 0 ] ]
@@ -4249,7 +4249,7 @@ export default {
         "gender": [ "fd", "md" ],
         "gender_ratio": 4,
         "shape": 10,
-        "color": "purple",
+        "color": "gray",
         "experience_group": "Medium Slow",
         "generation": 8,
         "evolution_ids": [ [ 903, 0 ] ]
@@ -8693,7 +8693,7 @@ export default {
         "gender_ratio": -1,
         "is_legendary": true,
         "shape": 5,
-        "color": "white",
+        "color": "blue",
         "experience_group": "Slow",
         "generation": 8
     },
@@ -11266,7 +11266,7 @@ export default {
         "gender": [ "mo" ],
         "gender_ratio": 0,
         "shape": 12,
-        "color": "red",
+        "color": "white",
         "experience_group": "Slow",
         "generation": 8
     },
@@ -16687,7 +16687,7 @@ export default {
         "gender_ratio": -1,
         "is_mythical": true,
         "shape": 10,
-        "color": "green",
+        "color": "black",
         "experience_group": "Slow",
         "generation": 8
     },
@@ -16800,7 +16800,7 @@ export default {
         "gender": [ "mf" ],
         "gender_ratio": 4,
         "shape": 5,
-        "color": "white",
+        "color": "gray",
         "experience_group": "Slow",
         "generation": 8
     },
@@ -16839,7 +16839,7 @@ export default {
         "egg_group": [ "field" ],
         "gender": [ "mo" ],
         "gender_ratio": 0,
-        "shape": 5,
+        "shape": 10,
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 8
@@ -16881,7 +16881,7 @@ export default {
         "gender": [ "mf" ],
         "gender_ratio": 4,
         "shape": 10,
-        "color": "purple",
+        "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 8
     },
@@ -16894,7 +16894,7 @@ export default {
         "gender": [ "mf" ],
         "gender_ratio": 4,
         "shape": 3,
-        "color": "gray",
+        "color": "black",
         "experience_group": "Medium Fast",
         "generation": 8
     },
@@ -17018,7 +17018,7 @@ export default {
         "egg_group": [ "flying", "water_1" ],
         "gender": [ "mf" ],
         "gender_ratio": 1,
-        "shape": 12,
+        "shape": 10,
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 9,
@@ -17032,7 +17032,7 @@ export default {
         "egg_group": [ "flying", "water_1" ],
         "gender": [ "mf" ],
         "gender_ratio": 1,
-        "shape": 12,
+        "shape": 10,
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 9,
@@ -17046,7 +17046,7 @@ export default {
         "egg_group": [ "flying", "water_1" ],
         "gender": [ "mf" ],
         "gender_ratio": 1,
-        "shape": 12,
+        "shape": 10,
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 9
@@ -17142,7 +17142,7 @@ export default {
         "egg_group": [ "bug" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
-        "shape": 4,
+        "shape": 11,
         "color": "gray",
         "experience_group": "Medium Fast",
         "generation": 9
@@ -17266,7 +17266,7 @@ export default {
         "egg_group": [ "grass" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
-        "shape": 9,
+        "shape": 2,
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 9,
@@ -17280,7 +17280,7 @@ export default {
         "egg_group": [ "grass" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
-        "shape": 9,
+        "shape": 11,
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 9,
@@ -17294,7 +17294,7 @@ export default {
         "egg_group": [ "grass" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
-        "shape": 9,
+        "shape": 11,
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 9
@@ -17582,7 +17582,7 @@ export default {
         "egg_group": [ "grass" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
-        "shape": 8,
+        "shape": 2,
         "color": "yellow",
         "experience_group": "Medium Slow",
         "generation": 9,
@@ -17676,7 +17676,7 @@ export default {
         "egg_group": [ "flying" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
-        "shape": 12,
+        "shape": 2,
         "color": "yellow",
         "experience_group": "Medium Slow",
         "generation": 9,
@@ -17690,7 +17690,7 @@ export default {
         "egg_group": [ "flying" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
-        "shape": 12,
+        "shape": 10,
         "color": "yellow",
         "experience_group": "Medium Slow",
         "generation": 9
@@ -17814,7 +17814,7 @@ export default {
         "gender": [ "mf" ],
         "gender_ratio": 4,
         "is_battle_only": true,
-        "shape": 3,
+        "shape": 11,
         "color": "blue",
         "experience_group": "Slow",
         "generation": 9
@@ -18044,7 +18044,7 @@ export default {
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
-        "shape": 10,
+        "shape": 11,
         "color": "gray",
         "experience_group": "Medium Fast",
         "generation": 9
@@ -18140,7 +18140,7 @@ export default {
         "gender": [ "uk" ],
         "gender_ratio": -1,
         "is_paradox": true,
-        "shape": 11,
+        "shape": 10,
         "color": "pink",
         "experience_group": "Slow",
         "generation": 9
@@ -18154,7 +18154,7 @@ export default {
         "gender": [ "uk" ],
         "gender_ratio": -1,
         "is_paradox": true,
-        "shape": 10,
+        "shape": 5,
         "color": "white",
         "experience_group": "Slow",
         "generation": 9
@@ -18168,7 +18168,7 @@ export default {
         "gender": [ "uk" ],
         "gender_ratio": -1,
         "is_paradox": true,
-        "shape": 1,
+        "shape": 12,
         "color": "gray",
         "experience_group": "Slow",
         "generation": 9
@@ -18182,7 +18182,7 @@ export default {
         "gender": [ "uk" ],
         "gender_ratio": -1,
         "is_paradox": true,
-        "shape": 6,
+        "shape": 5,
         "color": "white",
         "experience_group": "Slow",
         "generation": 9
@@ -18196,7 +18196,7 @@ export default {
         "gender": [ "uk" ],
         "gender_ratio": -1,
         "is_paradox": true,
-        "shape": 7,
+        "shape": 5,
         "color": "gray",
         "experience_group": "Slow",
         "generation": 9
@@ -18224,7 +18224,7 @@ export default {
         "gender": [ "uk" ],
         "gender_ratio": -1,
         "is_paradox": true,
-        "shape": 11,
+        "shape": 10,
         "color": "red",
         "experience_group": "Slow",
         "generation": 9
@@ -18465,7 +18465,7 @@ export default {
         "gender_ratio": -1,
         "is_legendary": true,
         "is_paradox": true,
-        "shape": 5,
+        "shape": 10,
         "color": "red",
         "experience_group": "Slow",
         "generation": 9
@@ -18522,7 +18522,7 @@ export default {
         "egg_group": [ "grass", "dragon" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
-        "shape": 1,
+        "shape": 7,
         "color": "green",
         "experience_group": "Erratic",
         "generation": 9,
@@ -18678,7 +18678,7 @@ export default {
         "egg_group": [ "grass", "dragon" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
-        "shape": 1,
+        "shape": 7,
         "color": "green",
         "experience_group": "Erratic",
         "generation": 9
@@ -18794,7 +18794,7 @@ export default {
         "gender": [ "uk" ],
         "gender_ratio": -1,
         "is_mythical": true,
-        "shape": 14,
+        "shape": 1,
         "color": "purple",
         "experience_group": "Slow",
         "generation": 9
