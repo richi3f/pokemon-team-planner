@@ -51,7 +51,6 @@ function buildPage() {
     }
     completeTypeData();
     completePokemonData();
-    slugs = idToName( slugs );
     populateTeam( document.querySelector( ".head" ) );
     populateTeraPicker( document.querySelector( ".slot__toggle-container" ) );
     populateDexes( document.querySelector( ".tail" ) );
@@ -809,26 +808,29 @@ function createPokemonEntry( slug, pokemon ) {
 }
 
 /**
- * Given an array of slugs (ids or names), replace the ids with
- * corresponding names if possible. If a slug is an id, only keep it when a matching
- * name has been found to replace it.
- * @param {string[]} slugs
- * @return {string[]} Formated slugs array with names instead of ids
+ * Given an array of IDs or slugs, replace the IDs with corresponding slugs if possible.
+ * If an input is an ID, only keep it when a matching slug has been found to replace it.
+ * @param {string[]} ids_or_slugs
+ * @return {string[]} Formated slugs array with names instead of IDs
  */
-function idToName( slugs ) {
-    slugs.forEach( ( slug, i ) => {
-        // Not a number means probably a name, ignore
-        if ( isNaN( slug ) ) { return };
-        // Change slug from id to name if possible
-        for ( const mon in pokemonData ) {
-            if ( Number( pokemonData[mon].base_id ) === Number( slug ) ) {
-                slugs[ i ] = mon;
+function idToSlug( ids_or_slugs ) {
+    const slugs = [];
+    ids_or_slugs.forEach( ( id_or_slug ) => {
+        // Not a number means probably a slug
+        if ( isNaN( id_or_slug ) ) {
+            slugs.push( id_or_slug );
+            return;
+        };
+        // Convert ID to slug if possible
+        const base_id = parseInt( id_or_slug );
+        for ( const slug in pokemonData ) {
+            if ( pokemonData[ slug ].base_id === base_id ) {
+                slugs.push( slug );
                 break;
             }
         }
     });
-    // Only keep a slug when a matching name has replaced the id
-    return slugs.filter( slug => isNaN( slug ) );
+    return slugs;
 }
 
 /**
@@ -1684,6 +1686,7 @@ function updateTeamAnalysis() {
                     ? gameData[ game ].versions.map( ver => ver.slug )
                     : [];
                 slugs = slugs.slice( 1 );  // Remove hash
+                slugs = idToSlug( slugs );  // Convert IDs (if any) to slugs
                 return [ game, versions, slugs ]
             }
         }
