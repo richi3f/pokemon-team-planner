@@ -808,6 +808,32 @@ function createPokemonEntry( slug, pokemon ) {
 }
 
 /**
+ * Given an array of IDs or slugs, replace the IDs with corresponding slugs if possible.
+ * If an input is an ID, only keep it when a matching slug has been found to replace it.
+ * @param {string[]} ids_or_slugs
+ * @return {string[]} Formated slugs array with names instead of IDs
+ */
+function idToSlug( ids_or_slugs ) {
+    const slugs = [];
+    ids_or_slugs.forEach( ( id_or_slug ) => {
+        // Not a number means probably a slug
+        if ( isNaN( id_or_slug ) ) {
+            slugs.push( id_or_slug );
+            return;
+        };
+        // Convert ID to slug if possible
+        const base_id = parseInt( id_or_slug );
+        for ( const slug in pokemonData ) {
+            if ( pokemonData[ slug ].base_id === base_id ) {
+                slugs.push( slug );
+                break;
+            }
+        }
+    });
+    return slugs;
+}
+
+/**
  * Completes each Pokémon's entry with additional data (e.g., type effectiveness data).
  */
 function completePokemonData() {
@@ -1660,6 +1686,7 @@ function updateTeamAnalysis() {
                     ? gameData[ game ].versions.map( ver => ver.slug )
                     : [];
                 slugs = slugs.slice( 1 );  // Remove hash
+                slugs = idToSlug( slugs );  // Convert IDs (if any) to slugs
                 return [ game, versions, slugs ]
             }
         }
