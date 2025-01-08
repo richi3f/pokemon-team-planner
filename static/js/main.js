@@ -313,7 +313,7 @@ function populateTeamSlot( event_or_slug ) {
         : event_or_slug.currentTarget.parentNode.dataset.slug;
 
     // Validate Pokémon exists in database
-    if ( !slug in pokemonData ) {
+    if ( !( slug in pokemonData ) ) {
         return;
     }
 
