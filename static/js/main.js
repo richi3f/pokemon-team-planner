@@ -312,8 +312,16 @@ function populateTeamSlot( event_or_slug ) {
         ? event_or_slug
         : event_or_slug.currentTarget.parentNode.dataset.slug;
 
-    // Validate Pokémon exists in database
-    if ( !( slug in pokemonData ) ) {
+    // Get slug without Gigantamax suffix
+    const gmax = slug.endsWith( "-gmax" );
+    const slug_nogmax = gmax ? slug.substring( 0, slug.length - "-gmax".length ) : slug;
+
+    // Validate Pokémon exists in database, is part of current Pokédex, and has Gigantamax (if requested)
+    if ( !( slug_nogmax in pokemonData ) ) {
+        return;
+    } else if ( !isInDex( pokemonData[ slug_nogmax ].base_id, pokemonData[ slug_nogmax ].form_id ) ) {
+        return;
+    } else if ( gmax && !pokemonData[ slug_nogmax ].has_gigantamax ) {
         return;
     }
 
@@ -330,9 +338,7 @@ function populateTeamSlot( event_or_slug ) {
         return populateTeamSlot( slug );
     }
 
-    var gmax = slug.endsWith( "-gmax" );
-
-    const pokemon = pokemonData[ gmax ? slug.substring( 0, slug.length - 5 ) : slug ];
+    const pokemon = pokemonData[ slug_nogmax ];
     const type = getPokemonType( pokemon );
     slot.dataset.type = type;
     slot.classList.add( "slot_populated" );
