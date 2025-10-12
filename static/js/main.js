@@ -767,6 +767,7 @@ function populateDex( ol, dexEntry ) {
             const [ slug, pokemon ] = entries.find(
                 tup => tup[ 1 ].base_id === base_id && tup[ 1 ].form_id === form_id
             );
+            if ( currentGame === "lza" && pokemon.generation === 9) return;
             createPokemonEntry( slug, pokemon ).forEach( li => {
                 ol.append( li );
             })

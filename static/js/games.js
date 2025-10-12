@@ -189,7 +189,8 @@ export default {
     "lza": {
         "name": "Pokémon Legends: Z-A",
         "gen": 9,
-        "disabled": true
+        "dex_slugs": ["lumiose"],
+        "mega": true
     },
     "home": {
         "name": "Pokémon HOME",
