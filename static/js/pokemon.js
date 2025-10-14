@@ -12672,11 +12672,11 @@ export default {
         "experience_group": "Medium Fast",
         "generation": 9
     },
-    "floette-eternal-mega": {
+    "floette-mega": {
         "base_id": 670,
         "form_id": 6,
         "name": "Floette",
-        "form_name": "Mega Eternal Flower Floette",
+        "form_name": "Mega Floette",
         "pokemon_type": [ "fairy" ],
         "egg_group": [ "undiscovered" ],
         "gender": [ "fo" ],
