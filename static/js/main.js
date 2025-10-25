@@ -35,11 +35,6 @@ var currentVersions;
 const JS_PATH = getScriptParent();
 const IMG_PATH = JS_PATH + "../img/";
 
-const AVAIL_ZA_IMAGES = [
-    "victreebel-mega", "dragonite-mega", "chesnaught-mega", "delphox-mega",
-    "greninja-mega", "floette-eternal", "malamar-mega", "hawlucha-mega"
-];
-
 window.onload = buildPage;
 
 function buildPage() {
@@ -772,10 +767,6 @@ function populateDex( ol, dexEntry ) {
             const [ slug, pokemon ] = entries.find(
                 tup => tup[ 1 ].base_id === base_id && tup[ 1 ].form_id === form_id
             );
-            if ( currentGame === "lza"
-                && pokemon.generation === 9
-                && !AVAIL_ZA_IMAGES.includes( slug )
-            )  return;
             createPokemonEntry( slug, pokemon ).forEach( li => {
                 ol.append( li );
             })
