@@ -497,6 +497,34 @@ export default {
         "experience_group": "Medium Fast",
         "generation": 7
     },
+    "raichu-mega-x": {
+        "base_id": 26,
+        "form_id": 2,
+        "name": "Raichu",
+        "form_name": "Mega Raichu X",
+        "pokemon_type": [ "electric" ],
+        "egg_group": [ "field", "fairy" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "is_battle_only": true,
+        "experience_group": "Medium Fast",
+        "generation": 9
+    },
+    "raichu-mega-y": {
+        "base_id": 26,
+        "form_id": 3,
+        "name": "Raichu",
+        "form_name": "Mega Raichu Y",
+        "pokemon_type": [ "electric" ],
+        "egg_group": [ "field", "fairy" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "is_battle_only": true,
+        "experience_group": "Medium Fast",
+        "generation": 9
+    },
     "sandshrew": {
         "base_id": 27,
         "form_id": 0,
@@ -675,7 +703,6 @@ export default {
         "gender_ratio": 6,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 10,
         "experience_group": "Fast",
         "generation": 9
     },
@@ -1318,7 +1345,6 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 9,
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -2281,7 +2307,6 @@ export default {
         "gender_ratio": -1,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 9,
         "experience_group": "Slow",
         "generation": 9
     },
@@ -2827,7 +2852,6 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 10,
         "experience_group": "Slow",
         "generation": 9
     },
@@ -2945,7 +2969,6 @@ export default {
         "gender_ratio": 1,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 5,
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -3056,7 +3079,6 @@ export default {
         "gender_ratio": 1,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 10,
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -4532,7 +4554,6 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 12,
         "experience_group": "Slow",
         "generation": 9
     },
@@ -6634,6 +6655,20 @@ export default {
         "experience_group": "Fast",
         "generation": 3
     },
+    "chimecho-mega": {
+        "base_id": 358,
+        "form_id": 1,
+        "name": "Chimecho",
+        "form_name": "Mega Chimecho",
+        "pokemon_type": [ "psychic", "steel" ],
+        "egg_group": [ "amorphous" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "is_battle_only": true,
+        "experience_group": "Fast",
+        "generation": 9
+    },
     "absol": {
         "base_id": 359,
         "form_id": 0,
@@ -8654,7 +8689,6 @@ export default {
         "gender_ratio": 8,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 14,
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -9366,7 +9400,6 @@ export default {
         "gender_ratio": 1,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 10,
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -9802,7 +9835,6 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 11,
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -10036,7 +10068,6 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 4,
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -10359,7 +10390,6 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 10,
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -11109,7 +11139,6 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 3,
         "experience_group": "Slow",
         "generation": 9
     },
@@ -11192,7 +11221,6 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 14,
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -11933,7 +11961,6 @@ export default {
         "gender_ratio": 1,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 10,
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -11989,7 +12016,6 @@ export default {
         "gender_ratio": 1,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 10,
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -12060,7 +12086,6 @@ export default {
         "gender_ratio": 1,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 11,
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -12497,7 +12522,6 @@ export default {
         "gender_ratio": 7,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 5,
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -12683,7 +12707,6 @@ export default {
         "gender_ratio": 8,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 14,
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -13155,7 +13178,6 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 9,
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -13197,7 +13219,6 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 7,
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -13239,7 +13260,6 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 9,
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -13388,7 +13408,6 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 11,
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -13821,7 +13840,6 @@ export default {
         "is_legendary": true,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 13,
         "experience_group": "Slow",
         "generation": 9
     },
@@ -15195,7 +15213,6 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 13,
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -16665,7 +16682,6 @@ export default {
         "gender_ratio": -1,
         "is_mega": true,
         "is_battle_only": true,
-        "shape": 7,
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -18727,6 +18743,20 @@ export default {
         "gender_ratio": 4,
         "shape": 10,
         "color": "blue",
+        "experience_group": "Slow",
+        "generation": 9
+    },
+    "baxcalibur-mega": {
+        "base_id": 998,
+        "form_id": 1,
+        "name": "Baxcalibur",
+        "form_name": "Mega Baxcalibur",
+        "pokemon_type": [ "dragon", "ice" ],
+        "egg_group": [ "dragon", "mineral" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "is_battle_only": true,
         "experience_group": "Slow",
         "generation": 9
     },
