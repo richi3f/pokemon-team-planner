@@ -15657,6 +15657,21 @@ export default {
         "experience_group": "Slow",
         "generation": 7
     },
+    "zeraora-mega": {
+        "base_id": 807,
+        "form_id": 1,
+        "name": "Zeraora",
+        "form_name": "Mega Zeraora",
+        "pokemon_type": [ "electric" ],
+        "egg_group": [ "undiscovered" ],
+        "gender": [ "uk" ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "is_mega": true,
+        "is_battle_only": true,
+        "experience_group": "Slow",
+        "generation": 9
+    },
     "meltan": {
         "base_id": 808,
         "form_id": 0,
