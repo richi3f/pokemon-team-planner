@@ -8248,6 +8248,20 @@ export default {
         "experience_group": "Medium Slow",
         "generation": 6
     },
+    "lucario-mega-z": {
+        "base_id": 448,
+        "form_id": 2,
+        "name": "Lucario",
+        "form_name": "Mega Lucario Z",
+        "pokemon_type": [ "fighting", "steel" ],
+        "egg_group": [ "field", "human_like" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 1,
+        "is_mega": true,
+        "is_battle_only": true,
+        "experience_group": "Medium Slow",
+        "generation": 9
+    },
     "hippopotas": {
         "base_id": 449,
         "form_id": 0,
