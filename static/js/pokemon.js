@@ -6698,6 +6698,20 @@ export default {
         "experience_group": "Medium Slow",
         "generation": 6
     },
+    "absol-mega-z": {
+        "base_id": 359,
+        "form_id": 2,
+        "name": "Absol",
+        "form_name": "Mega Absol Z",
+        "pokemon_type": [ "dark", "ghost" ],
+        "egg_group": [ "field" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "is_battle_only": true,
+        "experience_group": "Medium Slow",
+        "generation": 9
+    },
     "wynaut": {
         "base_id": 360,
         "form_id": 0,
@@ -7409,6 +7423,20 @@ export default {
         "color": "brown",
         "experience_group": "Medium Slow",
         "generation": 4
+    },
+    "staraptor-mega": {
+        "base_id": 398,
+        "form_id": 1,
+        "name": "Staraptor",
+        "form_name": "Mega Staraptor",
+        "pokemon_type": [ "fighting", "flying" ],
+        "egg_group": [ "flying" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "is_battle_only": true,
+        "experience_group": "Medium Slow",
+        "generation": 9
     },
     "bidoof": {
         "base_id": 399,
@@ -8189,6 +8217,20 @@ export default {
         "experience_group": "Slow",
         "generation": 6
     },
+    "garchomp-mega-z": {
+        "base_id": 445,
+        "form_id": 2,
+        "name": "Garchomp",
+        "form_name": "Mega Garchomp Z",
+        "pokemon_type": [ "dragon" ],
+        "egg_group": [ "monster", "dragon" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "is_battle_only": true,
+        "experience_group": "Slow",
+        "generation": 9
+    },
     "munchlax": {
         "base_id": 446,
         "form_id": 0,
@@ -8908,6 +8950,21 @@ export default {
         "experience_group": "Slow",
         "generation": 4
     },
+    "heatran-mega": {
+        "base_id": 485,
+        "form_id": 1,
+        "name": "Heatran",
+        "form_name": "Mega Heatran",
+        "pokemon_type": [ "fire", "steel" ],
+        "egg_group": [ "undiscovered" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "is_sublegendary": true,
+        "is_mega": true,
+        "is_battle_only": true,
+        "experience_group": "Slow",
+        "generation": 9
+    },
     "regigigas": {
         "base_id": 486,
         "form_id": 0,
@@ -9007,6 +9064,21 @@ export default {
         "color": "black",
         "experience_group": "Slow",
         "generation": 4
+    },
+    "darkrai-mega": {
+        "base_id": 491,
+        "form_id": 1,
+        "name": "Darkrai",
+        "form_name": "Mega Darkrai",
+        "pokemon_type": [ "dark" ],
+        "egg_group": [ "undiscovered" ],
+        "gender": [ "uk" ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "is_mega": true,
+        "is_battle_only": true,
+        "experience_group": "Slow",
+        "generation": 9
     },
     "shaymin": {
         "base_id": 492,
@@ -11440,6 +11512,20 @@ export default {
         "experience_group": "Medium Fast",
         "generation": 5
     },
+    "golurk-mega": {
+        "base_id": 623,
+        "form_id": 1,
+        "name": "Golurk",
+        "form_name": "Mega Golurk",
+        "pokemon_type": [ "ground", "ghost" ],
+        "egg_group": [ "mineral" ],
+        "gender": [ "uk" ],
+        "gender_ratio": -1,
+        "is_mega": true,
+        "is_battle_only": true,
+        "experience_group": "Medium Fast",
+        "generation": 9
+    },
     "pawniard": {
         "base_id": 624,
         "form_id": 0,
@@ -13043,6 +13129,34 @@ export default {
         "experience_group": "Medium Fast",
         "generation": 6
     },
+    "meowstic-mega": {
+        "base_id": 678,
+        "form_id": 2,
+        "name": "Meowstic",
+        "form_name": "Mega Meowstic",
+        "pokemon_type": [ "psychic" ],
+        "egg_group": [ "field" ],
+        "gender": [ "mo" ],
+        "gender_ratio": 0,
+        "is_mega": true,
+        "is_battle_only": true,
+        "experience_group": "Medium Fast",
+        "generation": 9
+    },
+    "meowstic-female-mega": {
+        "base_id": 678,
+        "form_id": 3,
+        "name": "Meowstic",
+        "form_name": "Mega Meowstic",
+        "pokemon_type": [ "psychic" ],
+        "egg_group": [ "field" ],
+        "gender": [ "mo" ],
+        "gender_ratio": 0,
+        "is_mega": true,
+        "is_battle_only": true,
+        "experience_group": "Medium Fast",
+        "generation": 9
+    },
     "honedge": {
         "base_id": 679,
         "form_id": 0,
@@ -14205,6 +14319,20 @@ export default {
         "experience_group": "Medium Fast",
         "generation": 7
     },
+    "crabominable-mega": {
+        "base_id": 740,
+        "form_id": 1,
+        "name": "Crabominable",
+        "form_name": "Mega Crabominable",
+        "pokemon_type": [ "fighting", "ice" ],
+        "egg_group": [ "water_3" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "is_battle_only": true,
+        "experience_group": "Medium Fast",
+        "generation": 9
+    },
     "oricorio": {
         "base_id": 741,
         "form_id": 0,
@@ -14668,6 +14796,20 @@ export default {
         "color": "gray",
         "experience_group": "Medium Fast",
         "generation": 7
+    },
+    "golisopod-mega": {
+        "base_id": 768,
+        "form_id": 1,
+        "name": "Golisopod",
+        "form_name": "Mega Golisopod",
+        "pokemon_type": [ "bug", "steel" ],
+        "egg_group": [ "bug", "water_3" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "is_battle_only": true,
+        "experience_group": "Medium Fast",
+        "generation": 9
     },
     "sandygast": {
         "base_id": 769,
@@ -15585,6 +15727,36 @@ export default {
         "color": "red",
         "experience_group": "Slow",
         "generation": 7
+    },
+    "magearna-mega": {
+        "base_id": 801,
+        "form_id": 2,
+        "name": "Magearna",
+        "form_name": "Mega Magearna",
+        "pokemon_type": [ "steel", "fairy" ],
+        "egg_group": [ "undiscovered" ],
+        "gender": [ "uk" ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "is_mega": true,
+        "is_battle_only": true,
+        "experience_group": "Slow",
+        "generation": 9
+    },
+    "magearna-original-mega": {
+        "base_id": 801,
+        "form_id": 3,
+        "name": "Magearna",
+        "form_name": "Mega Magearna",
+        "pokemon_type": [ "steel", "fairy" ],
+        "egg_group": [ "undiscovered" ],
+        "gender": [ "uk" ],
+        "gender_ratio": -1,
+        "is_mythical": true,
+        "is_mega": true,
+        "is_battle_only": true,
+        "experience_group": "Slow",
+        "generation": 9
     },
     "marshadow": {
         "base_id": 802,
@@ -18090,6 +18262,20 @@ export default {
         "experience_group": "Medium Fast",
         "generation": 9
     },
+    "scovillain-mega": {
+        "base_id": 952,
+        "form_id": 1,
+        "name": "Scovillain",
+        "form_name": "Mega Scovillain",
+        "pokemon_type": [ "grass", "fire" ],
+        "egg_group": [ "grass" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "is_battle_only": true,
+        "experience_group": "Medium Fast",
+        "generation": 9
+    },
     "rellor": {
         "base_id": 953,
         "form_id": 0,
@@ -18348,6 +18534,20 @@ export default {
         "experience_group": "Medium Slow",
         "generation": 9
     },
+    "glimmora-mega": {
+        "base_id": 970,
+        "form_id": 1,
+        "name": "Glimmora",
+        "form_name": "Mega Glimmora",
+        "pokemon_type": [ "rock", "poison" ],
+        "egg_group": [ "mineral" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "is_battle_only": true,
+        "experience_group": "Medium Slow",
+        "generation": 9
+    },
     "greavard": {
         "base_id": 971,
         "form_id": 0,
@@ -18482,6 +18682,48 @@ export default {
         "is_cosmetic": true,
         "shape": 3,
         "color": "yellow",
+        "experience_group": "Medium Slow",
+        "generation": 9
+    },
+    "tatsugiri-mega": {
+        "base_id": 978,
+        "form_id": 3,
+        "name": "Tatsugiri",
+        "form_name": "Mega Tatsugiri",
+        "pokemon_type": [ "dragon", "water" ],
+        "egg_group": [ "water_2" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "is_battle_only": true,
+        "experience_group": "Medium Slow",
+        "generation": 9
+    },
+    "tatsugiri-droopy-mega": {
+        "base_id": 978,
+        "form_id": 4,
+        "name": "Tatsugiri",
+        "form_name": "Mega Tatsugiri",
+        "pokemon_type": [ "dragon", "water" ],
+        "egg_group": [ "water_2" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "is_battle_only": true,
+        "experience_group": "Medium Slow",
+        "generation": 9
+    },
+    "tatsugiri-stretchy-mega": {
+        "base_id": 978,
+        "form_id": 5,
+        "name": "Tatsugiri",
+        "form_name": "Mega Tatsugiri",
+        "pokemon_type": [ "dragon", "water" ],
+        "egg_group": [ "water_2" ],
+        "gender": [ "mf" ],
+        "gender_ratio": 4,
+        "is_mega": true,
+        "is_battle_only": true,
         "experience_group": "Medium Slow",
         "generation": 9
     },

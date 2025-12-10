@@ -189,7 +189,7 @@ export default {
     "lza": {
         "name": "Pokémon Legends: Z-A",
         "gen": 9,
-        "dex_slugs": ["lumiose", "lumiose_hyperspace", "lza_transfer"],
+        "dex_slugs": ["lumiose"],
         "mega": true
     },
     "home": {
