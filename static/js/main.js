@@ -909,7 +909,7 @@ function completePokemonData() {
             pokemon.is_misc_form = pokemon.form_name != "Fancy Pattern";
         };
         // Check if Pokémon is base form
-        if ( pokemon.is_mega || !pokemon.is_misc_form ) {
+        if ( ( pokemon.is_mega && !pokemon.is_cosmetic ) || !pokemon.is_misc_form ) {
             pokemon.is_not_misc_form = true;
         };
     });
