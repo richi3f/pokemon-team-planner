@@ -17823,7 +17823,7 @@ export default {
         "color": "white",
         "experience_group": "Fast",
         "generation": 9,
-        "evolution_ids": [ [ 926, 0 ], [ 926, 1 ] ]
+        "evolution_ids": [ [ 925, 0 ], [ 925, 1 ] ]
     },
     "maushold": {
         "base_id": 925,
@@ -17866,7 +17866,7 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Slow",
         "generation": 9,
-        "evolution_ids": [ [ 928, 0 ] ]
+        "evolution_ids": [ [ 927, 0 ] ]
     },
     "dachsbun": {
         "base_id": 927,
@@ -17893,7 +17893,7 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 9,
-        "evolution_ids": [ [ 930, 0 ] ]
+        "evolution_ids": [ [ 929, 0 ] ]
     },
     "dolliv": {
         "base_id": 929,
@@ -17907,7 +17907,7 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 9,
-        "evolution_ids": [ [ 931, 0 ] ]
+        "evolution_ids": [ [ 930, 0 ] ]
     },
     "arboliva": {
         "base_id": 930,
@@ -17993,7 +17993,7 @@ export default {
         "color": "brown",
         "experience_group": "Medium Slow",
         "generation": 9,
-        "evolution_ids": [ [ 934, 0 ] ]
+        "evolution_ids": [ [ 933, 0 ] ]
     },
     "naclstack": {
         "base_id": 933,
@@ -18007,7 +18007,7 @@ export default {
         "color": "brown",
         "experience_group": "Medium Slow",
         "generation": 9,
-        "evolution_ids": [ [ 935, 0 ] ]
+        "evolution_ids": [ [ 934, 0 ] ]
     },
     "garganacl": {
         "base_id": 934,
@@ -18034,7 +18034,7 @@ export default {
         "color": "red",
         "experience_group": "Slow",
         "generation": 9,
-        "evolution_ids": [ [ 938, 0 ], [ 939, 0 ] ]
+        "evolution_ids": [ [ 936, 0 ], [ 937, 0 ] ]
     },
     "armarouge": {
         "base_id": 936,
@@ -18074,7 +18074,7 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 9,
-        "evolution_ids": [ [ 941, 0 ] ]
+        "evolution_ids": [ [ 939, 0 ] ]
     },
     "bellibolt": {
         "base_id": 939,
@@ -18101,7 +18101,7 @@ export default {
         "color": "black",
         "experience_group": "Medium Slow",
         "generation": 9,
-        "evolution_ids": [ [ 943, 0 ] ]
+        "evolution_ids": [ [ 941, 0 ] ]
     },
     "kilowattrel": {
         "base_id": 941,
@@ -18128,7 +18128,7 @@ export default {
         "color": "brown",
         "experience_group": "Medium Slow",
         "generation": 9,
-        "evolution_ids": [ [ 947, 0 ] ]
+        "evolution_ids": [ [ 943, 0 ] ]
     },
     "mabosstiff": {
         "base_id": 943,
@@ -18155,7 +18155,7 @@ export default {
         "color": "gray",
         "experience_group": "Medium Slow",
         "generation": 9,
-        "evolution_ids": [ [ 949, 0 ] ]
+        "evolution_ids": [ [ 945, 0 ] ]
     },
     "grafaiai": {
         "base_id": 945,
@@ -18182,7 +18182,7 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 9,
-        "evolution_ids": [ [ 951, 0 ] ]
+        "evolution_ids": [ [ 947, 0 ] ]
     },
     "brambleghast": {
         "base_id": 947,
@@ -18209,7 +18209,7 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Slow",
         "generation": 9,
-        "evolution_ids": [ [ 953, 0 ] ]
+        "evolution_ids": [ [ 949, 0 ] ]
     },
     "toedscruel": {
         "base_id": 949,
@@ -18249,7 +18249,7 @@ export default {
         "color": "green",
         "experience_group": "Medium Fast",
         "generation": 9,
-        "evolution_ids": [ [ 956, 0 ] ]
+        "evolution_ids": [ [ 952, 0 ] ]
     },
     "scovillain": {
         "base_id": 952,
@@ -18290,7 +18290,7 @@ export default {
         "color": "brown",
         "experience_group": "Fast",
         "generation": 9,
-        "evolution_ids": [ [ 958, 0 ] ]
+        "evolution_ids": [ [ 954, 0 ] ]
     },
     "rabsca": {
         "base_id": 954,
@@ -18317,7 +18317,7 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Slow",
         "generation": 9,
-        "evolution_ids": [ [ 960, 0 ] ]
+        "evolution_ids": [ [ 956, 0 ] ]
     },
     "espathra": {
         "base_id": 956,
@@ -18344,7 +18344,7 @@ export default {
         "color": "pink",
         "experience_group": "Medium Slow",
         "generation": 9,
-        "evolution_ids": [ [ 962, 0 ] ]
+        "evolution_ids": [ [ 958, 0 ] ]
     },
     "tinkatuff": {
         "base_id": 958,
@@ -18358,7 +18358,7 @@ export default {
         "color": "pink",
         "experience_group": "Medium Slow",
         "generation": 9,
-        "evolution_ids": [ [ 963, 0 ] ]
+        "evolution_ids": [ [ 959, 0 ] ]
     },
     "tinkaton": {
         "base_id": 959,
@@ -18385,7 +18385,7 @@ export default {
         "color": "white",
         "experience_group": "Medium Fast",
         "generation": 9,
-        "evolution_ids": [ [ 965, 0 ] ]
+        "evolution_ids": [ [ 961, 0 ] ]
     },
     "wugtrio": {
         "base_id": 961,
@@ -18425,7 +18425,7 @@ export default {
         "color": "blue",
         "experience_group": "Slow",
         "generation": 9,
-        "evolution_ids": [ [ 968, 0 ] ]
+        "evolution_ids": [ [ 964, 0 ] ]
     },
     "palafin": {
         "base_id": 964,
@@ -18468,7 +18468,7 @@ export default {
         "color": "gray",
         "experience_group": "Medium Fast",
         "generation": 9,
-        "evolution_ids": [ [ 970, 0 ] ]
+        "evolution_ids": [ [ 966, 0 ] ]
     },
     "revavroom": {
         "base_id": 966,
@@ -18521,7 +18521,7 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 9,
-        "evolution_ids": [ [ 974, 0 ] ]
+        "evolution_ids": [ [ 970, 0 ] ]
     },
     "glimmora": {
         "base_id": 970,
@@ -18562,7 +18562,7 @@ export default {
         "color": "white",
         "experience_group": "Medium Slow",
         "generation": 9,
-        "evolution_ids": [ [ 976, 0 ] ]
+        "evolution_ids": [ [ 972, 0 ] ]
     },
     "houndstone": {
         "base_id": 972,
@@ -18602,7 +18602,7 @@ export default {
         "color": "white",
         "experience_group": "Medium Slow",
         "generation": 9,
-        "evolution_ids": [ [ 979, 0 ] ]
+        "evolution_ids": [ [ 975, 0 ] ]
     },
     "cetitan": {
         "base_id": 975,
