@@ -1269,8 +1269,8 @@ function changeCheckbox( event ) {
     // Update count in button
     const button = document.querySelector( "#" + name + "-filter" );
     const exceptAllSelector = selector + ":not([value='all'])";
-    const allOptions = document.querySelectorAll( exceptAllSelector );
-    const checkedOptions = document.querySelectorAll( exceptAllSelector + ":checked" );
+    const allOptions = document.querySelectorAll( `${exceptAllSelector}:not(.dropdown-menu-item_hidden input)` );
+    const checkedOptions = document.querySelectorAll( `${exceptAllSelector}:checked:not(.dropdown-menu-item_hidden input)` );
     if ( allOptions.length === checkedOptions.length ) {
         const all = document.querySelector( selector + "[value='all']" );
         if ( all ) {
