@@ -111,7 +111,8 @@ article section {
 .team__button:hover,
 .team__button:focus {
     color: #f0f0f0;
-    text-decoration: none
+    text-decoration: none;
+    box-shadow: 0 0 0 0.0625em #1b1b1b;
 }
 
 /* Game */
@@ -638,12 +639,71 @@ dt {
 
 /* Filters */
 
+.picker__filter-button {
+    background-color: #4d6ad8;
+    color: #f0f0f0;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    line-height: 1.5em;
+    border-radius: .25em;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: absolute;
+    width: 6em;
+    top: -0.75em;
+    right: 1em;
+}
+
+.picker__overlay {
+    position: fixed;
+    inset: 0;
+    background: #00000080;
+    z-index: 9999;
+    display: grid;
+    place-items: center;
+}
+
+.picker__overlay_hidden {
+    display: none;
+}
+
 .picker__filters {
     display: grid;
     gap: 1em 0;
     grid-template-columns: repeat(auto-fill, 19em);
     justify-content: center;
-    margin: 1em auto 0;
+    background: #f6f6f6;
+    border-radius: 1em;
+    border: 0.0625em solid #dedede;
+    padding: 1em;
+    box-sizing: content-box;
+}
+
+.filter__heading {
+    margin: 0;
+    color: #4d6ad8;
+}
+
+.filter__close-button {
+    background-color: #4d6ad8;
+    color: #f0f0f0;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    padding: .2em .5em;
+    border-radius: .25em;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.picker__filter-button:hover,
+.picker__filter-button:focus,
+.filter__close-button:hover,
+.filter__close-button:focus {
+    color: #f0f0f0;
+    text-decoration: none;
+    box-shadow: 0 0 0 0.0625em #1b1b1b;
 }
 
 .filter {
@@ -1546,8 +1606,22 @@ dt {
         left: -4em;
     }
 
-    .picker__filters {
-        display: none;
+    .filter__dropdown-menu_2col,
+    .filter__dropdown-menu_3col,
+    .filter__dropdown-menu_icons {
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+        scrollbar-gutter: stable;
+        height: 8em;
+    }
+
+    .filter__dropdown-menu_2col .dropdown-menu-item:first-child,
+    .filter__dropdown-menu_3col .dropdown-menu-item:first-child,
+    .filter__dropdown-menu_icons .dropdown-menu-item:first-child {
+        grid-area: auto;
     }
 
     .tail__footer {

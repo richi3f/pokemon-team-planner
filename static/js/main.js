@@ -718,20 +718,29 @@ function populateDexes( container ) {
     const h1 = document.querySelector( ".head__game-name" );
     const section = document.createElement( "section" );
     const h2 = document.createElement( "h2" );
+    const divParent = document.createElement( "div" );
     const div = document.createElement( "div" );
     const ol = document.createElement( "ol" );
+    const button = document.createElement( "button" );
 
     h1.parentNode.classList.add( "head__game-button" );
     h1.innerHTML = getGameName( game );
     h1.classList.add( "head__game-logo", "head__game-logo_" + currentGame );
     h1.style.backgroundImage = "url('" + GAME_PATH + currentGame + ".png')";
     container.prepend( section );
-    section.append( h2, div, ol );
-    section.classList.add( "tail__picker" );
+    section.append( h2, divParent, button, ol );
     h2.innerHTML = "Your Options";
     h2.classList.add( "picker__heading" );
+    divParent.append( div );
+    divParent.classList.add( "picker__overlay", "picker__overlay_hidden" );
+    button.classList.add( "picker__filter-button" );
     div.classList.add( "picker__filters" );
     ol.classList.add( "picker__pokedexes" );
+
+    button.innerHTML = "Filters";
+    button.addEventListener( "click", () => {
+        divParent.classList.toggle( "picker__overlay_hidden" );
+    });
 
     game.dex_slugs.forEach( ( slug, i ) => {
         let li = document.createElement( "li" );
@@ -981,9 +990,22 @@ const SHAPES = 14;
 function populateFilters() {
     const filters = document.querySelector( ".picker__filters" );
     const types = Object.keys( getCurrentTypeData() );
+    const h3 = document.createElement( "h3" );
+    h3.innerHTML = "Filters";
+    h3.classList.add( "filter__heading" );
+    filters.append( h3 );
+    // Search
+    createSearchBar( filters );
     // Type
     var type_dropdown = createFilter( filters, "type", "Type" );
     type_dropdown.classList.add( "filter__dropdown-menu_3col" );
+    // Exclude Type
+    var dropdown = createFilter( filters, "exclude-type", "Exclude Type", true, false );
+    dropdown.classList.add( "filter__dropdown-menu_3col" );
+    types.forEach( value => {
+        type_dropdown.append( createCheckbox( "type", capitalize( value ), value ) );
+        dropdown.append( createCheckbox( "exclude-type", capitalize( value ), value, false ) );
+    });
     // Evolution
     var dropdown = createFilter( filters, "evolution", "Evolution" );
     dropdown.append( createCheckbox( "evolution", "Not Fully Evolved", "nfe" ) );
@@ -1010,13 +1032,6 @@ function populateFilters() {
             dropdown.append( createCheckbox( "version", "Transfer-Only", "transfer_" + currentGame ) );
         }
     }
-    // Exclude Type
-    var dropdown = createFilter( filters, "exclude-type", "Exclude Type", true, false );
-    dropdown.classList.add( "filter__dropdown-menu_3col" );
-    types.forEach( value => {
-        type_dropdown.append( createCheckbox( "type", capitalize( value ), value ) );
-        dropdown.append( createCheckbox( "exclude-type", capitalize( value ), value, false ) );
-    });
     // Category
     dropdown = createFilter( filters, "tag", "Tag" );
     dropdown.append( createCheckbox( "tag", "Non-Legendary", "is_nonlegendary" ) );
@@ -1039,8 +1054,6 @@ function populateFilters() {
     COLORS.forEach( value => {
         dropdown.append( createCheckbox( "color", capitalize( value ), value ) );
     });
-    // Search
-    createSearchBar( filters );
     // Experience
     dropdown = createFilter( filters, "experience", "Experience" );
     EXPERIENCE.forEach( value => {
@@ -1058,6 +1071,16 @@ function populateFilters() {
         const event = new Event( "change" );
         input.dispatchEvent( event );
     }
+
+    const button = document.createElement( "button" );
+    button.classList.add( "filter__close-button" );
+    button.innerHTML = "Close";
+    //button.addEventListener( "click", resetFilters );
+
+    button.addEventListener( "click", ( event ) => {
+        document.querySelector( ".picker__overlay" ).classList.toggle( "picker__overlay_hidden" );
+    });
+    filters.append( button );
 }
 
 /**
@@ -1113,13 +1136,13 @@ function createSearchBar( container ) {
     const label = document.createElement( "label" );
     label.classList.add( "filter__name" );
     label.setAttribute( "for", "search-bar" );
-    label.innerHTML = "Search";
+    label.innerHTML = "Name";
 
     const input = document.createElement( "input" );
     input.id = "search-bar";
     input.classList.add( "filter__search-bar" );
     input.setAttribute( "type", "search" );
-    input.setAttribute( "placeholder", "by Pokémon name" );
+    input.setAttribute( "placeholder", "Enter Pokémon name" );
     input.addEventListener( "input", filterDex );
 
     container.append( div );
