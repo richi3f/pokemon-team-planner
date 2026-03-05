@@ -5,6 +5,9 @@ import typeData from "./types.js";
 import versionData from "./versions.js";
 
 const capitalize = str => str.charAt( 0 ).toUpperCase() + str.slice( 1 );
+const capitalizeSnakeCase = str => {
+    return str.split( "_" ).map( s => capitalize( s ) ).join( " " );
+};
 const getCurrentUrl = () => {
     const url = window.location.href;
     const i = url.indexOf( window.location.hash ) || url.length;
@@ -1068,6 +1071,13 @@ function populateFilters() {
     [...Array(SHAPES).keys()].forEach( value => {
         dropdown.append( createShapeCheckbox( value + 1 ) );
     });
+    // Hidden Moves
+    if ( "hm" in gameData[ currentGame ] ) {
+        dropdown = createFilter( divScrollbox, "hm", "Hidden Moves", true, false );
+        gameData[ currentGame ].hm.forEach( move => {
+            dropdown.append( createCheckbox( "hm", capitalizeSnakeCase( move ), move, false ) );
+        });
+    }
     // Create close button
     const button = document.createElement( "button" );
     button.classList.add( "filter__close-button" );
@@ -1487,15 +1497,41 @@ function pokemonIsShaped( pokemon, shapes ) {
 }
 
 /**
+ * Returns true if Pokémon can learn every of the given Hidden Moves.
+ * @param {Object} pokemon
+ * @param {string[]} moves
+ * @returns
+ */
+function pokemonCanLearnHms( pokemon, moves ) {
+    var currentGen = gameData[ currentGame ].gen;
+    return (
+        moves.length === 0
+        || (
+            pokemon.hidden_moves
+            && (
+                moves.every(
+                    move =>
+                        move === "all"
+                    || (
+                        pokemon.hidden_moves[move]
+                        && pokemon.hidden_moves[move].includes( currentGen )
+                    )
+                )
+            )
+        ) 
+    );
+}
+
+/**
  * Filters the Pokémon list based on the selected filters.
  */
 function filterDex() {
-    const [ gens, tags, types, exclTypes, evolutions, versions, colors, groups, shapes ] = [
+    const [ gens, tags, types, exclTypes, evolutions, versions, colors, groups, shapes, moves ] = [
         getSelectedFilters( "gen" ), getSelectedFilters( "tag" ),
         getSelectedFilters( "type" ), getSelectedFilters( "exclude-type" ),
         getSelectedFilters( "evolution" ), getSelectedFilters( "version" ),
         getSelectedFilters( "color" ), getSelectedFilters( "experience" ),
-        getSelectedFilters( "shape" )
+        getSelectedFilters( "shape" ), getSelectedFilters( "hm" )
     ];
     const query = normalize( document.getElementById( "search-bar" ).value );
     document.querySelectorAll( ".pokedex-entry" ).forEach( li => {
@@ -1516,6 +1552,7 @@ function filterDex() {
             && pokemonIsColor( pokemon, colors )
             && pokemonIsInExperienceGroup( pokemon, groups )
             && pokemonIsShaped( pokemon, shapes )
+            && pokemonCanLearnHms( pokemon, moves )
         ) {
             li.classList.remove( "pokedex-entry_filtered" );
             return;
