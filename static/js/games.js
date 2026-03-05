@@ -6,7 +6,8 @@ export default {
             { "slug": "red", "name": "Red" },
             { "slug": "blue", "name": "Blue" },
             { "slug": "yellow", "name": "Yellow" }
-        ]
+        ],
+        "hm": ["cut", "fly", "surf", "strength", "flash"],
     },
     "gsc": {
         "gen": 2,
@@ -16,6 +17,7 @@ export default {
             { "slug": "silver", "name": "Silver" },
             { "slug": "crystal", "name": "Crystal" }
         ],
+        "hm": ["cut", "fly", "surf", "strength", "flash", "whirlpool", "waterfall"],
         "transfer": true
     },
     "rse": {
@@ -25,6 +27,16 @@ export default {
             { "slug": "ruby", "name": "Ruby" },
             { "slug": "sapphire", "name": "Sapphire" },
             { "slug": "emerald", "name": "Emerald" }
+        ],
+        "hm": [
+            "cut",
+            "fly",
+            "surf",
+            "strength",
+            "flash",
+            "rock_smash",
+            "waterfall",
+            "dive"
         ],
         "transfer": true
     },
@@ -42,6 +54,7 @@ export default {
             { "slug": "firered", "name": "FireRed" },
             { "slug": "leafgreen", "name": "LeafGreen" },
         ],
+        "hm": ["cut", "fly", "surf", "strength", "flash", "rock_smash", "waterfall"],
         "transfer": true
     },
     "xd": {
@@ -62,6 +75,16 @@ export default {
             { "slug": "pearl", "name": "Pearl" },
             { "slug": "platinum", "name": "Platinum" }
         ],
+        "hm": [
+            "cut",
+            "fly",
+            "surf",
+            "strength",
+            "defog",
+            "rock_smash",
+            "waterfall",
+            "rock_climb"
+        ],
         "transfer": true
     },
     "hgss": {
@@ -70,6 +93,16 @@ export default {
         "versions": [
             { "slug": "heartgold", "name": "HeartGold" },
             { "slug": "soulsilver", "name": "SoulSilver" },
+        ],
+        "hm": [
+            "cut",
+            "fly",
+            "surf",
+            "strength",
+            "whirlpool",
+            "rock_smash",
+            "waterfall",
+            "rock_climb"
         ],
         "transfer": true
     },
@@ -81,6 +114,7 @@ export default {
             { "slug": "black", "name": "Black" },
             { "slug": "white", "name": "White" }
         ],
+        "hm": ["cut", "fly", "surf", "strength", "waterfall", "dive"],
         "transfer": true
     },
     "b2w2": {
@@ -91,6 +125,7 @@ export default {
             { "slug": "black2", "name": "Black 2" },
             { "slug": "white2", "name": "White 2" }
         ],
+        "hm": ["cut", "fly", "surf", "strength", "waterfall", "dive"],
         "transfer": true
     },
     "xy": {
@@ -106,6 +141,7 @@ export default {
             { "slug": "x", "name": "X" },
             { "slug": "y", "name": "Y" }
         ],
+        "hm": ["cut", "fly", "surf", "strength", "waterfall"],
         "transfer": true
     },
     "oras": {
@@ -116,6 +152,7 @@ export default {
             { "slug": "omega_ruby", "name": "Omega Ruby" },
             { "slug": "alpha_sapphire", "name": "Alpha Sapphire" }
         ],
+        "hm": ["cut", "fly", "surf", "strength", "waterfall", "rock_smash", "dive"],
         "transfer": true
     },
     "sm": {

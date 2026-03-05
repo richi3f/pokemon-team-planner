@@ -11,7 +11,13 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 2, 0 ] ]
+        "evolution_ids": [ [ 2, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "ivysaur": {
         "base_id": 2,
@@ -25,7 +31,13 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 3, 0 ] ]
+        "evolution_ids": [ [ 3, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "venusaur": {
         "base_id": 3,
@@ -39,7 +51,14 @@ export default {
         "shape": 5,
         "color": "green",
         "experience_group": "Medium Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "cut": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "venusaur-mega": {
         "base_id": 3,
@@ -55,7 +74,8 @@ export default {
         "shape": 5,
         "color": "green",
         "experience_group": "Medium Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ], "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "charmander": {
         "base_id": 4,
@@ -69,7 +89,12 @@ export default {
         "color": "red",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 5, 0 ] ]
+        "evolution_ids": [ [ 5, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "charmeleon": {
         "base_id": 5,
@@ -83,7 +108,12 @@ export default {
         "color": "red",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 6, 0 ] ]
+        "evolution_ids": [ [ 6, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "charizard": {
         "base_id": 6,
@@ -97,7 +127,14 @@ export default {
         "shape": 10,
         "color": "red",
         "experience_group": "Medium Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "cut": [ 1, 2, 3, 4, 5, 6 ],
+            "fly": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "charizard-mega-x": {
         "base_id": 6,
@@ -113,7 +150,13 @@ export default {
         "shape": 10,
         "color": "black",
         "experience_group": "Medium Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": {
+            "cut": [ 6 ],
+            "fly": [ 6 ],
+            "strength": [ 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "charizard-mega-y": {
         "base_id": 6,
@@ -129,7 +172,13 @@ export default {
         "shape": 10,
         "color": "red",
         "experience_group": "Medium Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": {
+            "cut": [ 6 ],
+            "fly": [ 6 ],
+            "strength": [ 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "squirtle": {
         "base_id": 7,
@@ -143,7 +192,15 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 8, 0 ] ]
+        "evolution_ids": [ [ 8, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "wartortle": {
         "base_id": 8,
@@ -157,7 +214,15 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 9, 0 ] ]
+        "evolution_ids": [ [ 9, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "blastoise": {
         "base_id": 9,
@@ -171,7 +236,16 @@ export default {
         "shape": 10,
         "color": "blue",
         "experience_group": "Medium Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "blastoise-mega": {
         "base_id": 9,
@@ -187,7 +261,14 @@ export default {
         "shape": 10,
         "color": "blue",
         "experience_group": "Medium Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": {
+            "surf": [ 6 ],
+            "strength": [ 6 ],
+            "waterfall": [ 6 ],
+            "rock_smash": [ 6 ],
+            "dive": [ 6 ]
+        }
     },
     "caterpie": {
         "base_id": 10,
@@ -229,7 +310,8 @@ export default {
         "shape": 6,
         "color": "white",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": { "flash": [ 2, 3 ], "defog": [ 4 ] }
     },
     "weedle": {
         "base_id": 13,
@@ -270,7 +352,12 @@ export default {
         "shape": 6,
         "color": "yellow",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "cut": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "beedrill-mega": {
         "base_id": 15,
@@ -286,7 +373,8 @@ export default {
         "shape": 6,
         "color": "yellow",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ], "rock_smash": [ 6 ] }
     },
     "pidgey": {
         "base_id": 16,
@@ -300,7 +388,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 17, 0 ] ]
+        "evolution_ids": [ [ 17, 0 ] ],
+        "hidden_moves": { "fly": [ 1, 2, 3, 4, 5, 6 ], "defog": [ 4 ] }
     },
     "pidgeotto": {
         "base_id": 17,
@@ -314,7 +403,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 18, 0 ] ]
+        "evolution_ids": [ [ 18, 0 ] ],
+        "hidden_moves": { "fly": [ 1, 2, 3, 4, 5, 6 ], "defog": [ 4 ] }
     },
     "pidgeot": {
         "base_id": 18,
@@ -327,7 +417,8 @@ export default {
         "shape": 12,
         "color": "brown",
         "experience_group": "Medium Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": { "fly": [ 1, 2, 3, 4, 5, 6 ], "defog": [ 4 ] }
     },
     "pidgeot-mega": {
         "base_id": 18,
@@ -343,7 +434,8 @@ export default {
         "shape": 12,
         "color": "brown",
         "experience_group": "Medium Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "fly": [ 6 ] }
     },
     "rattata": {
         "base_id": 19,
@@ -357,7 +449,8 @@ export default {
         "color": "purple",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 20, 0 ] ]
+        "evolution_ids": [ [ 20, 0 ] ],
+        "hidden_moves": { "cut": [ 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "rattata-alola": {
         "base_id": 19,
@@ -385,7 +478,12 @@ export default {
         "shape": 5,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "raticate-alola": {
         "base_id": 20,
@@ -413,7 +511,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 22, 0 ] ]
+        "evolution_ids": [ [ 22, 0 ] ],
+        "hidden_moves": { "fly": [ 1, 2, 3, 4, 5, 6 ], "defog": [ 4 ] }
     },
     "fearow": {
         "base_id": 22,
@@ -426,7 +525,8 @@ export default {
         "shape": 12,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": { "fly": [ 1, 2, 3, 4, 5, 6 ], "defog": [ 4 ] }
     },
     "ekans": {
         "base_id": 23,
@@ -440,7 +540,8 @@ export default {
         "color": "purple",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 24, 0 ] ]
+        "evolution_ids": [ [ 24, 0 ] ],
+        "hidden_moves": { "strength": [ 1, 2, 3, 4, 5, 6 ] }
     },
     "arbok": {
         "base_id": 24,
@@ -453,7 +554,8 @@ export default {
         "shape": 13,
         "color": "purple",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": { "strength": [ 1, 2, 3, 4, 5, 6 ] }
     },
     "pikachu": {
         "base_id": 25,
@@ -468,7 +570,12 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 26, 0 ], [ 26, 1 ] ]
+        "evolution_ids": [ [ 26, 0 ], [ 26, 1 ] ],
+        "hidden_moves": {
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "flash": [ 1, 2, 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "raichu": {
         "base_id": 26,
@@ -481,7 +588,12 @@ export default {
         "shape": 10,
         "color": "yellow",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "flash": [ 1, 2, 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "raichu-alola": {
         "base_id": 26,
@@ -537,7 +649,13 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 28, 0 ] ]
+        "evolution_ids": [ [ 28, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "sandshrew-alola": {
         "base_id": 27,
@@ -565,7 +683,13 @@ export default {
         "shape": 10,
         "color": "yellow",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "cut": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "sandslash-alola": {
         "base_id": 28,
@@ -593,7 +717,12 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 30, 0 ] ]
+        "evolution_ids": [ [ 30, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "nidorina": {
         "base_id": 30,
@@ -607,7 +736,12 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 31, 0 ] ]
+        "evolution_ids": [ [ 31, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "nidoqueen": {
         "base_id": 31,
@@ -620,7 +754,15 @@ export default {
         "shape": 10,
         "color": "blue",
         "experience_group": "Medium Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "nidoran-m": {
         "base_id": 32,
@@ -634,7 +776,12 @@ export default {
         "color": "purple",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 33, 0 ] ]
+        "evolution_ids": [ [ 33, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "nidorino": {
         "base_id": 33,
@@ -648,7 +795,12 @@ export default {
         "color": "purple",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 34, 0 ] ]
+        "evolution_ids": [ [ 34, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "nidoking": {
         "base_id": 34,
@@ -661,7 +813,15 @@ export default {
         "shape": 10,
         "color": "purple",
         "experience_group": "Medium Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "clefairy": {
         "base_id": 35,
@@ -676,7 +836,12 @@ export default {
         "color": "pink",
         "experience_group": "Fast",
         "generation": 1,
-        "evolution_ids": [ [ 36, 0 ] ]
+        "evolution_ids": [ [ 36, 0 ] ],
+        "hidden_moves": {
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "flash": [ 1, 2, 3 ],
+            "rock_smash": [ 4, 6 ]
+        }
     },
     "clefable": {
         "base_id": 36,
@@ -690,7 +855,12 @@ export default {
         "shape": 10,
         "color": "pink",
         "experience_group": "Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "flash": [ 1, 2, 3 ],
+            "rock_smash": [ 4, 6 ]
+        }
     },
     "clefable-mega": {
         "base_id": 36,
@@ -775,7 +945,8 @@ export default {
         "color": "pink",
         "experience_group": "Fast",
         "generation": 1,
-        "evolution_ids": [ [ 40, 0 ] ]
+        "evolution_ids": [ [ 40, 0 ] ],
+        "hidden_moves": { "strength": [ 1, 2, 3, 4, 5, 6 ], "flash": [ 1, 2, 3 ] }
     },
     "wigglytuff": {
         "base_id": 40,
@@ -789,7 +960,8 @@ export default {
         "shape": 11,
         "color": "pink",
         "experience_group": "Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": { "strength": [ 1, 2, 3, 4, 5, 6 ], "flash": [ 1, 2, 3 ] }
     },
     "zubat": {
         "base_id": 41,
@@ -803,7 +975,8 @@ export default {
         "color": "purple",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 42, 0 ] ]
+        "evolution_ids": [ [ 42, 0 ] ],
+        "hidden_moves": { "fly": [ 4, 5, 6 ], "defog": [ 4 ] }
     },
     "golbat": {
         "base_id": 42,
@@ -817,7 +990,8 @@ export default {
         "color": "purple",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 169, 0 ] ]
+        "evolution_ids": [ [ 169, 0 ] ],
+        "hidden_moves": { "fly": [ 4, 5, 6 ], "defog": [ 4 ] }
     },
     "oddish": {
         "base_id": 43,
@@ -831,7 +1005,8 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 44, 0 ] ]
+        "evolution_ids": [ [ 44, 0 ] ],
+        "hidden_moves": { "cut": [ 1, 2, 3, 4, 5, 6 ], "flash": [ 2, 3 ] }
     },
     "gloom": {
         "base_id": 44,
@@ -845,7 +1020,8 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 45, 0 ], [ 182, 0 ] ]
+        "evolution_ids": [ [ 45, 0 ], [ 182, 0 ] ],
+        "hidden_moves": { "cut": [ 1, 2, 3, 4, 5, 6 ], "flash": [ 2, 3 ] }
     },
     "vileplume": {
         "base_id": 45,
@@ -858,7 +1034,8 @@ export default {
         "shape": 11,
         "color": "red",
         "experience_group": "Medium Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": { "cut": [ 1, 2, 3, 4, 5, 6 ], "flash": [ 2, 3 ] }
     },
     "paras": {
         "base_id": 46,
@@ -872,7 +1049,12 @@ export default {
         "color": "red",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 47, 0 ] ]
+        "evolution_ids": [ [ 47, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 1, 2, 3, 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "parasect": {
         "base_id": 47,
@@ -885,7 +1067,12 @@ export default {
         "shape": 4,
         "color": "red",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "cut": [ 1, 2, 3, 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "venonat": {
         "base_id": 48,
@@ -899,7 +1086,8 @@ export default {
         "color": "purple",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 49, 0 ] ]
+        "evolution_ids": [ [ 49, 0 ] ],
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "venomoth": {
         "base_id": 49,
@@ -912,7 +1100,8 @@ export default {
         "shape": 6,
         "color": "purple",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": { "flash": [ 2, 3 ], "defog": [ 4 ] }
     },
     "diglett": {
         "base_id": 50,
@@ -926,7 +1115,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 51, 0 ] ]
+        "evolution_ids": [ [ 51, 0 ] ],
+        "hidden_moves": { "cut": [ 2, 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "diglett-alola": {
         "base_id": 50,
@@ -954,7 +1144,8 @@ export default {
         "shape": 7,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": { "cut": [ 2, 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "dugtrio-alola": {
         "base_id": 51,
@@ -983,7 +1174,8 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 53, 0 ] ]
+        "evolution_ids": [ [ 53, 0 ] ],
+        "hidden_moves": { "cut": [ 3, 4, 5, 6 ], "flash": [ 3 ] }
     },
     "meowth-alola": {
         "base_id": 52,
@@ -1026,7 +1218,8 @@ export default {
         "shape": 5,
         "color": "yellow",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": { "cut": [ 3, 4, 5, 6 ], "flash": [ 3 ] }
     },
     "persian-alola": {
         "base_id": 53,
@@ -1054,7 +1247,16 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 55, 0 ] ]
+        "evolution_ids": [ [ 55, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "golduck": {
         "base_id": 55,
@@ -1067,7 +1269,17 @@ export default {
         "shape": 10,
         "color": "blue",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "mankey": {
         "base_id": 56,
@@ -1081,7 +1293,12 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 57, 0 ] ]
+        "evolution_ids": [ [ 57, 0 ] ],
+        "hidden_moves": {
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "primeape": {
         "base_id": 57,
@@ -1095,7 +1312,12 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 979, 0 ] ]
+        "evolution_ids": [ [ 979, 0 ] ],
+        "hidden_moves": {
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "growlithe": {
         "base_id": 58,
@@ -1109,7 +1331,8 @@ export default {
         "color": "brown",
         "experience_group": "Slow",
         "generation": 1,
-        "evolution_ids": [ [ 59, 0 ] ]
+        "evolution_ids": [ [ 59, 0 ] ],
+        "hidden_moves": { "strength": [ 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "growlithe-hisui": {
         "base_id": 58,
@@ -1137,7 +1360,12 @@ export default {
         "shape": 5,
         "color": "brown",
         "experience_group": "Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "strength": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "arcanine-hisui": {
         "base_id": 59,
@@ -1165,7 +1393,13 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 61, 0 ] ]
+        "evolution_ids": [ [ 61, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "poliwhirl": {
         "base_id": 61,
@@ -1179,7 +1413,15 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 62, 0 ], [ 186, 0 ] ]
+        "evolution_ids": [ [ 62, 0 ], [ 186, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "poliwrath": {
         "base_id": 62,
@@ -1192,7 +1434,16 @@ export default {
         "shape": 11,
         "color": "blue",
         "experience_group": "Medium Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "abra": {
         "base_id": 63,
@@ -1206,7 +1457,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 64, 0 ] ]
+        "evolution_ids": [ [ 64, 0 ] ],
+        "hidden_moves": { "flash": [ 1, 2, 3 ] }
     },
     "kadabra": {
         "base_id": 64,
@@ -1220,7 +1472,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 65, 0 ] ]
+        "evolution_ids": [ [ 65, 0 ] ],
+        "hidden_moves": { "flash": [ 1, 2, 3 ] }
     },
     "alakazam": {
         "base_id": 65,
@@ -1233,7 +1486,8 @@ export default {
         "shape": 11,
         "color": "brown",
         "experience_group": "Medium Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": { "flash": [ 1, 2, 3 ] }
     },
     "alakazam-mega": {
         "base_id": 65,
@@ -1263,7 +1517,12 @@ export default {
         "color": "gray",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 67, 0 ] ]
+        "evolution_ids": [ [ 67, 0 ] ],
+        "hidden_moves": {
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "machoke": {
         "base_id": 67,
@@ -1277,7 +1536,12 @@ export default {
         "color": "gray",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 68, 0 ] ]
+        "evolution_ids": [ [ 68, 0 ] ],
+        "hidden_moves": {
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "machamp": {
         "base_id": 68,
@@ -1291,7 +1555,12 @@ export default {
         "shape": 11,
         "color": "gray",
         "experience_group": "Medium Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "bellsprout": {
         "base_id": 69,
@@ -1305,7 +1574,8 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 70, 0 ] ]
+        "evolution_ids": [ [ 70, 0 ] ],
+        "hidden_moves": { "cut": [ 1, 2, 3, 4, 5, 6 ], "flash": [ 2, 3 ] }
     },
     "weepinbell": {
         "base_id": 70,
@@ -1319,7 +1589,8 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 71, 0 ] ]
+        "evolution_ids": [ [ 71, 0 ] ],
+        "hidden_moves": { "cut": [ 1, 2, 3, 4, 5, 6 ], "flash": [ 2, 3 ] }
     },
     "victreebel": {
         "base_id": 71,
@@ -1332,7 +1603,8 @@ export default {
         "shape": 9,
         "color": "green",
         "experience_group": "Medium Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": { "cut": [ 1, 2, 3, 4, 5, 6 ], "flash": [ 2, 3 ] }
     },
     "victreebel-mega": {
         "base_id": 71,
@@ -1360,7 +1632,14 @@ export default {
         "color": "blue",
         "experience_group": "Slow",
         "generation": 1,
-        "evolution_ids": [ [ 73, 0 ] ]
+        "evolution_ids": [ [ 73, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 1, 2, 3, 4, 5, 6 ],
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "tentacruel": {
         "base_id": 73,
@@ -1373,7 +1652,14 @@ export default {
         "shape": 8,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "cut": [ 1, 2, 3, 4, 5, 6 ],
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "geodude": {
         "base_id": 74,
@@ -1387,7 +1673,12 @@ export default {
         "color": "brown",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 75, 0 ] ]
+        "evolution_ids": [ [ 75, 0 ] ],
+        "hidden_moves": {
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "geodude-alola": {
         "base_id": 74,
@@ -1416,7 +1707,12 @@ export default {
         "color": "brown",
         "experience_group": "Medium Slow",
         "generation": 1,
-        "evolution_ids": [ [ 76, 0 ] ]
+        "evolution_ids": [ [ 76, 0 ] ],
+        "hidden_moves": {
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "graveler-alola": {
         "base_id": 75,
@@ -1444,7 +1740,12 @@ export default {
         "shape": 11,
         "color": "brown",
         "experience_group": "Medium Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "golem-alola": {
         "base_id": 76,
@@ -1472,7 +1773,8 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 78, 0 ] ]
+        "evolution_ids": [ [ 78, 0 ] ],
+        "hidden_moves": { "strength": [ 3, 4, 5, 6 ] }
     },
     "ponyta-galar": {
         "base_id": 77,
@@ -1500,7 +1802,8 @@ export default {
         "shape": 5,
         "color": "yellow",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": { "strength": [ 3, 4, 5, 6 ] }
     },
     "rapidash-galar": {
         "base_id": 78,
@@ -1528,7 +1831,14 @@ export default {
         "color": "pink",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 80, 0 ], [ 199, 0 ] ]
+        "evolution_ids": [ [ 80, 0 ], [ 199, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "flash": [ 1, 2, 3 ],
+            "whirlpool": [ 4 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "slowpoke-galar": {
         "base_id": 79,
@@ -1556,7 +1866,15 @@ export default {
         "shape": 10,
         "color": "pink",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "flash": [ 1, 2, 3 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "slowbro-mega": {
         "base_id": 80,
@@ -1572,7 +1890,13 @@ export default {
         "shape": 14,
         "color": "pink",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": {
+            "surf": [ 6 ],
+            "strength": [ 6 ],
+            "rock_smash": [ 6 ],
+            "dive": [ 6 ]
+        }
     },
     "slowbro-galar": {
         "base_id": 80,
@@ -1601,7 +1925,8 @@ export default {
         "color": "gray",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 82, 0 ] ]
+        "evolution_ids": [ [ 82, 0 ] ],
+        "hidden_moves": { "flash": [ 1, 2, 3 ] }
     },
     "magneton": {
         "base_id": 82,
@@ -1616,7 +1941,8 @@ export default {
         "color": "gray",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 462, 0 ] ]
+        "evolution_ids": [ [ 462, 0 ] ],
+        "hidden_moves": { "flash": [ 1, 2, 3 ] }
     },
     "farfetchd": {
         "base_id": 83,
@@ -1629,7 +1955,12 @@ export default {
         "shape": 12,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "cut": [ 1, 2, 3, 4, 5, 6 ],
+            "fly": [ 1, 2, 3, 4, 5, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "farfetchd-galar": {
         "base_id": 83,
@@ -1658,7 +1989,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 85, 0 ] ]
+        "evolution_ids": [ [ 85, 0 ] ],
+        "hidden_moves": { "fly": [ 1, 2, 3, 4, 5, 6 ] }
     },
     "dodrio": {
         "base_id": 85,
@@ -1671,7 +2003,8 @@ export default {
         "shape": 2,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": { "fly": [ 1, 2, 3, 4, 5, 6 ] }
     },
     "seel": {
         "base_id": 86,
@@ -1685,7 +2018,14 @@ export default {
         "color": "white",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 87, 0 ] ]
+        "evolution_ids": [ [ 87, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "dewgong": {
         "base_id": 87,
@@ -1698,7 +2038,14 @@ export default {
         "shape": 3,
         "color": "white",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "grimer": {
         "base_id": 88,
@@ -1712,7 +2059,8 @@ export default {
         "color": "purple",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 89, 0 ] ]
+        "evolution_ids": [ [ 89, 0 ] ],
+        "hidden_moves": { "strength": [ 4, 5, 6 ] }
     },
     "grimer-alola": {
         "base_id": 88,
@@ -1740,7 +2088,8 @@ export default {
         "shape": 14,
         "color": "purple",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": { "strength": [ 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "muk-alola": {
         "base_id": 89,
@@ -1768,7 +2117,12 @@ export default {
         "color": "purple",
         "experience_group": "Slow",
         "generation": 1,
-        "evolution_ids": [ [ 91, 0 ] ]
+        "evolution_ids": [ [ 91, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "cloyster": {
         "base_id": 91,
@@ -1781,7 +2135,12 @@ export default {
         "shape": 1,
         "color": "purple",
         "experience_group": "Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "gastly": {
         "base_id": 92,
@@ -1823,7 +2182,8 @@ export default {
         "shape": 10,
         "color": "purple",
         "experience_group": "Medium Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": { "strength": [ 1, 2, 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "gengar-mega": {
         "base_id": 94,
@@ -1839,7 +2199,8 @@ export default {
         "shape": 10,
         "color": "purple",
         "experience_group": "Medium Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "onix": {
         "base_id": 95,
@@ -1853,7 +2214,12 @@ export default {
         "color": "gray",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 208, 0 ] ]
+        "evolution_ids": [ [ 208, 0 ] ],
+        "hidden_moves": {
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "drowzee": {
         "base_id": 96,
@@ -1867,7 +2233,8 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 97, 0 ] ]
+        "evolution_ids": [ [ 97, 0 ] ],
+        "hidden_moves": { "flash": [ 1, 2, 3 ] }
     },
     "hypno": {
         "base_id": 97,
@@ -1880,7 +2247,8 @@ export default {
         "shape": 11,
         "color": "yellow",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": { "flash": [ 1, 2, 3 ] }
     },
     "krabby": {
         "base_id": 98,
@@ -1894,7 +2262,15 @@ export default {
         "color": "red",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 99, 0 ] ]
+        "evolution_ids": [ [ 99, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 1, 2, 3, 4, 5, 6 ],
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "kingler": {
         "base_id": 99,
@@ -1908,7 +2284,15 @@ export default {
         "shape": 4,
         "color": "red",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "cut": [ 1, 2, 3, 4, 5, 6 ],
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "voltorb": {
         "base_id": 100,
@@ -1922,7 +2306,8 @@ export default {
         "color": "red",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 101, 0 ] ]
+        "evolution_ids": [ [ 101, 0 ] ],
+        "hidden_moves": { "flash": [ 1, 2, 3 ] }
     },
     "voltorb-hisui": {
         "base_id": 100,
@@ -1950,7 +2335,8 @@ export default {
         "shape": 1,
         "color": "red",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": { "flash": [ 1, 2, 3 ] }
     },
     "electrode-hisui": {
         "base_id": 101,
@@ -1978,7 +2364,8 @@ export default {
         "color": "pink",
         "experience_group": "Slow",
         "generation": 1,
-        "evolution_ids": [ [ 103, 0 ], [ 103, 1 ] ]
+        "evolution_ids": [ [ 103, 0 ], [ 103, 1 ] ],
+        "hidden_moves": { "strength": [ 2, 3, 4, 5, 6 ], "flash": [ 2, 3 ] }
     },
     "exeggutor": {
         "base_id": 103,
@@ -1991,7 +2378,8 @@ export default {
         "shape": 2,
         "color": "yellow",
         "experience_group": "Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": { "strength": [ 1, 2, 3, 4, 5, 6 ], "flash": [ 2, 3 ] }
     },
     "exeggutor-alola": {
         "base_id": 103,
@@ -2019,7 +2407,12 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 105, 0 ], [ 105, 1 ] ]
+        "evolution_ids": [ [ 105, 0 ], [ 105, 1 ] ],
+        "hidden_moves": {
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "marowak": {
         "base_id": 105,
@@ -2032,7 +2425,12 @@ export default {
         "shape": 10,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "marowak-alola": {
         "base_id": 105,
@@ -2059,7 +2457,12 @@ export default {
         "shape": 11,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "hitmonchan": {
         "base_id": 107,
@@ -2072,7 +2475,12 @@ export default {
         "shape": 11,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "lickitung": {
         "base_id": 108,
@@ -2086,7 +2494,15 @@ export default {
         "color": "pink",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 463, 0 ] ]
+        "evolution_ids": [ [ 463, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 1, 2, 3, 4, 5, 6 ],
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "koffing": {
         "base_id": 109,
@@ -2100,7 +2516,8 @@ export default {
         "color": "purple",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 110, 0 ], [ 110, 1 ] ]
+        "evolution_ids": [ [ 110, 0 ], [ 110, 1 ] ],
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "weezing": {
         "base_id": 110,
@@ -2113,7 +2530,8 @@ export default {
         "shape": 7,
         "color": "purple",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "weezing-galar": {
         "base_id": 110,
@@ -2141,7 +2559,12 @@ export default {
         "color": "gray",
         "experience_group": "Slow",
         "generation": 1,
-        "evolution_ids": [ [ 112, 0 ] ]
+        "evolution_ids": [ [ 112, 0 ] ],
+        "hidden_moves": {
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "rhydon": {
         "base_id": 112,
@@ -2155,7 +2578,15 @@ export default {
         "color": "gray",
         "experience_group": "Slow",
         "generation": 1,
-        "evolution_ids": [ [ 464, 0 ] ]
+        "evolution_ids": [ [ 464, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "chansey": {
         "base_id": 113,
@@ -2169,7 +2600,13 @@ export default {
         "color": "pink",
         "experience_group": "Fast",
         "generation": 1,
-        "evolution_ids": [ [ 242, 0 ] ]
+        "evolution_ids": [ [ 242, 0 ] ],
+        "hidden_moves": {
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "flash": [ 1, 2, 3 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "tangela": {
         "base_id": 114,
@@ -2183,7 +2620,12 @@ export default {
         "color": "blue",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 465, 0 ] ]
+        "evolution_ids": [ [ 465, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 1, 2, 3, 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "kangaskhan": {
         "base_id": 115,
@@ -2196,7 +2638,15 @@ export default {
         "shape": 10,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "kangaskhan-mega": {
         "base_id": 115,
@@ -2212,7 +2662,13 @@ export default {
         "shape": 10,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": {
+            "cut": [ 6 ],
+            "surf": [ 6 ],
+            "strength": [ 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "horsea": {
         "base_id": 116,
@@ -2226,7 +2682,13 @@ export default {
         "color": "blue",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 117, 0 ] ]
+        "evolution_ids": [ [ 117, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "seadra": {
         "base_id": 117,
@@ -2240,7 +2702,13 @@ export default {
         "color": "blue",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 230, 0 ] ]
+        "evolution_ids": [ [ 230, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "goldeen": {
         "base_id": 118,
@@ -2254,7 +2722,13 @@ export default {
         "color": "red",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 119, 0 ] ]
+        "evolution_ids": [ [ 119, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "seaking": {
         "base_id": 119,
@@ -2267,7 +2741,13 @@ export default {
         "shape": 3,
         "color": "red",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "staryu": {
         "base_id": 120,
@@ -2281,7 +2761,14 @@ export default {
         "color": "brown",
         "experience_group": "Slow",
         "generation": 1,
-        "evolution_ids": [ [ 121, 0 ] ]
+        "evolution_ids": [ [ 121, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "flash": [ 1, 2, 3 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "starmie": {
         "base_id": 121,
@@ -2294,7 +2781,14 @@ export default {
         "shape": 9,
         "color": "purple",
         "experience_group": "Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "flash": [ 1, 2, 3 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "starmie-mega": {
         "base_id": 121,
@@ -2322,7 +2816,8 @@ export default {
         "shape": 11,
         "color": "pink",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": { "flash": [ 1, 2, 3 ] }
     },
     "mr-mime-galar": {
         "base_id": 122,
@@ -2351,7 +2846,12 @@ export default {
         "color": "green",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 212, 0 ], [ 900, 0 ] ]
+        "evolution_ids": [ [ 212, 0 ], [ 900, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "jynx": {
         "base_id": 124,
@@ -2364,7 +2864,8 @@ export default {
         "shape": 11,
         "color": "red",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "electabuzz": {
         "base_id": 125,
@@ -2378,7 +2879,13 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 466, 0 ] ]
+        "evolution_ids": [ [ 466, 0 ] ],
+        "hidden_moves": {
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "flash": [ 1, 2, 3 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "magmar": {
         "base_id": 126,
@@ -2392,7 +2899,12 @@ export default {
         "color": "red",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 467, 0 ] ]
+        "evolution_ids": [ [ 467, 0 ] ],
+        "hidden_moves": {
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "pinsir": {
         "base_id": 127,
@@ -2405,7 +2917,13 @@ export default {
         "shape": 11,
         "color": "brown",
         "experience_group": "Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "cut": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "pinsir-mega": {
         "base_id": 127,
@@ -2421,7 +2939,8 @@ export default {
         "shape": 6,
         "color": "brown",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ], "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "tauros": {
         "base_id": 128,
@@ -2434,7 +2953,14 @@ export default {
         "shape": 5,
         "color": "brown",
         "experience_group": "Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "tauros-paldea-combat": {
         "base_id": 128,
@@ -2503,7 +3029,15 @@ export default {
         "shape": 13,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "gyarados-mega": {
         "base_id": 130,
@@ -2519,7 +3053,14 @@ export default {
         "shape": 13,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": {
+            "surf": [ 6 ],
+            "strength": [ 6 ],
+            "waterfall": [ 6 ],
+            "rock_smash": [ 6 ],
+            "dive": [ 6 ]
+        }
     },
     "lapras": {
         "base_id": 131,
@@ -2533,7 +3074,15 @@ export default {
         "shape": 3,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "ditto": {
         "base_id": 132,
@@ -2561,7 +3110,16 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 134, 0 ], [ 135, 0 ], [ 136, 0 ], [ 196, 0 ], [ 197, 0 ], [ 470, 0 ], [ 471, 0 ], [ 700, 0 ] ]
+        "evolution_ids": [
+            [ 134, 0 ],
+            [ 135, 0 ],
+            [ 136, 0 ],
+            [ 196, 0 ],
+            [ 197, 0 ],
+            [ 470, 0 ],
+            [ 471, 0 ],
+            [ 700, 0 ]
+        ]
     },
     "vaporeon": {
         "base_id": 134,
@@ -2574,7 +3132,15 @@ export default {
         "shape": 5,
         "color": "blue",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "jolteon": {
         "base_id": 135,
@@ -2587,7 +3153,12 @@ export default {
         "shape": 5,
         "color": "yellow",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "strength": [ 4, 5, 6 ],
+            "flash": [ 1, 2, 3 ],
+            "rock_smash": [ 4, 6 ]
+        }
     },
     "flareon": {
         "base_id": 136,
@@ -2600,7 +3171,8 @@ export default {
         "shape": 5,
         "color": "red",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": { "strength": [ 4, 5, 6 ], "rock_smash": [ 4, 6 ] }
     },
     "porygon": {
         "base_id": 137,
@@ -2614,7 +3186,8 @@ export default {
         "color": "pink",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 233, 0 ] ]
+        "evolution_ids": [ [ 233, 0 ] ],
+        "hidden_moves": { "flash": [ 1, 2, 3 ] }
     },
     "omanyte": {
         "base_id": 138,
@@ -2628,7 +3201,14 @@ export default {
         "color": "blue",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 139, 0 ] ]
+        "evolution_ids": [ [ 139, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "omastar": {
         "base_id": 139,
@@ -2641,7 +3221,15 @@ export default {
         "shape": 8,
         "color": "blue",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "kabuto": {
         "base_id": 140,
@@ -2655,7 +3243,13 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 1,
-        "evolution_ids": [ [ 141, 0 ] ]
+        "evolution_ids": [ [ 141, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 1, 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "kabutops": {
         "base_id": 141,
@@ -2668,7 +3262,16 @@ export default {
         "shape": 10,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "aerodactyl": {
         "base_id": 142,
@@ -2681,7 +3284,13 @@ export default {
         "shape": 12,
         "color": "purple",
         "experience_group": "Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "fly": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "aerodactyl-mega": {
         "base_id": 142,
@@ -2697,7 +3306,8 @@ export default {
         "shape": 12,
         "color": "purple",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "fly": [ 6 ], "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "snorlax": {
         "base_id": 143,
@@ -2711,7 +3321,14 @@ export default {
         "shape": 11,
         "color": "black",
         "experience_group": "Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "articuno": {
         "base_id": 144,
@@ -2725,7 +3342,12 @@ export default {
         "shape": 12,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "fly": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "articuno-galar": {
         "base_id": 144,
@@ -2754,7 +3376,13 @@ export default {
         "shape": 12,
         "color": "yellow",
         "experience_group": "Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "fly": [ 1, 2, 3, 4, 5, 6 ],
+            "flash": [ 1, 2, 3 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "zapdos-galar": {
         "base_id": 145,
@@ -2783,7 +3411,12 @@ export default {
         "shape": 12,
         "color": "yellow",
         "experience_group": "Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "fly": [ 1, 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "moltres-galar": {
         "base_id": 146,
@@ -2812,7 +3445,12 @@ export default {
         "color": "blue",
         "experience_group": "Slow",
         "generation": 1,
-        "evolution_ids": [ [ 148, 0 ] ]
+        "evolution_ids": [ [ 148, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ]
+        }
     },
     "dragonair": {
         "base_id": 148,
@@ -2826,7 +3464,12 @@ export default {
         "color": "blue",
         "experience_group": "Slow",
         "generation": 1,
-        "evolution_ids": [ [ 149, 0 ] ]
+        "evolution_ids": [ [ 149, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ]
+        }
     },
     "dragonite": {
         "base_id": 149,
@@ -2839,7 +3482,18 @@ export default {
         "shape": 10,
         "color": "brown",
         "experience_group": "Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "fly": [ 2, 3, 4, 5, 6 ],
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "dragonite-mega": {
         "base_id": 149,
@@ -2867,7 +3521,14 @@ export default {
         "shape": 10,
         "color": "purple",
         "experience_group": "Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "flash": [ 1, 2, 3 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "mewtwo-mega-x": {
         "base_id": 150,
@@ -2884,7 +3545,8 @@ export default {
         "shape": 10,
         "color": "purple",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "strength": [ 6 ], "rock_smash": [ 6 ], "dive": [ 6 ] }
     },
     "mewtwo-mega-y": {
         "base_id": 150,
@@ -2901,7 +3563,8 @@ export default {
         "shape": 10,
         "color": "purple",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "strength": [ 6 ], "rock_smash": [ 6 ], "dive": [ 6 ] }
     },
     "mew": {
         "base_id": 151,
@@ -2915,7 +3578,20 @@ export default {
         "shape": 10,
         "color": "pink",
         "experience_group": "Medium Slow",
-        "generation": 1
+        "generation": 1,
+        "hidden_moves": {
+            "cut": [ 1, 2, 3, 4, 5, 6 ],
+            "fly": [ 1, 2, 3, 4, 5, 6 ],
+            "surf": [ 1, 2, 3, 4, 5, 6 ],
+            "strength": [ 1, 2, 3, 4, 5, 6 ],
+            "flash": [ 1, 2, 3 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ],
+            "defog": [ 4 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "chikorita": {
         "base_id": 152,
@@ -2929,7 +3605,8 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 2,
-        "evolution_ids": [ [ 153, 0 ] ]
+        "evolution_ids": [ [ 153, 0 ] ],
+        "hidden_moves": { "cut": [ 2, 3, 4, 5, 6 ], "flash": [ 2, 3 ] }
     },
     "bayleef": {
         "base_id": 153,
@@ -2943,7 +3620,13 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 2,
-        "evolution_ids": [ [ 154, 0 ] ]
+        "evolution_ids": [ [ 154, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "meganium": {
         "base_id": 154,
@@ -2956,7 +3639,14 @@ export default {
         "shape": 5,
         "color": "green",
         "experience_group": "Medium Slow",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "meganium-mega": {
         "base_id": 154,
@@ -2984,7 +3674,8 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Slow",
         "generation": 2,
-        "evolution_ids": [ [ 156, 0 ] ]
+        "evolution_ids": [ [ 156, 0 ] ],
+        "hidden_moves": { "cut": [ 2, 3, 4, 5, 6 ] }
     },
     "quilava": {
         "base_id": 156,
@@ -2998,7 +3689,12 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Slow",
         "generation": 2,
-        "evolution_ids": [ [ 157, 0 ], [ 157, 1 ] ]
+        "evolution_ids": [ [ 157, 0 ], [ 157, 1 ] ],
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "typhlosion": {
         "base_id": 157,
@@ -3011,7 +3707,13 @@ export default {
         "shape": 5,
         "color": "yellow",
         "experience_group": "Medium Slow",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "typhlosion-hisui": {
         "base_id": 157,
@@ -3039,7 +3741,14 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 2,
-        "evolution_ids": [ [ 159, 0 ] ]
+        "evolution_ids": [ [ 159, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "croconaw": {
         "base_id": 159,
@@ -3053,7 +3762,16 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 2,
-        "evolution_ids": [ [ 160, 0 ] ]
+        "evolution_ids": [ [ 160, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "feraligatr": {
         "base_id": 160,
@@ -3066,7 +3784,17 @@ export default {
         "shape": 10,
         "color": "blue",
         "experience_group": "Medium Slow",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "feraligatr-mega": {
         "base_id": 160,
@@ -3094,7 +3822,12 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 2,
-        "evolution_ids": [ [ 162, 0 ] ]
+        "evolution_ids": [ [ 162, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ]
+        }
     },
     "furret": {
         "base_id": 162,
@@ -3107,7 +3840,14 @@ export default {
         "shape": 5,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "hoothoot": {
         "base_id": 163,
@@ -3121,7 +3861,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 2,
-        "evolution_ids": [ [ 164, 0 ] ]
+        "evolution_ids": [ [ 164, 0 ] ],
+        "hidden_moves": { "fly": [ 2, 3, 4, 5, 6 ], "flash": [ 2, 3 ], "defog": [ 4 ] }
     },
     "noctowl": {
         "base_id": 164,
@@ -3134,7 +3875,8 @@ export default {
         "shape": 12,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": { "fly": [ 2, 3, 4, 5, 6 ], "flash": [ 2, 3 ], "defog": [ 4 ] }
     },
     "ledyba": {
         "base_id": 165,
@@ -3148,7 +3890,8 @@ export default {
         "color": "red",
         "experience_group": "Fast",
         "generation": 2,
-        "evolution_ids": [ [ 166, 0 ] ]
+        "evolution_ids": [ [ 166, 0 ] ],
+        "hidden_moves": { "flash": [ 2, 3 ] }
     },
     "ledian": {
         "base_id": 166,
@@ -3161,7 +3904,12 @@ export default {
         "shape": 12,
         "color": "red",
         "experience_group": "Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "strength": [ 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "rock_smash": [ 4, 6 ]
+        }
     },
     "spinarak": {
         "base_id": 167,
@@ -3175,7 +3923,8 @@ export default {
         "color": "green",
         "experience_group": "Fast",
         "generation": 2,
-        "evolution_ids": [ [ 168, 0 ] ]
+        "evolution_ids": [ [ 168, 0 ] ],
+        "hidden_moves": { "flash": [ 2, 3 ] }
     },
     "ariados": {
         "base_id": 168,
@@ -3188,7 +3937,8 @@ export default {
         "shape": 4,
         "color": "red",
         "experience_group": "Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": { "flash": [ 2, 3 ] }
     },
     "crobat": {
         "base_id": 169,
@@ -3201,7 +3951,8 @@ export default {
         "shape": 6,
         "color": "purple",
         "experience_group": "Medium Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": { "fly": [ 2, 3, 4, 5, 6 ], "defog": [ 4 ] }
     },
     "chinchou": {
         "base_id": 170,
@@ -3215,7 +3966,14 @@ export default {
         "color": "blue",
         "experience_group": "Slow",
         "generation": 2,
-        "evolution_ids": [ [ 171, 0 ] ]
+        "evolution_ids": [ [ 171, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "lanturn": {
         "base_id": 171,
@@ -3228,7 +3986,14 @@ export default {
         "shape": 3,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "pichu": {
         "base_id": 172,
@@ -3243,7 +4008,8 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 2,
-        "evolution_ids": [ [ 25, 0 ] ]
+        "evolution_ids": [ [ 25, 0 ] ],
+        "hidden_moves": { "flash": [ 2, 3 ] }
     },
     "cleffa": {
         "base_id": 173,
@@ -3259,7 +4025,8 @@ export default {
         "color": "pink",
         "experience_group": "Fast",
         "generation": 2,
-        "evolution_ids": [ [ 35, 0 ] ]
+        "evolution_ids": [ [ 35, 0 ] ],
+        "hidden_moves": { "flash": [ 2, 3 ] }
     },
     "igglybuff": {
         "base_id": 174,
@@ -3275,7 +4042,8 @@ export default {
         "color": "pink",
         "experience_group": "Fast",
         "generation": 2,
-        "evolution_ids": [ [ 39, 0 ] ]
+        "evolution_ids": [ [ 39, 0 ] ],
+        "hidden_moves": { "flash": [ 2, 3 ] }
     },
     "togepi": {
         "base_id": 175,
@@ -3291,7 +4059,8 @@ export default {
         "color": "white",
         "experience_group": "Fast",
         "generation": 2,
-        "evolution_ids": [ [ 176, 0 ] ]
+        "evolution_ids": [ [ 176, 0 ] ],
+        "hidden_moves": { "flash": [ 2, 3 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "togetic": {
         "base_id": 176,
@@ -3306,7 +4075,13 @@ export default {
         "color": "white",
         "experience_group": "Fast",
         "generation": 2,
-        "evolution_ids": [ [ 468, 0 ] ]
+        "evolution_ids": [ [ 468, 0 ] ],
+        "hidden_moves": {
+            "fly": [ 2, 3, 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "natu": {
         "base_id": 177,
@@ -3320,7 +4095,8 @@ export default {
         "color": "green",
         "experience_group": "Medium Fast",
         "generation": 2,
-        "evolution_ids": [ [ 178, 0 ] ]
+        "evolution_ids": [ [ 178, 0 ] ],
+        "hidden_moves": { "flash": [ 2, 3 ] }
     },
     "xatu": {
         "base_id": 178,
@@ -3333,7 +4109,8 @@ export default {
         "shape": 12,
         "color": "green",
         "experience_group": "Medium Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": { "fly": [ 2, 3, 4, 5, 6 ], "flash": [ 2, 3 ], "defog": [ 4 ] }
     },
     "mareep": {
         "base_id": 179,
@@ -3347,7 +4124,8 @@ export default {
         "color": "white",
         "experience_group": "Medium Slow",
         "generation": 2,
-        "evolution_ids": [ [ 180, 0 ] ]
+        "evolution_ids": [ [ 180, 0 ] ],
+        "hidden_moves": { "flash": [ 2, 3 ] }
     },
     "flaaffy": {
         "base_id": 180,
@@ -3361,7 +4139,12 @@ export default {
         "color": "pink",
         "experience_group": "Medium Slow",
         "generation": 2,
-        "evolution_ids": [ [ 181, 0 ] ]
+        "evolution_ids": [ [ 181, 0 ] ],
+        "hidden_moves": {
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "ampharos": {
         "base_id": 181,
@@ -3374,7 +4157,13 @@ export default {
         "shape": 10,
         "color": "yellow",
         "experience_group": "Medium Slow",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "ampharos-mega": {
         "base_id": 181,
@@ -3390,7 +4179,8 @@ export default {
         "shape": 10,
         "color": "yellow",
         "experience_group": "Medium Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "bellossom": {
         "base_id": 182,
@@ -3403,7 +4193,8 @@ export default {
         "shape": 11,
         "color": "green",
         "experience_group": "Medium Slow",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": { "cut": [ 2, 3, 4, 5, 6 ], "flash": [ 2, 3 ] }
     },
     "marill": {
         "base_id": 183,
@@ -3418,7 +4209,15 @@ export default {
         "color": "blue",
         "experience_group": "Fast",
         "generation": 2,
-        "evolution_ids": [ [ 184, 0 ] ]
+        "evolution_ids": [ [ 184, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "azumarill": {
         "base_id": 184,
@@ -3432,7 +4231,15 @@ export default {
         "shape": 10,
         "color": "blue",
         "experience_group": "Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "sudowoodo": {
         "base_id": 185,
@@ -3445,7 +4252,8 @@ export default {
         "shape": 11,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": { "strength": [ 2, 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "politoed": {
         "base_id": 186,
@@ -3458,7 +4266,15 @@ export default {
         "shape": 11,
         "color": "green",
         "experience_group": "Medium Slow",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "hoppip": {
         "base_id": 187,
@@ -3472,7 +4288,8 @@ export default {
         "color": "pink",
         "experience_group": "Medium Slow",
         "generation": 2,
-        "evolution_ids": [ [ 188, 0 ] ]
+        "evolution_ids": [ [ 188, 0 ] ],
+        "hidden_moves": { "flash": [ 2, 3 ] }
     },
     "skiploom": {
         "base_id": 188,
@@ -3486,7 +4303,8 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 2,
-        "evolution_ids": [ [ 189, 0 ] ]
+        "evolution_ids": [ [ 189, 0 ] ],
+        "hidden_moves": { "flash": [ 2, 3 ] }
     },
     "jumpluff": {
         "base_id": 189,
@@ -3499,7 +4317,8 @@ export default {
         "shape": 10,
         "color": "blue",
         "experience_group": "Medium Slow",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": { "flash": [ 2, 3 ] }
     },
     "aipom": {
         "base_id": 190,
@@ -3513,7 +4332,12 @@ export default {
         "color": "purple",
         "experience_group": "Fast",
         "generation": 2,
-        "evolution_ids": [ [ 424, 0 ] ]
+        "evolution_ids": [ [ 424, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "sunkern": {
         "base_id": 191,
@@ -3527,7 +4351,8 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Slow",
         "generation": 2,
-        "evolution_ids": [ [ 192, 0 ] ]
+        "evolution_ids": [ [ 192, 0 ] ],
+        "hidden_moves": { "cut": [ 2, 3, 4, 5, 6 ], "flash": [ 2, 3 ] }
     },
     "sunflora": {
         "base_id": 192,
@@ -3540,7 +4365,8 @@ export default {
         "shape": 11,
         "color": "yellow",
         "experience_group": "Medium Slow",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": { "cut": [ 2, 3, 4, 5, 6 ], "flash": [ 2, 3 ] }
     },
     "yanma": {
         "base_id": 193,
@@ -3554,7 +4380,8 @@ export default {
         "color": "red",
         "experience_group": "Medium Fast",
         "generation": 2,
-        "evolution_ids": [ [ 469, 0 ] ]
+        "evolution_ids": [ [ 469, 0 ] ],
+        "hidden_moves": { "flash": [ 2, 3 ], "defog": [ 4 ] }
     },
     "wooper": {
         "base_id": 194,
@@ -3568,7 +4395,15 @@ export default {
         "color": "blue",
         "experience_group": "Medium Fast",
         "generation": 2,
-        "evolution_ids": [ [ 195, 0 ] ]
+        "evolution_ids": [ [ 195, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "wooper-paldea": {
         "base_id": 194,
@@ -3596,7 +4431,16 @@ export default {
         "shape": 10,
         "color": "blue",
         "experience_group": "Medium Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "espeon": {
         "base_id": 196,
@@ -3609,7 +4453,8 @@ export default {
         "shape": 5,
         "color": "purple",
         "experience_group": "Medium Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": { "cut": [ 2, 3, 4, 5, 6 ], "flash": [ 2, 3 ] }
     },
     "umbreon": {
         "base_id": 197,
@@ -3622,7 +4467,8 @@ export default {
         "shape": 5,
         "color": "black",
         "experience_group": "Medium Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": { "cut": [ 2, 3, 4, 5, 6 ], "flash": [ 2, 3 ] }
     },
     "murkrow": {
         "base_id": 198,
@@ -3636,7 +4482,8 @@ export default {
         "color": "black",
         "experience_group": "Medium Slow",
         "generation": 2,
-        "evolution_ids": [ [ 430, 0 ] ]
+        "evolution_ids": [ [ 430, 0 ] ],
+        "hidden_moves": { "fly": [ 2, 3, 4, 5, 6 ], "defog": [ 4 ] }
     },
     "slowking": {
         "base_id": 199,
@@ -3649,7 +4496,15 @@ export default {
         "shape": 10,
         "color": "pink",
         "experience_group": "Medium Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "whirlpool": [ 2, 4 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "slowking-galar": {
         "base_id": 199,
@@ -3677,7 +4532,8 @@ export default {
         "color": "gray",
         "experience_group": "Fast",
         "generation": 2,
-        "evolution_ids": [ [ 429, 0 ] ]
+        "evolution_ids": [ [ 429, 0 ] ],
+        "hidden_moves": { "flash": [ 2, 3 ] }
     },
     "unown": {
         "base_id": 201,
@@ -4123,7 +4979,12 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 2,
-        "evolution_ids": [ [ 981, 0 ] ]
+        "evolution_ids": [ [ 981, 0 ] ],
+        "hidden_moves": {
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "pineco": {
         "base_id": 204,
@@ -4137,7 +4998,8 @@ export default {
         "color": "gray",
         "experience_group": "Medium Fast",
         "generation": 2,
-        "evolution_ids": [ [ 205, 0 ] ]
+        "evolution_ids": [ [ 205, 0 ] ],
+        "hidden_moves": { "strength": [ 2, 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "forretress": {
         "base_id": 205,
@@ -4150,7 +5012,8 @@ export default {
         "shape": 1,
         "color": "purple",
         "experience_group": "Medium Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": { "strength": [ 2, 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "dunsparce": {
         "base_id": 206,
@@ -4164,7 +5027,8 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 2,
-        "evolution_ids": [ [ 982, 0 ], [ 982, 1 ] ]
+        "evolution_ids": [ [ 982, 0 ], [ 982, 1 ] ],
+        "hidden_moves": { "strength": [ 2, 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "gligar": {
         "base_id": 207,
@@ -4178,7 +5042,13 @@ export default {
         "color": "purple",
         "experience_group": "Medium Slow",
         "generation": 2,
-        "evolution_ids": [ [ 472, 0 ] ]
+        "evolution_ids": [ [ 472, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "steelix": {
         "base_id": 208,
@@ -4191,7 +5061,13 @@ export default {
         "shape": 13,
         "color": "gray",
         "experience_group": "Medium Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "steelix-mega": {
         "base_id": 208,
@@ -4207,7 +5083,8 @@ export default {
         "shape": 13,
         "color": "gray",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ], "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "snubbull": {
         "base_id": 209,
@@ -4222,7 +5099,8 @@ export default {
         "color": "pink",
         "experience_group": "Fast",
         "generation": 2,
-        "evolution_ids": [ [ 210, 0 ] ]
+        "evolution_ids": [ [ 210, 0 ] ],
+        "hidden_moves": { "strength": [ 2, 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "granbull": {
         "base_id": 210,
@@ -4236,7 +5114,12 @@ export default {
         "shape": 10,
         "color": "purple",
         "experience_group": "Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "qwilfish": {
         "base_id": 211,
@@ -4249,7 +5132,13 @@ export default {
         "shape": 3,
         "color": "gray",
         "experience_group": "Medium Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "qwilfish-hisui": {
         "base_id": 211,
@@ -4277,7 +5166,13 @@ export default {
         "shape": 6,
         "color": "red",
         "experience_group": "Medium Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "scizor-mega": {
         "base_id": 212,
@@ -4293,7 +5188,8 @@ export default {
         "shape": 6,
         "color": "red",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ], "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "shuckle": {
         "base_id": 213,
@@ -4306,7 +5202,12 @@ export default {
         "shape": 4,
         "color": "yellow",
         "experience_group": "Medium Slow",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "heracross": {
         "base_id": 214,
@@ -4319,7 +5220,12 @@ export default {
         "shape": 11,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "heracross-mega": {
         "base_id": 214,
@@ -4335,7 +5241,8 @@ export default {
         "shape": 11,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ], "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "sneasel": {
         "base_id": 215,
@@ -4349,7 +5256,14 @@ export default {
         "color": "black",
         "experience_group": "Medium Slow",
         "generation": 2,
-        "evolution_ids": [ [ 461, 0 ] ]
+        "evolution_ids": [ [ 461, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "sneasel-hisui": {
         "base_id": 215,
@@ -4378,7 +5292,12 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 2,
-        "evolution_ids": [ [ 217, 0 ] ]
+        "evolution_ids": [ [ 217, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "ursaring": {
         "base_id": 217,
@@ -4392,7 +5311,13 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 2,
-        "evolution_ids": [ [ 901, 0 ] ]
+        "evolution_ids": [ [ 901, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "slugma": {
         "base_id": 218,
@@ -4406,7 +5331,8 @@ export default {
         "color": "red",
         "experience_group": "Medium Fast",
         "generation": 2,
-        "evolution_ids": [ [ 219, 0 ] ]
+        "evolution_ids": [ [ 219, 0 ] ],
+        "hidden_moves": { "rock_smash": [ 3, 4, 6 ] }
     },
     "magcargo": {
         "base_id": 219,
@@ -4419,7 +5345,8 @@ export default {
         "shape": 13,
         "color": "red",
         "experience_group": "Medium Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": { "strength": [ 2, 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "swinub": {
         "base_id": 220,
@@ -4433,7 +5360,8 @@ export default {
         "color": "brown",
         "experience_group": "Slow",
         "generation": 2,
-        "evolution_ids": [ [ 221, 0 ] ]
+        "evolution_ids": [ [ 221, 0 ] ],
+        "hidden_moves": { "strength": [ 2, 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "piloswine": {
         "base_id": 221,
@@ -4447,7 +5375,8 @@ export default {
         "color": "brown",
         "experience_group": "Slow",
         "generation": 2,
-        "evolution_ids": [ [ 473, 0 ] ]
+        "evolution_ids": [ [ 473, 0 ] ],
+        "hidden_moves": { "strength": [ 2, 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "corsola": {
         "base_id": 222,
@@ -4460,7 +5389,13 @@ export default {
         "shape": 4,
         "color": "pink",
         "experience_group": "Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "corsola-galar": {
         "base_id": 222,
@@ -4489,7 +5424,13 @@ export default {
         "color": "gray",
         "experience_group": "Medium Fast",
         "generation": 2,
-        "evolution_ids": [ [ 224, 0 ] ]
+        "evolution_ids": [ [ 224, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "octillery": {
         "base_id": 224,
@@ -4502,7 +5443,13 @@ export default {
         "shape": 8,
         "color": "red",
         "experience_group": "Medium Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "delibird": {
         "base_id": 225,
@@ -4515,7 +5462,8 @@ export default {
         "shape": 12,
         "color": "red",
         "experience_group": "Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": { "fly": [ 2, 3, 4, 5, 6 ], "defog": [ 4 ] }
     },
     "mantine": {
         "base_id": 226,
@@ -4528,7 +5476,14 @@ export default {
         "shape": 12,
         "color": "purple",
         "experience_group": "Slow",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "skarmory": {
         "base_id": 227,
@@ -4541,7 +5496,13 @@ export default {
         "shape": 12,
         "color": "gray",
         "experience_group": "Slow",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "fly": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "skarmory-mega": {
         "base_id": 227,
@@ -4569,7 +5530,8 @@ export default {
         "color": "black",
         "experience_group": "Slow",
         "generation": 2,
-        "evolution_ids": [ [ 229, 0 ] ]
+        "evolution_ids": [ [ 229, 0 ] ],
+        "hidden_moves": { "rock_smash": [ 3, 4, 6 ] }
     },
     "houndoom": {
         "base_id": 229,
@@ -4582,7 +5544,8 @@ export default {
         "shape": 5,
         "color": "black",
         "experience_group": "Slow",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": { "strength": [ 2, 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "houndoom-mega": {
         "base_id": 229,
@@ -4598,7 +5561,8 @@ export default {
         "shape": 5,
         "color": "black",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "kingdra": {
         "base_id": 230,
@@ -4611,7 +5575,13 @@ export default {
         "shape": 9,
         "color": "blue",
         "experience_group": "Medium Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "phanpy": {
         "base_id": 231,
@@ -4625,7 +5595,8 @@ export default {
         "color": "blue",
         "experience_group": "Medium Fast",
         "generation": 2,
-        "evolution_ids": [ [ 232, 0 ] ]
+        "evolution_ids": [ [ 232, 0 ] ],
+        "hidden_moves": { "strength": [ 2, 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "donphan": {
         "base_id": 232,
@@ -4638,7 +5609,8 @@ export default {
         "shape": 5,
         "color": "gray",
         "experience_group": "Medium Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": { "strength": [ 2, 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "porygon2": {
         "base_id": 233,
@@ -4652,7 +5624,8 @@ export default {
         "color": "red",
         "experience_group": "Medium Fast",
         "generation": 2,
-        "evolution_ids": [ [ 474, 0 ] ]
+        "evolution_ids": [ [ 474, 0 ] ],
+        "hidden_moves": { "flash": [ 2, 3 ] }
     },
     "stantler": {
         "base_id": 234,
@@ -4666,7 +5639,8 @@ export default {
         "color": "brown",
         "experience_group": "Slow",
         "generation": 2,
-        "evolution_ids": [ [ 899, 0 ] ]
+        "evolution_ids": [ [ 899, 0 ] ],
+        "hidden_moves": { "flash": [ 2, 3 ] }
     },
     "smeargle": {
         "base_id": 235,
@@ -4694,7 +5668,8 @@ export default {
         "color": "purple",
         "experience_group": "Medium Fast",
         "generation": 2,
-        "evolution_ids": [ [ 106, 0 ], [ 107, 0 ], [ 237, 0 ] ]
+        "evolution_ids": [ [ 106, 0 ], [ 107, 0 ], [ 237, 0 ] ],
+        "hidden_moves": { "strength": [ 2, 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "hitmontop": {
         "base_id": 237,
@@ -4707,7 +5682,8 @@ export default {
         "shape": 10,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": { "strength": [ 2, 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "smoochum": {
         "base_id": 238,
@@ -4722,7 +5698,8 @@ export default {
         "color": "pink",
         "experience_group": "Medium Fast",
         "generation": 2,
-        "evolution_ids": [ [ 124, 0 ] ]
+        "evolution_ids": [ [ 124, 0 ] ],
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "elekid": {
         "base_id": 239,
@@ -4737,7 +5714,8 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 2,
-        "evolution_ids": [ [ 125, 0 ] ]
+        "evolution_ids": [ [ 125, 0 ] ],
+        "hidden_moves": { "flash": [ 2, 3 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "magby": {
         "base_id": 240,
@@ -4752,7 +5730,8 @@ export default {
         "color": "red",
         "experience_group": "Medium Fast",
         "generation": 2,
-        "evolution_ids": [ [ 126, 0 ] ]
+        "evolution_ids": [ [ 126, 0 ] ],
+        "hidden_moves": { "rock_smash": [ 3, 4, 6 ] }
     },
     "miltank": {
         "base_id": 241,
@@ -4765,7 +5744,13 @@ export default {
         "shape": 10,
         "color": "pink",
         "experience_group": "Slow",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "blissey": {
         "base_id": 242,
@@ -4778,7 +5763,13 @@ export default {
         "shape": 11,
         "color": "pink",
         "experience_group": "Fast",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "raikou": {
         "base_id": 243,
@@ -4792,7 +5783,14 @@ export default {
         "shape": 5,
         "color": "yellow",
         "experience_group": "Slow",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "entei": {
         "base_id": 244,
@@ -4806,7 +5804,14 @@ export default {
         "shape": 5,
         "color": "brown",
         "experience_group": "Slow",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "suicune": {
         "base_id": 245,
@@ -4820,7 +5825,16 @@ export default {
         "shape": 5,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "larvitar": {
         "base_id": 246,
@@ -4834,7 +5848,8 @@ export default {
         "color": "green",
         "experience_group": "Slow",
         "generation": 2,
-        "evolution_ids": [ [ 247, 0 ] ]
+        "evolution_ids": [ [ 247, 0 ] ],
+        "hidden_moves": { "rock_smash": [ 3, 4, 6 ] }
     },
     "pupitar": {
         "base_id": 247,
@@ -4848,7 +5863,8 @@ export default {
         "color": "gray",
         "experience_group": "Slow",
         "generation": 2,
-        "evolution_ids": [ [ 248, 0 ] ]
+        "evolution_ids": [ [ 248, 0 ] ],
+        "hidden_moves": { "rock_smash": [ 3, 4, 6 ] }
     },
     "tyranitar": {
         "base_id": 248,
@@ -4861,7 +5877,15 @@ export default {
         "shape": 10,
         "color": "green",
         "experience_group": "Slow",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "cut": [ 2, 3, 4, 5, 6 ],
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "tyranitar-mega": {
         "base_id": 248,
@@ -4877,7 +5901,13 @@ export default {
         "shape": 10,
         "color": "green",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": {
+            "cut": [ 6 ],
+            "surf": [ 6 ],
+            "strength": [ 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "lugia": {
         "base_id": 249,
@@ -4891,7 +5921,17 @@ export default {
         "shape": 12,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "fly": [ 2, 3, 4, 5, 6 ],
+            "surf": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "whirlpool": [ 2, 4 ],
+            "waterfall": [ 2, 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "ho-oh": {
         "base_id": 250,
@@ -4905,7 +5945,14 @@ export default {
         "shape": 12,
         "color": "red",
         "experience_group": "Slow",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": {
+            "fly": [ 2, 3, 4, 5, 6 ],
+            "strength": [ 2, 3, 4, 5, 6 ],
+            "flash": [ 2, 3 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "celebi": {
         "base_id": 251,
@@ -4919,7 +5966,8 @@ export default {
         "shape": 11,
         "color": "green",
         "experience_group": "Medium Slow",
-        "generation": 2
+        "generation": 2,
+        "hidden_moves": { "cut": [ 3, 4, 5, 6 ], "flash": [ 2, 3 ] }
     },
     "treecko": {
         "base_id": 252,
@@ -4933,7 +5981,13 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 3,
-        "evolution_ids": [ [ 253, 0 ] ]
+        "evolution_ids": [ [ 253, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "grovyle": {
         "base_id": 253,
@@ -4947,7 +6001,13 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 3,
-        "evolution_ids": [ [ 254, 0 ] ]
+        "evolution_ids": [ [ 254, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "sceptile": {
         "base_id": 254,
@@ -4960,7 +6020,14 @@ export default {
         "shape": 10,
         "color": "green",
         "experience_group": "Medium Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "sceptile-mega": {
         "base_id": 254,
@@ -4976,7 +6043,8 @@ export default {
         "shape": 10,
         "color": "green",
         "experience_group": "Medium Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ], "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "torchic": {
         "base_id": 255,
@@ -4990,7 +6058,12 @@ export default {
         "color": "red",
         "experience_group": "Medium Slow",
         "generation": 3,
-        "evolution_ids": [ [ 256, 0 ] ]
+        "evolution_ids": [ [ 256, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "combusken": {
         "base_id": 256,
@@ -5004,7 +6077,12 @@ export default {
         "color": "red",
         "experience_group": "Medium Slow",
         "generation": 3,
-        "evolution_ids": [ [ 257, 0 ] ]
+        "evolution_ids": [ [ 257, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "blaziken": {
         "base_id": 257,
@@ -5017,7 +6095,13 @@ export default {
         "shape": 10,
         "color": "red",
         "experience_group": "Medium Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "blaziken-mega": {
         "base_id": 257,
@@ -5033,7 +6117,8 @@ export default {
         "shape": 10,
         "color": "red",
         "experience_group": "Medium Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ], "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "mudkip": {
         "base_id": 258,
@@ -5047,7 +6132,15 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 3,
-        "evolution_ids": [ [ 259, 0 ] ]
+        "evolution_ids": [ [ 259, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "marshtomp": {
         "base_id": 259,
@@ -5061,7 +6154,15 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 3,
-        "evolution_ids": [ [ 260, 0 ] ]
+        "evolution_ids": [ [ 260, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "swampert": {
         "base_id": 260,
@@ -5074,7 +6175,16 @@ export default {
         "shape": 10,
         "color": "blue",
         "experience_group": "Medium Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "swampert-mega": {
         "base_id": 260,
@@ -5090,7 +6200,14 @@ export default {
         "shape": 10,
         "color": "blue",
         "experience_group": "Medium Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": {
+            "surf": [ 6 ],
+            "strength": [ 6 ],
+            "waterfall": [ 6 ],
+            "rock_smash": [ 6 ],
+            "dive": [ 6 ]
+        }
     },
     "poochyena": {
         "base_id": 261,
@@ -5104,7 +6221,8 @@ export default {
         "color": "gray",
         "experience_group": "Medium Fast",
         "generation": 3,
-        "evolution_ids": [ [ 262, 0 ] ]
+        "evolution_ids": [ [ 262, 0 ] ],
+        "hidden_moves": { "rock_smash": [ 3, 4, 6 ] }
     },
     "mightyena": {
         "base_id": 262,
@@ -5117,7 +6235,8 @@ export default {
         "shape": 5,
         "color": "gray",
         "experience_group": "Medium Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "strength": [ 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "zigzagoon": {
         "base_id": 263,
@@ -5131,7 +6250,13 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 3,
-        "evolution_ids": [ [ 264, 0 ] ]
+        "evolution_ids": [ [ 264, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "surf": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "zigzagoon-galar": {
         "base_id": 263,
@@ -5159,7 +6284,14 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Medium Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "surf": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "linoone-galar": {
         "base_id": 264,
@@ -5215,7 +6347,8 @@ export default {
         "shape": 6,
         "color": "yellow",
         "experience_group": "Medium Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "flash": [ 3 ], "defog": [ 4 ] }
     },
     "cascoon": {
         "base_id": 268,
@@ -5242,7 +6375,8 @@ export default {
         "shape": 6,
         "color": "green",
         "experience_group": "Medium Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "flash": [ 3 ], "defog": [ 4 ] }
     },
     "lotad": {
         "base_id": 270,
@@ -5256,7 +6390,8 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 3,
-        "evolution_ids": [ [ 271, 0 ] ]
+        "evolution_ids": [ [ 271, 0 ] ],
+        "hidden_moves": { "surf": [ 3, 4, 5, 6 ], "flash": [ 3 ], "whirlpool": [ 4 ] }
     },
     "lombre": {
         "base_id": 271,
@@ -5270,7 +6405,16 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 3,
-        "evolution_ids": [ [ 272, 0 ] ]
+        "evolution_ids": [ [ 272, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "ludicolo": {
         "base_id": 272,
@@ -5283,7 +6427,17 @@ export default {
         "shape": 11,
         "color": "green",
         "experience_group": "Medium Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "seedot": {
         "base_id": 273,
@@ -5297,7 +6451,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Slow",
         "generation": 3,
-        "evolution_ids": [ [ 274, 0 ] ]
+        "evolution_ids": [ [ 274, 0 ] ],
+        "hidden_moves": { "flash": [ 3 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "nuzleaf": {
         "base_id": 274,
@@ -5311,7 +6466,13 @@ export default {
         "color": "brown",
         "experience_group": "Medium Slow",
         "generation": 3,
-        "evolution_ids": [ [ 275, 0 ] ]
+        "evolution_ids": [ [ 275, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "shiftry": {
         "base_id": 275,
@@ -5324,7 +6485,14 @@ export default {
         "shape": 11,
         "color": "brown",
         "experience_group": "Medium Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "taillow": {
         "base_id": 276,
@@ -5338,7 +6506,8 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 3,
-        "evolution_ids": [ [ 277, 0 ] ]
+        "evolution_ids": [ [ 277, 0 ] ],
+        "hidden_moves": { "fly": [ 3, 4, 5, 6 ], "defog": [ 4 ] }
     },
     "swellow": {
         "base_id": 277,
@@ -5351,7 +6520,8 @@ export default {
         "shape": 12,
         "color": "blue",
         "experience_group": "Medium Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "fly": [ 3, 4, 5, 6 ], "defog": [ 4 ] }
     },
     "wingull": {
         "base_id": 278,
@@ -5365,7 +6535,8 @@ export default {
         "color": "white",
         "experience_group": "Medium Fast",
         "generation": 3,
-        "evolution_ids": [ [ 279, 0 ] ]
+        "evolution_ids": [ [ 279, 0 ] ],
+        "hidden_moves": { "fly": [ 3, 4, 5, 6 ], "defog": [ 4 ] }
     },
     "pelipper": {
         "base_id": 279,
@@ -5378,7 +6549,13 @@ export default {
         "shape": 12,
         "color": "yellow",
         "experience_group": "Medium Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "fly": [ 3, 4, 5, 6 ],
+            "surf": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "defog": [ 4 ]
+        }
     },
     "ralts": {
         "base_id": 280,
@@ -5393,7 +6570,8 @@ export default {
         "color": "white",
         "experience_group": "Slow",
         "generation": 3,
-        "evolution_ids": [ [ 281, 0 ] ]
+        "evolution_ids": [ [ 281, 0 ] ],
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "kirlia": {
         "base_id": 281,
@@ -5408,7 +6586,8 @@ export default {
         "color": "white",
         "experience_group": "Slow",
         "generation": 3,
-        "evolution_ids": [ [ 282, 0 ], [ 475, 0 ] ]
+        "evolution_ids": [ [ 282, 0 ], [ 475, 0 ] ],
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "gardevoir": {
         "base_id": 282,
@@ -5422,7 +6601,8 @@ export default {
         "shape": 11,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "gardevoir-mega": {
         "base_id": 282,
@@ -5452,7 +6632,8 @@ export default {
         "color": "blue",
         "experience_group": "Medium Fast",
         "generation": 3,
-        "evolution_ids": [ [ 284, 0 ] ]
+        "evolution_ids": [ [ 284, 0 ] ],
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "masquerain": {
         "base_id": 284,
@@ -5465,7 +6646,8 @@ export default {
         "shape": 6,
         "color": "blue",
         "experience_group": "Medium Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "flash": [ 3 ], "defog": [ 4 ] }
     },
     "shroomish": {
         "base_id": 285,
@@ -5479,7 +6661,8 @@ export default {
         "color": "brown",
         "experience_group": "Fluctuating",
         "generation": 3,
-        "evolution_ids": [ [ 286, 0 ] ]
+        "evolution_ids": [ [ 286, 0 ] ],
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "breloom": {
         "base_id": 286,
@@ -5492,7 +6675,13 @@ export default {
         "shape": 10,
         "color": "green",
         "experience_group": "Fluctuating",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "slakoth": {
         "base_id": 287,
@@ -5506,7 +6695,12 @@ export default {
         "color": "brown",
         "experience_group": "Slow",
         "generation": 3,
-        "evolution_ids": [ [ 288, 0 ] ]
+        "evolution_ids": [ [ 288, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "vigoroth": {
         "base_id": 288,
@@ -5520,7 +6714,13 @@ export default {
         "color": "white",
         "experience_group": "Slow",
         "generation": 3,
-        "evolution_ids": [ [ 289, 0 ] ]
+        "evolution_ids": [ [ 289, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "slaking": {
         "base_id": 289,
@@ -5533,7 +6733,13 @@ export default {
         "shape": 11,
         "color": "brown",
         "experience_group": "Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "nincada": {
         "base_id": 290,
@@ -5547,7 +6753,8 @@ export default {
         "color": "gray",
         "experience_group": "Erratic",
         "generation": 3,
-        "evolution_ids": [ [ 291, 0 ], [ 292, 0 ] ]
+        "evolution_ids": [ [ 291, 0 ], [ 292, 0 ] ],
+        "hidden_moves": { "cut": [ 3, 4, 5, 6 ], "flash": [ 3 ] }
     },
     "ninjask": {
         "base_id": 291,
@@ -5560,7 +6767,8 @@ export default {
         "shape": 6,
         "color": "yellow",
         "experience_group": "Erratic",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "cut": [ 3, 4, 5, 6 ], "flash": [ 3 ], "defog": [ 4 ] }
     },
     "shedinja": {
         "base_id": 292,
@@ -5573,7 +6781,8 @@ export default {
         "shape": 9,
         "color": "brown",
         "experience_group": "Erratic",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "cut": [ 3, 4, 5, 6 ], "flash": [ 3 ] }
     },
     "whismur": {
         "base_id": 293,
@@ -5601,7 +6810,8 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 3,
-        "evolution_ids": [ [ 295, 0 ] ]
+        "evolution_ids": [ [ 295, 0 ] ],
+        "hidden_moves": { "strength": [ 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "exploud": {
         "base_id": 295,
@@ -5614,7 +6824,14 @@ export default {
         "shape": 10,
         "color": "blue",
         "experience_group": "Medium Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "makuhita": {
         "base_id": 296,
@@ -5628,7 +6845,14 @@ export default {
         "color": "yellow",
         "experience_group": "Fluctuating",
         "generation": 3,
-        "evolution_ids": [ [ 297, 0 ] ]
+        "evolution_ids": [ [ 297, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "hariyama": {
         "base_id": 297,
@@ -5641,7 +6865,14 @@ export default {
         "shape": 11,
         "color": "brown",
         "experience_group": "Fluctuating",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "azurill": {
         "base_id": 298,
@@ -5657,7 +6888,12 @@ export default {
         "color": "blue",
         "experience_group": "Fast",
         "generation": 3,
-        "evolution_ids": [ [ 183, 0 ] ]
+        "evolution_ids": [ [ 183, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ]
+        }
     },
     "nosepass": {
         "base_id": 299,
@@ -5671,7 +6907,8 @@ export default {
         "color": "gray",
         "experience_group": "Medium Fast",
         "generation": 3,
-        "evolution_ids": [ [ 476, 0 ] ]
+        "evolution_ids": [ [ 476, 0 ] ],
+        "hidden_moves": { "strength": [ 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "skitty": {
         "base_id": 300,
@@ -5685,7 +6922,8 @@ export default {
         "color": "pink",
         "experience_group": "Fast",
         "generation": 3,
-        "evolution_ids": [ [ 301, 0 ] ]
+        "evolution_ids": [ [ 301, 0 ] ],
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "delcatty": {
         "base_id": 301,
@@ -5698,7 +6936,12 @@ export default {
         "shape": 5,
         "color": "purple",
         "experience_group": "Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "sableye": {
         "base_id": 302,
@@ -5711,7 +6954,12 @@ export default {
         "shape": 11,
         "color": "purple",
         "experience_group": "Medium Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "sableye-mega": {
         "base_id": 302,
@@ -5727,7 +6975,8 @@ export default {
         "shape": 11,
         "color": "purple",
         "experience_group": "Medium Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ], "rock_smash": [ 6 ] }
     },
     "mawile": {
         "base_id": 303,
@@ -5741,7 +6990,8 @@ export default {
         "shape": 11,
         "color": "black",
         "experience_group": "Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "strength": [ 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "mawile-mega": {
         "base_id": 303,
@@ -5757,7 +7007,8 @@ export default {
         "shape": 11,
         "color": "black",
         "experience_group": "Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "aron": {
         "base_id": 304,
@@ -5771,7 +7022,12 @@ export default {
         "color": "gray",
         "experience_group": "Slow",
         "generation": 3,
-        "evolution_ids": [ [ 305, 0 ] ]
+        "evolution_ids": [ [ 305, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "lairon": {
         "base_id": 305,
@@ -5785,7 +7041,12 @@ export default {
         "color": "gray",
         "experience_group": "Slow",
         "generation": 3,
-        "evolution_ids": [ [ 306, 0 ] ]
+        "evolution_ids": [ [ 306, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "aggron": {
         "base_id": 306,
@@ -5798,7 +7059,15 @@ export default {
         "shape": 10,
         "color": "gray",
         "experience_group": "Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "surf": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "aggron-mega": {
         "base_id": 306,
@@ -5814,7 +7083,13 @@ export default {
         "shape": 10,
         "color": "gray",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": {
+            "cut": [ 6 ],
+            "surf": [ 6 ],
+            "strength": [ 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "meditite": {
         "base_id": 307,
@@ -5828,7 +7103,12 @@ export default {
         "color": "blue",
         "experience_group": "Medium Fast",
         "generation": 3,
-        "evolution_ids": [ [ 308, 0 ] ]
+        "evolution_ids": [ [ 308, 0 ] ],
+        "hidden_moves": {
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "medicham": {
         "base_id": 308,
@@ -5841,7 +7121,12 @@ export default {
         "shape": 11,
         "color": "red",
         "experience_group": "Medium Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "medicham-mega": {
         "base_id": 308,
@@ -5857,7 +7142,8 @@ export default {
         "shape": 11,
         "color": "red",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "electrike": {
         "base_id": 309,
@@ -5871,7 +7157,8 @@ export default {
         "color": "green",
         "experience_group": "Slow",
         "generation": 3,
-        "evolution_ids": [ [ 310, 0 ] ]
+        "evolution_ids": [ [ 310, 0 ] ],
+        "hidden_moves": { "strength": [ 3, 4, 5, 6 ], "flash": [ 3 ] }
     },
     "manectric": {
         "base_id": 310,
@@ -5884,7 +7171,8 @@ export default {
         "shape": 5,
         "color": "yellow",
         "experience_group": "Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "strength": [ 3, 4, 5, 6 ], "flash": [ 3 ] }
     },
     "manectric-mega": {
         "base_id": 310,
@@ -5900,7 +7188,8 @@ export default {
         "shape": 5,
         "color": "yellow",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "strength": [ 6 ] }
     },
     "plusle": {
         "base_id": 311,
@@ -5913,7 +7202,8 @@ export default {
         "shape": 10,
         "color": "yellow",
         "experience_group": "Medium Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "minun": {
         "base_id": 312,
@@ -5926,7 +7216,8 @@ export default {
         "shape": 10,
         "color": "yellow",
         "experience_group": "Medium Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "volbeat": {
         "base_id": 313,
@@ -5939,7 +7230,8 @@ export default {
         "shape": 10,
         "color": "gray",
         "experience_group": "Erratic",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "illumise": {
         "base_id": 314,
@@ -5952,7 +7244,8 @@ export default {
         "shape": 11,
         "color": "purple",
         "experience_group": "Fluctuating",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "roselia": {
         "base_id": 315,
@@ -5966,7 +7259,8 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 3,
-        "evolution_ids": [ [ 407, 0 ] ]
+        "evolution_ids": [ [ 407, 0 ] ],
+        "hidden_moves": { "cut": [ 3, 4, 5, 6 ], "flash": [ 3 ] }
     },
     "gulpin": {
         "base_id": 316,
@@ -5980,7 +7274,8 @@ export default {
         "color": "green",
         "experience_group": "Fluctuating",
         "generation": 3,
-        "evolution_ids": [ [ 317, 0 ] ]
+        "evolution_ids": [ [ 317, 0 ] ],
+        "hidden_moves": { "strength": [ 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "swalot": {
         "base_id": 317,
@@ -5993,7 +7288,8 @@ export default {
         "shape": 14,
         "color": "purple",
         "experience_group": "Fluctuating",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "strength": [ 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "carvanha": {
         "base_id": 318,
@@ -6007,7 +7303,13 @@ export default {
         "color": "red",
         "experience_group": "Slow",
         "generation": 3,
-        "evolution_ids": [ [ 319, 0 ] ]
+        "evolution_ids": [ [ 319, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "sharpedo": {
         "base_id": 319,
@@ -6020,7 +7322,15 @@ export default {
         "shape": 3,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "sharpedo-mega": {
         "base_id": 319,
@@ -6036,7 +7346,14 @@ export default {
         "shape": 3,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": {
+            "surf": [ 6 ],
+            "strength": [ 6 ],
+            "waterfall": [ 6 ],
+            "rock_smash": [ 6 ],
+            "dive": [ 6 ]
+        }
     },
     "wailmer": {
         "base_id": 320,
@@ -6050,7 +7367,15 @@ export default {
         "color": "blue",
         "experience_group": "Fluctuating",
         "generation": 3,
-        "evolution_ids": [ [ 321, 0 ] ]
+        "evolution_ids": [ [ 321, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "wailord": {
         "base_id": 321,
@@ -6063,7 +7388,15 @@ export default {
         "shape": 3,
         "color": "blue",
         "experience_group": "Fluctuating",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "numel": {
         "base_id": 322,
@@ -6077,7 +7410,8 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 3,
-        "evolution_ids": [ [ 323, 0 ] ]
+        "evolution_ids": [ [ 323, 0 ] ],
+        "hidden_moves": { "strength": [ 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "camerupt": {
         "base_id": 323,
@@ -6090,7 +7424,8 @@ export default {
         "shape": 5,
         "color": "red",
         "experience_group": "Medium Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "strength": [ 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "camerupt-mega": {
         "base_id": 323,
@@ -6106,7 +7441,8 @@ export default {
         "shape": 5,
         "color": "red",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "torkoal": {
         "base_id": 324,
@@ -6119,7 +7455,8 @@ export default {
         "shape": 5,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "strength": [ 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "spoink": {
         "base_id": 325,
@@ -6133,7 +7470,8 @@ export default {
         "color": "black",
         "experience_group": "Fast",
         "generation": 3,
-        "evolution_ids": [ [ 326, 0 ] ]
+        "evolution_ids": [ [ 326, 0 ] ],
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "grumpig": {
         "base_id": 326,
@@ -6146,7 +7484,8 @@ export default {
         "shape": 10,
         "color": "purple",
         "experience_group": "Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "spinda": {
         "base_id": 327,
@@ -6159,7 +7498,12 @@ export default {
         "shape": 10,
         "color": "brown",
         "experience_group": "Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "trapinch": {
         "base_id": 328,
@@ -6173,7 +7517,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Slow",
         "generation": 3,
-        "evolution_ids": [ [ 329, 0 ] ]
+        "evolution_ids": [ [ 329, 0 ] ],
+        "hidden_moves": { "strength": [ 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "vibrava": {
         "base_id": 329,
@@ -6187,7 +7532,13 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 3,
-        "evolution_ids": [ [ 330, 0 ] ]
+        "evolution_ids": [ [ 330, 0 ] ],
+        "hidden_moves": {
+            "fly": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "flygon": {
         "base_id": 330,
@@ -6200,7 +7551,13 @@ export default {
         "shape": 12,
         "color": "green",
         "experience_group": "Medium Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "fly": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "cacnea": {
         "base_id": 331,
@@ -6214,7 +7571,8 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 3,
-        "evolution_ids": [ [ 332, 0 ] ]
+        "evolution_ids": [ [ 332, 0 ] ],
+        "hidden_moves": { "cut": [ 3, 4, 5, 6 ], "flash": [ 3 ] }
     },
     "cacturne": {
         "base_id": 332,
@@ -6227,7 +7585,12 @@ export default {
         "shape": 11,
         "color": "green",
         "experience_group": "Medium Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ]
+        }
     },
     "swablu": {
         "base_id": 333,
@@ -6241,7 +7604,8 @@ export default {
         "color": "blue",
         "experience_group": "Erratic",
         "generation": 3,
-        "evolution_ids": [ [ 334, 0 ] ]
+        "evolution_ids": [ [ 334, 0 ] ],
+        "hidden_moves": { "fly": [ 3, 4, 5, 6 ] }
     },
     "altaria": {
         "base_id": 334,
@@ -6254,7 +7618,8 @@ export default {
         "shape": 12,
         "color": "blue",
         "experience_group": "Erratic",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "fly": [ 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "altaria-mega": {
         "base_id": 334,
@@ -6270,7 +7635,8 @@ export default {
         "shape": 12,
         "color": "blue",
         "experience_group": "Erratic",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "fly": [ 6 ], "rock_smash": [ 6 ] }
     },
     "zangoose": {
         "base_id": 335,
@@ -6283,7 +7649,12 @@ export default {
         "shape": 10,
         "color": "white",
         "experience_group": "Erratic",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "strength": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "seviper": {
         "base_id": 336,
@@ -6296,7 +7667,8 @@ export default {
         "shape": 13,
         "color": "black",
         "experience_group": "Fluctuating",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "strength": [ 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "lunatone": {
         "base_id": 337,
@@ -6309,7 +7681,8 @@ export default {
         "shape": 1,
         "color": "yellow",
         "experience_group": "Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "solrock": {
         "base_id": 338,
@@ -6322,7 +7695,8 @@ export default {
         "shape": 1,
         "color": "red",
         "experience_group": "Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "barboach": {
         "base_id": 339,
@@ -6336,7 +7710,13 @@ export default {
         "color": "gray",
         "experience_group": "Medium Fast",
         "generation": 3,
-        "evolution_ids": [ [ 340, 0 ] ]
+        "evolution_ids": [ [ 340, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "whiscash": {
         "base_id": 340,
@@ -6349,7 +7729,15 @@ export default {
         "shape": 3,
         "color": "blue",
         "experience_group": "Medium Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "corphish": {
         "base_id": 341,
@@ -6363,7 +7751,15 @@ export default {
         "color": "red",
         "experience_group": "Fluctuating",
         "generation": 3,
-        "evolution_ids": [ [ 342, 0 ] ]
+        "evolution_ids": [ [ 342, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "surf": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "crawdaunt": {
         "base_id": 342,
@@ -6376,7 +7772,16 @@ export default {
         "shape": 4,
         "color": "red",
         "experience_group": "Fluctuating",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "surf": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "baltoy": {
         "base_id": 343,
@@ -6390,7 +7795,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 3,
-        "evolution_ids": [ [ 344, 0 ] ]
+        "evolution_ids": [ [ 344, 0 ] ],
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "claydol": {
         "base_id": 344,
@@ -6403,7 +7809,12 @@ export default {
         "shape": 14,
         "color": "black",
         "experience_group": "Medium Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "lileep": {
         "base_id": 345,
@@ -6430,7 +7841,8 @@ export default {
         "shape": 9,
         "color": "green",
         "experience_group": "Erratic",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "strength": [ 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "anorith": {
         "base_id": 347,
@@ -6444,7 +7856,8 @@ export default {
         "color": "gray",
         "experience_group": "Erratic",
         "generation": 3,
-        "evolution_ids": [ [ 348, 0 ] ]
+        "evolution_ids": [ [ 348, 0 ] ],
+        "hidden_moves": { "cut": [ 3, 4, 5, 6 ], "rock_smash": [ 3, 4, 6 ] }
     },
     "armaldo": {
         "base_id": 348,
@@ -6457,7 +7870,12 @@ export default {
         "shape": 10,
         "color": "gray",
         "experience_group": "Erratic",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "feebas": {
         "base_id": 349,
@@ -6471,7 +7889,13 @@ export default {
         "color": "brown",
         "experience_group": "Erratic",
         "generation": 3,
-        "evolution_ids": [ [ 350, 0 ] ]
+        "evolution_ids": [ [ 350, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "milotic": {
         "base_id": 350,
@@ -6484,7 +7908,13 @@ export default {
         "shape": 13,
         "color": "pink",
         "experience_group": "Erratic",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "castform": {
         "base_id": 351,
@@ -6498,7 +7928,8 @@ export default {
         "shape": 1,
         "color": "gray",
         "experience_group": "Medium Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "castform-sunny": {
         "base_id": 351,
@@ -6556,7 +7987,13 @@ export default {
         "shape": 10,
         "color": "green",
         "experience_group": "Medium Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "shuppet": {
         "base_id": 353,
@@ -6570,7 +8007,8 @@ export default {
         "color": "black",
         "experience_group": "Fast",
         "generation": 3,
-        "evolution_ids": [ [ 354, 0 ] ]
+        "evolution_ids": [ [ 354, 0 ] ],
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "banette": {
         "base_id": 354,
@@ -6583,7 +8021,8 @@ export default {
         "shape": 10,
         "color": "black",
         "experience_group": "Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "banette-mega": {
         "base_id": 354,
@@ -6613,7 +8052,8 @@ export default {
         "color": "black",
         "experience_group": "Fast",
         "generation": 3,
-        "evolution_ids": [ [ 356, 0 ] ]
+        "evolution_ids": [ [ 356, 0 ] ],
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "dusclops": {
         "base_id": 356,
@@ -6627,7 +8067,12 @@ export default {
         "color": "black",
         "experience_group": "Fast",
         "generation": 3,
-        "evolution_ids": [ [ 477, 0 ] ]
+        "evolution_ids": [ [ 477, 0 ] ],
+        "hidden_moves": {
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "tropius": {
         "base_id": 357,
@@ -6640,7 +8085,15 @@ export default {
         "shape": 5,
         "color": "green",
         "experience_group": "Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "fly": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "chimecho": {
         "base_id": 358,
@@ -6653,7 +8106,8 @@ export default {
         "shape": 14,
         "color": "blue",
         "experience_group": "Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "chimecho-mega": {
         "base_id": 358,
@@ -6680,7 +8134,13 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Medium Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "absol-mega": {
         "base_id": 359,
@@ -6696,7 +8156,8 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Medium Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ], "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "absol-mega-z": {
         "base_id": 359,
@@ -6739,7 +8200,8 @@ export default {
         "color": "gray",
         "experience_group": "Medium Fast",
         "generation": 3,
-        "evolution_ids": [ [ 362, 0 ], [ 478, 0 ] ]
+        "evolution_ids": [ [ 362, 0 ], [ 478, 0 ] ],
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "glalie": {
         "base_id": 362,
@@ -6752,7 +8214,8 @@ export default {
         "shape": 1,
         "color": "gray",
         "experience_group": "Medium Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "glalie-mega": {
         "base_id": 362,
@@ -6782,7 +8245,15 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 3,
-        "evolution_ids": [ [ 364, 0 ] ]
+        "evolution_ids": [ [ 364, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "sealeo": {
         "base_id": 364,
@@ -6796,7 +8267,15 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 3,
-        "evolution_ids": [ [ 365, 0 ] ]
+        "evolution_ids": [ [ 365, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "walrein": {
         "base_id": 365,
@@ -6809,7 +8288,15 @@ export default {
         "shape": 5,
         "color": "blue",
         "experience_group": "Medium Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "clamperl": {
         "base_id": 366,
@@ -6823,7 +8310,13 @@ export default {
         "color": "blue",
         "experience_group": "Erratic",
         "generation": 3,
-        "evolution_ids": [ [ 367, 0 ], [ 368, 0 ] ]
+        "evolution_ids": [ [ 367, 0 ], [ 368, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "huntail": {
         "base_id": 367,
@@ -6836,7 +8329,13 @@ export default {
         "shape": 13,
         "color": "blue",
         "experience_group": "Erratic",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "gorebyss": {
         "base_id": 368,
@@ -6849,7 +8348,13 @@ export default {
         "shape": 13,
         "color": "pink",
         "experience_group": "Erratic",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "relicanth": {
         "base_id": 369,
@@ -6862,7 +8367,14 @@ export default {
         "shape": 3,
         "color": "gray",
         "experience_group": "Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "luvdisc": {
         "base_id": 370,
@@ -6875,7 +8387,13 @@ export default {
         "shape": 3,
         "color": "pink",
         "experience_group": "Fast",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "bagon": {
         "base_id": 371,
@@ -6889,7 +8407,12 @@ export default {
         "color": "blue",
         "experience_group": "Slow",
         "generation": 3,
-        "evolution_ids": [ [ 372, 0 ] ]
+        "evolution_ids": [ [ 372, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "shelgon": {
         "base_id": 372,
@@ -6903,7 +8426,12 @@ export default {
         "color": "white",
         "experience_group": "Slow",
         "generation": 3,
-        "evolution_ids": [ [ 373, 0 ] ]
+        "evolution_ids": [ [ 373, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "salamence": {
         "base_id": 373,
@@ -6916,7 +8444,14 @@ export default {
         "shape": 5,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "fly": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "salamence-mega": {
         "base_id": 373,
@@ -6932,7 +8467,13 @@ export default {
         "shape": 5,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": {
+            "cut": [ 6 ],
+            "fly": [ 6 ],
+            "strength": [ 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "beldum": {
         "base_id": 374,
@@ -6960,7 +8501,13 @@ export default {
         "color": "blue",
         "experience_group": "Slow",
         "generation": 3,
-        "evolution_ids": [ [ 376, 0 ] ]
+        "evolution_ids": [ [ 376, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "metagross": {
         "base_id": 376,
@@ -6973,7 +8520,13 @@ export default {
         "shape": 7,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "metagross-mega": {
         "base_id": 376,
@@ -6989,7 +8542,8 @@ export default {
         "shape": 7,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ], "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "regirock": {
         "base_id": 377,
@@ -7003,7 +8557,12 @@ export default {
         "shape": 11,
         "color": "brown",
         "experience_group": "Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "strength": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "regice": {
         "base_id": 378,
@@ -7017,7 +8576,12 @@ export default {
         "shape": 11,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "strength": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "registeel": {
         "base_id": 379,
@@ -7031,7 +8595,12 @@ export default {
         "shape": 11,
         "color": "gray",
         "experience_group": "Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "strength": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "latias": {
         "base_id": 380,
@@ -7045,7 +8614,17 @@ export default {
         "shape": 12,
         "color": "red",
         "experience_group": "Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "fly": [ 3, 4, 5, 6 ],
+            "surf": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "latias-mega": {
         "base_id": 380,
@@ -7062,7 +8641,14 @@ export default {
         "shape": 12,
         "color": "purple",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": {
+            "cut": [ 6 ],
+            "fly": [ 6 ],
+            "surf": [ 6 ],
+            "waterfall": [ 6 ],
+            "dive": [ 6 ]
+        }
     },
     "latios": {
         "base_id": 381,
@@ -7076,7 +8662,17 @@ export default {
         "shape": 12,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "fly": [ 3, 4, 5, 6 ],
+            "surf": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "dive": [ 3, 5, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "latios-mega": {
         "base_id": 381,
@@ -7093,7 +8689,14 @@ export default {
         "shape": 12,
         "color": "purple",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": {
+            "cut": [ 6 ],
+            "fly": [ 6 ],
+            "surf": [ 6 ],
+            "waterfall": [ 6 ],
+            "dive": [ 6 ]
+        }
     },
     "kyogre": {
         "base_id": 382,
@@ -7107,7 +8710,15 @@ export default {
         "shape": 3,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "surf": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "kyogre-primal": {
         "base_id": 382,
@@ -7137,7 +8748,13 @@ export default {
         "shape": 10,
         "color": "red",
         "experience_group": "Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "groudon-primal": {
         "base_id": 383,
@@ -7167,7 +8784,16 @@ export default {
         "shape": 13,
         "color": "green",
         "experience_group": "Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "fly": [ 3, 4, 5, 6 ],
+            "surf": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 3, 4, 5, 6 ],
+            "rock_smash": [ 3, 4, 6 ],
+            "dive": [ 3, 5, 6 ]
+        }
     },
     "rayquaza-mega": {
         "base_id": 384,
@@ -7184,7 +8810,15 @@ export default {
         "shape": 13,
         "color": "green",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": {
+            "fly": [ 6 ],
+            "surf": [ 6 ],
+            "strength": [ 6 ],
+            "waterfall": [ 6 ],
+            "rock_smash": [ 6 ],
+            "dive": [ 6 ]
+        }
     },
     "jirachi": {
         "base_id": 385,
@@ -7198,7 +8832,8 @@ export default {
         "shape": 11,
         "color": "yellow",
         "experience_group": "Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": { "flash": [ 3 ] }
     },
     "deoxys": {
         "base_id": 386,
@@ -7213,7 +8848,13 @@ export default {
         "shape": 11,
         "color": "red",
         "experience_group": "Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "deoxys-attack": {
         "base_id": 386,
@@ -7228,7 +8869,13 @@ export default {
         "shape": 11,
         "color": "red",
         "experience_group": "Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "deoxys-defense": {
         "base_id": 386,
@@ -7243,7 +8890,13 @@ export default {
         "shape": 11,
         "color": "red",
         "experience_group": "Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "deoxys-speed": {
         "base_id": 386,
@@ -7258,7 +8911,13 @@ export default {
         "shape": 11,
         "color": "red",
         "experience_group": "Slow",
-        "generation": 3
+        "generation": 3,
+        "hidden_moves": {
+            "cut": [ 3, 4, 5, 6 ],
+            "strength": [ 3, 4, 5, 6 ],
+            "flash": [ 3 ],
+            "rock_smash": [ 3, 4, 6 ]
+        }
     },
     "turtwig": {
         "base_id": 387,
@@ -7272,7 +8931,13 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 4,
-        "evolution_ids": [ [ 388, 0 ] ]
+        "evolution_ids": [ [ 388, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "grotle": {
         "base_id": 388,
@@ -7286,7 +8951,13 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 4,
-        "evolution_ids": [ [ 389, 0 ] ]
+        "evolution_ids": [ [ 389, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "torterra": {
         "base_id": 389,
@@ -7299,7 +8970,13 @@ export default {
         "shape": 5,
         "color": "green",
         "experience_group": "Medium Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "chimchar": {
         "base_id": 390,
@@ -7313,7 +8990,13 @@ export default {
         "color": "brown",
         "experience_group": "Medium Slow",
         "generation": 4,
-        "evolution_ids": [ [ 391, 0 ] ]
+        "evolution_ids": [ [ 391, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "monferno": {
         "base_id": 391,
@@ -7327,7 +9010,13 @@ export default {
         "color": "brown",
         "experience_group": "Medium Slow",
         "generation": 4,
-        "evolution_ids": [ [ 392, 0 ] ]
+        "evolution_ids": [ [ 392, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "infernape": {
         "base_id": 392,
@@ -7340,7 +9029,13 @@ export default {
         "shape": 10,
         "color": "brown",
         "experience_group": "Medium Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "piplup": {
         "base_id": 393,
@@ -7354,7 +9049,15 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 4,
-        "evolution_ids": [ [ 394, 0 ] ]
+        "evolution_ids": [ [ 394, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "dive": [ 5, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "prinplup": {
         "base_id": 394,
@@ -7368,7 +9071,17 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 4,
-        "evolution_ids": [ [ 395, 0 ] ]
+        "evolution_ids": [ [ 395, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 5, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "empoleon": {
         "base_id": 395,
@@ -7381,7 +9094,18 @@ export default {
         "shape": 10,
         "color": "blue",
         "experience_group": "Medium Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 5, 6 ],
+            "defog": [ 4 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "starly": {
         "base_id": 396,
@@ -7395,7 +9119,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Slow",
         "generation": 4,
-        "evolution_ids": [ [ 397, 0 ] ]
+        "evolution_ids": [ [ 397, 0 ] ],
+        "hidden_moves": { "fly": [ 4, 5, 6 ], "defog": [ 4 ] }
     },
     "staravia": {
         "base_id": 397,
@@ -7409,7 +9134,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Slow",
         "generation": 4,
-        "evolution_ids": [ [ 398, 0 ] ]
+        "evolution_ids": [ [ 398, 0 ] ],
+        "hidden_moves": { "fly": [ 4, 5, 6 ], "defog": [ 4 ] }
     },
     "staraptor": {
         "base_id": 398,
@@ -7422,7 +9148,8 @@ export default {
         "shape": 12,
         "color": "brown",
         "experience_group": "Medium Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": { "fly": [ 4, 5, 6 ], "defog": [ 4 ] }
     },
     "staraptor-mega": {
         "base_id": 398,
@@ -7450,7 +9177,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 4,
-        "evolution_ids": [ [ 400, 0 ] ]
+        "evolution_ids": [ [ 400, 0 ] ],
+        "hidden_moves": { "cut": [ 4, 5, 6 ], "rock_smash": [ 4, 6 ] }
     },
     "bibarel": {
         "base_id": 400,
@@ -7463,7 +9191,17 @@ export default {
         "shape": 10,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 5, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "kricketot": {
         "base_id": 401,
@@ -7490,7 +9228,12 @@ export default {
         "shape": 6,
         "color": "red",
         "experience_group": "Medium Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ]
+        }
     },
     "shinx": {
         "base_id": 403,
@@ -7504,7 +9247,8 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 4,
-        "evolution_ids": [ [ 404, 0 ] ]
+        "evolution_ids": [ [ 404, 0 ] ],
+        "hidden_moves": { "strength": [ 4, 5, 6 ] }
     },
     "luxio": {
         "base_id": 404,
@@ -7518,7 +9262,8 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 4,
-        "evolution_ids": [ [ 405, 0 ] ]
+        "evolution_ids": [ [ 405, 0 ] ],
+        "hidden_moves": { "strength": [ 4, 5, 6 ] }
     },
     "luxray": {
         "base_id": 405,
@@ -7531,7 +9276,8 @@ export default {
         "shape": 5,
         "color": "blue",
         "experience_group": "Medium Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": { "strength": [ 4, 5, 6 ] }
     },
     "budew": {
         "base_id": 406,
@@ -7546,7 +9292,8 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 4,
-        "evolution_ids": [ [ 315, 0 ] ]
+        "evolution_ids": [ [ 315, 0 ] ],
+        "hidden_moves": { "cut": [ 4, 5, 6 ] }
     },
     "roserade": {
         "base_id": 407,
@@ -7559,7 +9306,8 @@ export default {
         "shape": 11,
         "color": "green",
         "experience_group": "Medium Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": { "cut": [ 4, 5, 6 ] }
     },
     "cranidos": {
         "base_id": 408,
@@ -7573,7 +9321,12 @@ export default {
         "color": "blue",
         "experience_group": "Erratic",
         "generation": 4,
-        "evolution_ids": [ [ 409, 0 ] ]
+        "evolution_ids": [ [ 409, 0 ] ],
+        "hidden_moves": {
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "rampardos": {
         "base_id": 409,
@@ -7586,7 +9339,15 @@ export default {
         "shape": 10,
         "color": "blue",
         "experience_group": "Erratic",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "shieldon": {
         "base_id": 410,
@@ -7600,7 +9361,8 @@ export default {
         "color": "gray",
         "experience_group": "Erratic",
         "generation": 4,
-        "evolution_ids": [ [ 411, 0 ] ]
+        "evolution_ids": [ [ 411, 0 ] ],
+        "hidden_moves": { "strength": [ 4, 5, 6 ], "rock_smash": [ 4, 6 ] }
     },
     "bastiodon": {
         "base_id": 411,
@@ -7613,7 +9375,8 @@ export default {
         "shape": 5,
         "color": "gray",
         "experience_group": "Erratic",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": { "strength": [ 4, 5, 6 ], "rock_smash": [ 4, 6 ] }
     },
     "burmy": {
         "base_id": 412,
@@ -7713,7 +9476,8 @@ export default {
         "shape": 6,
         "color": "yellow",
         "experience_group": "Medium Fast",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": { "defog": [ 4 ] }
     },
     "combee": {
         "base_id": 415,
@@ -7740,7 +9504,8 @@ export default {
         "shape": 6,
         "color": "yellow",
         "experience_group": "Medium Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": { "cut": [ 4, 5, 6 ], "defog": [ 4 ] }
     },
     "pachirisu": {
         "base_id": 417,
@@ -7753,7 +9518,8 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Medium Fast",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": { "cut": [ 4, 5, 6 ] }
     },
     "buizel": {
         "base_id": 418,
@@ -7767,7 +9533,15 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 4,
-        "evolution_ids": [ [ 419, 0 ] ]
+        "evolution_ids": [ [ 419, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 5, 6 ]
+        }
     },
     "floatzel": {
         "base_id": 419,
@@ -7780,7 +9554,15 @@ export default {
         "shape": 5,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 5, 6 ]
+        }
     },
     "cherubi": {
         "base_id": 420,
@@ -7838,7 +9620,8 @@ export default {
         "color": "purple",
         "experience_group": "Medium Fast",
         "generation": 4,
-        "evolution_ids": [ [ 423, 0 ] ]
+        "evolution_ids": [ [ 423, 0 ] ],
+        "hidden_moves": { "surf": [ 4, 5, 6 ], "whirlpool": [ 4 ], "dive": [ 5, 6 ] }
     },
     "shellos-east": {
         "base_id": 422,
@@ -7853,7 +9636,8 @@ export default {
         "color": "blue",
         "experience_group": "Medium Fast",
         "generation": 4,
-        "evolution_ids": [ [ 423, 1 ] ]
+        "evolution_ids": [ [ 423, 1 ] ],
+        "hidden_moves": { "surf": [ 4, 5, 6 ], "whirlpool": [ 4 ], "dive": [ 5, 6 ] }
     },
     "gastrodon": {
         "base_id": 423,
@@ -7867,7 +9651,15 @@ export default {
         "shape": 13,
         "color": "purple",
         "experience_group": "Medium Fast",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 5, 6 ]
+        }
     },
     "gastrodon-east": {
         "base_id": 423,
@@ -7881,7 +9673,15 @@ export default {
         "shape": 13,
         "color": "blue",
         "experience_group": "Medium Fast",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 5, 6 ]
+        }
     },
     "ambipom": {
         "base_id": 424,
@@ -7894,7 +9694,12 @@ export default {
         "shape": 10,
         "color": "purple",
         "experience_group": "Fast",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ]
+        }
     },
     "drifloon": {
         "base_id": 425,
@@ -7908,7 +9713,8 @@ export default {
         "color": "purple",
         "experience_group": "Fluctuating",
         "generation": 4,
-        "evolution_ids": [ [ 426, 0 ] ]
+        "evolution_ids": [ [ 426, 0 ] ],
+        "hidden_moves": { "cut": [ 4, 5, 6 ], "defog": [ 4 ] }
     },
     "drifblim": {
         "base_id": 426,
@@ -7921,7 +9727,8 @@ export default {
         "shape": 14,
         "color": "purple",
         "experience_group": "Fluctuating",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": { "cut": [ 4, 5, 6 ], "fly": [ 4, 5, 6 ], "defog": [ 4 ] }
     },
     "buneary": {
         "base_id": 427,
@@ -7935,7 +9742,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 4,
-        "evolution_ids": [ [ 428, 0 ] ]
+        "evolution_ids": [ [ 428, 0 ] ],
+        "hidden_moves": { "cut": [ 4, 5, 6 ], "rock_smash": [ 4, 6 ] }
     },
     "lopunny": {
         "base_id": 428,
@@ -7948,7 +9756,12 @@ export default {
         "shape": 10,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ]
+        }
     },
     "lopunny-mega": {
         "base_id": 428,
@@ -7964,7 +9777,8 @@ export default {
         "shape": 10,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ], "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "mismagius": {
         "base_id": 429,
@@ -7990,7 +9804,8 @@ export default {
         "shape": 12,
         "color": "black",
         "experience_group": "Medium Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": { "fly": [ 4, 5, 6 ], "defog": [ 4 ] }
     },
     "glameow": {
         "base_id": 431,
@@ -8004,7 +9819,8 @@ export default {
         "color": "gray",
         "experience_group": "Fast",
         "generation": 4,
-        "evolution_ids": [ [ 432, 0 ] ]
+        "evolution_ids": [ [ 432, 0 ] ],
+        "hidden_moves": { "cut": [ 4, 5, 6 ] }
     },
     "purugly": {
         "base_id": 432,
@@ -8017,7 +9833,8 @@ export default {
         "shape": 5,
         "color": "gray",
         "experience_group": "Fast",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": { "cut": [ 4, 5, 6 ] }
     },
     "chingling": {
         "base_id": 433,
@@ -8046,7 +9863,8 @@ export default {
         "color": "purple",
         "experience_group": "Medium Fast",
         "generation": 4,
-        "evolution_ids": [ [ 435, 0 ] ]
+        "evolution_ids": [ [ 435, 0 ] ],
+        "hidden_moves": { "cut": [ 4, 5, 6 ], "rock_smash": [ 4, 6 ], "defog": [ 4 ] }
     },
     "skuntank": {
         "base_id": 435,
@@ -8059,7 +9877,13 @@ export default {
         "shape": 5,
         "color": "purple",
         "experience_group": "Medium Fast",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "bronzor": {
         "base_id": 436,
@@ -8086,7 +9910,8 @@ export default {
         "shape": 14,
         "color": "green",
         "experience_group": "Medium Fast",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": { "strength": [ 4, 5, 6 ], "rock_smash": [ 4, 6 ] }
     },
     "bonsly": {
         "base_id": 438,
@@ -8145,7 +9970,8 @@ export default {
         "shape": 12,
         "color": "black",
         "experience_group": "Medium Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": { "fly": [ 4, 5, 6 ], "defog": [ 4 ] }
     },
     "spiritomb": {
         "base_id": 442,
@@ -8172,7 +9998,13 @@ export default {
         "color": "blue",
         "experience_group": "Slow",
         "generation": 4,
-        "evolution_ids": [ [ 444, 0 ] ]
+        "evolution_ids": [ [ 444, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "gabite": {
         "base_id": 444,
@@ -8186,7 +10018,13 @@ export default {
         "color": "blue",
         "experience_group": "Slow",
         "generation": 4,
-        "evolution_ids": [ [ 445, 0 ] ]
+        "evolution_ids": [ [ 445, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "garchomp": {
         "base_id": 445,
@@ -8199,7 +10037,15 @@ export default {
         "shape": 10,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "garchomp-mega": {
         "base_id": 445,
@@ -8215,7 +10061,13 @@ export default {
         "shape": 10,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": {
+            "cut": [ 6 ],
+            "surf": [ 6 ],
+            "strength": [ 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "garchomp-mega-z": {
         "base_id": 445,
@@ -8244,7 +10096,14 @@ export default {
         "color": "black",
         "experience_group": "Slow",
         "generation": 4,
-        "evolution_ids": [ [ 143, 0 ] ]
+        "evolution_ids": [ [ 143, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "riolu": {
         "base_id": 447,
@@ -8259,7 +10118,8 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 4,
-        "evolution_ids": [ [ 448, 0 ] ]
+        "evolution_ids": [ [ 448, 0 ] ],
+        "hidden_moves": { "strength": [ 4, 5, 6 ], "rock_smash": [ 4, 6 ] }
     },
     "lucario": {
         "base_id": 448,
@@ -8272,7 +10132,12 @@ export default {
         "shape": 10,
         "color": "blue",
         "experience_group": "Medium Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "lucario-mega": {
         "base_id": 448,
@@ -8288,7 +10153,8 @@ export default {
         "shape": 10,
         "color": "blue",
         "experience_group": "Medium Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "lucario-mega-z": {
         "base_id": 448,
@@ -8316,7 +10182,8 @@ export default {
         "color": "brown",
         "experience_group": "Slow",
         "generation": 4,
-        "evolution_ids": [ [ 450, 0 ] ]
+        "evolution_ids": [ [ 450, 0 ] ],
+        "hidden_moves": { "strength": [ 4, 5, 6 ], "rock_smash": [ 4, 6 ] }
     },
     "hippowdon": {
         "base_id": 450,
@@ -8329,7 +10196,8 @@ export default {
         "shape": 5,
         "color": "brown",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": { "strength": [ 4, 5, 6 ], "rock_smash": [ 4, 6 ] }
     },
     "skorupi": {
         "base_id": 451,
@@ -8343,7 +10211,12 @@ export default {
         "color": "purple",
         "experience_group": "Slow",
         "generation": 4,
-        "evolution_ids": [ [ 452, 0 ] ]
+        "evolution_ids": [ [ 452, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ]
+        }
     },
     "drapion": {
         "base_id": 452,
@@ -8356,7 +10229,13 @@ export default {
         "shape": 4,
         "color": "purple",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "croagunk": {
         "base_id": 453,
@@ -8370,7 +10249,12 @@ export default {
         "color": "blue",
         "experience_group": "Medium Fast",
         "generation": 4,
-        "evolution_ids": [ [ 454, 0 ] ]
+        "evolution_ids": [ [ 454, 0 ] ],
+        "hidden_moves": {
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "toxicroak": {
         "base_id": 454,
@@ -8383,7 +10267,13 @@ export default {
         "shape": 11,
         "color": "blue",
         "experience_group": "Medium Fast",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "carnivine": {
         "base_id": 455,
@@ -8396,7 +10286,8 @@ export default {
         "shape": 8,
         "color": "green",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": { "cut": [ 4, 5, 6 ] }
     },
     "finneon": {
         "base_id": 456,
@@ -8410,7 +10301,14 @@ export default {
         "color": "blue",
         "experience_group": "Erratic",
         "generation": 4,
-        "evolution_ids": [ [ 457, 0 ] ]
+        "evolution_ids": [ [ 457, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "dive": [ 5, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "lumineon": {
         "base_id": 457,
@@ -8423,7 +10321,14 @@ export default {
         "shape": 3,
         "color": "blue",
         "experience_group": "Erratic",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "surf": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "dive": [ 5, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "mantyke": {
         "base_id": 458,
@@ -8438,7 +10343,13 @@ export default {
         "color": "blue",
         "experience_group": "Slow",
         "generation": 4,
-        "evolution_ids": [ [ 226, 0 ] ]
+        "evolution_ids": [ [ 226, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "dive": [ 5, 6 ]
+        }
     },
     "snover": {
         "base_id": 459,
@@ -8465,7 +10376,12 @@ export default {
         "shape": 10,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "abomasnow-mega": {
         "base_id": 460,
@@ -8481,7 +10397,8 @@ export default {
         "shape": 10,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "weavile": {
         "base_id": 461,
@@ -8494,7 +10411,14 @@ export default {
         "shape": 10,
         "color": "black",
         "experience_group": "Medium Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 4, 6 ]
+        }
     },
     "magnezone": {
         "base_id": 462,
@@ -8520,7 +10444,15 @@ export default {
         "shape": 11,
         "color": "pink",
         "experience_group": "Medium Fast",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "rhyperior": {
         "base_id": 464,
@@ -8533,7 +10465,15 @@ export default {
         "shape": 10,
         "color": "gray",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "tangrowth": {
         "base_id": 465,
@@ -8546,7 +10486,12 @@ export default {
         "shape": 11,
         "color": "blue",
         "experience_group": "Medium Fast",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ]
+        }
     },
     "electivire": {
         "base_id": 466,
@@ -8559,7 +10504,12 @@ export default {
         "shape": 10,
         "color": "yellow",
         "experience_group": "Medium Fast",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "magmortar": {
         "base_id": 467,
@@ -8572,7 +10522,12 @@ export default {
         "shape": 10,
         "color": "red",
         "experience_group": "Medium Fast",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "togekiss": {
         "base_id": 468,
@@ -8586,7 +10541,8 @@ export default {
         "shape": 12,
         "color": "white",
         "experience_group": "Fast",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": { "fly": [ 4, 5, 6 ], "rock_smash": [ 4, 6 ], "defog": [ 4 ] }
     },
     "yanmega": {
         "base_id": 469,
@@ -8599,7 +10555,8 @@ export default {
         "shape": 6,
         "color": "green",
         "experience_group": "Medium Fast",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": { "defog": [ 4 ] }
     },
     "leafeon": {
         "base_id": 470,
@@ -8612,7 +10569,8 @@ export default {
         "shape": 5,
         "color": "green",
         "experience_group": "Medium Fast",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": { "strength": [ 4, 5, 6 ], "rock_smash": [ 4, 6 ] }
     },
     "glaceon": {
         "base_id": 471,
@@ -8625,7 +10583,8 @@ export default {
         "shape": 5,
         "color": "blue",
         "experience_group": "Medium Fast",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": { "strength": [ 4, 5, 6 ], "rock_smash": [ 4, 6 ] }
     },
     "gliscor": {
         "base_id": 472,
@@ -8638,7 +10597,13 @@ export default {
         "shape": 12,
         "color": "purple",
         "experience_group": "Medium Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "defog": [ 4 ]
+        }
     },
     "mamoswine": {
         "base_id": 473,
@@ -8651,7 +10616,12 @@ export default {
         "shape": 5,
         "color": "brown",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "porygon-z": {
         "base_id": 474,
@@ -8677,7 +10647,12 @@ export default {
         "shape": 11,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ]
+        }
     },
     "gallade-mega": {
         "base_id": 475,
@@ -8693,7 +10668,8 @@ export default {
         "shape": 11,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ], "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "probopass": {
         "base_id": 476,
@@ -8706,7 +10682,8 @@ export default {
         "shape": 7,
         "color": "gray",
         "experience_group": "Medium Fast",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": { "strength": [ 4, 5, 6 ], "rock_smash": [ 4, 6 ] }
     },
     "dusknoir": {
         "base_id": 477,
@@ -8719,7 +10696,8 @@ export default {
         "shape": 14,
         "color": "black",
         "experience_group": "Fast",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": { "strength": [ 4, 5, 6 ], "rock_smash": [ 4, 6 ] }
     },
     "froslass": {
         "base_id": 478,
@@ -8890,7 +10868,12 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ]
+        }
     },
     "dialga-origin": {
         "base_id": 483,
@@ -8919,7 +10902,15 @@ export default {
         "shape": 10,
         "color": "purple",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 5, 6 ]
+        }
     },
     "palkia-origin": {
         "base_id": 484,
@@ -8948,7 +10939,12 @@ export default {
         "shape": 5,
         "color": "brown",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "heatran-mega": {
         "base_id": 485,
@@ -8977,7 +10973,12 @@ export default {
         "shape": 11,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "giratina": {
         "base_id": 487,
@@ -8992,7 +10993,15 @@ export default {
         "shape": 8,
         "color": "black",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "fly": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "defog": [ 4 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "giratina-origin": {
         "base_id": 487,
@@ -9007,7 +11016,15 @@ export default {
         "shape": 13,
         "color": "black",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "fly": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "defog": [ 4 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "cresselia": {
         "base_id": 488,
@@ -9035,7 +11052,13 @@ export default {
         "shape": 14,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "surf": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "dive": [ 5, 6 ]
+        }
     },
     "manaphy": {
         "base_id": 490,
@@ -9049,7 +11072,13 @@ export default {
         "shape": 11,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "surf": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "dive": [ 5, 6 ]
+        }
     },
     "darkrai": {
         "base_id": 491,
@@ -9063,7 +11092,13 @@ export default {
         "shape": 11,
         "color": "black",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "darkrai-mega": {
         "base_id": 491,
@@ -9122,7 +11157,19 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "fly": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 6 ],
+            "defog": [ 4 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "arceus-fighting": {
         "base_id": 493,
@@ -9137,7 +11184,19 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "fly": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 6 ],
+            "defog": [ 4 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "arceus-flying": {
         "base_id": 493,
@@ -9152,7 +11211,19 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "fly": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 6 ],
+            "defog": [ 4 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "arceus-poison": {
         "base_id": 493,
@@ -9167,7 +11238,19 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "fly": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 6 ],
+            "defog": [ 4 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "arceus-ground": {
         "base_id": 493,
@@ -9182,7 +11265,19 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "fly": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 6 ],
+            "defog": [ 4 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "arceus-rock": {
         "base_id": 493,
@@ -9197,7 +11292,19 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "fly": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 6 ],
+            "defog": [ 4 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "arceus-bug": {
         "base_id": 493,
@@ -9212,7 +11319,19 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "fly": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 6 ],
+            "defog": [ 4 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "arceus-ghost": {
         "base_id": 493,
@@ -9227,7 +11346,19 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "fly": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 6 ],
+            "defog": [ 4 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "arceus-steel": {
         "base_id": 493,
@@ -9242,7 +11373,19 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "fly": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 6 ],
+            "defog": [ 4 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "arceus-fire": {
         "base_id": 493,
@@ -9257,7 +11400,19 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "fly": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 6 ],
+            "defog": [ 4 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "arceus-water": {
         "base_id": 493,
@@ -9272,7 +11427,19 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "fly": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 6 ],
+            "defog": [ 4 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "arceus-grass": {
         "base_id": 493,
@@ -9287,7 +11454,19 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "fly": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 6 ],
+            "defog": [ 4 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "arceus-electric": {
         "base_id": 493,
@@ -9302,7 +11481,19 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "fly": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 6 ],
+            "defog": [ 4 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "arceus-psychic": {
         "base_id": 493,
@@ -9317,7 +11508,19 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "fly": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 6 ],
+            "defog": [ 4 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "arceus-ice": {
         "base_id": 493,
@@ -9332,7 +11535,19 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "fly": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 6 ],
+            "defog": [ 4 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "arceus-dragon": {
         "base_id": 493,
@@ -9347,7 +11562,19 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "fly": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 6 ],
+            "defog": [ 4 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "arceus-dark": {
         "base_id": 493,
@@ -9362,7 +11589,19 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 4
+        "generation": 4,
+        "hidden_moves": {
+            "cut": [ 4, 5, 6 ],
+            "fly": [ 4, 5, 6 ],
+            "surf": [ 4, 5, 6 ],
+            "strength": [ 4, 5, 6 ],
+            "whirlpool": [ 4 ],
+            "waterfall": [ 4, 5, 6 ],
+            "rock_smash": [ 4, 6 ],
+            "dive": [ 6 ],
+            "defog": [ 4 ],
+            "rock_climb": [ 4 ]
+        }
     },
     "arceus-fairy": {
         "base_id": 493,
@@ -9377,7 +11616,16 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": {
+            "cut": [ 6 ],
+            "fly": [ 6 ],
+            "surf": [ 6 ],
+            "strength": [ 6 ],
+            "waterfall": [ 6 ],
+            "rock_smash": [ 6 ],
+            "dive": [ 6 ]
+        }
     },
     "victini": {
         "base_id": 494,
@@ -9391,7 +11639,8 @@ export default {
         "shape": 11,
         "color": "yellow",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "rock_smash": [ 6 ] }
     },
     "snivy": {
         "base_id": 495,
@@ -9405,7 +11654,8 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 496, 0 ] ]
+        "evolution_ids": [ [ 496, 0 ] ],
+        "hidden_moves": { "cut": [ 5, 6 ] }
     },
     "servine": {
         "base_id": 496,
@@ -9419,7 +11669,8 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 497, 0 ] ]
+        "evolution_ids": [ [ 497, 0 ] ],
+        "hidden_moves": { "cut": [ 5, 6 ] }
     },
     "serperior": {
         "base_id": 497,
@@ -9432,7 +11683,8 @@ export default {
         "shape": 13,
         "color": "green",
         "experience_group": "Medium Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "tepig": {
         "base_id": 498,
@@ -9446,7 +11698,8 @@ export default {
         "color": "red",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 499, 0 ] ]
+        "evolution_ids": [ [ 499, 0 ] ],
+        "hidden_moves": { "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "pignite": {
         "base_id": 499,
@@ -9460,7 +11713,8 @@ export default {
         "color": "red",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 500, 0 ] ]
+        "evolution_ids": [ [ 500, 0 ] ],
+        "hidden_moves": { "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "emboar": {
         "base_id": 500,
@@ -9473,7 +11727,8 @@ export default {
         "shape": 10,
         "color": "red",
         "experience_group": "Medium Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "emboar-mega": {
         "base_id": 500,
@@ -9501,7 +11756,14 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 502, 0 ] ]
+        "evolution_ids": [ [ 502, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 5, 6 ],
+            "surf": [ 5, 6 ],
+            "waterfall": [ 5, 6 ],
+            "rock_smash": [ 6 ],
+            "dive": [ 5, 6 ]
+        }
     },
     "dewott": {
         "base_id": 502,
@@ -9515,7 +11777,14 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 503, 0 ], [ 503, 1 ] ]
+        "evolution_ids": [ [ 503, 0 ], [ 503, 1 ] ],
+        "hidden_moves": {
+            "cut": [ 5, 6 ],
+            "surf": [ 5, 6 ],
+            "waterfall": [ 5, 6 ],
+            "rock_smash": [ 6 ],
+            "dive": [ 5, 6 ]
+        }
     },
     "samurott": {
         "base_id": 503,
@@ -9528,7 +11797,15 @@ export default {
         "shape": 5,
         "color": "blue",
         "experience_group": "Medium Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": {
+            "cut": [ 5, 6 ],
+            "surf": [ 5, 6 ],
+            "strength": [ 5, 6 ],
+            "waterfall": [ 5, 6 ],
+            "rock_smash": [ 6 ],
+            "dive": [ 5, 6 ]
+        }
     },
     "samurott-hisui": {
         "base_id": 503,
@@ -9556,7 +11833,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 5,
-        "evolution_ids": [ [ 505, 0 ] ]
+        "evolution_ids": [ [ 505, 0 ] ],
+        "hidden_moves": { "cut": [ 5, 6 ] }
     },
     "watchog": {
         "base_id": 505,
@@ -9569,7 +11847,8 @@ export default {
         "shape": 10,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "lillipup": {
         "base_id": 506,
@@ -9583,7 +11862,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 507, 0 ] ]
+        "evolution_ids": [ [ 507, 0 ] ],
+        "hidden_moves": { "rock_smash": [ 6 ] }
     },
     "herdier": {
         "base_id": 507,
@@ -9597,7 +11877,8 @@ export default {
         "color": "gray",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 508, 0 ] ]
+        "evolution_ids": [ [ 508, 0 ] ],
+        "hidden_moves": { "surf": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "stoutland": {
         "base_id": 508,
@@ -9610,7 +11891,8 @@ export default {
         "shape": 5,
         "color": "gray",
         "experience_group": "Medium Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "surf": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "purrloin": {
         "base_id": 509,
@@ -9624,7 +11906,8 @@ export default {
         "color": "purple",
         "experience_group": "Medium Fast",
         "generation": 5,
-        "evolution_ids": [ [ 510, 0 ] ]
+        "evolution_ids": [ [ 510, 0 ] ],
+        "hidden_moves": { "cut": [ 5, 6 ] }
     },
     "liepard": {
         "base_id": 510,
@@ -9637,7 +11920,8 @@ export default {
         "shape": 5,
         "color": "purple",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "pansage": {
         "base_id": 511,
@@ -9651,7 +11935,8 @@ export default {
         "color": "green",
         "experience_group": "Medium Fast",
         "generation": 5,
-        "evolution_ids": [ [ 512, 0 ] ]
+        "evolution_ids": [ [ 512, 0 ] ],
+        "hidden_moves": { "cut": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "simisage": {
         "base_id": 512,
@@ -9664,7 +11949,8 @@ export default {
         "shape": 10,
         "color": "green",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "pansear": {
         "base_id": 513,
@@ -9678,7 +11964,8 @@ export default {
         "color": "red",
         "experience_group": "Medium Fast",
         "generation": 5,
-        "evolution_ids": [ [ 514, 0 ] ]
+        "evolution_ids": [ [ 514, 0 ] ],
+        "hidden_moves": { "cut": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "simisear": {
         "base_id": 514,
@@ -9691,7 +11978,8 @@ export default {
         "shape": 10,
         "color": "red",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "panpour": {
         "base_id": 515,
@@ -9705,7 +11993,14 @@ export default {
         "color": "blue",
         "experience_group": "Medium Fast",
         "generation": 5,
-        "evolution_ids": [ [ 516, 0 ] ]
+        "evolution_ids": [ [ 516, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 5, 6 ],
+            "surf": [ 5, 6 ],
+            "waterfall": [ 5, 6 ],
+            "rock_smash": [ 6 ],
+            "dive": [ 5, 6 ]
+        }
     },
     "simipour": {
         "base_id": 516,
@@ -9718,7 +12013,14 @@ export default {
         "shape": 10,
         "color": "blue",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": {
+            "cut": [ 5, 6 ],
+            "surf": [ 5, 6 ],
+            "waterfall": [ 5, 6 ],
+            "rock_smash": [ 6 ],
+            "dive": [ 5, 6 ]
+        }
     },
     "munna": {
         "base_id": 517,
@@ -9759,7 +12061,8 @@ export default {
         "color": "gray",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 520, 0 ] ]
+        "evolution_ids": [ [ 520, 0 ] ],
+        "hidden_moves": { "fly": [ 5, 6 ] }
     },
     "tranquill": {
         "base_id": 520,
@@ -9773,7 +12076,8 @@ export default {
         "color": "gray",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 521, 0 ] ]
+        "evolution_ids": [ [ 521, 0 ] ],
+        "hidden_moves": { "fly": [ 5, 6 ] }
     },
     "unfezant": {
         "base_id": 521,
@@ -9786,7 +12090,8 @@ export default {
         "shape": 12,
         "color": "gray",
         "experience_group": "Medium Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "fly": [ 5, 6 ] }
     },
     "blitzle": {
         "base_id": 522,
@@ -9813,7 +12118,8 @@ export default {
         "shape": 5,
         "color": "black",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "rock_smash": [ 6 ] }
     },
     "roggenrola": {
         "base_id": 524,
@@ -9827,7 +12133,8 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 525, 0 ] ]
+        "evolution_ids": [ [ 525, 0 ] ],
+        "hidden_moves": { "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "boldore": {
         "base_id": 525,
@@ -9841,7 +12148,8 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 526, 0 ] ]
+        "evolution_ids": [ [ 526, 0 ] ],
+        "hidden_moves": { "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "gigalith": {
         "base_id": 526,
@@ -9854,7 +12162,8 @@ export default {
         "shape": 8,
         "color": "blue",
         "experience_group": "Medium Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "woobat": {
         "base_id": 527,
@@ -9868,7 +12177,8 @@ export default {
         "color": "blue",
         "experience_group": "Medium Fast",
         "generation": 5,
-        "evolution_ids": [ [ 528, 0 ] ]
+        "evolution_ids": [ [ 528, 0 ] ],
+        "hidden_moves": { "fly": [ 5, 6 ] }
     },
     "swoobat": {
         "base_id": 528,
@@ -9881,7 +12191,8 @@ export default {
         "shape": 12,
         "color": "blue",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "fly": [ 5, 6 ] }
     },
     "drilbur": {
         "base_id": 529,
@@ -9895,7 +12206,8 @@ export default {
         "color": "gray",
         "experience_group": "Medium Fast",
         "generation": 5,
-        "evolution_ids": [ [ 530, 0 ] ]
+        "evolution_ids": [ [ 530, 0 ] ],
+        "hidden_moves": { "cut": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "excadrill": {
         "base_id": 530,
@@ -9908,7 +12220,8 @@ export default {
         "shape": 11,
         "color": "gray",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "excadrill-mega": {
         "base_id": 530,
@@ -9935,7 +12248,8 @@ export default {
         "shape": 10,
         "color": "pink",
         "experience_group": "Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "surf": [ 5, 6 ] }
     },
     "audino-mega": {
         "base_id": 531,
@@ -9951,7 +12265,8 @@ export default {
         "shape": 10,
         "color": "white",
         "experience_group": "Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "surf": [ 6 ] }
     },
     "timburr": {
         "base_id": 532,
@@ -9965,7 +12280,8 @@ export default {
         "color": "gray",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 533, 0 ] ]
+        "evolution_ids": [ [ 533, 0 ] ],
+        "hidden_moves": { "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "gurdurr": {
         "base_id": 533,
@@ -9979,7 +12295,8 @@ export default {
         "color": "gray",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 534, 0 ] ]
+        "evolution_ids": [ [ 534, 0 ] ],
+        "hidden_moves": { "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "conkeldurr": {
         "base_id": 534,
@@ -9992,7 +12309,8 @@ export default {
         "shape": 11,
         "color": "brown",
         "experience_group": "Medium Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "tympole": {
         "base_id": 535,
@@ -10006,7 +12324,8 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 536, 0 ] ]
+        "evolution_ids": [ [ 536, 0 ] ],
+        "hidden_moves": { "surf": [ 5, 6 ] }
     },
     "palpitoad": {
         "base_id": 536,
@@ -10020,7 +12339,8 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 537, 0 ] ]
+        "evolution_ids": [ [ 537, 0 ] ],
+        "hidden_moves": { "surf": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "seismitoad": {
         "base_id": 537,
@@ -10033,7 +12353,8 @@ export default {
         "shape": 11,
         "color": "blue",
         "experience_group": "Medium Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "surf": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "throh": {
         "base_id": 538,
@@ -10046,7 +12367,8 @@ export default {
         "shape": 11,
         "color": "red",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "sawk": {
         "base_id": 539,
@@ -10059,7 +12381,8 @@ export default {
         "shape": 11,
         "color": "blue",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "sewaddle": {
         "base_id": 540,
@@ -10073,7 +12396,8 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 541, 0 ] ]
+        "evolution_ids": [ [ 541, 0 ] ],
+        "hidden_moves": { "cut": [ 5, 6 ] }
     },
     "swadloon": {
         "base_id": 541,
@@ -10087,7 +12411,8 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 542, 0 ] ]
+        "evolution_ids": [ [ 542, 0 ] ],
+        "hidden_moves": { "cut": [ 5, 6 ] }
     },
     "leavanny": {
         "base_id": 542,
@@ -10100,7 +12425,8 @@ export default {
         "shape": 11,
         "color": "yellow",
         "experience_group": "Medium Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ] }
     },
     "venipede": {
         "base_id": 543,
@@ -10114,7 +12440,8 @@ export default {
         "color": "red",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 544, 0 ] ]
+        "evolution_ids": [ [ 544, 0 ] ],
+        "hidden_moves": { "rock_smash": [ 6 ] }
     },
     "whirlipede": {
         "base_id": 544,
@@ -10128,7 +12455,8 @@ export default {
         "color": "gray",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 545, 0 ] ]
+        "evolution_ids": [ [ 545, 0 ] ],
+        "hidden_moves": { "rock_smash": [ 6 ] }
     },
     "scolipede": {
         "base_id": 545,
@@ -10141,7 +12469,8 @@ export default {
         "shape": 4,
         "color": "red",
         "experience_group": "Medium Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "scolipede-mega": {
         "base_id": 545,
@@ -10198,7 +12527,8 @@ export default {
         "color": "green",
         "experience_group": "Medium Fast",
         "generation": 5,
-        "evolution_ids": [ [ 549, 0 ], [ 549, 1 ] ]
+        "evolution_ids": [ [ 549, 0 ], [ 549, 1 ] ],
+        "hidden_moves": { "cut": [ 5, 6 ] }
     },
     "lilligant": {
         "base_id": 549,
@@ -10211,7 +12541,8 @@ export default {
         "shape": 9,
         "color": "green",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ] }
     },
     "lilligant-hisui": {
         "base_id": 549,
@@ -10239,7 +12570,13 @@ export default {
         "shape": 3,
         "color": "green",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": {
+            "cut": [ 5, 6 ],
+            "surf": [ 5, 6 ],
+            "waterfall": [ 5, 6 ],
+            "dive": [ 5, 6 ]
+        }
     },
     "basculin-blue-striped": {
         "base_id": 550,
@@ -10253,7 +12590,13 @@ export default {
         "shape": 3,
         "color": "green",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": {
+            "cut": [ 5, 6 ],
+            "surf": [ 5, 6 ],
+            "waterfall": [ 5, 6 ],
+            "dive": [ 5, 6 ]
+        }
     },
     "basculin-white-striped": {
         "base_id": 550,
@@ -10282,7 +12625,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 552, 0 ] ]
+        "evolution_ids": [ [ 552, 0 ] ],
+        "hidden_moves": { "cut": [ 5, 6 ] }
     },
     "krokorok": {
         "base_id": 552,
@@ -10296,7 +12640,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 553, 0 ] ]
+        "evolution_ids": [ [ 553, 0 ] ],
+        "hidden_moves": { "cut": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "krookodile": {
         "base_id": 553,
@@ -10309,7 +12654,8 @@ export default {
         "shape": 10,
         "color": "red",
         "experience_group": "Medium Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "darumaka": {
         "base_id": 554,
@@ -10323,7 +12669,8 @@ export default {
         "color": "red",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 555, 0 ] ]
+        "evolution_ids": [ [ 555, 0 ] ],
+        "hidden_moves": { "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "darumaka-galar": {
         "base_id": 554,
@@ -10352,7 +12699,8 @@ export default {
         "shape": 5,
         "color": "red",
         "experience_group": "Medium Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "darmanitan-zen": {
         "base_id": 555,
@@ -10423,7 +12771,8 @@ export default {
         "color": "red",
         "experience_group": "Medium Fast",
         "generation": 5,
-        "evolution_ids": [ [ 558, 0 ] ]
+        "evolution_ids": [ [ 558, 0 ] ],
+        "hidden_moves": { "cut": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "crustle": {
         "base_id": 558,
@@ -10436,7 +12785,8 @@ export default {
         "shape": 4,
         "color": "red",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "scraggy": {
         "base_id": 559,
@@ -10450,7 +12800,8 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 5,
-        "evolution_ids": [ [ 560, 0 ] ]
+        "evolution_ids": [ [ 560, 0 ] ],
+        "hidden_moves": { "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "scrafty": {
         "base_id": 560,
@@ -10463,7 +12814,8 @@ export default {
         "shape": 10,
         "color": "red",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "scrafty-mega": {
         "base_id": 560,
@@ -10490,7 +12842,8 @@ export default {
         "shape": 12,
         "color": "black",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "fly": [ 5, 6 ] }
     },
     "yamask": {
         "base_id": 562,
@@ -10546,7 +12899,14 @@ export default {
         "color": "blue",
         "experience_group": "Medium Fast",
         "generation": 5,
-        "evolution_ids": [ [ 565, 0 ] ]
+        "evolution_ids": [ [ 565, 0 ] ],
+        "hidden_moves": {
+            "surf": [ 5, 6 ],
+            "strength": [ 5, 6 ],
+            "waterfall": [ 5, 6 ],
+            "rock_smash": [ 6 ],
+            "dive": [ 5, 6 ]
+        }
     },
     "carracosta": {
         "base_id": 565,
@@ -10559,7 +12919,14 @@ export default {
         "shape": 10,
         "color": "blue",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": {
+            "surf": [ 5, 6 ],
+            "strength": [ 5, 6 ],
+            "waterfall": [ 5, 6 ],
+            "rock_smash": [ 6 ],
+            "dive": [ 5, 6 ]
+        }
     },
     "archen": {
         "base_id": 566,
@@ -10573,7 +12940,8 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 5,
-        "evolution_ids": [ [ 567, 0 ] ]
+        "evolution_ids": [ [ 567, 0 ] ],
+        "hidden_moves": { "cut": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "archeops": {
         "base_id": 567,
@@ -10586,7 +12954,8 @@ export default {
         "shape": 12,
         "color": "yellow",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "fly": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "trubbish": {
         "base_id": 568,
@@ -10628,7 +12997,8 @@ export default {
         "color": "gray",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 571, 0 ] ]
+        "evolution_ids": [ [ 571, 0 ] ],
+        "hidden_moves": { "cut": [ 5, 6 ] }
     },
     "zorua-hisui": {
         "base_id": 570,
@@ -10656,7 +13026,8 @@ export default {
         "shape": 10,
         "color": "gray",
         "experience_group": "Medium Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "zoroark-hisui": {
         "base_id": 571,
@@ -10779,7 +13150,8 @@ export default {
         "shape": 14,
         "color": "green",
         "experience_group": "Medium Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "ducklett": {
         "base_id": 580,
@@ -10793,7 +13165,8 @@ export default {
         "color": "blue",
         "experience_group": "Medium Fast",
         "generation": 5,
-        "evolution_ids": [ [ 581, 0 ] ]
+        "evolution_ids": [ [ 581, 0 ] ],
+        "hidden_moves": { "fly": [ 5, 6 ], "surf": [ 5, 6 ], "dive": [ 5, 6 ] }
     },
     "swanna": {
         "base_id": 581,
@@ -10806,7 +13179,8 @@ export default {
         "shape": 12,
         "color": "white",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "fly": [ 5, 6 ], "surf": [ 5, 6 ], "dive": [ 5, 6 ] }
     },
     "vanillite": {
         "base_id": 582,
@@ -10924,7 +13298,8 @@ export default {
         "shape": 5,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "sawsbuck-summer": {
         "base_id": 586,
@@ -10939,7 +13314,8 @@ export default {
         "shape": 5,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "sawsbuck-autumn": {
         "base_id": 586,
@@ -10954,7 +13330,8 @@ export default {
         "shape": 5,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "sawsbuck-winter": {
         "base_id": 586,
@@ -10969,7 +13346,8 @@ export default {
         "shape": 5,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "emolga": {
         "base_id": 587,
@@ -10982,7 +13360,8 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ] }
     },
     "karrablast": {
         "base_id": 588,
@@ -10996,7 +13375,8 @@ export default {
         "color": "blue",
         "experience_group": "Medium Fast",
         "generation": 5,
-        "evolution_ids": [ [ 589, 0 ] ]
+        "evolution_ids": [ [ 589, 0 ] ],
+        "hidden_moves": { "cut": [ 5, 6 ] }
     },
     "escavalier": {
         "base_id": 589,
@@ -11009,7 +13389,8 @@ export default {
         "shape": 14,
         "color": "gray",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "foongus": {
         "base_id": 590,
@@ -11050,7 +13431,8 @@ export default {
         "color": "white",
         "experience_group": "Medium Fast",
         "generation": 5,
-        "evolution_ids": [ [ 593, 0 ] ]
+        "evolution_ids": [ [ 593, 0 ] ],
+        "hidden_moves": { "surf": [ 5, 6 ], "waterfall": [ 5, 6 ], "dive": [ 5, 6 ] }
     },
     "jellicent": {
         "base_id": 593,
@@ -11063,7 +13445,8 @@ export default {
         "shape": 8,
         "color": "white",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "surf": [ 5, 6 ], "waterfall": [ 5, 6 ], "dive": [ 5, 6 ] }
     },
     "alomomola": {
         "base_id": 594,
@@ -11076,7 +13459,8 @@ export default {
         "shape": 3,
         "color": "pink",
         "experience_group": "Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "surf": [ 5, 6 ], "waterfall": [ 5, 6 ], "dive": [ 5, 6 ] }
     },
     "joltik": {
         "base_id": 595,
@@ -11090,7 +13474,8 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 5,
-        "evolution_ids": [ [ 596, 0 ] ]
+        "evolution_ids": [ [ 596, 0 ] ],
+        "hidden_moves": { "cut": [ 5, 6 ] }
     },
     "galvantula": {
         "base_id": 596,
@@ -11103,7 +13488,8 @@ export default {
         "shape": 4,
         "color": "yellow",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ] }
     },
     "ferroseed": {
         "base_id": 597,
@@ -11117,7 +13503,8 @@ export default {
         "color": "gray",
         "experience_group": "Medium Fast",
         "generation": 5,
-        "evolution_ids": [ [ 598, 0 ] ]
+        "evolution_ids": [ [ 598, 0 ] ],
+        "hidden_moves": { "rock_smash": [ 6 ] }
     },
     "ferrothorn": {
         "base_id": 598,
@@ -11130,7 +13517,8 @@ export default {
         "shape": 8,
         "color": "gray",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "klink": {
         "base_id": 599,
@@ -11144,7 +13532,8 @@ export default {
         "color": "gray",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 600, 0 ] ]
+        "evolution_ids": [ [ 600, 0 ] ],
+        "hidden_moves": { "rock_smash": [ 6 ] }
     },
     "klang": {
         "base_id": 600,
@@ -11158,7 +13547,8 @@ export default {
         "color": "gray",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 601, 0 ] ]
+        "evolution_ids": [ [ 601, 0 ] ],
+        "hidden_moves": { "rock_smash": [ 6 ] }
     },
     "klinklang": {
         "base_id": 601,
@@ -11171,7 +13561,8 @@ export default {
         "shape": 7,
         "color": "gray",
         "experience_group": "Medium Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "rock_smash": [ 6 ] }
     },
     "tynamo": {
         "base_id": 602,
@@ -11212,7 +13603,8 @@ export default {
         "shape": 3,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "eelektross-mega": {
         "base_id": 604,
@@ -11322,7 +13714,8 @@ export default {
         "color": "green",
         "experience_group": "Slow",
         "generation": 5,
-        "evolution_ids": [ [ 611, 0 ] ]
+        "evolution_ids": [ [ 611, 0 ] ],
+        "hidden_moves": { "cut": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "fraxure": {
         "base_id": 611,
@@ -11336,7 +13729,8 @@ export default {
         "color": "green",
         "experience_group": "Slow",
         "generation": 5,
-        "evolution_ids": [ [ 612, 0 ] ]
+        "evolution_ids": [ [ 612, 0 ] ],
+        "hidden_moves": { "cut": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "haxorus": {
         "base_id": 612,
@@ -11349,7 +13743,13 @@ export default {
         "shape": 10,
         "color": "yellow",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": {
+            "cut": [ 5, 6 ],
+            "surf": [ 5, 6 ],
+            "strength": [ 5, 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "cubchoo": {
         "base_id": 613,
@@ -11363,7 +13763,13 @@ export default {
         "color": "white",
         "experience_group": "Medium Fast",
         "generation": 5,
-        "evolution_ids": [ [ 614, 0 ] ]
+        "evolution_ids": [ [ 614, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 5, 6 ],
+            "surf": [ 5, 6 ],
+            "strength": [ 5, 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "beartic": {
         "base_id": 614,
@@ -11376,7 +13782,14 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": {
+            "cut": [ 5, 6 ],
+            "surf": [ 5, 6 ],
+            "strength": [ 5, 6 ],
+            "rock_smash": [ 6 ],
+            "dive": [ 5, 6 ]
+        }
     },
     "cryogonal": {
         "base_id": 615,
@@ -11429,7 +13842,8 @@ export default {
         "shape": 3,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "surf": [ 5, 6 ] }
     },
     "stunfisk-galar": {
         "base_id": 618,
@@ -11457,7 +13871,8 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Slow",
         "generation": 5,
-        "evolution_ids": [ [ 620, 0 ] ]
+        "evolution_ids": [ [ 620, 0 ] ],
+        "hidden_moves": { "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "mienshao": {
         "base_id": 620,
@@ -11470,7 +13885,8 @@ export default {
         "shape": 10,
         "color": "purple",
         "experience_group": "Medium Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "druddigon": {
         "base_id": 621,
@@ -11483,7 +13899,13 @@ export default {
         "shape": 10,
         "color": "red",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": {
+            "cut": [ 5, 6 ],
+            "surf": [ 5, 6 ],
+            "strength": [ 5, 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "golett": {
         "base_id": 622,
@@ -11497,7 +13919,8 @@ export default {
         "color": "green",
         "experience_group": "Medium Fast",
         "generation": 5,
-        "evolution_ids": [ [ 623, 0 ] ]
+        "evolution_ids": [ [ 623, 0 ] ],
+        "hidden_moves": { "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "golurk": {
         "base_id": 623,
@@ -11510,7 +13933,8 @@ export default {
         "shape": 11,
         "color": "green",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "fly": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "golurk-mega": {
         "base_id": 623,
@@ -11538,7 +13962,8 @@ export default {
         "color": "red",
         "experience_group": "Medium Fast",
         "generation": 5,
-        "evolution_ids": [ [ 625, 0 ] ]
+        "evolution_ids": [ [ 625, 0 ] ],
+        "hidden_moves": { "cut": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "bisharp": {
         "base_id": 625,
@@ -11552,7 +13977,8 @@ export default {
         "color": "red",
         "experience_group": "Medium Fast",
         "generation": 5,
-        "evolution_ids": [ [ 980, 0 ] ]
+        "evolution_ids": [ [ 980, 0 ] ],
+        "hidden_moves": { "cut": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "bouffalant": {
         "base_id": 626,
@@ -11565,7 +13991,13 @@ export default {
         "shape": 5,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": {
+            "cut": [ 5, 6 ],
+            "surf": [ 5, 6 ],
+            "strength": [ 5, 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "rufflet": {
         "base_id": 627,
@@ -11579,7 +14011,13 @@ export default {
         "color": "white",
         "experience_group": "Slow",
         "generation": 5,
-        "evolution_ids": [ [ 628, 0 ], [ 628, 1 ] ]
+        "evolution_ids": [ [ 628, 0 ], [ 628, 1 ] ],
+        "hidden_moves": {
+            "cut": [ 5, 6 ],
+            "fly": [ 5, 6 ],
+            "strength": [ 5, 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "braviary": {
         "base_id": 628,
@@ -11592,7 +14030,13 @@ export default {
         "shape": 12,
         "color": "red",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": {
+            "cut": [ 5, 6 ],
+            "fly": [ 5, 6 ],
+            "strength": [ 5, 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "braviary-hisui": {
         "base_id": 628,
@@ -11620,7 +14064,8 @@ export default {
         "color": "brown",
         "experience_group": "Slow",
         "generation": 5,
-        "evolution_ids": [ [ 630, 0 ] ]
+        "evolution_ids": [ [ 630, 0 ] ],
+        "hidden_moves": { "cut": [ 5, 6 ], "fly": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "mandibuzz": {
         "base_id": 630,
@@ -11633,7 +14078,8 @@ export default {
         "shape": 12,
         "color": "brown",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "fly": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "heatmor": {
         "base_id": 631,
@@ -11646,7 +14092,8 @@ export default {
         "shape": 10,
         "color": "red",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "durant": {
         "base_id": 632,
@@ -11659,7 +14106,8 @@ export default {
         "shape": 4,
         "color": "gray",
         "experience_group": "Medium Fast",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "deino": {
         "base_id": 633,
@@ -11673,7 +14121,8 @@ export default {
         "color": "blue",
         "experience_group": "Slow",
         "generation": 5,
-        "evolution_ids": [ [ 634, 0 ] ]
+        "evolution_ids": [ [ 634, 0 ] ],
+        "hidden_moves": { "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "zweilous": {
         "base_id": 634,
@@ -11687,7 +14136,8 @@ export default {
         "color": "blue",
         "experience_group": "Slow",
         "generation": 5,
-        "evolution_ids": [ [ 635, 0 ] ]
+        "evolution_ids": [ [ 635, 0 ] ],
+        "hidden_moves": { "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "hydreigon": {
         "base_id": 635,
@@ -11700,7 +14150,13 @@ export default {
         "shape": 10,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": {
+            "fly": [ 5, 6 ],
+            "surf": [ 5, 6 ],
+            "strength": [ 5, 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "larvesta": {
         "base_id": 636,
@@ -11727,7 +14183,8 @@ export default {
         "shape": 6,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "fly": [ 5, 6 ] }
     },
     "cobalion": {
         "base_id": 638,
@@ -11741,7 +14198,8 @@ export default {
         "shape": 5,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "terrakion": {
         "base_id": 639,
@@ -11755,7 +14213,8 @@ export default {
         "shape": 5,
         "color": "gray",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "virizion": {
         "base_id": 640,
@@ -11769,7 +14228,8 @@ export default {
         "shape": 5,
         "color": "green",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "cut": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "tornadus": {
         "base_id": 641,
@@ -11784,7 +14244,8 @@ export default {
         "shape": 14,
         "color": "green",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "fly": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "tornadus-therian": {
         "base_id": 641,
@@ -11799,7 +14260,8 @@ export default {
         "shape": 12,
         "color": "green",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "fly": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "thundurus": {
         "base_id": 642,
@@ -11814,7 +14276,8 @@ export default {
         "shape": 14,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "fly": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "thundurus-therian": {
         "base_id": 642,
@@ -11829,7 +14292,8 @@ export default {
         "shape": 10,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "fly": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "reshiram": {
         "base_id": 643,
@@ -11843,7 +14307,13 @@ export default {
         "shape": 12,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": {
+            "cut": [ 5, 6 ],
+            "fly": [ 5, 6 ],
+            "strength": [ 5, 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "zekrom": {
         "base_id": 644,
@@ -11857,7 +14327,13 @@ export default {
         "shape": 10,
         "color": "black",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": {
+            "cut": [ 5, 6 ],
+            "fly": [ 5, 6 ],
+            "strength": [ 5, 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "landorus": {
         "base_id": 645,
@@ -11872,7 +14348,8 @@ export default {
         "shape": 14,
         "color": "brown",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "fly": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "landorus-therian": {
         "base_id": 645,
@@ -11887,7 +14364,8 @@ export default {
         "shape": 5,
         "color": "brown",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "fly": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "kyurem": {
         "base_id": 646,
@@ -11901,7 +14379,13 @@ export default {
         "shape": 10,
         "color": "gray",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": {
+            "cut": [ 5, 6 ],
+            "fly": [ 5, 6 ],
+            "strength": [ 5, 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "kyurem-white": {
         "base_id": 646,
@@ -11916,7 +14400,13 @@ export default {
         "shape": 10,
         "color": "gray",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": {
+            "cut": [ 5, 6 ],
+            "fly": [ 5, 6 ],
+            "strength": [ 5, 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "kyurem-black": {
         "base_id": 646,
@@ -11931,7 +14421,13 @@ export default {
         "shape": 10,
         "color": "gray",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": {
+            "cut": [ 5, 6 ],
+            "fly": [ 5, 6 ],
+            "strength": [ 5, 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "keldeo": {
         "base_id": 647,
@@ -11946,7 +14442,13 @@ export default {
         "shape": 5,
         "color": "yellow",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": {
+            "cut": [ 5, 6 ],
+            "surf": [ 5, 6 ],
+            "strength": [ 5, 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "keldeo-resolute": {
         "base_id": 647,
@@ -11962,7 +14464,8 @@ export default {
         "shape": 5,
         "color": "yellow",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "surf": [ 5, 6 ], "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "meloetta": {
         "base_id": 648,
@@ -11977,7 +14480,8 @@ export default {
         "shape": 11,
         "color": "white",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "strength": [ 5, 6 ], "rock_smash": [ 6 ] }
     },
     "meloetta-pirouette": {
         "base_id": 648,
@@ -12007,7 +14511,8 @@ export default {
         "shape": 11,
         "color": "purple",
         "experience_group": "Slow",
-        "generation": 5
+        "generation": 5,
+        "hidden_moves": { "fly": [ 5, 6 ] }
     },
     "chespin": {
         "base_id": 650,
@@ -12021,7 +14526,8 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 6,
-        "evolution_ids": [ [ 651, 0 ] ]
+        "evolution_ids": [ [ 651, 0 ] ],
+        "hidden_moves": { "cut": [ 6 ], "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "quilladin": {
         "base_id": 651,
@@ -12035,7 +14541,8 @@ export default {
         "color": "green",
         "experience_group": "Medium Slow",
         "generation": 6,
-        "evolution_ids": [ [ 652, 0 ] ]
+        "evolution_ids": [ [ 652, 0 ] ],
+        "hidden_moves": { "cut": [ 6 ], "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "chesnaught": {
         "base_id": 652,
@@ -12048,7 +14555,8 @@ export default {
         "shape": 10,
         "color": "green",
         "experience_group": "Medium Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ], "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "chesnaught-mega": {
         "base_id": 652,
@@ -12076,7 +14584,8 @@ export default {
         "color": "red",
         "experience_group": "Medium Slow",
         "generation": 6,
-        "evolution_ids": [ [ 654, 0 ] ]
+        "evolution_ids": [ [ 654, 0 ] ],
+        "hidden_moves": { "cut": [ 6 ] }
     },
     "braixen": {
         "base_id": 654,
@@ -12090,7 +14599,8 @@ export default {
         "color": "red",
         "experience_group": "Medium Slow",
         "generation": 6,
-        "evolution_ids": [ [ 655, 0 ] ]
+        "evolution_ids": [ [ 655, 0 ] ],
+        "hidden_moves": { "cut": [ 6 ] }
     },
     "delphox": {
         "base_id": 655,
@@ -12103,7 +14613,8 @@ export default {
         "shape": 10,
         "color": "red",
         "experience_group": "Medium Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ] }
     },
     "delphox-mega": {
         "base_id": 655,
@@ -12131,7 +14642,15 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 6,
-        "evolution_ids": [ [ 657, 0 ] ]
+        "evolution_ids": [ [ 657, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 6 ],
+            "surf": [ 6 ],
+            "strength": [ 6 ],
+            "waterfall": [ 6 ],
+            "rock_smash": [ 6 ],
+            "dive": [ 6 ]
+        }
     },
     "frogadier": {
         "base_id": 657,
@@ -12145,7 +14664,15 @@ export default {
         "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 6,
-        "evolution_ids": [ [ 658, 0 ] ]
+        "evolution_ids": [ [ 658, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 6 ],
+            "surf": [ 6 ],
+            "strength": [ 6 ],
+            "waterfall": [ 6 ],
+            "rock_smash": [ 6 ],
+            "dive": [ 6 ]
+        }
     },
     "greninja": {
         "base_id": 658,
@@ -12158,7 +14685,15 @@ export default {
         "shape": 11,
         "color": "blue",
         "experience_group": "Medium Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": {
+            "cut": [ 6 ],
+            "surf": [ 6 ],
+            "strength": [ 6 ],
+            "waterfall": [ 6 ],
+            "rock_smash": [ 6 ],
+            "dive": [ 6 ]
+        }
     },
     "greninja-ash": {
         "base_id": 658,
@@ -12201,7 +14736,13 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 6,
-        "evolution_ids": [ [ 660, 0 ] ]
+        "evolution_ids": [ [ 660, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 6 ],
+            "surf": [ 6 ],
+            "strength": [ 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "diggersby": {
         "base_id": 660,
@@ -12214,7 +14755,13 @@ export default {
         "shape": 10,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": {
+            "cut": [ 6 ],
+            "surf": [ 6 ],
+            "strength": [ 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "fletchling": {
         "base_id": 661,
@@ -12228,7 +14775,8 @@ export default {
         "color": "red",
         "experience_group": "Medium Slow",
         "generation": 6,
-        "evolution_ids": [ [ 662, 0 ] ]
+        "evolution_ids": [ [ 662, 0 ] ],
+        "hidden_moves": { "fly": [ 6 ] }
     },
     "fletchinder": {
         "base_id": 662,
@@ -12242,7 +14790,8 @@ export default {
         "color": "red",
         "experience_group": "Medium Slow",
         "generation": 6,
-        "evolution_ids": [ [ 663, 0 ] ]
+        "evolution_ids": [ [ 663, 0 ] ],
+        "hidden_moves": { "fly": [ 6 ] }
     },
     "talonflame": {
         "base_id": 663,
@@ -12255,7 +14804,8 @@ export default {
         "shape": 12,
         "color": "red",
         "experience_group": "Medium Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "fly": [ 6 ] }
     },
     "scatterbug": {
         "base_id": 664,
@@ -12596,7 +15146,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Slow",
         "generation": 6,
-        "evolution_ids": [ [ 668, 0 ] ]
+        "evolution_ids": [ [ 668, 0 ] ],
+        "hidden_moves": { "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "pyroar": {
         "base_id": 668,
@@ -12609,7 +15160,8 @@ export default {
         "shape": 5,
         "color": "brown",
         "experience_group": "Medium Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "pyroar-mega": {
         "base_id": 668,
@@ -12896,7 +15448,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 6,
-        "evolution_ids": [ [ 673, 0 ] ]
+        "evolution_ids": [ [ 673, 0 ] ],
+        "hidden_moves": { "surf": [ 6 ], "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "gogoat": {
         "base_id": 673,
@@ -12909,7 +15462,8 @@ export default {
         "shape": 5,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "surf": [ 6 ], "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "pancham": {
         "base_id": 674,
@@ -12923,7 +15477,13 @@ export default {
         "color": "white",
         "experience_group": "Medium Fast",
         "generation": 6,
-        "evolution_ids": [ [ 675, 0 ] ]
+        "evolution_ids": [ [ 675, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 6 ],
+            "surf": [ 6 ],
+            "strength": [ 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "pangoro": {
         "base_id": 675,
@@ -12936,7 +15496,13 @@ export default {
         "shape": 11,
         "color": "white",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": {
+            "cut": [ 6 ],
+            "surf": [ 6 ],
+            "strength": [ 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "furfrou": {
         "base_id": 676,
@@ -12950,7 +15516,8 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "surf": [ 6 ], "rock_smash": [ 6 ] }
     },
     "furfrou-heart": {
         "base_id": 676,
@@ -12965,7 +15532,8 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "surf": [ 6 ], "rock_smash": [ 6 ] }
     },
     "furfrou-star": {
         "base_id": 676,
@@ -12980,7 +15548,8 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "surf": [ 6 ], "rock_smash": [ 6 ] }
     },
     "furfrou-diamond": {
         "base_id": 676,
@@ -12995,7 +15564,8 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "surf": [ 6 ], "rock_smash": [ 6 ] }
     },
     "furfrou-debutante": {
         "base_id": 676,
@@ -13010,7 +15580,8 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "surf": [ 6 ], "rock_smash": [ 6 ] }
     },
     "furfrou-matron": {
         "base_id": 676,
@@ -13025,7 +15596,8 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "surf": [ 6 ], "rock_smash": [ 6 ] }
     },
     "furfrou-dandy": {
         "base_id": 676,
@@ -13040,7 +15612,8 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "surf": [ 6 ], "rock_smash": [ 6 ] }
     },
     "furfrou-la-reine": {
         "base_id": 676,
@@ -13055,7 +15628,8 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "surf": [ 6 ], "rock_smash": [ 6 ] }
     },
     "furfrou-kabuki": {
         "base_id": 676,
@@ -13070,7 +15644,8 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "surf": [ 6 ], "rock_smash": [ 6 ] }
     },
     "furfrou-pharaoh": {
         "base_id": 676,
@@ -13085,7 +15660,8 @@ export default {
         "shape": 5,
         "color": "white",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "surf": [ 6 ], "rock_smash": [ 6 ] }
     },
     "espurr": {
         "base_id": 677,
@@ -13099,7 +15675,8 @@ export default {
         "color": "gray",
         "experience_group": "Medium Fast",
         "generation": 6,
-        "evolution_ids": [ [ 678, 0 ], [ 678, 1 ] ]
+        "evolution_ids": [ [ 678, 0 ], [ 678, 1 ] ],
+        "hidden_moves": { "cut": [ 6 ] }
     },
     "meowstic": {
         "base_id": 678,
@@ -13113,7 +15690,8 @@ export default {
         "shape": 10,
         "color": "blue",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ] }
     },
     "meowstic-female": {
         "base_id": 678,
@@ -13127,7 +15705,8 @@ export default {
         "shape": 10,
         "color": "white",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ] }
     },
     "meowstic-mega": {
         "base_id": 678,
@@ -13170,7 +15749,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 6,
-        "evolution_ids": [ [ 680, 0 ] ]
+        "evolution_ids": [ [ 680, 0 ] ],
+        "hidden_moves": { "cut": [ 6 ], "rock_smash": [ 6 ] }
     },
     "doublade": {
         "base_id": 680,
@@ -13184,7 +15764,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 6,
-        "evolution_ids": [ [ 681, 1 ] ]
+        "evolution_ids": [ [ 681, 1 ] ],
+        "hidden_moves": { "cut": [ 6 ], "rock_smash": [ 6 ] }
     },
     "aegislash": {
         "base_id": 681,
@@ -13198,7 +15779,8 @@ export default {
         "shape": 9,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ], "rock_smash": [ 6 ] }
     },
     "aegislash-blade": {
         "base_id": 681,
@@ -13254,7 +15836,8 @@ export default {
         "color": "white",
         "experience_group": "Medium Fast",
         "generation": 6,
-        "evolution_ids": [ [ 685, 0 ] ]
+        "evolution_ids": [ [ 685, 0 ] ],
+        "hidden_moves": { "surf": [ 6 ] }
     },
     "slurpuff": {
         "base_id": 685,
@@ -13267,7 +15850,8 @@ export default {
         "shape": 11,
         "color": "white",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "surf": [ 6 ] }
     },
     "inkay": {
         "base_id": 686,
@@ -13281,7 +15865,8 @@ export default {
         "color": "blue",
         "experience_group": "Medium Fast",
         "generation": 6,
-        "evolution_ids": [ [ 687, 0 ] ]
+        "evolution_ids": [ [ 687, 0 ] ],
+        "hidden_moves": { "cut": [ 6 ] }
     },
     "malamar": {
         "base_id": 687,
@@ -13294,7 +15879,8 @@ export default {
         "shape": 9,
         "color": "blue",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ] }
     },
     "malamar-mega": {
         "base_id": 687,
@@ -13322,7 +15908,13 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 6,
-        "evolution_ids": [ [ 689, 0 ] ]
+        "evolution_ids": [ [ 689, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 6 ],
+            "surf": [ 6 ],
+            "strength": [ 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "barbaracle": {
         "base_id": 689,
@@ -13335,7 +15927,13 @@ export default {
         "shape": 7,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": {
+            "cut": [ 6 ],
+            "surf": [ 6 ],
+            "strength": [ 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "barbaracle-mega": {
         "base_id": 689,
@@ -13363,7 +15961,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 6,
-        "evolution_ids": [ [ 691, 0 ] ]
+        "evolution_ids": [ [ 691, 0 ] ],
+        "hidden_moves": { "surf": [ 6 ], "waterfall": [ 6 ], "dive": [ 6 ] }
     },
     "dragalge": {
         "base_id": 691,
@@ -13376,7 +15975,8 @@ export default {
         "shape": 9,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "surf": [ 6 ], "waterfall": [ 6 ], "dive": [ 6 ] }
     },
     "dragalge-mega": {
         "base_id": 691,
@@ -13404,7 +16004,13 @@ export default {
         "color": "blue",
         "experience_group": "Slow",
         "generation": 6,
-        "evolution_ids": [ [ 693, 0 ] ]
+        "evolution_ids": [ [ 693, 0 ] ],
+        "hidden_moves": {
+            "cut": [ 6 ],
+            "surf": [ 6 ],
+            "waterfall": [ 6 ],
+            "dive": [ 6 ]
+        }
     },
     "clawitzer": {
         "base_id": 693,
@@ -13417,7 +16023,13 @@ export default {
         "shape": 13,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": {
+            "cut": [ 6 ],
+            "surf": [ 6 ],
+            "waterfall": [ 6 ],
+            "dive": [ 6 ]
+        }
     },
     "helioptile": {
         "base_id": 694,
@@ -13431,7 +16043,8 @@ export default {
         "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 6,
-        "evolution_ids": [ [ 695, 0 ] ]
+        "evolution_ids": [ [ 695, 0 ] ],
+        "hidden_moves": { "cut": [ 6 ], "surf": [ 6 ] }
     },
     "heliolisk": {
         "base_id": 695,
@@ -13444,7 +16057,8 @@ export default {
         "shape": 10,
         "color": "yellow",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ], "surf": [ 6 ] }
     },
     "tyrunt": {
         "base_id": 696,
@@ -13458,7 +16072,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 6,
-        "evolution_ids": [ [ 697, 0 ] ]
+        "evolution_ids": [ [ 697, 0 ] ],
+        "hidden_moves": { "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "tyrantrum": {
         "base_id": 697,
@@ -13471,7 +16086,8 @@ export default {
         "shape": 10,
         "color": "red",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "amaura": {
         "base_id": 698,
@@ -13485,7 +16101,8 @@ export default {
         "color": "blue",
         "experience_group": "Medium Fast",
         "generation": 6,
-        "evolution_ids": [ [ 699, 0 ] ]
+        "evolution_ids": [ [ 699, 0 ] ],
+        "hidden_moves": { "rock_smash": [ 6 ] }
     },
     "aurorus": {
         "base_id": 699,
@@ -13498,7 +16115,8 @@ export default {
         "shape": 5,
         "color": "blue",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "rock_smash": [ 6 ] }
     },
     "sylveon": {
         "base_id": 700,
@@ -13511,7 +16129,8 @@ export default {
         "shape": 5,
         "color": "pink",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ] }
     },
     "hawlucha": {
         "base_id": 701,
@@ -13524,7 +16143,13 @@ export default {
         "shape": 11,
         "color": "green",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": {
+            "cut": [ 6 ],
+            "fly": [ 6 ],
+            "strength": [ 6 ],
+            "rock_smash": [ 6 ]
+        }
     },
     "hawlucha-mega": {
         "base_id": 701,
@@ -13551,7 +16176,8 @@ export default {
         "shape": 10,
         "color": "yellow",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ] }
     },
     "carbink": {
         "base_id": 703,
@@ -13620,7 +16246,8 @@ export default {
         "shape": 10,
         "color": "purple",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "goodra-hisui": {
         "base_id": 706,
@@ -13647,7 +16274,8 @@ export default {
         "shape": 1,
         "color": "gray",
         "experience_group": "Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ] }
     },
     "phantump": {
         "base_id": 708,
@@ -13661,7 +16289,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 6,
-        "evolution_ids": [ [ 709, 0 ] ]
+        "evolution_ids": [ [ 709, 0 ] ],
+        "hidden_moves": { "cut": [ 6 ], "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "trevenant": {
         "base_id": 709,
@@ -13674,7 +16303,8 @@ export default {
         "shape": 8,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ], "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "pumpkaboo": {
         "base_id": 710,
@@ -13689,7 +16319,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 6,
-        "evolution_ids": [ [ 711, 0 ] ]
+        "evolution_ids": [ [ 711, 0 ] ],
+        "hidden_moves": { "rock_smash": [ 6 ] }
     },
     "pumpkaboo-small": {
         "base_id": 710,
@@ -13705,7 +16336,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 6,
-        "evolution_ids": [ [ 711, 1 ] ]
+        "evolution_ids": [ [ 711, 1 ] ],
+        "hidden_moves": { "rock_smash": [ 6 ] }
     },
     "pumpkaboo-large": {
         "base_id": 710,
@@ -13721,7 +16353,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 6,
-        "evolution_ids": [ [ 711, 2 ] ]
+        "evolution_ids": [ [ 711, 2 ] ],
+        "hidden_moves": { "rock_smash": [ 6 ] }
     },
     "pumpkaboo-super": {
         "base_id": 710,
@@ -13737,7 +16370,8 @@ export default {
         "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 6,
-        "evolution_ids": [ [ 711, 3 ] ]
+        "evolution_ids": [ [ 711, 3 ] ],
+        "hidden_moves": { "rock_smash": [ 6 ] }
     },
     "gourgeist": {
         "base_id": 711,
@@ -13751,7 +16385,8 @@ export default {
         "shape": 9,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "rock_smash": [ 6 ] }
     },
     "gourgeist-small": {
         "base_id": 711,
@@ -13766,7 +16401,8 @@ export default {
         "shape": 9,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "rock_smash": [ 6 ] }
     },
     "gourgeist-large": {
         "base_id": 711,
@@ -13781,7 +16417,8 @@ export default {
         "shape": 9,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "rock_smash": [ 6 ] }
     },
     "gourgeist-super": {
         "base_id": 711,
@@ -13796,7 +16433,8 @@ export default {
         "shape": 9,
         "color": "brown",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "rock_smash": [ 6 ] }
     },
     "bergmite": {
         "base_id": 712,
@@ -13810,7 +16448,8 @@ export default {
         "color": "blue",
         "experience_group": "Medium Fast",
         "generation": 6,
-        "evolution_ids": [ [ 713, 0 ], [ 713, 1 ] ]
+        "evolution_ids": [ [ 713, 0 ], [ 713, 1 ] ],
+        "hidden_moves": { "surf": [ 6 ], "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "avalugg": {
         "base_id": 713,
@@ -13823,7 +16462,8 @@ export default {
         "shape": 5,
         "color": "blue",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "surf": [ 6 ], "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "avalugg-hisui": {
         "base_id": 713,
@@ -13851,7 +16491,8 @@ export default {
         "color": "purple",
         "experience_group": "Medium Fast",
         "generation": 6,
-        "evolution_ids": [ [ 715, 0 ] ]
+        "evolution_ids": [ [ 715, 0 ] ],
+        "hidden_moves": { "cut": [ 6 ], "fly": [ 6 ] }
     },
     "noivern": {
         "base_id": 715,
@@ -13864,7 +16505,8 @@ export default {
         "shape": 12,
         "color": "purple",
         "experience_group": "Medium Fast",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ], "fly": [ 6 ] }
     },
     "xerneas-neutral": {
         "base_id": 716,
@@ -13880,7 +16522,8 @@ export default {
         "shape": 5,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ] }
     },
     "xerneas": {
         "base_id": 716,
@@ -13895,7 +16538,8 @@ export default {
         "shape": 5,
         "color": "blue",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ] }
     },
     "yveltal": {
         "base_id": 717,
@@ -13909,7 +16553,8 @@ export default {
         "shape": 12,
         "color": "red",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ], "fly": [ 6 ] }
     },
     "zygarde": {
         "base_id": 718,
@@ -13924,7 +16569,8 @@ export default {
         "shape": 13,
         "color": "green",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "zygarde-10": {
         "base_id": 718,
@@ -14045,7 +16691,8 @@ export default {
         "shape": 5,
         "color": "brown",
         "experience_group": "Slow",
-        "generation": 6
+        "generation": 6,
+        "hidden_moves": { "cut": [ 6 ], "strength": [ 6 ], "rock_smash": [ 6 ] }
     },
     "rowlet": {
         "base_id": 722,
@@ -16716,7 +19363,17 @@ export default {
         "color": "white",
         "experience_group": "Medium Fast",
         "generation": 8,
-        "evolution_ids": [ [ 869, 0 ], [ 869, 1 ], [ 869, 2 ], [ 869, 3 ], [ 869, 4 ], [ 869, 5 ], [ 869, 6 ], [ 869, 7 ], [ 869, 8 ] ]
+        "evolution_ids": [
+            [ 869, 0 ],
+            [ 869, 1 ],
+            [ 869, 2 ],
+            [ 869, 3 ],
+            [ 869, 4 ],
+            [ 869, 5 ],
+            [ 869, 6 ],
+            [ 869, 7 ],
+            [ 869, 8 ]
+        ]
     },
     "alcremie": {
         "base_id": 869,
