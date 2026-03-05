@@ -1535,8 +1535,8 @@ dt {
 
 @media screen and (max-width: 1279px) {
     .slot {
-        width: 8em;
-        grid-template-rows: 5em 4em 1fr;
+        width: 33%;
+        flex-grow: 1;
     }
 
     .slot__pokemon-render,
@@ -1612,6 +1612,10 @@ dt {
 
     .team {
         padding: 2em 1em;
+    }
+
+    .slot {
+        width: 50%;
     }
 
     .tera-picker {
