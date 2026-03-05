@@ -1292,7 +1292,7 @@ function changeCheckbox( event ) {
     }
     // Update count in button
     const button = document.querySelector( "#" + name + "-filter" );
-    const exceptAllSelector = selector + ":not([value='all'])";
+    const exceptAllSelector = selector + ":not([value='all'], [value='is_not_misc_form'])";
     const allOptions = document.querySelectorAll( exceptAllSelector );
     const checkedOptions = document.querySelectorAll( exceptAllSelector + ":checked" );
     if ( allOptions.length === checkedOptions.length ) {
