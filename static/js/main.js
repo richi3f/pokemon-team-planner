@@ -1178,6 +1178,7 @@ function expandDropdown( event ) {
         parent.classList.remove( "filter_active" );
     } else {
         parent.classList.add( "filter_active" );
+        parent.scrollIntoView( { behavior: "smooth", block: "nearest" } );
         document.addEventListener( "click", collapseDropdown );
     }
 }
