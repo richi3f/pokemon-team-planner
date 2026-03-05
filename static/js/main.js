@@ -718,8 +718,8 @@ function populateDexes( container ) {
     const h1 = document.querySelector( ".head__game-name" );
     const section = document.createElement( "section" );
     const h2 = document.createElement( "h2" );
-    const divParent = document.createElement( "div" );
-    const div = document.createElement( "div" );
+    const divOverlay = document.createElement( "div" );
+    const divModalbox = document.createElement( "div" );
     const ol = document.createElement( "ol" );
     const button = document.createElement( "button" );
 
@@ -728,18 +728,18 @@ function populateDexes( container ) {
     h1.classList.add( "head__game-logo", "head__game-logo_" + currentGame );
     h1.style.backgroundImage = "url('" + GAME_PATH + currentGame + ".png')";
     container.prepend( section );
-    section.append( h2, divParent, button, ol );
+    section.append( h2, divOverlay, button, ol );
     h2.innerHTML = "Your Options";
     h2.classList.add( "picker__heading" );
-    divParent.append( div );
-    divParent.classList.add( "picker__overlay", "picker__overlay_hidden" );
+    divOverlay.append( divModalbox );
+    divOverlay.classList.add( "picker__overlay", "picker__overlay_hidden" );
     button.classList.add( "picker__filter-button" );
-    div.classList.add( "picker__filters" );
+    divModalbox.classList.add( "picker__filters" );
     ol.classList.add( "picker__pokedexes" );
 
     button.innerHTML = "Filters";
     button.addEventListener( "click", () => {
-        divParent.classList.toggle( "picker__overlay_hidden" );
+        divOverlay.classList.toggle( "picker__overlay_hidden" );
     });
 
     game.dex_slugs.forEach( ( slug, i ) => {
@@ -990,38 +990,41 @@ const SHAPES = 14;
 function populateFilters() {
     const filters = document.querySelector( ".picker__filters" );
     const types = Object.keys( getCurrentTypeData() );
+    const divScrollbox = document.createElement( "div" );
+    divScrollbox.classList.add( "filter__scrollbox" );
     const h3 = document.createElement( "h3" );
     h3.innerHTML = "Filters";
     h3.classList.add( "filter__heading" );
     filters.append( h3 );
+    filters.append( divScrollbox );
     // Search
-    createSearchBar( filters );
+    createSearchBar( divScrollbox );
     // Type
-    var type_dropdown = createFilter( filters, "type", "Type" );
+    var type_dropdown = createFilter( divScrollbox, "type", "Type" );
     type_dropdown.classList.add( "filter__dropdown-menu_3col" );
     // Exclude Type
-    var dropdown = createFilter( filters, "exclude-type", "Exclude Type", true, false );
+    var dropdown = createFilter( divScrollbox, "exclude-type", "Exclude Type", true, false );
     dropdown.classList.add( "filter__dropdown-menu_3col" );
     types.forEach( value => {
         type_dropdown.append( createCheckbox( "type", capitalize( value ), value ) );
         dropdown.append( createCheckbox( "exclude-type", capitalize( value ), value, false ) );
     });
     // Evolution
-    var dropdown = createFilter( filters, "evolution", "Evolution" );
+    var dropdown = createFilter( divScrollbox, "evolution", "Evolution" );
     dropdown.append( createCheckbox( "evolution", "Not Fully Evolved", "nfe" ) );
     dropdown.append( createCheckbox( "evolution", "Fully Evolved", "fe" ) );
     if ( gameData[ currentGame ].mega ) dropdown.append(
         createCheckbox( "evolution", "Mega Evolved", "mega" )
     );
     // Generation
-    dropdown = createFilter( filters, "gen", "Generation" );
+    dropdown = createFilter( divScrollbox, "gen", "Generation" );
     if ( gameData[ currentGame ].gen > 6 ) dropdown.classList.add( "filter__dropdown-menu_2col" );
     for ( let i = 1; i <= gameData[ currentGame ].gen; i++ ) {
         dropdown.append( createCheckbox( "gen", "Generation " + toRoman( i ), i ) );
     }
     // Version
     const disabled = currentVersions.length === 0;
-    dropdown = createFilter( filters, "version", "Version", true, true, disabled );
+    dropdown = createFilter( divScrollbox, "version", "Version", true, true, disabled );
     if ( !disabled ) {
         const both_text = currentVersions.length > 2 ? "All Versions" : "Both Versions";
         dropdown.append( createCheckbox( "version", both_text, "both" ) );
@@ -1033,7 +1036,7 @@ function populateFilters() {
         }
     }
     // Category
-    dropdown = createFilter( filters, "tag", "Tag" );
+    dropdown = createFilter( divScrollbox, "tag", "Tag" );
     dropdown.append( createCheckbox( "tag", "Non-Legendary", "is_nonlegendary" ) );
     dropdown.append( createCheckbox( "tag", "Sub-Legendary", "is_sublegendary" ) );
     dropdown.append( createCheckbox( "tag", "Legendary", "is_legendary" ) );
@@ -1049,38 +1052,36 @@ function populateFilters() {
         dropdown.append( createCheckbox( "tag", "Misc. Forms", "is_misc_form", false ) );
     }
     // Color
-    dropdown = createFilter( filters, "color", "Color" );
+    dropdown = createFilter( divScrollbox, "color", "Color" );
     dropdown.classList.add( "filter__dropdown-menu_2col" );
     COLORS.forEach( value => {
         dropdown.append( createCheckbox( "color", capitalize( value ), value ) );
     });
     // Experience
-    dropdown = createFilter( filters, "experience", "Experience" );
+    dropdown = createFilter( divScrollbox, "experience", "Experience" );
     EXPERIENCE.forEach( value => {
         dropdown.append( createCheckbox( "experience", value, value ) );
     });
     // Shape
-    dropdown = createFilter( filters, "shape", "Shape" );
+    dropdown = createFilter( divScrollbox, "shape", "Shape" );
     dropdown.classList.add( "filter__dropdown-menu_icons" );
     [...Array(SHAPES).keys()].forEach( value => {
         dropdown.append( createShapeCheckbox( value + 1 ) );
     });
+    // Create close button
+    const button = document.createElement( "button" );
+    button.classList.add( "filter__close-button" );
+    button.innerHTML = "Close";
+    button.addEventListener( "click", ( event ) => {
+        document.querySelector( ".picker__overlay" ).classList.toggle( "picker__overlay_hidden" );
+    });
+    filters.append( button );
     // Fire change event to hide misc. forms
     const input = document.getElementById( "filter-tag-is_misc_form" );
     if ( input != null ) {
         const event = new Event( "change" );
         input.dispatchEvent( event );
     }
-
-    const button = document.createElement( "button" );
-    button.classList.add( "filter__close-button" );
-    button.innerHTML = "Close";
-    //button.addEventListener( "click", resetFilters );
-
-    button.addEventListener( "click", ( event ) => {
-        document.querySelector( ".picker__overlay" ).classList.toggle( "picker__overlay_hidden" );
-    });
-    filters.append( button );
 }
 
 /**
