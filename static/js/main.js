@@ -1492,7 +1492,10 @@ function pokemonIsShaped( pokemon, shapes ) {
         shapes.length > 0
         && (
             shapes.includes( "all" )
-            || shapes.includes( pokemon.shape.toString() )
+            || (
+                pokemon.shape !== undefined
+                && shapes.includes( pokemon.shape.toString() )
+            )
         )
     );
 }
