@@ -383,9 +383,15 @@ function populateTeamSlot( event_or_slug ) {
     } else {
         genderToggle.classList.add( "slot__toggle_hidden" );
     }
+
+    // Enable Shiny toggle (except Eternal Flower Floette)
     const shinyToggle = slot.querySelector( ".slot__toggle_regular, .slot__toggle_shiny" );
-    shinyToggle.classList.remove( "slot__toggle_hidden", "slot__toggle_shiny" );
-    shinyToggle.classList.add( "slot__toggle_regular" );
+    if ( slug === "floette-eternal" || slug === "floette-mega" ) {
+        shinyToggle.classList.add( "slot__toggle_hidden" );
+    } else {
+        shinyToggle.classList.remove( "slot__toggle_hidden", "slot__toggle_shiny" );
+        shinyToggle.classList.add( "slot__toggle_regular" );
+    }
 
     // Enable Tera Type toggle (except Terapagos)
     if ( gameData[ currentGame ].tera && !slug.includes( "terapagos" ) ) {
