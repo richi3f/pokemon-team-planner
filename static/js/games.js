@@ -248,5 +248,10 @@ export default {
         "mega": true,
         "gmax": true,
         "tera": true,
+    },
+    "champions": {
+        "name": "Pokémon Champions",
+        "gen": 9,
+        "mega": true,
     }
 };
