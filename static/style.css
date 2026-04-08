@@ -201,7 +201,9 @@ article section {
 .head__game-logo_arceus,
 .game-picker__game-logo_arceus,
 .head__game-logo_home,
-.game-picker__game-logo_home {
+.game-picker__game-logo_home,
+.head__game-logo_champions,
+.game-picker__game-logo_champions {
     width: 10rem;
     height: 5rem;
     line-height: 5rem;
