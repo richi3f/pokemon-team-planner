@@ -620,6 +620,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 10,
+        "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -634,6 +636,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 10,
+        "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -873,6 +877,8 @@ export default {
         "gender_ratio": 6,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 10,
+        "color": "pink",
         "experience_group": "Fast",
         "generation": 9
     },
@@ -1617,6 +1623,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 9,
+        "color": "yellow",
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -2801,6 +2809,8 @@ export default {
         "gender_ratio": -1,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 9,
+        "color": "purple",
         "experience_group": "Slow",
         "generation": 9
     },
@@ -3506,6 +3516,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 10,
+        "color": "brown",
         "experience_group": "Slow",
         "generation": 9
     },
@@ -3659,6 +3671,8 @@ export default {
         "gender_ratio": 1,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 5,
+        "color": "green",
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -3807,6 +3821,8 @@ export default {
         "gender_ratio": 1,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 10,
+        "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -5515,6 +5531,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 12,
+        "color": "yellow",
         "experience_group": "Slow",
         "generation": 9
     },
@@ -8120,6 +8138,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 7,
+        "color": "blue",
         "experience_group": "Fast",
         "generation": 9
     },
@@ -8170,6 +8190,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 5,
+        "color": "black",
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -9162,6 +9184,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 12,
+        "color": "gray",
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -10080,6 +10104,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 10,
+        "color": "blue",
         "experience_group": "Slow",
         "generation": 9
     },
@@ -10167,6 +10193,8 @@ export default {
         "gender_ratio": 1,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 10,
+        "color": "gray",
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -10723,6 +10751,8 @@ export default {
         "gender_ratio": 8,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 14,
+        "color": "white",
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -10958,6 +10988,8 @@ export default {
         "is_sublegendary": true,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 5,
+        "color": "brown",
         "experience_group": "Slow",
         "generation": 9
     },
@@ -11112,6 +11144,8 @@ export default {
         "is_mythical": true,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 14,
+        "color": "black",
         "experience_group": "Slow",
         "generation": 9
     },
@@ -11741,6 +11775,8 @@ export default {
         "gender_ratio": 1,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 10,
+        "color": "red",
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -12234,6 +12270,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 11,
+        "color": "gray",
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -12483,6 +12521,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 4,
+        "color": "purple",
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -12828,6 +12868,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 10,
+        "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -13617,6 +13659,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 3,
+        "color": "blue",
         "experience_group": "Slow",
         "generation": 9
     },
@@ -13699,6 +13743,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 14,
+        "color": "black",
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -13947,6 +13993,8 @@ export default {
         "gender_ratio": -1,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 11,
+        "color": "green",
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -14569,6 +14617,8 @@ export default {
         "gender_ratio": 1,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 10,
+        "color": "white",
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -14627,6 +14677,8 @@ export default {
         "gender_ratio": 1,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 10,
+        "color": "red",
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -14721,6 +14773,8 @@ export default {
         "gender_ratio": 1,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 11,
+        "color": "black",
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -15174,6 +15228,8 @@ export default {
         "gender_ratio": 7,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 5,
+        "color": "brown",
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -15345,6 +15401,7 @@ export default {
         "gender": [ "fo" ],
         "gender_ratio": 8,
         "shape": 14,
+        "color": "white",
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -15359,6 +15416,8 @@ export default {
         "gender_ratio": 8,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 14,
+        "color": "white",
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -15719,6 +15778,8 @@ export default {
         "gender_ratio": 0,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 10,
+        "color": "white",
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -15734,6 +15795,8 @@ export default {
         "is_mega": true,
         "is_cosmetic": true,
         "is_battle_only": true,
+        "shape": 10,
+        "color": "white",
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -15893,6 +15956,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 9,
+        "color": "blue",
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -15946,6 +16011,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 7,
+        "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -15989,6 +16056,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 9,
+        "color": "brown",
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -16162,6 +16231,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 11,
+        "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -16615,6 +16686,8 @@ export default {
         "is_legendary": true,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 10,
+        "color": "green",
         "experience_group": "Slow",
         "generation": 9
     },
@@ -16978,6 +17051,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 4,
+        "color": "white",
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -17456,6 +17531,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 8,
+        "color": "gray",
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -18017,6 +18094,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 13,
+        "color": "black",
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -18388,6 +18467,8 @@ export default {
         "is_mythical": true,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 11,
+        "color": "red",
         "experience_group": "Slow",
         "generation": 9
     },
@@ -18404,6 +18485,8 @@ export default {
         "is_mega": true,
         "is_cosmetic": true,
         "is_battle_only": true,
+        "shape": 11,
+        "color": "red",
         "experience_group": "Slow",
         "generation": 9
     },
@@ -18504,6 +18587,8 @@ export default {
         "is_mythical": true,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 11,
+        "color": "black",
         "experience_group": "Slow",
         "generation": 9
     },
@@ -19542,6 +19627,8 @@ export default {
         "gender_ratio": -1,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 7,
+        "color": "yellow",
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -20932,6 +21019,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 10,
+        "color": "green",
         "experience_group": "Medium Fast",
         "generation": 9
     },
@@ -21204,6 +21293,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 1,
+        "color": "blue",
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -21355,6 +21446,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 7,
+        "color": "red",
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -21370,6 +21463,8 @@ export default {
         "is_mega": true,
         "is_cosmetic": true,
         "is_battle_only": true,
+        "shape": 7,
+        "color": "pink",
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -21385,6 +21480,8 @@ export default {
         "is_mega": true,
         "is_cosmetic": true,
         "is_battle_only": true,
+        "shape": 7,
+        "color": "yellow",
         "experience_group": "Medium Slow",
         "generation": 9
     },
@@ -21689,6 +21786,8 @@ export default {
         "gender_ratio": 4,
         "is_mega": true,
         "is_battle_only": true,
+        "shape": 10,
+        "color": "blue",
         "experience_group": "Slow",
         "generation": 9
     },
