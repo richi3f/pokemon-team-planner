@@ -251,6 +251,7 @@ export default {
     },
     "champions": {
         "name": "Pokémon Champions",
+        "dex_slugs": ["champions_reg_ma"],
         "gen": 9,
         "mega": true,
     }
